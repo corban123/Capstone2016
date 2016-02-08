@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 398a6ef8800090b45880bd88c3e1b113
+timeCreated: 1454900399
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BasePlatform
+    100002: BasePlatform_IslandLeft_Glass
+    100004: BasePlatform_IslandLeft_Rim
+    100006: BasePlatform_IslandRight_Glass
+    100008: BasePlatform_IslandRight_Rim1
+    100010: BasePlatform_Lower_Glass
+    100012: BasePlatform_Lower_InnerRim
+    100014: BasePlatform_Lower_OuterRim
+    100016: BasePlatform_Upper_Glass
+    100018: BasePlatform_Upper_Rim
+    100020: bottom
+    100022: CentralBridge_1
+    100024: CentralBridge_2
+    100026: CentralBridge_3
+    100028: CentralBridge_4
+    100030: CentralPlatform_IslandLeft
+    100032: CentralPlatform_IslandRight
+    100034: CentralPlatform_Lower_Glass
+    100036: CentralPlatform_Lower_Rim
+    100038: CentralPlatform_Upper_Glass
+    100040: CentralPlatform_Upper_Rim1
+    100042: CentralPlatform_Upper_Rim2
+    100044: //RootNode
+    400000: BasePlatform
+    400002: BasePlatform_IslandLeft_Glass
+    400004: BasePlatform_IslandLeft_Rim
+    400006: BasePlatform_IslandRight_Glass
+    400008: BasePlatform_IslandRight_Rim1
+    400010: BasePlatform_Lower_Glass
+    400012: BasePlatform_Lower_InnerRim
+    400014: BasePlatform_Lower_OuterRim
+    400016: BasePlatform_Upper_Glass
+    400018: BasePlatform_Upper_Rim
+    400020: bottom
+    400022: CentralBridge_1
+    400024: CentralBridge_2
+    400026: CentralBridge_3
+    400028: CentralBridge_4
+    400030: CentralPlatform_IslandLeft
+    400032: CentralPlatform_IslandRight
+    400034: CentralPlatform_Lower_Glass
+    400036: CentralPlatform_Lower_Rim
+    400038: CentralPlatform_Upper_Glass
+    400040: CentralPlatform_Upper_Rim1
+    400042: CentralPlatform_Upper_Rim2
+    400044: //RootNode
+    2300000: BasePlatform_IslandLeft_Glass
+    2300002: BasePlatform_IslandLeft_Rim
+    2300004: BasePlatform_IslandRight_Glass
+    2300006: BasePlatform_IslandRight_Rim1
+    2300008: BasePlatform_Lower_Glass
+    2300010: BasePlatform_Lower_InnerRim
+    2300012: BasePlatform_Lower_OuterRim
+    2300014: BasePlatform_Upper_Glass
+    2300016: BasePlatform_Upper_Rim
+    2300018: CentralBridge_1
+    2300020: CentralBridge_2
+    2300022: CentralBridge_3
+    2300024: CentralBridge_4
+    2300026: CentralPlatform_IslandLeft
+    2300028: CentralPlatform_IslandRight
+    2300030: CentralPlatform_Lower_Glass
+    2300032: CentralPlatform_Lower_Rim
+    2300034: CentralPlatform_Upper_Glass
+    2300036: CentralPlatform_Upper_Rim1
+    2300038: CentralPlatform_Upper_Rim2
+    3300000: BasePlatform_IslandLeft_Glass
+    3300002: BasePlatform_IslandLeft_Rim
+    3300004: BasePlatform_IslandRight_Glass
+    3300006: BasePlatform_IslandRight_Rim1
+    3300008: BasePlatform_Lower_Glass
+    3300010: BasePlatform_Lower_InnerRim
+    3300012: BasePlatform_Lower_OuterRim
+    3300014: BasePlatform_Upper_Glass
+    3300016: BasePlatform_Upper_Rim
+    3300018: CentralBridge_1
+    3300020: CentralBridge_2
+    3300022: CentralBridge_3
+    3300024: CentralBridge_4
+    3300026: CentralPlatform_IslandLeft
+    3300028: CentralPlatform_IslandRight
+    3300030: CentralPlatform_Lower_Glass
+    3300032: CentralPlatform_Lower_Rim
+    3300034: CentralPlatform_Upper_Glass
+    3300036: CentralPlatform_Upper_Rim1
+    3300038: CentralPlatform_Upper_Rim2
+    4300000: CentralPlatform_Lower_Glass
+    4300002: CentralPlatform_Lower_Rim
+    4300004: CentralPlatform_Upper_Rim1
+    4300006: CentralPlatform_Upper_Rim2
+    4300008: CentralPlatform_Upper_Glass
+    4300010: CentralBridge_1
+    4300012: CentralBridge_2
+    4300014: CentralPlatform_IslandLeft
+    4300016: CentralPlatform_IslandRight
+    4300018: BasePlatform_Lower_InnerRim
+    4300020: BasePlatform_Lower_Glass
+    4300022: BasePlatform_Lower_OuterRim
+    4300024: BasePlatform_Upper_Glass
+    4300026: BasePlatform_Upper_Rim
+    4300028: BasePlatform_IslandRight_Glass
+    4300030: BasePlatform_IslandLeft_Rim
+    4300032: CentralBridge_3
+    4300034: CentralBridge_4
+    4300036: BasePlatform_IslandLeft_Glass
+    4300038: BasePlatform_IslandRight_Rim1
+    6400000: BasePlatform_IslandLeft_Glass
+    6400002: BasePlatform_IslandLeft_Rim
+    6400004: BasePlatform_IslandRight_Glass
+    6400006: BasePlatform_IslandRight_Rim1
+    6400008: BasePlatform_Lower_Glass
+    6400010: BasePlatform_Lower_InnerRim
+    6400012: BasePlatform_Lower_OuterRim
+    6400014: BasePlatform_Upper_Glass
+    6400016: BasePlatform_Upper_Rim
+    6400018: CentralBridge_1
+    6400020: CentralBridge_2
+    6400022: CentralBridge_3
+    6400024: CentralBridge_4
+    6400026: CentralPlatform_IslandLeft
+    6400028: CentralPlatform_IslandRight
+    6400030: CentralPlatform_Lower_Glass
+    6400032: CentralPlatform_Lower_Rim
+    6400034: CentralPlatform_Upper_Glass
+    6400036: CentralPlatform_Upper_Rim1
+    6400038: CentralPlatform_Upper_Rim2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
