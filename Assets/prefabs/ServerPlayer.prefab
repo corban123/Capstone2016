@@ -332,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numElements: 0
   numQuarks: 0
-  shot: {fileID: 0}
+  shot: {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
 --- !u!114 &11449624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -421,7 +421,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: audioListen
@@ -431,6 +431,10 @@ Prefab:
       propertyPath: FPSCam
       value: 
       objectReference: {fileID: 2047102}
+    - target: {fileID: 0}
+      propertyPath: shot
+      value: 
+      objectReference: {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 108300}
