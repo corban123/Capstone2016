@@ -4,7 +4,6 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class FirstPersonController : NetworkBehaviour 
 {
-
     public float movementSpeed = 50.0f;
     public float mouseSensitivity = 5.0f;
     public float jumpSpeed = 10.0f;
@@ -25,6 +24,7 @@ public class FirstPersonController : NetworkBehaviour
 
     CharacterController characterController;
     MoveScript move;
+    CombatScript combat;
 
     // Use this for initialization
     void Start()
@@ -35,6 +35,7 @@ public class FirstPersonController : NetworkBehaviour
             characterController = GetComponent<CharacterController>();
             characterController.enabled = true;
             move = GetComponent<MoveScript>();
+            combat = GetComponent<CombatScript>();
             move.enabled = true;
             verticalVelocity = 0;
             FPSCam.enabled = true;
@@ -65,7 +66,7 @@ public class FirstPersonController : NetworkBehaviour
             if (Input.GetButtonDown("Fire1") && Time.time > nextFire) //PC control
             {
                 nextFire = Time.time + fireRate;
-                move.Shoot();
+                combat.Shoot();
 
             }
             verticalVelocity += gravity * Time.deltaTime;

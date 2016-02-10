@@ -1,19 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveScript : MonoBehaviour {
-    public int numElements;
-    public int numQuarks;
-    public GameObject shot;
-    Transform shotSpawn;
+public class MoveScript : MonoBehaviour
+{
+    CombatScript combat;
 
 	// Use this for initialization
-	void Start () {
-        shotSpawn = this.gameObject.transform.GetChild(0);
+	void Start ()
+    {
+        combat = gameObject.GetComponent<CombatScript>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 
         
     }
@@ -22,11 +22,6 @@ public class MoveScript : MonoBehaviour {
     {
         Camera.main.transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
         transform.Rotate(0, leftRight, 0);
-
-    }
-    public void Shoot()
-    {
-        Instantiate(shot, shotSpawn.position, gameObject.transform.rotation);
     }
 
     public void MoveCharacter(CharacterController characterController, Vector3 speed)
@@ -41,34 +36,14 @@ public class MoveScript : MonoBehaviour {
             print("picked up element");
             Destroy(collision.gameObject);
             //collision.gameObject.SendMessage("PickUp");
-            numElements += 1;
+            combat.numElements += 1;
         }
         if (collision.tag == "Quark")
         {
             print("picked up quark");
             Destroy(collision.gameObject);
             //collision.gameObject.SendMessage("PickUp");
-            numQuarks += 1;
+            combat.numQuarks += 1;
         }
     }
-
-
-    //void OnControllerColliderHit(ControllerColliderHit collision)
-    //{
-    //    print("hello");
-    //    if (collision.collider.CompareTag("Element"))
-    //    {
-    //        print("collision with element");
-    //        Destroy(collision.gameObject);
-    //        //collision.gameObject.SendMessage("PickUp");
-    //        numElements += 1;
-    //    }
-    //    if (collision.collider.CompareTag("Quark"))
-    //    {
-    //        print("collision with quark");
-    //        Destroy(collision.gameObject);
-    //        //collision.gameObject.SendMessage("PickUp");
-    //        numQuarks += 1;
-    //    }
-    //}
 }

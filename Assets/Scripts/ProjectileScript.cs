@@ -5,7 +5,6 @@ public class ProjectileScript : MonoBehaviour
 {
 
     public float MoveSpeed = 5.0f;
-
     public float frequency = 20.0f;  // Speed of sine movement
     public float magnitude = 0.5f;   // Size of sine movement
     private Vector3 axis;
