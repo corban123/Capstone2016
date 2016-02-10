@@ -4,20 +4,23 @@ using System.Collections;
 /*
  * A script for moving the character and rotating the FPC camera.
  */
-public class MoveScript : MonoBehaviour {
-	// TODO(@josh): move to CombatScript
+public class MoveScript : MonoBehaviour
+{
     public int numElements;
     public int numQuarks;
+	// TODO(@josh): Move to CombatScript
     public GameObject shot;
     Transform shotSpawn;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		// TODO(@josh): move to CombatScript
         shotSpawn = this.gameObject.transform.GetChild(0);
 	}
 
-	void Update () {
+	void Update () 
+	{
     }
 
 	// Rotate the first person camera by veritcalRotation degrees in the vertical direction.
@@ -40,7 +43,7 @@ public class MoveScript : MonoBehaviour {
         characterController.Move(speed);
     }
 
-	// TODO(@josh): move 
+	// Pick up elements and quarks on collision
     void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "Element")
