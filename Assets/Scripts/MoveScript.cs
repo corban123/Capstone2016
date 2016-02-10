@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+* A script for moving the character and rotating the FPC camera.
+*/
 public class MoveScript : MonoBehaviour
 {
     CombatScript combat;
@@ -10,25 +13,26 @@ public class MoveScript : MonoBehaviour
     {
         combat = gameObject.GetComponent<CombatScript>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
 
-        
+	void Update () 
+	{
     }
 
+	// Rotate the first person camera by veritcalRotation degrees in the vertical direction.
+	// Rotate the first person character by leftRight degrees in the horizontal direction.
     public void RotateCharacter(float verticalRotation, float leftRight)
     {
         Camera.main.transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
         transform.Rotate(0, leftRight, 0);
     }
 
+	// Move the given CharacterController by the vector speed.
     public void MoveCharacter(CharacterController characterController, Vector3 speed)
     {
         characterController.Move(speed);
     }
 
+	// Pick up elements and quarks on collision
     void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "Element")

@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
+
+/*
+ * A class for handling player inputs.
+ * 
+ * Also handles death from falling off level.
+ */
 [RequireComponent(typeof(CharacterController))]
 public class FirstPersonController : NetworkBehaviour 
 {
@@ -8,6 +14,7 @@ public class FirstPersonController : NetworkBehaviour
     public float mouseSensitivity = 5.0f;
     public float jumpSpeed = 10.0f;
     float leftRight;
+
     private float nextFire;
     public float fireRate;
 
@@ -26,24 +33,31 @@ public class FirstPersonController : NetworkBehaviour
     MoveScript move;
     CombatScript combat;
 
-    // Use this for initialization
+    // Initalize variables for this character
     void Start()
     {
         if (isLocalPlayer)
         {
+			// Initalize variables
             leftRight = 0;
+			verticalVelocity = 0;
+
+			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
             characterController.enabled = true;
+
+			// Enable the move script for this player
             move = GetComponent<MoveScript>();
             combat = GetComponent<CombatScript>();
             move.enabled = true;
-            verticalVelocity = 0;
+            
+			// Enable the camera and audio for this player
             FPSCam.enabled = true;
             audioListen.enabled = true;
         }
     }
 
-    // Update is called once per frame
+    // Handle player inputs and calculate movement variables
     void Update()
     {
         if (isLocalPlayer)
@@ -58,24 +72,27 @@ public class FirstPersonController : NetworkBehaviour
             float forwardSpeed = Input.GetAxis("Vertical") * movementSpeed;
             float sideSpeed = Input.GetAxis("Horizontal") * movementSpeed;
 
-            // Could add in double jump here
+            // Jump
             if (Input.GetButtonDown("Jump") && characterController.isGrounded)
             {
                 verticalVelocity = jumpSpeed;
             }
+
+			verticalVelocity += gravity * Time.deltaTime;
+
+			// TODO(@josh): move to CombatScript
             if (Input.GetButtonDown("Fire1") && Time.time > nextFire) //PC control
             {
                 nextFire = Time.time + fireRate;
                 combat.Shoot();
-
             }
-            verticalVelocity += gravity * Time.deltaTime;
 
             speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
             speed = transform.rotation * speed * Time.deltaTime;
         }
     }
 
+	// Rotate and Move in fixed intervals
     void FixedUpdate()
     {
         if (isLocalPlayer)
