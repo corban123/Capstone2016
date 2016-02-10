@@ -80,13 +80,6 @@ public class FirstPersonController : NetworkBehaviour
 
 			verticalVelocity += gravity * Time.deltaTime;
 
-			// TODO(@josh): move to CombatScript
-            if (Input.GetButtonDown("Fire1") && Time.time > nextFire) //PC control
-            {
-                nextFire = Time.time + fireRate;
-                combat.Shoot();
-            }
-
             speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
             speed = transform.rotation * speed * Time.deltaTime;
         }

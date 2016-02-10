@@ -35,18 +35,16 @@ public class MoveScript : MonoBehaviour
 	// Pick up elements and quarks on collision
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Element")
+        if (collision.tag == "Element" && combat.heldElement == null)
         {
+            combat.haveElement = true;
             print("picked up element");
             Destroy(collision.gameObject);
-            //collision.gameObject.SendMessage("PickUp");
-            combat.numElements += 1;
         }
         if (collision.tag == "Quark")
         {
             print("picked up quark");
             Destroy(collision.gameObject);
-            //collision.gameObject.SendMessage("PickUp");
             combat.numQuarks += 1;
         }
     }
