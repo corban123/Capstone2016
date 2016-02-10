@@ -344,8 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba123bf93525b54aad379f800587fa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
-  mouseSensitivity: 3
+  movementSpeed: 50
+  mouseSensitivity: 5
   jumpSpeed: 7
   fireRate: 0
   FPSCam: {fileID: 2047102}
@@ -435,6 +435,14 @@ Prefab:
       propertyPath: shot
       value: 
       objectReference: {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
+    - target: {fileID: 0}
+      propertyPath: movementSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: mouseSensitivity
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 108300}

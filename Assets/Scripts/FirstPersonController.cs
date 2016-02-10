@@ -5,9 +5,9 @@ using System.Collections;
 public class FirstPersonController : NetworkBehaviour 
 {
 
-    public float movementSpeed = 10.0f;
-    public float mouseSensitivity = 3.0f;
-    public float jumpSpeed = 7.0f;
+    public float movementSpeed = 50.0f;
+    public float mouseSensitivity = 5.0f;
+    public float jumpSpeed = 10.0f;
     float leftRight;
     private float nextFire;
     public float fireRate;
@@ -18,7 +18,7 @@ public class FirstPersonController : NetworkBehaviour
     float verticalRotation = 0;
     public float upDownRange = 60.0f;
 
-    float gravity = Physics.gravity.y / 2;
+    float gravity = Physics.gravity.y / 1.5f;
     float verticalVelocity;
 
     Vector3 speed = Vector3.zero;
