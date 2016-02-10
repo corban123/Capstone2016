@@ -24,7 +24,7 @@ public class FirstPersonController : NetworkBehaviour
     Vector3 speed = Vector3.zero;
 
     CharacterController characterController;
-    PlayerScript fpController;
+    MoveScript move;
 
     // Use this for initialization
     void Start()
@@ -34,8 +34,8 @@ public class FirstPersonController : NetworkBehaviour
             leftRight = 0;
             characterController = GetComponent<CharacterController>();
             characterController.enabled = true;
-            fpController = GetComponent<PlayerScript>();
-            fpController.enabled = true;
+            move = GetComponent<MoveScript>();
+            move.enabled = true;
             verticalVelocity = 0;
             FPSCam.enabled = true;
             audioListen.enabled = true;
@@ -65,7 +65,7 @@ public class FirstPersonController : NetworkBehaviour
             if (Input.GetButtonDown("Fire1") && Time.time > nextFire) //PC control
             {
                 nextFire = Time.time + fireRate;
-                fpController.Shoot();
+                move.Shoot();
 
             }
             verticalVelocity += gravity * Time.deltaTime;
@@ -79,8 +79,8 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            fpController.RotateCharacter(verticalRotation, leftRight);
-            fpController.MoveCharacter(characterController, speed);
+            move.RotateCharacter(verticalRotation, leftRight);
+            move.MoveCharacter(characterController, speed);
         }
     }
 }

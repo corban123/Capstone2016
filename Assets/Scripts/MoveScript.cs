@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerScript : MonoBehaviour {
+public class MoveScript : MonoBehaviour {
     public int numElements;
     public int numQuarks;
     public GameObject shot;
@@ -17,6 +17,7 @@ public class PlayerScript : MonoBehaviour {
 
         
     }
+
     public void RotateCharacter(float verticalRotation, float leftRight)
     {
         Camera.main.transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
