@@ -1,6 +1,7 @@
 ﻿﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 public class CombatScript : NetworkBehaviour
 {
     public GameObject shot;
@@ -9,17 +10,22 @@ public class CombatScript : NetworkBehaviour
     Transform shotSpawn;
     private float nextFire;
     public float fireRate;
-    public int numQuarks;
+    [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
     public bool haveElement;
     public GameObject heldElement; //This GameObject represents the current element held by the player, if the player is not holding an element set this value to null
+    private Text healthText;
 
     // Use this for initialization
     void Start () {
         haveElement = false;
         heldElement = null;
-        numQuarks = 0;
         shotSpawn = gameObject.transform.GetChild(0);
+        Debug.Log("Object" + GameObject.Find("HealthText").name);
+
+        healthText = GameObject.Find("HealthText").GetComponent<Text>();
+        SetHealthText();
     }
+    
 	
 	// Update is called once per frame
 	void Update () {
@@ -29,6 +35,15 @@ public class CombatScript : NetworkBehaviour
             CmdShoot();
         }
     }
+
+    void SetHealthText()
+    {
+        if (isLocalPlayer)
+        {
+            healthText.text = "Health" + numQuarks.ToString();
+        }
+    }
+
 
     //Will create a projectile based on what the player has available in the inventory
     [Command]
@@ -51,5 +66,33 @@ public class CombatScript : NetworkBehaviour
             instance = Instantiate(basicShot, shotSpawn.position, Camera.main.transform.rotation) as GameObject;
         }
         NetworkServer.Spawn(instance);
+    }
+
+    [Command]
+    void CmdTellServerWhoWasShot(string uniqueID)
+    {
+        GameObject go = GameObject.Find(uniqueID);
+        go.GetComponent<CombatScript>().DeductHealth();
+
+    }
+
+    void DeductHealth()
+    {
+        numQuarks = numQuarks / 2;
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag == "Bullet")
+        {
+            string uIdentity = this.transform.name;
+            CmdTellServerWhoWasShot(uIdentity);
+        }
+    }
+
+    void OnHealthChanged(int hlth)
+    {
+        numQuarks = hlth;
+        SetHealthText();
     }
 }

@@ -36,7 +36,6 @@ public class BoardGenerator : MonoBehaviour {
 			if (IS_DEBUG) {
 				PrintBoard (board1);
 				PrintBoard (board2);
-				print (NumSame (board1, board2));
 			}
 		}
 

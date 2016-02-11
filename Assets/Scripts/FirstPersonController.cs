@@ -49,6 +49,7 @@ public class FirstPersonController : NetworkBehaviour
 			// Enable the move script for this player
             move = GetComponent<MoveScript>();
             combat = GetComponent<CombatScript>();
+            combat.enabled = true;
             move.enabled = true;
             
 			// Enable the camera and audio for this player
