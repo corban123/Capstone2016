@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba123bf93525b54aad379f800587fa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 50
+  movementSpeed: 22
   mouseSensitivity: 5
   jumpSpeed: 7
   fireRate: 0
@@ -442,6 +442,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Name
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: movementSpeed
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

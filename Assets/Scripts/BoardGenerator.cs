@@ -7,25 +7,28 @@ using System.Linq;
  */
 public class BoardGenerator : MonoBehaviour {
 	private int THRESHOLD = 5;
-	private int TIME = 10;
+	private int TIME = 3;
 	private int MAX = 10;
 	private int BOARD_SIZE = 16;
 	private bool IS_DEBUG = true;
+
+	private int[,] DEFAULT_BOARD1 = { { 9, 0, 1, 15 }, { 7, 11, 3, 10 }, { 14, 5, 6, 12 }, { 8, 2, 4, 13 } };
+	private int[,] DEFAULT_BOARD2 = { { 11, 14, 4, 13 }, { 7, 6, 10, 15 }, { 5, 8, 0, 12 }, { 1, 9, 2, 3 } };
 
 	// Use this for initialization
 	void Start () {
 		CreateBoards ();
 	}
 
-	// Create boards until they are sufficiently different.
-	// If no solution is converged on by the time limit,
+	// Creates boards until they are sufficiently different.
+	// If no solution is converged on by the time limit (which rarely happens),
 	// default to prechosen boards.
 	void CreateBoards()
 	{
 		int same_factor = MAX;
 		int timeout = TIME;
-		int[,] board1;
-		int[,] board2;
+		int[,] board1 = {};
+		int[,] board2 = {};
 
 		while (same_factor >= THRESHOLD && timeout > 0) 
 		{
@@ -33,13 +36,18 @@ public class BoardGenerator : MonoBehaviour {
 			board2 = GenerateBoard ();
 			same_factor = NumSame (board1, board2);
 			timeout--;
-			if (IS_DEBUG) {
-				PrintBoard (board1);
-				PrintBoard (board2);
-			}
 		}
 
-		//TODO(@paige): make defaults
+		// Did not converge on a solution so use defaults
+		if (timeout <= 0) {
+			board1 = DEFAULT_BOARD1;
+			board2 = DEFAULT_BOARD2;
+		}
+
+		if (IS_DEBUG) {
+			PrintBoard (board1);
+			PrintBoard (board2);
+		}
 	}
 
 	// Print out a board

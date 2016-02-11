@@ -10,7 +10,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class FirstPersonController : NetworkBehaviour 
 {
-    public float movementSpeed = 50.0f;
+    public float movementSpeed = 23.0f;
     public float mouseSensitivity = 5.0f;
     public float jumpSpeed = 10.0f;
     float leftRight;
