@@ -28,6 +28,65 @@ ModelImporter:
     100040: CentralPlatform_Upper_Rim1
     100042: CentralPlatform_Upper_Rim2
     100044: //RootNode
+    100046: polySurface1
+    100048: polySurface10
+    100050: polySurface3
+    100052: polySurface4
+    100054: polySurface8
+    100056: pCube15
+    100058: pCube16
+    100060: pCube17
+    100062: pCube18
+    100064: pCube19
+    100066: pCube20
+    100068: pCube21
+    100070: pCube22
+    100072: pCube23
+    100074: pCube9
+    100076: pCylinder9
+    100078: transform5
+    100080: transform6
+    100082: polySurface11
+    100084: polySurface12
+    100086: polySurface13
+    100088: transform7
+    100090: polySurface14
+    100092: polySurface15
+    100094: transform8
+    100096: pCube24
+    100098: pCube25
+    100100: pCube26
+    100102: pCube27
+    100104: pCube28
+    100106: pCube29
+    100108: pCube30
+    100110: pCube31
+    100112: pCube32
+    100114: pCube33
+    100116: pCube34
+    100118: pCube35
+    100120: pCube36
+    100122: pCube37
+    100124: pCube38
+    100126: pCube39
+    100128: pCylinder10
+    100130: pCylinder11
+    100132: pCylinder12
+    100134: pCylinder5
+    100136: pCylinder6
+    100138: pCylinder7
+    100140: pCylinder8
+    100142: pPipe1
+    100144: pPipe2
+    100146: pPipe4
+    100148: pPipe5
+    100150: transform1
+    100152: transform10
+    100154: transform2
+    100156: transform3
+    100158: transform4
+    100160: transform9
+    100162: left
     400000: BasePlatform
     400002: BasePlatform_IslandLeft_Glass
     400004: BasePlatform_IslandLeft_Rim
@@ -51,6 +110,65 @@ ModelImporter:
     400040: CentralPlatform_Upper_Rim1
     400042: CentralPlatform_Upper_Rim2
     400044: //RootNode
+    400046: polySurface1
+    400048: polySurface10
+    400050: polySurface3
+    400052: polySurface4
+    400054: polySurface8
+    400056: pCube15
+    400058: pCube16
+    400060: pCube17
+    400062: pCube18
+    400064: pCube19
+    400066: pCube20
+    400068: pCube21
+    400070: pCube22
+    400072: pCube23
+    400074: pCube9
+    400076: pCylinder9
+    400078: transform5
+    400080: transform6
+    400082: polySurface11
+    400084: polySurface12
+    400086: polySurface13
+    400088: transform7
+    400090: polySurface14
+    400092: polySurface15
+    400094: transform8
+    400096: pCube24
+    400098: pCube25
+    400100: pCube26
+    400102: pCube27
+    400104: pCube28
+    400106: pCube29
+    400108: pCube30
+    400110: pCube31
+    400112: pCube32
+    400114: pCube33
+    400116: pCube34
+    400118: pCube35
+    400120: pCube36
+    400122: pCube37
+    400124: pCube38
+    400126: pCube39
+    400128: pCylinder10
+    400130: pCylinder11
+    400132: pCylinder12
+    400134: pCylinder5
+    400136: pCylinder6
+    400138: pCylinder7
+    400140: pCylinder8
+    400142: pPipe1
+    400144: pPipe2
+    400146: pPipe4
+    400148: pPipe5
+    400150: transform1
+    400152: transform10
+    400154: transform2
+    400156: transform3
+    400158: transform4
+    400160: transform9
+    400162: left
     2300000: BasePlatform_IslandLeft_Glass
     2300002: BasePlatform_IslandLeft_Rim
     2300004: BasePlatform_IslandRight_Glass
@@ -71,6 +189,42 @@ ModelImporter:
     2300034: CentralPlatform_Upper_Glass
     2300036: CentralPlatform_Upper_Rim1
     2300038: CentralPlatform_Upper_Rim2
+    2300040: polySurface10
+    2300042: polySurface3
+    2300044: polySurface4
+    2300046: polySurface8
+    2300048: pCube15
+    2300050: pCube16
+    2300052: pCube17
+    2300054: pCube18
+    2300056: pCube19
+    2300058: pCube20
+    2300060: pCube21
+    2300062: pCube22
+    2300064: pCube23
+    2300066: polySurface11
+    2300068: polySurface12
+    2300070: polySurface13
+    2300072: polySurface14
+    2300074: polySurface15
+    2300076: pCube24
+    2300078: pCube25
+    2300080: pCube26
+    2300082: pCube27
+    2300084: pCube28
+    2300086: pCube29
+    2300088: pCube30
+    2300090: pCube31
+    2300092: pCube32
+    2300094: pCube33
+    2300096: pCube34
+    2300098: pCube35
+    2300100: pCube36
+    2300102: pCube37
+    2300104: pCube38
+    2300106: pCube39
+    2300108: pPipe4
+    2300110: pPipe5
     3300000: BasePlatform_IslandLeft_Glass
     3300002: BasePlatform_IslandLeft_Rim
     3300004: BasePlatform_IslandRight_Glass
@@ -91,6 +245,42 @@ ModelImporter:
     3300034: CentralPlatform_Upper_Glass
     3300036: CentralPlatform_Upper_Rim1
     3300038: CentralPlatform_Upper_Rim2
+    3300040: polySurface10
+    3300042: polySurface3
+    3300044: polySurface4
+    3300046: polySurface8
+    3300048: pCube15
+    3300050: pCube16
+    3300052: pCube17
+    3300054: pCube18
+    3300056: pCube19
+    3300058: pCube20
+    3300060: pCube21
+    3300062: pCube22
+    3300064: pCube23
+    3300066: polySurface11
+    3300068: polySurface12
+    3300070: polySurface13
+    3300072: polySurface14
+    3300074: polySurface15
+    3300076: pCube24
+    3300078: pCube25
+    3300080: pCube26
+    3300082: pCube27
+    3300084: pCube28
+    3300086: pCube29
+    3300088: pCube30
+    3300090: pCube31
+    3300092: pCube32
+    3300094: pCube33
+    3300096: pCube34
+    3300098: pCube35
+    3300100: pCube36
+    3300102: pCube37
+    3300104: pCube38
+    3300106: pCube39
+    3300108: pPipe4
+    3300110: pPipe5
     4300000: CentralPlatform_Lower_Glass
     4300002: CentralPlatform_Lower_Rim
     4300004: CentralPlatform_Upper_Rim1
@@ -111,6 +301,42 @@ ModelImporter:
     4300034: CentralBridge_4
     4300036: BasePlatform_IslandLeft_Glass
     4300038: BasePlatform_IslandRight_Rim1
+    4300040: polySurface4
+    4300042: polySurface3
+    4300044: polySurface8
+    4300046: polySurface10
+    4300048: pCube15
+    4300050: pCube16
+    4300052: pCube17
+    4300054: pCube18
+    4300056: pCube19
+    4300058: pCube20
+    4300060: pCube21
+    4300062: pCube22
+    4300064: pCube23
+    4300066: polySurface11
+    4300068: polySurface12
+    4300070: polySurface13
+    4300072: polySurface14
+    4300074: polySurface15
+    4300076: pCube24
+    4300078: pCube25
+    4300080: pCube26
+    4300082: pCube27
+    4300084: pCube28
+    4300086: pCube29
+    4300088: pCube30
+    4300090: pCube31
+    4300092: pCube32
+    4300094: pCube33
+    4300096: pCube34
+    4300098: pCube35
+    4300100: pCube36
+    4300102: pCube37
+    4300104: pCube38
+    4300106: pCube39
+    4300108: pPipe4
+    4300110: pPipe5
     6400000: BasePlatform_IslandLeft_Glass
     6400002: BasePlatform_IslandLeft_Rim
     6400004: BasePlatform_IslandRight_Glass
@@ -131,6 +357,42 @@ ModelImporter:
     6400034: CentralPlatform_Upper_Glass
     6400036: CentralPlatform_Upper_Rim1
     6400038: CentralPlatform_Upper_Rim2
+    6400040: polySurface10
+    6400042: polySurface3
+    6400044: polySurface4
+    6400046: polySurface8
+    6400048: pCube15
+    6400050: pCube16
+    6400052: pCube17
+    6400054: pCube18
+    6400056: pCube19
+    6400058: pCube20
+    6400060: pCube21
+    6400062: pCube22
+    6400064: pCube23
+    6400066: polySurface11
+    6400068: polySurface12
+    6400070: polySurface13
+    6400072: polySurface14
+    6400074: polySurface15
+    6400076: pCube24
+    6400078: pCube25
+    6400080: pCube26
+    6400082: pCube27
+    6400084: pCube28
+    6400086: pCube29
+    6400088: pCube30
+    6400090: pCube31
+    6400092: pCube32
+    6400094: pCube33
+    6400096: pCube34
+    6400098: pCube35
+    6400100: pCube36
+    6400102: pCube37
+    6400104: pCube38
+    6400106: pCube39
+    6400108: pPipe4
+    6400110: pPipe5
     9500000: //RootNode
   materials:
     importMaterials: 1
