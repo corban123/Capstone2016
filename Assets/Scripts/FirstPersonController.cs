@@ -13,6 +13,8 @@ public class FirstPersonController : NetworkBehaviour
     public float movementSpeed = 23.0f;
     public float mouseSensitivity = 5.0f;
     public float jumpSpeed = 10.0f;
+    float forwardSpeed;
+    float sideSpeed;
     float leftRight;
 
     private float nextFire;
@@ -55,6 +57,9 @@ public class FirstPersonController : NetworkBehaviour
 			// Enable the camera and audio for this player
             FPSCam.enabled = true;
             audioListen.enabled = true;
+
+            forwardSpeed = 0;
+            sideSpeed = 0;
         }
     }
 
@@ -64,25 +69,22 @@ public class FirstPersonController : NetworkBehaviour
         if (isLocalPlayer)
         {
             // Rotation
-            leftRight = Input.GetAxis("Mouse X") * mouseSensitivity;
+            leftRight = Input.GetAxis("Mouse X") ;
 
             verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
-            verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
 
             // Movement
-            float forwardSpeed = Input.GetAxis("Vertical") * movementSpeed;
-            float sideSpeed = Input.GetAxis("Horizontal") * movementSpeed;
+             forwardSpeed = Input.GetAxis("Vertical");
+             sideSpeed = Input.GetAxis("Horizontal");
 
             // Jump
             if (Input.GetButtonDown("Jump") && characterController.isGrounded)
             {
                 verticalVelocity = jumpSpeed;
             }
+            verticalVelocity += gravity * Time.deltaTime;
 
-			verticalVelocity += gravity * Time.deltaTime;
 
-            speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
-            speed = transform.rotation * speed;
         }
     }
 
@@ -91,8 +93,24 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
+            leftRight = leftRight * mouseSensitivity;
+            verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
+
+            forwardSpeed = forwardSpeed * movementSpeed * Time.fixedDeltaTime;
+            sideSpeed = sideSpeed * movementSpeed * Time.fixedDeltaTime;
+
+
+            speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
+            speed = transform.rotation * speed;
+
+
             move.RotateCharacter(verticalRotation, leftRight);
-            move.MoveCharacter(characterController, speed*Time.fixedDeltaTime);
+            move.MoveCharacter(characterController, speed);
         }
+    }
+
+    void SetCursorState()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }
