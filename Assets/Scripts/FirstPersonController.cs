@@ -82,7 +82,7 @@ public class FirstPersonController : NetworkBehaviour
 			verticalVelocity += gravity * Time.deltaTime;
 
             speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
-            speed = transform.rotation * speed * Time.deltaTime;
+            speed = transform.rotation * speed;
         }
     }
 
@@ -92,7 +92,7 @@ public class FirstPersonController : NetworkBehaviour
         if (isLocalPlayer)
         {
             move.RotateCharacter(verticalRotation, leftRight);
-            move.MoveCharacter(characterController, speed);
+            move.MoveCharacter(characterController, speed*Time.fixedDeltaTime);
         }
     }
 }
