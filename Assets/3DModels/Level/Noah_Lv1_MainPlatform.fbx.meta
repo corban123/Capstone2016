@@ -87,6 +87,70 @@ ModelImporter:
     100158: transform4
     100160: transform9
     100162: left
+    100164: CentralPlatform_Upper_Glass2
+    100166: locator1
+    100168: pCube10
+    100170: pCube11
+    100172: pCube12
+    100174: pCube126
+    100176: pCube129
+    100178: pCube13
+    100180: pCube130
+    100182: pCube131
+    100184: pCube14
+    100186: pCylinder2
+    100188: pCylinder2 1
+    100190: pCylinder4
+    100192: polySurface16
+    100194: polySurface19
+    100196: polySurface20
+    100198: polySurface21
+    100200: polySurface23
+    100202: polySurface24
+    100204: polySurface25
+    100206: polySurface26
+    100208: polySurface27
+    100210: polySurface28
+    100212: polySurface29
+    100214: polySurface30
+    100216: polySurface31
+    100218: polySurface32
+    100220: polySurface33
+    100222: polySurface34
+    100224: polySurface35
+    100226: polySurface36
+    100228: polySurface37
+    100230: polySurface38
+    100232: polySurface39
+    100234: polySurface40
+    100236: polySurface41
+    100238: polySurface42
+    100240: polySurface43
+    100242: polySurface44
+    100244: polySurface45
+    100246: polySurface46
+    100248: polySurface47
+    100250: polySurface48
+    100252: polySurface49
+    100254: polySurface50
+    100256: polySurface51
+    100258: polySurface52
+    100260: polySurface53
+    100262: polySurface54
+    100264: polySurface55
+    100266: polySurface56
+    100268: polySurface57
+    100270: polySurface58
+    100272: transform11
+    100274: transform12
+    100276: transform13
+    100278: transform14
+    100280: transform15
+    100282: transform16
+    100284: transform17
+    100286: transform18
+    100288: transform19
+    100290: transform20
     400000: BasePlatform
     400002: BasePlatform_IslandLeft_Glass
     400004: BasePlatform_IslandLeft_Rim
@@ -169,6 +233,70 @@ ModelImporter:
     400158: transform4
     400160: transform9
     400162: left
+    400164: CentralPlatform_Upper_Glass2
+    400166: locator1
+    400168: pCube10
+    400170: pCube11
+    400172: pCube12
+    400174: pCube126
+    400176: pCube129
+    400178: pCube13
+    400180: pCube130
+    400182: pCube131
+    400184: pCube14
+    400186: pCylinder2
+    400188: pCylinder2 1
+    400190: pCylinder4
+    400192: polySurface16
+    400194: polySurface19
+    400196: polySurface20
+    400198: polySurface21
+    400200: polySurface23
+    400202: polySurface24
+    400204: polySurface25
+    400206: polySurface26
+    400208: polySurface27
+    400210: polySurface28
+    400212: polySurface29
+    400214: polySurface30
+    400216: polySurface31
+    400218: polySurface32
+    400220: polySurface33
+    400222: polySurface34
+    400224: polySurface35
+    400226: polySurface36
+    400228: polySurface37
+    400230: polySurface38
+    400232: polySurface39
+    400234: polySurface40
+    400236: polySurface41
+    400238: polySurface42
+    400240: polySurface43
+    400242: polySurface44
+    400244: polySurface45
+    400246: polySurface46
+    400248: polySurface47
+    400250: polySurface48
+    400252: polySurface49
+    400254: polySurface50
+    400256: polySurface51
+    400258: polySurface52
+    400260: polySurface53
+    400262: polySurface54
+    400264: polySurface55
+    400266: polySurface56
+    400268: polySurface57
+    400270: polySurface58
+    400272: transform11
+    400274: transform12
+    400276: transform13
+    400278: transform14
+    400280: transform15
+    400282: transform16
+    400284: transform17
+    400286: transform18
+    400288: transform19
+    400290: transform20
     2300000: BasePlatform_IslandLeft_Glass
     2300002: BasePlatform_IslandLeft_Rim
     2300004: BasePlatform_IslandRight_Glass
@@ -225,6 +353,47 @@ ModelImporter:
     2300106: pCube39
     2300108: pPipe4
     2300110: pPipe5
+    2300112: CentralPlatform_Upper_Glass2
+    2300114: polySurface16
+    2300116: polySurface19
+    2300118: polySurface20
+    2300120: polySurface21
+    2300122: polySurface23
+    2300124: polySurface24
+    2300126: polySurface25
+    2300128: polySurface26
+    2300130: polySurface27
+    2300132: polySurface28
+    2300134: polySurface29
+    2300136: polySurface30
+    2300138: polySurface31
+    2300140: polySurface32
+    2300142: polySurface33
+    2300144: polySurface34
+    2300146: polySurface35
+    2300148: polySurface36
+    2300150: polySurface37
+    2300152: polySurface38
+    2300154: polySurface39
+    2300156: polySurface40
+    2300158: polySurface41
+    2300160: polySurface42
+    2300162: polySurface43
+    2300164: polySurface44
+    2300166: polySurface45
+    2300168: polySurface46
+    2300170: polySurface47
+    2300172: polySurface48
+    2300174: polySurface49
+    2300176: polySurface50
+    2300178: polySurface51
+    2300180: polySurface52
+    2300182: polySurface53
+    2300184: polySurface54
+    2300186: polySurface55
+    2300188: polySurface56
+    2300190: polySurface57
+    2300192: polySurface58
     3300000: BasePlatform_IslandLeft_Glass
     3300002: BasePlatform_IslandLeft_Rim
     3300004: BasePlatform_IslandRight_Glass
@@ -281,6 +450,47 @@ ModelImporter:
     3300106: pCube39
     3300108: pPipe4
     3300110: pPipe5
+    3300112: CentralPlatform_Upper_Glass2
+    3300114: polySurface16
+    3300116: polySurface19
+    3300118: polySurface20
+    3300120: polySurface21
+    3300122: polySurface23
+    3300124: polySurface24
+    3300126: polySurface25
+    3300128: polySurface26
+    3300130: polySurface27
+    3300132: polySurface28
+    3300134: polySurface29
+    3300136: polySurface30
+    3300138: polySurface31
+    3300140: polySurface32
+    3300142: polySurface33
+    3300144: polySurface34
+    3300146: polySurface35
+    3300148: polySurface36
+    3300150: polySurface37
+    3300152: polySurface38
+    3300154: polySurface39
+    3300156: polySurface40
+    3300158: polySurface41
+    3300160: polySurface42
+    3300162: polySurface43
+    3300164: polySurface44
+    3300166: polySurface45
+    3300168: polySurface46
+    3300170: polySurface47
+    3300172: polySurface48
+    3300174: polySurface49
+    3300176: polySurface50
+    3300178: polySurface51
+    3300180: polySurface52
+    3300182: polySurface53
+    3300184: polySurface54
+    3300186: polySurface55
+    3300188: polySurface56
+    3300190: polySurface57
+    3300192: polySurface58
     4300000: CentralPlatform_Lower_Glass
     4300002: CentralPlatform_Lower_Rim
     4300004: CentralPlatform_Upper_Rim1
@@ -337,6 +547,47 @@ ModelImporter:
     4300106: pCube39
     4300108: pPipe4
     4300110: pPipe5
+    4300112: polySurface16
+    4300114: polySurface34
+    4300116: polySurface33
+    4300118: polySurface32
+    4300120: polySurface31
+    4300122: polySurface47
+    4300124: polySurface48
+    4300126: polySurface49
+    4300128: polySurface50
+    4300130: polySurface51
+    4300132: polySurface52
+    4300134: polySurface53
+    4300136: polySurface54
+    4300138: polySurface55
+    4300140: polySurface56
+    4300142: polySurface57
+    4300144: polySurface58
+    4300146: polySurface35
+    4300148: polySurface36
+    4300150: polySurface37
+    4300152: polySurface38
+    4300154: polySurface39
+    4300156: polySurface40
+    4300158: polySurface41
+    4300160: polySurface42
+    4300162: polySurface43
+    4300164: polySurface44
+    4300166: polySurface45
+    4300168: polySurface46
+    4300170: CentralPlatform_Upper_Glass2
+    4300172: polySurface20
+    4300174: polySurface30
+    4300176: polySurface29
+    4300178: polySurface28
+    4300180: polySurface27
+    4300182: polySurface26
+    4300184: polySurface25
+    4300186: polySurface24
+    4300188: polySurface23
+    4300190: polySurface19
+    4300192: polySurface21
     6400000: BasePlatform_IslandLeft_Glass
     6400002: BasePlatform_IslandLeft_Rim
     6400004: BasePlatform_IslandRight_Glass
@@ -393,6 +644,47 @@ ModelImporter:
     6400106: pCube39
     6400108: pPipe4
     6400110: pPipe5
+    6400112: CentralPlatform_Upper_Glass2
+    6400114: polySurface16
+    6400116: polySurface19
+    6400118: polySurface20
+    6400120: polySurface21
+    6400122: polySurface23
+    6400124: polySurface24
+    6400126: polySurface25
+    6400128: polySurface26
+    6400130: polySurface27
+    6400132: polySurface28
+    6400134: polySurface29
+    6400136: polySurface30
+    6400138: polySurface31
+    6400140: polySurface32
+    6400142: polySurface33
+    6400144: polySurface34
+    6400146: polySurface35
+    6400148: polySurface36
+    6400150: polySurface37
+    6400152: polySurface38
+    6400154: polySurface39
+    6400156: polySurface40
+    6400158: polySurface41
+    6400160: polySurface42
+    6400162: polySurface43
+    6400164: polySurface44
+    6400166: polySurface45
+    6400168: polySurface46
+    6400170: polySurface47
+    6400172: polySurface48
+    6400174: polySurface49
+    6400176: polySurface50
+    6400178: polySurface51
+    6400180: polySurface52
+    6400182: polySurface53
+    6400184: polySurface54
+    6400186: polySurface55
+    6400188: polySurface56
+    6400190: polySurface57
+    6400192: polySurface58
     9500000: //RootNode
   materials:
     importMaterials: 1
