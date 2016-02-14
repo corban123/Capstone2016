@@ -12,7 +12,7 @@ public class FirstPersonController : NetworkBehaviour
 {
     public float movementSpeed = 23.0f;
     public float mouseSensitivity = 5.0f;
-    public float jumpSpeed = 10.0f;
+    public float jumpSpeed = 2.0f;
     float forwardSpeed;
     float sideSpeed;
     float leftRight;
@@ -80,7 +80,7 @@ public class FirstPersonController : NetworkBehaviour
             // Jump
             if (Input.GetButtonDown("Jump") && characterController.isGrounded)
             {
-                verticalVelocity = jumpSpeed;
+                verticalVelocity = jumpSpeed ;
             }
             verticalVelocity += gravity * Time.deltaTime;
 
