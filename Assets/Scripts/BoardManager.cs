@@ -12,9 +12,6 @@ public class BoardManager : NetworkBehaviour {
 
 	BoardGenerator generator;
 
-	Board board1;
-	Board board2;
-
 	void Start () {
 		// Generate the boards
 		generator = GetComponent<BoardGenerator> ();

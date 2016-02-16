@@ -6,14 +6,14 @@ using System.Collections;
 /*
  * Board object for storing board, scoring, and printing.
  */
-public class Board : NetworkBehaviour {
+public class BoardScript : NetworkBehaviour {
 	private int[,] board;
 	private bool[,] scored;
 	private Text boardText;
 
 	void Start() {
-		this.scored = new bool[4, 4];
-		this.boardText = GameObject.Find("BoardText").GetComponent<Text>();
+		scored = new bool[4, 4];
+		boardText = GameObject.Find("BoardText").GetComponent<Text>();
 	}
 
 
