@@ -27,6 +27,7 @@ public class FirstPersonController : NetworkBehaviour
     public float upDownRange = 60.0f;
 
     float gravity = Physics.gravity.y / 1.5f;
+	bool jump = false;
     float verticalVelocity;
 
     Vector3 speed = Vector3.zero;
@@ -77,12 +78,11 @@ public class FirstPersonController : NetworkBehaviour
              sideSpeed = Input.GetAxis("Horizontal");
 
             // Jump
-            if (Input.GetButtonDown("Jump") && characterController.isGrounded)
-            {
-                verticalVelocity = jumpSpeed ;
-            }
-
-
+			if (Input.GetButtonDown ("Jump") && characterController.isGrounded) {
+				jump = true;
+			} else {
+				jump = false;
+			}
         }
     }
 
@@ -102,6 +102,10 @@ public class FirstPersonController : NetworkBehaviour
 
             speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
             speed = transform.rotation * speed;
+
+			if (jump) {
+				verticalVelocity = jumpSpeed;
+			}
 
 			verticalVelocity += gravity * Time.fixedDeltaTime;
 
