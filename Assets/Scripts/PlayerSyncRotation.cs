@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.Networking;
 using System.Collections.Generic;
 
-public class Player_SyncRotation : NetworkBehaviour {
+public class PlayerSyncRotation : NetworkBehaviour {
 
 	[SyncVar (hook = "OnPlayerRotSynced")] private float syncPlayerRotation;
 	[SyncVar (hook = "OnCamRotSynced")] private float syncCamRotation;
