@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 /*
@@ -10,25 +10,22 @@ public class BoardGenerator : MonoBehaviour {
 	private int TIME = 3;
 	private int MAX = 10;
 	private int BOARD_SIZE = 16;
-	private bool IS_DEBUG = true;
 
 	private int[,] DEFAULT_BOARD1 = { { 9, 0, 1, 15 }, { 7, 11, 3, 10 }, { 14, 5, 6, 12 }, { 8, 2, 4, 13 } };
 	private int[,] DEFAULT_BOARD2 = { { 11, 14, 4, 13 }, { 7, 6, 10, 15 }, { 5, 8, 0, 12 }, { 1, 9, 2, 3 } };
 
-	// Use this for initialization
-	void Start () {
-		CreateBoards ();
-	}
 
 	// Creates boards until they are sufficiently different.
 	// If no solution is converged on by the time limit (which rarely happens),
 	// default to prechosen boards.
-	void CreateBoards()
+	// Returns a Tuple of 2d arrays that represent boards
+	public List<int[,]> CreateBoards()
 	{
 		int same_factor = MAX;
 		int timeout = TIME;
-		int[,] board1 = {};
-		int[,] board2 = {};
+		int [,] board1 = {};
+		int [,] board2 = {};
+		List<int[,]> return_list = new List<int[,]>();
 
 		while (same_factor >= THRESHOLD && timeout > 0) 
 		{
@@ -44,10 +41,10 @@ public class BoardGenerator : MonoBehaviour {
 			board2 = DEFAULT_BOARD2;
 		}
 
-		if (IS_DEBUG) {
-			PrintBoard (board1);
-			PrintBoard (board2);
-		}
+		return_list.Add(board1);
+		return_list.Add(board2);
+
+		return return_list;
 	}
 
 	// Print out a board
