@@ -30,13 +30,6 @@ public class Board {
 		return false;
 	}
 
-	// Prints out board for debugging.
-	// Note that when this is printed only first two lines are seen
-	// unless you click on the message.
-	public void printBoard () {
-		print(boardText);
-	}
-
 	// @Override prints board results.
 	// includes '-' if element has been collected.
 	public override string ToString () {
@@ -56,5 +49,9 @@ public class Board {
 			result += "\n";
 		}
 		return result;
+	}
+
+	public string getBoardText() {
+		return boardText;
 	}
 }

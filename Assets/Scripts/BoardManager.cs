@@ -23,8 +23,8 @@ public class BoardManager : NetworkBehaviour {
 		board2 = new Board (boards.ElementAt(1));
 
 		if (IS_DEBUG) {
-			board1.printBoard ();
-			board2.printBoard ();
+			print (board1.getBoardText ());
+			print (board2.getBoardText ());
 		}
 	}
 	
