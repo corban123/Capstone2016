@@ -382,7 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 22
   mouseSensitivity: 5
-  jumpSpeed: 3
+  jumpSpeed: 2
   fireRate: 0
   FPSCam: {fileID: 2059012}
   audioListen: {fileID: 8186674}
@@ -449,7 +449,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: jumpSpeed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -107,7 +107,7 @@ public class FirstPersonController : NetworkBehaviour
 				verticalVelocity = jumpSpeed;
 			}
 
-			verticalVelocity += gravity * Time.fixedDeltaTime;
+			verticalVelocity += gravity * Time.fixedDeltaTime * 0.5f;
 
             move.RotateCharacter(verticalRotation, leftRight);
             move.MoveCharacter(characterController, speed);
