@@ -53,17 +53,17 @@ public class CombatScript : NetworkBehaviour
         if(numQuarks > 0)
         {
             numQuarks--;
-            instance = Instantiate(shot, shotSpawn.position, Camera.main.transform.rotation) as GameObject;
+            instance = Instantiate(shot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
         }
         else if(haveElement)
         {
-            instance = Instantiate(elementShot, shotSpawn.position, Camera.main.transform.rotation) as GameObject;
+            instance = Instantiate(elementShot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
             haveElement = false;
             heldElement = null; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
         }
         else
         {
-            instance = Instantiate(basicShot, shotSpawn.position, Camera.main.transform.rotation) as GameObject;
+            instance = Instantiate(basicShot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
         }
         NetworkServer.Spawn(instance);
     }
