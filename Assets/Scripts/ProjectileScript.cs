@@ -1,7 +1,7 @@
 ﻿﻿using UnityEngine;
 using System.Collections;
-
-public class ProjectileScript : MonoBehaviour
+using UnityEngine.Networking;
+public class ProjectileScript : NetworkBehaviour
 {
 
     public float MoveSpeed = 5.0f;
@@ -44,7 +44,9 @@ public class ProjectileScript : MonoBehaviour
     {
        //Destroy the projectile if it hits something
        if(coll.gameObject != this.gameObject)
-        Destroy(this.gameObject);
+        {
+            Destroy(this.gameObject);
+        }
     }
 
 
