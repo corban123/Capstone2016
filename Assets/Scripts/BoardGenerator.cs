@@ -47,19 +47,6 @@ public class BoardGenerator : MonoBehaviour {
 		return return_list;
 	}
 
-	// Print out a board
-	void PrintBoard(int[,] board)
-	{
-		string result = "";
-		for (int i = 0; i < 4; i++) {
-			for (int j = 0; j < 4; j++) {
-				result += (board [i, j] + " ");
-			}
-			result += "; ";
-		}
-		print(result);
-	}
-
 	// Generate a single bingo board by randomly arranging elements
 	private int[,] GenerateBoard ()
 	{
