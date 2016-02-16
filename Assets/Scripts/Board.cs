@@ -1,29 +1,39 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.UI;
 using System.Collections;
 
 /*
  * Board object for storing board, scoring, and printing.
  */
-public class Board {
+public class Board : NetworkBehaviour {
 	private int[,] board;
 	private bool[,] scored;
-	private string boardText;
+	private Text boardText;
 
-	// Constructor takes a 2d array of elements
-	public Board (int[,] board) {
-		this.board = board;
+	void Start() {
 		this.scored = new bool[4, 4];
-		this.boardText = ToString();
+		this.boardText = GameObject.Find("BoardText").GetComponent<Text>();
+	}
+
+
+	// Set the board value
+	public void SetBoard (int[,] board) {
+		this.board = board;
+		SetBoardText ();
 	}
 
 	// Marks an element as scored on this board
 	// Returns whether or not the score causes this board to win.
 	public bool score (int element) {
 		// Find the element on the board
+		int[] coordinates = GetCoordinates(element);
 
 		// Mark the element as scored in the scored bitmap
+		scored[coordinates[0], coordinates[1]] = true;
 
 		// Change Board text
+		SetBoardText();
 
 		// Check whether the board is a winner
 
@@ -51,7 +61,23 @@ public class Board {
 		return result;
 	}
 
-	public string getBoardText() {
-		return boardText;
+	// Get coordinates of a value in the board
+	private int[] GetCoordinates(int val) {
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				if (board[i,j] == val) {
+					int[] result = { i, j };
+					return result;
+				}
+			}
+		}
+		return null;
+	}
+
+	private void SetBoardText() {
+		if (isLocalPlayer)
+		{
+			boardText.text = "Bingo Board\n" + ToString();
+		}
 	}
 }

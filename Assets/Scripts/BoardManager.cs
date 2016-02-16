@@ -19,15 +19,5 @@ public class BoardManager : NetworkBehaviour {
 		// Generate the boards
 		generator = GetComponent<BoardGenerator> ();
 		List<int[,]> boards = generator.CreateBoards();
-		board1 = new Board (boards.ElementAt(0));
-		board2 = new Board (boards.ElementAt(1));
-
-		if (IS_DEBUG) {
-			print (board1.getBoardText ());
-			print (board2.getBoardText ());
-		}
 	}
-	
-	// Send a board to each player
-		
 }
