@@ -71,7 +71,6 @@ public class FirstPersonController : NetworkBehaviour
             // Rotation
             leftRight = Input.GetAxis("Mouse X") ;
 
-            verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
 
             // Movement
              forwardSpeed = Input.GetAxis("Vertical");
@@ -82,7 +81,6 @@ public class FirstPersonController : NetworkBehaviour
             {
                 verticalVelocity = jumpSpeed ;
             }
-            verticalVelocity += gravity * Time.deltaTime;
 
 
         }
@@ -94,6 +92,8 @@ public class FirstPersonController : NetworkBehaviour
         if (isLocalPlayer)
         {
             leftRight = leftRight * mouseSensitivity;
+			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+
             verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
 
             forwardSpeed = forwardSpeed * movementSpeed * Time.fixedDeltaTime;
@@ -103,6 +103,7 @@ public class FirstPersonController : NetworkBehaviour
             speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
             speed = transform.rotation * speed;
 
+			verticalVelocity += gravity * Time.fixedDeltaTime;
 
             move.RotateCharacter(verticalRotation, leftRight);
             move.MoveCharacter(characterController, speed);
