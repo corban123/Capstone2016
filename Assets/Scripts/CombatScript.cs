@@ -1,4 +1,4 @@
-﻿﻿using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -14,16 +14,19 @@ public class CombatScript : NetworkBehaviour
     public bool haveElement;
     public GameObject heldElement; //This GameObject represents the current element held by the player, if the player is not holding an element set this value to null
     private Text healthText;
+	[SerializeField] AudioClip shoot;
+	private AudioSource source;
 
     // Use this for initialization
     void Start () {
         haveElement = false;
         heldElement = null;
         shotSpawn = gameObject.transform.GetChild(0);
-        Debug.Log("Object" + GameObject.Find("HealthText").name);
 
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
         SetHealthText();
+
+		source = gameObject.GetComponent<AudioSource> ();
     }
     
 	
@@ -32,6 +35,8 @@ public class CombatScript : NetworkBehaviour
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire && isLocalPlayer) //PC control
         {
             nextFire = Time.time + fireRate;
+
+
             CmdShoot();
         }
     }
@@ -65,6 +70,8 @@ public class CombatScript : NetworkBehaviour
         {
             instance = Instantiate(basicShot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
         }
+		source.clip = shoot;
+		source.Play ();
         NetworkServer.Spawn(instance);
     }
 

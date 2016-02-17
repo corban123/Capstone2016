@@ -7,11 +7,13 @@ using System.Collections;
 public class MoveScript : MonoBehaviour
 {
     CombatScript combat;
-
+	AudioSource source;
+	[SerializeField] AudioClip pickUp;
 	// Use this for initialization
 	void Start ()
     {
         combat = gameObject.GetComponent<CombatScript>();
+		source = gameObject.GetComponent<AudioSource> ();
 	}
 
 	void Update () 
@@ -47,5 +49,7 @@ public class MoveScript : MonoBehaviour
             Destroy(collision.gameObject);
             combat.numQuarks += 1;
         }
+		source.clip = pickUp;
+		source.Play ();
     }
 }
