@@ -28,7 +28,7 @@ public class FirstPersonController : NetworkBehaviour
 
     float gravity = Physics.gravity.y / 1.5f;
 	bool jump = false;
-    float verticalVelocity;
+    public float verticalVelocity;
 
     Vector3 speed = Vector3.zero;
 
@@ -93,14 +93,21 @@ public class FirstPersonController : NetworkBehaviour
             sideSpeed = sideSpeed * movementSpeed * Time.fixedDeltaTime;
 
 
-            speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
-            speed = transform.rotation * speed;
-
+			//Jump
 			if (jump) {
 				verticalVelocity = jumpSpeed;
 			}
+			//Turn off vertical velocities decrease while on the ground
+			if(!characterController.isGrounded)
+				verticalVelocity += gravity * Time.fixedDeltaTime * 0.5f;
 
-			verticalVelocity += gravity * Time.fixedDeltaTime * 0.5f;
+            speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
+            speed = transform.rotation * speed;
+
+
+
+
+
 
             move.RotateCharacter(verticalRotation, leftRight);
             move.MoveCharacter(characterController, speed);
