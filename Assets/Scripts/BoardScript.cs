@@ -37,7 +37,7 @@ public class BoardScript : NetworkBehaviour {
 
 		// Check whether the board is a winner
 
-		return false;
+		return isWin(coordinates[0], coordinates[1]);
 	}
 
 	// @Override prints board results.
@@ -79,5 +79,23 @@ public class BoardScript : NetworkBehaviour {
 		{
 			boardText.text = "Bingo Board\n" + ToString();
 		}
+	}
+
+	// Returns whether or not marking off the element at (x, y) causes a player to win.
+	private bool isWin(int x, int y) {
+		bool win_horizontal = true;
+		bool win_vertical = true;
+		bool win_diagonal_back = true;
+		bool win_diagonal_forward = true;
+
+		// Check for wins
+		for (int i = 0; i < 4; i++) {
+			win_horizontal = win_horizontal && scored [i, y];
+			win_vertical = win_vertical && scored[x, i];
+			win_diagonal_forward = win_diagonal_forward && scored [i, i];
+			win_diagonal_back = win_diagonal_back && scored [i, 3 - i];
+		}
+				
+		return win_horizontal || win_vertical || win_diagonal_back || win_diagonal_forward;
 	}
 }
