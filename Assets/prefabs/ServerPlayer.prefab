@@ -19,6 +19,9 @@ GameObject:
   - 114: {fileID: 11430250}
   - 114: {fileID: 11450284}
   - 114: {fileID: 11467988}
+  - 114: {fileID: 11412364}
+  - 114: {fileID: 11400720}
+  - 114: {fileID: 11481896}
   m_Layer: 0
   m_Name: ServerPlayer
   m_TagString: Untagged
@@ -289,7 +292,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &11409888
+--- !u!114 &11400720
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -297,9 +300,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 134866}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f09a1765865c4d14a1b393bfb71b8c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTransform: {fileID: 417578}
+  lerpRate: 30
+--- !u!114 &11409888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134866}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c56e55dc3ad26d4f9dfaa01e5ff89f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11412364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eec8a68e481c4efb92204b7aafa4692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPSCam: {fileID: 2059012}
+  audioListen: {fileID: 8186674}
 --- !u!114 &11430250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -381,13 +410,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53314cb8806f844c3a3cd9f4d5513c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11498226
+--- !u!114 &11481896
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134866}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1622c0c84ef1946d7b8d5648fd4286d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 417578}
+  camTransform: {fileID: 487318}
+  useHistoricalInterpolation: 0
+--- !u!114 &11498226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134866}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba123bf93525b54aad379f800587fa6, type: 3}
   m_Name: 
@@ -427,7 +470,7 @@ CharacterController:
   m_GameObject: {fileID: 134866}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Height: 1.8
   m_Radius: 0.5
@@ -462,6 +505,34 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: jumpSpeed
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 417578}
+    - target: {fileID: 0}
+      propertyPath: camTransform
+      value: 
+      objectReference: {fileID: 487318}
+    - target: {fileID: 0}
+      propertyPath: myTransform
+      value: 
+      objectReference: {fileID: 417578}
+    - target: {fileID: 0}
+      propertyPath: FPSCam
+      value: 
+      objectReference: {fileID: 2059012}
+    - target: {fileID: 0}
+      propertyPath: audioListen
+      value: 
+      objectReference: {fileID: 8186674}
+    - target: {fileID: 0}
+      propertyPath: lerpRate
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

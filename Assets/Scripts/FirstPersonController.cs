@@ -49,15 +49,9 @@ public class FirstPersonController : NetworkBehaviour
             characterController = GetComponent<CharacterController>();
             characterController.enabled = true;
 
-			// Enable the move script for this player
+			// Grab Move and Combat scripts for player
             move = GetComponent<MoveScript>();
             combat = GetComponent<CombatScript>();
-            combat.enabled = true;
-            move.enabled = true;
-            
-			// Enable the camera and audio for this player
-            FPSCam.enabled = true;
-            audioListen.enabled = true;
 
             forwardSpeed = 0;
             sideSpeed = 0;
@@ -69,8 +63,6 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            // Rotation
-            leftRight = Input.GetAxis("Mouse X") ;
 
 
             // Movement
@@ -91,7 +83,8 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            leftRight = leftRight * mouseSensitivity;
+			// Rotation
+			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity;
 			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
 
             verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
