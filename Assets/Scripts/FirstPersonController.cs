@@ -17,6 +17,8 @@ public class FirstPersonController : NetworkBehaviour
     float sideSpeed;
     float leftRight;
 
+	private float reallySmallNumber = -0.0001f;
+
     private float nextFire;
     public float fireRate;
 
@@ -92,25 +94,24 @@ public class FirstPersonController : NetworkBehaviour
             forwardSpeed = forwardSpeed * movementSpeed * Time.fixedDeltaTime;
             sideSpeed = sideSpeed * movementSpeed * Time.fixedDeltaTime;
 
-
 			//Jump
 			if (jump) {
 				verticalVelocity = jumpSpeed;
 			}
-			//Turn off vertical velocities decrease while on the ground
-			if(!characterController.isGrounded)
+			else if (characterController.isGrounded) {
+				// This accounts for the slight upward shift that occurs when the collision system moves the two 
+				// colliders apart. Otherwise isGrounded returns false sometimes when the character is just standing.
+				verticalVelocity = reallySmallNumber;
+			}
+			else {
 				verticalVelocity += gravity * Time.fixedDeltaTime * 0.5f;
+			}
 
-            speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
-            speed = transform.rotation * speed;
+			speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
+			speed = transform.rotation * speed;
 
-
-
-
-
-
+			move.MoveCharacter(characterController, speed);
             move.RotateCharacter(verticalRotation, leftRight);
-            move.MoveCharacter(characterController, speed);
         }
     }
 
