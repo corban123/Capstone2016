@@ -43,6 +43,8 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
+			SetCursorState ();
+
 			// Initalize variables
             leftRight = 0;
 			verticalVelocity = 0;
@@ -65,8 +67,6 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-
-
             // Movement
              forwardSpeed = Input.GetAxis("Vertical");
              sideSpeed = Input.GetAxis("Horizontal");
@@ -115,8 +115,10 @@ public class FirstPersonController : NetworkBehaviour
         }
     }
 
+	// Lock the cursor to the center of the game window
     void SetCursorState()
     {
-        Cursor.lockState = CursorLockMode.Confined;
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
     }
 }
