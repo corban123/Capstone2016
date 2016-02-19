@@ -17,7 +17,7 @@ public class FirstPersonController : NetworkBehaviour
     float sideSpeed;
     float leftRight;
 
-	private float reallySmallNumber = -0.0001f;
+	private float reallySmallNumber = -0.25f;
 
     private float nextFire;
     public float fireRate;
