@@ -512,14 +512,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba123bf93525b54aad379f800587fa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 25
-  mouseSensitivity: 5
-  jumpSpeed: 2
-  fireRate: 0
   FPSCam: {fileID: 2059012}
   audioListen: {fileID: 8186674}
+  movementSpeed: 25
+  mouseSensitivity: 5
+  jumpSpeed: 15
   upDownRange: 60
-  verticalVelocity: 0
+  fireRate: 0
 --- !u!124 &12410952
 Behaviour:
   m_ObjectHideFlags: 1
@@ -582,7 +581,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: jumpSpeed
-      value: 2
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
