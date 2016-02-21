@@ -328,6 +328,45 @@ ModelImporter:
     100640: transform22 1
     100642: transform23
     100644: transform23 1
+    100646: polySurface150
+    100648: polySurface150 1
+    100650: polySurface151
+    100652: polySurface151 1
+    100654: polySurface152
+    100656: polySurface152 1
+    100658: polySurface153
+    100660: polySurface153 1
+    100662: group
+    100664: pasted__BasePlatform
+    100666: pasted__BasePlatform1
+    100668: pasted__locator1
+    100670: pasted__locator1 1
+    100672: pasted__locator2
+    100674: pasted__locator2 1
+    100676: pasted__polySurface49
+    100678: pasted__polySurface49 1
+    100680: pasted__polySurface49 2
+    100682: pasted__polySurface49 3
+    100684: pasted__polySurface51
+    100686: pasted__polySurface51 1
+    100688: pasted__polySurface51 2
+    100690: pasted__polySurface51 3
+    100692: pasted__polySurface55
+    100694: pasted__polySurface55 1
+    100696: pasted__polySurface55 2
+    100698: pasted__polySurface55 3
+    100700: pasted__polySurface56
+    100702: pasted__polySurface56 1
+    100704: pasted__polySurface57
+    100706: pasted__polySurface57 1
+    100708: pasted__polySurface58
+    100710: pasted__polySurface58 1
+    100712: polySurface154
+    100714: polySurface154 1
+    100716: polySurface155
+    100718: polySurface155 1
+    100720: polySurface156
+    100722: polySurface156 1
     400000: BasePlatform
     400002: BasePlatform_IslandLeft_Glass
     400004: BasePlatform_IslandLeft_Rim
@@ -651,6 +690,45 @@ ModelImporter:
     400640: transform22 1
     400642: transform23
     400644: transform23 1
+    400646: polySurface150
+    400648: polySurface150 1
+    400650: polySurface151
+    400652: polySurface151 1
+    400654: polySurface152
+    400656: polySurface152 1
+    400658: polySurface153
+    400660: polySurface153 1
+    400662: group
+    400664: pasted__BasePlatform
+    400666: pasted__BasePlatform1
+    400668: pasted__locator1
+    400670: pasted__locator1 1
+    400672: pasted__locator2
+    400674: pasted__locator2 1
+    400676: pasted__polySurface49
+    400678: pasted__polySurface49 1
+    400680: pasted__polySurface49 2
+    400682: pasted__polySurface49 3
+    400684: pasted__polySurface51
+    400686: pasted__polySurface51 1
+    400688: pasted__polySurface51 2
+    400690: pasted__polySurface51 3
+    400692: pasted__polySurface55
+    400694: pasted__polySurface55 1
+    400696: pasted__polySurface55 2
+    400698: pasted__polySurface55 3
+    400700: pasted__polySurface56
+    400702: pasted__polySurface56 1
+    400704: pasted__polySurface57
+    400706: pasted__polySurface57 1
+    400708: pasted__polySurface58
+    400710: pasted__polySurface58 1
+    400712: polySurface154
+    400714: polySurface154 1
+    400716: polySurface155
+    400718: polySurface155 1
+    400720: polySurface156
+    400722: polySurface156 1
     2300000: BasePlatform_IslandLeft_Glass
     2300002: BasePlatform_IslandLeft_Rim
     2300004: BasePlatform_IslandRight_Glass
@@ -900,6 +978,38 @@ ModelImporter:
     2300492: polySurface98
     2300494: pPipe4 1
     2300496: pPipe5 1
+    2300498: polySurface150
+    2300500: polySurface150 1
+    2300502: polySurface151
+    2300504: polySurface151 1
+    2300506: polySurface152
+    2300508: polySurface152 1
+    2300510: polySurface153
+    2300512: polySurface153 1
+    2300514: pasted__polySurface49
+    2300516: pasted__polySurface49 1
+    2300518: pasted__polySurface49 2
+    2300520: pasted__polySurface49 3
+    2300522: pasted__polySurface51
+    2300524: pasted__polySurface51 1
+    2300526: pasted__polySurface51 2
+    2300528: pasted__polySurface51 3
+    2300530: pasted__polySurface55
+    2300532: pasted__polySurface55 1
+    2300534: pasted__polySurface55 2
+    2300536: pasted__polySurface55 3
+    2300538: pasted__polySurface56
+    2300540: pasted__polySurface56 1
+    2300542: pasted__polySurface57
+    2300544: pasted__polySurface57 1
+    2300546: pasted__polySurface58
+    2300548: pasted__polySurface58 1
+    2300550: polySurface154
+    2300552: polySurface154 1
+    2300554: polySurface155
+    2300556: polySurface155 1
+    2300558: polySurface156
+    2300560: polySurface156 1
     3300000: BasePlatform_IslandLeft_Glass
     3300002: BasePlatform_IslandLeft_Rim
     3300004: BasePlatform_IslandRight_Glass
@@ -1149,6 +1259,38 @@ ModelImporter:
     3300492: polySurface98
     3300494: pPipe4 1
     3300496: pPipe5 1
+    3300498: polySurface150
+    3300500: polySurface150 1
+    3300502: polySurface151
+    3300504: polySurface151 1
+    3300506: polySurface152
+    3300508: polySurface152 1
+    3300510: polySurface153
+    3300512: polySurface153 1
+    3300514: pasted__polySurface49
+    3300516: pasted__polySurface49 1
+    3300518: pasted__polySurface49 2
+    3300520: pasted__polySurface49 3
+    3300522: pasted__polySurface51
+    3300524: pasted__polySurface51 1
+    3300526: pasted__polySurface51 2
+    3300528: pasted__polySurface51 3
+    3300530: pasted__polySurface55
+    3300532: pasted__polySurface55 1
+    3300534: pasted__polySurface55 2
+    3300536: pasted__polySurface55 3
+    3300538: pasted__polySurface56
+    3300540: pasted__polySurface56 1
+    3300542: pasted__polySurface57
+    3300544: pasted__polySurface57 1
+    3300546: pasted__polySurface58
+    3300548: pasted__polySurface58 1
+    3300550: polySurface154
+    3300552: polySurface154 1
+    3300554: polySurface155
+    3300556: polySurface155 1
+    3300558: polySurface156
+    3300560: polySurface156 1
     4300000: CentralPlatform_Lower_Glass
     4300002: CentralPlatform_Lower_Rim
     4300004: CentralPlatform_Upper_Rim1
@@ -1398,6 +1540,38 @@ ModelImporter:
     4300492: pCube145
     4300494: pCube146
     4300496: pCube147
+    4300498: polySurface150
+    4300500: polySurface152
+    4300502: polySurface151
+    4300504: polySurface153
+    4300506: polySurface150
+    4300508: polySurface152
+    4300510: polySurface151
+    4300512: polySurface153
+    4300514: polySurface154
+    4300516: polySurface155
+    4300518: polySurface156
+    4300520: polySurface154
+    4300522: polySurface155
+    4300524: polySurface156
+    4300526: pasted__polySurface49
+    4300528: pasted__polySurface51
+    4300530: pasted__polySurface55
+    4300532: pasted__polySurface49
+    4300534: pasted__polySurface51
+    4300536: pasted__polySurface55
+    4300538: pasted__polySurface56
+    4300540: pasted__polySurface57
+    4300542: pasted__polySurface58
+    4300544: pasted__polySurface49
+    4300546: pasted__polySurface51
+    4300548: pasted__polySurface55
+    4300550: pasted__polySurface49
+    4300552: pasted__polySurface51
+    4300554: pasted__polySurface55
+    4300556: pasted__polySurface56
+    4300558: pasted__polySurface57
+    4300560: pasted__polySurface58
     6400000: BasePlatform_IslandLeft_Glass
     6400002: BasePlatform_IslandLeft_Rim
     6400004: BasePlatform_IslandRight_Glass
@@ -1647,6 +1821,38 @@ ModelImporter:
     6400492: polySurface98
     6400494: pPipe4 1
     6400496: pPipe5 1
+    6400498: polySurface150
+    6400500: polySurface150 1
+    6400502: polySurface151
+    6400504: polySurface151 1
+    6400506: polySurface152
+    6400508: polySurface152 1
+    6400510: polySurface153
+    6400512: polySurface153 1
+    6400514: pasted__polySurface49
+    6400516: pasted__polySurface49 1
+    6400518: pasted__polySurface49 2
+    6400520: pasted__polySurface49 3
+    6400522: pasted__polySurface51
+    6400524: pasted__polySurface51 1
+    6400526: pasted__polySurface51 2
+    6400528: pasted__polySurface51 3
+    6400530: pasted__polySurface55
+    6400532: pasted__polySurface55 1
+    6400534: pasted__polySurface55 2
+    6400536: pasted__polySurface55 3
+    6400538: pasted__polySurface56
+    6400540: pasted__polySurface56 1
+    6400542: pasted__polySurface57
+    6400544: pasted__polySurface57 1
+    6400546: pasted__polySurface58
+    6400548: pasted__polySurface58 1
+    6400550: polySurface154
+    6400552: polySurface154 1
+    6400554: polySurface155
+    6400556: polySurface155 1
+    6400558: polySurface156
+    6400560: polySurface156 1
     9500000: //RootNode
   materials:
     importMaterials: 1
