@@ -1,6 +1,10 @@
 ﻿﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+
+/*
+*   This script controls the behavior of all projectiles as they travel, and removes the projectile if they collide with something.
+*/
 public class ProjectileScript : NetworkBehaviour
 {
 
@@ -36,11 +40,9 @@ public class ProjectileScript : NetworkBehaviour
             pos += transform.forward * Time.deltaTime * MoveSpeed;
             transform.position = pos + axis * Mathf.Sin(Time.time * frequency) * magnitude;
         }
-
-
     }
 
-    void OnCollisionEnter(Collision coll)
+    void OnTriggerEnter(Collider coll)
     {
        //Destroy the projectile if it hits something
        if(coll.gameObject != this.gameObject)
