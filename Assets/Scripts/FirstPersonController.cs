@@ -23,7 +23,7 @@ public class FirstPersonController : NetworkBehaviour
 	float verticalSpeed;
 
 	private float reallySmallNumber = -0.001f;
-	private float gravity = Physics.gravity.y;
+	private float gravity = -15.0f;
 	private bool jump = false;
     
 	float leftRight;
@@ -42,7 +42,7 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-			SetCursorState ();
+			//SetCursorState ();
 
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
