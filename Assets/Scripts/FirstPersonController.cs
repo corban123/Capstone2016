@@ -3,36 +3,35 @@ using UnityEngine.Networking;
 using System.Collections;
 
 /*
- * A class for handling player inputs.
+ * A class for handling player inputs and movement calculations.
  * 
  * Also handles death from falling off level.
  */
 [RequireComponent(typeof(CharacterController))]
 public class FirstPersonController : NetworkBehaviour 
 {
-    public float movementSpeed = 23.0f;
+	[SerializeField] Camera FPSCam;
+	[SerializeField] AudioListener audioListen;
+
+    public float movementSpeed = 25.0f;
     public float mouseSensitivity = 5.0f;
-    public float jumpSpeed = 2.0f;
+    public float jumpSpeed = 8.0f;
+
+	Vector3 moveDirection;
     float forwardSpeed;
     float sideSpeed;
-    float leftRight;
+	float verticalSpeed;
 
-	private float reallySmallNumber = -0.25f;
+	private float reallySmallNumber = -0.001f;
+	private float gravity = Physics.gravity.y;
+	private bool jump = false;
+    
+	float leftRight;
+	float verticalRotation = 0;
+	float upDownRange = 60.0f;
 
     private float nextFire;
     public float fireRate;
-
-    [SerializeField] Camera FPSCam;
-    [SerializeField] AudioListener audioListen;
-
-    float verticalRotation = 0;
-    public float upDownRange = 60.0f;
-
-    float gravity = Physics.gravity.y / 1.5f;
-	bool jump = false;
-    public float verticalVelocity;
-
-    Vector3 speed = Vector3.zero;
 
     CharacterController characterController;
     MoveScript move;
@@ -45,10 +44,6 @@ public class FirstPersonController : NetworkBehaviour
         {
 			SetCursorState ();
 
-			// Initalize variables
-            leftRight = 0;
-			verticalVelocity = 0;
-
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
             characterController.enabled = true;
@@ -59,6 +54,9 @@ public class FirstPersonController : NetworkBehaviour
 
             forwardSpeed = 0;
             sideSpeed = 0;
+			verticalSpeed = 0;
+			leftRight = 0;
+			moveDirection = Vector3.zero;
         }
     }
 
@@ -91,26 +89,29 @@ public class FirstPersonController : NetworkBehaviour
 
             verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
 
-            forwardSpeed = forwardSpeed * movementSpeed * Time.fixedDeltaTime;
-            sideSpeed = sideSpeed * movementSpeed * Time.fixedDeltaTime;
+			// Movement
+			forwardSpeed = forwardSpeed * movementSpeed;
+			sideSpeed = sideSpeed * movementSpeed;
 
-			//Jump
-			if (jump) {
-				verticalVelocity = jumpSpeed;
-			}
-			else if (characterController.isGrounded) {
-				// This accounts for the slight upward shift that occurs when the collision system moves the two 
-				// colliders apart. Otherwise isGrounded returns false sometimes when the character is just standing.
-				verticalVelocity = reallySmallNumber;
-			}
-			else {
-				verticalVelocity += gravity * Time.fixedDeltaTime * 0.5f;
+			if (characterController.isGrounded) {
+				// Reset y velocity if on the ground
+				moveDirection = new Vector3 (sideSpeed, reallySmallNumber, forwardSpeed);
+
+				// Unless we are jumping
+				if (jump) {
+					moveDirection.y = jumpSpeed;
+				}
+			} else {
+				moveDirection.x = sideSpeed;
+				moveDirection.z = forwardSpeed;
 			}
 
-			speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);
-			speed = transform.rotation * speed;
+			moveDirection = transform.TransformDirection (moveDirection);
 
-			move.MoveCharacter(characterController, speed);
+			// Apply gravity
+			moveDirection.y += gravity * Time.fixedDeltaTime;
+
+			move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
             move.RotateCharacter(verticalRotation, leftRight);
         }
     }
