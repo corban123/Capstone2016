@@ -23,7 +23,7 @@ public class FirstPersonController : NetworkBehaviour
 	float verticalSpeed;
 
 	private float reallySmallNumber = -0.001f;
-	private float gravity = -15.0f;
+	private float gravity = -20.0f;
 	private bool jump = false;
     
 	float leftRight;
