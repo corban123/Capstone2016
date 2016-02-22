@@ -1,15 +1,15 @@
-﻿﻿using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using System;
 
 /*
 *   This script controls the behavior of all projectiles as they travel, and removes the projectile if they collide with something.
 */
 public class ProjectileScript : NetworkBehaviour
 {
-
+    public int playerSource;
     public float MoveSpeed = 5.0f;
-
     public float frequency = 20.0f;  // Speed of sine movement
     public float magnitude = 0.5f;   // Size of sine movement
     private Vector3 axis;
@@ -44,11 +44,21 @@ public class ProjectileScript : NetworkBehaviour
 
     void OnTriggerEnter(Collider coll)
     {
-       //Destroy the projectile if it hits something
-       if(coll.gameObject != this.gameObject)
+        print("colliding with " + coll.gameObject.name);
+        //Destroy the projectile if it hits something
+        Transform targetParent = coll.gameObject.transform.parent;
+        GameObject target = coll.gameObject;
+        try
         {
-            Destroy(this.gameObject);
+            if (!(target.name.Contains("Player") && target.name.Contains(playerSource.ToString())))
+            {
+                if (!(targetParent.name.Contains("Player") && targetParent.name.Contains(playerSource.ToString())))
+                {
+                    Destroy(this.gameObject);
+                }
+            }
         }
+        catch (NullReferenceException) { }
     }
 
 

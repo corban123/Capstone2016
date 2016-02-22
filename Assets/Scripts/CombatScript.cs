@@ -12,7 +12,7 @@ public class CombatScript : NetworkBehaviour
     public float fireRate;
     [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
     public bool haveElement;
-    public GameObject heldElement; //This GameObject represents the current element held by the player, if the player is not holding an element set this value to null
+    public int heldElement; //This GameObject represents the current element held by the player, if the player is not holding an element set this value to -1
     private Text healthText;
 	[SerializeField] AudioClip shoot;
 	private AudioSource source;
@@ -20,7 +20,7 @@ public class CombatScript : NetworkBehaviour
     // Use this for initialization
     void Start () {
         haveElement = false;
-        heldElement = null;
+        heldElement = -1;
         shotSpawn = gameObject.transform.GetChild(0);
 
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
@@ -45,7 +45,7 @@ public class CombatScript : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            healthText.text = "Health" + numQuarks.ToString();
+            healthText.text = "Health " + numQuarks.ToString();
         }
     }
 
@@ -55,6 +55,7 @@ public class CombatScript : NetworkBehaviour
     public void CmdShoot()
     {
         GameObject instance;
+        int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
         if(numQuarks > 0)
         {
             numQuarks--;
@@ -63,14 +64,18 @@ public class CombatScript : NetworkBehaviour
         else if(haveElement)
         {
             instance = Instantiate(elementShot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
+            print(playerNum + " fires element " + heldElement);
+            instance.GetComponent<ElementScript>().carrier = playerNum;
+            instance.GetComponent<ElementScript>().elementID = heldElement;
             haveElement = false;
-            heldElement = null; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
+            heldElement = -1; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
         }
         else
         {
             instance = Instantiate(basicShot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
         }
-		source.clip = shoot;
+        instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+        source.clip = shoot;
 		source.Play ();
         NetworkServer.Spawn(instance);
     }
