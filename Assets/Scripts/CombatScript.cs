@@ -49,7 +49,7 @@ public class CombatScript : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            healthText.text = "Health " + numQuarks.ToString();
+            healthText.text = "Health:  " + numQuarks.ToString();
         }
     }
 

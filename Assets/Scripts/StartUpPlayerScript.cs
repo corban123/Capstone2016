@@ -25,12 +25,12 @@ public class StartUpPlayerScript : NetworkBehaviour {
 			BoardScript[] boardObjects = FindObjectsOfType (typeof(BoardScript)) as BoardScript[];
 			if (boardObjects.Length == 1) {
 				boardObjects [0].SetBoard (boards [0]);
-                boardObjects[0].gameObject.name = "Player 1";
+                boardObjects [0].gameObject.name = "Player 1";
 			} else if (boardObjects.Length == 2) {
 				boardObjects [0].SetBoard (boards [0]);
 				boardObjects [1].SetBoard (boards [1]);
-                boardObjects[0].gameObject.name = "Player 1";
-                boardObjects[1].gameObject.name = "Player 2";
+				boardObjects [0].gameObject.name = "Player 1";
+                boardObjects [1].gameObject.name = "Player 2";
                 found = true;
 			}
 		}
