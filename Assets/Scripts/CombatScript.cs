@@ -12,20 +12,21 @@ public class CombatScript : NetworkBehaviour
     public float fireRate;
     [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
     public bool haveElement;
-    public int heldElement; //This GameObject represents the current element held by the player, if the player is not holding an element set this value to -1
+    public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
     private Text healthText;
 	[SerializeField] AudioClip shoot;
 	private AudioSource source;
-
+    float startTime;
+    bool takeDmg;
     // Use this for initialization
     void Start () {
         haveElement = false;
         heldElement = -1;
         shotSpawn = gameObject.transform.GetChild(0);
-
+        startTime = Time.time;
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
         SetHealthText();
-
+        takeDmg = false;
 		source = gameObject.GetComponent<AudioSource> ();
     }
     
@@ -35,10 +36,13 @@ public class CombatScript : NetworkBehaviour
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire && isLocalPlayer) //PC control
         {
             nextFire = Time.time + fireRate;
-
-
             CmdShoot();
         }
+        if (Time.time - startTime > 3)
+        {
+            takeDmg = true;
+        }
+
     }
 
     void SetHealthText()
@@ -95,7 +99,7 @@ public class CombatScript : NetworkBehaviour
 
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Bullet")
+        if (collision.tag == "Bullet" && takeDmg)
         {
             string uIdentity = this.transform.name;
             CmdTellServerWhoWasShot(uIdentity);
