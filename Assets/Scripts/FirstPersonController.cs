@@ -20,9 +20,7 @@ public class FirstPersonController : NetworkBehaviour
 	Vector3 moveDirection;
     float forwardSpeed;
     float sideSpeed;
-	float verticalSpeed;
 
-	private float reallySmallNumber = -0.001f;
 	private float gravity = -20.0f;
 	private bool jump = false;
     
@@ -35,7 +33,6 @@ public class FirstPersonController : NetworkBehaviour
 
     CharacterController characterController;
     MoveScript move;
-    CombatScript combat;
 
     // Initalize variables for this character
     void Start()
@@ -50,11 +47,9 @@ public class FirstPersonController : NetworkBehaviour
 
 			// Grab Move and Combat scripts for player
             move = GetComponent<MoveScript>();
-            combat = GetComponent<CombatScript>();
 
             forwardSpeed = 0;
             sideSpeed = 0;
-			verticalSpeed = 0;
 			leftRight = 0;
 			moveDirection = Vector3.zero;
         }
@@ -95,7 +90,7 @@ public class FirstPersonController : NetworkBehaviour
 
 			if (characterController.isGrounded) {
 				// Reset y velocity if on the ground
-				moveDirection = new Vector3 (sideSpeed, reallySmallNumber, forwardSpeed);
+				moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
 
 				// Unless we are jumping
 				if (jump) {
