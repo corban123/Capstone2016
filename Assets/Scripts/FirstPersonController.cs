@@ -110,7 +110,7 @@ public class FirstPersonController : NetworkBehaviour
 			moveDirection.y += gravity * Time.fixedDeltaTime;
             move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
 
-            move.RotateCharacter(verticalRotation, leftRight);
+            move.RotateCharacter(verticalRotation , leftRight);
         }
     }
 

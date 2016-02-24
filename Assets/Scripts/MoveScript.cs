@@ -9,6 +9,7 @@ public class MoveScript : MonoBehaviour
 {
     CombatScript combat;
 	AudioSource source;
+
 	[SerializeField] AudioClip pickUp;
     [SerializeField] AudioClip walk;
     
@@ -39,7 +40,7 @@ public class MoveScript : MonoBehaviour
 	// Move the given CharacterController by the vector speed.
     public void MoveCharacter(CharacterController characterController, Vector3 speed)
     {
-        if(speed.x != 0 || speed.y != 0 || speed.z != 0)
+        if((speed.x != 0 && characterController.isGrounded)  ||  (speed.z != 0 && characterController.isGrounded))
         {
             if(source.clip != walk)
             {
@@ -47,6 +48,12 @@ public class MoveScript : MonoBehaviour
                 source.clip = walk;
                 source.Play();
             }
+        }
+        else
+        {
+            source.loop = false;
+            source.clip = null;
+            source.Stop();
         }
         characterController.Move(speed);
 

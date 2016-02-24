@@ -134,7 +134,7 @@ MonoBehaviour:
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 1
   m_OfflineScene: 
-  m_OnlineScene: 
+  m_OnlineScene: Noah-Lv1
   m_SpawnPrefabs:
   - {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
   - {fileID: 119328, guid: 9039176cb9fa54543abe67b16b393b46, type: 2}
@@ -2067,7 +2067,7 @@ Transform:
   - {fileID: 1807320916}
   - {fileID: 512139419}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!4 &935029881 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: 890238eb627824c4d9c21089e85e6547, type: 3}
