@@ -10,6 +10,8 @@ public class MoveScript : MonoBehaviour
     CombatScript combat;
 	AudioSource source;
 	[SerializeField] AudioClip pickUp;
+    [SerializeField] AudioClip walk;
+    
 	// Use this for initialization
 	void Start ()
     {
@@ -37,8 +39,18 @@ public class MoveScript : MonoBehaviour
 	// Move the given CharacterController by the vector speed.
     public void MoveCharacter(CharacterController characterController, Vector3 speed)
     {
-
+        if(speed.x != 0 || speed.y != 0 || speed.z != 0)
+        {
+            if(source.clip != walk)
+            {
+                source.loop = true;
+                source.clip = walk;
+                source.Play();
+            }
+        }
         characterController.Move(speed);
+
+
     }
 
 	// Pick up elements and quarks on collision

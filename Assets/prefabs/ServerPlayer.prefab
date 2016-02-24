@@ -281,7 +281,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -355,7 +355,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -474,7 +474,7 @@ MonoBehaviour:
   fireRate: 0.5
   numQuarks: 3
   haveElement: 0
-  heldElement: {fileID: 0}
+  heldElement: 0
   shoot: {fileID: 8300000, guid: 12316e5e7a87e764a83f7388e8734700, type: 3}
 --- !u!114 &11467988
 MonoBehaviour:
@@ -517,7 +517,6 @@ MonoBehaviour:
   movementSpeed: 25
   mouseSensitivity: 5
   jumpSpeed: 15
-  upDownRange: 60
   fireRate: 0
 --- !u!124 &12410952
 Behaviour:
@@ -654,6 +653,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Volume
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -61,8 +61,7 @@ public class FirstPersonController : NetworkBehaviour
         if (isLocalPlayer)
         {
             // Movement
-             forwardSpeed = Input.GetAxis("Vertical");
-             sideSpeed = Input.GetAxis("Horizontal");
+             
 
             // Jump
 			if (Input.GetButtonDown ("Jump") && characterController.isGrounded) {
@@ -71,7 +70,6 @@ public class FirstPersonController : NetworkBehaviour
 				jump = false;
 			}
         }
-		move.MoveCharacter(characterController, moveDirection * Time.deltaTime);
     }
 
 	// Rotate and Move in fixed intervals
@@ -79,8 +77,10 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-			// Rotation
-			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity;
+            forwardSpeed = Input.GetAxis("Vertical");
+            sideSpeed = Input.GetAxis("Horizontal");
+            // Rotation
+            leftRight = Input.GetAxis("Mouse X") * mouseSensitivity;
 			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
 
             verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
@@ -102,10 +102,13 @@ public class FirstPersonController : NetworkBehaviour
 				moveDirection.z = forwardSpeed;
 			}
 
+
+            Debug.Log(moveDirection.x + " :X " + moveDirection.z + " :Z ");
 			moveDirection = transform.TransformDirection (moveDirection);
 
 			// Apply gravity
 			moveDirection.y += gravity * Time.fixedDeltaTime;
+            move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
 
             move.RotateCharacter(verticalRotation, leftRight);
         }
