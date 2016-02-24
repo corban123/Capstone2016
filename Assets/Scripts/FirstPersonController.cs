@@ -71,6 +71,7 @@ public class FirstPersonController : NetworkBehaviour
 				jump = false;
 			}
         }
+		move.MoveCharacter(characterController, moveDirection * Time.deltaTime);
     }
 
 	// Rotate and Move in fixed intervals
@@ -106,7 +107,6 @@ public class FirstPersonController : NetworkBehaviour
 			// Apply gravity
 			moveDirection.y += gravity * Time.fixedDeltaTime;
 
-			move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
             move.RotateCharacter(verticalRotation, leftRight);
         }
     }
