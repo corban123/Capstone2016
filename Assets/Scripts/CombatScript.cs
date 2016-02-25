@@ -101,8 +101,12 @@ public class CombatScript : NetworkBehaviour
     {
         if (collision.tag == "Bullet" && takeDmg)
         {
-            string uIdentity = this.transform.name;
-            CmdTellServerWhoWasShot(uIdentity);
+            ProjectileScript projectile = collision.GetComponent<ProjectileScript>();
+            if (projectile.playerSource != this.gameObject.name.ToCharArray()[this.gameObject.name.Length-1])
+            {
+                string uIdentity = this.transform.name;
+                CmdTellServerWhoWasShot(uIdentity);
+            }
         }
     }
 

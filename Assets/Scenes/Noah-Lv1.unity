@@ -139,6 +139,7 @@ MonoBehaviour:
   - {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
   - {fileID: 119328, guid: 9039176cb9fa54543abe67b16b393b46, type: 2}
   - {fileID: 161630, guid: 81cd98848d30d144b8855512d6030eaf, type: 2}
+  - {fileID: 118896, guid: 8b1de836a54caef42a2d5d632bfa840a, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -1507,6 +1508,7 @@ GameObject:
   - 114: {fileID: 758223142}
   - 114: {fileID: 758223144}
   - 114: {fileID: 758223143}
+  - 114: {fileID: 758223145}
   m_Layer: 0
   m_Name: GenerateBoard
   m_TagString: Untagged
@@ -1580,6 +1582,18 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &758223145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 758223140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888abf66b11bcb9439fb2c02bc6e965d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Element: {fileID: 118896, guid: 8b1de836a54caef42a2d5d632bfa840a, type: 2}
 --- !u!4 &765432277 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400004, guid: 890238eb627824c4d9c21089e85e6547, type: 3}

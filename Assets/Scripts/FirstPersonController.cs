@@ -60,9 +60,6 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            // Movement
-             
-
             // Jump
 			if (Input.GetButtonDown ("Jump") && characterController.isGrounded) {
 				jump = true;
