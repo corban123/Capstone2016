@@ -98,4 +98,10 @@ public class BoardScript : NetworkBehaviour {
 				
 		return win_horizontal || win_vertical || win_diagonal_back || win_diagonal_forward;
 	}
+
+    public int getValueAtPoint(int i, int j)
+    {
+
+        return board[i, j];
+    }
 }
