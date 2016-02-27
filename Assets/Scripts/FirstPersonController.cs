@@ -39,7 +39,7 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-			SetCursorState ();
+			//SetCursorState ();
 
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
@@ -61,12 +61,11 @@ public class FirstPersonController : NetworkBehaviour
         if (isLocalPlayer)
         {
             // Jump
-			if (Input.GetButtonDown ("Jump") && jump == false) {
+			if (Input.GetButtonDown ("Jump") && !jump) {
 				jump = true;
-			} else {
-				jump = false;
 			}
         }
+
     }
 
 	// Rotate and Move in fixed intervals
@@ -97,10 +96,9 @@ public class FirstPersonController : NetworkBehaviour
 			} else {
 				moveDirection.x = sideSpeed;
 				moveDirection.z = forwardSpeed;
+                jump = false;
 			}
-
-
-            Debug.Log(moveDirection.x + " :X " + moveDirection.z + " :Z ");
+                
 			moveDirection = transform.TransformDirection (moveDirection);
 
 			// Apply gravity
@@ -114,7 +112,7 @@ public class FirstPersonController : NetworkBehaviour
 	// Lock the cursor to the center of the game window
     void SetCursorState()
     {
-		//Cursor.lockState = CursorLockMode.Locked;
-		//Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
     }
 }
