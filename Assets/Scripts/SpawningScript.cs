@@ -49,7 +49,7 @@ public class SpawningScript : NetworkBehaviour {
             for (int i = 0; i < spawnPoints.Count;)
             {
                 int x = Random.Range(0, 16);
-                 if (checkSetup(x))
+                if (checkSetup(x, i))
                 {
                     int val = p1Board.getValueAtPoint(x / 4, x % 4);
                     CmdspawnElement(val, (spawnPoints[i] as Transform).position, (spawnPoints[i] as Transform).gameObject.name);
@@ -60,7 +60,7 @@ public class SpawningScript : NetworkBehaviour {
            
 	}
 
-    bool checkSetup(int cur)
+    bool checkSetup(int cur, int i)
     {
         if (checkArray[cur / 4, cur % 4])
         {
@@ -81,6 +81,10 @@ public class SpawningScript : NetworkBehaviour {
         if(!((x == x1 +1) || (x== x1-1)) || !((y == y1+1) || (y == y1 - 1))){
             checkArray[cur / 4, cur % 4] = true;
             last = cur;
+            return true;
+        }
+        if(i == 15)
+        {
             return true;
         }
         return false;

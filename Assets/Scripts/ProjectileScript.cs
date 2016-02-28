@@ -14,10 +14,15 @@ public class ProjectileScript : NetworkBehaviour
     public float magnitude = 0.5f;   // Size of sine movement
     private Vector3 axis;
     private Vector3 pos;
+    AudioSource source;
+    [SerializeField] AudioClip shoot;
     Rigidbody rb;
    
     void Start()
     {
+        source = GetComponent<AudioSource>();
+        source.clip = shoot;
+        source.Play();
         pos = transform.position;
         axis = transform.up;
         rb = GetComponent<Rigidbody>();

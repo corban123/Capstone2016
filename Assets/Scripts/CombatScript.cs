@@ -14,8 +14,6 @@ public class CombatScript : NetworkBehaviour
     public bool haveElement;
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
     private Text healthText;
-	[SerializeField] AudioClip shoot;
-	private AudioSource source;
     float startTime;
     bool takeDmg;
     // Use this for initialization
@@ -27,7 +25,6 @@ public class CombatScript : NetworkBehaviour
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
         SetHealthText();
         takeDmg = false;
-		source = gameObject.GetComponent<AudioSource> ();
     }
     
 	
@@ -79,8 +76,7 @@ public class CombatScript : NetworkBehaviour
             instance = Instantiate(basicShot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
         }
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
-        source.clip = shoot;
-		source.Play ();
+
         NetworkServer.Spawn(instance);
     }
 
