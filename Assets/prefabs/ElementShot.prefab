@@ -231,6 +231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementID: 0
   carrier: 0
+  blackHole: {fileID: 100000, guid: 2a3b5890a674bc74e998d2bb592c03fc, type: 2}
 --- !u!114 &11465448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -370,6 +371,10 @@ Prefab:
       propertyPath: shoot
       value: 
       objectReference: {fileID: 8300000, guid: dd8ebfdfbe79fd8438d0dcf13075e1e7, type: 3}
+    - target: {fileID: 0}
+      propertyPath: blackHole
+      value: 
+      objectReference: {fileID: 100000, guid: 2a3b5890a674bc74e998d2bb592c03fc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119328}
