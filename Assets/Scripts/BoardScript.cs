@@ -8,11 +8,10 @@ using System.Collections;
  */
 public class BoardScript : NetworkBehaviour {
 	private int[,] board;
-	private bool[,] scored;
+	private bool[,] scored = new bool[4, 4];
 	private Text boardText;
 
 	void Start() {
-		scored = new bool[4, 4];
 		boardText = GameObject.Find("BoardText").GetComponent<Text>();
 	}
 
