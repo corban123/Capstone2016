@@ -12,12 +12,12 @@ public class BoardScript : NetworkBehaviour {
 	private Text boardText;
 
 	void Start() {
-		boardText = GameObject.Find("BoardText").GetComponent<Text>();
 	}
 
 
 	// Set the board value
 	public void SetBoard (int[,] board) {
+        boardText = GameObject.Find("BoardText").GetComponent<Text>();
 		this.board = board;
 		SetBoardText ();
 	}
