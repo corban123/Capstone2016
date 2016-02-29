@@ -74,7 +74,7 @@ public class BoardScript : NetworkBehaviour {
 	}
 
 	private void SetBoardText() {
-		if (isLocalPlayer)
+		if (isLocalPlayer && boardText != null)
 		{
 			boardText.text = "Bingo Board\n" + ToString();
 		}

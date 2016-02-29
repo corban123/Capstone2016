@@ -12,6 +12,9 @@ public class FirstPersonController : NetworkBehaviour
 {
 	[SerializeField] Camera FPSCam;
 	[SerializeField] AudioListener audioListen;
+			 private AudioSource source;
+	[SerializeField] AudioClip jumpUp;
+	[SerializeField] AudioClip jumpLand;
 
     public float movementSpeed = 25.0f;
     public float mouseSensitivity = 5.0f;
@@ -34,6 +37,8 @@ public class FirstPersonController : NetworkBehaviour
     CharacterController characterController;
     MoveScript move;
 
+
+
     // Initalize variables for this character
     void Start()
     {
@@ -44,6 +49,7 @@ public class FirstPersonController : NetworkBehaviour
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
             characterController.enabled = true;
+			source = GetComponent<AudioSource> ();
 
 			// Grab Move and Combat scripts for player
             move = GetComponent<MoveScript>();
@@ -62,6 +68,8 @@ public class FirstPersonController : NetworkBehaviour
         {
             // Jump
 			if (Input.GetButtonDown ("Jump") && !jump) {
+				source.clip = jumpUp;
+				source.Play ();
 				jump = true;
 			}
         }
@@ -76,8 +84,8 @@ public class FirstPersonController : NetworkBehaviour
             forwardSpeed = Input.GetAxis("Vertical");
             sideSpeed = Input.GetAxis("Horizontal");
             // Rotation
-            leftRight = Input.GetAxis("Mouse X") * mouseSensitivity;
-			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * Time.fixedDeltaTime;
+			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
 
             verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
 

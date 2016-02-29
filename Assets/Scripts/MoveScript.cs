@@ -33,8 +33,8 @@ public class MoveScript : MonoBehaviour
 	// Rotate the first person character by leftRight degrees in the horizontal direction.
     public void RotateCharacter(float verticalRotation, float leftRight)
     {
-        Camera.main.transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
-        transform.Rotate(0, leftRight, 0);
+		Camera.main.transform.localRotation =  Quaternion.Euler(verticalRotation * 50, 0, 0);
+		transform.Rotate(0, leftRight* 50, 0);
     }
 
 	// Move the given CharacterController by the vector speed.
