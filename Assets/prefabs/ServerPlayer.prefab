@@ -563,7 +563,7 @@ GameObject:
   - 82: {fileID: 8207938}
   m_Layer: 0
   m_Name: ServerPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1995,7 +1995,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -67.10162, y: 12.860289, z: -346.9267}
+  m_LocalPosition: {x: 0.6824751, y: 22.973171, z: -185.98584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 467472}
@@ -3719,7 +3719,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: playerTransform
@@ -3813,6 +3813,10 @@ Prefab:
       propertyPath: jumpUp
       value: 
       objectReference: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134866}

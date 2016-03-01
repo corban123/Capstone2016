@@ -64,7 +64,7 @@ public class CombatScript : NetworkBehaviour
         }
         else if(haveElement)
         {
-            instance = Instantiate(elementShot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
+            instance = Instantiate(elementShot, shotSpawn.position, this.gameObject.transform.GetChild(1).GetComponent<Camera>().transform.rotation) as GameObject;
             print(playerNum + " fires element " + heldElement);
             instance.GetComponent<ElementScript>().carrier = playerNum;
             instance.GetComponent<ElementScript>().elementID = heldElement;

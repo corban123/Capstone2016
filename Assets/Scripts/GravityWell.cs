@@ -4,43 +4,37 @@ using System.Collections.Generic;
 
 public class GravityWell : MonoBehaviour
 {
-	public float range = 1000;
+	float range = 50f;
+    float pullForce = 1000f;
+    float startTime;
+    public int duration;
 	void Start()
 	{
-		Collider[] cols = Physics.OverlapSphere(transform.position, range);
-		foreach( Collider c in cols )
-		{
-            GameObject b = c.gameObject;
-			if( b.CompareTag("Player" ))
-            {
-				Rigidbody body = c.gameObject.GetComponent<Rigidbody>();
-				//Rigidbody body = component as Rigidbody;
-				if( body != null )
-                {
-					body.useGravity = false;
-					body.mass = 5;
-					body.constraints |= RigidbodyConstraints.FreezePositionZ;
-				}
-			}
-		}
+        startTime = Time.time;
 	}
 	
-	void FixedUpdate () 
+	void Update () 
 	{
-		Collider[] cols  = Physics.OverlapSphere(transform.position, range); 
-		List<Rigidbody> rbs = new List<Rigidbody>();
- 
-		foreach(Collider c in cols)
-		{
-			Rigidbody rb = c.attachedRigidbody;
-			if(rb != null && rb != GetComponent<Rigidbody>() && !rbs.Contains(rb))
-			{
-				rbs.Add(rb);
-				Vector3 offset = transform.position - c.transform.position;
-				Vector3 force = offset / offset.sqrMagnitude * GetComponent<Rigidbody>().mass;
-				if( force.magnitude > 500 ) force = force.normalized * 500;
-				rb.AddForce( offset / offset.sqrMagnitude * GetComponent<Rigidbody>().mass);
-			}
-		}
-	}
+        if(Time.time - startTime > duration)
+        {
+            Destroy(this.gameObject);
+        }
+        foreach (Collider collider in Physics.OverlapSphere(transform.position, range))
+        {
+            
+            Rigidbody rb = collider.GetComponent<Rigidbody>();
+            if (rb != null && rb.gameObject.CompareTag("Player"))
+            {
+                print(collider.gameObject.name + " is getting pulled");
+                
+                // calculate direction from target to me
+                Vector3 forceDirection = transform.position - collider.transform.position;
+                print("direction black hole" + forceDirection.normalized);
+                // apply force on target towards me
+                rb.AddForce(forceDirection.normalized * pullForce);
+                print("adding force " + forceDirection.normalized * pullForce);
+            }
+        }
+    }
+
 }
