@@ -3539,6 +3539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUp: {fileID: 8300000, guid: 8119703816119f54981a7aa095a6b1ef, type: 3}
   walk: {fileID: 8300000, guid: 399fb8e5f60516d46b306ae8400443e7, type: 3}
+  jumpUp: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
 --- !u!114 &11412364
 MonoBehaviour:
   m_ObjectHideFlags: 1

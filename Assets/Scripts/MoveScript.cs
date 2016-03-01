@@ -12,6 +12,9 @@ public class MoveScript : MonoBehaviour
 
 	[SerializeField] AudioClip pickUp;
     [SerializeField] AudioClip walk;
+	[SerializeField] AudioClip jumpUp;
+	float upDownRange = 60.0f;
+
     
 	// Use this for initialization
 	void Start ()
@@ -33,27 +36,27 @@ public class MoveScript : MonoBehaviour
 	// Rotate the first person character by leftRight degrees in the horizontal direction.
     public void RotateCharacter(float verticalRotation, float leftRight)
     {
-		Camera.main.transform.localRotation =  Quaternion.Euler(verticalRotation * 50, 0, 0);
+		verticalRotation = Mathf.Clamp(verticalRotation*50, -upDownRange, upDownRange);
+
+		Camera.main.transform.localRotation =  Quaternion.Euler(verticalRotation, 0, 0);
 		transform.Rotate(0, leftRight* 50, 0);
     }
 
 	// Move the given CharacterController by the vector speed.
     public void MoveCharacter(CharacterController characterController, Vector3 speed)
     {
-        if((speed.x != 0 && characterController.isGrounded)  ||  (speed.z != 0 && characterController.isGrounded))
-        {
-            if(source.clip != walk)
-            {
-                source.loop = true;
-                source.clip = walk;
-                source.Play();
-            }
-        }
-		else
-        {
-            source.loop = false;
-            source.clip = null;
-        }
+		if ((speed.x != 0 && characterController.isGrounded) || (speed.z != 0 && characterController.isGrounded)) {
+			if (source.clip != walk) {
+				source.loop = true;
+				source.clip = walk;
+				source.Play ();
+			}
+		} else if (((speed.x == 0 && speed.z == 0) && speed.y <= 0)) {
+			source.loop = false;
+			source.Stop ();
+		} if(speed.x == 0 && speed.y <= 0 && speed.z ==0){
+			source.clip = null;
+		}
         characterController.Move(speed);
 
 

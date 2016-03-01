@@ -29,7 +29,6 @@ public class FirstPersonController : NetworkBehaviour
     
 	float leftRight;
 	float verticalRotation = 0;
-	float upDownRange = 60.0f;
 
     private float nextFire;
     public float fireRate;
@@ -44,7 +43,7 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-			//SetCursorState ();
+			SetCursorState ();
 
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
@@ -67,14 +66,18 @@ public class FirstPersonController : NetworkBehaviour
         if (isLocalPlayer)
         {
             // Jump
-			if (Input.GetButtonDown ("Jump") && !jump) {
+			if (Input.GetButtonDown ("Jump") && !jump){
+			if(source.clip != jumpUp){
+					source.loop = false;
+					source.Stop ();
+				}
 				source.clip = jumpUp;
 				source.Play ();
 				jump = true;
 			}
         }
 
-    }
+	}
 
 	// Rotate and Move in fixed intervals
     void FixedUpdate()
@@ -86,8 +89,6 @@ public class FirstPersonController : NetworkBehaviour
             // Rotation
 			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * Time.fixedDeltaTime;
 			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
-
-            verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
 
 			// Movement
 			forwardSpeed = forwardSpeed * movementSpeed;
