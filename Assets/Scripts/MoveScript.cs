@@ -49,7 +49,7 @@ public class MoveScript : MonoBehaviour
                 source.Play();
             }
         }
-        else
+		else if
         {
             source.loop = false;
             source.clip = null;

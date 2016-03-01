@@ -60,7 +60,7 @@ public class CombatScript : NetworkBehaviour
         if(numQuarks > 0)
         {
             numQuarks--;
-            instance = Instantiate(shot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
+            instance = Instantiate(shot, shotSpawn.position, this.gameObject.transform.GetChild(1).GetComponent<Camera>().transform.rotation) as GameObject;
         }
         else if(haveElement)
         {
@@ -73,7 +73,7 @@ public class CombatScript : NetworkBehaviour
         }
         else
         {
-            instance = Instantiate(basicShot, shotSpawn.position, this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation) as GameObject;
+            instance = Instantiate(basicShot, shotSpawn.position, this.gameObject.transform.GetChild(1).GetComponent<Camera>().transform.rotation) as GameObject;
         }
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
 
