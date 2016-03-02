@@ -24,9 +24,13 @@ public class ElementScript : MonoBehaviour
 
     public void PowerUp()
     {
-        if (IsElementType() == Element.Alkaline)
+        if (IsElementType () == Element.Metals)
         {
-            Instantiate(blackHole, transform.position, transform.rotation);
+            Instantiate (blackHole, transform.position, transform.rotation);
+        }
+        else if (IsElementType () == Element.Alkaline)
+        {
+            Freeze ();
         }
     }
 
@@ -50,4 +54,15 @@ public class ElementScript : MonoBehaviour
         }
     }
 
+
+    void Freeze() {
+        float range = 50f;
+
+        foreach (Collider collider in Physics.OverlapSphere(transform.position, range)) {
+            FirstPersonController fpc = collider.GetComponent<FirstPersonController> ();
+            if (fpc != null) {
+                fpc.FreezeMovement ();
+            }
+        }
+    }
 }
