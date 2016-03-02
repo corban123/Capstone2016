@@ -36,10 +36,10 @@ public class MoveScript : MonoBehaviour
 	// Rotate the first person character by leftRight degrees in the horizontal direction.
     public void RotateCharacter(float verticalRotation, float leftRight)
     {
-		verticalRotation = Mathf.Clamp(verticalRotation*50, -upDownRange, upDownRange);
+		verticalRotation = Mathf.Clamp(verticalRotation*100, -upDownRange, upDownRange);
 
 		Camera.main.transform.localRotation =  Quaternion.Euler(verticalRotation, 0, 0);
-		transform.Rotate(0, leftRight* 50, 0);
+		transform.Rotate(0, leftRight, 0);
     }
 
 	// Move the given CharacterController by the vector speed.
@@ -56,6 +56,10 @@ public class MoveScript : MonoBehaviour
 			source.Stop ();
 		} if(speed.x == 0 && speed.y <= 0 && speed.z ==0){
 			source.clip = null;
+		}
+		if (!characterController.isGrounded && source.clip == walk) {
+			source.clip = null;
+		
 		}
         characterController.Move(speed);
 

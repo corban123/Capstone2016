@@ -87,7 +87,7 @@ public class FirstPersonController : NetworkBehaviour
             forwardSpeed = Input.GetAxis("Vertical");
             sideSpeed = Input.GetAxis("Horizontal");
             // Rotation
-			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * Time.fixedDeltaTime;
+			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 100);
 			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
 
 			// Movement
