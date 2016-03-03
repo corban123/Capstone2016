@@ -7,6 +7,7 @@ using System.Collections;
 
 public class ElementScript : MonoBehaviour
 {
+    public int cost;
     public int elementID;   //This id is unique to each element (numbered 1-16)
     public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
