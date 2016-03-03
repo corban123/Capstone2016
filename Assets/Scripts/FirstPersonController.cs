@@ -131,9 +131,12 @@ public class FirstPersonController : NetworkBehaviour
 
     public IEnumerator FreezeMovement()
     {
-        canMove = false;
-        yield return new WaitForSeconds(2);
-        canMove = true;
+        if (isLocalPlayer)
+        {
+            canMove = false;
+            yield return new WaitForSeconds (2);
+            canMove = true;
+        }
     }
         
 }
