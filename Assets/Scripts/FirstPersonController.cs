@@ -20,6 +20,7 @@ public class FirstPersonController : NetworkBehaviour
     public float mouseSensitivity = 5.0f;
     public float jumpSpeed = 8.0f;
 
+    bool canMove;
 	Vector3 moveDirection;
     float forwardSpeed;
     float sideSpeed;
@@ -43,7 +44,7 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-			SetCursorState ();
+			//SetCursorState ();
 
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
@@ -57,6 +58,7 @@ public class FirstPersonController : NetworkBehaviour
             sideSpeed = 0;
 			leftRight = 0;
 			moveDirection = Vector3.zero;
+            canMove = true;
         }
     }
 
@@ -86,35 +88,37 @@ public class FirstPersonController : NetworkBehaviour
         {
             forwardSpeed = Input.GetAxis("Vertical");
             sideSpeed = Input.GetAxis("Horizontal");
+
             // Rotation
 			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 100);
 			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
+            move.RotateCharacter(verticalRotation , leftRight);
 
 			// Movement
-			forwardSpeed = forwardSpeed * movementSpeed;
-			sideSpeed = sideSpeed * movementSpeed;
+            if (canMove) {
+                forwardSpeed = forwardSpeed * movementSpeed;
+                sideSpeed = sideSpeed * movementSpeed;
 
-			if (characterController.isGrounded) {
-				// Reset y velocity if on the ground
-				moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
+                if (characterController.isGrounded) {
+                    // Reset y velocity if on the ground
+                    moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
 
-				// Unless we are jumping
-				if (jump) {
-					moveDirection.y = jumpSpeed;
-				}
-			} else {
-				moveDirection.x = sideSpeed;
-				moveDirection.z = forwardSpeed;
-                jump = false;
-			}
+                    // Unless we are jumping
+                    if (jump) {
+                        moveDirection.y = jumpSpeed;
+                    }
+                } else {
+                    moveDirection.x = sideSpeed;
+                    moveDirection.z = forwardSpeed;
+                    jump = false;
+                }
                 
-			moveDirection = transform.TransformDirection (moveDirection);
+                moveDirection = transform.TransformDirection (moveDirection);
 
-			// Apply gravity
-			moveDirection.y += gravity * Time.fixedDeltaTime;
-            move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
-
-            move.RotateCharacter(verticalRotation , leftRight);
+                // Apply gravity
+                moveDirection.y += gravity * Time.fixedDeltaTime;
+                move.MoveCharacter (characterController, moveDirection * Time.fixedDeltaTime);
+            }
         }
     }
 
@@ -124,4 +128,15 @@ public class FirstPersonController : NetworkBehaviour
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
     }
+
+    public IEnumerator FreezeMovement()
+    {
+        if (isLocalPlayer)
+        {
+            canMove = false;
+            yield return new WaitForSeconds (2);
+            canMove = true;
+        }
+    }
+        
 }

@@ -12,7 +12,6 @@ GameObject:
   - 135: {fileID: 13588964}
   - 23: {fileID: 2339288}
   - 54: {fileID: 5441352}
-  - 114: {fileID: 11406368}
   - 114: {fileID: 11471752}
   - 114: {fileID: 11479548}
   - 114: {fileID: 11456230}
@@ -158,19 +157,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &11406368
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8cd852d6cb15f47a005a386e84f9b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  id: 0
 --- !u!114 &11456230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSource: 0
-  MoveSpeed: 600
+  MoveSpeed: 100
   frequency: 40
   magnitude: 0.3
   shoot: {fileID: 8300000, guid: dd8ebfdfbe79fd8438d0dcf13075e1e7, type: 3}
@@ -348,7 +334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: MoveSpeed
-      value: 600
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: magnitude

@@ -11,7 +11,6 @@ GameObject:
   - 33: {fileID: 3301616}
   - 65: {fileID: 6510478}
   - 23: {fileID: 2383168}
-  - 114: {fileID: 11432360}
   - 114: {fileID: 11406192}
   - 114: {fileID: 11428792}
   m_Layer: 0
@@ -121,22 +120,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9a4d463caa5e14aa5593984669e438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementID: 4
+  cost: 0
+  elementID: 12
   carrier: 0
   blackHole: {fileID: 100000, guid: 019e298c4b22d4d668f33d6a8e4ed0a2, type: 2}
---- !u!114 &11432360
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8cd852d6cb15f47a005a386e84f9b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  id: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
