@@ -27,7 +27,7 @@ public class ElementScript : MonoBehaviour
     {
         if (IsElementType() == Element.Alkaline)
         {
-            Instantiate(blackHole, transform.position, transform.rotation);
+            Instantiate(blackHole, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation);
         }
     }
 

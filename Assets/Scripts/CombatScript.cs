@@ -56,15 +56,17 @@ public class CombatScript : NetworkBehaviour
     public void CmdShoot()
     {
         GameObject instance;
+        Vector3 newPos = this.transform.position;
+        Quaternion newRot = this.gameObject.transform.GetChild(1).GetComponent<Camera>().transform.rotation;
         int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
         if(numQuarks > 0)
         {
             numQuarks--;
-            instance = Instantiate(shot, shotSpawn.position, this.gameObject.transform.GetChild(1).GetComponent<Camera>().transform.rotation) as GameObject;
+            instance = Instantiate(shot, newPos, newRot) as GameObject;
         }
         else if(haveElement)
         {
-            instance = Instantiate(elementShot, shotSpawn.position, this.gameObject.transform.GetChild(1).GetComponent<Camera>().transform.rotation) as GameObject;
+            instance = Instantiate(elementShot, newPos, newRot) as GameObject;
             print(playerNum + " fires element " + heldElement);
             instance.GetComponent<ElementScript>().carrier = playerNum;
             instance.GetComponent<ElementScript>().elementID = heldElement;
@@ -73,7 +75,7 @@ public class CombatScript : NetworkBehaviour
         }
         else
         {
-            instance = Instantiate(basicShot, shotSpawn.position, this.gameObject.transform.GetChild(1).GetComponent<Camera>().transform.rotation) as GameObject;
+            instance = Instantiate(basicShot, newPos, newRot) as GameObject;
         }
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
 
