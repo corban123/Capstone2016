@@ -7,10 +7,12 @@ using System.Collections;
 
 public class ElementScript : MonoBehaviour
 {
+    public int cost;
     public int elementID;   //This id is unique to each element (numbered 1-16)
     public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
     enum Element { Alkaline, Metals, Gases, Noble}
+
 	// Use this for initialization
 	void Start ()
     {
@@ -24,9 +26,13 @@ public class ElementScript : MonoBehaviour
 
     public void PowerUp()
     {
-        if (IsElementType() == Element.Alkaline)
+        if (IsElementType () == Element.Alkaline)
         {
-            Instantiate(blackHole, transform.position, transform.rotation);
+            Instantiate (blackHole, transform.position, transform.rotation);
+        }
+        else if (IsElementType () == Element.Metals)
+        {
+            Freeze ();
         }
     }
 
@@ -50,4 +56,15 @@ public class ElementScript : MonoBehaviour
         }
     }
 
+
+    void Freeze() {
+        float range = 50f;
+
+        foreach (Collider collider in Physics.OverlapSphere(transform.position, range)) {
+            FirstPersonController fpc = collider.GetComponent<FirstPersonController> ();
+            if (fpc != null) {
+                fpc.FreezeMovement ();
+            }
+        }
+    }
 }

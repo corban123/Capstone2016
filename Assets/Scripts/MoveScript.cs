@@ -80,7 +80,7 @@ public class MoveScript : MonoBehaviour
             //TODO: Add cost into consideration when picking up an element
             GameObject pickedElement = collision.gameObject;
             combat.haveElement = true;
-            combat.heldElement = pickedElement.GetComponent<ElementPickupScript>().id;
+            combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
             print("picked up element " + combat.heldElement);
             Destroy(collision.gameObject);
         }

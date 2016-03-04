@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 
@@ -20,6 +20,7 @@ public class FirstPersonController : NetworkBehaviour
     public float mouseSensitivity = 5.0f;
     public float jumpSpeed = 8.0f;
 	float upDownRange = 60.0f;
+
 
     bool canMove;
 	Vector3 moveDirection;
@@ -45,7 +46,7 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-			SetCursorState ();
+			//SetCursorState ();
 
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
@@ -91,6 +92,7 @@ public class FirstPersonController : NetworkBehaviour
             sideSpeed = Input.GetAxis("Horizontal");
 
             // Rotation
+<<<<<<< HEAD
 			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 10);
 			verticalRotation -= Input.GetAxis ("Mouse Y") * mouseSensitivity;
 			float verticalRotation1 = verticalRotation;
@@ -101,34 +103,49 @@ public class FirstPersonController : NetworkBehaviour
 				verticalRotation1 = -upDownRange;
 			
 			}
+=======
+			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 100);
+			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
+            move.RotateCharacter(verticalRotation , leftRight);
+
+>>>>>>> 60276fc00066468e5377ffff263ed7c385659f6a
 			// Movement
             if (canMove) {
                 forwardSpeed = forwardSpeed * movementSpeed;
                 sideSpeed = sideSpeed * movementSpeed;
 
-			if (characterController.isGrounded) {
-				// Reset y velocity if on the ground
-				moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
+                if (characterController.isGrounded) {
+                    // Reset y velocity if on the ground
+                    moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
 
-				// Unless we are jumping
-				if (jump) {
-					moveDirection.y = jumpSpeed;
-				}
-			} else {
-				moveDirection.x = sideSpeed;
-				moveDirection.z = forwardSpeed;
-                jump = false;
-			}
+                    // Unless we are jumping
+                    if (jump) {
+                        moveDirection.y = jumpSpeed;
+                    }
+                } else {
+                    moveDirection.x = sideSpeed;
+                    moveDirection.z = forwardSpeed;
+                    jump = false;
+                }
                 
-                moveDirection = transform.TransformDirection (moveDirection);
+<<<<<<< HEAD
+			moveDirection = transform.TransformDirection (moveDirection);
 
 			// Apply gravity
 			moveDirection.y += gravity * Time.fixedDeltaTime;
             move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
 			move.RotateCharacter (verticalRotation1, leftRight);
-			}
-    	}
-	}
+		}
+=======
+                moveDirection = transform.TransformDirection (moveDirection);
+
+                // Apply gravity
+                moveDirection.y += gravity * Time.fixedDeltaTime;
+                move.MoveCharacter (characterController, moveDirection * Time.fixedDeltaTime);
+            }
+        }
+>>>>>>> 60276fc00066468e5377ffff263ed7c385659f6a
+    }
 
 	// Lock the cursor to the center of the game window
     void SetCursorState()

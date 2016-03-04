@@ -37,4 +37,12 @@ public class GravityWell : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            print("Black hole wins!");
+            Destroy(collision.gameObject); //Kill the player
+        }
+    }
 }

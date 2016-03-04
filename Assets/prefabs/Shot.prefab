@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSource: 0
-  MoveSpeed: 600
+  MoveSpeed: 100
   frequency: 40
   magnitude: 0.3
   shoot: {fileID: 8300000, guid: dd8ebfdfbe79fd8438d0dcf13075e1e7, type: 3}
@@ -334,7 +334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: MoveSpeed
-      value: 600
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: magnitude
