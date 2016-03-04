@@ -28,7 +28,7 @@ public class SpawningScript : NetworkBehaviour {
         Debug.Log("NAME: " + name + " TRANS: " + trans);
         GameObject instance;
         Element.GetComponent<ElementScript>().elementID = val;
-        instance = Instantiate(Element, new Vector3(trans.x, trans.y + 3, trans.z), new Quaternion(0, 0, 0, 0)) as GameObject;
+		instance = Instantiate(Element, new Vector3(trans.x, trans.y + 3, trans.z), new Quaternion(0, 0, 0, 0)) as GameObject;
         NetworkServer.Spawn(instance);
 
 

@@ -14,6 +14,8 @@ public class MoveScript : MonoBehaviour
     [SerializeField] AudioClip walk;
 	[SerializeField] AudioClip jumpUp;
 	float upDownRange = 60.0f;
+	Quaternion nextCameraRotation;
+	Quaternion nextPlayerRotation;
 
     
 	// Use this for initialization
@@ -21,6 +23,8 @@ public class MoveScript : MonoBehaviour
     {
         combat = gameObject.GetComponent<CombatScript>();
 		source = gameObject.GetComponent<AudioSource> ();
+		nextCameraRotation = Camera.main.transform.localRotation;
+		nextPlayerRotation = transform.localRotation;
 	}
 
 	void Update () 
@@ -35,12 +39,14 @@ public class MoveScript : MonoBehaviour
 	// Rotate the first person camera by veritcalRotation degrees in the vertical direction.
 	// Rotate the first person character by leftRight degrees in the horizontal direction.
     public void RotateCharacter(float verticalRotation, float leftRight)
-    {
-		verticalRotation = Mathf.Clamp(verticalRotation*100, -upDownRange, upDownRange);
-
-		Camera.main.transform.localRotation =  Quaternion.Euler(verticalRotation, 0, 0);
-		transform.Rotate(0, leftRight, 0);
-    }
+    {	
+		verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
+		nextCameraRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
+		nextPlayerRotation *= Quaternion.Euler (0f, leftRight*5, 0f);
+		nextCameraRotation = ClampRotationAroundXAxis (nextCameraRotation);
+		Camera.main.transform.localRotation =  Quaternion.Lerp(Camera.main.transform.localRotation, nextCameraRotation , Time.deltaTime * 5f);
+		transform.localRotation = Quaternion.Lerp (transform.localRotation, nextPlayerRotation, Time.deltaTime * 5f);
+	}
 
 	// Move the given CharacterController by the vector speed.
     public void MoveCharacter(CharacterController characterController, Vector3 speed)
@@ -87,4 +93,23 @@ public class MoveScript : MonoBehaviour
 		source.clip = pickUp;
 		source.Play ();
     }
+
+	Quaternion ClampRotationAroundXAxis(Quaternion q)
+	{
+		Debug.Log ("W: " + q.w);
+
+		q.x /= q.w;
+		q.y /= q.w;
+		q.z /= q.w;
+		q.w = 1.0f;
+
+		float angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan (q.x);
+
+		angleX = Mathf.Clamp (angleX, -upDownRange, upDownRange);
+
+		q.x = Mathf.Tan (0.5f * Mathf.Deg2Rad * angleX);
+
+		return q;
+	}
+
 }

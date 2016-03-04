@@ -19,6 +19,8 @@ public class FirstPersonController : NetworkBehaviour
     public float movementSpeed = 25.0f;
     public float mouseSensitivity = 5.0f;
     public float jumpSpeed = 8.0f;
+	float upDownRange = 60.0f;
+
 
 	Vector3 moveDirection;
     float forwardSpeed;
@@ -87,9 +89,16 @@ public class FirstPersonController : NetworkBehaviour
             forwardSpeed = Input.GetAxis("Vertical");
             sideSpeed = Input.GetAxis("Horizontal");
             // Rotation
-			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 100);
-			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
-
+			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 10);
+			verticalRotation -= Input.GetAxis ("Mouse Y") * mouseSensitivity;
+			float verticalRotation1 = verticalRotation;
+			if (verticalRotation > upDownRange) {
+				verticalRotation1 = upDownRange;
+			
+			} else if (verticalRotation < -upDownRange) {
+				verticalRotation1 = -upDownRange;
+			
+			}
 			// Movement
 			forwardSpeed = forwardSpeed * movementSpeed;
 			sideSpeed = sideSpeed * movementSpeed;
@@ -113,9 +122,8 @@ public class FirstPersonController : NetworkBehaviour
 			// Apply gravity
 			moveDirection.y += gravity * Time.fixedDeltaTime;
             move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
-
-            move.RotateCharacter(verticalRotation , leftRight);
-        }
+			move.RotateCharacter (verticalRotation1, leftRight);
+		}
     }
 
 	// Lock the cursor to the center of the game window
