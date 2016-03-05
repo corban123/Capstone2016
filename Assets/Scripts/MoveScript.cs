@@ -94,6 +94,10 @@ public class MoveScript : MonoBehaviour
         }
 		source.clip = pickUp;
 		source.Play ();
+
+        if (collision.tag == "Killbox") {
+            print ("you died :(");
+        }
     }
 
 	Quaternion ClampRotationAroundXAxis(Quaternion q)
