@@ -16,6 +16,8 @@ public class CombatScript : NetworkBehaviour
     private Text healthText;
     float startTime;
     bool takeDmg;
+    private Text elementText;
+
     // Use this for initialization
     void Start () {
         haveElement = false;
@@ -25,6 +27,8 @@ public class CombatScript : NetworkBehaviour
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
         SetHealthText();
         takeDmg = false;
+        elementText = GameObject.Find("ElementText").GetComponent<Text>();
+        DeleteElementText();
     }
     
 	
@@ -50,6 +54,21 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
+    void DeleteElementText()
+    {
+        if (isLocalPlayer)
+        {
+            elementText.text = "Element:  ---";
+        }
+    }
+
+    public void SetElementText() 
+    {
+        if (isLocalPlayer)
+        {
+            elementText.text = "Element:  " + heldElement.ToString();
+        }
+    }
 
     //Will create a projectile based on what the player has available in the inventory
     [Command]
@@ -72,6 +91,7 @@ public class CombatScript : NetworkBehaviour
             instance.GetComponent<ElementScript>().elementID = heldElement;
             haveElement = false;
             heldElement = -1; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
+            DeleteElementText();
         }
         else
         {
