@@ -96,7 +96,7 @@ public class MoveScript : MonoBehaviour
 
 	Quaternion ClampRotationAroundXAxis(Quaternion q)
 	{
-		Debug.Log ("W: " + q.w);
+		//Debug.Log ("W: " + q.w);
 
 		q.x /= q.w;
 		q.y /= q.w;

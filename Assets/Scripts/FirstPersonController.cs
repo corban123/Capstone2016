@@ -21,10 +21,15 @@ public class FirstPersonController : NetworkBehaviour
     public float jumpSpeed = 8.0f;
 	float upDownRange = 60.0f;
 
-    bool canMove;
+    float startTime;
+    float duration = 2.0f;
+    bool freezing;
+    float freezeRate = 0.025f;
+
 	Vector3 moveDirection;
     float forwardSpeed;
     float sideSpeed;
+    float moveFactor;
 
 	private float gravity = -20.0f;
 	private bool jump = false;
@@ -59,7 +64,8 @@ public class FirstPersonController : NetworkBehaviour
             sideSpeed = 0;
 			leftRight = 0;
 			moveDirection = Vector3.zero;
-            canMove = true;
+            freezing = false;
+            moveFactor = 1.0f;
         }
     }
 
@@ -99,34 +105,51 @@ public class FirstPersonController : NetworkBehaviour
 			
 			} else if (verticalRotation < -upDownRange) {
 				verticalRotation1 = -upDownRange;
-			
 			}
+
+            move.RotateCharacter (verticalRotation1, leftRight);
+
 			// Movement
-            if (canMove) {
-                forwardSpeed = forwardSpeed * movementSpeed;
-                sideSpeed = sideSpeed * movementSpeed;
+            if (freezing) {
+                // Unfreeze
+                if (Time.time - startTime > duration) {
+                    print ("Unfreezing movement");
+                    moveFactor = 1.0f;
+                    freezing = false;
+                }
+                // Frozen
+                else if (moveFactor <= 0.0f) {
+                    moveFactor = 0.0f;
+                } 
+                // Slowing down
+                else {
+                    moveFactor -= freezeRate;
+                    print (moveFactor);
+                }
+            }
 
-			if (characterController.isGrounded) {
-				// Reset y velocity if on the ground
-				moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
+            forwardSpeed = forwardSpeed * movementSpeed * moveFactor;
+            sideSpeed = sideSpeed * movementSpeed * moveFactor;
 
-				// Unless we are jumping
-				if (jump) {
-					moveDirection.y = jumpSpeed;
-				}
-			} else {
-				moveDirection.x = sideSpeed;
-				moveDirection.z = forwardSpeed;
+            if (characterController.isGrounded) {
+                // Reset y velocity if on the ground
+                moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
+
+                // Unless we are jumping
+                if (jump && !freezing) {
+                    moveDirection.y = jumpSpeed;
+                }
+            } else {
+                moveDirection.x = sideSpeed;
+                moveDirection.z = forwardSpeed;
                 jump = false;
-			}
-                
-                moveDirection = transform.TransformDirection (moveDirection);
+            }
+            
+            moveDirection = transform.TransformDirection (moveDirection);
 
-			// Apply gravity
-			moveDirection.y += gravity * Time.fixedDeltaTime;
-            move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
-			move.RotateCharacter (verticalRotation1, leftRight);
-			}
+            // Apply gravity
+            moveDirection.y += gravity * Time.fixedDeltaTime;
+            move.MoveCharacter (characterController, moveDirection * Time.fixedDeltaTime);
     	}
 	}
 
@@ -137,13 +160,13 @@ public class FirstPersonController : NetworkBehaviour
 		Cursor.visible = false;
     }
 
-    public IEnumerator FreezeMovement()
+    public void FreezeMovement()
     {
         if (isLocalPlayer)
         {
-            canMove = false;
-            yield return new WaitForSeconds (2);
-            canMove = true;
+            startTime = Time.time;
+            print ("Freezing movement at Time: " + startTime);
+            freezing = true;
         }
     }
         
