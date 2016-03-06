@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
+using UnityEngine.UI;
 /*
 * A script for moving the character and rotating the FPC camera.
 */
@@ -82,6 +83,7 @@ public class MoveScript : MonoBehaviour
             combat.haveElement = true;
             combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
             print("picked up element " + combat.heldElement);
+            combat.SetElementText();
             Destroy(collision.gameObject);
         }
         if (collision.tag == "Quark")
@@ -92,11 +94,15 @@ public class MoveScript : MonoBehaviour
         }
 		source.clip = pickUp;
 		source.Play ();
+
+        if (collision.tag == "Killbox") {
+            print ("you died :(");
+        }
     }
 
 	Quaternion ClampRotationAroundXAxis(Quaternion q)
 	{
-		Debug.Log ("W: " + q.w);
+		//Debug.Log ("W: " + q.w);
 
 		q.x /= q.w;
 		q.y /= q.w;

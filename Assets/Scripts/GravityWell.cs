@@ -37,12 +37,18 @@ public class GravityWell : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.CompareTag("Player"))
+    void OnDestroy()
+    { 
+        print("lol");
+        foreach (Collider collider in Physics.OverlapSphere(transform.position, range))
         {
-            print("Black hole wins!");
-            Destroy(collision.gameObject); //Kill the player
+            if (collider.CompareTag("Player"))
+            {
+                // apply force on target towards me
+                print("Black hole wins!");
+                Destroy(collider.gameObject); //Replace this with respawn
+            }
         }
     }
+
 }
