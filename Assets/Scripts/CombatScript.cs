@@ -27,7 +27,7 @@ public class CombatScript : NetworkBehaviour
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
         SetHealthText();
         takeDmg = false;
-        elementText = GameObject.Find("ElemeText").GetComponent<Text>();
+        elementText = GameObject.Find("ElementText").GetComponent<Text>();
         DeleteElementText();
     }
     
