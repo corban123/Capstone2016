@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.Networking;
 /*
 *   This script contains the logic for elements and their abilities/power ups, and will be used by elements that have been fired
 */
 
-public class ElementScript : MonoBehaviour
+public class ElementScript : NetworkBehaviour
 {
     public int cost;
     public int elementID;   //This id is unique to each element (numbered 1-16)
@@ -28,7 +28,7 @@ public class ElementScript : MonoBehaviour
     {
         if (IsElementType () == Element.Alkaline)
         {
-            Instantiate (blackHole, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation);  
+            CmdSpawnBlackHole();
         }
         else if (IsElementType () == Element.Metals)
         {
@@ -56,6 +56,12 @@ public class ElementScript : MonoBehaviour
         }
     }
 
+    [Command]
+    void CmdSpawnBlackHole()
+    {
+        GameObject instance = Instantiate(blackHole, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation) as GameObject;
+        NetworkServer.Spawn(instance);
+    }
 
     void Freeze() {
         float range = 50f;

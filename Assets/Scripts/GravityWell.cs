@@ -1,8 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
-public class GravityWell : MonoBehaviour
+using UnityEngine.Networking;
+public class GravityWell : NetworkBehaviour
 {
 	float range = 50f;
     float pullForce = 1000f;
@@ -38,17 +38,24 @@ public class GravityWell : MonoBehaviour
     }
 
     void OnDestroy()
-    { 
-        print("lol");
+    {
+        CmdRemoveBlackHole();
+    }
+
+    [Command]
+    void CmdRemoveBlackHole()
+    {
         foreach (Collider collider in Physics.OverlapSphere(transform.position, range))
         {
             if (collider.CompareTag("Player"))
-            {
-                // apply force on target towards me
-                print("Black hole wins!");
-                Destroy(collider.gameObject); //Replace this with respawn
+            {               
+                Destroy(collider.gameObject);
+                NetworkServer.Destroy(collider.gameObject); //Replace this with respawn
             }
         }
+        NetworkServer.Destroy(this.gameObject);
     }
+
+    
 
 }

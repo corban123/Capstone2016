@@ -3,10 +3,11 @@ using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 /*
 * A script for moving the character and rotating the FPC camera.
 */
-public class MoveScript : MonoBehaviour
+public class MoveScript : NetworkBehaviour
 {
     CombatScript combat;
 	AudioSource source;
@@ -69,8 +70,6 @@ public class MoveScript : MonoBehaviour
 		
 		}
         characterController.Move(speed);
-
-
     }
 
 	// Pick up elements and quarks on collision
@@ -80,17 +79,17 @@ public class MoveScript : MonoBehaviour
         {
             //TODO: Add cost into consideration when picking up an element
             GameObject pickedElement = collision.gameObject;
-            combat.haveElement = true;
-            combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
+            CmdPickUpElement(this.gameObject.name, pickedElement);
             print("picked up element " + combat.heldElement);
             combat.SetElementText();
-            Destroy(collision.gameObject);
+            Destroy(pickedElement);
         }
         if (collision.tag == "Quark")
         {
+            GameObject pickedQuark = collision.gameObject;
             print("picked up quark");
-            Destroy(collision.gameObject);
-            combat.numQuarks += 1;
+            CmdPickUpQuark(this.gameObject.name, pickedQuark);
+            Destroy(pickedQuark);
         }
 		source.clip = pickUp;
 		source.Play ();
@@ -99,8 +98,25 @@ public class MoveScript : MonoBehaviour
             print ("you died :(");
         }
     }
+    
+    [Command]
+    void CmdPickUpElement(string uniqueID, GameObject element)
+    {
+        GameObject target = GameObject.Find(uniqueID);
+        target.GetComponent<CombatScript>().haveElement = true;
+        target.GetComponent<CombatScript>().heldElement = element.GetComponent<ElementScript>().elementID;
+        NetworkServer.Destroy(element);
+    }
 
-	Quaternion ClampRotationAroundXAxis(Quaternion q)
+    [Command]
+    void CmdPickUpQuark(string uniqueID, GameObject quark)
+    {
+        GameObject target = GameObject.Find(uniqueID);
+        target.GetComponent<CombatScript>().numQuarks++;
+        NetworkServer.Destroy(quark);
+    }
+
+    Quaternion ClampRotationAroundXAxis(Quaternion q)
 	{
 		//Debug.Log ("W: " + q.w);
 

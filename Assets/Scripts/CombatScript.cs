@@ -98,7 +98,6 @@ public class CombatScript : NetworkBehaviour
             instance = Instantiate(basicShot, newPos, newRot) as GameObject;
         }
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
-
         NetworkServer.Spawn(instance);
     }
 
