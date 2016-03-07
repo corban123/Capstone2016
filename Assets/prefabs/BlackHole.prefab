@@ -15,6 +15,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
+  - 114: {fileID: 11401638}
   m_Layer: 0
   m_Name: BlackHole
   m_TagString: Untagged
@@ -94,6 +95,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 5
+--- !u!114 &11401638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 1
+    i1: 158
+    i2: 41
+    i3: 140
+    i4: 75
+    i5: 34
+    i6: 212
+    i7: 214
+    i8: 104
+    i9: 243
+    i10: 61
+    i11: 106
+    i12: 142
+    i13: 78
+    i14: 208
+    i15: 162
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1680,6 +1713,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: duration
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPlayerAuthority
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
