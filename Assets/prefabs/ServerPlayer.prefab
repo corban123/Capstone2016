@@ -3540,6 +3540,8 @@ MonoBehaviour:
   pickUp: {fileID: 8300000, guid: 8119703816119f54981a7aa095a6b1ef, type: 3}
   walk: {fileID: 8300000, guid: 399fb8e5f60516d46b306ae8400443e7, type: 3}
   jumpUp: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
+  player1RespawnPoint: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
+  player2RespawnPoint: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
 --- !u!114 &11412364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3818,6 +3820,22 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: player1Point
+      value: 
+      objectReference: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: player2Point
+      value: 
+      objectReference: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: player1RespawnPoint
+      value: 
+      objectReference: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: player2RespawnPoint
+      value: 
+      objectReference: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134866}

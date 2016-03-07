@@ -17,7 +17,8 @@ public class MoveScript : MonoBehaviour
 	float upDownRange = 60.0f;
 	Quaternion nextCameraRotation;
 	Quaternion nextPlayerRotation;
-
+    public Transform player1RespawnPoint;
+    public Transform player2RespawnPoint;
     
 	// Use this for initialization
 	void Start ()
@@ -97,6 +98,7 @@ public class MoveScript : MonoBehaviour
 
         if (collision.tag == "Killbox") {
             print ("you died :(");
+            Respawn ();
         }
     }
 
@@ -118,4 +120,13 @@ public class MoveScript : MonoBehaviour
 		return q;
 	}
 
+    void Respawn() {
+        if (gameObject.name == "Player 1") {
+            print ("Player 1 died");
+            transform.position = player1RespawnPoint.transform.position;
+        } else {
+            print ("Player 2 died");
+            transform.position = player2RespawnPoint.transform.position;
+        }
+    }
 }
