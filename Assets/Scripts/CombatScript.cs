@@ -76,7 +76,7 @@ public class CombatScript : NetworkBehaviour
     {
         GameObject instance;
         Vector3 newPos = shotSpawn.position;
-        Quaternion newRot = this.gameObject.transform.GetChild(1).GetComponent<Camera>().transform.rotation;
+        Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
         int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
         if(numQuarks > 0)
         {
