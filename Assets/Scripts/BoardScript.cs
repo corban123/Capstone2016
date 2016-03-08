@@ -9,17 +9,38 @@ using System.Collections;
 public class BoardScript : NetworkBehaviour {
 	private int[,] board;
 	private bool[,] scored = new bool[4, 4];
-	private Text boardText;
+    private GameObject boardUI;
+    private bool UICreated = false;
+    public GameObject barium;
+    public GameObject calcium;
+    public GameObject carbon;
+    public GameObject copper;
+    public GameObject gold;
+    public GameObject helium;
+    public GameObject hydrogen;
+    public GameObject krypton;
+    public GameObject neon;
+    public GameObject nickel;
+    public GameObject nitrogen;
+    public GameObject oxygen;
+    public GameObject potassium;
+    public GameObject silver;
+    public GameObject sodium;
+    public GameObject xenon;
 
 	void Start() {
+        print ("creating new board");
 	}
 
 
 	// Set the board value
 	public void SetBoard (int[,] board) {
-        boardText = GameObject.Find("BoardText").GetComponent<Text>();
+        boardUI = GameObject.Find("BingoBoard");
 		this.board = board;
-		SetBoardText ();
+        if (!UICreated) {
+            CreateBingoBoardUI ();
+            UICreated = true;
+        }
 	}
 
 	// Marks an element as scored on this board
@@ -32,7 +53,7 @@ public class BoardScript : NetworkBehaviour {
 		scored[coordinates[0], coordinates[1]] = true;
 
 		// Change Board text
-		SetBoardText();
+		//SetBoardText();
 
 		// Check whether the board is a winner
 
@@ -73,13 +94,6 @@ public class BoardScript : NetworkBehaviour {
 		return null;
 	}
 
-	private void SetBoardText() {
-		if (isLocalPlayer && boardText != null)
-		{
-			boardText.text = "Bingo Board\n" + ToString();
-		}
-	}
-
 	// Returns whether or not marking off the element at (x, y) causes a player to win.
 	private bool isWin(int x, int y) {
 		bool win_horizontal = true;
@@ -102,5 +116,57 @@ public class BoardScript : NetworkBehaviour {
     {
 
         return board[i, j];
+    }
+
+    private void CreateBingoBoardUI (){
+        print ("here");
+        barium = Instantiate (barium) as GameObject;
+        barium.transform.SetParent(boardUI.transform, false);
+
+        carbon = Instantiate (carbon) as GameObject;
+        carbon.transform.SetParent(boardUI.transform, false);
+
+        calcium = Instantiate (calcium) as GameObject;
+        calcium.transform.SetParent(boardUI.transform, false);
+
+        copper = Instantiate (copper) as GameObject;
+        copper.transform.SetParent (boardUI.transform, false);
+
+        gold = Instantiate (gold) as GameObject;
+        gold.transform.SetParent(boardUI.transform, false);
+
+        helium = Instantiate (helium) as GameObject;
+        helium.transform.SetParent(boardUI.transform, false);
+
+        hydrogen = Instantiate (hydrogen) as GameObject;
+        hydrogen.transform.SetParent(boardUI.transform, false);
+
+        krypton = Instantiate (krypton) as GameObject;
+        krypton.transform.SetParent(boardUI.transform, false);
+
+        neon = Instantiate (neon) as GameObject;
+        neon.transform.SetParent(boardUI.transform, false);
+
+        nickel = Instantiate (nickel) as GameObject;
+        nickel.transform.SetParent(boardUI.transform, false);
+
+        nitrogen = Instantiate (nitrogen) as GameObject;
+        nitrogen.transform.SetParent(boardUI.transform, false);
+
+        oxygen = Instantiate (oxygen) as GameObject;
+        oxygen.transform.SetParent(boardUI.transform, false);
+
+        potassium = Instantiate (potassium) as GameObject;
+        potassium.transform.SetParent(boardUI.transform, false);
+
+        silver = Instantiate (silver) as GameObject;
+        silver.transform.SetParent(boardUI.transform, false);
+
+        sodium = Instantiate (sodium) as GameObject;
+        sodium.transform.SetParent(boardUI.transform, false);
+
+        xenon = Instantiate (xenon) as GameObject;
+        xenon.transform.SetParent(boardUI.transform, false);
+
     }
 }

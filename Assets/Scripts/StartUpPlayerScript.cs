@@ -11,6 +11,7 @@ public class StartUpPlayerScript : NetworkBehaviour {
 	BoardGenerator generator;
 	List<int[,]> boards;
 	bool found;
+    bool foundp1;
 
 	void Start () {
 		// Generate the boards
@@ -26,10 +27,14 @@ public class StartUpPlayerScript : NetworkBehaviour {
 			if (boardObjects.Length == 1) {
 				boardObjects [0].SetBoard (boards [0]);
                 boardObjects [0].gameObject.name = "Player 1";
+                foundp1 = true;
 			} else if (boardObjects.Length == 2) {
-				boardObjects [0].SetBoard (boards [0]);
+                if (!foundp1) {
+                    boardObjects [0].SetBoard (boards [0]);
+                    boardObjects [0].gameObject.name = "Player 1";
+                }
+
 				boardObjects [1].SetBoard (boards [1]);
-				boardObjects [0].gameObject.name = "Player 1";
                 boardObjects [1].gameObject.name = "Player 2";
                 found = true;
 			}
