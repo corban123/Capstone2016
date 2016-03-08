@@ -26,14 +26,14 @@ public class ElementScript : NetworkBehaviour
 
     public void PowerUp()
     {
-//        if (IsElementType () == Element.Alkaline)
-//        {
-//            CmdSpawnBlackHole();
-//        }
-//        else if (IsElementType () == Element.Metals)
-//        {
+        if (IsElementType () == Element.Alkaline)
+        {
+            CmdSpawnBlackHole();
+        }
+        else if (IsElementType () == Element.Metals)
+        {
             Freeze ();
-     //   }
+        }
     }
 
     Element IsElementType() //Useful to know what kind of element this script is attached to

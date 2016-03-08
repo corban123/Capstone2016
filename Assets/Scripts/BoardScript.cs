@@ -29,7 +29,6 @@ public class BoardScript : NetworkBehaviour {
     public GameObject xenon;
 
 	void Start() {
-        print ("creating new board");
 	}
 
 
@@ -119,7 +118,6 @@ public class BoardScript : NetworkBehaviour {
     }
 
     private void CreateBingoBoardUI (){
-        print ("here");
         barium = Instantiate (barium) as GameObject;
         barium.transform.SetParent(boardUI.transform, false);
 
