@@ -117,54 +117,79 @@ public class BoardScript : NetworkBehaviour {
         return board[i, j];
     }
 
-    private void CreateBingoBoardUI (){
-        barium = Instantiate (barium) as GameObject;
-        barium.transform.SetParent(boardUI.transform, false);
+    private void CreateBingoBoardUI () {
+        int elem;
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                elem = board [i, j];
 
-        carbon = Instantiate (carbon) as GameObject;
-        carbon.transform.SetParent(boardUI.transform, false);
-
-        calcium = Instantiate (calcium) as GameObject;
-        calcium.transform.SetParent(boardUI.transform, false);
-
-        copper = Instantiate (copper) as GameObject;
-        copper.transform.SetParent (boardUI.transform, false);
-
-        gold = Instantiate (gold) as GameObject;
-        gold.transform.SetParent(boardUI.transform, false);
-
-        helium = Instantiate (helium) as GameObject;
-        helium.transform.SetParent(boardUI.transform, false);
-
-        hydrogen = Instantiate (hydrogen) as GameObject;
-        hydrogen.transform.SetParent(boardUI.transform, false);
-
-        krypton = Instantiate (krypton) as GameObject;
-        krypton.transform.SetParent(boardUI.transform, false);
-
-        neon = Instantiate (neon) as GameObject;
-        neon.transform.SetParent(boardUI.transform, false);
-
-        nickel = Instantiate (nickel) as GameObject;
-        nickel.transform.SetParent(boardUI.transform, false);
-
-        nitrogen = Instantiate (nitrogen) as GameObject;
-        nitrogen.transform.SetParent(boardUI.transform, false);
-
-        oxygen = Instantiate (oxygen) as GameObject;
-        oxygen.transform.SetParent(boardUI.transform, false);
-
-        potassium = Instantiate (potassium) as GameObject;
-        potassium.transform.SetParent(boardUI.transform, false);
-
-        silver = Instantiate (silver) as GameObject;
-        silver.transform.SetParent(boardUI.transform, false);
-
-        sodium = Instantiate (sodium) as GameObject;
-        sodium.transform.SetParent(boardUI.transform, false);
-
-        xenon = Instantiate (xenon) as GameObject;
-        xenon.transform.SetParent(boardUI.transform, false);
-
+                switch (elem) {
+                    case 0:
+                        sodium = Instantiate (sodium) as GameObject;
+                        sodium.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 1:
+                        potassium = Instantiate (potassium) as GameObject;
+                        potassium.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 2:
+                        calcium = Instantiate (calcium) as GameObject;
+                        calcium.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 3:
+                        barium = Instantiate (barium) as GameObject;
+                        barium.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 4:
+                        copper = Instantiate (copper) as GameObject;
+                        copper.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 5:
+                        nickel = Instantiate (nickel) as GameObject;
+                        nickel.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 6:
+                        silver = Instantiate (silver) as GameObject;
+                        silver.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 7:
+                        gold = Instantiate (gold) as GameObject;
+                        gold.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 8:
+                        carbon = Instantiate (carbon) as GameObject;
+                        carbon.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 9:
+                        nitrogen = Instantiate (nitrogen) as GameObject;
+                        nitrogen.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 10:
+                        oxygen = Instantiate (oxygen) as GameObject;
+                        oxygen.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 11:
+                        hydrogen = Instantiate (hydrogen) as GameObject;
+                        hydrogen.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 12:
+                        helium = Instantiate (helium) as GameObject;
+                        helium.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 13:
+                        neon = Instantiate (neon) as GameObject;
+                        neon.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 14:
+                        krypton = Instantiate (krypton) as GameObject;
+                        krypton.transform.SetParent (boardUI.transform, false);
+                        break;
+                    case 15:
+                        xenon = Instantiate (xenon) as GameObject;
+                        xenon.transform.SetParent (boardUI.transform, false);
+                        break;
+                }
+            }
+        }
     }
 }
