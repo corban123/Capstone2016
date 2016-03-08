@@ -3692,7 +3692,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -112.87, y: 61, z: -226.78926}
+  m_LocalPosition: {x: 13.37204, y: 75.12688, z: -114.202354}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 445190}
@@ -4079,7 +4079,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 1
 --- !u!114 &11408210
@@ -4390,7 +4390,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Height: 0.37
+  m_Height: 0.3
   m_Radius: 0.09
   m_SlopeLimit: 45
   m_StepOffset: 0.3

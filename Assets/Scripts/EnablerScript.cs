@@ -32,6 +32,9 @@ public class EnablerScript : NetworkBehaviour {
 			// Enable the camera and audio for this player
 			FPSCam.enabled = true;
 			audioListen.enabled = true;
+			foreach(Renderer r in GetComponentsInChildren<Renderer>()){
+				r.enabled = false;
+			}
 		}
 	}
 	
