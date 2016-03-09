@@ -28,6 +28,23 @@ public class BoardScript : NetworkBehaviour {
     public GameObject sodium;
     public GameObject xenon;
 
+    public Sprite barium_grey;
+    public Sprite calcium_grey;
+    public Sprite carbon_grey;
+    public Sprite copper_grey;
+    public Sprite gold_grey;
+    public Sprite helium_grey;
+    public Sprite hydrogen_grey;
+    public Sprite krypton_grey;
+    public Sprite neon_grey;
+    public Sprite nickel_grey;
+    public Sprite nitrogen_grey;
+    public Sprite oxygen_grey;
+    public Sprite potassium_grey;
+    public Sprite silver_grey;
+    public Sprite sodium_grey;
+    public Sprite xenon_grey;
+
 	void Start() {
 	}
 
@@ -52,7 +69,7 @@ public class BoardScript : NetworkBehaviour {
 		scored[coordinates[0], coordinates[1]] = true;
 
 		// Change Board text
-		//SetBoardText();
+        GreyOutOnUI(coordinates[0], coordinates[1], element);
 
 		// Check whether the board is a winner
 
@@ -113,8 +130,14 @@ public class BoardScript : NetworkBehaviour {
 
     public int getValueAtPoint(int i, int j)
     {
-
         return board[i, j];
+    }
+
+    private void GreyOutOnUI(int x, int y, int elem) {
+        Image[] i = boardUI.GetComponentsInChildren<Image>();
+        int idx = x * 3 + y;
+        print (idx);
+        i[idx].sprite = GetSprite(elem);
     }
 
     private void CreateBingoBoardUI () {
@@ -122,74 +145,88 @@ public class BoardScript : NetworkBehaviour {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 elem = board [i, j];
-
-                switch (elem) {
-                    case 0:
-                        sodium = Instantiate (sodium) as GameObject;
-                        sodium.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 1:
-                        potassium = Instantiate (potassium) as GameObject;
-                        potassium.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 2:
-                        calcium = Instantiate (calcium) as GameObject;
-                        calcium.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 3:
-                        barium = Instantiate (barium) as GameObject;
-                        barium.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 4:
-                        copper = Instantiate (copper) as GameObject;
-                        copper.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 5:
-                        nickel = Instantiate (nickel) as GameObject;
-                        nickel.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 6:
-                        silver = Instantiate (silver) as GameObject;
-                        silver.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 7:
-                        gold = Instantiate (gold) as GameObject;
-                        gold.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 8:
-                        carbon = Instantiate (carbon) as GameObject;
-                        carbon.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 9:
-                        nitrogen = Instantiate (nitrogen) as GameObject;
-                        nitrogen.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 10:
-                        oxygen = Instantiate (oxygen) as GameObject;
-                        oxygen.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 11:
-                        hydrogen = Instantiate (hydrogen) as GameObject;
-                        hydrogen.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 12:
-                        helium = Instantiate (helium) as GameObject;
-                        helium.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 13:
-                        neon = Instantiate (neon) as GameObject;
-                        neon.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 14:
-                        krypton = Instantiate (krypton) as GameObject;
-                        krypton.transform.SetParent (boardUI.transform, false);
-                        break;
-                    case 15:
-                        xenon = Instantiate (xenon) as GameObject;
-                        xenon.transform.SetParent (boardUI.transform, false);
-                        break;
-                }
+                GameObject obj = GetObject (elem);
+                obj = Instantiate (obj) as GameObject;
+                obj.transform.SetParent (boardUI.transform, false);
             }
         }
+    }
+
+    private GameObject GetObject(int element) {
+        switch (element) {
+            case 0:
+                return sodium;
+            case 1:
+                return potassium;
+            case 2:
+                return calcium;
+            case 3:
+                return barium;
+            case 4:
+                return copper;
+            case 5:
+                return nickel;
+            case 6:
+                return silver;
+            case 7:
+                return gold;
+            case 8:
+                return carbon;
+            case 9:
+                return nitrogen;
+            case 10:
+                return oxygen;
+            case 11:
+                return hydrogen;
+            case 12:
+                return helium;
+            case 13:
+                return neon;
+            case 14:
+                return krypton;
+            case 15:
+                return xenon;
+            default:
+                return null;
+        }
+    }
+
+    private Sprite GetSprite(int element) {
+        switch (element) {
+            case 0:
+                return sodium_grey;
+            case 1:
+                return potassium_grey;
+            case 2:
+                return calcium_grey;
+            case 3:
+                return barium_grey;
+            case 4:
+                return copper_grey;
+            case 5:
+                return nickel_grey;
+            case 6:
+                return silver_grey;
+            case 7:
+                return gold_grey;
+            case 8:
+                return carbon_grey;
+            case 9:
+                return nitrogen_grey;
+            case 10:
+                return oxygen_grey;
+            case 11:
+                return hydrogen_grey;
+            case 12:
+                return helium_grey;
+            case 13:
+                return neon_grey;
+            case 14:
+                return krypton_grey;
+            case 15:
+                return xenon_grey;
+            default:
+                return null;
+            }
     }
 }
