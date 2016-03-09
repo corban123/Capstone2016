@@ -135,7 +135,7 @@ public class BoardScript : NetworkBehaviour {
 
     private void GreyOutOnUI(int x, int y, int elem) {
         Image[] i = boardUI.GetComponentsInChildren<Image>();
-        int idx = x * 3 + y;
+        int idx = x * 4 + y;
         print (idx);
         i[idx].sprite = GetSprite(elem);
     }
