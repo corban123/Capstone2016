@@ -93,6 +93,73 @@ ModelImporter:
     100170: transform4
     100172: transform5
     100174: transform6
+    100176: bottom1
+    100178: Central_Railing
+    100180: Central_Railing1
+    100182: MainPlatform
+    100184: MainPlatform1
+    100186: MainPlatform_pCube36_polySurface50
+    100188: MainPlatform_pCube36_polySurface50 1
+    100190: pasted__polySurface10
+    100192: pasted__polySurface10 1
+    100194: pCube40
+    100196: pCube40 1
+    100198: pCylinder64
+    100200: pCylinder64 1
+    100202: pCylinder65
+    100204: pCylinder65 1
+    100206: pCylinder66
+    100208: pCylinder66 1
+    100210: pCylinder67
+    100212: pCylinder67 1
+    100214: pCylinder68
+    100216: pCylinder68 1
+    100218: pCylinder69
+    100220: pCylinder69 1
+    100222: pCylinder70
+    100224: pCylinder70 1
+    100226: polySurface27
+    100228: polySurface27 1
+    100230: polySurface38
+    100232: polySurface38 1
+    100234: polySurface39
+    100236: polySurface39 1
+    100238: polySurface40
+    100240: polySurface41
+    100242: polySurface42
+    100244: polySurface43
+    100246: polySurface44
+    100248: polySurface45
+    100250: polySurface46
+    100252: polySurface48
+    100254: polySurface48 1
+    100256: polySurface49
+    100258: polySurface49 1
+    100260: polySurface51
+    100262: polySurface51 1
+    100264: polySurface53
+    100266: polySurface53 1
+    100268: polySurface54
+    100270: polySurface54 1
+    100272: polySurface55
+    100274: polySurface55 1
+    100276: polySurface57
+    100278: polySurface58
+    100280: polySurface60
+    100282: polySurface61
+    100284: polySurface62
+    100286: polySurface64
+    100288: pPipe11
+    100290: pPipe12
+    100292: pPipe12 1
+    100294: pPipe13
+    100296: pPipe13 1
+    100298: pPipe14
+    100300: pPipe15
+    100302: pPipe16
+    100304: pPipe17
+    100306: pSphere8
+    100308: pSphere9
     400000: bottom
     400002: MainSection
     400004: MainSection1
@@ -181,6 +248,73 @@ ModelImporter:
     400170: transform4
     400172: transform5
     400174: transform6
+    400176: bottom1
+    400178: Central_Railing
+    400180: Central_Railing1
+    400182: MainPlatform
+    400184: MainPlatform1
+    400186: MainPlatform_pCube36_polySurface50
+    400188: MainPlatform_pCube36_polySurface50 1
+    400190: pasted__polySurface10
+    400192: pasted__polySurface10 1
+    400194: pCube40
+    400196: pCube40 1
+    400198: pCylinder64
+    400200: pCylinder64 1
+    400202: pCylinder65
+    400204: pCylinder65 1
+    400206: pCylinder66
+    400208: pCylinder66 1
+    400210: pCylinder67
+    400212: pCylinder67 1
+    400214: pCylinder68
+    400216: pCylinder68 1
+    400218: pCylinder69
+    400220: pCylinder69 1
+    400222: pCylinder70
+    400224: pCylinder70 1
+    400226: polySurface27
+    400228: polySurface27 1
+    400230: polySurface38
+    400232: polySurface38 1
+    400234: polySurface39
+    400236: polySurface39 1
+    400238: polySurface40
+    400240: polySurface41
+    400242: polySurface42
+    400244: polySurface43
+    400246: polySurface44
+    400248: polySurface45
+    400250: polySurface46
+    400252: polySurface48
+    400254: polySurface48 1
+    400256: polySurface49
+    400258: polySurface49 1
+    400260: polySurface51
+    400262: polySurface51 1
+    400264: polySurface53
+    400266: polySurface53 1
+    400268: polySurface54
+    400270: polySurface54 1
+    400272: polySurface55
+    400274: polySurface55 1
+    400276: polySurface57
+    400278: polySurface58
+    400280: polySurface60
+    400282: polySurface61
+    400284: polySurface62
+    400286: polySurface64
+    400288: pPipe11
+    400290: pPipe12
+    400292: pPipe12 1
+    400294: pPipe13
+    400296: pPipe13 1
+    400298: pPipe14
+    400300: pPipe15
+    400302: pPipe16
+    400304: pPipe17
+    400306: pSphere8
+    400308: pSphere9
     2300000: pasted__pCube17
     2300002: pasted__pCylinder39
     2300004: pasted__pCylinder40
@@ -248,6 +382,68 @@ ModelImporter:
     2300128: pPipe8
     2300130: pSphere5
     2300132: pSphere6
+    2300134: MainPlatform_pCube36_polySurface50
+    2300136: MainPlatform_pCube36_polySurface50 1
+    2300138: pasted__polySurface10
+    2300140: pasted__polySurface10 1
+    2300142: pCube40
+    2300144: pCube40 1
+    2300146: pCylinder64
+    2300148: pCylinder64 1
+    2300150: pCylinder65
+    2300152: pCylinder65 1
+    2300154: pCylinder66
+    2300156: pCylinder66 1
+    2300158: pCylinder67
+    2300160: pCylinder67 1
+    2300162: pCylinder68
+    2300164: pCylinder68 1
+    2300166: pCylinder69
+    2300168: pCylinder69 1
+    2300170: pCylinder70
+    2300172: pCylinder70 1
+    2300174: polySurface27
+    2300176: polySurface27 1
+    2300178: polySurface38
+    2300180: polySurface38 1
+    2300182: polySurface39
+    2300184: polySurface39 1
+    2300186: polySurface40
+    2300188: polySurface41
+    2300190: polySurface42
+    2300192: polySurface43
+    2300194: polySurface44
+    2300196: polySurface45
+    2300198: polySurface46
+    2300200: polySurface48
+    2300202: polySurface48 1
+    2300204: polySurface49
+    2300206: polySurface49 1
+    2300208: polySurface51
+    2300210: polySurface51 1
+    2300212: polySurface53
+    2300214: polySurface53 1
+    2300216: polySurface54
+    2300218: polySurface54 1
+    2300220: polySurface55
+    2300222: polySurface55 1
+    2300224: polySurface57
+    2300226: polySurface58
+    2300228: polySurface60
+    2300230: polySurface61
+    2300232: polySurface62
+    2300234: polySurface64
+    2300236: pPipe11
+    2300238: pPipe12
+    2300240: pPipe12 1
+    2300242: pPipe13
+    2300244: pPipe13 1
+    2300246: pPipe14
+    2300248: pPipe15
+    2300250: pPipe16
+    2300252: pPipe17
+    2300254: pSphere8
+    2300256: pSphere9
     3300000: pasted__pCube17
     3300002: pasted__pCylinder39
     3300004: pasted__pCylinder40
@@ -315,6 +511,68 @@ ModelImporter:
     3300128: pPipe8
     3300130: pSphere5
     3300132: pSphere6
+    3300134: MainPlatform_pCube36_polySurface50
+    3300136: MainPlatform_pCube36_polySurface50 1
+    3300138: pasted__polySurface10
+    3300140: pasted__polySurface10 1
+    3300142: pCube40
+    3300144: pCube40 1
+    3300146: pCylinder64
+    3300148: pCylinder64 1
+    3300150: pCylinder65
+    3300152: pCylinder65 1
+    3300154: pCylinder66
+    3300156: pCylinder66 1
+    3300158: pCylinder67
+    3300160: pCylinder67 1
+    3300162: pCylinder68
+    3300164: pCylinder68 1
+    3300166: pCylinder69
+    3300168: pCylinder69 1
+    3300170: pCylinder70
+    3300172: pCylinder70 1
+    3300174: polySurface27
+    3300176: polySurface27 1
+    3300178: polySurface38
+    3300180: polySurface38 1
+    3300182: polySurface39
+    3300184: polySurface39 1
+    3300186: polySurface40
+    3300188: polySurface41
+    3300190: polySurface42
+    3300192: polySurface43
+    3300194: polySurface44
+    3300196: polySurface45
+    3300198: polySurface46
+    3300200: polySurface48
+    3300202: polySurface48 1
+    3300204: polySurface49
+    3300206: polySurface49 1
+    3300208: polySurface51
+    3300210: polySurface51 1
+    3300212: polySurface53
+    3300214: polySurface53 1
+    3300216: polySurface54
+    3300218: polySurface54 1
+    3300220: polySurface55
+    3300222: polySurface55 1
+    3300224: polySurface57
+    3300226: polySurface58
+    3300228: polySurface60
+    3300230: polySurface61
+    3300232: polySurface62
+    3300234: polySurface64
+    3300236: pPipe11
+    3300238: pPipe12
+    3300240: pPipe12 1
+    3300242: pPipe13
+    3300244: pPipe13 1
+    3300246: pPipe14
+    3300248: pPipe15
+    3300250: pPipe16
+    3300252: pPipe17
+    3300254: pSphere8
+    3300256: pSphere9
     4300000: pCylinder41
     4300002: pCylinder42
     4300004: pCylinder43
@@ -382,6 +640,68 @@ ModelImporter:
     4300128: pasted__polySurface1
     4300130: pSphere5
     4300132: pSphere6
+    4300134: polySurface27
+    4300136: polySurface51
+    4300138: pCylinder65
+    4300140: pCylinder64
+    4300142: pCube40
+    4300144: pasted__polySurface10
+    4300146: pCylinder66
+    4300148: pPipe12
+    4300150: pPipe13
+    4300152: polySurface48
+    4300154: pCylinder67
+    4300156: pCylinder68
+    4300158: pCylinder69
+    4300160: pCylinder70
+    4300162: polySurface49
+    4300164: MainPlatform_pCube36_polySurface50
+    4300166: polySurface53
+    4300168: polySurface54
+    4300170: polySurface55
+    4300172: polySurface38
+    4300174: polySurface39
+    4300176: pSphere8
+    4300178: pPipe11
+    4300180: pSphere9
+    4300182: polySurface40
+    4300184: polySurface41
+    4300186: polySurface42
+    4300188: polySurface43
+    4300190: polySurface44
+    4300192: polySurface45
+    4300194: polySurface46
+    4300196: pPipe14
+    4300198: pPipe15
+    4300200: pPipe16
+    4300202: polySurface38
+    4300204: polySurface39
+    4300206: polySurface27
+    4300208: polySurface51
+    4300210: pCylinder65
+    4300212: pCylinder64
+    4300214: pCube40
+    4300216: pasted__polySurface10
+    4300218: pCylinder66
+    4300220: pPipe12
+    4300222: pPipe13
+    4300224: polySurface48
+    4300226: pCylinder67
+    4300228: pCylinder68
+    4300230: pCylinder69
+    4300232: pCylinder70
+    4300234: polySurface49
+    4300236: MainPlatform_pCube36_polySurface50
+    4300238: polySurface53
+    4300240: polySurface54
+    4300242: polySurface55
+    4300244: polySurface57
+    4300246: polySurface58
+    4300248: polySurface60
+    4300250: polySurface61
+    4300252: polySurface62
+    4300254: polySurface64
+    4300256: pPipe17
     6400000: pasted__pCube17
     6400002: pasted__pCylinder39
     6400004: pasted__pCylinder40
@@ -449,6 +769,68 @@ ModelImporter:
     6400128: pPipe8
     6400130: pSphere5
     6400132: pSphere6
+    6400134: MainPlatform_pCube36_polySurface50
+    6400136: MainPlatform_pCube36_polySurface50 1
+    6400138: pasted__polySurface10
+    6400140: pasted__polySurface10 1
+    6400142: pCube40
+    6400144: pCube40 1
+    6400146: pCylinder64
+    6400148: pCylinder64 1
+    6400150: pCylinder65
+    6400152: pCylinder65 1
+    6400154: pCylinder66
+    6400156: pCylinder66 1
+    6400158: pCylinder67
+    6400160: pCylinder67 1
+    6400162: pCylinder68
+    6400164: pCylinder68 1
+    6400166: pCylinder69
+    6400168: pCylinder69 1
+    6400170: pCylinder70
+    6400172: pCylinder70 1
+    6400174: polySurface27
+    6400176: polySurface27 1
+    6400178: polySurface38
+    6400180: polySurface38 1
+    6400182: polySurface39
+    6400184: polySurface39 1
+    6400186: polySurface40
+    6400188: polySurface41
+    6400190: polySurface42
+    6400192: polySurface43
+    6400194: polySurface44
+    6400196: polySurface45
+    6400198: polySurface46
+    6400200: polySurface48
+    6400202: polySurface48 1
+    6400204: polySurface49
+    6400206: polySurface49 1
+    6400208: polySurface51
+    6400210: polySurface51 1
+    6400212: polySurface53
+    6400214: polySurface53 1
+    6400216: polySurface54
+    6400218: polySurface54 1
+    6400220: polySurface55
+    6400222: polySurface55 1
+    6400224: polySurface57
+    6400226: polySurface58
+    6400228: polySurface60
+    6400230: polySurface61
+    6400232: polySurface62
+    6400234: polySurface64
+    6400236: pPipe11
+    6400238: pPipe12
+    6400240: pPipe12 1
+    6400242: pPipe13
+    6400244: pPipe13 1
+    6400246: pPipe14
+    6400248: pPipe15
+    6400250: pPipe16
+    6400252: pPipe17
+    6400254: pSphere8
+    6400256: pSphere9
     9500000: //RootNode
   materials:
     importMaterials: 1
