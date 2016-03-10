@@ -27,7 +27,9 @@ public class StartUpPlayerScript : NetworkBehaviour {
 				boardObjects [0].SetBoard (boards [0]);
                 boardObjects [0].gameObject.name = "Player 1";
 			} else if (boardObjects.Length == 2) {
-				boardObjects [1].SetBoard (boards [1]);
+                boardObjects[0].SetBoard(boards[0]);
+                boardObjects[0].gameObject.name = "Player 1";
+                boardObjects [1].SetBoard (boards [1]);
                 boardObjects [1].gameObject.name = "Player 2";
                 found = true;
 			}
