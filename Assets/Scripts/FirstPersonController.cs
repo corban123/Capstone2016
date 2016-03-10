@@ -50,7 +50,7 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-			//SetCursorState ();
+			SetCursorState ();
 
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();

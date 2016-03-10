@@ -136,7 +136,7 @@ public class MoveScript : NetworkBehaviour
 		return q;
 	}
 
-    void Respawn() {
+    public void Respawn() {
         if (gameObject.name == "Player 1") {
             print ("Player 1 died");
             transform.position = player1RespawnPoint.transform.position;

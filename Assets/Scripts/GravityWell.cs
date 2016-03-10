@@ -48,9 +48,10 @@ public class GravityWell : NetworkBehaviour
         foreach (Collider collider in Physics.OverlapSphere(transform.position, range))
         {
             if (collider.CompareTag("Player"))
-            {               
-                Destroy(collider.gameObject);
-                NetworkServer.Destroy(collider.gameObject); //Replace this with respawn
+            {
+                collider.GetComponent<MoveScript>().Respawn();
+                //Destroy(collider.gameObject);
+                //NetworkServer.Destroy(collider.gameObject); //Replace this with respawn
             }
         }
         NetworkServer.Destroy(this.gameObject);
