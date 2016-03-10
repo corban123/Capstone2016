@@ -33,7 +33,9 @@ public class EnablerScript : NetworkBehaviour {
 			FPSCam.enabled = true;
 			audioListen.enabled = true;
 			foreach(Renderer r in GetComponentsInChildren<Renderer>()){
-				r.enabled = false;
+                if(r.gameObject.name != "pasted__tube"){
+                    r.enabled = false;
+                }
 			}
 		}
 	}
