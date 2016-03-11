@@ -1,0 +1,1088 @@
+fileFormatVersion: 2
+guid: a0a916d23e57d614996086a316e3fbce
+timeCreated: 1457683472
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LaserGunUI Sheet_0
+    21300002: LaserGunUI Sheet_1
+    21300004: LaserGunUI Sheet_2
+    21300006: LaserGunUI Sheet_3
+    21300008: LaserGunUI Sheet_4
+    21300010: LaserGunUI Sheet_5
+    21300012: LaserGunUI Sheet_6
+    21300014: LaserGunUI Sheet_7
+    21300016: LaserGunUI Sheet_8
+    21300018: LaserGunUI Sheet_9
+    21300020: LaserGunUI Sheet_10
+    21300022: LaserGunUI Sheet_11
+    21300024: LaserGunUI Sheet_12
+    21300026: LaserGunUI Sheet_13
+    21300028: LaserGunUI Sheet_14
+    21300030: LaserGunUI Sheet_15
+    21300032: LaserGunUI Sheet_16
+    21300034: LaserGunUI Sheet_17
+    21300036: LaserGunUI Sheet_18
+    21300038: LaserGunUI Sheet_19
+    21300040: LaserGunUI Sheet_20
+    21300042: LaserGunUI Sheet_21
+    21300044: LaserGunUI Sheet_22
+    21300046: LaserGunUI Sheet_23
+    21300048: LaserGunUI Sheet_24
+    21300050: LaserGunUI Sheet_25
+    21300052: LaserGunUI Sheet_26
+    21300054: LaserGunUI Sheet_27
+    21300056: LaserGunUI Sheet_28
+    21300058: LaserGunUI Sheet_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LaserGunUI Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 237, y: -146}
+        - {x: 235, y: -138}
+        - {x: 183, y: -67}
+        - {x: 174, y: -64}
+        - {x: 160, y: -64}
+        - {x: 140, y: -95}
+        - {x: 102, y: -64}
+        - {x: 31, y: -64}
+        - {x: 13, y: -84}
+        - {x: 13, y: -210}
+        - {x: 37, y: -237}
+        - {x: 203, y: -237}
+        - {x: 218, y: -201}
+        - {x: 211, y: -183}
+        - {x: 237, y: -158}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 196, y: -65}
+        - {x: 190, y: -63}
+        - {x: 160, y: -63}
+        - {x: 140, y: -94}
+        - {x: 75, y: -69}
+        - {x: 13, y: -75}
+        - {x: 13, y: -213}
+        - {x: 18, y: -237}
+        - {x: 214, y: -237}
+        - {x: 219, y: -235}
+        - {x: 237, y: -174}
+        - {x: 237, y: -140}
+        - {x: 233, y: -139}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: -63}
+        - {x: 29, y: -71}
+        - {x: 12, y: -124}
+        - {x: 12, y: -157}
+        - {x: 17, y: -169}
+        - {x: 69, y: -194}
+        - {x: 76, y: -193}
+        - {x: 60, y: -238}
+        - {x: 202, y: -238}
+        - {x: 238, y: -210}
+        - {x: 238, y: -79}
+        - {x: 224, y: -63}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 166, y: -196}
+        - {x: 194, y: -206}
+        - {x: 202, y: -209}
+        - {x: 222, y: -212}
+        - {x: 239, y: -169}
+        - {x: 239, y: -123}
+        - {x: 190, y: -63}
+        - {x: 54, y: -63}
+        - {x: 44, y: -67}
+        - {x: 11, y: -130}
+        - {x: 11, y: -159}
+        - {x: 13, y: -162}
+        - {x: 20, y: -162}
+        - {x: 59, y: -239}
+        - {x: 163, y: -239}
+        - {x: 172, y: -235}
+        - {x: 168, y: -208}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 237, y: -139}
+        - {x: 203, y: -62}
+        - {x: 164, y: -62}
+        - {x: 155, y: -65}
+        - {x: 140, y: -94}
+        - {x: 105, y: -65}
+        - {x: 10, y: -74}
+        - {x: 10, y: -195}
+        - {x: 24, y: -240}
+        - {x: 152, y: -240}
+        - {x: 227, y: -206}
+        - {x: 240, y: -159}
+        - {x: 240, y: -142}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 227, y: -61}
+        - {x: 9, y: -61}
+        - {x: 9, y: -88}
+        - {x: 36, y: -115}
+        - {x: 9, y: -130}
+        - {x: 9, y: -177}
+        - {x: 64, y: -241}
+        - {x: 187, y: -241}
+        - {x: 241, y: -225}
+        - {x: 241, y: -117}
+        - {x: 237, y: -86}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 242, y: -124}
+        - {x: 181, y: -61}
+        - {x: 74, y: -61}
+        - {x: 39, y: -90}
+        - {x: 30, y: -99}
+        - {x: 30, y: -109}
+        - {x: 40, y: -120}
+        - {x: 8, y: -133}
+        - {x: 8, y: -242}
+        - {x: 136, y: -242}
+        - {x: 236, y: -212}
+        - {x: 242, y: -175}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 243, y: -163}
+        - {x: 243, y: -145}
+        - {x: 240, y: -138}
+        - {x: 187, y: -106}
+        - {x: 177, y: -108}
+        - {x: 191, y: -78}
+        - {x: 179, y: -60}
+        - {x: 162, y: -60}
+        - {x: 143, y: -93}
+        - {x: 144, y: -137}
+        - {x: 108, y: -88}
+        - {x: 85, y: -68}
+        - {x: 27, y: -70}
+        - {x: 7, y: -92}
+        - {x: 7, y: -166}
+        - {x: 56, y: -243}
+        - {x: 198, y: -243}
+        - {x: 231, y: -235}
+        - {x: 225, y: -194}
+        - {x: 214, y: -188}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 188, y: -66}
+        - {x: 178, y: -59}
+        - {x: 163, y: -59}
+        - {x: 143, y: -93}
+        - {x: 103, y: -66}
+        - {x: 31, y: -71}
+        - {x: 24, y: -98}
+        - {x: 6, y: -118}
+        - {x: 6, y: -176}
+        - {x: 45, y: -243}
+        - {x: 47, y: -244}
+        - {x: 189, y: -244}
+        - {x: 224, y: -232}
+        - {x: 244, y: -179}
+        - {x: 244, y: -127}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: -59}
+        - {x: 4, y: -245}
+        - {x: 173, y: -245}
+        - {x: 224, y: -235}
+        - {x: 246, y: -200}
+        - {x: 246, y: -134}
+        - {x: 179, y: -59}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 186, y: -171}
+        - {x: 244, y: -165}
+        - {x: 247, y: -161}
+        - {x: 247, y: -146}
+        - {x: 245, y: -139}
+        - {x: 210, y: -58}
+        - {x: 52, y: -58}
+        - {x: 29, y: -72}
+        - {x: 25, y: -98}
+        - {x: 28, y: -107}
+        - {x: 4, y: -137}
+        - {x: 3, y: -142}
+        - {x: 3, y: -160}
+        - {x: 7, y: -163}
+        - {x: 12, y: -165}
+        - {x: 59, y: -246}
+        - {x: 65, y: -247}
+        - {x: 182, y: -247}
+        - {x: 224, y: -232}
+        - {x: 224, y: -207}
+        - {x: 222, y: -194}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: -58}
+        - {x: 79, y: -100}
+        - {x: 85, y: -110}
+        - {x: 44, y: -91}
+        - {x: 6, y: -80}
+        - {x: 3, y: -85}
+        - {x: 3, y: -182}
+        - {x: 43, y: -247}
+        - {x: 247, y: -247}
+        - {x: 247, y: -73}
+        - {x: 214, y: -58}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -57}
+        - {x: 2, y: -199}
+        - {x: 47, y: -248}
+        - {x: 148, y: -248}
+        - {x: 237, y: -210}
+        - {x: 248, y: -200}
+        - {x: 248, y: -57}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 183, y: -57}
+        - {x: 1, y: -57}
+        - {x: 1, y: -222}
+        - {x: 22, y: -249}
+        - {x: 213, y: -249}
+        - {x: 244, y: -244}
+        - {x: 249, y: -172}
+        - {x: 249, y: -144}
+        - {x: 243, y: -140}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 249, y: -163}
+        - {x: 249, y: -146}
+        - {x: 247, y: -141}
+        - {x: 196, y: -57}
+        - {x: 166, y: -57}
+        - {x: 160, y: -60}
+        - {x: 140, y: -86}
+        - {x: 86, y: -73}
+        - {x: 1, y: -87}
+        - {x: 1, y: -103}
+        - {x: 29, y: -117}
+        - {x: 58, y: -131}
+        - {x: 11, y: -140}
+        - {x: 8, y: -141}
+        - {x: 1, y: -144}
+        - {x: 1, y: -204}
+        - {x: 52, y: -249}
+        - {x: 158, y: -249}
+        - {x: 226, y: -215}
+        - {x: 226, y: -198}
+        - {x: 218, y: -190}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 183, y: -57}
+        - {x: 1, y: -57}
+        - {x: 1, y: -222}
+        - {x: 22, y: -249}
+        - {x: 213, y: -249}
+        - {x: 244, y: -244}
+        - {x: 249, y: -172}
+        - {x: 249, y: -144}
+        - {x: 243, y: -140}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -57}
+        - {x: 2, y: -199}
+        - {x: 47, y: -248}
+        - {x: 148, y: -248}
+        - {x: 237, y: -210}
+        - {x: 248, y: -200}
+        - {x: 248, y: -57}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: -58}
+        - {x: 79, y: -100}
+        - {x: 85, y: -110}
+        - {x: 44, y: -91}
+        - {x: 6, y: -80}
+        - {x: 3, y: -85}
+        - {x: 3, y: -182}
+        - {x: 43, y: -247}
+        - {x: 247, y: -247}
+        - {x: 247, y: -73}
+        - {x: 214, y: -58}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 186, y: -171}
+        - {x: 244, y: -165}
+        - {x: 247, y: -161}
+        - {x: 247, y: -146}
+        - {x: 245, y: -139}
+        - {x: 210, y: -58}
+        - {x: 52, y: -58}
+        - {x: 29, y: -72}
+        - {x: 25, y: -98}
+        - {x: 28, y: -107}
+        - {x: 4, y: -137}
+        - {x: 3, y: -142}
+        - {x: 3, y: -160}
+        - {x: 7, y: -163}
+        - {x: 12, y: -165}
+        - {x: 59, y: -246}
+        - {x: 65, y: -247}
+        - {x: 182, y: -247}
+        - {x: 224, y: -232}
+        - {x: 224, y: -207}
+        - {x: 222, y: -194}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: -59}
+        - {x: 4, y: -245}
+        - {x: 173, y: -245}
+        - {x: 224, y: -235}
+        - {x: 246, y: -200}
+        - {x: 246, y: -134}
+        - {x: 179, y: -59}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 188, y: -66}
+        - {x: 178, y: -59}
+        - {x: 163, y: -59}
+        - {x: 143, y: -93}
+        - {x: 103, y: -66}
+        - {x: 31, y: -71}
+        - {x: 24, y: -98}
+        - {x: 6, y: -118}
+        - {x: 6, y: -176}
+        - {x: 45, y: -243}
+        - {x: 47, y: -244}
+        - {x: 189, y: -244}
+        - {x: 224, y: -232}
+        - {x: 244, y: -179}
+        - {x: 244, y: -127}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 243, y: -163}
+        - {x: 243, y: -145}
+        - {x: 240, y: -138}
+        - {x: 187, y: -106}
+        - {x: 177, y: -108}
+        - {x: 191, y: -78}
+        - {x: 179, y: -60}
+        - {x: 162, y: -60}
+        - {x: 143, y: -93}
+        - {x: 144, y: -137}
+        - {x: 108, y: -88}
+        - {x: 85, y: -68}
+        - {x: 27, y: -70}
+        - {x: 7, y: -92}
+        - {x: 7, y: -166}
+        - {x: 56, y: -243}
+        - {x: 198, y: -243}
+        - {x: 231, y: -235}
+        - {x: 225, y: -194}
+        - {x: 214, y: -188}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 242, y: -124}
+        - {x: 181, y: -61}
+        - {x: 74, y: -61}
+        - {x: 39, y: -90}
+        - {x: 30, y: -99}
+        - {x: 30, y: -109}
+        - {x: 40, y: -120}
+        - {x: 8, y: -133}
+        - {x: 8, y: -242}
+        - {x: 136, y: -242}
+        - {x: 236, y: -212}
+        - {x: 242, y: -175}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 227, y: -61}
+        - {x: 9, y: -61}
+        - {x: 9, y: -88}
+        - {x: 36, y: -115}
+        - {x: 9, y: -130}
+        - {x: 9, y: -177}
+        - {x: 64, y: -241}
+        - {x: 187, y: -241}
+        - {x: 241, y: -225}
+        - {x: 241, y: -117}
+        - {x: 237, y: -86}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 237, y: -139}
+        - {x: 203, y: -62}
+        - {x: 164, y: -62}
+        - {x: 155, y: -65}
+        - {x: 140, y: -94}
+        - {x: 105, y: -65}
+        - {x: 10, y: -74}
+        - {x: 10, y: -195}
+        - {x: 24, y: -240}
+        - {x: 152, y: -240}
+        - {x: 227, y: -206}
+        - {x: 240, y: -159}
+        - {x: 240, y: -142}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 166, y: -196}
+        - {x: 194, y: -206}
+        - {x: 202, y: -209}
+        - {x: 222, y: -212}
+        - {x: 239, y: -169}
+        - {x: 239, y: -123}
+        - {x: 190, y: -63}
+        - {x: 54, y: -63}
+        - {x: 44, y: -67}
+        - {x: 11, y: -130}
+        - {x: 11, y: -159}
+        - {x: 13, y: -162}
+        - {x: 20, y: -162}
+        - {x: 59, y: -239}
+        - {x: 163, y: -239}
+        - {x: 172, y: -235}
+        - {x: 168, y: -208}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: -63}
+        - {x: 29, y: -71}
+        - {x: 12, y: -124}
+        - {x: 12, y: -157}
+        - {x: 17, y: -169}
+        - {x: 69, y: -194}
+        - {x: 76, y: -193}
+        - {x: 60, y: -238}
+        - {x: 202, y: -238}
+        - {x: 238, y: -210}
+        - {x: 238, y: -79}
+        - {x: 224, y: -63}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 196, y: -65}
+        - {x: 190, y: -63}
+        - {x: 160, y: -63}
+        - {x: 140, y: -94}
+        - {x: 75, y: -69}
+        - {x: 13, y: -75}
+        - {x: 13, y: -213}
+        - {x: 18, y: -237}
+        - {x: 214, y: -237}
+        - {x: 219, y: -235}
+        - {x: 237, y: -174}
+        - {x: 237, y: -140}
+        - {x: 233, y: -139}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 237, y: -146}
+        - {x: 235, y: -138}
+        - {x: 183, y: -67}
+        - {x: 174, y: -64}
+        - {x: 160, y: -64}
+        - {x: 140, y: -95}
+        - {x: 102, y: -64}
+        - {x: 31, y: -64}
+        - {x: 13, y: -84}
+        - {x: 13, y: -210}
+        - {x: 37, y: -237}
+        - {x: 203, y: -237}
+        - {x: 218, y: -201}
+        - {x: 211, y: -183}
+        - {x: 237, y: -158}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    - name: LaserGunUI Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55, y: -64}
+        - {x: 14, y: -94}
+        - {x: 14, y: -161}
+        - {x: 16, y: -162}
+        - {x: 81, y: -162}
+        - {x: 79, y: -162}
+        - {x: 63, y: -170}
+        - {x: 46, y: -192}
+        - {x: 66, y: -236}
+        - {x: 141, y: -236}
+        - {x: 219, y: -221}
+        - {x: 236, y: -180}
+        - {x: 236, y: -93}
+        - {x: 203, y: -64}
+      - - {x: 136, y: -16}
+        - {x: 134, y: -14}
+        - {x: 114, y: -14}
+        - {x: 110, y: -72}
+        - {x: 110, y: -162}
+        - {x: 117, y: -166}
+        - {x: 139, y: -166}
+        - {x: 140, y: -163}
+        - {x: 140, y: -70}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
