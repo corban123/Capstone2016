@@ -8,6 +8,7 @@ public class SpawningScript : NetworkBehaviour {
     bool[,] checkArray;
     int last;
     private GameObject spawnList;
+
     ArrayList spawnPoints;
     BoardScript p1Board;
     public GameObject Element;
