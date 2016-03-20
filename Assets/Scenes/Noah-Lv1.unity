@@ -3610,7 +3610,7 @@ GameObject:
   - 4: {fileID: 890860596}
   - 212: {fileID: 890860595}
   - 95: {fileID: 890860594}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyBaseMarker2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5244,7 +5244,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 19.26
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5268,7 +5268,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
@@ -5417,7 +5417,7 @@ GameObject:
   - 4: {fileID: 1192436707}
   - 212: {fileID: 1192436706}
   - 95: {fileID: 1192436705}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyBaseMarker1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7580,7 +7580,7 @@ GameObject:
   - 4: {fileID: 1714027627}
   - 212: {fileID: 1714027626}
   - 95: {fileID: 1714027625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MyBaseMarker1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7784,7 +7784,7 @@ GameObject:
   - 4: {fileID: 1727311005}
   - 212: {fileID: 1727311004}
   - 95: {fileID: 1727311003}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MyBaseMarker2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9999,6 +9999,7 @@ GameObject:
   - 223: {fileID: 1868156764}
   - 114: {fileID: 1868156763}
   - 114: {fileID: 1868156762}
+  - 114: {fileID: 1868156766}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -10081,6 +10082,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1868156766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868156761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d361670a83fa4bc2bd4d16c03e73a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CrosshairTex: {fileID: 2800000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
 --- !u!1 &1876462155
 GameObject:
   m_ObjectHideFlags: 0

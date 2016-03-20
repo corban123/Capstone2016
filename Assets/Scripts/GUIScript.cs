@@ -9,8 +9,6 @@ public class GUIScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        print (m_CrosshairTex.format);
-        m_CrosshairTex.Resize(1, 1, TextureFormat.DXT5, true);
         m_CrosshairTex.Apply ();
         m_WindowSize = new Vector2(Screen.width, Screen.height);
         CalculateRect();

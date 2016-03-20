@@ -7,6 +7,7 @@ TagManager:
   - Bullet
   - Quark
   - Element
+  - Killbox
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player1
+  - Player2
   - 
   - 
   - 

@@ -12,6 +12,7 @@ public class EnablerScript : NetworkBehaviour {
 
 	[SerializeField] Camera FPSCam;
 	[SerializeField] AudioListener audioListen;
+    int layerMask;
 
 	// Use this for initialization
 	void Start () {
@@ -31,6 +32,13 @@ public class EnablerScript : NetworkBehaviour {
 
 			// Enable the camera and audio for this player
 			FPSCam.enabled = true;
+
+            if (gameObject.name == "Player 1") {
+                layerMask = 1 << 8;
+            } else {
+                layerMask = 1 << 9;
+            }
+            FPSCam.cullingMask = ~layerMask;
 			audioListen.enabled = true;
 			foreach(Renderer r in GetComponentsInChildren<Renderer>()){
                 if(r.gameObject.name != "pasted__tube"){
