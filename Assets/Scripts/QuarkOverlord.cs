@@ -38,7 +38,7 @@ public class QuarkOverlord : MonoBehaviour {
 	}
 
 
-	void deSpawn(){
+	public void deSpawn(){
 		int rand = Random.Range (0, backupList.Count-1);
 		(backupList [rand] as QuarkChild).CmdSpawn();
 		int rand2 = Random.Range (0, quarkList.Count - 1);

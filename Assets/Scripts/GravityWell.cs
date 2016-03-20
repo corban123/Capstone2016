@@ -6,19 +6,15 @@ public class GravityWell : NetworkBehaviour
 {
 	float range = 50f;
     float pullForce = 1000f;
-    float startTime;
     public int duration;
 	void Start()
 	{
-        startTime = Time.time;
+        Destroy(this.gameObject, duration);
 	}
 	
 	void Update () 
 	{
-        if(Time.time - startTime > duration)
-        {
-            Destroy(this.gameObject);
-        }
+
         foreach (Collider collider in Physics.OverlapSphere(transform.position, range))
         {
             

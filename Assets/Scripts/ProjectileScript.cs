@@ -17,8 +17,7 @@ public class ProjectileScript : NetworkBehaviour
     AudioSource source;
     [SerializeField] AudioClip shoot;
     Rigidbody rb;
-    private int delay = 3;
-   
+    private int delay = 5;
     void Start()
     {
         source = GetComponent<AudioSource>();
@@ -27,6 +26,7 @@ public class ProjectileScript : NetworkBehaviour
         pos = transform.position;
         axis = transform.up;
         rb = GetComponent<Rigidbody>();
+        Destroy(gameObject, delay);
     }
 
     void FixedUpdate()
@@ -46,7 +46,6 @@ public class ProjectileScript : NetworkBehaviour
             pos += transform.forward * Time.deltaTime * MoveSpeed;
             transform.position = pos + axis * Mathf.Sin(Time.time * frequency) * magnitude;
         }
-        Destroy (gameObject, delay);
     }
 
     void OnTriggerEnter(Collider coll)
@@ -78,5 +77,20 @@ public class ProjectileScript : NetworkBehaviour
     void Update()
     {
 
+    }
+
+    void OnDestroy()
+    {
+        CmdRemoveProjectile();
+        if (!gameObject.name.Contains("Element") && !gameObject.name.Contains("Basic"))
+        {
+            GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+        }
+    }
+
+    [Command]
+    void CmdRemoveProjectile()
+    {
+        NetworkServer.UnSpawn(this.gameObject);
     }
 }
