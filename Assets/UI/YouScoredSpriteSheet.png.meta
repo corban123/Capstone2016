@@ -1,0 +1,1355 @@
+fileFormatVersion: 2
+guid: bbc9e7fe81d633e4fb5f841e15eecf6d
+timeCreated: 1458455021
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: YouScoredSpriteSheet_0
+    21300002: YouScoredSpriteSheet_1
+    21300004: YouScoredSpriteSheet_2
+    21300006: YouScoredSpriteSheet_3
+    21300008: YouScoredSpriteSheet_4
+    21300010: YouScoredSpriteSheet_5
+    21300012: YouScoredSpriteSheet_6
+    21300014: YouScoredSpriteSheet_7
+    21300016: YouScoredSpriteSheet_8
+    21300018: YouScoredSpriteSheet_9
+    21300020: YouScoredSpriteSheet_10
+    21300022: YouScoredSpriteSheet_11
+    21300024: YouScoredSpriteSheet_12
+    21300026: YouScoredSpriteSheet_13
+    21300028: YouScoredSpriteSheet_14
+    21300030: YouScoredSpriteSheet_15
+    21300032: YouScoredSpriteSheet_16
+    21300034: YouScoredSpriteSheet_17
+    21300036: YouScoredSpriteSheet_18
+    21300038: YouScoredSpriteSheet_19
+    21300040: YouScoredSpriteSheet_20
+    21300042: YouScoredSpriteSheet_21
+    21300044: YouScoredSpriteSheet_22
+    21300046: YouScoredSpriteSheet_23
+    21300048: YouScoredSpriteSheet_24
+    21300050: YouScoredSpriteSheet_25
+    21300052: YouScoredSpriteSheet_26
+    21300054: YouScoredSpriteSheet_27
+    21300056: YouScoredSpriteSheet_28
+    21300058: YouScoredSpriteSheet_29
+    21300060: YouScoredSpriteSheet_30
+    21300062: YouScoredSpriteSheet_31
+    21300064: YouScoredSpriteSheet_32
+    21300066: YouScoredSpriteSheet_33
+    21300068: YouScoredSpriteSheet_34
+    21300070: YouScoredSpriteSheet_35
+    21300072: YouScoredSpriteSheet_36
+    21300074: YouScoredSpriteSheet_37
+    21300076: YouScoredSpriteSheet_38
+    21300078: YouScoredSpriteSheet_39
+    21300080: YouScoredSpriteSheet_40
+    21300082: YouScoredSpriteSheet_41
+    21300084: YouScoredSpriteSheet_42
+    21300086: YouScoredSpriteSheet_43
+    21300088: YouScoredSpriteSheet_44
+    21300090: YouScoredSpriteSheet_45
+    21300092: YouScoredSpriteSheet_46
+    21300094: YouScoredSpriteSheet_47
+    21300096: YouScoredSpriteSheet_48
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: YouScoredSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 44}
+        - {x: -96, y: 15}
+        - {x: -42, y: 15}
+        - {x: -42, y: 41}
+        - {x: -50, y: 44}
+      - - {x: -34, y: 44}
+        - {x: -40, y: 32}
+        - {x: -40, y: 17}
+        - {x: -39, y: 15}
+        - {x: 74, y: 15}
+        - {x: 74, y: 44}
+    - name: YouScoredSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: 38}
+        - {x: -96, y: 38}
+        - {x: -96, y: 12}
+        - {x: -91, y: 10}
+        - {x: -44, y: 10}
+        - {x: -42, y: 15}
+        - {x: -42, y: 36}
+      - - {x: -32, y: 39}
+        - {x: -36, y: 36}
+        - {x: -40, y: 27}
+        - {x: -40, y: 14}
+        - {x: -37, y: 10}
+        - {x: 70, y: 10}
+        - {x: 74, y: 19}
+        - {x: 74, y: 39}
+    - name: YouScoredSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: 29}
+        - {x: -75, y: 34}
+        - {x: -80, y: 34}
+        - {x: -84, y: 30}
+        - {x: -87, y: 34}
+        - {x: -94, y: 34}
+        - {x: -96, y: 33}
+        - {x: -96, y: 8}
+        - {x: -94, y: 5}
+        - {x: -44, y: 5}
+        - {x: -42, y: 17}
+        - {x: -42, y: 28}
+        - {x: -44, y: 28}
+      - - {x: -35, y: 34}
+        - {x: -40, y: 22}
+        - {x: -40, y: 5}
+        - {x: 71, y: 5}
+        - {x: 74, y: 20}
+        - {x: 74, y: 34}
+    - name: YouScoredSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 30}
+        - {x: -96, y: 3}
+        - {x: -94, y: 2}
+        - {x: -44, y: 2}
+        - {x: -42, y: 16}
+        - {x: -42, y: 30}
+      - - {x: -40, y: 30}
+        - {x: -40, y: 2}
+        - {x: 70, y: 2}
+        - {x: 74, y: 19}
+        - {x: 74, y: 30}
+    - name: YouScoredSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 21}
+        - {x: -63, y: 27}
+        - {x: -96, y: 27}
+        - {x: -96, y: 10}
+        - {x: -94, y: -1}
+        - {x: -44, y: -1}
+        - {x: -44, y: 1}
+        - {x: -42, y: 19}
+      - - {x: -33, y: 27}
+        - {x: -39, y: 20}
+        - {x: -40, y: 15}
+        - {x: -40, y: 1}
+        - {x: -36, y: -1}
+        - {x: 70, y: -1}
+        - {x: 74, y: 8}
+        - {x: 74, y: 27}
+    - name: YouScoredSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -65, y: 24}
+        - {x: -96, y: 24}
+        - {x: -96, y: -4}
+        - {x: -43, y: -4}
+        - {x: -42, y: -3}
+        - {x: -42, y: 20}
+      - - {x: -32, y: 25}
+        - {x: -37, y: 19}
+        - {x: -40, y: 7}
+        - {x: -40, y: -2}
+        - {x: -39, y: -4}
+        - {x: 74, y: -4}
+        - {x: 74, y: 25}
+    - name: YouScoredSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 22}
+        - {x: -96, y: 22}
+        - {x: -96, y: -4}
+        - {x: -92, y: -5}
+        - {x: -43, y: -5}
+        - {x: -42, y: -3}
+        - {x: -42, y: 21}
+      - - {x: -34, y: 22}
+        - {x: -37, y: 17}
+        - {x: -40, y: 3}
+        - {x: -40, y: -3}
+        - {x: -37, y: -5}
+        - {x: 70, y: -5}
+        - {x: 74, y: 6}
+        - {x: 74, y: 22}
+    - name: YouScoredSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 21}
+        - {x: -96, y: -5}
+        - {x: -94, y: -7}
+        - {x: -44, y: -7}
+        - {x: -42, y: -6}
+        - {x: -42, y: 16}
+        - {x: -43, y: 17}
+        - {x: -67, y: 21}
+      - - {x: -36, y: 21}
+        - {x: -38, y: 14}
+        - {x: -40, y: 1}
+        - {x: -40, y: -3}
+        - {x: -35, y: -6}
+        - {x: -16, y: -7}
+        - {x: 68, y: -7}
+        - {x: 74, y: 3}
+        - {x: 74, y: 21}
+    - name: YouScoredSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 20}
+        - {x: -96, y: 9}
+        - {x: -95, y: -6}
+        - {x: -92, y: -7}
+        - {x: -42, y: -7}
+        - {x: -42, y: 14}
+        - {x: -64, y: 20}
+      - - {x: -31, y: 20}
+        - {x: -39, y: 16}
+        - {x: -40, y: 7}
+        - {x: -40, y: -5}
+        - {x: -38, y: -7}
+        - {x: 72, y: -7}
+        - {x: 74, y: -6}
+        - {x: 74, y: 20}
+    - name: YouScoredSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 20}
+        - {x: -96, y: 20}
+        - {x: -96, y: -5}
+        - {x: -95, y: -7}
+        - {x: -43, y: -7}
+        - {x: -42, y: -1}
+        - {x: -42, y: 15}
+      - - {x: -36, y: 20}
+        - {x: -40, y: 9}
+        - {x: -40, y: -7}
+        - {x: 70, y: -7}
+        - {x: 74, y: 12}
+        - {x: 74, y: 20}
+    - name: YouScoredSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 19}
+        - {x: -96, y: 8}
+        - {x: -95, y: -8}
+        - {x: -44, y: -8}
+        - {x: -42, y: 8}
+        - {x: -42, y: 19}
+      - - {x: -34, y: 20}
+        - {x: -40, y: 9}
+        - {x: -40, y: -6}
+        - {x: -38, y: -8}
+        - {x: 74, y: -8}
+        - {x: 74, y: 18}
+        - {x: 71, y: 20}
+    - name: YouScoredSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 19}
+        - {x: -96, y: 19}
+        - {x: -96, y: 8}
+        - {x: -95, y: -7}
+        - {x: -93, y: -8}
+        - {x: -44, y: -8}
+        - {x: -42, y: -3}
+        - {x: -42, y: 17}
+      - - {x: -40, y: 19}
+        - {x: -40, y: -8}
+        - {x: 74, y: -8}
+        - {x: 74, y: 19}
+    - name: YouScoredSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 19}
+        - {x: -96, y: 19}
+        - {x: -96, y: -1}
+        - {x: -95, y: -7}
+        - {x: -92, y: -8}
+        - {x: -43, y: -8}
+        - {x: -42, y: -2}
+        - {x: -42, y: 15}
+      - - {x: -36, y: 19}
+        - {x: -40, y: 9}
+        - {x: -40, y: -8}
+        - {x: 72, y: -8}
+        - {x: 74, y: -6}
+        - {x: 74, y: 19}
+    - name: YouScoredSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 18}
+        - {x: -96, y: -9}
+        - {x: -42, y: -9}
+        - {x: -42, y: 18}
+      - - {x: -30, y: 19}
+        - {x: -40, y: 16}
+        - {x: -40, y: -7}
+        - {x: -33, y: -9}
+        - {x: 70, y: -9}
+        - {x: 74, y: 6}
+        - {x: 74, y: 19}
+    - name: YouScoredSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 18}
+        - {x: -96, y: -9}
+        - {x: -42, y: -9}
+        - {x: -42, y: 12}
+        - {x: -70, y: 18}
+      - - {x: -31, y: 18}
+        - {x: -37, y: 13}
+        - {x: -40, y: -1}
+        - {x: -40, y: -6}
+        - {x: -36, y: -9}
+        - {x: 69, y: -9}
+        - {x: 74, y: 1}
+        - {x: 74, y: 18}
+    - name: YouScoredSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 17}
+        - {x: -96, y: -3}
+        - {x: -95, y: -8}
+        - {x: -90, y: -10}
+        - {x: -44, y: -10}
+        - {x: -42, y: -5}
+        - {x: -42, y: 12}
+        - {x: -58, y: 17}
+      - - {x: -31, y: 18}
+        - {x: -39, y: 11}
+        - {x: -40, y: 7}
+        - {x: -40, y: -7}
+        - {x: -36, y: -10}
+        - {x: 69, y: -10}
+        - {x: 74, y: -2}
+        - {x: 74, y: 18}
+    - name: YouScoredSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 14}
+        - {x: -67, y: 17}
+        - {x: -94, y: 17}
+        - {x: -96, y: 16}
+        - {x: -96, y: 6}
+        - {x: -95, y: -9}
+        - {x: -92, y: -10}
+        - {x: -45, y: -10}
+        - {x: -42, y: -5}
+      - - {x: -32, y: 17}
+        - {x: -37, y: 16}
+        - {x: -40, y: 11}
+        - {x: -40, y: -9}
+        - {x: -38, y: -10}
+        - {x: 71, y: -10}
+        - {x: 74, y: 0}
+        - {x: 74, y: 17}
+    - name: YouScoredSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 17}
+        - {x: -96, y: -10}
+        - {x: -42, y: -10}
+        - {x: -42, y: 13}
+        - {x: -62, y: 17}
+      - - {x: -35, y: 17}
+        - {x: -40, y: 4}
+        - {x: -40, y: -10}
+        - {x: 74, y: -10}
+        - {x: 74, y: 17}
+    - name: YouScoredSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 16}
+        - {x: -96, y: -11}
+        - {x: -42, y: -11}
+        - {x: -42, y: 13}
+        - {x: -53, y: 16}
+      - - {x: -38, y: 17}
+        - {x: -40, y: 3}
+        - {x: -40, y: -8}
+        - {x: -35, y: -11}
+        - {x: 71, y: -11}
+        - {x: 74, y: -5}
+        - {x: 74, y: 17}
+    - name: YouScoredSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 16}
+        - {x: -96, y: -11}
+        - {x: -42, y: -11}
+        - {x: -42, y: 16}
+      - - {x: 71, y: -11}
+        - {x: 74, y: 0}
+        - {x: 74, y: 16}
+        - {x: 33, y: 16}
+        - {x: -12, y: 12}
+        - {x: -19, y: 5}
+        - {x: -17, y: 8}
+        - {x: -16, y: 12}
+        - {x: -18, y: 16}
+        - {x: -29, y: 16}
+        - {x: -36, y: 14}
+        - {x: -40, y: 4}
+        - {x: -40, y: -7}
+        - {x: -37, y: -11}
+        - {x: 20, y: -11}
+        - {x: 22, y: -9}
+        - {x: 27, y: -11}
+    - name: YouScoredSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 16}
+        - {x: -84, y: 12}
+        - {x: -87, y: 16}
+        - {x: -96, y: 16}
+        - {x: -96, y: -7}
+        - {x: -94, y: -11}
+        - {x: -43, y: -11}
+        - {x: -42, y: -9}
+        - {x: -42, y: 13}
+        - {x: -58, y: 16}
+      - - {x: -34, y: 16}
+        - {x: -38, y: 8}
+        - {x: -40, y: 3}
+        - {x: -40, y: -8}
+        - {x: -39, y: -11}
+        - {x: 69, y: -11}
+        - {x: 74, y: -8}
+        - {x: 74, y: 16}
+    - name: YouScoredSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 15}
+        - {x: -96, y: 0}
+        - {x: -93, y: -12}
+        - {x: -42, y: -12}
+        - {x: -42, y: 12}
+        - {x: -52, y: 15}
+      - - {x: -40, y: 16}
+        - {x: -40, y: -10}
+        - {x: -34, y: -12}
+        - {x: 71, y: -12}
+        - {x: 74, y: -3}
+        - {x: 74, y: 16}
+    - name: YouScoredSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 15}
+        - {x: -96, y: -12}
+        - {x: -42, y: -12}
+        - {x: -42, y: 12}
+        - {x: -63, y: 15}
+      - - {x: 72, y: 15}
+        - {x: -40, y: 15}
+        - {x: -40, y: -11}
+        - {x: -39, y: -12}
+        - {x: 69, y: -12}
+        - {x: 73, y: -11}
+        - {x: 74, y: 10}
+        - {x: 74, y: 14}
+    - name: YouScoredSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 15}
+        - {x: -96, y: -4}
+        - {x: -94, y: -10}
+        - {x: -92, y: -12}
+        - {x: -86, y: -12}
+        - {x: -83, y: -13}
+        - {x: -45, y: -13}
+        - {x: -42, y: -6}
+        - {x: -42, y: 9}
+        - {x: -48, y: 15}
+      - - {x: 56, y: 15}
+        - {x: 55, y: 13}
+        - {x: 39, y: 15}
+        - {x: -33, y: 15}
+        - {x: -40, y: 10}
+        - {x: -40, y: -9}
+        - {x: -35, y: -12}
+        - {x: -27, y: -13}
+        - {x: 65, y: -13}
+        - {x: 74, y: -12}
+        - {x: 74, y: 14}
+        - {x: 73, y: 15}
+    - name: YouScoredSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 11}
+        - {x: -63, y: 14}
+        - {x: -96, y: 14}
+        - {x: -96, y: -3}
+        - {x: -95, y: -12}
+        - {x: -92, y: -13}
+        - {x: -44, y: -13}
+        - {x: -42, y: -10}
+      - - {x: -33, y: 14}
+        - {x: -36, y: 11}
+        - {x: -40, y: -5}
+        - {x: -40, y: -13}
+        - {x: 74, y: -13}
+        - {x: 74, y: 14}
+    - name: YouScoredSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66, y: 14}
+        - {x: -96, y: 14}
+        - {x: -96, y: -12}
+        - {x: -95, y: -13}
+        - {x: -42, y: -13}
+        - {x: -42, y: 9}
+        - {x: -43, y: 10}
+      - - {x: -40, y: 14}
+        - {x: -40, y: -13}
+        - {x: 74, y: -13}
+        - {x: 74, y: 14}
+    - name: YouScoredSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 13}
+        - {x: -96, y: -14}
+        - {x: -42, y: -14}
+        - {x: -42, y: 10}
+        - {x: -57, y: 13}
+      - - {x: -40, y: 14}
+        - {x: -40, y: -14}
+        - {x: 70, y: -14}
+        - {x: 74, y: 3}
+        - {x: 74, y: 14}
+    - name: YouScoredSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 7}
+        - {x: -58, y: 13}
+        - {x: -96, y: 13}
+        - {x: -96, y: -7}
+        - {x: -95, y: -13}
+        - {x: -92, y: -14}
+        - {x: -45, y: -14}
+        - {x: -44, y: -13}
+        - {x: -42, y: -4}
+      - - {x: -37, y: 13}
+        - {x: -40, y: 11}
+        - {x: -40, y: -12}
+        - {x: -38, y: -14}
+        - {x: 71, y: -14}
+        - {x: 74, y: 0}
+        - {x: 74, y: 13}
+    - name: YouScoredSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -62, y: 13}
+        - {x: -96, y: 13}
+        - {x: -96, y: -14}
+        - {x: -43, y: -14}
+        - {x: -42, y: -10}
+        - {x: -42, y: 9}
+      - - {x: -35, y: 13}
+        - {x: -40, y: 1}
+        - {x: -40, y: -11}
+        - {x: -38, y: -14}
+        - {x: 74, y: -14}
+        - {x: 74, y: 13}
+    - name: YouScoredSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 12}
+        - {x: -96, y: 12}
+        - {x: -96, y: -15}
+        - {x: -42, y: -15}
+        - {x: -42, y: 9}
+      - - {x: 74, y: 11}
+        - {x: 71, y: 13}
+        - {x: 56, y: 13}
+        - {x: -12, y: 7}
+        - {x: -17, y: 5}
+        - {x: -13, y: 10}
+        - {x: -19, y: 13}
+        - {x: -36, y: 13}
+        - {x: -40, y: 3}
+        - {x: -40, y: -14}
+        - {x: -35, y: -15}
+        - {x: 65, y: -15}
+        - {x: 72, y: -12}
+        - {x: 74, y: 4}
+    - name: YouScoredSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: -9}
+        - {x: -42, y: 8}
+        - {x: -51, y: 12}
+        - {x: -96, y: 12}
+        - {x: -96, y: -7}
+        - {x: -95, y: -14}
+        - {x: -92, y: -15}
+        - {x: -44, y: -15}
+      - - {x: 51, y: 12}
+        - {x: -7, y: 10}
+        - {x: -14, y: 6}
+        - {x: -19, y: 1}
+        - {x: -17, y: 4}
+        - {x: -15, y: 9}
+        - {x: -17, y: 12}
+        - {x: -31, y: 12}
+        - {x: -39, y: 9}
+        - {x: -40, y: 0}
+        - {x: -40, y: -13}
+        - {x: -36, y: -15}
+        - {x: 69, y: -15}
+        - {x: 74, y: -7}
+        - {x: 74, y: 12}
+    - name: YouScoredSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 12}
+        - {x: -96, y: -15}
+        - {x: -42, y: -15}
+        - {x: -42, y: 7}
+        - {x: -68, y: 12}
+      - - {x: -35, y: 12}
+        - {x: -38, y: 4}
+        - {x: -40, y: -8}
+        - {x: -40, y: -15}
+        - {x: 74, y: -15}
+        - {x: 74, y: 12}
+    - name: YouScoredSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71, y: 11}
+        - {x: -96, y: 11}
+        - {x: -96, y: 3}
+        - {x: -94, y: -14}
+        - {x: -92, y: -16}
+        - {x: -44, y: -16}
+        - {x: -42, y: -13}
+        - {x: -42, y: 8}
+      - - {x: -37, y: 12}
+        - {x: -39, y: 5}
+        - {x: -40, y: 1}
+        - {x: -40, y: -15}
+        - {x: -36, y: -16}
+        - {x: 70, y: -16}
+        - {x: 74, y: -10}
+        - {x: 74, y: 12}
+    - name: YouScoredSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 11}
+        - {x: -96, y: -16}
+        - {x: -42, y: -16}
+        - {x: -42, y: 10}
+        - {x: -51, y: 11}
+      - - {x: -32, y: 11}
+        - {x: -39, y: 4}
+        - {x: -40, y: -4}
+        - {x: -40, y: -15}
+        - {x: -39, y: -16}
+        - {x: 72, y: -16}
+        - {x: 74, y: -14}
+        - {x: 74, y: 11}
+    - name: YouScoredSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 5}
+        - {x: -55, y: 11}
+        - {x: -96, y: 11}
+        - {x: -96, y: -15}
+        - {x: -86, y: -17}
+        - {x: -45, y: -17}
+        - {x: -42, y: -9}
+      - - {x: 74, y: 11}
+        - {x: -32, y: 11}
+        - {x: -40, y: 6}
+        - {x: -40, y: -16}
+        - {x: -37, y: -17}
+        - {x: 65, y: -17}
+        - {x: 72, y: -15}
+        - {x: 74, y: 1}
+    - name: YouScoredSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 10}
+        - {x: -96, y: -17}
+        - {x: -42, y: -17}
+        - {x: -42, y: 8}
+        - {x: -51, y: 10}
+      - - {x: -40, y: 10}
+        - {x: -40, y: -17}
+        - {x: 73, y: -17}
+        - {x: 74, y: -4}
+        - {x: 74, y: 10}
+    - name: YouScoredSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63, y: 10}
+        - {x: -94, y: 10}
+        - {x: -96, y: 9}
+        - {x: -96, y: -16}
+        - {x: -95, y: -17}
+        - {x: -42, y: -17}
+        - {x: -42, y: 5}
+        - {x: -43, y: 6}
+      - - {x: -31, y: 10}
+        - {x: -37, y: 5}
+        - {x: -40, y: -9}
+        - {x: -40, y: -15}
+        - {x: -37, y: -17}
+        - {x: 70, y: -17}
+        - {x: 74, y: -6}
+        - {x: 74, y: 10}
+    - name: YouScoredSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: -18}
+        - {x: -44, y: -18}
+        - {x: -42, y: -17}
+        - {x: -42, y: 6}
+        - {x: -66, y: 9}
+        - {x: -94, y: 9}
+        - {x: -96, y: 8}
+      - - {x: -36, y: 10}
+        - {x: -40, y: -3}
+        - {x: -40, y: -16}
+        - {x: -36, y: -18}
+        - {x: 70, y: -18}
+        - {x: 74, y: -4}
+        - {x: 74, y: 10}
+    - name: YouScoredSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: 9}
+        - {x: -96, y: 9}
+        - {x: -96, y: 0}
+        - {x: -94, y: -17}
+        - {x: -92, y: -18}
+        - {x: -44, y: -18}
+        - {x: -42, y: -8}
+        - {x: -42, y: 8}
+      - - {x: -19, y: -2}
+        - {x: -17, y: 1}
+        - {x: -16, y: 5}
+        - {x: -18, y: 9}
+        - {x: -29, y: 9}
+        - {x: -36, y: 7}
+        - {x: -40, y: -3}
+        - {x: -40, y: -16}
+        - {x: -39, y: -18}
+        - {x: 71, y: -18}
+        - {x: 74, y: -9}
+        - {x: 74, y: 9}
+        - {x: 26, y: 9}
+        - {x: -12, y: 5}
+    - name: YouScoredSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: 5}
+        - {x: -74, y: 9}
+        - {x: -80, y: 9}
+        - {x: -84, y: 5}
+        - {x: -87, y: 9}
+        - {x: -96, y: 9}
+        - {x: -96, y: -18}
+        - {x: -43, y: -18}
+        - {x: -42, y: -12}
+        - {x: -42, y: 4}
+      - - {x: -36, y: 9}
+        - {x: -40, y: -6}
+        - {x: -40, y: -17}
+        - {x: -38, y: -18}
+        - {x: 70, y: -18}
+        - {x: 74, y: 1}
+        - {x: 74, y: 9}
+    - name: YouScoredSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 8}
+        - {x: -96, y: -4}
+        - {x: -94, y: -16}
+        - {x: -92, y: -18}
+        - {x: -90, y: -19}
+        - {x: -44, y: -19}
+        - {x: -42, y: -14}
+        - {x: -42, y: 5}
+        - {x: -57, y: 8}
+      - - {x: -40, y: 9}
+        - {x: -40, y: -16}
+        - {x: -35, y: -19}
+        - {x: 70, y: -19}
+        - {x: 74, y: -3}
+        - {x: 74, y: 9}
+    - name: YouScoredSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 8}
+        - {x: -96, y: -19}
+        - {x: -42, y: -19}
+        - {x: -42, y: 4}
+        - {x: -49, y: 8}
+      - - {x: -35, y: 8}
+        - {x: -38, y: 1}
+        - {x: -40, y: -5}
+        - {x: -40, y: -19}
+        - {x: 74, y: -19}
+        - {x: 74, y: 8}
+    - name: YouScoredSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 7}
+        - {x: -96, y: -15}
+        - {x: -95, y: -19}
+        - {x: -94, y: -21}
+        - {x: -42, y: -21}
+        - {x: -42, y: 6}
+        - {x: -52, y: 7}
+      - - {x: -36, y: 7}
+        - {x: -40, y: -9}
+        - {x: -40, y: -18}
+        - {x: -35, y: -20}
+        - {x: -30, y: -21}
+        - {x: 70, y: -21}
+        - {x: 74, y: -7}
+        - {x: 74, y: 7}
+    - name: YouScoredSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 5}
+        - {x: -96, y: -21}
+        - {x: -95, y: -22}
+        - {x: -42, y: -22}
+        - {x: -42, y: 2}
+        - {x: -58, y: 5}
+      - - {x: -40, y: 5}
+        - {x: -40, y: -20}
+        - {x: -36, y: -22}
+        - {x: 70, y: -22}
+        - {x: 74, y: -7}
+        - {x: 74, y: 5}
+    - name: YouScoredSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -67, y: 2}
+        - {x: -70, y: 3}
+        - {x: -94, y: 3}
+        - {x: -96, y: 2}
+        - {x: -96, y: -25}
+        - {x: -49, y: -25}
+        - {x: -43, y: -23}
+        - {x: -42, y: -18}
+        - {x: -42, y: -3}
+      - - {x: -28, y: 4}
+        - {x: -40, y: 1}
+        - {x: -40, y: -24}
+        - {x: -39, y: -25}
+        - {x: 74, y: -25}
+        - {x: 74, y: 4}
+    - name: YouScoredSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: 1}
+        - {x: -96, y: -22}
+        - {x: -95, y: -26}
+        - {x: -92, y: -27}
+        - {x: -42, y: -27}
+        - {x: -42, y: -3}
+        - {x: -63, y: 1}
+      - - {x: 71, y: 1}
+        - {x: -36, y: 1}
+        - {x: -40, y: -7}
+        - {x: -40, y: -25}
+        - {x: -39, y: -27}
+        - {x: 67, y: -27}
+        - {x: 70, y: -24}
+        - {x: 74, y: -9}
+        - {x: 74, y: 0}
+    - name: YouScoredSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57, y: -3}
+        - {x: -96, y: -3}
+        - {x: -96, y: -31}
+        - {x: -44, y: -31}
+        - {x: -42, y: -25}
+        - {x: -42, y: -8}
+      - - {x: -40, y: -2}
+        - {x: -40, y: -30}
+        - {x: -36, y: -31}
+        - {x: 70, y: -31}
+        - {x: 74, y: -19}
+        - {x: 74, y: -2}
+    - name: YouScoredSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: -7}
+        - {x: -96, y: -7}
+        - {x: -96, y: -35}
+        - {x: -44, y: -35}
+        - {x: -42, y: -24}
+        - {x: -42, y: -11}
+      - - {x: -40, y: -6}
+        - {x: -40, y: -34}
+        - {x: -34, y: -35}
+        - {x: 70, y: -35}
+        - {x: 74, y: -25}
+        - {x: 74, y: -6}
+    - name: YouScoredSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -12}
+        - {x: -96, y: -12}
+        - {x: -96, y: -31}
+        - {x: -93, y: -40}
+        - {x: -44, y: -40}
+        - {x: -42, y: -29}
+        - {x: -42, y: -17}
+        - {x: -44, y: -16}
+      - - {x: -32, y: -11}
+        - {x: -38, y: -19}
+        - {x: -40, y: -26}
+        - {x: -40, y: -40}
+        - {x: 74, y: -40}
+        - {x: 74, y: -11}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

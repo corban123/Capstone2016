@@ -1,0 +1,1418 @@
+fileFormatVersion: 2
+guid: 80216fb46bea9ab43b366f2ba3ac0844
+timeCreated: 1458454874
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: EnemyScoredSpriteSheet_0
+    21300002: EnemyScoredSpriteSheet_1
+    21300004: EnemyScoredSpriteSheet_2
+    21300006: EnemyScoredSpriteSheet_3
+    21300008: EnemyScoredSpriteSheet_4
+    21300010: EnemyScoredSpriteSheet_5
+    21300012: EnemyScoredSpriteSheet_6
+    21300014: EnemyScoredSpriteSheet_7
+    21300016: EnemyScoredSpriteSheet_8
+    21300018: EnemyScoredSpriteSheet_9
+    21300020: EnemyScoredSpriteSheet_10
+    21300022: EnemyScoredSpriteSheet_11
+    21300024: EnemyScoredSpriteSheet_12
+    21300026: EnemyScoredSpriteSheet_13
+    21300028: EnemyScoredSpriteSheet_14
+    21300030: EnemyScoredSpriteSheet_15
+    21300032: EnemyScoredSpriteSheet_16
+    21300034: EnemyScoredSpriteSheet_17
+    21300036: EnemyScoredSpriteSheet_18
+    21300038: EnemyScoredSpriteSheet_19
+    21300040: EnemyScoredSpriteSheet_20
+    21300042: EnemyScoredSpriteSheet_21
+    21300044: EnemyScoredSpriteSheet_22
+    21300046: EnemyScoredSpriteSheet_23
+    21300048: EnemyScoredSpriteSheet_24
+    21300050: EnemyScoredSpriteSheet_25
+    21300052: EnemyScoredSpriteSheet_26
+    21300054: EnemyScoredSpriteSheet_27
+    21300056: EnemyScoredSpriteSheet_28
+    21300058: EnemyScoredSpriteSheet_29
+    21300060: EnemyScoredSpriteSheet_30
+    21300062: EnemyScoredSpriteSheet_31
+    21300064: EnemyScoredSpriteSheet_32
+    21300066: EnemyScoredSpriteSheet_33
+    21300068: EnemyScoredSpriteSheet_34
+    21300070: EnemyScoredSpriteSheet_35
+    21300072: EnemyScoredSpriteSheet_36
+    21300074: EnemyScoredSpriteSheet_37
+    21300076: EnemyScoredSpriteSheet_38
+    21300078: EnemyScoredSpriteSheet_39
+    21300080: EnemyScoredSpriteSheet_40
+    21300082: EnemyScoredSpriteSheet_41
+    21300084: EnemyScoredSpriteSheet_42
+    21300086: EnemyScoredSpriteSheet_43
+    21300088: EnemyScoredSpriteSheet_44
+    21300090: EnemyScoredSpriteSheet_45
+    21300092: EnemyScoredSpriteSheet_46
+    21300094: EnemyScoredSpriteSheet_47
+    21300096: EnemyScoredSpriteSheet_48
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: EnemyScoredSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 44}
+        - {x: -103, y: 43}
+        - {x: -105, y: 29}
+        - {x: -105, y: 15}
+        - {x: -103, y: 13}
+        - {x: -55, y: 9}
+        - {x: -15, y: 9}
+        - {x: -6, y: 27}
+        - {x: -6, y: 40}
+        - {x: -84, y: 44}
+      - - {x: 1, y: 44}
+        - {x: -6, y: 35}
+        - {x: -6, y: 17}
+        - {x: -4, y: 15}
+        - {x: 108, y: 15}
+        - {x: 108, y: 44}
+    - name: EnemyScoredSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 38}
+        - {x: -105, y: 28}
+        - {x: -105, y: 10}
+        - {x: -28, y: 3}
+        - {x: -19, y: 3}
+        - {x: -6, y: 20}
+        - {x: -6, y: 33}
+        - {x: -14, y: 38}
+      - - {x: 108, y: 20}
+        - {x: 108, y: 36}
+        - {x: 105, y: 39}
+        - {x: 3, y: 39}
+        - {x: -3, y: 33}
+        - {x: -6, y: 21}
+        - {x: -6, y: 13}
+        - {x: -1, y: 10}
+        - {x: 105, y: 10}
+    - name: EnemyScoredSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101, y: 34}
+        - {x: -105, y: 23}
+        - {x: -105, y: 7}
+        - {x: -104, y: 4}
+        - {x: -71, y: 6}
+        - {x: -69, y: 8}
+        - {x: -69, y: 10}
+        - {x: -68, y: 7}
+        - {x: -61, y: 4}
+        - {x: -42, y: -1}
+        - {x: -20, y: -1}
+        - {x: -12, y: 3}
+        - {x: -6, y: 17}
+        - {x: -6, y: 31}
+        - {x: -50, y: 34}
+      - - {x: -3, y: 34}
+        - {x: -6, y: 25}
+        - {x: -6, y: 5}
+        - {x: 108, y: 5}
+        - {x: 108, y: 34}
+    - name: EnemyScoredSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 30}
+        - {x: -105, y: 26}
+        - {x: -105, y: -1}
+        - {x: -77, y: -5}
+        - {x: -14, y: -5}
+        - {x: -6, y: 12}
+        - {x: -6, y: 27}
+        - {x: -34, y: 30}
+      - - {x: -6, y: 30}
+        - {x: -6, y: 4}
+        - {x: -3, y: 2}
+        - {x: 104, y: 2}
+        - {x: 108, y: 12}
+        - {x: 108, y: 29}
+        - {x: 107, y: 30}
+    - name: EnemyScoredSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101, y: 27}
+        - {x: -103, y: 22}
+        - {x: -105, y: 11}
+        - {x: -105, y: -7}
+        - {x: -76, y: -8}
+        - {x: -13, y: -8}
+        - {x: -6, y: 8}
+        - {x: -6, y: 24}
+        - {x: -46, y: 27}
+      - - {x: 107, y: 27}
+        - {x: 90, y: 27}
+        - {x: 89, y: 25}
+        - {x: 70, y: 27}
+        - {x: 1, y: 27}
+        - {x: -6, y: 19}
+        - {x: -6, y: -1}
+        - {x: 106, y: -1}
+        - {x: 108, y: 18}
+        - {x: 108, y: 26}
+    - name: EnemyScoredSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: 24}
+        - {x: -102, y: 24}
+        - {x: -104, y: 19}
+        - {x: -105, y: 7}
+        - {x: -105, y: -2}
+        - {x: -103, y: -3}
+        - {x: -80, y: -4}
+        - {x: -48, y: -10}
+        - {x: -17, y: -10}
+        - {x: -6, y: 4}
+        - {x: -6, y: 18}
+        - {x: -7, y: 20}
+      - - {x: 2, y: 25}
+        - {x: -6, y: 16}
+        - {x: -6, y: -1}
+        - {x: 0, y: -4}
+        - {x: 104, y: -4}
+        - {x: 108, y: 4}
+        - {x: 108, y: 24}
+        - {x: 107, y: 25}
+    - name: EnemyScoredSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63, y: 22}
+        - {x: -102, y: 22}
+        - {x: -104, y: 17}
+        - {x: -105, y: 10}
+        - {x: -105, y: -5}
+        - {x: -80, y: -7}
+        - {x: -52, y: -12}
+        - {x: -20, y: -12}
+        - {x: -12, y: -8}
+        - {x: -6, y: 6}
+        - {x: -6, y: 14}
+        - {x: -7, y: 17}
+      - - {x: -6, y: 22}
+        - {x: -6, y: -5}
+        - {x: 108, y: -5}
+        - {x: 108, y: 21}
+        - {x: 107, y: 22}
+    - name: EnemyScoredSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 21}
+        - {x: -105, y: -7}
+        - {x: -95, y: -13}
+        - {x: -17, y: -13}
+        - {x: -6, y: 1}
+        - {x: -6, y: 21}
+      - - {x: 2, y: 21}
+        - {x: -6, y: 13}
+        - {x: -6, y: -6}
+        - {x: -4, y: -7}
+        - {x: 94, y: -7}
+        - {x: 106, y: -6}
+        - {x: 108, y: 15}
+        - {x: 108, y: 20}
+        - {x: 107, y: 21}
+    - name: EnemyScoredSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 17}
+        - {x: -57, y: 20}
+        - {x: -103, y: 20}
+        - {x: -105, y: 12}
+        - {x: -105, y: -7}
+        - {x: -46, y: -14}
+        - {x: -20, y: -14}
+        - {x: -6, y: 0}
+        - {x: -6, y: 14}
+      - - {x: -6, y: 20}
+        - {x: -6, y: -6}
+        - {x: -4, y: -7}
+        - {x: 108, y: -7}
+        - {x: 108, y: 19}
+        - {x: 107, y: 20}
+    - name: EnemyScoredSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101, y: 20}
+        - {x: -105, y: 19}
+        - {x: -105, y: -7}
+        - {x: -78, y: -10}
+        - {x: -47, y: -14}
+        - {x: -15, y: -14}
+        - {x: -7, y: -10}
+        - {x: -6, y: -3}
+        - {x: -6, y: 20}
+      - - {x: -6, y: 20}
+        - {x: -6, y: -6}
+        - {x: -5, y: -7}
+        - {x: 107, y: -7}
+        - {x: 108, y: -1}
+        - {x: 108, y: 20}
+    - name: EnemyScoredSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 19}
+        - {x: -105, y: 14}
+        - {x: -105, y: -10}
+        - {x: -73, y: -14}
+        - {x: -14, y: -14}
+        - {x: -6, y: 1}
+        - {x: -6, y: 17}
+        - {x: -31, y: 19}
+      - - {x: 52, y: 20}
+        - {x: 22, y: 15}
+        - {x: 19, y: 13}
+        - {x: 15, y: 8}
+        - {x: 17, y: 11}
+        - {x: 18, y: 15}
+        - {x: 17, y: 20}
+        - {x: 6, y: 20}
+        - {x: -6, y: 16}
+        - {x: -6, y: -6}
+        - {x: -5, y: -8}
+        - {x: 108, y: -8}
+        - {x: 108, y: 20}
+    - name: EnemyScoredSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 19}
+        - {x: -105, y: -8}
+        - {x: -46, y: -15}
+        - {x: -19, y: -15}
+        - {x: -6, y: -2}
+        - {x: -6, y: 19}
+      - - {x: 108, y: 19}
+        - {x: 2, y: 19}
+        - {x: -6, y: 15}
+        - {x: -6, y: -5}
+        - {x: -2, y: -8}
+        - {x: 107, y: -8}
+        - {x: 108, y: 12}
+    - name: EnemyScoredSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 19}
+        - {x: -103, y: 18}
+        - {x: -105, y: 2}
+        - {x: -105, y: -8}
+        - {x: -103, y: -8}
+        - {x: -61, y: -15}
+        - {x: -16, y: -15}
+        - {x: -6, y: 0}
+        - {x: -6, y: 17}
+        - {x: -55, y: 19}
+      - - {x: -6, y: 19}
+        - {x: -6, y: -8}
+        - {x: 108, y: -8}
+        - {x: 108, y: 19}
+    - name: EnemyScoredSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 18}
+        - {x: -105, y: 8}
+        - {x: -105, y: -7}
+        - {x: -104, y: -10}
+        - {x: -47, y: -15}
+        - {x: -18, y: -15}
+        - {x: -6, y: 1}
+        - {x: -6, y: 16}
+        - {x: -39, y: 18}
+      - - {x: 3, y: 19}
+        - {x: -2, y: 13}
+        - {x: -6, y: -1}
+        - {x: -6, y: -6}
+        - {x: -2, y: -9}
+        - {x: 107, y: -9}
+        - {x: 108, y: -2}
+        - {x: 108, y: 19}
+    - name: EnemyScoredSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 18}
+        - {x: -103, y: 18}
+        - {x: -105, y: 4}
+        - {x: -105, y: -9}
+        - {x: -103, y: -9}
+        - {x: -37, y: -16}
+        - {x: -23, y: -16}
+        - {x: -18, y: -15}
+        - {x: -6, y: 3}
+        - {x: -6, y: 14}
+      - - {x: 0, y: 18}
+        - {x: -6, y: 4}
+        - {x: -6, y: -9}
+        - {x: 108, y: -9}
+        - {x: 108, y: 17}
+        - {x: 107, y: 18}
+    - name: EnemyScoredSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66, y: 17}
+        - {x: -101, y: 17}
+        - {x: -105, y: 7}
+        - {x: -105, y: -13}
+        - {x: -86, y: -16}
+        - {x: -16, y: -16}
+        - {x: -12, y: -13}
+        - {x: -6, y: 2}
+        - {x: -6, y: 11}
+        - {x: -7, y: 14}
+      - - {x: 3, y: 18}
+        - {x: -6, y: 10}
+        - {x: -6, y: -6}
+        - {x: -2, y: -10}
+        - {x: 108, y: -10}
+        - {x: 108, y: 18}
+    - name: EnemyScoredSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 17}
+        - {x: -105, y: 5}
+        - {x: -105, y: -10}
+        - {x: -26, y: -17}
+        - {x: -19, y: -17}
+        - {x: -6, y: 1}
+        - {x: -6, y: 14}
+        - {x: -48, y: 17}
+      - - {x: -6, y: 17}
+        - {x: -6, y: -10}
+        - {x: 107, y: -10}
+        - {x: 108, y: -6}
+        - {x: 108, y: 17}
+    - name: EnemyScoredSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 17}
+        - {x: -105, y: 6}
+        - {x: -105, y: -10}
+        - {x: -80, y: -11}
+        - {x: -50, y: -17}
+        - {x: -17, y: -17}
+        - {x: -6, y: -2}
+        - {x: -6, y: 15}
+        - {x: -39, y: 17}
+      - - {x: -4, y: 17}
+        - {x: -6, y: 9}
+        - {x: -6, y: -10}
+        - {x: 108, y: -10}
+        - {x: 108, y: 17}
+    - name: EnemyScoredSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52, y: 16}
+        - {x: -103, y: 16}
+        - {x: -105, y: 9}
+        - {x: -105, y: -10}
+        - {x: -104, y: -12}
+        - {x: -57, y: -17}
+        - {x: -16, y: -17}
+        - {x: -6, y: -1}
+        - {x: -6, y: 11}
+        - {x: -17, y: 13}
+      - - {x: 0, y: 17}
+        - {x: -5, y: 9}
+        - {x: -6, y: 2}
+        - {x: -6, y: -8}
+        - {x: -2, y: -11}
+        - {x: 108, y: -11}
+        - {x: 108, y: 17}
+    - name: EnemyScoredSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 16}
+        - {x: -105, y: -13}
+        - {x: -75, y: -18}
+        - {x: -13, y: -18}
+        - {x: -12, y: -17}
+        - {x: -6, y: 1}
+        - {x: -6, y: 16}
+      - - {x: -3, y: 16}
+        - {x: -6, y: 9}
+        - {x: -6, y: -8}
+        - {x: -4, y: -11}
+        - {x: 106, y: -11}
+        - {x: 108, y: -5}
+        - {x: 108, y: 16}
+    - name: EnemyScoredSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 16}
+        - {x: -105, y: 5}
+        - {x: -105, y: -11}
+        - {x: -78, y: -13}
+        - {x: -48, y: -18}
+        - {x: -19, y: -18}
+        - {x: -12, y: -15}
+        - {x: -6, y: -4}
+        - {x: -6, y: 13}
+        - {x: -29, y: 16}
+      - - {x: -6, y: 16}
+        - {x: -6, y: -10}
+        - {x: -5, y: -11}
+        - {x: 108, y: -11}
+        - {x: 108, y: 16}
+    - name: EnemyScoredSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 15}
+        - {x: -105, y: -14}
+        - {x: -73, y: -18}
+        - {x: -14, y: -18}
+        - {x: -6, y: -6}
+        - {x: -6, y: 12}
+        - {x: -8, y: 15}
+      - - {x: 58, y: 16}
+        - {x: 22, y: 11}
+        - {x: 19, y: 9}
+        - {x: 15, y: 4}
+        - {x: 17, y: 7}
+        - {x: 18, y: 11}
+        - {x: 14, y: 15}
+        - {x: 4, y: 15}
+        - {x: -3, y: 10}
+        - {x: -6, y: 0}
+        - {x: -6, y: -11}
+        - {x: -4, y: -12}
+        - {x: 108, y: -12}
+        - {x: 108, y: 16}
+    - name: EnemyScoredSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 10}
+        - {x: -32, y: 12}
+        - {x: -62, y: 15}
+        - {x: -103, y: 15}
+        - {x: -105, y: 7}
+        - {x: -105, y: -12}
+        - {x: -46, y: -19}
+        - {x: -20, y: -19}
+        - {x: -6, y: -5}
+        - {x: -6, y: 9}
+      - - {x: 2, y: 15}
+        - {x: -6, y: 12}
+        - {x: -6, y: -11}
+        - {x: -4, y: -12}
+        - {x: 108, y: -12}
+        - {x: 108, y: 15}
+    - name: EnemyScoredSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -67, y: 15}
+        - {x: -101, y: 15}
+        - {x: -104, y: 10}
+        - {x: -105, y: 5}
+        - {x: -105, y: -15}
+        - {x: -82, y: -19}
+        - {x: -16, y: -19}
+        - {x: -9, y: -14}
+        - {x: -6, y: -3}
+        - {x: -6, y: 8}
+        - {x: -7, y: 11}
+      - - {x: 3, y: 15}
+        - {x: -6, y: 7}
+        - {x: -6, y: -12}
+        - {x: -4, y: -13}
+        - {x: 95, y: -13}
+        - {x: 106, y: -12}
+        - {x: 108, y: 1}
+        - {x: 108, y: 15}
+    - name: EnemyScoredSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -105, y: 14}
+        - {x: -105, y: -13}
+        - {x: -45, y: -20}
+        - {x: -17, y: -20}
+        - {x: -9, y: -9}
+        - {x: -6, y: 0}
+        - {x: -6, y: 12}
+      - - {x: 90, y: 14}
+        - {x: 89, y: 12}
+        - {x: 57, y: 14}
+        - {x: 2, y: 14}
+        - {x: -2, y: 9}
+        - {x: -6, y: -5}
+        - {x: -6, y: -10}
+        - {x: -4, y: -13}
+        - {x: 106, y: -13}
+        - {x: 108, y: -5}
+        - {x: 108, y: 14}
+    - name: EnemyScoredSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 14}
+        - {x: -105, y: -20}
+        - {x: -14, y: -20}
+        - {x: -6, y: -17}
+        - {x: -6, y: 14}
+      - - {x: -6, y: 14}
+        - {x: -6, y: -13}
+        - {x: 106, y: -13}
+        - {x: 108, y: 8}
+        - {x: 108, y: 14}
+    - name: EnemyScoredSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 13}
+        - {x: -102, y: 13}
+        - {x: -105, y: 12}
+        - {x: -105, y: -11}
+        - {x: -103, y: -13}
+        - {x: -77, y: -20}
+        - {x: -8, y: -20}
+        - {x: -6, y: -7}
+        - {x: -6, y: 10}
+      - - {x: 2, y: 14}
+        - {x: -6, y: 7}
+        - {x: -6, y: -14}
+        - {x: 108, y: -14}
+        - {x: 108, y: 14}
+    - name: EnemyScoredSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 13}
+        - {x: -105, y: 6}
+        - {x: -105, y: -14}
+        - {x: -26, y: -21}
+        - {x: -19, y: -21}
+        - {x: -6, y: -3}
+        - {x: -6, y: 10}
+        - {x: -41, y: 13}
+      - - {x: -6, y: 13}
+        - {x: -6, y: -11}
+        - {x: -3, y: -14}
+        - {x: 106, y: -14}
+        - {x: 108, y: -7}
+        - {x: 108, y: 13}
+    - name: EnemyScoredSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 13}
+        - {x: -105, y: -16}
+        - {x: -88, y: -21}
+        - {x: -8, y: -21}
+        - {x: -6, y: -14}
+        - {x: -6, y: 13}
+      - - {x: -6, y: 13}
+        - {x: -6, y: -14}
+        - {x: 108, y: -14}
+        - {x: 108, y: 13}
+    - name: EnemyScoredSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 12}
+        - {x: -101, y: 12}
+        - {x: -105, y: 10}
+        - {x: -105, y: -16}
+        - {x: -53, y: -21}
+        - {x: -17, y: -21}
+        - {x: -9, y: -11}
+        - {x: -6, y: -2}
+        - {x: -6, y: 8}
+      - - {x: 0, y: 13}
+        - {x: -5, y: 5}
+        - {x: -6, y: -2}
+        - {x: -6, y: -12}
+        - {x: -2, y: -15}
+        - {x: 103, y: -15}
+        - {x: 108, y: -11}
+        - {x: 108, y: 13}
+    - name: EnemyScoredSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 12}
+        - {x: -105, y: 12}
+        - {x: -105, y: -17}
+        - {x: -73, y: -22}
+        - {x: -15, y: -22}
+        - {x: -6, y: -8}
+        - {x: -6, y: 7}
+      - - {x: -4, y: 12}
+        - {x: -6, y: 9}
+        - {x: -6, y: -15}
+        - {x: 108, y: -15}
+        - {x: 108, y: 12}
+    - name: EnemyScoredSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 12}
+        - {x: -103, y: 11}
+        - {x: -105, y: 2}
+        - {x: -105, y: -17}
+        - {x: -68, y: -22}
+        - {x: -16, y: -22}
+        - {x: -6, y: -7}
+        - {x: -6, y: 9}
+        - {x: -68, y: 12}
+      - - {x: 0, y: 12}
+        - {x: -3, y: 9}
+        - {x: -6, y: -5}
+        - {x: -6, y: -13}
+        - {x: -3, y: -15}
+        - {x: 107, y: -15}
+        - {x: 108, y: -11}
+        - {x: 108, y: 12}
+    - name: EnemyScoredSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 10}
+        - {x: -49, y: 11}
+        - {x: -101, y: 11}
+        - {x: -104, y: 7}
+        - {x: -105, y: -3}
+        - {x: -105, y: -15}
+        - {x: -103, y: -16}
+        - {x: -48, y: -22}
+        - {x: -17, y: -22}
+        - {x: -9, y: -12}
+        - {x: -6, y: -2}
+        - {x: -6, y: 7}
+      - - {x: 64, y: 12}
+        - {x: 22, y: 6}
+        - {x: 19, y: 5}
+        - {x: 15, y: 0}
+        - {x: 17, y: 3}
+        - {x: 18, y: 7}
+        - {x: 14, y: 11}
+        - {x: 12, y: 12}
+        - {x: 0, y: 12}
+        - {x: -6, y: 2}
+        - {x: -6, y: -16}
+        - {x: 108, y: -16}
+        - {x: 108, y: 12}
+    - name: EnemyScoredSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38, y: 11}
+        - {x: -103, y: 11}
+        - {x: -105, y: 0}
+        - {x: -105, y: -16}
+        - {x: -46, y: -23}
+        - {x: -20, y: -23}
+        - {x: -6, y: -9}
+        - {x: -6, y: 7}
+      - - {x: -6, y: 11}
+        - {x: -6, y: -16}
+        - {x: 103, y: -16}
+        - {x: 108, y: -8}
+        - {x: 108, y: 11}
+    - name: EnemyScoredSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 1}
+        - {x: -105, y: -20}
+        - {x: -91, y: -23}
+        - {x: -14, y: -23}
+        - {x: -6, y: -13}
+        - {x: -6, y: 6}
+        - {x: -7, y: 7}
+        - {x: -66, y: 11}
+        - {x: -101, y: 11}
+        - {x: -104, y: 6}
+      - - {x: -6, y: 11}
+        - {x: -6, y: -16}
+        - {x: -2, y: -17}
+        - {x: 106, y: -17}
+        - {x: 108, y: -15}
+        - {x: 108, y: 11}
+    - name: EnemyScoredSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 10}
+        - {x: -105, y: -17}
+        - {x: -44, y: -24}
+        - {x: -17, y: -24}
+        - {x: -9, y: -15}
+        - {x: -6, y: -4}
+        - {x: -6, y: 10}
+      - - {x: 1, y: 10}
+        - {x: -2, y: 5}
+        - {x: -6, y: -1}
+        - {x: -6, y: -17}
+        - {x: 108, y: -17}
+        - {x: 108, y: 10}
+    - name: EnemyScoredSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -67, y: 10}
+        - {x: -101, y: 10}
+        - {x: -105, y: 0}
+        - {x: -105, y: -19}
+        - {x: -48, y: -24}
+        - {x: -16, y: -24}
+        - {x: -6, y: -5}
+        - {x: -6, y: 6}
+      - - {x: -1, y: 10}
+        - {x: -4, y: 2}
+        - {x: -6, y: -6}
+        - {x: -6, y: -16}
+        - {x: -4, y: -17}
+        - {x: 108, y: -17}
+        - {x: 108, y: 10}
+    - name: EnemyScoredSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 9}
+        - {x: -101, y: 9}
+        - {x: -105, y: 8}
+        - {x: -105, y: -20}
+        - {x: -68, y: -24}
+        - {x: -18, y: -24}
+        - {x: -6, y: -5}
+        - {x: -6, y: 6}
+      - - {x: 0, y: 10}
+        - {x: -6, y: 4}
+        - {x: -6, y: -18}
+        - {x: 101, y: -18}
+        - {x: 106, y: -17}
+        - {x: 108, y: -1}
+        - {x: 108, y: 10}
+    - name: EnemyScoredSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 9}
+        - {x: -105, y: -18}
+        - {x: -81, y: -23}
+        - {x: -50, y: -25}
+        - {x: -10, y: -25}
+        - {x: -6, y: -11}
+        - {x: -6, y: 9}
+      - - {x: 1, y: 9}
+        - {x: -2, y: 4}
+        - {x: -6, y: -6}
+        - {x: -6, y: -18}
+        - {x: 108, y: -18}
+        - {x: 108, y: 9}
+    - name: EnemyScoredSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: 9}
+        - {x: -103, y: 9}
+        - {x: -105, y: -2}
+        - {x: -105, y: -16}
+        - {x: -104, y: -19}
+        - {x: -66, y: -20}
+        - {x: -44, y: -25}
+        - {x: -20, y: -25}
+        - {x: -12, y: -21}
+        - {x: -6, y: -7}
+        - {x: -6, y: 5}
+      - - {x: 90, y: 9}
+        - {x: 89, y: 7}
+        - {x: 62, y: 9}
+        - {x: 2, y: 9}
+        - {x: -6, y: 1}
+        - {x: -6, y: -17}
+        - {x: -5, y: -18}
+        - {x: 108, y: -18}
+        - {x: 108, y: 9}
+    - name: EnemyScoredSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101, y: 8}
+        - {x: -103, y: 4}
+        - {x: -105, y: -11}
+        - {x: -105, y: -16}
+        - {x: -103, y: -18}
+        - {x: -78, y: -19}
+        - {x: -52, y: -19}
+        - {x: -37, y: -25}
+        - {x: -20, y: -25}
+        - {x: -12, y: -22}
+        - {x: -6, y: -7}
+        - {x: -6, y: 6}
+        - {x: -54, y: 8}
+      - - {x: 1, y: 9}
+        - {x: -6, y: 3}
+        - {x: -6, y: -19}
+        - {x: 104, y: -19}
+        - {x: 108, y: -9}
+        - {x: 108, y: 9}
+    - name: EnemyScoredSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 8}
+        - {x: -105, y: -20}
+        - {x: -50, y: -26}
+        - {x: -14, y: -26}
+        - {x: -9, y: -24}
+        - {x: -6, y: -11}
+        - {x: -6, y: 8}
+      - - {x: -4, y: 8}
+        - {x: -6, y: 0}
+        - {x: -6, y: -19}
+        - {x: 108, y: -19}
+        - {x: 108, y: 8}
+    - name: EnemyScoredSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: -23}
+        - {x: -102, y: -27}
+        - {x: -13, y: -27}
+        - {x: -6, y: -24}
+        - {x: -6, y: 3}
+        - {x: -35, y: 7}
+        - {x: -101, y: 7}
+        - {x: -105, y: 6}
+      - - {x: -6, y: 7}
+        - {x: -6, y: -21}
+        - {x: 105, y: -21}
+        - {x: 106, y: -20}
+        - {x: 108, y: -3}
+        - {x: 108, y: 7}
+    - name: EnemyScoredSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 3}
+        - {x: -59, y: 5}
+        - {x: -105, y: 5}
+        - {x: -105, y: -28}
+        - {x: -96, y: -29}
+        - {x: -14, y: -29}
+        - {x: -6, y: -15}
+        - {x: -6, y: 0}
+      - - {x: 107, y: 5}
+        - {x: -2, y: 5}
+        - {x: -6, y: -4}
+        - {x: -6, y: -22}
+        - {x: 105, y: -22}
+        - {x: 106, y: -21}
+        - {x: 108, y: 0}
+        - {x: 108, y: 4}
+    - name: EnemyScoredSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: -2}
+        - {x: -62, y: 3}
+        - {x: -103, y: 3}
+        - {x: -105, y: -8}
+        - {x: -105, y: -25}
+        - {x: -48, y: -31}
+        - {x: -17, y: -31}
+        - {x: -12, y: -27}
+        - {x: -6, y: -10}
+        - {x: -6, y: -3}
+      - - {x: -2, y: 4}
+        - {x: -6, y: -8}
+        - {x: -6, y: -25}
+        - {x: 108, y: -25}
+        - {x: 108, y: 4}
+    - name: EnemyScoredSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 1}
+        - {x: -105, y: -28}
+        - {x: -45, y: -34}
+        - {x: -12, y: -34}
+        - {x: -6, y: -30}
+        - {x: -6, y: 1}
+      - - {x: 2, y: 1}
+        - {x: -6, y: -8}
+        - {x: -6, y: -26}
+        - {x: -5, y: -27}
+        - {x: 106, y: -27}
+        - {x: 108, y: -22}
+        - {x: 108, y: 1}
+    - name: EnemyScoredSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -99, y: -3}
+        - {x: -103, y: -4}
+        - {x: -105, y: -17}
+        - {x: -105, y: -38}
+        - {x: -6, y: -38}
+        - {x: -6, y: -3}
+      - - {x: 108, y: -2}
+        - {x: -5, y: -2}
+        - {x: -6, y: -5}
+        - {x: -6, y: -26}
+        - {x: -5, y: -31}
+        - {x: 103, y: -31}
+        - {x: 106, y: -30}
+        - {x: 108, y: -25}
+    - name: EnemyScoredSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -11}
+        - {x: -74, y: -7}
+        - {x: -104, y: -7}
+        - {x: -105, y: -22}
+        - {x: -105, y: -38}
+        - {x: -48, y: -42}
+        - {x: -12, y: -42}
+        - {x: -6, y: -25}
+        - {x: -6, y: -11}
+        - {x: -13, y: -9}
+      - - {x: 3, y: -6}
+        - {x: -6, y: -15}
+        - {x: -6, y: -32}
+        - {x: -2, y: -35}
+        - {x: 105, y: -35}
+        - {x: 108, y: -26}
+        - {x: 108, y: -6}
+    - name: EnemyScoredSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -12}
+        - {x: -105, y: -12}
+        - {x: -105, y: -38}
+        - {x: -104, y: -42}
+        - {x: -89, y: -47}
+        - {x: -6, y: -47}
+        - {x: -6, y: -18}
+        - {x: -7, y: -15}
+      - - {x: 0, y: -11}
+        - {x: -6, y: -25}
+        - {x: -6, y: -40}
+        - {x: 106, y: -40}
+        - {x: 107, y: -39}
+        - {x: 108, y: -29}
+        - {x: 108, y: -11}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
