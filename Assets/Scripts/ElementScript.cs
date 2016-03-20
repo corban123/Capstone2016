@@ -12,6 +12,10 @@ public class ElementScript : NetworkBehaviour
     public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
     enum Element { Alkaline, Metals, Gases, Noble}
+    Ray shootRay;
+    RaycastHit shootHit;
+    LineRenderer gunLine;
+    public float range = 100f;
 
 	// Use this for initialization
 	void Start ()
@@ -26,13 +30,12 @@ public class ElementScript : NetworkBehaviour
 
     public void PowerUp()
     {
-        if (IsElementType () == Element.Alkaline)
-        {
-            CmdSpawnBlackHole();
-        }
-        else if (IsElementType () == Element.Metals)
-        {
+        if (IsElementType () == Element.Alkaline) {
+            CmdSpawnBlackHole ();
+        } else if (IsElementType () == Element.Metals) {
             Freeze ();
+        } else if (IsElementType () == Element.Noble) {
+            RailGun ();
         }
     }
 
@@ -71,6 +74,24 @@ public class ElementScript : NetworkBehaviour
             if (fpc != null) {
                 fpc.FreezeMovement ();
             }
+        }
+    }
+
+    void RailGun() {
+        gunLine.enabled = true;
+        gunLine.SetPosition(0, transform.position);
+
+        shootRay.origin = transform.position;
+        shootRay.direction = transform.forward;
+
+        if (Physics.Raycast(shootRay, out shootHit, range))
+        {
+            gunLine.SetPosition(1, shootHit.point);
+        }
+        // If the raycast didn't hit anything...
+        else
+        {
+            gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
         }
     }
 }

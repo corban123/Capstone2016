@@ -17,6 +17,7 @@ public class ProjectileScript : NetworkBehaviour
     AudioSource source;
     [SerializeField] AudioClip shoot;
     Rigidbody rb;
+    private int delay = 3;
    
     void Start()
     {
@@ -45,6 +46,7 @@ public class ProjectileScript : NetworkBehaviour
             pos += transform.forward * Time.deltaTime * MoveSpeed;
             transform.position = pos + axis * Mathf.Sin(Time.time * frequency) * magnitude;
         }
+        Destroy (gameObject, delay);
     }
 
     void OnTriggerEnter(Collider coll)
@@ -63,6 +65,7 @@ public class ProjectileScript : NetworkBehaviour
                     if (e != null && !coll.gameObject.name.Contains("Base")) //If the projectile has a element script, then it's an element. It needs to active it's powerup on collision.
                     {
                         e.PowerUp();
+                        print("powering up...");
                     }
                     Destroy(this.gameObject);
                 }
