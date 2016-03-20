@@ -4310,6 +4310,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53314cb8806f844c3a3cd9f4d5513c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barium: {fileID: 123746, guid: 701f6371fa78543c0a785ba783495d23, type: 2}
+  calcium: {fileID: 176418, guid: 007c0c72a920441749dfee4cda372e5b, type: 2}
+  carbon: {fileID: 178434, guid: 3684bf31782b9412baf6dd0aa6c87d3b, type: 2}
+  copper: {fileID: 113442, guid: f54d90d93ff2945c289d5b1b73d8808e, type: 2}
+  gold: {fileID: 150072, guid: 6dc29dde4b4c740868c3a33d06bfadeb, type: 2}
+  helium: {fileID: 156444, guid: 8f47954d144f143c08d215cb6a74cbeb, type: 2}
+  hydrogen: {fileID: 122386, guid: c60b9c68947e442c68ba0f890265a241, type: 2}
+  krypton: {fileID: 156694, guid: 4e66c3382cdda47d0ae54bd3bee80903, type: 2}
+  neon: {fileID: 126098, guid: 5d94cf5a7b0d24737afa617355c25578, type: 2}
+  nickel: {fileID: 150728, guid: f5b0e248534f345fa9ab6a7156fa821f, type: 2}
+  nitrogen: {fileID: 148444, guid: 39d9c0ca5eeed47c8a5e7a821a5633b7, type: 2}
+  oxygen: {fileID: 151276, guid: a547d130197c54179a1329c0c831fa45, type: 2}
+  potassium: {fileID: 146872, guid: 22c3f9688d3d1402eb05a1c8669eb309, type: 2}
+  silver: {fileID: 184958, guid: a9693053ffcdb4abeba23de309b53021, type: 2}
+  sodium: {fileID: 112354, guid: eaf1cc9e4a6e04f6da851612ed95b904, type: 2}
+  xenon: {fileID: 109976, guid: 61fe9efe8d12f4f5286f6b44ad0aa99a, type: 2}
+  barium_grey: {fileID: 0}
+  calcium_grey: {fileID: 0}
+  carbon_grey: {fileID: 0}
+  copper_grey: {fileID: 0}
+  gold_grey: {fileID: 0}
+  helium_grey: {fileID: 0}
+  hydrogen_grey: {fileID: 0}
+  krypton_grey: {fileID: 0}
+  neon_grey: {fileID: 0}
+  nickel_grey: {fileID: 0}
+  nitrogen_grey: {fileID: 0}
+  oxygen_grey: {fileID: 0}
+  potassium_grey: {fileID: 0}
+  silver_grey: {fileID: 0}
+  sodium_grey: {fileID: 0}
+  xenon_grey: {fileID: 0}
 --- !u!114 &11481896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4645,6 +4677,70 @@ Prefab:
       propertyPath: player2RespawnPoint
       value: 
       objectReference: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: barium
+      value: 
+      objectReference: {fileID: 123746, guid: 701f6371fa78543c0a785ba783495d23, type: 2}
+    - target: {fileID: 0}
+      propertyPath: calcium
+      value: 
+      objectReference: {fileID: 176418, guid: 007c0c72a920441749dfee4cda372e5b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: carbon
+      value: 
+      objectReference: {fileID: 178434, guid: 3684bf31782b9412baf6dd0aa6c87d3b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: copper
+      value: 
+      objectReference: {fileID: 113442, guid: f54d90d93ff2945c289d5b1b73d8808e, type: 2}
+    - target: {fileID: 0}
+      propertyPath: gold
+      value: 
+      objectReference: {fileID: 150072, guid: 6dc29dde4b4c740868c3a33d06bfadeb, type: 2}
+    - target: {fileID: 0}
+      propertyPath: helium
+      value: 
+      objectReference: {fileID: 156444, guid: 8f47954d144f143c08d215cb6a74cbeb, type: 2}
+    - target: {fileID: 0}
+      propertyPath: hydrogen
+      value: 
+      objectReference: {fileID: 122386, guid: c60b9c68947e442c68ba0f890265a241, type: 2}
+    - target: {fileID: 0}
+      propertyPath: krypton
+      value: 
+      objectReference: {fileID: 156694, guid: 4e66c3382cdda47d0ae54bd3bee80903, type: 2}
+    - target: {fileID: 0}
+      propertyPath: neon
+      value: 
+      objectReference: {fileID: 126098, guid: 5d94cf5a7b0d24737afa617355c25578, type: 2}
+    - target: {fileID: 0}
+      propertyPath: nickel
+      value: 
+      objectReference: {fileID: 150728, guid: f5b0e248534f345fa9ab6a7156fa821f, type: 2}
+    - target: {fileID: 0}
+      propertyPath: nitrogen
+      value: 
+      objectReference: {fileID: 148444, guid: 39d9c0ca5eeed47c8a5e7a821a5633b7, type: 2}
+    - target: {fileID: 0}
+      propertyPath: oxygen
+      value: 
+      objectReference: {fileID: 151276, guid: a547d130197c54179a1329c0c831fa45, type: 2}
+    - target: {fileID: 0}
+      propertyPath: potassium
+      value: 
+      objectReference: {fileID: 146872, guid: 22c3f9688d3d1402eb05a1c8669eb309, type: 2}
+    - target: {fileID: 0}
+      propertyPath: silver
+      value: 
+      objectReference: {fileID: 184958, guid: a9693053ffcdb4abeba23de309b53021, type: 2}
+    - target: {fileID: 0}
+      propertyPath: sodium
+      value: 
+      objectReference: {fileID: 112354, guid: eaf1cc9e4a6e04f6da851612ed95b904, type: 2}
+    - target: {fileID: 0}
+      propertyPath: xenon
+      value: 
+      objectReference: {fileID: 109976, guid: 61fe9efe8d12f4f5286f6b44ad0aa99a, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134866}
