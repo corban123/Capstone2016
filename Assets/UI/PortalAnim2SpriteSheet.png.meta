@@ -1,0 +1,987 @@
+fileFormatVersion: 2
+guid: 8c856e82114f5ad4e84a3c240fd6e2fe
+timeCreated: 1458522150
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PortalAnim2SpriteSheet_0
+    21300002: PortalAnim2SpriteSheet_1
+    21300004: PortalAnim2SpriteSheet_2
+    21300006: PortalAnim2SpriteSheet_3
+    21300008: PortalAnim2SpriteSheet_4
+    21300010: PortalAnim2SpriteSheet_5
+    21300012: PortalAnim2SpriteSheet_6
+    21300014: PortalAnim2SpriteSheet_7
+    21300016: PortalAnim2SpriteSheet_8
+    21300018: PortalAnim2SpriteSheet_9
+    21300020: PortalAnim2SpriteSheet_10
+    21300022: PortalAnim2SpriteSheet_11
+    21300024: PortalAnim2SpriteSheet_12
+    21300026: PortalAnim2SpriteSheet_13
+    21300028: PortalAnim2SpriteSheet_14
+    21300030: PortalAnim2SpriteSheet_15
+    21300032: PortalAnim2SpriteSheet_16
+    21300034: PortalAnim2SpriteSheet_17
+    21300036: PortalAnim2SpriteSheet_18
+    21300038: PortalAnim2SpriteSheet_19
+    21300040: PortalAnim2SpriteSheet_20
+    21300042: PortalAnim2SpriteSheet_21
+    21300044: PortalAnim2SpriteSheet_22
+    21300046: PortalAnim2SpriteSheet_23
+    21300048: PortalAnim2SpriteSheet_24
+    21300050: PortalAnim2SpriteSheet_25
+    21300052: PortalAnim2SpriteSheet_26
+    21300054: PortalAnim2SpriteSheet_27
+    21300056: PortalAnim2SpriteSheet_28
+    21300058: PortalAnim2SpriteSheet_29
+    21300060: PortalAnim2SpriteSheet_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PortalAnim2SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7112
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 7112
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 7112
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 7112
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 7112
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 7112
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 6480
+        y: 7112
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6032
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 6032
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 6032
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 6032
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 6032
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 6032
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 6480
+        y: 6032
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4952
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 4952
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 4952
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 4952
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 4952
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 4952
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 6480
+        y: 4952
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3872
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3872
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3872
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 3872
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 3872
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 3872
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 6480
+        y: 3872
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2792
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2792
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    - name: PortalAnim2SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2792
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: 45}
+        - {x: 93, y: 93}
+        - {x: 65, y: 114}
+        - {x: 27, y: 125}
+        - {x: -29, y: 125}
+        - {x: -69, y: 110}
+        - {x: -97, y: 85}
+        - {x: -114, y: 54}
+        - {x: -120, y: 28}
+        - {x: -120, y: -20}
+        - {x: -119, y: -33}
+        - {x: -115, y: -54}
+        - {x: -95, y: -95}
+        - {x: -41, y: -125}
+        - {x: 34, y: -125}
+        - {x: 69, y: -110}
+        - {x: 88, y: -100}
+        - {x: 120, y: -49}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
