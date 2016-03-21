@@ -63,11 +63,11 @@ public class ProjectileScript : NetworkBehaviour
                 {
                     if (e != null && !coll.gameObject.name.Contains("Base")) //If the projectile has a element script, then it's an element. It needs to active it's powerup on collision.
                     {
-                        e.PowerUp();
                         print("powering up...");
+                        e.PowerUp();                       
                     }
-                    Destroy(this.gameObject);
                 }
+                Destroy(this.gameObject);
             }
         }
         catch (NullReferenceException) { }

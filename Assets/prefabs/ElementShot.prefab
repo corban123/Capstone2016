@@ -233,6 +233,8 @@ MonoBehaviour:
   elementID: 0
   carrier: 0
   blackHole: {fileID: 100000, guid: 019e298c4b22d4d668f33d6a8e4ed0a2, type: 2}
+  atomBomb: {fileID: 105428, guid: dfc861abc38150749ad3b8ee77e46517, type: 2}
+  range: 100
 --- !u!114 &11465448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,6 +378,10 @@ Prefab:
       propertyPath: blackHole
       value: 
       objectReference: {fileID: 100000, guid: 019e298c4b22d4d668f33d6a8e4ed0a2, type: 2}
+    - target: {fileID: 0}
+      propertyPath: atomBomb
+      value: 
+      objectReference: {fileID: 105428, guid: dfc861abc38150749ad3b8ee77e46517, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119328}
