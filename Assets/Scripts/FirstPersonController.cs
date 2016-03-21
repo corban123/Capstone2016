@@ -29,7 +29,7 @@ public class FirstPersonController : NetworkBehaviour
 	Vector3 moveDirection;
     float forwardSpeed;
     float sideSpeed;
-    float moveFactor;
+    public float moveFactor;
 
 	private float gravity = -20.0f;
 	private bool jump = false;

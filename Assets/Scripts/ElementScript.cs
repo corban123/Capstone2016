@@ -11,6 +11,7 @@ public class ElementScript : NetworkBehaviour
     public int elementID;   //This id is unique to each element (numbered 1-16)
     public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
+    public GameObject atomBomb;
     enum Element { Alkaline, Metals, Gases, Noble}
     Ray shootRay;
     RaycastHit shootHit;
@@ -36,6 +37,9 @@ public class ElementScript : NetworkBehaviour
             Freeze ();
         } else if (IsElementType () == Element.Noble) {
             RailGun ();
+        }
+        else {
+            CmdSpawnBomb();
         }
     }
 
@@ -63,6 +67,13 @@ public class ElementScript : NetworkBehaviour
     void CmdSpawnBlackHole()
     {
         GameObject instance = Instantiate(blackHole, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation) as GameObject;
+        NetworkServer.Spawn(instance);
+    }
+
+    [Command]
+    void CmdSpawnBomb()
+    {
+        GameObject instance = Instantiate(atomBomb, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation) as GameObject;
         NetworkServer.Spawn(instance);
     }
 

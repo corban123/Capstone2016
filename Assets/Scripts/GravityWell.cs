@@ -16,8 +16,7 @@ public class GravityWell : NetworkBehaviour
 	{
 
         foreach (Collider collider in Physics.OverlapSphere(transform.position, range))
-        {
-            
+        {         
             Rigidbody rb = collider.GetComponent<Rigidbody>();
             if (rb != null && rb.gameObject.CompareTag("Player"))
             {
@@ -27,8 +26,10 @@ public class GravityWell : NetworkBehaviour
                 Vector3 forceDirection = transform.position - collider.transform.position;
                 print("direction black hole" + forceDirection.normalized);
                 // apply force on target towards me
-                rb.AddForce(forceDirection.normalized * pullForce);
+                //rb.AddForce(forceDirection.normalized * pullForce);
+                rb.AddExplosionForce(pullForce * -1, transform.position, 0);
                 print("adding force " + forceDirection.normalized * pullForce);
+                rb.gameObject.GetComponent<FirstPersonController>().moveFactor = 0;
             }
         }
     }
