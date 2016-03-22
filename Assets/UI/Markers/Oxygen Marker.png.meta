@@ -1,0 +1,916 @@
+fileFormatVersion: 2
+guid: 3003df7126ad4484f8ddeea2c109734d
+timeCreated: 1458619657
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Oxygen Marker_0
+    21300002: Oxygen Marker_1
+    21300004: Oxygen Marker_2
+    21300006: Oxygen Marker_3
+    21300008: Oxygen Marker_4
+    21300010: Oxygen Marker_5
+    21300012: Oxygen Marker_6
+    21300014: Oxygen Marker_7
+    21300016: Oxygen Marker_8
+    21300018: Oxygen Marker_9
+    21300020: Oxygen Marker_10
+    21300022: Oxygen Marker_11
+    21300024: Oxygen Marker_12
+    21300026: Oxygen Marker_13
+    21300028: Oxygen Marker_14
+    21300030: Oxygen Marker_15
+    21300032: Oxygen Marker_16
+    21300034: Oxygen Marker_17
+    21300036: Oxygen Marker_18
+    21300038: Oxygen Marker_19
+    21300040: Oxygen Marker_20
+    21300042: Oxygen Marker_21
+    21300044: Oxygen Marker_22
+    21300046: Oxygen Marker_23
+    21300048: Oxygen Marker_24
+    21300050: Oxygen Marker_25
+    21300052: Oxygen Marker_26
+    21300054: Oxygen Marker_27
+    21300056: Oxygen Marker_28
+    21300058: Oxygen Marker_29
+    21300060: Oxygen Marker_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Oxygen Marker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -7}
+        - {x: -56, y: -14}
+        - {x: -6, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -14}
+        - {x: 52, y: -7}
+      - - {x: -27, y: 103}
+        - {x: -49, y: 97}
+        - {x: -49, y: 22}
+        - {x: -36, y: 9}
+        - {x: -25, y: 2}
+        - {x: 27, y: 2}
+        - {x: 49, y: 23}
+        - {x: 49, y: 79}
+        - {x: 26, y: 103}
+    - name: Oxygen Marker_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -39, y: -49}
+        - {x: -4, y: -114}
+        - {x: 2, y: -114}
+        - {x: 51, y: -15}
+        - {x: 51, y: -9}
+        - {x: 50, y: -7}
+      - - {x: -22, y: 103}
+        - {x: -43, y: 89}
+        - {x: -49, y: 74}
+        - {x: -49, y: 27}
+        - {x: -29, y: 2}
+        - {x: 23, y: 2}
+        - {x: 49, y: 20}
+        - {x: 49, y: 97}
+        - {x: 28, y: 103}
+    - name: Oxygen Marker_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -6}
+        - {x: -56, y: -10}
+        - {x: -9, y: -108}
+        - {x: -4, y: -113}
+        - {x: 0, y: -113}
+        - {x: 40, y: -60}
+        - {x: 51, y: -15}
+        - {x: 51, y: -6}
+      - - {x: -24, y: 103}
+        - {x: -49, y: 81}
+        - {x: -49, y: 14}
+        - {x: -28, y: 3}
+        - {x: 41, y: 3}
+        - {x: 49, y: 14}
+        - {x: 49, y: 78}
+        - {x: 38, y: 103}
+    - name: Oxygen Marker_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -5}
+        - {x: -56, y: -15}
+        - {x: -8, y: -113}
+        - {x: 1, y: -113}
+        - {x: 50, y: -16}
+        - {x: 50, y: -5}
+      - - {x: -32, y: 103}
+        - {x: -49, y: 79}
+        - {x: -49, y: 8}
+        - {x: -29, y: 3}
+        - {x: 49, y: 3}
+        - {x: 49, y: 103}
+    - name: Oxygen Marker_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -4}
+        - {x: -56, y: -9}
+        - {x: -7, y: -109}
+        - {x: -4, y: -111}
+        - {x: 1, y: -111}
+        - {x: 49, y: -10}
+        - {x: 49, y: -4}
+      - - {x: 18, y: 104}
+        - {x: -36, y: 104}
+        - {x: -49, y: 99}
+        - {x: -49, y: 16}
+        - {x: -26, y: 3}
+        - {x: 32, y: 3}
+        - {x: 49, y: 33}
+        - {x: 49, y: 77}
+        - {x: 47, y: 92}
+    - name: Oxygen Marker_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: -3}
+        - {x: -54, y: -3}
+        - {x: -56, y: -5}
+        - {x: -4, y: -110}
+        - {x: 0, y: -110}
+        - {x: 6, y: -103}
+        - {x: 47, y: -8}
+        - {x: 47, y: -4}
+      - - {x: -14, y: 104}
+        - {x: -46, y: 91}
+        - {x: -49, y: 78}
+        - {x: -49, y: 24}
+        - {x: -41, y: 4}
+        - {x: 47, y: 4}
+        - {x: 49, y: 15}
+        - {x: 49, y: 96}
+        - {x: 32, y: 104}
+    - name: Oxygen Marker_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -1}
+        - {x: -53, y: -2}
+        - {x: -55, y: -3}
+        - {x: -55, y: -6}
+        - {x: -24, y: -84}
+        - {x: -3, y: -109}
+        - {x: 5, y: -109}
+        - {x: 45, y: -10}
+        - {x: 45, y: -3}
+        - {x: 44, y: -1}
+      - - {x: -31, y: 104}
+        - {x: -49, y: 82}
+        - {x: -49, y: 28}
+        - {x: -30, y: 4}
+        - {x: 24, y: 4}
+        - {x: 49, y: 13}
+        - {x: 49, y: 82}
+        - {x: 26, y: 104}
+    - name: Oxygen Marker_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 0}
+        - {x: -53, y: -34}
+        - {x: -5, y: -108}
+        - {x: 11, y: -108}
+        - {x: 42, y: -15}
+        - {x: 42, y: 0}
+      - - {x: -49, y: 105}
+        - {x: -49, y: 4}
+        - {x: 49, y: 4}
+        - {x: 49, y: 98}
+        - {x: 40, y: 105}
+    - name: Oxygen Marker_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 1}
+        - {x: -49, y: 1}
+        - {x: -50, y: 0}
+        - {x: -50, y: -7}
+        - {x: -5, y: -106}
+        - {x: 2, y: -106}
+        - {x: 34, y: -22}
+        - {x: 38, y: -6}
+        - {x: 38, y: 0}
+      - - {x: 27, y: 105}
+        - {x: -28, y: 105}
+        - {x: -49, y: 77}
+        - {x: -49, y: 38}
+        - {x: -43, y: 20}
+        - {x: -27, y: 5}
+        - {x: 20, y: 5}
+        - {x: 49, y: 18}
+        - {x: 49, y: 75}
+        - {x: 31, y: 104}
+    - name: Oxygen Marker_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 2}
+        - {x: -46, y: 1}
+        - {x: -46, y: -42}
+        - {x: -7, y: -105}
+        - {x: 9, y: -105}
+        - {x: 34, y: -4}
+        - {x: 34, y: 1}
+        - {x: 32, y: 2}
+      - - {x: -30, y: 106}
+        - {x: -49, y: 94}
+        - {x: -49, y: 15}
+        - {x: -44, y: 5}
+        - {x: 47, y: 5}
+        - {x: 49, y: 11}
+        - {x: 49, y: 93}
+        - {x: 36, y: 106}
+    - name: Oxygen Marker_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 4}
+        - {x: -41, y: -2}
+        - {x: -13, y: -93}
+        - {x: -4, y: -104}
+        - {x: 4, y: -104}
+        - {x: 29, y: -17}
+        - {x: 29, y: 4}
+      - - {x: -29, y: 106}
+        - {x: -49, y: 99}
+        - {x: -49, y: 33}
+        - {x: -25, y: 6}
+        - {x: 29, y: 6}
+        - {x: 49, y: 29}
+        - {x: 49, y: 80}
+        - {x: 26, y: 106}
+    - name: Oxygen Marker_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 5}
+        - {x: -34, y: -10}
+        - {x: -7, y: -103}
+        - {x: 8, y: -103}
+        - {x: 23, y: -11}
+        - {x: 23, y: 5}
+      - - {x: -34, y: 106}
+        - {x: -49, y: 90}
+        - {x: -49, y: 21}
+        - {x: -32, y: 6}
+        - {x: 28, y: 6}
+        - {x: 49, y: 13}
+        - {x: 49, y: 105}
+        - {x: 43, y: 106}
+    - name: Oxygen Marker_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 6}
+        - {x: -27, y: -2}
+        - {x: -6, y: -101}
+        - {x: -6, y: -102}
+        - {x: 1, y: -102}
+        - {x: 17, y: -22}
+        - {x: 17, y: 4}
+        - {x: 16, y: 6}
+      - - {x: -43, y: 107}
+        - {x: -49, y: 94}
+        - {x: -49, y: 27}
+        - {x: -23, y: 6}
+        - {x: 19, y: 6}
+        - {x: 26, y: 9}
+        - {x: 49, y: 23}
+        - {x: 49, y: 95}
+        - {x: 21, y: 107}
+    - name: Oxygen Marker_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 7}
+        - {x: -18, y: -35}
+        - {x: -6, y: -100}
+        - {x: -3, y: -101}
+        - {x: 1, y: -101}
+        - {x: 9, y: -90}
+        - {x: 11, y: -55}
+        - {x: 11, y: 7}
+      - - {x: -26, y: 107}
+        - {x: -49, y: 80}
+        - {x: -49, y: 41}
+        - {x: -46, y: 27}
+        - {x: -21, y: 7}
+        - {x: 46, y: 7}
+        - {x: 49, y: 26}
+        - {x: 49, y: 96}
+        - {x: 27, y: 107}
+    - name: Oxygen Marker_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 7}
+        - {x: -9, y: -26}
+        - {x: -5, y: -100}
+        - {x: -3, y: -102}
+        - {x: 3, y: -102}
+        - {x: 4, y: -72}
+        - {x: 4, y: 7}
+      - - {x: -38, y: 107}
+        - {x: -49, y: 88}
+        - {x: -49, y: 11}
+        - {x: -45, y: 7}
+        - {x: 41, y: 7}
+        - {x: 49, y: 8}
+        - {x: 49, y: 84}
+        - {x: 26, y: 107}
+    - name: Oxygen Marker_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 107}
+        - {x: -49, y: 95}
+        - {x: -49, y: 5}
+        - {x: -3, y: -102}
+        - {x: -1, y: -102}
+        - {x: 1, y: -101}
+        - {x: 49, y: 29}
+        - {x: 49, y: 95}
+        - {x: 37, y: 107}
+    - name: Oxygen Marker_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 7}
+        - {x: -14, y: -75}
+        - {x: -12, y: -101}
+        - {x: 6, y: -101}
+        - {x: 14, y: -22}
+        - {x: 14, y: 7}
+      - - {x: -38, y: 107}
+        - {x: -49, y: 88}
+        - {x: -49, y: 11}
+        - {x: -45, y: 7}
+        - {x: 41, y: 7}
+        - {x: 49, y: 8}
+        - {x: 49, y: 84}
+        - {x: 26, y: 107}
+    - name: Oxygen Marker_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 7}
+        - {x: -21, y: 6}
+        - {x: -21, y: -7}
+        - {x: -6, y: -100}
+        - {x: -4, y: -101}
+        - {x: 1, y: -101}
+        - {x: 22, y: -8}
+        - {x: 22, y: 7}
+      - - {x: -42, y: 107}
+        - {x: -49, y: 88}
+        - {x: -49, y: 16}
+        - {x: -29, y: 7}
+        - {x: 35, y: 7}
+        - {x: 49, y: 27}
+        - {x: 49, y: 100}
+        - {x: 47, y: 107}
+    - name: Oxygen Marker_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 6}
+        - {x: -27, y: -11}
+        - {x: -7, y: -102}
+        - {x: 2, y: -102}
+        - {x: 30, y: -3}
+        - {x: 30, y: 6}
+      - - {x: -29, y: 107}
+        - {x: -49, y: 100}
+        - {x: -49, y: 10}
+        - {x: -46, y: 6}
+        - {x: 33, y: 6}
+        - {x: 49, y: 13}
+        - {x: 49, y: 87}
+        - {x: 36, y: 107}
+    - name: Oxygen Marker_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 5}
+        - {x: -33, y: -23}
+        - {x: -6, y: -102}
+        - {x: -4, y: -103}
+        - {x: 1, y: -103}
+        - {x: 36, y: -8}
+        - {x: 36, y: 4}
+        - {x: 35, y: 5}
+      - - {x: -32, y: 106}
+        - {x: -49, y: 88}
+        - {x: -49, y: 24}
+        - {x: -41, y: 6}
+        - {x: 35, y: 6}
+        - {x: 49, y: 9}
+        - {x: 49, y: 103}
+        - {x: 40, y: 106}
+    - name: Oxygen Marker_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 3}
+        - {x: -38, y: 1}
+        - {x: -38, y: -12}
+        - {x: -5, y: -104}
+        - {x: 0, y: -104}
+        - {x: 2, y: -103}
+        - {x: 41, y: -7}
+        - {x: 41, y: 1}
+        - {x: 40, y: 3}
+      - - {x: -42, y: 106}
+        - {x: -49, y: 87}
+        - {x: -49, y: 15}
+        - {x: -29, y: 6}
+        - {x: 35, y: 6}
+        - {x: 49, y: 26}
+        - {x: 49, y: 99}
+        - {x: 47, y: 106}
+    - name: Oxygen Marker_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 2}
+        - {x: -42, y: -7}
+        - {x: -8, y: -106}
+        - {x: 2, y: -106}
+        - {x: 45, y: -10}
+        - {x: 45, y: 2}
+      - - {x: -35, y: 106}
+        - {x: -49, y: 92}
+        - {x: -49, y: 28}
+        - {x: -35, y: 5}
+        - {x: 42, y: 5}
+        - {x: 49, y: 27}
+        - {x: 49, y: 93}
+        - {x: 34, y: 106}
+    - name: Oxygen Marker_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 1}
+        - {x: -46, y: -10}
+        - {x: -5, y: -107}
+        - {x: 1, y: -107}
+        - {x: 48, y: -12}
+        - {x: 48, y: -2}
+        - {x: 47, y: 1}
+      - - {x: -31, y: 105}
+        - {x: -48, y: 87}
+        - {x: -49, y: 83}
+        - {x: -49, y: 31}
+        - {x: -28, y: 5}
+        - {x: 23, y: 5}
+        - {x: 29, y: 6}
+        - {x: 49, y: 29}
+        - {x: 49, y: 96}
+        - {x: 22, y: 105}
+    - name: Oxygen Marker_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: -1}
+        - {x: -49, y: -8}
+        - {x: -6, y: -108}
+        - {x: 1, y: -108}
+        - {x: 2, y: -107}
+        - {x: 50, y: -9}
+        - {x: 50, y: -3}
+        - {x: 49, y: -1}
+      - - {x: -27, y: 105}
+        - {x: -49, y: 99}
+        - {x: -49, y: 26}
+        - {x: -25, y: 4}
+        - {x: 37, y: 4}
+        - {x: 49, y: 30}
+        - {x: 49, y: 91}
+        - {x: 38, y: 105}
+    - name: Oxygen Marker_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: -2}
+        - {x: -51, y: -4}
+        - {x: -51, y: -12}
+        - {x: -5, y: -110}
+        - {x: 0, y: -110}
+        - {x: 52, y: -7}
+        - {x: 52, y: -4}
+        - {x: 49, y: -2}
+      - - {x: -33, y: 104}
+        - {x: -49, y: 78}
+        - {x: -49, y: 29}
+        - {x: -26, y: 4}
+        - {x: 49, y: 4}
+        - {x: 49, y: 94}
+        - {x: 36, y: 104}
+    - name: Oxygen Marker_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: -3}
+        - {x: -53, y: -11}
+        - {x: -52, y: -13}
+        - {x: -4, y: -111}
+        - {x: 1, y: -111}
+        - {x: 52, y: -12}
+        - {x: 52, y: -5}
+        - {x: 51, y: -3}
+      - - {x: -24, y: 104}
+        - {x: -45, y: 93}
+        - {x: -49, y: 84}
+        - {x: -49, y: 16}
+        - {x: -25, y: 3}
+        - {x: 34, y: 3}
+        - {x: 49, y: 22}
+        - {x: 49, y: 80}
+        - {x: 24, y: 104}
+    - name: Oxygen Marker_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: -5}
+        - {x: -52, y: -5}
+        - {x: -54, y: -6}
+        - {x: -54, y: -10}
+        - {x: -46, y: -29}
+        - {x: -4, y: -112}
+        - {x: 0, y: -112}
+        - {x: 11, y: -94}
+        - {x: 52, y: -12}
+        - {x: 52, y: -7}
+      - - {x: -37, y: 103}
+        - {x: -49, y: 82}
+        - {x: -49, y: 16}
+        - {x: -47, y: 14}
+        - {x: -19, y: 3}
+        - {x: 35, y: 3}
+        - {x: 49, y: 10}
+        - {x: 49, y: 95}
+        - {x: 32, y: 103}
+    - name: Oxygen Marker_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -13}
+        - {x: -5, y: -113}
+        - {x: 4, y: -113}
+        - {x: 52, y: -17}
+        - {x: 52, y: -6}
+      - - {x: -26, y: 103}
+        - {x: -44, y: 90}
+        - {x: -49, y: 83}
+        - {x: -49, y: 19}
+        - {x: -28, y: 3}
+        - {x: 43, y: 3}
+        - {x: 49, y: 8}
+        - {x: 49, y: 93}
+        - {x: 21, y: 103}
+    - name: Oxygen Marker_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -12}
+        - {x: -4, y: -114}
+        - {x: 1, y: -114}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -6}
+      - - {x: -19, y: 103}
+        - {x: -45, y: 92}
+        - {x: -49, y: 83}
+        - {x: -49, y: 34}
+        - {x: -47, y: 19}
+        - {x: -20, y: 2}
+        - {x: 15, y: 2}
+        - {x: 36, y: 5}
+        - {x: 49, y: 22}
+        - {x: 49, y: 75}
+        - {x: 38, y: 103}
+    - name: Oxygen Marker_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -5, y: -115}
+        - {x: 0, y: -115}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -7}
+      - - {x: -27, y: 103}
+        - {x: -49, y: 97}
+        - {x: -49, y: 22}
+        - {x: -36, y: 9}
+        - {x: -25, y: 2}
+        - {x: 27, y: 2}
+        - {x: 49, y: 23}
+        - {x: 49, y: 79}
+        - {x: 26, y: 103}
+    - name: Oxygen Marker_30
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -7}
+        - {x: -56, y: -9}
+        - {x: -56, y: -14}
+        - {x: -5, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -11}
+        - {x: 52, y: -8}
+        - {x: 50, y: -7}
+      - - {x: 23, y: 102}
+        - {x: -29, y: 102}
+        - {x: -49, y: 87}
+        - {x: -49, y: 20}
+        - {x: -30, y: 2}
+        - {x: 23, y: 2}
+        - {x: 49, y: 11}
+        - {x: 49, y: 79}
+        - {x: 37, y: 100}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

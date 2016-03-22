@@ -1,0 +1,1174 @@
+fileFormatVersion: 2
+guid: fa3ab91f468991f43ac5651d6d0ae711
+timeCreated: 1458619678
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Silver Marker_0
+    21300002: Silver Marker_1
+    21300004: Silver Marker_2
+    21300006: Silver Marker_3
+    21300008: Silver Marker_4
+    21300010: Silver Marker_5
+    21300012: Silver Marker_6
+    21300014: Silver Marker_7
+    21300016: Silver Marker_8
+    21300018: Silver Marker_9
+    21300020: Silver Marker_10
+    21300022: Silver Marker_11
+    21300024: Silver Marker_12
+    21300026: Silver Marker_13
+    21300028: Silver Marker_14
+    21300030: Silver Marker_15
+    21300032: Silver Marker_16
+    21300034: Silver Marker_17
+    21300036: Silver Marker_18
+    21300038: Silver Marker_19
+    21300040: Silver Marker_20
+    21300042: Silver Marker_21
+    21300044: Silver Marker_22
+    21300046: Silver Marker_23
+    21300048: Silver Marker_24
+    21300050: Silver Marker_25
+    21300052: Silver Marker_26
+    21300054: Silver Marker_27
+    21300056: Silver Marker_28
+    21300058: Silver Marker_29
+    21300060: Silver Marker_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Silver Marker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -7}
+        - {x: -56, y: -14}
+        - {x: -6, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -14}
+        - {x: 52, y: -7}
+      - - {x: 2, y: 43}
+        - {x: 16, y: 27}
+        - {x: 28, y: 22}
+        - {x: 44, y: 22}
+        - {x: 44, y: 16}
+        - {x: 14, y: 26}
+        - {x: 2, y: 13}
+        - {x: 2, y: -1}
+        - {x: 5, y: -6}
+        - {x: 71, y: -6}
+        - {x: 81, y: -1}
+        - {x: 81, y: 99}
+        - {x: 20, y: 99}
+        - {x: 2, y: 82}
+      - - {x: -88, y: 23}
+        - {x: 6, y: 23}
+        - {x: 6, y: 30}
+        - {x: -22, y: 120}
+        - {x: -30, y: 122}
+        - {x: -57, y: 122}
+        - {x: -88, y: 37}
+    - name: Silver Marker_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -39, y: -49}
+        - {x: -4, y: -114}
+        - {x: 2, y: -114}
+        - {x: 51, y: -15}
+        - {x: 51, y: -9}
+        - {x: 50, y: -7}
+      - - {x: 5, y: 99}
+        - {x: 2, y: 90}
+        - {x: 2, y: 31}
+        - {x: 15, y: 26}
+        - {x: 27, y: 20}
+        - {x: 33, y: 19}
+        - {x: 13, y: 27}
+        - {x: 2, y: 11}
+        - {x: 2, y: 5}
+        - {x: 11, y: -6}
+        - {x: 81, y: -6}
+        - {x: 81, y: 99}
+      - - {x: -88, y: 34}
+        - {x: -88, y: 23}
+        - {x: 6, y: 23}
+        - {x: 6, y: 33}
+        - {x: -11, y: 105}
+        - {x: -27, y: 122}
+        - {x: -56, y: 122}
+    - name: Silver Marker_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -6}
+        - {x: -56, y: -10}
+        - {x: -9, y: -108}
+        - {x: -4, y: -113}
+        - {x: 0, y: -113}
+        - {x: 40, y: -60}
+        - {x: 51, y: -15}
+        - {x: 51, y: -6}
+      - - {x: 7, y: 99}
+        - {x: 2, y: 83}
+        - {x: 2, y: 5}
+        - {x: 21, y: -6}
+        - {x: 62, y: -6}
+        - {x: 81, y: 9}
+        - {x: 81, y: 98}
+        - {x: 74, y: 99}
+      - - {x: -88, y: 23}
+        - {x: 6, y: 23}
+        - {x: 6, y: 40}
+        - {x: -19, y: 122}
+        - {x: -55, y: 122}
+        - {x: -88, y: 37}
+    - name: Silver Marker_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: 98}
+        - {x: 79, y: 99}
+        - {x: 19, y: 99}
+        - {x: -13, y: 82}
+        - {x: 5, y: 31}
+        - {x: 17, y: 25}
+        - {x: 43, y: 21}
+        - {x: 18, y: 24}
+        - {x: 15, y: 24}
+        - {x: 3, y: 12}
+        - {x: 3, y: 9}
+        - {x: -56, y: -2}
+        - {x: -56, y: -11}
+        - {x: -4, y: -113}
+        - {x: 0, y: -113}
+        - {x: 17, y: -81}
+        - {x: 78, y: 9}
+        - {x: 81, y: 19}
+      - - {x: -56, y: 122}
+        - {x: -88, y: 37}
+        - {x: -88, y: 23}
+        - {x: 6, y: 23}
+        - {x: 6, y: 40}
+        - {x: -28, y: 122}
+    - name: Silver Marker_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 100}
+        - {x: -14, y: 38}
+        - {x: 2, y: 8}
+        - {x: 12, y: 0}
+        - {x: -55, y: -3}
+        - {x: -56, y: -6}
+        - {x: -56, y: -12}
+        - {x: -7, y: -109}
+        - {x: -4, y: -111}
+        - {x: 2, y: -111}
+        - {x: 81, y: 1}
+        - {x: 81, y: 100}
+      - - {x: -88, y: 24}
+        - {x: 6, y: 24}
+        - {x: 6, y: 40}
+        - {x: -25, y: 123}
+        - {x: -54, y: 123}
+        - {x: -88, y: 37}
+    - name: Silver Marker_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 100}
+        - {x: -7, y: 46}
+        - {x: 25, y: 22}
+        - {x: 31, y: 22}
+        - {x: 48, y: 24}
+        - {x: 25, y: 22}
+        - {x: 15, y: 27}
+        - {x: 3, y: 12}
+        - {x: 2, y: 8}
+        - {x: 12, y: 0}
+        - {x: -54, y: -3}
+        - {x: -56, y: -5}
+        - {x: -5, y: -110}
+        - {x: 42, y: -110}
+        - {x: 81, y: 8}
+        - {x: 81, y: 100}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 33}
+        - {x: -3, y: 56}
+        - {x: -28, y: 123}
+        - {x: -56, y: 123}
+        - {x: -88, y: 41}
+        - {x: -88, y: 24}
+        - {x: -59, y: 24}
+        - {x: -54, y: 38}
+        - {x: -24, y: 24}
+    - name: Silver Marker_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 100}
+        - {x: -9, y: 41}
+        - {x: 16, y: 28}
+        - {x: 28, y: 23}
+        - {x: 44, y: 23}
+        - {x: 33, y: 17}
+        - {x: 18, y: 25}
+        - {x: 13, y: 27}
+        - {x: 0, y: 9}
+        - {x: -53, y: -2}
+        - {x: -55, y: -3}
+        - {x: -55, y: -6}
+        - {x: -24, y: -84}
+        - {x: -3, y: -109}
+        - {x: 6, y: -109}
+        - {x: 81, y: 9}
+        - {x: 81, y: 100}
+      - - {x: -88, y: 24}
+        - {x: 6, y: 24}
+        - {x: 6, y: 31}
+        - {x: -22, y: 121}
+        - {x: -30, y: 123}
+        - {x: -57, y: 123}
+        - {x: -88, y: 38}
+    - name: Silver Marker_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 100}
+        - {x: -8, y: 52}
+        - {x: 8, y: 35}
+        - {x: 21, y: 25}
+        - {x: 28, y: 23}
+        - {x: 14, y: 27}
+        - {x: -53, y: 1}
+        - {x: -53, y: -12}
+        - {x: -21, y: -108}
+        - {x: 7, y: -108}
+        - {x: 81, y: -22}
+        - {x: 81, y: 97}
+        - {x: 80, y: 100}
+      - - {x: 6, y: 24}
+        - {x: 6, y: 44}
+        - {x: -29, y: 123}
+        - {x: -56, y: 123}
+        - {x: -88, y: 30}
+        - {x: -88, y: 24}
+        - {x: -58, y: 24}
+        - {x: -54, y: 43}
+        - {x: -28, y: 25}
+        - {x: -24, y: 24}
+    - name: Silver Marker_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79, y: 99}
+        - {x: 62, y: 101}
+        - {x: 20, y: 101}
+        - {x: 3, y: 94}
+        - {x: -3, y: 45}
+        - {x: 9, y: 32}
+        - {x: 30, y: 21}
+        - {x: 15, y: 28}
+        - {x: -50, y: 3}
+        - {x: -50, y: -30}
+        - {x: -8, y: -106}
+        - {x: 1, y: -106}
+        - {x: 9, y: -102}
+        - {x: 81, y: 17}
+        - {x: 81, y: 97}
+      - - {x: -27, y: 119}
+        - {x: -31, y: 124}
+        - {x: -55, y: 124}
+        - {x: -88, y: 38}
+        - {x: -88, y: 25}
+        - {x: -62, y: 25}
+        - {x: -56, y: 26}
+        - {x: -54, y: 25}
+        - {x: 6, y: 25}
+        - {x: 6, y: 30}
+        - {x: 5, y: 35}
+    - name: Silver Marker_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 101}
+        - {x: -46, y: 77}
+        - {x: -46, y: -52}
+        - {x: -8, y: -105}
+        - {x: 17, y: -105}
+        - {x: 81, y: -8}
+        - {x: 81, y: 101}
+      - - {x: -57, y: 124}
+        - {x: -88, y: 40}
+        - {x: -88, y: 25}
+        - {x: 6, y: 25}
+        - {x: 6, y: 31}
+        - {x: -28, y: 124}
+    - name: Silver Marker_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: 101}
+        - {x: 6, y: 101}
+        - {x: -11, y: 41}
+        - {x: 28, y: 24}
+        - {x: 47, y: 25}
+        - {x: 43, y: 17}
+        - {x: 19, y: 28}
+        - {x: -3, y: 17}
+        - {x: -40, y: 4}
+        - {x: -41, y: 3}
+        - {x: -41, y: -6}
+        - {x: -5, y: -104}
+        - {x: 0, y: -104}
+        - {x: 3, y: -99}
+        - {x: 15, y: -52}
+        - {x: 81, y: 5}
+      - - {x: -58, y: 124}
+        - {x: -71, y: 122}
+        - {x: -88, y: 49}
+        - {x: -88, y: 25}
+        - {x: 6, y: 25}
+        - {x: 6, y: 36}
+        - {x: -24, y: 124}
+    - name: Silver Marker_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74, y: 101}
+        - {x: 5, y: 101}
+        - {x: -9, y: 41}
+        - {x: 15, y: 28}
+        - {x: 27, y: 22}
+        - {x: 33, y: 21}
+        - {x: 18, y: 26}
+        - {x: 14, y: 28}
+        - {x: -34, y: 10}
+        - {x: -34, y: -25}
+        - {x: -5, y: -103}
+        - {x: -1, y: -103}
+        - {x: 1, y: -101}
+        - {x: 81, y: 11}
+        - {x: 81, y: 100}
+      - - {x: -55, y: 124}
+        - {x: -88, y: 41}
+        - {x: -88, y: 25}
+        - {x: 6, y: 25}
+        - {x: 6, y: 90}
+        - {x: -27, y: 124}
+    - name: Silver Marker_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 101}
+        - {x: -3, y: 81}
+        - {x: 4, y: 34}
+        - {x: 21, y: 26}
+        - {x: 28, y: 24}
+        - {x: 14, y: 28}
+        - {x: -27, y: 7}
+        - {x: -27, y: -6}
+        - {x: -6, y: -101}
+        - {x: -4, y: -102}
+        - {x: 59, y: -102}
+        - {x: 81, y: -14}
+        - {x: 81, y: 101}
+      - - {x: -56, y: 124}
+        - {x: -88, y: 31}
+        - {x: -88, y: 25}
+        - {x: 6, y: 25}
+        - {x: 6, y: 34}
+        - {x: -16, y: 121}
+        - {x: -26, y: 124}
+    - name: Silver Marker_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 27}
+        - {x: 31, y: 25}
+        - {x: 46, y: 25}
+        - {x: 45, y: 18}
+        - {x: 15, y: 28}
+        - {x: -18, y: 11}
+        - {x: -18, y: -101}
+        - {x: 14, y: -101}
+        - {x: 81, y: -65}
+        - {x: 81, y: 102}
+        - {x: 11, y: 102}
+        - {x: -17, y: 51}
+      - - {x: -57, y: 124}
+        - {x: -88, y: 32}
+        - {x: -88, y: 26}
+        - {x: 6, y: 26}
+        - {x: 6, y: 30}
+        - {x: -27, y: 124}
+    - name: Silver Marker_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 7}
+        - {x: -9, y: -26}
+        - {x: -5, y: -100}
+        - {x: -3, y: -102}
+        - {x: 3, y: -102}
+        - {x: 4, y: -72}
+        - {x: 4, y: 7}
+      - - {x: 20, y: 102}
+        - {x: 6, y: 93}
+        - {x: 2, y: 77}
+        - {x: 2, y: 47}
+        - {x: 12, y: 32}
+        - {x: 25, y: 25}
+        - {x: 41, y: 23}
+        - {x: 44, y: 19}
+        - {x: 18, y: 27}
+        - {x: 14, y: 30}
+        - {x: 2, y: 13}
+        - {x: 2, y: 5}
+        - {x: 8, y: -4}
+        - {x: 66, y: -4}
+        - {x: 81, y: 6}
+        - {x: 81, y: 100}
+        - {x: 69, y: 102}
+      - - {x: -31, y: 125}
+        - {x: -57, y: 125}
+        - {x: -88, y: 41}
+        - {x: -88, y: 26}
+        - {x: 6, y: 26}
+        - {x: 6, y: 33}
+        - {x: -23, y: 123}
+    - name: Silver Marker_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -43}
+        - {x: -5, y: -98}
+        - {x: -2, y: -102}
+        - {x: 1, y: -101}
+        - {x: 5, y: -31}
+        - {x: 5, y: 8}
+        - {x: -5, y: 8}
+        - {x: -8, y: 7}
+      - - {x: 20, y: 102}
+        - {x: 6, y: 93}
+        - {x: 2, y: 77}
+        - {x: 2, y: 47}
+        - {x: 12, y: 32}
+        - {x: 25, y: 25}
+        - {x: 41, y: 23}
+        - {x: 44, y: 19}
+        - {x: 18, y: 27}
+        - {x: 14, y: 30}
+        - {x: 2, y: 13}
+        - {x: 2, y: 5}
+        - {x: 8, y: -4}
+        - {x: 66, y: -4}
+        - {x: 81, y: 6}
+        - {x: 81, y: 100}
+        - {x: 69, y: 102}
+      - - {x: -27, y: 120}
+        - {x: -29, y: 125}
+        - {x: -56, y: 125}
+        - {x: -88, y: 39}
+        - {x: -88, y: 26}
+        - {x: 6, y: 26}
+        - {x: 6, y: 30}
+        - {x: 5, y: 36}
+    - name: Silver Marker_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 102}
+        - {x: 6, y: 93}
+        - {x: -14, y: 56}
+        - {x: -14, y: -73}
+        - {x: -9, y: -101}
+        - {x: 9, y: -101}
+        - {x: 81, y: -1}
+        - {x: 81, y: 102}
+      - - {x: -31, y: 125}
+        - {x: -57, y: 125}
+        - {x: -88, y: 41}
+        - {x: -88, y: 26}
+        - {x: 6, y: 26}
+        - {x: 6, y: 33}
+        - {x: -23, y: 123}
+    - name: Silver Marker_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 101}
+        - {x: -3, y: 71}
+        - {x: 0, y: 54}
+        - {x: 10, y: 34}
+        - {x: 20, y: 26}
+        - {x: 46, y: 23}
+        - {x: 34, y: 20}
+        - {x: 14, y: 28}
+        - {x: -21, y: 16}
+        - {x: -21, y: -33}
+        - {x: -11, y: -101}
+        - {x: 1, y: -101}
+        - {x: 81, y: 7}
+        - {x: 81, y: 101}
+      - - {x: -88, y: 26}
+        - {x: 6, y: 26}
+        - {x: 6, y: 40}
+        - {x: -27, y: 124}
+        - {x: -56, y: 124}
+        - {x: -88, y: 32}
+    - name: Silver Marker_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: 4}
+        - {x: 81, y: 101}
+        - {x: 11, y: 101}
+        - {x: -3, y: 81}
+        - {x: 4, y: 34}
+        - {x: 21, y: 26}
+        - {x: 28, y: 24}
+        - {x: 14, y: 28}
+        - {x: -13, y: 19}
+        - {x: -27, y: 7}
+        - {x: -27, y: -46}
+        - {x: -6, y: -101}
+        - {x: -3, y: -102}
+        - {x: 0, y: -102}
+        - {x: 1, y: -100}
+        - {x: 4, y: -90}
+        - {x: 6, y: -83}
+      - - {x: 6, y: 25}
+        - {x: 6, y: 45}
+        - {x: -29, y: 124}
+        - {x: -56, y: 124}
+        - {x: -88, y: 31}
+        - {x: -88, y: 25}
+        - {x: -58, y: 25}
+        - {x: -54, y: 44}
+        - {x: -28, y: 26}
+        - {x: -24, y: 25}
+    - name: Silver Marker_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 101}
+        - {x: -4, y: 71}
+        - {x: 2, y: 46}
+        - {x: 15, y: 28}
+        - {x: 27, y: 22}
+        - {x: 33, y: 21}
+        - {x: 13, y: 29}
+        - {x: -33, y: 19}
+        - {x: -33, y: -103}
+        - {x: 15, y: -103}
+        - {x: 81, y: -48}
+        - {x: 81, y: 101}
+      - - {x: -28, y: 124}
+        - {x: -56, y: 124}
+        - {x: -88, y: 30}
+        - {x: -88, y: 25}
+        - {x: 5, y: 25}
+        - {x: 6, y: 27}
+        - {x: 6, y: 33}
+    - name: Silver Marker_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 101}
+        - {x: -7, y: 43}
+        - {x: 23, y: 25}
+        - {x: 31, y: 22}
+        - {x: 40, y: 17}
+        - {x: 15, y: 28}
+        - {x: 3, y: 13}
+        - {x: 3, y: 10}
+        - {x: -37, y: 4}
+        - {x: -38, y: 1}
+        - {x: -38, y: -16}
+        - {x: -18, y: -104}
+        - {x: 11, y: -104}
+        - {x: 81, y: -21}
+        - {x: 81, y: 99}
+        - {x: 71, y: 101}
+      - - {x: -21, y: 25}
+        - {x: 6, y: 25}
+        - {x: 6, y: 35}
+        - {x: -28, y: 124}
+        - {x: -56, y: 124}
+        - {x: -88, y: 33}
+        - {x: -88, y: 27}
+        - {x: -87, y: 25}
+        - {x: -61, y: 25}
+        - {x: -56, y: 34}
+        - {x: -54, y: 44}
+        - {x: -30, y: 27}
+    - name: Silver Marker_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: 101}
+        - {x: 9, y: 101}
+        - {x: -7, y: 52}
+        - {x: 12, y: 30}
+        - {x: 25, y: 24}
+        - {x: 15, y: 28}
+        - {x: 3, y: 13}
+        - {x: 3, y: 10}
+        - {x: -41, y: 3}
+        - {x: -42, y: 0}
+        - {x: -42, y: -9}
+        - {x: -5, y: -106}
+        - {x: 4, y: -106}
+        - {x: 81, y: 4}
+        - {x: 81, y: 99}
+        - {x: 80, y: 100}
+      - - {x: -31, y: 124}
+        - {x: -55, y: 124}
+        - {x: -88, y: 33}
+        - {x: -88, y: 25}
+        - {x: 6, y: 25}
+        - {x: 6, y: 55}
+        - {x: -23, y: 122}
+    - name: Silver Marker_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 100}
+        - {x: -4, y: 80}
+        - {x: 4, y: 31}
+        - {x: 17, y: 25}
+        - {x: 43, y: 22}
+        - {x: 18, y: 25}
+        - {x: 15, y: 25}
+        - {x: 3, y: 13}
+        - {x: -45, y: 3}
+        - {x: -46, y: -1}
+        - {x: -46, y: -9}
+        - {x: -4, y: -107}
+        - {x: 0, y: -107}
+        - {x: 6, y: -97}
+        - {x: 81, y: 7}
+        - {x: 81, y: 100}
+      - - {x: -20, y: 24}
+        - {x: 3, y: 24}
+        - {x: 6, y: 25}
+        - {x: 6, y: 34}
+        - {x: -27, y: 123}
+        - {x: -56, y: 123}
+        - {x: -88, y: 30}
+        - {x: -88, y: 26}
+        - {x: -85, y: 24}
+        - {x: -63, y: 24}
+        - {x: -59, y: 28}
+        - {x: -56, y: 37}
+    - name: Silver Marker_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 100}
+        - {x: -9, y: 40}
+        - {x: 15, y: 27}
+        - {x: 27, y: 21}
+        - {x: 33, y: 20}
+        - {x: 13, y: 28}
+        - {x: 0, y: 9}
+        - {x: -49, y: -1}
+        - {x: -49, y: -12}
+        - {x: -15, y: -108}
+        - {x: 3, y: -108}
+        - {x: 81, y: -13}
+        - {x: 81, y: 100}
+      - - {x: -53, y: 123}
+        - {x: -61, y: 109}
+        - {x: -88, y: 35}
+        - {x: -88, y: 24}
+        - {x: 6, y: 24}
+        - {x: 6, y: 34}
+        - {x: -28, y: 123}
+    - name: Silver Marker_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 100}
+        - {x: -5, y: 43}
+        - {x: 23, y: 24}
+        - {x: 32, y: 23}
+        - {x: 39, y: 23}
+        - {x: 44, y: 24}
+        - {x: 47, y: 25}
+        - {x: 40, y: 16}
+        - {x: 15, y: 27}
+        - {x: -50, y: 1}
+        - {x: -51, y: -1}
+        - {x: -51, y: -13}
+        - {x: -20, y: -110}
+        - {x: 1, y: -110}
+        - {x: 81, y: -17}
+        - {x: 81, y: 100}
+      - - {x: -21, y: 24}
+        - {x: 6, y: 24}
+        - {x: 6, y: 34}
+        - {x: -28, y: 123}
+        - {x: -56, y: 123}
+        - {x: -88, y: 32}
+        - {x: -88, y: 26}
+        - {x: -87, y: 24}
+        - {x: -61, y: 24}
+        - {x: -56, y: 33}
+        - {x: -54, y: 43}
+        - {x: -30, y: 26}
+    - name: Silver Marker_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 100}
+        - {x: -7, y: 51}
+        - {x: 12, y: 29}
+        - {x: 25, y: 23}
+        - {x: 15, y: 27}
+        - {x: -1, y: 7}
+        - {x: -53, y: -2}
+        - {x: -53, y: -16}
+        - {x: -18, y: -111}
+        - {x: 2, y: -111}
+        - {x: 81, y: -8}
+        - {x: 81, y: 100}
+      - - {x: -31, y: 123}
+        - {x: -55, y: 123}
+        - {x: -88, y: 32}
+        - {x: -88, y: 24}
+        - {x: 6, y: 24}
+        - {x: 6, y: 54}
+        - {x: -23, y: 121}
+    - name: Silver Marker_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 100}
+        - {x: -3, y: 93}
+        - {x: -5, y: 34}
+        - {x: 30, y: 22}
+        - {x: 15, y: 26}
+        - {x: 3, y: 12}
+        - {x: 2, y: 8}
+        - {x: 12, y: 0}
+        - {x: 21, y: -4}
+        - {x: -52, y: -5}
+        - {x: -54, y: -6}
+        - {x: -54, y: -22}
+        - {x: -53, y: -32}
+        - {x: -4, y: -112}
+        - {x: 8, y: -112}
+        - {x: 81, y: 12}
+        - {x: 81, y: 98}
+        - {x: 74, y: 100}
+      - - {x: -57, y: 122}
+        - {x: -88, y: 41}
+        - {x: -88, y: 24}
+        - {x: 6, y: 24}
+        - {x: 6, y: 33}
+        - {x: -27, y: 122}
+    - name: Silver Marker_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -13}
+        - {x: -5, y: -113}
+        - {x: 4, y: -113}
+        - {x: 52, y: -17}
+        - {x: 52, y: -6}
+      - - {x: 79, y: 99}
+        - {x: 20, y: 99}
+        - {x: 2, y: 88}
+        - {x: 2, y: 42}
+        - {x: 16, y: 27}
+        - {x: 28, y: 23}
+        - {x: 14, y: 25}
+        - {x: 2, y: 17}
+        - {x: 2, y: 8}
+        - {x: 12, y: -6}
+        - {x: 70, y: -6}
+        - {x: 81, y: 15}
+        - {x: 81, y: 98}
+      - - {x: 6, y: 23}
+        - {x: 6, y: 43}
+        - {x: -29, y: 122}
+        - {x: -55, y: 122}
+        - {x: -88, y: 34}
+        - {x: -88, y: 23}
+        - {x: -58, y: 23}
+        - {x: -54, y: 42}
+        - {x: -28, y: 24}
+        - {x: -24, y: 23}
+    - name: Silver Marker_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -12}
+        - {x: -4, y: -114}
+        - {x: 1, y: -114}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -6}
+      - - {x: 6, y: 99}
+        - {x: 2, y: 84}
+        - {x: 2, y: 43}
+        - {x: 15, y: 26}
+        - {x: 27, y: 20}
+        - {x: 33, y: 19}
+        - {x: 13, y: 27}
+        - {x: 2, y: 11}
+        - {x: 2, y: 4}
+        - {x: 9, y: -6}
+        - {x: 77, y: -6}
+        - {x: 81, y: 11}
+        - {x: 81, y: 99}
+      - - {x: -88, y: 34}
+        - {x: -88, y: 23}
+        - {x: 6, y: 23}
+        - {x: 6, y: 33}
+        - {x: -11, y: 105}
+        - {x: -27, y: 122}
+        - {x: -56, y: 122}
+    - name: Silver Marker_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -5, y: -115}
+        - {x: 0, y: -115}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -7}
+      - - {x: 20, y: 99}
+        - {x: 2, y: 82}
+        - {x: 2, y: 43}
+        - {x: 16, y: 27}
+        - {x: 28, y: 22}
+        - {x: 44, y: 22}
+        - {x: 33, y: 16}
+        - {x: 18, y: 24}
+        - {x: 13, y: 26}
+        - {x: 2, y: 13}
+        - {x: 2, y: 4}
+        - {x: 16, y: -6}
+        - {x: 56, y: -6}
+        - {x: 72, y: -3}
+        - {x: 81, y: 15}
+        - {x: 81, y: 99}
+      - - {x: -88, y: 23}
+        - {x: 6, y: 23}
+        - {x: 6, y: 30}
+        - {x: -22, y: 120}
+        - {x: -30, y: 122}
+        - {x: -57, y: 122}
+        - {x: -88, y: 37}
+    - name: Silver Marker_30
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -7}
+        - {x: -56, y: -9}
+        - {x: -56, y: -14}
+        - {x: -5, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -11}
+        - {x: 52, y: -8}
+        - {x: 50, y: -7}
+      - - {x: 19, y: 99}
+        - {x: 2, y: 79}
+        - {x: 2, y: 42}
+        - {x: 5, y: 32}
+        - {x: 16, y: 27}
+        - {x: 28, y: 22}
+        - {x: 47, y: 23}
+        - {x: 43, y: 15}
+        - {x: 13, y: 27}
+        - {x: 2, y: 11}
+        - {x: 2, y: 2}
+        - {x: 9, y: -6}
+        - {x: 68, y: -6}
+        - {x: 75, y: -5}
+        - {x: 81, y: 18}
+        - {x: 81, y: 99}
+      - - {x: -88, y: 23}
+        - {x: 6, y: 23}
+        - {x: 6, y: 57}
+        - {x: -26, y: 122}
+        - {x: -55, y: 122}
+        - {x: -88, y: 43}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

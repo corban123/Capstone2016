@@ -1,0 +1,1178 @@
+fileFormatVersion: 2
+guid: 5d566a2a02a6a0240bf396dfca0a58c0
+timeCreated: 1458619568
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Barium Marker_0
+    21300002: Barium Marker_1
+    21300004: Barium Marker_2
+    21300006: Barium Marker_3
+    21300008: Barium Marker_4
+    21300010: Barium Marker_5
+    21300012: Barium Marker_6
+    21300014: Barium Marker_7
+    21300016: Barium Marker_8
+    21300018: Barium Marker_9
+    21300020: Barium Marker_10
+    21300022: Barium Marker_11
+    21300024: Barium Marker_12
+    21300026: Barium Marker_13
+    21300028: Barium Marker_14
+    21300030: Barium Marker_15
+    21300032: Barium Marker_16
+    21300034: Barium Marker_17
+    21300036: Barium Marker_18
+    21300038: Barium Marker_19
+    21300040: Barium Marker_20
+    21300042: Barium Marker_21
+    21300044: Barium Marker_22
+    21300046: Barium Marker_23
+    21300048: Barium Marker_24
+    21300050: Barium Marker_25
+    21300052: Barium Marker_26
+    21300054: Barium Marker_27
+    21300056: Barium Marker_28
+    21300058: Barium Marker_29
+    21300060: Barium Marker_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Barium Marker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -7}
+        - {x: -56, y: -14}
+        - {x: -6, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -14}
+        - {x: 52, y: -7}
+      - - {x: 7, y: 79}
+        - {x: 7, y: 12}
+        - {x: 16, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 74}
+        - {x: 67, y: 79}
+      - - {x: -5, y: 3}
+        - {x: 6, y: 6}
+        - {x: 6, y: 100}
+        - {x: 5, y: 102}
+        - {x: -77, y: 102}
+        - {x: -77, y: 3}
+    - name: Barium Marker_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -39, y: -49}
+        - {x: -4, y: -114}
+        - {x: 2, y: -114}
+        - {x: 51, y: -15}
+        - {x: 51, y: -9}
+        - {x: 50, y: -7}
+      - - {x: 64, y: 79}
+        - {x: 20, y: 79}
+        - {x: 7, y: 69}
+        - {x: 17, y: 52}
+        - {x: 21, y: 52}
+        - {x: 35, y: 58}
+        - {x: 25, y: 53}
+        - {x: 9, y: 40}
+        - {x: 7, y: 38}
+        - {x: 7, y: 6}
+        - {x: 8, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 70}
+        - {x: 69, y: 78}
+      - - {x: -6, y: 102}
+        - {x: -77, y: 102}
+        - {x: -77, y: 3}
+        - {x: -5, y: 3}
+        - {x: 6, y: 14}
+        - {x: 6, y: 85}
+        - {x: 5, y: 97}
+    - name: Barium Marker_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -6}
+        - {x: -56, y: -10}
+        - {x: -9, y: -108}
+        - {x: -4, y: -113}
+        - {x: 0, y: -113}
+        - {x: 40, y: -60}
+        - {x: 51, y: -15}
+        - {x: 51, y: -6}
+      - - {x: 7, y: 79}
+        - {x: 7, y: 6}
+        - {x: 18, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 73}
+        - {x: 68, y: 79}
+      - - {x: -77, y: 102}
+        - {x: -77, y: 3}
+        - {x: -2, y: 3}
+        - {x: 6, y: 4}
+        - {x: 6, y: 101}
+        - {x: 2, y: 102}
+    - name: Barium Marker_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -5}
+        - {x: -56, y: -15}
+        - {x: -8, y: -113}
+        - {x: 1, y: -113}
+        - {x: 50, y: -16}
+        - {x: 50, y: -5}
+      - - {x: 19, y: 80}
+        - {x: 7, y: 69}
+        - {x: 7, y: 59}
+        - {x: 17, y: 52}
+        - {x: 21, y: 52}
+        - {x: 33, y: 58}
+        - {x: 27, y: 54}
+        - {x: 10, y: 42}
+        - {x: 7, y: 38}
+        - {x: 7, y: 18}
+        - {x: 8, y: 12}
+        - {x: 16, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 75}
+        - {x: 70, y: 80}
+      - - {x: -77, y: 103}
+        - {x: -77, y: 4}
+        - {x: 6, y: 4}
+        - {x: 6, y: 98}
+        - {x: -15, y: 103}
+    - name: Barium Marker_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -4}
+        - {x: -56, y: -9}
+        - {x: -7, y: -109}
+        - {x: -4, y: -111}
+        - {x: 1, y: -111}
+        - {x: 49, y: -10}
+        - {x: 49, y: -4}
+      - - {x: 23, y: 80}
+        - {x: 7, y: 74}
+        - {x: 7, y: 13}
+        - {x: 10, y: 3}
+        - {x: 83, y: 3}
+        - {x: 83, y: 67}
+        - {x: 68, y: 80}
+      - - {x: -6, y: 102}
+        - {x: -16, y: 103}
+        - {x: -77, y: 103}
+        - {x: -77, y: 4}
+        - {x: -5, y: 4}
+        - {x: 6, y: 17}
+        - {x: 6, y: 62}
+        - {x: 4, y: 86}
+    - name: Barium Marker_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: -3}
+        - {x: -54, y: -3}
+        - {x: -56, y: -5}
+        - {x: -4, y: -110}
+        - {x: 0, y: -110}
+        - {x: 6, y: -103}
+        - {x: 47, y: -8}
+        - {x: 47, y: -4}
+      - - {x: 17, y: 81}
+        - {x: 9, y: 69}
+        - {x: 15, y: 54}
+        - {x: 22, y: 52}
+        - {x: 33, y: 59}
+        - {x: 24, y: 53}
+        - {x: 7, y: 42}
+        - {x: 7, y: 15}
+        - {x: 13, y: 3}
+        - {x: 83, y: 3}
+        - {x: 83, y: 68}
+        - {x: 70, y: 81}
+      - - {x: -77, y: 103}
+        - {x: -77, y: 5}
+        - {x: 3, y: 5}
+        - {x: 6, y: 8}
+        - {x: 6, y: 90}
+        - {x: -2, y: 103}
+    - name: Barium Marker_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -1}
+        - {x: -53, y: -2}
+        - {x: -55, y: -3}
+        - {x: -55, y: -6}
+        - {x: -24, y: -84}
+        - {x: -3, y: -109}
+        - {x: 5, y: -109}
+        - {x: 45, y: -10}
+        - {x: 45, y: -3}
+        - {x: 44, y: -1}
+      - - {x: 18, y: 81}
+        - {x: 9, y: 71}
+        - {x: 7, y: 66}
+        - {x: 7, y: 4}
+        - {x: 83, y: 4}
+        - {x: 83, y: 71}
+        - {x: 68, y: 81}
+      - - {x: -77, y: 104}
+        - {x: -77, y: 5}
+        - {x: -8, y: 5}
+        - {x: 6, y: 11}
+        - {x: 6, y: 104}
+    - name: Barium Marker_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 0}
+        - {x: -53, y: -34}
+        - {x: -5, y: -108}
+        - {x: 11, y: -108}
+        - {x: 42, y: -15}
+        - {x: 42, y: 0}
+      - - {x: 23, y: 81}
+        - {x: 7, y: 75}
+        - {x: 7, y: 14}
+        - {x: 19, y: 4}
+        - {x: 83, y: 4}
+        - {x: 83, y: 69}
+        - {x: 69, y: 81}
+      - - {x: -77, y: 104}
+        - {x: -77, y: 5}
+        - {x: 6, y: 5}
+        - {x: 6, y: 102}
+        - {x: -4, y: 104}
+    - name: Barium Marker_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 1}
+        - {x: -49, y: 1}
+        - {x: -50, y: 0}
+        - {x: -50, y: -7}
+        - {x: -5, y: -106}
+        - {x: 2, y: -106}
+        - {x: 34, y: -22}
+        - {x: 38, y: -6}
+        - {x: 38, y: 0}
+      - - {x: 78, y: 72}
+        - {x: 67, y: 82}
+        - {x: 28, y: 82}
+        - {x: 7, y: 76}
+        - {x: 7, y: 69}
+        - {x: 18, y: 53}
+        - {x: 21, y: 54}
+        - {x: 33, y: 60}
+        - {x: 16, y: 50}
+        - {x: 7, y: 41}
+        - {x: 7, y: 4}
+        - {x: 83, y: 4}
+        - {x: 83, y: 40}
+      - - {x: -3, y: 6}
+        - {x: 6, y: 8}
+        - {x: 6, y: 105}
+        - {x: -77, y: 105}
+        - {x: -77, y: 6}
+    - name: Barium Marker_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 2}
+        - {x: -46, y: 1}
+        - {x: -46, y: -42}
+        - {x: -7, y: -105}
+        - {x: 9, y: -105}
+        - {x: 34, y: -4}
+        - {x: 34, y: 1}
+        - {x: 32, y: 2}
+      - - {x: 13, y: 82}
+        - {x: 7, y: 72}
+        - {x: 17, y: 55}
+        - {x: 21, y: 55}
+        - {x: 7, y: 46}
+        - {x: 7, y: 14}
+        - {x: 16, y: 5}
+        - {x: 83, y: 5}
+        - {x: 83, y: 76}
+        - {x: 68, y: 82}
+      - - {x: -77, y: 105}
+        - {x: -77, y: 6}
+        - {x: -5, y: 6}
+        - {x: 6, y: 7}
+        - {x: 6, y: 99}
+        - {x: -8, y: 105}
+    - name: Barium Marker_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 4}
+        - {x: -41, y: -2}
+        - {x: -13, y: -93}
+        - {x: -4, y: -104}
+        - {x: 4, y: -104}
+        - {x: 29, y: -17}
+        - {x: 29, y: 4}
+      - - {x: 64, y: 83}
+        - {x: 17, y: 83}
+        - {x: 8, y: 81}
+        - {x: 14, y: 55}
+        - {x: 22, y: 54}
+        - {x: 33, y: 61}
+        - {x: 25, y: 55}
+        - {x: 7, y: 46}
+        - {x: 7, y: 17}
+        - {x: 13, y: 5}
+        - {x: 83, y: 5}
+        - {x: 83, y: 48}
+        - {x: 82, y: 63}
+      - - {x: -77, y: 106}
+        - {x: -77, y: 7}
+        - {x: 3, y: 7}
+        - {x: 6, y: 14}
+        - {x: 6, y: 76}
+        - {x: -5, y: 106}
+    - name: Barium Marker_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 5}
+        - {x: -34, y: -10}
+        - {x: -7, y: -103}
+        - {x: 8, y: -103}
+        - {x: 23, y: -11}
+        - {x: 23, y: 5}
+      - - {x: 23, y: 83}
+        - {x: 7, y: 79}
+        - {x: 7, y: 6}
+        - {x: 83, y: 6}
+        - {x: 83, y: 69}
+        - {x: 68, y: 83}
+      - - {x: -11, y: 106}
+        - {x: -76, y: 106}
+        - {x: -77, y: 104}
+        - {x: -77, y: 7}
+        - {x: -2, y: 7}
+        - {x: 6, y: 21}
+        - {x: 6, y: 81}
+        - {x: 2, y: 97}
+    - name: Barium Marker_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 6}
+        - {x: -27, y: -2}
+        - {x: -6, y: -101}
+        - {x: -6, y: -102}
+        - {x: 1, y: -102}
+        - {x: 17, y: -22}
+        - {x: 17, y: 4}
+        - {x: 16, y: 6}
+      - - {x: 7, y: 83}
+        - {x: 7, y: 11}
+        - {x: 19, y: 6}
+        - {x: 83, y: 6}
+        - {x: 83, y: 70}
+        - {x: 61, y: 83}
+      - - {x: -77, y: 106}
+        - {x: -77, y: 7}
+        - {x: -5, y: 7}
+        - {x: 6, y: 9}
+        - {x: 6, y: 88}
+        - {x: -3, y: 106}
+    - name: Barium Marker_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 7}
+        - {x: -18, y: -35}
+        - {x: -6, y: -100}
+        - {x: -3, y: -101}
+        - {x: 1, y: -101}
+        - {x: 9, y: -90}
+        - {x: 11, y: -55}
+        - {x: 11, y: 7}
+      - - {x: 23, y: 84}
+        - {x: 7, y: 74}
+        - {x: 7, y: 68}
+        - {x: 15, y: 57}
+        - {x: 22, y: 55}
+        - {x: 33, y: 62}
+        - {x: 33, y: 59}
+        - {x: 14, y: 52}
+        - {x: 7, y: 47}
+        - {x: 7, y: 17}
+        - {x: 13, y: 6}
+        - {x: 83, y: 6}
+        - {x: 83, y: 70}
+        - {x: 65, y: 84}
+      - - {x: -12, y: 106}
+        - {x: -77, y: 106}
+        - {x: -77, y: 8}
+        - {x: -7, y: 8}
+        - {x: 6, y: 21}
+        - {x: 6, y: 90}
+    - name: Barium Marker_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 7}
+        - {x: -9, y: -26}
+        - {x: -5, y: -100}
+        - {x: -3, y: -102}
+        - {x: 3, y: -102}
+        - {x: 4, y: -72}
+        - {x: 4, y: 7}
+      - - {x: 64, y: 84}
+        - {x: 17, y: 84}
+        - {x: 8, y: 82}
+        - {x: 14, y: 56}
+        - {x: 22, y: 55}
+        - {x: 33, y: 62}
+        - {x: 16, y: 51}
+        - {x: 7, y: 47}
+        - {x: 7, y: 17}
+        - {x: 13, y: 6}
+        - {x: 83, y: 6}
+        - {x: 83, y: 49}
+        - {x: 82, y: 64}
+      - - {x: -12, y: 107}
+        - {x: -77, y: 107}
+        - {x: -77, y: 8}
+        - {x: 2, y: 8}
+        - {x: 6, y: 9}
+        - {x: 6, y: 98}
+        - {x: -2, y: 106}
+    - name: Barium Marker_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -43}
+        - {x: -5, y: -98}
+        - {x: -2, y: -102}
+        - {x: 1, y: -101}
+        - {x: 5, y: -31}
+        - {x: 5, y: 8}
+        - {x: -5, y: 8}
+        - {x: -8, y: 7}
+      - - {x: 17, y: 84}
+        - {x: 7, y: 79}
+        - {x: 7, y: 11}
+        - {x: 18, y: 6}
+        - {x: 82, y: 6}
+        - {x: 83, y: 7}
+        - {x: 83, y: 64}
+        - {x: 73, y: 84}
+      - - {x: -77, y: 107}
+        - {x: -77, y: 8}
+        - {x: -11, y: 8}
+        - {x: 6, y: 18}
+        - {x: 6, y: 97}
+        - {x: -15, y: 107}
+    - name: Barium Marker_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 7}
+        - {x: -14, y: -75}
+        - {x: -12, y: -101}
+        - {x: 6, y: -101}
+        - {x: 14, y: -22}
+        - {x: 14, y: 7}
+      - - {x: 64, y: 84}
+        - {x: 17, y: 84}
+        - {x: 8, y: 82}
+        - {x: 14, y: 56}
+        - {x: 22, y: 55}
+        - {x: 33, y: 62}
+        - {x: 16, y: 51}
+        - {x: 7, y: 47}
+        - {x: 7, y: 17}
+        - {x: 13, y: 6}
+        - {x: 83, y: 6}
+        - {x: 83, y: 49}
+        - {x: 82, y: 64}
+      - - {x: -77, y: 107}
+        - {x: -77, y: 8}
+        - {x: 1, y: 8}
+        - {x: 6, y: 9}
+        - {x: 6, y: 96}
+        - {x: -7, y: 107}
+    - name: Barium Marker_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 7}
+        - {x: -21, y: 6}
+        - {x: -21, y: -7}
+        - {x: -6, y: -100}
+        - {x: -4, y: -101}
+        - {x: 1, y: -101}
+        - {x: 22, y: -8}
+        - {x: 22, y: 7}
+      - - {x: 28, y: 84}
+        - {x: 13, y: 76}
+        - {x: 10, y: 72}
+        - {x: 15, y: 57}
+        - {x: 22, y: 55}
+        - {x: 33, y: 62}
+        - {x: 33, y: 58}
+        - {x: 14, y: 52}
+        - {x: 7, y: 40}
+        - {x: 7, y: 21}
+        - {x: 16, y: 9}
+        - {x: 25, y: 6}
+        - {x: 83, y: 6}
+        - {x: 83, y: 70}
+        - {x: 64, y: 84}
+      - - {x: -12, y: 106}
+        - {x: -77, y: 106}
+        - {x: -77, y: 8}
+        - {x: -7, y: 8}
+        - {x: 6, y: 21}
+        - {x: 6, y: 90}
+    - name: Barium Marker_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 6}
+        - {x: -27, y: -11}
+        - {x: -7, y: -102}
+        - {x: 2, y: -102}
+        - {x: 30, y: -3}
+        - {x: 30, y: 6}
+      - - {x: 13, y: 83}
+        - {x: 7, y: 73}
+        - {x: 17, y: 56}
+        - {x: 21, y: 56}
+        - {x: 7, y: 47}
+        - {x: 7, y: 15}
+        - {x: 16, y: 6}
+        - {x: 83, y: 6}
+        - {x: 83, y: 77}
+        - {x: 68, y: 83}
+      - - {x: -77, y: 106}
+        - {x: -77, y: 7}
+        - {x: -5, y: 7}
+        - {x: 6, y: 8}
+        - {x: 6, y: 100}
+        - {x: -8, y: 106}
+    - name: Barium Marker_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 5}
+        - {x: -33, y: -23}
+        - {x: -6, y: -102}
+        - {x: -4, y: -103}
+        - {x: 1, y: -103}
+        - {x: 36, y: -8}
+        - {x: 36, y: 4}
+        - {x: 35, y: 5}
+      - - {x: 15, y: 57}
+        - {x: 19, y: 54}
+        - {x: 7, y: 44}
+        - {x: 7, y: 19}
+        - {x: 12, y: 6}
+        - {x: 83, y: 6}
+        - {x: 83, y: 59}
+        - {x: 80, y: 77}
+        - {x: 61, y: 83}
+        - {x: 24, y: 83}
+        - {x: 9, y: 73}
+      - - {x: -77, y: 106}
+        - {x: -77, y: 7}
+        - {x: -8, y: 7}
+        - {x: 6, y: 13}
+        - {x: 6, y: 106}
+    - name: Barium Marker_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 3}
+        - {x: -38, y: 1}
+        - {x: -38, y: -12}
+        - {x: -5, y: -104}
+        - {x: 0, y: -104}
+        - {x: 2, y: -103}
+        - {x: 41, y: -7}
+        - {x: 41, y: 1}
+        - {x: 40, y: 3}
+      - - {x: 28, y: 83}
+        - {x: 13, y: 75}
+        - {x: 10, y: 71}
+        - {x: 15, y: 56}
+        - {x: 22, y: 54}
+        - {x: 33, y: 61}
+        - {x: 24, y: 55}
+        - {x: 11, y: 46}
+        - {x: 7, y: 40}
+        - {x: 7, y: 6}
+        - {x: 9, y: 5}
+        - {x: 83, y: 5}
+        - {x: 83, y: 69}
+        - {x: 64, y: 83}
+      - - {x: -77, y: 105}
+        - {x: -77, y: 7}
+        - {x: -3, y: 7}
+        - {x: 6, y: 13}
+        - {x: 6, y: 85}
+        - {x: 0, y: 105}
+    - name: Barium Marker_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 2}
+        - {x: -42, y: -7}
+        - {x: -8, y: -106}
+        - {x: 2, y: -106}
+        - {x: 45, y: -10}
+        - {x: 45, y: 2}
+      - - {x: 20, y: 82}
+        - {x: 8, y: 72}
+        - {x: 16, y: 53}
+        - {x: 7, y: 43}
+        - {x: 7, y: 11}
+        - {x: 8, y: 5}
+        - {x: 83, y: 5}
+        - {x: 83, y: 58}
+        - {x: 70, y: 82}
+      - - {x: -6, y: 104}
+        - {x: -16, y: 105}
+        - {x: -77, y: 105}
+        - {x: -77, y: 6}
+        - {x: -5, y: 6}
+        - {x: 6, y: 23}
+        - {x: 6, y: 59}
+        - {x: 2, y: 90}
+    - name: Barium Marker_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 1}
+        - {x: -46, y: -10}
+        - {x: -5, y: -107}
+        - {x: 1, y: -107}
+        - {x: 48, y: -12}
+        - {x: 48, y: -2}
+        - {x: 47, y: 1}
+      - - {x: 18, y: 82}
+        - {x: 10, y: 70}
+        - {x: 15, y: 55}
+        - {x: 22, y: 53}
+        - {x: 33, y: 60}
+        - {x: 25, y: 54}
+        - {x: 15, y: 49}
+        - {x: 7, y: 39}
+        - {x: 7, y: 4}
+        - {x: 83, y: 4}
+        - {x: 83, y: 78}
+        - {x: 70, y: 82}
+      - - {x: -8, y: 105}
+        - {x: -77, y: 105}
+        - {x: -77, y: 6}
+        - {x: -7, y: 6}
+        - {x: 6, y: 18}
+        - {x: 6, y: 81}
+        - {x: 5, y: 88}
+    - name: Barium Marker_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: -1}
+        - {x: -49, y: -8}
+        - {x: -6, y: -108}
+        - {x: 1, y: -108}
+        - {x: 2, y: -107}
+        - {x: 50, y: -9}
+        - {x: 50, y: -3}
+        - {x: 49, y: -1}
+      - - {x: 24, y: 81}
+        - {x: 7, y: 72}
+        - {x: 7, y: 68}
+        - {x: 17, y: 54}
+        - {x: 7, y: 49}
+        - {x: 7, y: 4}
+        - {x: 83, y: 4}
+        - {x: 83, y: 68}
+        - {x: 61, y: 81}
+      - - {x: -77, y: 104}
+        - {x: -77, y: 5}
+        - {x: -5, y: 5}
+        - {x: 6, y: 20}
+        - {x: 6, y: 90}
+        - {x: -11, y: 104}
+    - name: Barium Marker_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: -2}
+        - {x: -51, y: -4}
+        - {x: -51, y: -12}
+        - {x: -5, y: -110}
+        - {x: 0, y: -110}
+        - {x: 52, y: -7}
+        - {x: 52, y: -4}
+        - {x: 49, y: -2}
+      - - {x: 17, y: 81}
+        - {x: 8, y: 79}
+        - {x: 14, y: 53}
+        - {x: 22, y: 52}
+        - {x: 33, y: 59}
+        - {x: 25, y: 53}
+        - {x: 15, y: 48}
+        - {x: 7, y: 38}
+        - {x: 7, y: 9}
+        - {x: 22, y: 3}
+        - {x: 83, y: 3}
+        - {x: 83, y: 64}
+        - {x: 65, y: 81}
+      - - {x: -77, y: 104}
+        - {x: -77, y: 5}
+        - {x: 3, y: 5}
+        - {x: 6, y: 12}
+        - {x: 6, y: 74}
+        - {x: -5, y: 104}
+    - name: Barium Marker_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: -3}
+        - {x: -53, y: -11}
+        - {x: -52, y: -13}
+        - {x: -4, y: -111}
+        - {x: 1, y: -111}
+        - {x: 52, y: -12}
+        - {x: 52, y: -5}
+        - {x: 51, y: -3}
+      - - {x: 13, y: 80}
+        - {x: 7, y: 70}
+        - {x: 17, y: 53}
+        - {x: 21, y: 53}
+        - {x: 35, y: 59}
+        - {x: 25, y: 54}
+        - {x: 7, y: 50}
+        - {x: 7, y: 8}
+        - {x: 8, y: 3}
+        - {x: 83, y: 3}
+        - {x: 83, y: 74}
+        - {x: 67, y: 80}
+      - - {x: 1, y: 92}
+        - {x: -8, y: 103}
+        - {x: -77, y: 103}
+        - {x: -77, y: 4}
+        - {x: -9, y: 4}
+        - {x: 5, y: 14}
+        - {x: 6, y: 22}
+        - {x: 6, y: 52}
+    - name: Barium Marker_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: -5}
+        - {x: -52, y: -5}
+        - {x: -54, y: -6}
+        - {x: -54, y: -10}
+        - {x: -46, y: -29}
+        - {x: -4, y: -112}
+        - {x: 0, y: -112}
+        - {x: 11, y: -94}
+        - {x: 52, y: -12}
+        - {x: 52, y: -7}
+      - - {x: 78, y: 70}
+        - {x: 67, y: 80}
+        - {x: 28, y: 80}
+        - {x: 7, y: 74}
+        - {x: 7, y: 67}
+        - {x: 18, y: 51}
+        - {x: 21, y: 52}
+        - {x: 33, y: 58}
+        - {x: 16, y: 48}
+        - {x: 7, y: 40}
+        - {x: 7, y: 17}
+        - {x: 12, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 42}
+      - - {x: -3, y: 4}
+        - {x: 6, y: 6}
+        - {x: 6, y: 103}
+        - {x: -77, y: 103}
+        - {x: -77, y: 4}
+    - name: Barium Marker_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -13}
+        - {x: -5, y: -113}
+        - {x: 4, y: -113}
+        - {x: 52, y: -17}
+        - {x: 52, y: -6}
+      - - {x: 25, y: 80}
+        - {x: 7, y: 69}
+        - {x: 15, y: 53}
+        - {x: 22, y: 51}
+        - {x: 7, y: 46}
+        - {x: 7, y: 3}
+        - {x: 10, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 57}
+        - {x: 76, y: 80}
+      - - {x: -77, y: 102}
+        - {x: -77, y: 4}
+        - {x: -7, y: 4}
+        - {x: 6, y: 7}
+        - {x: 6, y: 89}
+        - {x: -13, y: 102}
+    - name: Barium Marker_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -12}
+        - {x: -4, y: -114}
+        - {x: 1, y: -114}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -6}
+      - - {x: 13, y: 79}
+        - {x: 7, y: 69}
+        - {x: 17, y: 52}
+        - {x: 21, y: 52}
+        - {x: 35, y: 58}
+        - {x: 25, y: 53}
+        - {x: 7, y: 42}
+        - {x: 7, y: 13}
+        - {x: 21, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 73}
+        - {x: 67, y: 79}
+      - - {x: -77, y: 102}
+        - {x: -77, y: 3}
+        - {x: -5, y: 3}
+        - {x: 6, y: 13}
+        - {x: 6, y: 93}
+        - {x: -8, y: 102}
+    - name: Barium Marker_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -5, y: -115}
+        - {x: 0, y: -115}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -7}
+      - - {x: 7, y: 12}
+        - {x: 18, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 51}
+        - {x: 82, y: 59}
+        - {x: 67, y: 79}
+        - {x: 7, y: 79}
+      - - {x: -5, y: 3}
+        - {x: 6, y: 6}
+        - {x: 6, y: 100}
+        - {x: 5, y: 102}
+        - {x: -77, y: 102}
+        - {x: -77, y: 3}
+    - name: Barium Marker_30
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -7}
+        - {x: -56, y: -9}
+        - {x: -56, y: -14}
+        - {x: -5, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -11}
+        - {x: 52, y: -8}
+        - {x: 50, y: -7}
+      - - {x: 7, y: 79}
+        - {x: 7, y: 2}
+        - {x: 83, y: 2}
+        - {x: 83, y: 71}
+        - {x: 68, y: 79}
+      - - {x: -4, y: 102}
+        - {x: -77, y: 102}
+        - {x: -77, y: 3}
+        - {x: -7, y: 3}
+        - {x: 6, y: 16}
+        - {x: 6, y: 81}
+        - {x: 5, y: 85}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
