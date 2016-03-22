@@ -3,6 +3,8 @@ using UnityEngine.Networking;
 using System.Collections;
 
 public class EnablerScript : NetworkBehaviour {
+    private readonly int PLAYER1_LAYER = 9;
+    private readonly int PLAYER2_LAYER = 8;
 
 	CharacterController characterController;
 
@@ -34,9 +36,9 @@ public class EnablerScript : NetworkBehaviour {
 			FPSCam.enabled = true;
 
             if (gameObject.name == "Player 1") {
-                layerMask = 1 << 8;
+                layerMask = 1 << PLAYER1_LAYER;
             } else {
-                layerMask = 1 << 9;
+                layerMask = 1 << PLAYER2_LAYER;
             }
             FPSCam.cullingMask = ~layerMask;
 			audioListen.enabled = true;

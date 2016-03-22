@@ -1,0 +1,881 @@
+fileFormatVersion: 2
+guid: e9fc52c51dedcba4c8b0ece02a8c969a
+timeCreated: 1458619670
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Potassium Marker_0
+    21300002: Potassium Marker_1
+    21300004: Potassium Marker_2
+    21300006: Potassium Marker_3
+    21300008: Potassium Marker_4
+    21300010: Potassium Marker_5
+    21300012: Potassium Marker_6
+    21300014: Potassium Marker_7
+    21300016: Potassium Marker_8
+    21300018: Potassium Marker_9
+    21300020: Potassium Marker_10
+    21300022: Potassium Marker_11
+    21300024: Potassium Marker_12
+    21300026: Potassium Marker_13
+    21300028: Potassium Marker_14
+    21300030: Potassium Marker_15
+    21300032: Potassium Marker_16
+    21300034: Potassium Marker_17
+    21300036: Potassium Marker_18
+    21300038: Potassium Marker_19
+    21300040: Potassium Marker_20
+    21300042: Potassium Marker_21
+    21300044: Potassium Marker_22
+    21300046: Potassium Marker_23
+    21300048: Potassium Marker_24
+    21300050: Potassium Marker_25
+    21300052: Potassium Marker_26
+    21300054: Potassium Marker_27
+    21300056: Potassium Marker_28
+    21300058: Potassium Marker_29
+    21300060: Potassium Marker_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Potassium Marker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -7}
+        - {x: -56, y: -14}
+        - {x: -6, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -14}
+        - {x: 52, y: -7}
+      - - {x: -38, y: 102}
+        - {x: -38, y: 3}
+        - {x: 50, y: 3}
+        - {x: 50, y: 97}
+        - {x: 49, y: 102}
+    - name: Potassium Marker_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -39, y: -49}
+        - {x: -4, y: -114}
+        - {x: 2, y: -114}
+        - {x: 51, y: -15}
+        - {x: 51, y: -9}
+        - {x: 50, y: -7}
+      - - {x: 19, y: 102}
+        - {x: 2, y: 84}
+        - {x: -7, y: 101}
+        - {x: -11, y: 102}
+        - {x: -38, y: 102}
+        - {x: -38, y: 3}
+        - {x: 50, y: 3}
+        - {x: 50, y: 97}
+        - {x: 47, y: 102}
+    - name: Potassium Marker_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -6}
+        - {x: -56, y: -10}
+        - {x: -9, y: -108}
+        - {x: -4, y: -113}
+        - {x: 0, y: -113}
+        - {x: 40, y: -60}
+        - {x: 51, y: -15}
+        - {x: 51, y: -6}
+      - - {x: 50, y: 3}
+        - {x: 50, y: 99}
+        - {x: 49, y: 102}
+        - {x: -38, y: 102}
+        - {x: -38, y: 3}
+    - name: Potassium Marker_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -5}
+        - {x: -56, y: -15}
+        - {x: -8, y: -113}
+        - {x: 1, y: -113}
+        - {x: 50, y: -16}
+        - {x: 50, y: -5}
+      - - {x: -38, y: 103}
+        - {x: -38, y: 4}
+        - {x: 50, y: 4}
+        - {x: 50, y: 103}
+    - name: Potassium Marker_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -4}
+        - {x: -56, y: -9}
+        - {x: -7, y: -109}
+        - {x: -4, y: -111}
+        - {x: 1, y: -111}
+        - {x: 49, y: -10}
+        - {x: 49, y: -4}
+      - - {x: 50, y: 6}
+        - {x: 50, y: 103}
+        - {x: -38, y: 103}
+        - {x: -38, y: 4}
+        - {x: -11, y: 4}
+        - {x: -7, y: 5}
+        - {x: 0, y: 4}
+        - {x: 49, y: 4}
+    - name: Potassium Marker_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: -3}
+        - {x: -54, y: -3}
+        - {x: -56, y: -5}
+        - {x: -4, y: -110}
+        - {x: 0, y: -110}
+        - {x: 6, y: -103}
+        - {x: 47, y: -8}
+        - {x: 47, y: -4}
+      - - {x: 49, y: 13}
+        - {x: 50, y: 50}
+        - {x: 50, y: 102}
+        - {x: 46, y: 103}
+        - {x: -38, y: 103}
+        - {x: -38, y: 5}
+        - {x: -11, y: 5}
+        - {x: -7, y: 6}
+        - {x: -2, y: 5}
+        - {x: 50, y: 5}
+        - {x: 50, y: 11}
+    - name: Potassium Marker_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -1}
+        - {x: -53, y: -2}
+        - {x: -55, y: -3}
+        - {x: -55, y: -6}
+        - {x: -24, y: -84}
+        - {x: -3, y: -109}
+        - {x: 5, y: -109}
+        - {x: 45, y: -10}
+        - {x: 45, y: -3}
+        - {x: 44, y: -1}
+      - - {x: -38, y: 104}
+        - {x: -38, y: 5}
+        - {x: 50, y: 5}
+        - {x: 50, y: 104}
+    - name: Potassium Marker_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 0}
+        - {x: -53, y: -34}
+        - {x: -5, y: -108}
+        - {x: 11, y: -108}
+        - {x: 42, y: -15}
+        - {x: 42, y: 0}
+      - - {x: 47, y: 104}
+        - {x: 19, y: 104}
+        - {x: 2, y: 86}
+        - {x: -7, y: 103}
+        - {x: -12, y: 104}
+        - {x: -38, y: 104}
+        - {x: -38, y: 5}
+        - {x: 50, y: 5}
+        - {x: 50, y: 94}
+        - {x: 49, y: 99}
+    - name: Potassium Marker_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 1}
+        - {x: -49, y: 1}
+        - {x: -50, y: 0}
+        - {x: -50, y: -7}
+        - {x: -5, y: -106}
+        - {x: 2, y: -106}
+        - {x: 34, y: -22}
+        - {x: 38, y: -6}
+        - {x: 38, y: 0}
+      - - {x: 50, y: 105}
+        - {x: -38, y: 105}
+        - {x: -38, y: 6}
+        - {x: -11, y: 6}
+        - {x: -7, y: 7}
+        - {x: -1, y: 6}
+        - {x: 50, y: 6}
+    - name: Potassium Marker_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 2}
+        - {x: -46, y: 1}
+        - {x: -46, y: -42}
+        - {x: -7, y: -105}
+        - {x: 9, y: -105}
+        - {x: 34, y: -4}
+        - {x: 34, y: 1}
+        - {x: 32, y: 2}
+      - - {x: 46, y: 105}
+        - {x: 19, y: 105}
+        - {x: 2, y: 87}
+        - {x: -7, y: 104}
+        - {x: -11, y: 105}
+        - {x: -38, y: 105}
+        - {x: -38, y: 6}
+        - {x: 50, y: 6}
+        - {x: 50, y: 97}
+        - {x: 48, y: 103}
+    - name: Potassium Marker_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 4}
+        - {x: -41, y: -2}
+        - {x: -13, y: -93}
+        - {x: -4, y: -104}
+        - {x: 4, y: -104}
+        - {x: 29, y: -17}
+        - {x: 29, y: 4}
+      - - {x: -38, y: 106}
+        - {x: -38, y: 7}
+        - {x: 50, y: 7}
+        - {x: 50, y: 106}
+    - name: Potassium Marker_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 5}
+        - {x: -34, y: -10}
+        - {x: -7, y: -103}
+        - {x: 8, y: -103}
+        - {x: 23, y: -11}
+        - {x: 23, y: 5}
+      - - {x: -38, y: 106}
+        - {x: -38, y: 7}
+        - {x: 49, y: 7}
+        - {x: 50, y: 8}
+        - {x: 50, y: 106}
+    - name: Potassium Marker_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 6}
+        - {x: -27, y: -2}
+        - {x: -6, y: -101}
+        - {x: -6, y: -102}
+        - {x: 1, y: -102}
+        - {x: 17, y: -22}
+        - {x: 17, y: 4}
+        - {x: 16, y: 6}
+      - - {x: 19, y: 106}
+        - {x: 2, y: 88}
+        - {x: -7, y: 105}
+        - {x: -11, y: 106}
+        - {x: -38, y: 106}
+        - {x: -38, y: 7}
+        - {x: 50, y: 7}
+        - {x: 50, y: 77}
+        - {x: 48, y: 106}
+    - name: Potassium Marker_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 7}
+        - {x: -18, y: -35}
+        - {x: -6, y: -100}
+        - {x: -3, y: -101}
+        - {x: 1, y: -101}
+        - {x: 9, y: -90}
+        - {x: 11, y: -55}
+        - {x: 11, y: 7}
+      - - {x: 12, y: 98}
+        - {x: -8, y: 106}
+        - {x: -38, y: 106}
+        - {x: -38, y: 8}
+        - {x: 50, y: 8}
+        - {x: 50, y: 92}
+        - {x: 49, y: 104}
+        - {x: 46, y: 106}
+        - {x: 20, y: 106}
+    - name: Potassium Marker_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 7}
+        - {x: -9, y: -26}
+        - {x: -5, y: -100}
+        - {x: -3, y: -102}
+        - {x: 3, y: -102}
+        - {x: 4, y: -72}
+        - {x: 4, y: 7}
+      - - {x: -38, y: 107}
+        - {x: -38, y: 8}
+        - {x: 50, y: 8}
+        - {x: 50, y: 107}
+    - name: Potassium Marker_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -43}
+        - {x: -5, y: -98}
+        - {x: -2, y: -102}
+        - {x: 1, y: -101}
+        - {x: 5, y: -31}
+        - {x: 5, y: 8}
+        - {x: -5, y: 8}
+        - {x: -8, y: 7}
+      - - {x: -38, y: 107}
+        - {x: -38, y: 8}
+        - {x: 50, y: 8}
+        - {x: 50, y: 107}
+    - name: Potassium Marker_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 7}
+        - {x: -14, y: -75}
+        - {x: -12, y: -101}
+        - {x: 6, y: -101}
+        - {x: 14, y: -22}
+        - {x: 14, y: 7}
+      - - {x: -38, y: 107}
+        - {x: -38, y: 8}
+        - {x: 50, y: 8}
+        - {x: 50, y: 107}
+    - name: Potassium Marker_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 7}
+        - {x: -21, y: 6}
+        - {x: -21, y: -7}
+        - {x: -6, y: -100}
+        - {x: -4, y: -101}
+        - {x: 1, y: -101}
+        - {x: 22, y: -8}
+        - {x: 22, y: 7}
+      - - {x: -38, y: 106}
+        - {x: -38, y: 8}
+        - {x: 50, y: 8}
+        - {x: 50, y: 76}
+        - {x: 48, y: 104}
+        - {x: 46, y: 106}
+    - name: Potassium Marker_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 6}
+        - {x: -27, y: -11}
+        - {x: -7, y: -102}
+        - {x: 2, y: -102}
+        - {x: 30, y: -3}
+        - {x: 30, y: 6}
+      - - {x: 46, y: 106}
+        - {x: 19, y: 106}
+        - {x: 2, y: 88}
+        - {x: -7, y: 105}
+        - {x: -11, y: 106}
+        - {x: -38, y: 106}
+        - {x: -38, y: 7}
+        - {x: 50, y: 7}
+        - {x: 50, y: 98}
+        - {x: 48, y: 104}
+    - name: Potassium Marker_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 5}
+        - {x: -33, y: -23}
+        - {x: -6, y: -102}
+        - {x: -4, y: -103}
+        - {x: 1, y: -103}
+        - {x: 36, y: -8}
+        - {x: 36, y: 4}
+        - {x: 35, y: 5}
+      - - {x: 50, y: 7}
+        - {x: 50, y: 13}
+        - {x: 48, y: 17}
+        - {x: 50, y: 44}
+        - {x: 50, y: 106}
+        - {x: -38, y: 106}
+        - {x: -38, y: 7}
+        - {x: -10, y: 7}
+        - {x: -10, y: 9}
+        - {x: 3, y: 7}
+    - name: Potassium Marker_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 3}
+        - {x: -38, y: 1}
+        - {x: -38, y: -12}
+        - {x: -5, y: -104}
+        - {x: 0, y: -104}
+        - {x: 2, y: -103}
+        - {x: 41, y: -7}
+        - {x: 41, y: 1}
+        - {x: 40, y: 3}
+      - - {x: -38, y: 105}
+        - {x: -38, y: 7}
+        - {x: 50, y: 7}
+        - {x: 50, y: 75}
+        - {x: 48, y: 103}
+        - {x: 46, y: 105}
+    - name: Potassium Marker_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 2}
+        - {x: -42, y: -7}
+        - {x: -8, y: -106}
+        - {x: 2, y: -106}
+        - {x: 45, y: -10}
+        - {x: 45, y: 2}
+      - - {x: -38, y: 105}
+        - {x: -38, y: 6}
+        - {x: -11, y: 6}
+        - {x: -7, y: 7}
+        - {x: -4, y: 6}
+        - {x: 50, y: 6}
+        - {x: 50, y: 105}
+    - name: Potassium Marker_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 1}
+        - {x: -46, y: -10}
+        - {x: -5, y: -107}
+        - {x: 1, y: -107}
+        - {x: 48, y: -12}
+        - {x: 48, y: -2}
+        - {x: 47, y: 1}
+      - - {x: -38, y: 105}
+        - {x: -38, y: 6}
+        - {x: 50, y: 6}
+        - {x: 50, y: 105}
+    - name: Potassium Marker_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: -1}
+        - {x: -49, y: -8}
+        - {x: -6, y: -108}
+        - {x: 1, y: -108}
+        - {x: 2, y: -107}
+        - {x: 50, y: -9}
+        - {x: 50, y: -3}
+        - {x: 49, y: -1}
+      - - {x: 46, y: 104}
+        - {x: 19, y: 104}
+        - {x: 8, y: 93}
+        - {x: -7, y: 104}
+        - {x: -38, y: 104}
+        - {x: -38, y: 5}
+        - {x: -11, y: 5}
+        - {x: -7, y: 6}
+        - {x: -6, y: 5}
+        - {x: 50, y: 5}
+        - {x: 50, y: 84}
+        - {x: 48, y: 102}
+    - name: Potassium Marker_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: -2}
+        - {x: -51, y: -4}
+        - {x: -51, y: -12}
+        - {x: -5, y: -110}
+        - {x: 0, y: -110}
+        - {x: 52, y: -7}
+        - {x: 52, y: -4}
+        - {x: 49, y: -2}
+      - - {x: -38, y: 104}
+        - {x: -38, y: 5}
+        - {x: 50, y: 5}
+        - {x: 50, y: 104}
+    - name: Potassium Marker_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: -3}
+        - {x: -53, y: -11}
+        - {x: -52, y: -13}
+        - {x: -4, y: -111}
+        - {x: 1, y: -111}
+        - {x: 52, y: -12}
+        - {x: 52, y: -5}
+        - {x: 51, y: -3}
+      - - {x: 48, y: 101}
+        - {x: 46, y: 103}
+        - {x: 19, y: 103}
+        - {x: 2, y: 85}
+        - {x: -7, y: 102}
+        - {x: -11, y: 103}
+        - {x: -38, y: 103}
+        - {x: -38, y: 4}
+        - {x: 49, y: 4}
+        - {x: 50, y: 6}
+        - {x: 50, y: 32}
+    - name: Potassium Marker_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: -5}
+        - {x: -52, y: -5}
+        - {x: -54, y: -6}
+        - {x: -54, y: -10}
+        - {x: -46, y: -29}
+        - {x: -4, y: -112}
+        - {x: 0, y: -112}
+        - {x: 11, y: -94}
+        - {x: 52, y: -12}
+        - {x: 52, y: -7}
+      - - {x: 50, y: 103}
+        - {x: -38, y: 103}
+        - {x: -38, y: 4}
+        - {x: -11, y: 4}
+        - {x: -7, y: 5}
+        - {x: -1, y: 4}
+        - {x: 50, y: 4}
+    - name: Potassium Marker_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -13}
+        - {x: -5, y: -113}
+        - {x: 4, y: -113}
+        - {x: 52, y: -17}
+        - {x: 52, y: -6}
+      - - {x: 49, y: 12}
+        - {x: 50, y: 87}
+        - {x: 50, y: 102}
+        - {x: -38, y: 102}
+        - {x: -38, y: 4}
+        - {x: -11, y: 4}
+        - {x: -7, y: 5}
+        - {x: -2, y: 4}
+        - {x: 50, y: 4}
+        - {x: 50, y: 10}
+    - name: Potassium Marker_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -12}
+        - {x: -4, y: -114}
+        - {x: 1, y: -114}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -6}
+      - - {x: -7, y: 101}
+        - {x: -11, y: 102}
+        - {x: -38, y: 102}
+        - {x: -38, y: 3}
+        - {x: 50, y: 3}
+        - {x: 50, y: 81}
+        - {x: 48, y: 102}
+        - {x: 19, y: 102}
+        - {x: 2, y: 84}
+    - name: Potassium Marker_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -5, y: -115}
+        - {x: 0, y: -115}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -7}
+      - - {x: -38, y: 102}
+        - {x: -38, y: 3}
+        - {x: 50, y: 3}
+        - {x: 50, y: 97}
+        - {x: 49, y: 102}
+    - name: Potassium Marker_30
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -7}
+        - {x: -56, y: -9}
+        - {x: -56, y: -14}
+        - {x: -5, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -11}
+        - {x: 52, y: -8}
+        - {x: 50, y: -7}
+      - - {x: -38, y: 102}
+        - {x: -38, y: 3}
+        - {x: 49, y: 3}
+        - {x: 50, y: 4}
+        - {x: 50, y: 102}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

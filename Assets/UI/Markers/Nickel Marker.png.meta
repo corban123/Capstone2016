@@ -1,0 +1,1292 @@
+fileFormatVersion: 2
+guid: 88aefc16bce0c5d428a7de24da982d6f
+timeCreated: 1458619642
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Nickel Marker_0
+    21300002: Nickel Marker_1
+    21300004: Nickel Marker_2
+    21300006: Nickel Marker_3
+    21300008: Nickel Marker_4
+    21300010: Nickel Marker_5
+    21300012: Nickel Marker_6
+    21300014: Nickel Marker_7
+    21300016: Nickel Marker_8
+    21300018: Nickel Marker_9
+    21300020: Nickel Marker_10
+    21300022: Nickel Marker_11
+    21300024: Nickel Marker_12
+    21300026: Nickel Marker_13
+    21300028: Nickel Marker_14
+    21300030: Nickel Marker_15
+    21300032: Nickel Marker_16
+    21300034: Nickel Marker_17
+    21300036: Nickel Marker_18
+    21300038: Nickel Marker_19
+    21300040: Nickel Marker_20
+    21300042: Nickel Marker_21
+    21300044: Nickel Marker_22
+    21300046: Nickel Marker_23
+    21300048: Nickel Marker_24
+    21300050: Nickel Marker_25
+    21300052: Nickel Marker_26
+    21300054: Nickel Marker_27
+    21300056: Nickel Marker_28
+    21300058: Nickel Marker_29
+    21300060: Nickel Marker_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Nickel Marker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -7}
+        - {x: -56, y: -14}
+        - {x: -6, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -14}
+        - {x: 52, y: -7}
+      - - {x: -61, y: 102}
+        - {x: -61, y: 3}
+        - {x: 26, y: 3}
+        - {x: 26, y: 102}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 5}
+        - {x: 39, y: 3}
+        - {x: 62, y: 3}
+        - {x: 64, y: 5}
+        - {x: 64, y: 75}
+        - {x: 61, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 82}
+        - {x: 39, y: 80}
+        - {x: 62, y: 80}
+        - {x: 64, y: 82}
+        - {x: 64, y: 103}
+        - {x: 62, y: 105}
+    - name: Nickel Marker_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -39, y: -49}
+        - {x: -4, y: -114}
+        - {x: 2, y: -114}
+        - {x: 51, y: -15}
+        - {x: 51, y: -9}
+        - {x: 50, y: -7}
+      - - {x: -60, y: 102}
+        - {x: -61, y: 100}
+        - {x: -61, y: 3}
+        - {x: 25, y: 3}
+        - {x: 26, y: 5}
+        - {x: 26, y: 102}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 5}
+        - {x: 39, y: 3}
+        - {x: 62, y: 3}
+        - {x: 64, y: 5}
+        - {x: 64, y: 76}
+        - {x: 62, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 82}
+        - {x: 39, y: 80}
+        - {x: 62, y: 80}
+        - {x: 64, y: 82}
+        - {x: 64, y: 103}
+        - {x: 62, y: 105}
+    - name: Nickel Marker_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -6}
+        - {x: -56, y: -10}
+        - {x: -9, y: -108}
+        - {x: -4, y: -113}
+        - {x: 0, y: -113}
+        - {x: 40, y: -60}
+        - {x: 51, y: -15}
+        - {x: 51, y: -6}
+      - - {x: -61, y: 102}
+        - {x: -61, y: 3}
+        - {x: 26, y: 3}
+        - {x: 26, y: 102}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 5}
+        - {x: 39, y: 3}
+        - {x: 61, y: 3}
+        - {x: 64, y: 6}
+        - {x: 64, y: 76}
+        - {x: 62, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 82}
+        - {x: 39, y: 80}
+        - {x: 61, y: 80}
+        - {x: 64, y: 83}
+        - {x: 64, y: 103}
+        - {x: 62, y: 105}
+    - name: Nickel Marker_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -5}
+        - {x: -56, y: -15}
+        - {x: -8, y: -113}
+        - {x: 1, y: -113}
+        - {x: 50, y: -16}
+        - {x: 50, y: -5}
+      - - {x: -61, y: 103}
+        - {x: -61, y: 4}
+        - {x: 26, y: 4}
+        - {x: 26, y: 103}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 6}
+        - {x: 39, y: 4}
+        - {x: 62, y: 4}
+        - {x: 64, y: 6}
+        - {x: 64, y: 76}
+        - {x: 62, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 83}
+        - {x: 39, y: 81}
+        - {x: 62, y: 81}
+        - {x: 64, y: 83}
+        - {x: 64, y: 103}
+        - {x: 62, y: 105}
+    - name: Nickel Marker_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56, y: -4}
+        - {x: -56, y: -9}
+        - {x: -7, y: -109}
+        - {x: -4, y: -111}
+        - {x: 1, y: -111}
+        - {x: 49, y: -10}
+        - {x: 49, y: -4}
+      - - {x: -61, y: 103}
+        - {x: -61, y: 4}
+        - {x: 26, y: 4}
+        - {x: 26, y: 103}
+      - - {x: 39, y: 79}
+        - {x: 37, y: 77}
+        - {x: 37, y: 6}
+        - {x: 39, y: 4}
+        - {x: 62, y: 4}
+        - {x: 64, y: 6}
+        - {x: 64, y: 77}
+        - {x: 62, y: 79}
+      - - {x: 39, y: 106}
+        - {x: 37, y: 104}
+        - {x: 37, y: 83}
+        - {x: 39, y: 81}
+        - {x: 62, y: 81}
+        - {x: 64, y: 83}
+        - {x: 64, y: 104}
+        - {x: 62, y: 106}
+    - name: Nickel Marker_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 45, y: -3}
+        - {x: -54, y: -3}
+        - {x: -56, y: -5}
+        - {x: -4, y: -110}
+        - {x: 0, y: -110}
+        - {x: 6, y: -103}
+        - {x: 47, y: -8}
+        - {x: 47, y: -4}
+      - - {x: -61, y: 104}
+        - {x: -61, y: 5}
+        - {x: 26, y: 5}
+        - {x: 26, y: 104}
+      - - {x: 39, y: 79}
+        - {x: 37, y: 77}
+        - {x: 37, y: 7}
+        - {x: 39, y: 5}
+        - {x: 62, y: 5}
+        - {x: 64, y: 7}
+        - {x: 64, y: 77}
+        - {x: 62, y: 79}
+      - - {x: 39, y: 106}
+        - {x: 37, y: 104}
+        - {x: 37, y: 84}
+        - {x: 39, y: 82}
+        - {x: 62, y: 82}
+        - {x: 64, y: 84}
+        - {x: 64, y: 104}
+        - {x: 62, y: 106}
+    - name: Nickel Marker_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -1}
+        - {x: -53, y: -2}
+        - {x: -55, y: -3}
+        - {x: -55, y: -6}
+        - {x: -24, y: -84}
+        - {x: -3, y: -109}
+        - {x: 5, y: -109}
+        - {x: 45, y: -10}
+        - {x: 45, y: -3}
+        - {x: 44, y: -1}
+      - - {x: -61, y: 104}
+        - {x: -61, y: 5}
+        - {x: 26, y: 5}
+        - {x: 26, y: 104}
+      - - {x: 39, y: 79}
+        - {x: 37, y: 77}
+        - {x: 37, y: 7}
+        - {x: 39, y: 5}
+        - {x: 62, y: 5}
+        - {x: 64, y: 7}
+        - {x: 64, y: 77}
+        - {x: 62, y: 79}
+      - - {x: 39, y: 106}
+        - {x: 37, y: 104}
+        - {x: 37, y: 84}
+        - {x: 39, y: 82}
+        - {x: 62, y: 82}
+        - {x: 64, y: 84}
+        - {x: 64, y: 104}
+        - {x: 62, y: 106}
+    - name: Nickel Marker_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 0}
+        - {x: -53, y: -34}
+        - {x: -5, y: -108}
+        - {x: 11, y: -108}
+        - {x: 42, y: -15}
+        - {x: 42, y: 0}
+      - - {x: -61, y: 104}
+        - {x: -61, y: 5}
+        - {x: 26, y: 5}
+        - {x: 26, y: 104}
+      - - {x: 39, y: 80}
+        - {x: 37, y: 78}
+        - {x: 37, y: 7}
+        - {x: 39, y: 5}
+        - {x: 62, y: 5}
+        - {x: 64, y: 7}
+        - {x: 64, y: 78}
+        - {x: 62, y: 80}
+      - - {x: 39, y: 107}
+        - {x: 37, y: 105}
+        - {x: 37, y: 84}
+        - {x: 39, y: 82}
+        - {x: 61, y: 82}
+        - {x: 64, y: 85}
+        - {x: 64, y: 105}
+        - {x: 62, y: 107}
+    - name: Nickel Marker_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36, y: 1}
+        - {x: -49, y: 1}
+        - {x: -50, y: 0}
+        - {x: -50, y: -7}
+        - {x: -5, y: -106}
+        - {x: 2, y: -106}
+        - {x: 34, y: -22}
+        - {x: 38, y: -6}
+        - {x: 38, y: 0}
+      - - {x: -61, y: 105}
+        - {x: -61, y: 6}
+        - {x: 26, y: 6}
+        - {x: 26, y: 105}
+      - - {x: 39, y: 80}
+        - {x: 37, y: 78}
+        - {x: 37, y: 8}
+        - {x: 39, y: 6}
+        - {x: 62, y: 6}
+        - {x: 64, y: 8}
+        - {x: 64, y: 78}
+        - {x: 62, y: 80}
+      - - {x: 39, y: 107}
+        - {x: 37, y: 105}
+        - {x: 37, y: 85}
+        - {x: 39, y: 83}
+        - {x: 62, y: 83}
+        - {x: 64, y: 85}
+        - {x: 64, y: 105}
+        - {x: 62, y: 107}
+    - name: Nickel Marker_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 2}
+        - {x: -46, y: 1}
+        - {x: -46, y: -42}
+        - {x: -7, y: -105}
+        - {x: 9, y: -105}
+        - {x: 34, y: -4}
+        - {x: 34, y: 1}
+        - {x: 32, y: 2}
+      - - {x: -61, y: 105}
+        - {x: -61, y: 8}
+        - {x: -59, y: 6}
+        - {x: 26, y: 6}
+        - {x: 26, y: 105}
+      - - {x: 39, y: 81}
+        - {x: 37, y: 79}
+        - {x: 37, y: 8}
+        - {x: 39, y: 6}
+        - {x: 62, y: 6}
+        - {x: 64, y: 8}
+        - {x: 64, y: 79}
+        - {x: 62, y: 81}
+      - - {x: 39, y: 108}
+        - {x: 37, y: 106}
+        - {x: 37, y: 85}
+        - {x: 39, y: 83}
+        - {x: 62, y: 83}
+        - {x: 64, y: 85}
+        - {x: 64, y: 106}
+        - {x: 62, y: 108}
+    - name: Nickel Marker_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 4}
+        - {x: -41, y: -2}
+        - {x: -13, y: -93}
+        - {x: -4, y: -104}
+        - {x: 4, y: -104}
+        - {x: 29, y: -17}
+        - {x: 29, y: 4}
+      - - {x: -61, y: 106}
+        - {x: -61, y: 7}
+        - {x: 26, y: 7}
+        - {x: 26, y: 106}
+      - - {x: 39, y: 81}
+        - {x: 37, y: 79}
+        - {x: 37, y: 9}
+        - {x: 39, y: 7}
+        - {x: 62, y: 7}
+        - {x: 64, y: 9}
+        - {x: 64, y: 79}
+        - {x: 62, y: 81}
+      - - {x: 39, y: 108}
+        - {x: 37, y: 106}
+        - {x: 37, y: 86}
+        - {x: 39, y: 84}
+        - {x: 62, y: 84}
+        - {x: 64, y: 86}
+        - {x: 64, y: 106}
+        - {x: 62, y: 108}
+    - name: Nickel Marker_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 5}
+        - {x: -34, y: -10}
+        - {x: -7, y: -103}
+        - {x: 8, y: -103}
+        - {x: 23, y: -11}
+        - {x: 23, y: 5}
+      - - {x: -61, y: 106}
+        - {x: -61, y: 7}
+        - {x: 26, y: 7}
+        - {x: 26, y: 106}
+      - - {x: 39, y: 82}
+        - {x: 37, y: 80}
+        - {x: 37, y: 9}
+        - {x: 39, y: 7}
+        - {x: 62, y: 7}
+        - {x: 64, y: 9}
+        - {x: 64, y: 79}
+        - {x: 61, y: 82}
+      - - {x: 39, y: 109}
+        - {x: 37, y: 107}
+        - {x: 37, y: 86}
+        - {x: 39, y: 84}
+        - {x: 62, y: 84}
+        - {x: 64, y: 86}
+        - {x: 64, y: 106}
+        - {x: 61, y: 109}
+    - name: Nickel Marker_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 6}
+        - {x: -27, y: -2}
+        - {x: -6, y: -101}
+        - {x: -6, y: -102}
+        - {x: 1, y: -102}
+        - {x: 17, y: -22}
+        - {x: 17, y: 4}
+        - {x: 16, y: 6}
+      - - {x: -61, y: 106}
+        - {x: -61, y: 7}
+        - {x: 26, y: 7}
+        - {x: 26, y: 106}
+      - - {x: 39, y: 82}
+        - {x: 37, y: 80}
+        - {x: 37, y: 9}
+        - {x: 39, y: 7}
+        - {x: 62, y: 7}
+        - {x: 64, y: 9}
+        - {x: 64, y: 80}
+        - {x: 62, y: 82}
+      - - {x: 39, y: 109}
+        - {x: 37, y: 107}
+        - {x: 37, y: 86}
+        - {x: 39, y: 84}
+        - {x: 62, y: 84}
+        - {x: 64, y: 86}
+        - {x: 64, y: 107}
+        - {x: 62, y: 109}
+    - name: Nickel Marker_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 7}
+        - {x: -18, y: -35}
+        - {x: -6, y: -100}
+        - {x: -3, y: -101}
+        - {x: 1, y: -101}
+        - {x: 9, y: -90}
+        - {x: 11, y: -55}
+        - {x: 11, y: 7}
+      - - {x: -61, y: 107}
+        - {x: -61, y: 8}
+        - {x: 26, y: 8}
+        - {x: 26, y: 105}
+        - {x: 24, y: 107}
+      - - {x: 39, y: 82}
+        - {x: 37, y: 80}
+        - {x: 37, y: 10}
+        - {x: 39, y: 8}
+        - {x: 62, y: 8}
+        - {x: 64, y: 10}
+        - {x: 64, y: 80}
+        - {x: 62, y: 82}
+      - - {x: 39, y: 109}
+        - {x: 37, y: 107}
+        - {x: 37, y: 87}
+        - {x: 39, y: 85}
+        - {x: 62, y: 85}
+        - {x: 64, y: 87}
+        - {x: 64, y: 107}
+        - {x: 62, y: 109}
+    - name: Nickel Marker_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 7}
+        - {x: -9, y: -26}
+        - {x: -5, y: -100}
+        - {x: -3, y: -102}
+        - {x: 3, y: -102}
+        - {x: 4, y: -72}
+        - {x: 4, y: 7}
+      - - {x: -61, y: 107}
+        - {x: -61, y: 8}
+        - {x: 26, y: 8}
+        - {x: 26, y: 107}
+      - - {x: 39, y: 82}
+        - {x: 37, y: 80}
+        - {x: 37, y: 10}
+        - {x: 39, y: 8}
+        - {x: 62, y: 8}
+        - {x: 64, y: 10}
+        - {x: 64, y: 80}
+        - {x: 62, y: 82}
+      - - {x: 39, y: 109}
+        - {x: 37, y: 107}
+        - {x: 37, y: 87}
+        - {x: 39, y: 85}
+        - {x: 62, y: 85}
+        - {x: 64, y: 87}
+        - {x: 64, y: 107}
+        - {x: 62, y: 109}
+    - name: Nickel Marker_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1048
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: -43}
+        - {x: -5, y: -98}
+        - {x: -2, y: -102}
+        - {x: 1, y: -101}
+        - {x: 5, y: -31}
+        - {x: 5, y: 8}
+        - {x: -5, y: 8}
+        - {x: -8, y: 7}
+      - - {x: -61, y: 107}
+        - {x: -61, y: 8}
+        - {x: 26, y: 8}
+        - {x: 26, y: 107}
+      - - {x: 39, y: 82}
+        - {x: 37, y: 80}
+        - {x: 37, y: 10}
+        - {x: 39, y: 8}
+        - {x: 62, y: 8}
+        - {x: 64, y: 10}
+        - {x: 64, y: 80}
+        - {x: 62, y: 82}
+      - - {x: 39, y: 109}
+        - {x: 37, y: 107}
+        - {x: 37, y: 87}
+        - {x: 39, y: 85}
+        - {x: 62, y: 85}
+        - {x: 64, y: 87}
+        - {x: 64, y: 107}
+        - {x: 62, y: 109}
+    - name: Nickel Marker_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 7}
+        - {x: -14, y: -75}
+        - {x: -12, y: -101}
+        - {x: 6, y: -101}
+        - {x: 14, y: -22}
+        - {x: 14, y: 7}
+      - - {x: -61, y: 107}
+        - {x: -61, y: 8}
+        - {x: 26, y: 8}
+        - {x: 26, y: 107}
+      - - {x: 39, y: 82}
+        - {x: 37, y: 80}
+        - {x: 37, y: 10}
+        - {x: 39, y: 8}
+        - {x: 62, y: 8}
+        - {x: 64, y: 10}
+        - {x: 64, y: 80}
+        - {x: 62, y: 82}
+      - - {x: 39, y: 109}
+        - {x: 37, y: 107}
+        - {x: 37, y: 87}
+        - {x: 39, y: 85}
+        - {x: 62, y: 85}
+        - {x: 64, y: 87}
+        - {x: 64, y: 107}
+        - {x: 62, y: 109}
+    - name: Nickel Marker_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 7}
+        - {x: -21, y: 6}
+        - {x: -21, y: -7}
+        - {x: -6, y: -100}
+        - {x: -4, y: -101}
+        - {x: 1, y: -101}
+        - {x: 22, y: -8}
+        - {x: 22, y: 7}
+      - - {x: -61, y: 107}
+        - {x: -61, y: 8}
+        - {x: 26, y: 8}
+        - {x: 26, y: 107}
+      - - {x: 39, y: 82}
+        - {x: 37, y: 80}
+        - {x: 37, y: 10}
+        - {x: 39, y: 8}
+        - {x: 62, y: 8}
+        - {x: 64, y: 10}
+        - {x: 64, y: 80}
+        - {x: 62, y: 82}
+      - - {x: 39, y: 109}
+        - {x: 37, y: 107}
+        - {x: 37, y: 87}
+        - {x: 39, y: 85}
+        - {x: 62, y: 85}
+        - {x: 64, y: 87}
+        - {x: 64, y: 107}
+        - {x: 62, y: 109}
+    - name: Nickel Marker_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 6}
+        - {x: -27, y: -11}
+        - {x: -7, y: -102}
+        - {x: 2, y: -102}
+        - {x: 30, y: -3}
+        - {x: 30, y: 6}
+      - - {x: -61, y: 106}
+        - {x: -61, y: 7}
+        - {x: 26, y: 7}
+        - {x: 26, y: 106}
+      - - {x: 39, y: 82}
+        - {x: 37, y: 80}
+        - {x: 37, y: 9}
+        - {x: 39, y: 7}
+        - {x: 62, y: 7}
+        - {x: 64, y: 9}
+        - {x: 64, y: 80}
+        - {x: 62, y: 82}
+      - - {x: 39, y: 109}
+        - {x: 37, y: 107}
+        - {x: 37, y: 86}
+        - {x: 39, y: 84}
+        - {x: 62, y: 84}
+        - {x: 64, y: 86}
+        - {x: 64, y: 107}
+        - {x: 62, y: 109}
+    - name: Nickel Marker_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 5}
+        - {x: -33, y: -23}
+        - {x: -6, y: -102}
+        - {x: -4, y: -103}
+        - {x: 1, y: -103}
+        - {x: 36, y: -8}
+        - {x: 36, y: 4}
+        - {x: 35, y: 5}
+      - - {x: -61, y: 106}
+        - {x: -61, y: 9}
+        - {x: -59, y: 7}
+        - {x: 26, y: 7}
+        - {x: 26, y: 106}
+      - - {x: 39, y: 81}
+        - {x: 37, y: 79}
+        - {x: 37, y: 9}
+        - {x: 39, y: 7}
+        - {x: 62, y: 7}
+        - {x: 64, y: 9}
+        - {x: 64, y: 79}
+        - {x: 62, y: 81}
+      - - {x: 39, y: 108}
+        - {x: 37, y: 106}
+        - {x: 37, y: 86}
+        - {x: 39, y: 84}
+        - {x: 62, y: 84}
+        - {x: 64, y: 86}
+        - {x: 64, y: 106}
+        - {x: 62, y: 108}
+    - name: Nickel Marker_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 3}
+        - {x: -38, y: 1}
+        - {x: -38, y: -12}
+        - {x: -5, y: -104}
+        - {x: 0, y: -104}
+        - {x: 2, y: -103}
+        - {x: 41, y: -7}
+        - {x: 41, y: 1}
+        - {x: 40, y: 3}
+      - - {x: -61, y: 106}
+        - {x: -61, y: 7}
+        - {x: 26, y: 7}
+        - {x: 26, y: 104}
+        - {x: 24, y: 106}
+      - - {x: 39, y: 81}
+        - {x: 37, y: 79}
+        - {x: 37, y: 9}
+        - {x: 39, y: 7}
+        - {x: 62, y: 7}
+        - {x: 64, y: 9}
+        - {x: 64, y: 79}
+        - {x: 62, y: 81}
+      - - {x: 39, y: 108}
+        - {x: 37, y: 106}
+        - {x: 37, y: 86}
+        - {x: 39, y: 84}
+        - {x: 62, y: 84}
+        - {x: 64, y: 86}
+        - {x: 64, y: 106}
+        - {x: 62, y: 108}
+    - name: Nickel Marker_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: 2}
+        - {x: -42, y: -7}
+        - {x: -8, y: -106}
+        - {x: 2, y: -106}
+        - {x: 45, y: -10}
+        - {x: 45, y: 2}
+      - - {x: -61, y: 105}
+        - {x: -61, y: 6}
+        - {x: 26, y: 6}
+        - {x: 26, y: 105}
+      - - {x: 39, y: 81}
+        - {x: 37, y: 79}
+        - {x: 37, y: 8}
+        - {x: 39, y: 6}
+        - {x: 62, y: 6}
+        - {x: 64, y: 8}
+        - {x: 64, y: 79}
+        - {x: 62, y: 81}
+      - - {x: 39, y: 108}
+        - {x: 37, y: 106}
+        - {x: 37, y: 85}
+        - {x: 39, y: 83}
+        - {x: 62, y: 83}
+        - {x: 64, y: 85}
+        - {x: 64, y: 106}
+        - {x: 62, y: 108}
+    - name: Nickel Marker_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46, y: 1}
+        - {x: -46, y: -10}
+        - {x: -5, y: -107}
+        - {x: 1, y: -107}
+        - {x: 48, y: -12}
+        - {x: 48, y: -2}
+        - {x: 47, y: 1}
+      - - {x: -61, y: 105}
+        - {x: -61, y: 6}
+        - {x: 26, y: 6}
+        - {x: 26, y: 105}
+      - - {x: 39, y: 80}
+        - {x: 37, y: 78}
+        - {x: 37, y: 8}
+        - {x: 39, y: 6}
+        - {x: 62, y: 6}
+        - {x: 64, y: 8}
+        - {x: 64, y: 78}
+        - {x: 62, y: 80}
+      - - {x: 39, y: 107}
+        - {x: 37, y: 105}
+        - {x: 37, y: 85}
+        - {x: 39, y: 83}
+        - {x: 62, y: 83}
+        - {x: 64, y: 85}
+        - {x: 64, y: 105}
+        - {x: 62, y: 107}
+    - name: Nickel Marker_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 548
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: -1}
+        - {x: -49, y: -8}
+        - {x: -6, y: -108}
+        - {x: 1, y: -108}
+        - {x: 2, y: -107}
+        - {x: 50, y: -9}
+        - {x: 50, y: -3}
+        - {x: 49, y: -1}
+      - - {x: -61, y: 104}
+        - {x: -61, y: 5}
+        - {x: 26, y: 5}
+        - {x: 26, y: 104}
+      - - {x: 39, y: 80}
+        - {x: 37, y: 78}
+        - {x: 37, y: 7}
+        - {x: 39, y: 5}
+        - {x: 62, y: 5}
+        - {x: 64, y: 7}
+        - {x: 64, y: 78}
+        - {x: 62, y: 80}
+      - - {x: 39, y: 107}
+        - {x: 37, y: 105}
+        - {x: 37, y: 84}
+        - {x: 39, y: 82}
+        - {x: 62, y: 82}
+        - {x: 64, y: 84}
+        - {x: 64, y: 105}
+        - {x: 62, y: 107}
+    - name: Nickel Marker_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: -2}
+        - {x: -51, y: -4}
+        - {x: -51, y: -12}
+        - {x: -5, y: -110}
+        - {x: 0, y: -110}
+        - {x: 52, y: -7}
+        - {x: 52, y: -4}
+        - {x: 49, y: -2}
+      - - {x: 26, y: 5}
+        - {x: 26, y: 104}
+        - {x: -61, y: 104}
+        - {x: -61, y: 5}
+      - - {x: 39, y: 79}
+        - {x: 37, y: 77}
+        - {x: 37, y: 7}
+        - {x: 39, y: 5}
+        - {x: 62, y: 5}
+        - {x: 64, y: 7}
+        - {x: 64, y: 77}
+        - {x: 62, y: 79}
+      - - {x: 39, y: 106}
+        - {x: 37, y: 104}
+        - {x: 37, y: 84}
+        - {x: 39, y: 82}
+        - {x: 62, y: 82}
+        - {x: 64, y: 84}
+        - {x: 64, y: 104}
+        - {x: 62, y: 106}
+    - name: Nickel Marker_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: -3}
+        - {x: -53, y: -11}
+        - {x: -52, y: -13}
+        - {x: -4, y: -111}
+        - {x: 1, y: -111}
+        - {x: 52, y: -12}
+        - {x: 52, y: -5}
+        - {x: 51, y: -3}
+      - - {x: -60, y: 103}
+        - {x: -61, y: 101}
+        - {x: -61, y: 4}
+        - {x: 26, y: 4}
+        - {x: 26, y: 103}
+      - - {x: 39, y: 79}
+        - {x: 37, y: 77}
+        - {x: 37, y: 6}
+        - {x: 39, y: 4}
+        - {x: 62, y: 4}
+        - {x: 64, y: 6}
+        - {x: 64, y: 77}
+        - {x: 62, y: 79}
+      - - {x: 39, y: 106}
+        - {x: 37, y: 104}
+        - {x: 37, y: 83}
+        - {x: 39, y: 81}
+        - {x: 62, y: 81}
+        - {x: 64, y: 83}
+        - {x: 64, y: 104}
+        - {x: 62, y: 106}
+    - name: Nickel Marker_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: -5}
+        - {x: -52, y: -5}
+        - {x: -54, y: -6}
+        - {x: -54, y: -10}
+        - {x: -46, y: -29}
+        - {x: -4, y: -112}
+        - {x: 0, y: -112}
+        - {x: 11, y: -94}
+        - {x: 52, y: -12}
+        - {x: 52, y: -7}
+      - - {x: -61, y: 103}
+        - {x: -61, y: 4}
+        - {x: 26, y: 4}
+        - {x: 26, y: 103}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 6}
+        - {x: 39, y: 4}
+        - {x: 62, y: 4}
+        - {x: 64, y: 6}
+        - {x: 64, y: 76}
+        - {x: 62, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 83}
+        - {x: 39, y: 81}
+        - {x: 62, y: 81}
+        - {x: 64, y: 83}
+        - {x: 64, y: 103}
+        - {x: 62, y: 105}
+    - name: Nickel Marker_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -13}
+        - {x: -5, y: -113}
+        - {x: 4, y: -113}
+        - {x: 52, y: -17}
+        - {x: 52, y: -6}
+      - - {x: -61, y: 103}
+        - {x: -61, y: 4}
+        - {x: 26, y: 4}
+        - {x: 26, y: 103}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 6}
+        - {x: 39, y: 4}
+        - {x: 62, y: 4}
+        - {x: 64, y: 6}
+        - {x: 64, y: 76}
+        - {x: 62, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 83}
+        - {x: 39, y: 81}
+        - {x: 62, y: 81}
+        - {x: 64, y: 83}
+        - {x: 64, y: 103}
+        - {x: 62, y: 105}
+    - name: Nickel Marker_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -6}
+        - {x: -55, y: -12}
+        - {x: -4, y: -114}
+        - {x: 1, y: -114}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -6}
+      - - {x: -60, y: 102}
+        - {x: -61, y: 100}
+        - {x: -61, y: 3}
+        - {x: 25, y: 3}
+        - {x: 26, y: 5}
+        - {x: 26, y: 102}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 5}
+        - {x: 39, y: 3}
+        - {x: 62, y: 3}
+        - {x: 64, y: 5}
+        - {x: 64, y: 76}
+        - {x: 62, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 82}
+        - {x: 39, y: 80}
+        - {x: 62, y: 80}
+        - {x: 64, y: 82}
+        - {x: 64, y: 103}
+        - {x: 62, y: 105}
+    - name: Nickel Marker_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: -7}
+        - {x: -56, y: -8}
+        - {x: -56, y: -11}
+        - {x: -5, y: -115}
+        - {x: 0, y: -115}
+        - {x: 52, y: -15}
+        - {x: 52, y: -9}
+        - {x: 51, y: -7}
+      - - {x: -61, y: 102}
+        - {x: -61, y: 3}
+        - {x: 26, y: 3}
+        - {x: 26, y: 102}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 5}
+        - {x: 39, y: 3}
+        - {x: 62, y: 3}
+        - {x: 64, y: 5}
+        - {x: 64, y: 76}
+        - {x: 62, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 82}
+        - {x: 39, y: 80}
+        - {x: 62, y: 80}
+        - {x: 64, y: 82}
+        - {x: 64, y: 103}
+        - {x: 62, y: 105}
+    - name: Nickel Marker_30
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 48
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -7}
+        - {x: -56, y: -9}
+        - {x: -56, y: -14}
+        - {x: -5, y: -115}
+        - {x: 3, y: -115}
+        - {x: 52, y: -11}
+        - {x: 52, y: -8}
+        - {x: 50, y: -7}
+      - - {x: -61, y: 102}
+        - {x: -61, y: 3}
+        - {x: 26, y: 3}
+        - {x: 26, y: 102}
+      - - {x: 39, y: 78}
+        - {x: 37, y: 76}
+        - {x: 37, y: 5}
+        - {x: 39, y: 3}
+        - {x: 62, y: 3}
+        - {x: 64, y: 5}
+        - {x: 64, y: 75}
+        - {x: 61, y: 78}
+      - - {x: 39, y: 105}
+        - {x: 37, y: 103}
+        - {x: 37, y: 82}
+        - {x: 39, y: 80}
+        - {x: 62, y: 80}
+        - {x: 64, y: 82}
+        - {x: 64, y: 102}
+        - {x: 61, y: 105}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
