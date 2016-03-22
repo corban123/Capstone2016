@@ -1083,7 +1083,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489426}
-  - 111: {fileID: 11133790}
   - 114: {fileID: 11483460}
   - 114: {fileID: 11438012}
   - 143: {fileID: 14305522}
@@ -1096,9 +1095,10 @@ GameObject:
   - 114: {fileID: 11466166}
   - 114: {fileID: 11408210}
   - 114: {fileID: 11492062}
+  - 95: {fileID: 9515648}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4067,26 +4067,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!111 &11133790
-Animation:
+--- !u!95 &9515648
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153906}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
-  - {fileID: 7400004, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
-  - {fileID: 7400010, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
-  - {fileID: 7400012, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
-  - {fileID: 7400008, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
-  - {fileID: 7400006, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 1
+  m_Avatar: {fileID: 9000000, guid: 18a4581451b2845659c39850c1c08e6d, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3fc6b623452b1463785023ada5e31890, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11408210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4138,6 +4135,7 @@ MonoBehaviour:
   movementSpeed: 25
   mouseSensitivity: 5
   jumpSpeed: 15
+  moveFactor: 0
   fireRate: 0
 --- !u!114 &11450536
 MonoBehaviour:
@@ -4633,6 +4631,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

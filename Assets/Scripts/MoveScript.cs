@@ -138,6 +138,8 @@ public class MoveScript : NetworkBehaviour
 
     public void Respawn() {
         gameObject.GetComponent<FirstPersonController>().moveFactor = 1.0f;
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        gameObject.GetComponent<Rigidbody>().isKinematic = false;
         if (gameObject.name == "Player 1") {
             print ("Player 1 died");
             transform.position = player1RespawnPoint.transform.position;

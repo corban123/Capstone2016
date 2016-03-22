@@ -36,6 +36,7 @@ public class CombatScript : NetworkBehaviour
 	void Update () {
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire && isLocalPlayer) //PC control
         {
+            gameObject.GetComponent<Animator>().Play("Shoot");
             nextFire = Time.time + fireRate;
             CmdShoot();
         }

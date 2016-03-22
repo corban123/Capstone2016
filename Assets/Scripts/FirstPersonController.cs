@@ -43,7 +43,7 @@ public class FirstPersonController : NetworkBehaviour
     CharacterController characterController;
     MoveScript move;
 
-
+    Animator anim;
 
     // Initalize variables for this character
     void Start()
@@ -59,13 +59,14 @@ public class FirstPersonController : NetworkBehaviour
 
 			// Grab Move and Combat scripts for player
             move = GetComponent<MoveScript>();
-
+            anim = GetComponent<Animator>();
             forwardSpeed = 0;
             sideSpeed = 0;
 			leftRight = 0;
 			moveDirection = Vector3.zero;
             freezing = false;
             moveFactor = 1.0f;
+
         }
     }
 
@@ -83,6 +84,7 @@ public class FirstPersonController : NetworkBehaviour
 				source.clip = jumpUp;
 				source.Play ();
 				jump = true;
+                anim.SetBool("isJump", true);
 			}
         }
 
@@ -95,9 +97,12 @@ public class FirstPersonController : NetworkBehaviour
         {
             forwardSpeed = Input.GetAxis("Vertical");
             sideSpeed = Input.GetAxis("Horizontal");
-
+            anim.SetFloat("moveZ", forwardSpeed);
+            anim.SetFloat("moveX", sideSpeed);
+            anim.SetFloat("moveY", sideSpeed);
+            anim.SetBool("isGrounded", characterController.isGrounded);
             // Rotation
-			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 10);
+            leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 10);
 			verticalRotation -= Input.GetAxis ("Mouse Y") * mouseSensitivity;
 			float verticalRotation1 = verticalRotation;
 			if (verticalRotation > upDownRange) {
@@ -143,6 +148,7 @@ public class FirstPersonController : NetworkBehaviour
                 moveDirection.x = sideSpeed;
                 moveDirection.z = forwardSpeed;
                 jump = false;
+                anim.SetBool("isJump", false);
             }
             
             moveDirection = transform.TransformDirection (moveDirection);
