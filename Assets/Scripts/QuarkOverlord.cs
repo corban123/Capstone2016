@@ -37,6 +37,14 @@ public class QuarkOverlord : MonoBehaviour {
 	
 	}
 
+	public void addToEmpty(GameObject obj){
+	
+	}
+
+	public void addToSpawned(GameObject obj){
+	
+	
+	}
 
 	public void deSpawn(){
 		int rand = Random.Range (0, backupList.Count-1);

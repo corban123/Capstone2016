@@ -45,6 +45,23 @@ public class BoardScript : NetworkBehaviour {
     public Sprite sodium_grey;
     public Sprite xenon_grey;
 
+    public Sprite barium_color;
+    public Sprite calcium_color;
+    public Sprite carbon_color;
+    public Sprite copper_color;
+    public Sprite gold_color;
+    public Sprite helium_color;
+    public Sprite hydrogen_color;
+    public Sprite krypton_color;
+    public Sprite neon_color;
+    public Sprite nickel_color;
+    public Sprite nitrogen_color;
+    public Sprite oxygen_color;
+    public Sprite potassium_color;
+    public Sprite silver_color;
+    public Sprite sodium_color;
+    public Sprite xenon_color;
+
 	void Start() {
 	}
 
@@ -137,7 +154,7 @@ public class BoardScript : NetworkBehaviour {
         Image[] i = boardUI.GetComponentsInChildren<Image>();
         int idx = x * 4 + y;
         print (idx);
-        i[idx].sprite = GetSprite(elem);
+        i[idx].sprite = GetGreySprite(elem);
     }
 
     private void CreateBingoBoardUI () {
@@ -152,7 +169,7 @@ public class BoardScript : NetworkBehaviour {
         }
     }
 
-    private GameObject GetObject(int element) {
+    public GameObject GetObject(int element) {
         switch (element) {
             case 0:
                 return sodium;
@@ -191,7 +208,7 @@ public class BoardScript : NetworkBehaviour {
         }
     }
 
-    private Sprite GetSprite(int element) {
+    public Sprite GetGreySprite(int element) {
         switch (element) {
             case 0:
                 return sodium_grey;
@@ -228,5 +245,44 @@ public class BoardScript : NetworkBehaviour {
             default:
                 return null;
             }
+    }
+
+    public Sprite GetColorSprite(int element) {
+        switch (element) {
+        case 0:
+            return sodium_color;
+        case 1:
+            return potassium_color;
+        case 2:
+            return calcium_color;
+        case 3:
+            return barium_color;
+        case 4:
+            return copper_color;
+        case 5:
+            return nickel_color;
+        case 6:
+            return silver_color;
+        case 7:
+            return gold_color;
+        case 8:
+            return carbon_color;
+        case 9:
+            return nitrogen_color;
+        case 10:
+            return oxygen_color;
+        case 11:
+            return hydrogen_color;
+        case 12:
+            return helium_color;
+        case 13:
+            return neon_color;
+        case 14:
+            return krypton_color;
+        case 15:
+            return xenon_color;
+        default:
+            return null;
+        }
     }
 }

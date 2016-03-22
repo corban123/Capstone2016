@@ -4155,6 +4155,8 @@ MonoBehaviour:
   numQuarks: 3
   haveElement: 0
   heldElement: 0
+  quarkMeter: {fileID: 0}
+  elementHeldImage: {fileID: 0}
 --- !u!114 &11466166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4211,6 +4213,22 @@ MonoBehaviour:
   silver_grey: {fileID: 21300000, guid: 78b699118f31bc04395204c5c91b73e7, type: 3}
   sodium_grey: {fileID: 21300000, guid: ae044e1dffca5bd40be964427da92ec8, type: 3}
   xenon_grey: {fileID: 21300000, guid: efa1013825cdbb84196b0109f7a1d0f1, type: 3}
+  barium_color: {fileID: 21300000, guid: 6dfcf3c349a624f40aa5df7098efd2fe, type: 3}
+  calcium_color: {fileID: 21300000, guid: 85228b2f0428f914b938828b551e486c, type: 3}
+  carbon_color: {fileID: 21300000, guid: 1f926fedfad31d9439a153bcb800463b, type: 3}
+  copper_color: {fileID: 21300000, guid: 4681c6054a14ecf469f1519a03e042cc, type: 3}
+  gold_color: {fileID: 21300000, guid: 38863ed11b37375429bed27aa99db27d, type: 3}
+  helium_color: {fileID: 21300000, guid: 601ce64e6b300c54ea17b0f94ce13899, type: 3}
+  hydrogen_color: {fileID: 21300000, guid: 3f094dba7e165e74a84510421553f66a, type: 3}
+  krypton_color: {fileID: 21300000, guid: 12ee33cfadabbc54c84331372536bc71, type: 3}
+  neon_color: {fileID: 21300000, guid: 5a5af2573f55579438be203bbd4e07fc, type: 3}
+  nickel_color: {fileID: 21300000, guid: e513c1cff0350254baf71342cda48f14, type: 3}
+  nitrogen_color: {fileID: 21300000, guid: b2dec6d676cf1334ba9ab754d6bca5fb, type: 3}
+  oxygen_color: {fileID: 21300000, guid: 407db0c19ce507044a28c5ee6e2a1aa7, type: 3}
+  potassium_color: {fileID: 21300000, guid: 911ae4c770373524abc4681e2d07d56f, type: 3}
+  silver_color: {fileID: 21300000, guid: 3fc6e433a18820d44b962c4a25dda735, type: 3}
+  sodium_color: {fileID: 21300000, guid: 5c41f0eae37a85e4c9fccc069848acd8, type: 3}
+  xenon_color: {fileID: 21300000, guid: e5befe064d47c974fb19142e73127ed3, type: 3}
 --- !u!114 &11483460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4636,6 +4654,86 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: barium_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 6dfcf3c349a624f40aa5df7098efd2fe,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: calcium_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 85228b2f0428f914b938828b551e486c,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: carbon_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 1f926fedfad31d9439a153bcb800463b,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: copper_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 4681c6054a14ecf469f1519a03e042cc,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: gold_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 38863ed11b37375429bed27aa99db27d,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: helium_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 601ce64e6b300c54ea17b0f94ce13899,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: hydrogen_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 3f094dba7e165e74a84510421553f66a,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: krypton_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 12ee33cfadabbc54c84331372536bc71,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: neon_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 5a5af2573f55579438be203bbd4e07fc,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: nickel_color
+      value: 
+      objectReference: {fileID: 21300000, guid: e513c1cff0350254baf71342cda48f14,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: nitrogen_color
+      value: 
+      objectReference: {fileID: 21300000, guid: b2dec6d676cf1334ba9ab754d6bca5fb,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: oxygen_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 407db0c19ce507044a28c5ee6e2a1aa7,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: potassium_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 911ae4c770373524abc4681e2d07d56f,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: silver_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 3fc6e433a18820d44b962c4a25dda735,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: sodium_color
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c41f0eae37a85e4c9fccc069848acd8,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: xenon_color
+      value: 
+      objectReference: {fileID: 21300000, guid: e5befe064d47c974fb19142e73127ed3,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153906}
