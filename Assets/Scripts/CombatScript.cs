@@ -10,34 +10,38 @@ public class CombatScript : NetworkBehaviour
     Transform shotSpawn;
     private float nextFire;
     public float fireRate;
+
     [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
     public bool haveElement;
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
-    private Text healthText;
+
     float startTime;
     bool takeDmg;
-    private Text elementText;
-    public Image quarkMeter;
+
+    Image quarkMeter;
     readonly int quarkMeterWidth = 10;
     readonly int quarkMeterMax = 150;
     readonly int quarkMeterMin = 0;
+    readonly int quarkSize = 10;
     int quarkMeterHeight = 30;
-    public Image elementHeldImage;
+
     BoardScript boardScript;
+    Image elementHeldImage;
 
     // Use this for initialization
     void Start () {
         haveElement = false;
         heldElement = -1;
+
         shotSpawn = gameObject.transform.GetChild(0);
         startTime = Time.time;
-        healthText = GameObject.Find("HealthText").GetComponent<Text>();
+        takeDmg = false;
+
+        boardScript = GetComponent<BoardScript> ();
+
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
-        SetHealthText();
-        takeDmg = false;
-        elementText = GameObject.Find("ElementText").GetComponent<Text>();
-        DeleteElementText();
+        DeleteElementUI ();
         updateQuarkMeter ();
         boardScript = GetComponent<BoardScript> ();
     }
@@ -55,29 +59,17 @@ public class CombatScript : NetworkBehaviour
         {
             takeDmg = true;
         }
-
     }
 
-    void SetHealthText()
-    {
-        if (isLocalPlayer)
-        {
-            healthText.text = "Health:  " + numQuarks.ToString();
-        }
-    }
-
-    void DeleteElementText()
-    {
-        if (isLocalPlayer)
-        {
-            elementText.text = "Element:  ---";
-        }
-    }
-
+    /**
+     * Changes the quark meter to match the number of quarks held by the player.
+     * Caps quark meter between quarkMeterMin and quarkMeterMax.
+     * Each quark is 10 pixels on the meter.
+     */
     void updateQuarkMeter() {
         if (isLocalPlayer)
         {
-            quarkMeterHeight = numQuarks * 10;
+            quarkMeterHeight = numQuarks * quarkSize;
 
             if (quarkMeterHeight > quarkMeterMax)
                 quarkMeterHeight = quarkMeterMax;
@@ -88,6 +80,9 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
+    /**
+     * Set the held element to show in the circle at the bottom of the gauge.
+     */
     public void SetElementUI() {
         if (isLocalPlayer && haveElement) {
             Sprite elemSprite = boardScript.GetColorSprite (heldElement);
@@ -95,19 +90,14 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
+    /**
+     * Remove the held element from the circle at the bottom of the gauge.
+     * TODO(@paige): get noah to make an empty image to use instead of just making it null.
+     */
     public void DeleteElementUI() {
         if (isLocalPlayer) 
         {
             elementHeldImage.sprite = null;
-        }
-    }
-        
-
-    public void SetElementText() 
-    {
-        if (isLocalPlayer)
-        {
-            elementText.text = "Element:  " + heldElement.ToString();
         }
     }
 
@@ -133,7 +123,6 @@ public class CombatScript : NetworkBehaviour
             haveElement = false;
             heldElement = -1; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
             DeleteElementUI();
-            DeleteElementText ();
         }
         else
         {
@@ -151,11 +140,17 @@ public class CombatScript : NetworkBehaviour
 
     }
 
+    /**
+     * Deduct the health by dividing the number of quarks by 2.
+     */
     void DeductHealth()
     {
         numQuarks = numQuarks / 2;
     }
 
+    /**
+     * If the player is shot by a bullet and they can be hit, tell the server that they were shot.
+     */
     void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "Bullet" && takeDmg)
@@ -169,10 +164,12 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
+    /**
+     * Update the number of quarks and the quark meter when health is changed.
+     */
     void OnHealthChanged(int hlth)
     {
         numQuarks = hlth;
-        SetHealthText();
         updateQuarkMeter ();
     }
 }
