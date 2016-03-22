@@ -22,6 +22,8 @@ public class CombatScript : NetworkBehaviour
     readonly int quarkMeterMax = 150;
     readonly int quarkMeterMin = 0;
     int quarkMeterHeight = 30;
+    public Image elementHeldImage;
+    BoardScript boardScript;
 
     // Use this for initialization
     void Start () {
@@ -31,11 +33,13 @@ public class CombatScript : NetworkBehaviour
         startTime = Time.time;
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
+        elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
         SetHealthText();
         takeDmg = false;
         elementText = GameObject.Find("ElementText").GetComponent<Text>();
         DeleteElementText();
         updateQuarkMeter ();
+        boardScript = GetComponent<BoardScript> ();
     }
     
 	
@@ -83,6 +87,20 @@ public class CombatScript : NetworkBehaviour
             quarkMeter.rectTransform.sizeDelta = new Vector2 (quarkMeterWidth, quarkMeterHeight);
         }
     }
+
+    public void SetElementUI() {
+        if (isLocalPlayer && haveElement) {
+            Sprite elemSprite = boardScript.GetColorSprite (heldElement);
+            elementHeldImage.sprite = elemSprite;
+        }
+    }
+
+    public void DeleteElementUI() {
+        if (isLocalPlayer) 
+        {
+            elementHeldImage.sprite = null;
+        }
+    }
         
 
     public void SetElementText() 
@@ -114,7 +132,8 @@ public class CombatScript : NetworkBehaviour
             instance.GetComponent<ElementScript>().elementID = heldElement;
             haveElement = false;
             heldElement = -1; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
-            DeleteElementText();
+            DeleteElementUI();
+            DeleteElementText ();
         }
         else
         {

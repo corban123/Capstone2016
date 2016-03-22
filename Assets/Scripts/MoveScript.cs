@@ -82,7 +82,7 @@ public class MoveScript : NetworkBehaviour
             GameObject pickedElement = collision.gameObject;
             CmdPickUpElement(this.gameObject.name, pickedElement);
             print("picked up element " + combat.heldElement);
-            combat.SetElementText();
+            combat.SetElementUI();
             Destroy(pickedElement);
         }
         if (collision.tag == "Quark")
