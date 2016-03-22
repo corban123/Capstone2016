@@ -17,6 +17,11 @@ public class CombatScript : NetworkBehaviour
     float startTime;
     bool takeDmg;
     private Text elementText;
+    public Image quarkMeter;
+    readonly int quarkMeterWidth = 10;
+    readonly int quarkMeterMax = 150;
+    readonly int quarkMeterMin = 0;
+    int quarkMeterHeight = 30;
 
     // Use this for initialization
     void Start () {
@@ -25,10 +30,12 @@ public class CombatScript : NetworkBehaviour
         shotSpawn = gameObject.transform.GetChild(0);
         startTime = Time.time;
         healthText = GameObject.Find("HealthText").GetComponent<Text>();
+        quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         SetHealthText();
         takeDmg = false;
         elementText = GameObject.Find("ElementText").GetComponent<Text>();
         DeleteElementText();
+        updateQuarkMeter ();
     }
     
 	
@@ -62,6 +69,21 @@ public class CombatScript : NetworkBehaviour
             elementText.text = "Element:  ---";
         }
     }
+
+    void updateQuarkMeter() {
+        if (isLocalPlayer)
+        {
+            quarkMeterHeight = numQuarks * 10;
+
+            if (quarkMeterHeight > quarkMeterMax)
+                quarkMeterHeight = quarkMeterMax;
+            else if (quarkMeterHeight < quarkMeterMin)
+                quarkMeterHeight = quarkMeterMin;
+            
+            quarkMeter.rectTransform.sizeDelta = new Vector2 (quarkMeterWidth, quarkMeterHeight);
+        }
+    }
+        
 
     public void SetElementText() 
     {
@@ -132,5 +154,6 @@ public class CombatScript : NetworkBehaviour
     {
         numQuarks = hlth;
         SetHealthText();
+        updateQuarkMeter ();
     }
 }
