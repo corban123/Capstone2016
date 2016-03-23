@@ -115,6 +115,7 @@ public class GUIScript : MonoBehaviour {
      * Set the held element to show in the circle at the bottom of the gauge.
      */
     public void SetElementUI(int heldElement) {
+        print ("adding element " + heldElement);
         Sprite elemSprite = boardScript.GetColorSprite (heldElement);
         elementHeldImage.sprite = elemSprite;
         elementHeldImage.color = Color.white;
