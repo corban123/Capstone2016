@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 405084}
   - 33: {fileID: 3323074}
-  - 136: {fileID: 13656618}
   - 23: {fileID: 2377416}
   - 54: {fileID: 5476170}
   - 114: {fileID: 11493288}
@@ -18,6 +17,7 @@ GameObject:
   - 82: {fileID: 8233412}
   - 198: {fileID: 19802892}
   - 199: {fileID: 19991216}
+  - 65: {fileID: 6588808}
   m_Layer: 0
   m_Name: BasicShot
   m_TagString: Bullet
@@ -32,7 +32,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.20086, y: 12.0915575, z: 50.848415}
+  m_LocalPosition: {x: -66.60534, y: 17.837078, z: -202.80739}
   m_LocalScale: {x: 1.2893289, y: 0.25786594, z: 1.2893296}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,6 +85,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 16
   m_CollisionDetection: 0
+--- !u!65 &6588808
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2, z: 1.0060636}
+  m_Center: {x: 0, y: 0, z: 0.0030296752}
 --- !u!82 &8233412
 AudioSource:
   m_ObjectHideFlags: 1
@@ -227,19 +239,6 @@ MonoBehaviour:
   frequency: 20
   magnitude: 0.5
   shoot: {fileID: 8300000, guid: dd8ebfdfbe79fd8438d0dcf13075e1e7, type: 3}
---- !u!136 &13656618
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 161630}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &19802892
 ParticleSystem:
   m_ObjectHideFlags: 1
