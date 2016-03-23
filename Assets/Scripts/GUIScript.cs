@@ -122,7 +122,6 @@ public class GUIScript : MonoBehaviour {
 
     /**
      * Remove the held element from the circle at the bottom of the gauge.
-     * TODO(@paige): get noah to make an empty image to use instead of just making it null.
      */
     public void DeleteElementUI() {
         elementHeldImage.sprite = null;
