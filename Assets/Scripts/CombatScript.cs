@@ -7,7 +7,7 @@ public class CombatScript : NetworkBehaviour
     public GameObject shot;
     public GameObject elementShot;
     public GameObject basicShot;
-    Transform shotSpawn;
+    public Transform shotSpawn;
     private float nextFire;
     public float fireRate;
 
@@ -25,7 +25,6 @@ public class CombatScript : NetworkBehaviour
         haveElement = false;
         heldElement = -1;
 
-        shotSpawn = gameObject.transform.GetChild(0);
         startTime = Time.time;
         takeDmg = false;
 
