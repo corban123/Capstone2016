@@ -52,20 +52,20 @@ public class QuarkOverlord : MonoBehaviour {
 	}
 
 	public void deSpawn(){
-		GameObject toPreparedToSpawn = null;
-		GameObject toSpawnedList = null;
+		QuarkChild toPreparedToSpawn = null;
+		QuarkChild toSpawnedList = null;
 		int killPreparedToSpawn = -1;
 		int killToSpawnedList = -1;
 		if (empty.Count > 0) {
 			killPreparedToSpawn = Random.Range (0, empty.Count);
-			toPreparedToSpawn = empty [killPreparedToSpawn] as GameObject;
+			toPreparedToSpawn = empty [killPreparedToSpawn] as QuarkChild;
 			empty.RemoveAt (killPreparedToSpawn);
 
 		}
 		if (preparedToSpawn.Count > 0) {
 			killToSpawnedList = Random.Range (0, preparedToSpawn.Count);
 
-			toSpawnedList = preparedToSpawn [killToSpawnedList] as GameObject;
+			toSpawnedList = preparedToSpawn [killToSpawnedList] as QuarkChild;
 			(toSpawnedList.GetComponent<QuarkChild>()).CmdSpawn ();
 
 
