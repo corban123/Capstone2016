@@ -117,6 +117,7 @@ public class GUIScript : MonoBehaviour {
     public void SetElementUI(int heldElement) {
         Sprite elemSprite = boardScript.GetColorSprite (heldElement);
         elementHeldImage.sprite = elemSprite;
+        elementHeldImage.color = Color.white;
     }
 
     /**
@@ -124,7 +125,8 @@ public class GUIScript : MonoBehaviour {
      * TODO(@paige): get noah to make an empty image to use instead of just making it null.
      */
     public void DeleteElementUI() {
-            elementHeldImage.sprite = null;
+        elementHeldImage.sprite = null;
+        elementHeldImage.color = Color.black;
     }
 
     public void disableElementPickedUp() {
