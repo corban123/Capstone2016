@@ -81,7 +81,7 @@ public class ProjectileScript : NetworkBehaviour
 
     void OnDestroy()
     {
-        CmdRemoveProjectile();
+        //CmdRemoveProjectile();
         if (!gameObject.name.Contains("Element") && !gameObject.name.Contains("Basic"))
         {
             GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
