@@ -8,8 +8,11 @@ public class QuarkChild : NetworkBehaviour {
 	public GameObject quark;
 	private GameObject spawnedObject;
 	private QuarkOverlord overlord;
-	private int numTimesAdded;
+	public bool preparedToSpawn;
+	public int numTimesAdded;
 	void Start () {
+		numTimesAdded = 0;
+		preparedToSpawn = false;
 		overlord = GameObject.Find ("GenerateBoard").GetComponent<QuarkOverlord> ();
 	}
 	
@@ -17,10 +20,10 @@ public class QuarkChild : NetworkBehaviour {
 	void Update () {
 	
 		if (!spawnedObject && numTimesAdded == 1) {
-			overlord.addToEmpty (this.gameObject);	
+			overlord.addToEmpty (this.gameObject.GetComponent<QuarkChild>());	
 			numTimesAdded = 0;
 		} else if (spawnedObject && numTimesAdded == 0) {
-			overlord.addToSpawned (this.gameObject);
+			overlord.addToSpawned (this.gameObject.GetComponent<QuarkChild>());
 			numTimesAdded = 1;
 		}
 
@@ -28,8 +31,9 @@ public class QuarkChild : NetworkBehaviour {
 	[Command]
 	public void CmdSpawn(){
 		GameObject instance;
-		instance = (Instantiate (quark, this.transform.position, this.transform.rotation)) as GameObject;
+		instance = (Instantiate (quark, new Vector3(this.transform.position.x, this.transform.position.y+3, this.transform.position.z), this.transform.rotation)) as GameObject;
 		spawnedObject = instance;
+
 		NetworkServer.Spawn (instance);
 	}
 }

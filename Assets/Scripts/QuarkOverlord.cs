@@ -3,21 +3,27 @@ using System.Collections;
 
 
 public class QuarkOverlord : MonoBehaviour {
-	ArrayList quarkList;
-	ArrayList backupList;
+	ArrayList preparedToSpawn;
+	ArrayList spawnedList;
+	ArrayList empty;
 	private GameObject objects;
 
 	// Use this for initialization
 	void Start () {
-		quarkList = new ArrayList();
-		backupList = new ArrayList ();
+		spawnedList = new ArrayList();
+		preparedToSpawn = new ArrayList ();
+		empty = new ArrayList ();
 		if (objects = GameObject.Find ("QuarkMarkers")) {
 			for (int i = 0; i < objects.transform.childCount - 10; i++) {
-				quarkList.Add (objects.transform.GetChild (i).GetComponent<QuarkChild>());	
-			
+				QuarkChild child = objects.transform.GetChild (i).GetComponent<QuarkChild> ();
+				child.numTimesAdded = 1;
+				spawnedList.Add (child);	
+	
 			}
 			for(int i = objects.transform.childCount-10; i < objects.transform.childCount; i++){
-				backupList.Add (objects.transform.GetChild (i).GetComponent<QuarkChild> ());
+				QuarkChild child = objects.transform.GetChild (i).GetComponent<QuarkChild> ();
+				child.preparedToSpawn = true;
+				preparedToSpawn.Add(child);
 			}
 			spawnAll ();
 		}
@@ -25,9 +31,8 @@ public class QuarkOverlord : MonoBehaviour {
 
 
 	void spawnAll (){
-		for(int i = 0; i < quarkList.Count; i++){
-			((quarkList[i]) as QuarkChild).CmdSpawn ();
-		
+		for(int i = 0; i < spawnedList.Count; i++){
+			((spawnedList[i]) as QuarkChild).CmdSpawn ();
 		}
 	
 	
@@ -37,24 +42,40 @@ public class QuarkOverlord : MonoBehaviour {
 	
 	}
 
-	public void addToEmpty(GameObject obj){
-	
+	public void addToEmpty(QuarkChild obj){
+		empty.Add (obj);
 	}
 
-	public void addToSpawned(GameObject obj){
-	
+	public void addToSpawned(QuarkChild obj){
+		spawnedList.Add (obj);
 	
 	}
 
 	public void deSpawn(){
-		int rand = Random.Range (0, backupList.Count-1);
-		(backupList [rand] as QuarkChild).CmdSpawn();
-		int rand2 = Random.Range (0, quarkList.Count - 1);
-		GameObject tempObj = quarkList[rand2] as GameObject;
-		quarkList.Remove (quarkList [rand2]);
-		quarkList.Add (backupList [rand]);
-		backupList.RemoveAt (rand);
-		backupList.Add (tempObj);
+		GameObject toPreparedToSpawn = null;
+		GameObject toSpawnedList = null;
+		int killPreparedToSpawn = -1;
+		int killToSpawnedList = -1;
+		if (empty.Count > 0) {
+			killPreparedToSpawn = Random.Range (0, empty.Count);
+			toPreparedToSpawn = empty [killPreparedToSpawn] as GameObject;
+			empty.RemoveAt (killPreparedToSpawn);
+
+		}
+		if (preparedToSpawn.Count > 0) {
+			killToSpawnedList = Random.Range (0, preparedToSpawn.Count);
+
+			toSpawnedList = preparedToSpawn [killToSpawnedList] as GameObject;
+			(toSpawnedList.GetComponent<QuarkChild>()).CmdSpawn ();
+
+
+			preparedToSpawn.RemoveAt (killToSpawnedList);
+			spawnedList.Add (toSpawnedList);
+			if (toPreparedToSpawn != null) {
+				preparedToSpawn.Add (toPreparedToSpawn);
+			}
+		}
 	
+
 	}
 }
