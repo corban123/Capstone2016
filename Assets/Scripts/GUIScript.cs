@@ -17,6 +17,14 @@ public class GUIScript : MonoBehaviour {
     readonly int quarkSize = 10;
     int quarkMeterHeight = 30;
 
+    Image elementPickedUpImage;
+    Animator elementPickedUpAnimator;
+
+    private float delay = 1.633f;
+    float elementPickUpStartTime;
+    bool animatingElementPickUp;
+    int pickupHash = Animator.StringToHash("ElementPickUpAnimation");
+
 	// Use this for initialization
 	void Start () {
         // Set up the cross hair
@@ -28,6 +36,8 @@ public class GUIScript : MonoBehaviour {
 
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
+        elementPickedUpImage = GameObject.Find ("ElementPickedUp").GetComponent<Image> ();
+        elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
         setDefaults ();
 	}
 
@@ -37,6 +47,7 @@ public class GUIScript : MonoBehaviour {
     void setDefaults() {
         updateQuarkMeter (3);
         DeleteElementUI ();
+        disableElementPickedUp ();
     }
 	
 	/**
@@ -47,6 +58,10 @@ public class GUIScript : MonoBehaviour {
         if(m_WindowSize.x != Screen.width || m_WindowSize.y != Screen.height)
         {
             CalculateRect();
+        }
+
+        if (animatingElementPickUp && Time.time - elementPickUpStartTime > delay) {
+            disableElementPickedUp ();
         }
 	}
 
@@ -100,5 +115,14 @@ public class GUIScript : MonoBehaviour {
             elementHeldImage.sprite = null;
     }
 
+    public void disableElementPickedUp() {
+        animatingElementPickUp = false;
+        elementPickedUpAnimator.SetBool ("animating", false);
+    }
 
+    public void enableElementPickedUp() {
+        animatingElementPickUp = true;
+        elementPickedUpAnimator.SetBool ("animating", true);
+        elementPickUpStartTime = Time.time;
+    }
 }
