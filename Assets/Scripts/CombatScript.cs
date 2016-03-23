@@ -18,15 +18,7 @@ public class CombatScript : NetworkBehaviour
     float startTime;
     bool takeDmg;
 
-    Image quarkMeter;
-    readonly int quarkMeterWidth = 10;
-    readonly int quarkMeterMax = 150;
-    readonly int quarkMeterMin = 0;
-    readonly int quarkSize = 10;
-    int quarkMeterHeight = 30;
-
-    BoardScript boardScript;
-    Image elementHeldImage;
+    GUIScript gui;
 
     // Use this for initialization
     void Start () {
@@ -37,13 +29,7 @@ public class CombatScript : NetworkBehaviour
         startTime = Time.time;
         takeDmg = false;
 
-        boardScript = GetComponent<BoardScript> ();
-
-        quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
-        elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
-        DeleteElementUI ();
-        updateQuarkMeter ();
-        boardScript = GetComponent<BoardScript> ();
+        gui = gameObject.GetComponent<GUIScript> ();
     }
     
 	
@@ -58,46 +44,6 @@ public class CombatScript : NetworkBehaviour
         if (Time.time - startTime > 3)
         {
             takeDmg = true;
-        }
-    }
-
-    /**
-     * Changes the quark meter to match the number of quarks held by the player.
-     * Caps quark meter between quarkMeterMin and quarkMeterMax.
-     * Each quark is 10 pixels on the meter.
-     */
-    void updateQuarkMeter() {
-        if (isLocalPlayer)
-        {
-            quarkMeterHeight = numQuarks * quarkSize;
-
-            if (quarkMeterHeight > quarkMeterMax)
-                quarkMeterHeight = quarkMeterMax;
-            else if (quarkMeterHeight < quarkMeterMin)
-                quarkMeterHeight = quarkMeterMin;
-            
-            quarkMeter.rectTransform.sizeDelta = new Vector2 (quarkMeterWidth, quarkMeterHeight);
-        }
-    }
-
-    /**
-     * Set the held element to show in the circle at the bottom of the gauge.
-     */
-    public void SetElementUI() {
-        if (isLocalPlayer && haveElement) {
-            Sprite elemSprite = boardScript.GetColorSprite (heldElement);
-            elementHeldImage.sprite = elemSprite;
-        }
-    }
-
-    /**
-     * Remove the held element from the circle at the bottom of the gauge.
-     * TODO(@paige): get noah to make an empty image to use instead of just making it null.
-     */
-    public void DeleteElementUI() {
-        if (isLocalPlayer) 
-        {
-            elementHeldImage.sprite = null;
         }
     }
 
@@ -122,7 +68,7 @@ public class CombatScript : NetworkBehaviour
             instance.GetComponent<ElementScript>().elementID = heldElement;
             haveElement = false;
             heldElement = -1; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
-            DeleteElementUI();
+            gui.DeleteElementUI();
         }
         else
         {
@@ -170,6 +116,6 @@ public class CombatScript : NetworkBehaviour
     void OnHealthChanged(int hlth)
     {
         numQuarks = hlth;
-        updateQuarkMeter ();
+        gui.updateQuarkMeter (numQuarks);
     }
 }

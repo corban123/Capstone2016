@@ -11,6 +11,7 @@ public class MoveScript : NetworkBehaviour
 {
     CombatScript combat;
 	AudioSource source;
+    GUIScript gui;
 
 	[SerializeField] AudioClip pickUp;
     [SerializeField] AudioClip walk;
@@ -26,6 +27,7 @@ public class MoveScript : NetworkBehaviour
     {
         combat = gameObject.GetComponent<CombatScript>();
 		source = gameObject.GetComponent<AudioSource> ();
+        gui = gameObject.GetComponent<GUIScript> ();
 		nextCameraRotation = Camera.main.transform.localRotation;
 		nextPlayerRotation = transform.localRotation;
 	}
@@ -82,7 +84,7 @@ public class MoveScript : NetworkBehaviour
             GameObject pickedElement = collision.gameObject;
             CmdPickUpElement(this.gameObject.name, pickedElement);
             print("picked up element " + combat.heldElement);
-            combat.SetElementUI();
+            gui.SetElementUI(combat.heldElement);
             Destroy(pickedElement);
         }
         if (collision.tag == "Quark")
