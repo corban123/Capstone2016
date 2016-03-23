@@ -75,6 +75,11 @@ public class GUIScript : MonoBehaviour {
         if (animatingYouScored && Time.time - youScoredStartTime > delay) {
             disableYouScored ();
         }
+
+        // TODO (@paige): figure out why sometimes quark meter isn't found in start.
+        if (quarkMeter == null) {
+            quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image> ();
+        }
 	}
 
     /**

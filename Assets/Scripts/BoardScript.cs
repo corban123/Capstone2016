@@ -68,29 +68,34 @@ public class BoardScript : NetworkBehaviour {
 
 	// Set the board value
 	public void SetBoard (int[,] board) {
-        boardUI = GameObject.Find("BingoBoard");
-		this.board = board;
-        if (!UICreated) {
-            CreateBingoBoardUI ();
-            UICreated = true;
+        if (isLocalPlayer) {
+            boardUI = GameObject.Find ("BingoBoard");
+            this.board = board;
+            if (!UICreated) {
+                CreateBingoBoardUI ();
+                UICreated = true;
+            }
         }
 	}
 
 	// Marks an element as scored on this board
 	// Returns whether or not the score causes this board to win.
 	public bool score (int element) {
-		// Find the element on the board
-		int[] coordinates = GetCoordinates(element);
+        if (isLocalPlayer) {
+            // Find the element on the board
+            int[] coordinates = GetCoordinates (element);
 
-		// Mark the element as scored in the scored bitmap
-		scored[coordinates[0], coordinates[1]] = true;
+            // Mark the element as scored in the scored bitmap
+            scored [coordinates [0], coordinates [1]] = true;
 
-		// Change Board text
-        GreyOutOnUI(coordinates[0], coordinates[1], element);
+            // Change Board text
+            GreyOutOnUI (coordinates [0], coordinates [1], element);
 
-		// Check whether the board is a winner
+            // Check whether the board is a winner
 
-		return isWin(coordinates[0], coordinates[1]);
+            return isWin (coordinates [0], coordinates [1]);
+        }
+        return false;
 	}
 
 	// @Override prints board results.
@@ -153,7 +158,6 @@ public class BoardScript : NetworkBehaviour {
     private void GreyOutOnUI(int x, int y, int elem) {
         Image[] i = boardUI.GetComponentsInChildren<Image>();
         int idx = x * 4 + y;
-        print (idx);
         i[idx].sprite = GetGreySprite(elem);
     }
 
