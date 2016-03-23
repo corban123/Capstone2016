@@ -36,12 +36,6 @@ public class GravityWell : NetworkBehaviour
 
     void OnDestroy()
     {
-        CmdRemoveBlackHole();
-    }
-
-    [Command]
-    void CmdRemoveBlackHole()
-    {
         foreach (Collider collider in Physics.OverlapSphere(transform.position, range))
         {
             if (collider.CompareTag("Player"))
@@ -51,6 +45,12 @@ public class GravityWell : NetworkBehaviour
                 //NetworkServer.Destroy(collider.gameObject); //Replace this with respawn
             }
         }
+        CmdRemoveBlackHole();
+    }
+
+    [Command]
+    void CmdRemoveBlackHole()
+    {     
         NetworkServer.Destroy(this.gameObject);
     }
 

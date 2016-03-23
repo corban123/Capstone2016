@@ -108,8 +108,8 @@ public class MoveScript : NetworkBehaviour
     void CmdPickUpElement(string uniqueID, GameObject element)
     {
         GameObject target = GameObject.Find(uniqueID);
-        target.GetComponent<CombatScript>().haveElement = true;
-        target.GetComponent<CombatScript>().heldElement = element.GetComponent<ElementScript>().elementID;
+        this.gameObject.GetComponent<CombatScript>().haveElement = true;
+        this.gameObject.GetComponent<CombatScript>().heldElement = element.GetComponent<ElementScript>().elementID;
         NetworkServer.Destroy(element);
     }
 
