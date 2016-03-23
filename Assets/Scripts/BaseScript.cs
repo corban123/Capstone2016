@@ -10,7 +10,6 @@ public class BaseScript : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-	
 	}
 	
 	// Update is called once per frame
@@ -31,6 +30,7 @@ public class BaseScript : MonoBehaviour {
                 GameObject player = GameObject.Find("Player " + carrier); //Assuming that a player is named Player <number> i.e Player 1
                 print("Player " + carrier + " scored!");
                 player.GetComponent<BoardScript>().score(element);
+                player.GetComponent<GUIScript> ().enableYouScored ();
             }
         }
 

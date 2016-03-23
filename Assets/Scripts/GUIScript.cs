@@ -17,13 +17,15 @@ public class GUIScript : MonoBehaviour {
     readonly int quarkSize = 10;
     int quarkMeterHeight = 30;
 
-    Image elementPickedUpImage;
-    Animator elementPickedUpAnimator;
-
     private float delay = 1.633f;
+
+    Animator elementPickedUpAnimator;
     float elementPickUpStartTime;
     bool animatingElementPickUp;
-    int pickupHash = Animator.StringToHash("ElementPickUpAnimation");
+
+    Animator youScoredAnimator;
+    float youScoredStartTime;
+    bool animatingYouScored;
 
 	// Use this for initialization
 	void Start () {
@@ -36,8 +38,10 @@ public class GUIScript : MonoBehaviour {
 
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
-        elementPickedUpImage = GameObject.Find ("ElementPickedUp").GetComponent<Image> ();
+
         elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
+        youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
+
         setDefaults ();
 	}
 
@@ -48,6 +52,7 @@ public class GUIScript : MonoBehaviour {
         updateQuarkMeter (3);
         DeleteElementUI ();
         disableElementPickedUp ();
+        disableYouScored ();
     }
 	
 	/**
@@ -62,6 +67,9 @@ public class GUIScript : MonoBehaviour {
 
         if (animatingElementPickUp && Time.time - elementPickUpStartTime > delay) {
             disableElementPickedUp ();
+        }
+        if (animatingYouScored && Time.time - youScoredStartTime > delay) {
+            disableYouScored ();
         }
 	}
 
@@ -124,5 +132,16 @@ public class GUIScript : MonoBehaviour {
         animatingElementPickUp = true;
         elementPickedUpAnimator.SetBool ("animating", true);
         elementPickUpStartTime = Time.time;
+    }
+
+    public void disableYouScored() {
+        animatingYouScored = false;
+        youScoredAnimator.SetBool ("animating", false);
+    }
+
+    public void enableYouScored() {
+        animatingYouScored = true;
+        youScoredAnimator.SetBool ("animating", true);
+        youScoredStartTime = Time.time;
     }
 }
