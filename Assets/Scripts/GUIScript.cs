@@ -20,10 +20,12 @@ public class GUIScript : MonoBehaviour {
     private float delay = 1.633f;
 
     Animator elementPickedUpAnimator;
+    Image elementPickedUpImage;
     float elementPickUpStartTime;
     bool animatingElementPickUp;
 
     Animator youScoredAnimator;
+    Image youScoredImage;
     float youScoredStartTime;
     bool animatingYouScored;
 
@@ -38,6 +40,8 @@ public class GUIScript : MonoBehaviour {
 
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
+        elementPickedUpImage = GameObject.Find ("ElementPickedUp").GetComponent<Image> ();
+        youScoredImage = GameObject.Find ("YouScored").GetComponent<Image> ();
 
         elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
@@ -125,22 +129,26 @@ public class GUIScript : MonoBehaviour {
 
     public void disableElementPickedUp() {
         animatingElementPickUp = false;
+        elementPickedUpImage.enabled = false;
         elementPickedUpAnimator.SetBool ("animating", false);
     }
 
     public void enableElementPickedUp() {
         animatingElementPickUp = true;
+        elementPickedUpImage.enabled = true;
         elementPickedUpAnimator.SetBool ("animating", true);
         elementPickUpStartTime = Time.time;
     }
 
     public void disableYouScored() {
         animatingYouScored = false;
+        youScoredImage.enabled = false;
         youScoredAnimator.SetBool ("animating", false);
     }
 
     public void enableYouScored() {
         animatingYouScored = true;
+        youScoredImage.enabled = true;
         youScoredAnimator.SetBool ("animating", true);
         youScoredStartTime = Time.time;
     }
