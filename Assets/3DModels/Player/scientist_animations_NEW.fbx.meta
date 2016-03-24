@@ -138,6 +138,47 @@ ModelImporter:
     100260: transform34
     100262: transform35
     100264: transform9
+    100266: backpack
+    100268: group
+    100270: ik_L_Foot
+    100272: ik_L_Hand
+    100274: ik_R_Foot
+    100276: joint1
+    100278: joint2
+    100280: joint3
+    100282: joint4
+    100284: joint5
+    100286: joint6
+    100288: nurbsCube1
+    100290: nurbsCube2
+    100292: pCone1
+    100294: pCone10
+    100296: pCone11
+    100298: pCone2
+    100300: pCone3
+    100302: pCone4
+    100304: pCone5
+    100306: pCone6
+    100308: pCone7
+    100310: pCone8
+    100312: pCone9
+    100314: pCylinder2
+    100316: pCylinder4
+    100318: polySurface6
+    100320: transform17
+    100322: transform18
+    100324: transform19
+    100326: transform20
+    100328: transform21
+    100330: transform22
+    100332: transform23
+    100334: transform24
+    100336: transform25
+    100338: transform26
+    100340: transform27
+    100342: transform29
+    100344: transform33
+    100346: tube
     400000: glasses
     400002: group1
     400004: group2
@@ -271,20 +312,66 @@ ModelImporter:
     400260: transform34
     400262: transform35
     400264: transform9
+    400266: backpack
+    400268: group
+    400270: ik_L_Foot
+    400272: ik_L_Hand
+    400274: ik_R_Foot
+    400276: joint1
+    400278: joint2
+    400280: joint3
+    400282: joint4
+    400284: joint5
+    400286: joint6
+    400288: nurbsCube1
+    400290: nurbsCube2
+    400292: pCone1
+    400294: pCone10
+    400296: pCone11
+    400298: pCone2
+    400300: pCone3
+    400302: pCone4
+    400304: pCone5
+    400306: pCone6
+    400308: pCone7
+    400310: pCone8
+    400312: pCone9
+    400314: pCylinder2
+    400316: pCylinder4
+    400318: polySurface6
+    400320: transform17
+    400322: transform18
+    400324: transform19
+    400326: transform20
+    400328: transform21
+    400330: transform22
+    400332: transform23
+    400334: transform24
+    400336: transform25
+    400338: transform26
+    400340: transform27
+    400342: transform29
+    400344: transform33
+    400346: tube
     2300000: head
     2300002: pasted__backpack
     2300004: polySurface1
     2300006: polySurface4
+    2300008: backpack
     3300000: head
     3300002: pasted__backpack
     3300004: polySurface1
     3300006: polySurface4
+    3300008: backpack
     4300000: head
     4300002: polySurface4
     4300004: polySurface1
     4300006: pasted__backpack
     4300008: pasted__pCylinder8
     4300010: pasted__tube
+    4300012: tube
+    4300014: polySurface6
+    4300016: backpack
     7400000: Idle
     7400002: Take 0010
     7400004: Death
@@ -296,6 +383,8 @@ ModelImporter:
     11100000: //RootNode
     13700000: pasted__pCylinder8
     13700002: pasted__tube
+    13700004: polySurface6
+    13700006: tube
   materials:
     importMaterials: 1
     materialName: 0
