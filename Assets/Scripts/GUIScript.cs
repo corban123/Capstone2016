@@ -29,6 +29,11 @@ public class GUIScript : MonoBehaviour {
     float youScoredStartTime;
     bool animatingYouScored;
 
+    Animator enemyScoredAnimator;
+    Image enemyScoredImage;
+    float enemyScoredStartTime;
+    bool animatingEnemyScored;
+
     Animator glowGaugeAnimator;
     Image glowGaugeImage;
     bool animatingGlowGauge;
@@ -46,10 +51,12 @@ public class GUIScript : MonoBehaviour {
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
         elementPickedUpImage = GameObject.Find ("ElementPickedUp").GetComponent<Image> ();
         youScoredImage = GameObject.Find ("YouScored").GetComponent<Image> ();
+        enemyScoredImage = GameObject.Find ("EnemyScored").GetComponent<Image> ();
         glowGaugeImage = GameObject.Find ("GaugeGlow").GetComponent<Image> ();
 
         elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
+        enemyScoredAnimator = GameObject.Find ("EnemyScored").GetComponent<Animator> ();
         glowGaugeAnimator = GameObject.Find ("GaugeGlow").GetComponent<Animator> ();
 
         setDefaults ();
@@ -63,6 +70,7 @@ public class GUIScript : MonoBehaviour {
         DeleteElementUI ();
         disableElementPickedUp ();
         disableYouScored ();
+        disableEnemyScored ();
         disableGaugeGlow ();
     }
 	
@@ -81,6 +89,9 @@ public class GUIScript : MonoBehaviour {
         }
         if (animatingYouScored && Time.time - youScoredStartTime > delay) {
             disableYouScored ();
+        }
+        if (animatingEnemyScored && Time.time - enemyScoredStartTime > delay) {
+            disableEnemyScored ();
         }
 
         // TODO (@paige): figure out why sometimes quark meter isn't found in start.
@@ -177,5 +188,18 @@ public class GUIScript : MonoBehaviour {
         animatingGlowGauge = false;
         glowGaugeImage.enabled = false;
         glowGaugeAnimator.SetBool ("animating", false);
+    }
+
+    public void disableEnemyScored() {
+        animatingEnemyScored = false;
+        enemyScoredImage.enabled = false;
+        enemyScoredAnimator.SetBool ("animating", false);
+    }
+
+    public void enableEnemyScored() {
+        animatingEnemyScored = true;
+        enemyScoredImage.enabled = true;
+        enemyScoredAnimator.SetBool ("animating", true);
+        enemyScoredStartTime = Time.time;
     }
 }
