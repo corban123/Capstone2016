@@ -29,6 +29,10 @@ public class GUIScript : MonoBehaviour {
     float youScoredStartTime;
     bool animatingYouScored;
 
+    Animator glowGaugeAnimator;
+    Image glowGaugeImage;
+    bool animatingGlowGauge;
+
 	// Use this for initialization
 	void Start () {
         // Set up the cross hair
@@ -42,9 +46,11 @@ public class GUIScript : MonoBehaviour {
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
         elementPickedUpImage = GameObject.Find ("ElementPickedUp").GetComponent<Image> ();
         youScoredImage = GameObject.Find ("YouScored").GetComponent<Image> ();
+        glowGaugeImage = GameObject.Find ("GaugeGlow").GetComponent<Image> ();
 
         elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
+        glowGaugeAnimator = GameObject.Find ("GaugeGlow").GetComponent<Animator> ();
 
         setDefaults ();
 	}
@@ -57,6 +63,7 @@ public class GUIScript : MonoBehaviour {
         DeleteElementUI ();
         disableElementPickedUp ();
         disableYouScored ();
+        disableGaugeGlow ();
     }
 	
 	/**
@@ -158,5 +165,17 @@ public class GUIScript : MonoBehaviour {
         youScoredImage.enabled = true;
         youScoredAnimator.SetBool ("animating", true);
         youScoredStartTime = Time.time;
+    }
+
+    public void enableGaugeGlow() {
+        animatingGlowGauge = true;
+        glowGaugeImage.enabled = true;
+        glowGaugeAnimator.SetBool ("animating", true);
+    }
+
+    public void disableGaugeGlow() {
+        animatingGlowGauge = false;
+        glowGaugeImage.enabled = false;
+        glowGaugeAnimator.SetBool ("animating", false);
     }
 }
