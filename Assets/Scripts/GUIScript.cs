@@ -95,6 +95,7 @@ public class GUIScript : MonoBehaviour {
         }
 
         // TODO (@paige): figure out why sometimes quark meter isn't found in start.
+        // Because it gets called in OnChange for health even before the UI element is found.
         if (quarkMeter == null) {
             quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image> ();
         }

@@ -88,7 +88,7 @@ public class ElementScript : NetworkBehaviour
         }
     }
 
-    void RailGun() {
+    public void RailGun() {
         gunLine.enabled = true;
         gunLine.SetPosition(0, transform.position);
 
