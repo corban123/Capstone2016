@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21268396}
   - 95: {fileID: 9535738}
   - 114: {fileID: 11425052}
+  - 114: {fileID: 11414260}
   m_Layer: 0
   m_Name: Nitrogen Marker_0 1
   m_TagString: Untagged
@@ -47,6 +48,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11414260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210a5880597e5432696051d88ebe0a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11425052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -61,22 +73,22 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
+    i0: 73
+    i1: 247
+    i2: 129
+    i3: 167
+    i4: 244
+    i5: 161
+    i6: 68
+    i7: 47
+    i8: 152
+    i9: 150
+    i10: 74
+    i11: 211
+    i12: 145
+    i13: 77
+    i14: 129
+    i15: 83
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
 --- !u!212 &21268396

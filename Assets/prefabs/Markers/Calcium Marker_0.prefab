@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21204230}
   - 95: {fileID: 9509652}
   - 114: {fileID: 11410068}
+  - 114: {fileID: 11462638}
   m_Layer: 0
   m_Name: Calcium Marker_0
   m_TagString: Untagged
@@ -61,24 +62,35 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
+    i0: 57
+    i1: 75
+    i2: 223
+    i3: 70
+    i4: 95
+    i5: 138
+    i6: 116
+    i7: 91
+    i8: 25
+    i9: 100
+    i10: 134
+    i11: 170
+    i12: 176
+    i13: 121
+    i14: 165
+    i15: 157
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &11462638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210a5880597e5432696051d88ebe0a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21204230
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -115,7 +127,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 107250}

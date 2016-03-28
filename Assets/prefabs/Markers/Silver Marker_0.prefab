@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21296382}
   - 95: {fileID: 9501138}
   - 114: {fileID: 11478038}
+  - 114: {fileID: 11495612}
   m_Layer: 0
   m_Name: Silver Marker_0
   m_TagString: Untagged
@@ -61,24 +62,35 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
+    i0: 59
+    i1: 50
+    i2: 76
+    i3: 132
+    i4: 242
+    i5: 114
+    i6: 36
+    i7: 215
+    i8: 123
+    i9: 150
+    i10: 219
+    i11: 12
+    i12: 181
+    i13: 116
+    i14: 77
+    i15: 111
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &11495612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210a5880597e5432696051d88ebe0a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21296382
 SpriteRenderer:
   m_ObjectHideFlags: 1
