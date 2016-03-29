@@ -18,11 +18,13 @@ public class ElementScript : NetworkBehaviour
     RaycastHit shootHit;
     LineRenderer gunLine;
     public float range = 100f;
+    GUIScript gui;
+
 
 	// Use this for initialization
 	void Start ()
     {
-
+        gui = gameObject.GetComponent<GUIScript> ();
 	}
 	
 	// Update is called once per frame
@@ -38,7 +40,7 @@ public class ElementScript : NetworkBehaviour
         } else if (IsElementType () == Element.Metals) {
             CmdSpawnMetal();
         } else if (IsElementType () == Element.Noble) {
-            RailGun ();
+            gui.blackOutUI ();
         }
         else {
             CmdSpawnBomb();
@@ -84,23 +86,5 @@ public class ElementScript : NetworkBehaviour
     {
         GameObject instance = Instantiate(metallize, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation) as GameObject;
         NetworkServer.Spawn(instance);
-    }
-
-    public void RailGun() {
-        gunLine.enabled = true;
-        gunLine.SetPosition(0, transform.position);
-
-        shootRay.origin = transform.position;
-        shootRay.direction = transform.forward;
-
-        if (Physics.Raycast(shootRay, out shootHit, range))
-        {
-            gunLine.SetPosition(1, shootHit.point);
-        }
-        // If the raycast didn't hit anything...
-        else
-        {
-            gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
-        }
     }
 }
