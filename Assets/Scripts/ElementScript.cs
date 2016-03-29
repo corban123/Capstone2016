@@ -12,6 +12,7 @@ public class ElementScript : NetworkBehaviour
     public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
     public GameObject atomBomb;
+    public GameObject metallize;
     enum Element { Alkaline, Metals, Gases, Noble}
     Ray shootRay;
     RaycastHit shootHit;
@@ -21,6 +22,7 @@ public class ElementScript : NetworkBehaviour
 	// Use this for initialization
 	void Start ()
     {
+
 	}
 	
 	// Update is called once per frame
@@ -34,7 +36,7 @@ public class ElementScript : NetworkBehaviour
         if (IsElementType () == Element.Alkaline) {
             CmdSpawnBlackHole ();
         } else if (IsElementType () == Element.Metals) {
-            Freeze ();
+            CmdSpawnMetal();
         } else if (IsElementType () == Element.Noble) {
             RailGun ();
         }
@@ -77,15 +79,11 @@ public class ElementScript : NetworkBehaviour
         NetworkServer.Spawn(instance);
     }
 
-    void Freeze() {
-        float range = 50f;
-
-        foreach (Collider collider in Physics.OverlapSphere(transform.position, range)) {
-            FirstPersonController fpc = collider.GetComponent<FirstPersonController> ();
-            if (fpc != null) {
-                fpc.FreezeMovement ();
-            }
-        }
+    [Command]
+    void CmdSpawnMetal()
+    {
+        GameObject instance = Instantiate(metallize, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation) as GameObject;
+        NetworkServer.Spawn(instance);
     }
 
     public void RailGun() {

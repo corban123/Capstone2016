@@ -78,9 +78,9 @@ public class MoveScript : NetworkBehaviour
 	// Pick up elements and quarks on collision
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Element" && combat.heldElement == -1)
+        if (collision.tag == "Element" && combat.heldElement == -1 && GetComponent<CombatScript>().numQuarks >= collision.GetComponent<ElementScript>().cost)
         {
-            //TODO: Add cost into consideration when picking up an element
+            GetComponent<CombatScript>().numQuarks -= collision.GetComponent<ElementScript>().cost;
             GameObject pickedElement = collision.gameObject;
             CmdPickUpElement(this.gameObject.name, pickedElement);
             print("picked up element " + combat.heldElement);
