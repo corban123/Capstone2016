@@ -11,6 +11,7 @@ public class QuarkOverlord : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		spawnedList = new ArrayList();
+		random = Random.Range (0, 100000);
 		preparedToSpawn = new ArrayList ();
 		empty = new ArrayList ();
 		if (objects = GameObject.Find ("QuarkMarkers")) {
