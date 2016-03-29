@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21235650}
   - 95: {fileID: 9550402}
   - 114: {fileID: 11482600}
+  - 114: {fileID: 11457440}
   m_Layer: 0
   m_Name: Copper Marker_0
   m_TagString: Untagged
@@ -47,6 +48,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11457440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210a5880597e5432696051d88ebe0a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11482600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -61,22 +73,22 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 0
-    i1: 0
-    i2: 0
-    i3: 0
-    i4: 0
-    i5: 0
-    i6: 0
-    i7: 0
-    i8: 0
-    i9: 0
-    i10: 0
-    i11: 0
-    i12: 0
-    i13: 0
-    i14: 0
-    i15: 0
+    i0: 94
+    i1: 125
+    i2: 95
+    i3: 107
+    i4: 44
+    i5: 54
+    i6: 68
+    i7: 233
+    i8: 138
+    i9: 159
+    i10: 63
+    i11: 254
+    i12: 45
+    i13: 203
+    i14: 183
+    i15: 70
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
 --- !u!212 &21235650
@@ -107,7 +119,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6acf59f67a0912240baf510030dcb94b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
 --- !u!1001 &100100000
 Prefab:
@@ -115,7 +127,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138440}

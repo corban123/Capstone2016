@@ -117,6 +117,7 @@ GameObject:
   - 20: {fileID: 2050102}
   - 81: {fileID: 8126956}
   - 124: {fileID: 12438218}
+  - 114: {fileID: 11429772}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: MainCamera
@@ -3694,7 +3695,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -64.65139, y: 5.6117086, z: -218.42807}
+  m_LocalPosition: {x: 153.56628, y: -37.095444, z: 65.55472}
   m_LocalScale: {x: 19.559252, y: 19.559252, z: 19.559252}
   m_Children:
   - {fileID: 445190}
@@ -4099,6 +4100,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPSCam: {fileID: 2050102}
   audioListen: {fileID: 8126956}
+--- !u!114 &11429772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37716d9200c6f45f7a9f8fe362d0c3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shade: {fileID: 4800000, guid: 44b54c59129572f469a949a22bc08cd0, type: 3}
 --- !u!114 &11438012
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -18,6 +18,8 @@ public class CombatScript : NetworkBehaviour
     float startTime;
     bool takeDmg;
 
+    readonly int elementPickUpPrice = 5;
+
     GUIScript gui;
 
     // Use this for initialization
@@ -116,5 +118,11 @@ public class CombatScript : NetworkBehaviour
     {
         numQuarks = hlth;
         gui.updateQuarkMeter (numQuarks);
+
+        if (numQuarks >= elementPickUpPrice) {
+            gui.enableGaugeGlow ();
+        } else {
+            gui.disableGaugeGlow ();
+        }
     }
 }

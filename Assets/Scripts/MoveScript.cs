@@ -49,8 +49,8 @@ public class MoveScript : NetworkBehaviour
 		nextCameraRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
 		nextPlayerRotation *= Quaternion.Euler (0f, leftRight*5, 0f);
 		nextCameraRotation = ClampRotationAroundXAxis (nextCameraRotation);
-		Camera.main.transform.localRotation =  Quaternion.Lerp(Camera.main.transform.localRotation, nextCameraRotation , Time.deltaTime * 5f);
-		transform.localRotation = Quaternion.Lerp (transform.localRotation, nextPlayerRotation, Time.deltaTime * 5f);
+		Camera.main.transform.localRotation =  Quaternion.Lerp(Camera.main.transform.localRotation, nextCameraRotation , Time.fixedDeltaTime * 5f);
+		transform.localRotation = Quaternion.Lerp (transform.localRotation, nextPlayerRotation, Time.fixedDeltaTime * 5f);
 	}
 
 	// Move the given CharacterController by the vector speed.

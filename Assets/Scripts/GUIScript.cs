@@ -18,6 +18,9 @@ public class GUIScript : MonoBehaviour {
     int quarkMeterHeight = 30;
 
     private float delay = 1.633f;
+    private float fadeTime = 5.0f;
+
+    Image blackout;
 
     Animator elementPickedUpAnimator;
     Image elementPickedUpImage;
@@ -28,6 +31,15 @@ public class GUIScript : MonoBehaviour {
     Image youScoredImage;
     float youScoredStartTime;
     bool animatingYouScored;
+
+    Animator enemyScoredAnimator;
+    Image enemyScoredImage;
+    float enemyScoredStartTime;
+    bool animatingEnemyScored;
+
+    Animator glowGaugeAnimator;
+    Image glowGaugeImage;
+    bool animatingGlowGauge;
 
 	// Use this for initialization
 	void Start () {
@@ -42,9 +54,15 @@ public class GUIScript : MonoBehaviour {
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
         elementPickedUpImage = GameObject.Find ("ElementPickedUp").GetComponent<Image> ();
         youScoredImage = GameObject.Find ("YouScored").GetComponent<Image> ();
+        enemyScoredImage = GameObject.Find ("EnemyScored").GetComponent<Image> ();
+        glowGaugeImage = GameObject.Find ("GaugeGlow").GetComponent<Image> ();
 
         elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
+        enemyScoredAnimator = GameObject.Find ("EnemyScored").GetComponent<Animator> ();
+        glowGaugeAnimator = GameObject.Find ("GaugeGlow").GetComponent<Animator> ();
+
+        blackout = GameObject.Find ("Blackout").GetComponent<Image> ();
 
         setDefaults ();
 	}
@@ -57,6 +75,8 @@ public class GUIScript : MonoBehaviour {
         DeleteElementUI ();
         disableElementPickedUp ();
         disableYouScored ();
+        disableEnemyScored ();
+        disableGaugeGlow ();
     }
 	
 	/**
@@ -75,8 +95,12 @@ public class GUIScript : MonoBehaviour {
         if (animatingYouScored && Time.time - youScoredStartTime > delay) {
             disableYouScored ();
         }
+        if (animatingEnemyScored && Time.time - enemyScoredStartTime > delay) {
+            disableEnemyScored ();
+        }
 
         // TODO (@paige): figure out why sometimes quark meter isn't found in start.
+        // Because it gets called in OnChange for health even before the UI element is found.
         if (quarkMeter == null) {
             quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image> ();
         }
@@ -158,5 +182,41 @@ public class GUIScript : MonoBehaviour {
         youScoredImage.enabled = true;
         youScoredAnimator.SetBool ("animating", true);
         youScoredStartTime = Time.time;
+    }
+
+    public void enableGaugeGlow() {
+        animatingGlowGauge = true;
+        glowGaugeImage.enabled = true;
+        glowGaugeAnimator.SetBool ("animating", true);
+    }
+
+    public void disableGaugeGlow() {
+        animatingGlowGauge = false;
+        glowGaugeImage.enabled = false;
+        glowGaugeAnimator.SetBool ("animating", false);
+    }
+
+    public void disableEnemyScored() {
+        animatingEnemyScored = false;
+        enemyScoredImage.enabled = false;
+        enemyScoredAnimator.SetBool ("animating", false);
+    }
+
+    public void enableEnemyScored() {
+        animatingEnemyScored = true;
+        enemyScoredImage.enabled = true;
+        enemyScoredAnimator.SetBool ("animating", true);
+        enemyScoredStartTime = Time.time;
+    }
+
+    public void blackOutUI() {
+        blackout.canvasRenderer.SetAlpha( 0.01f );
+        StartCoroutine (blackOutCoroutine());
+    }
+
+    IEnumerator blackOutCoroutine() {
+        blackout.CrossFadeAlpha (1.0f, fadeTime, false);
+        yield return new WaitForSeconds(fadeTime);
+        blackout.CrossFadeAlpha (0.0f, fadeTime, false);
     }
 }

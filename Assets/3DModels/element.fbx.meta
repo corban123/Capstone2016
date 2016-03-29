@@ -68,6 +68,7 @@ ModelImporter:
     4300004: pSphere10
     4300006: pSphere11
     4300008: pSphere12
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -83,13 +84,89 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: pSphere1
+        weight: 1
+      - path: pSphere1/transform7
+        weight: 1
+      - path: pSphere2
+        weight: 1
+      - path: pSphere2/transform6
+        weight: 1
+      - path: pSphere3
+        weight: 1
+      - path: pSphere3/transform5
+        weight: 1
+      - path: pSphere4
+        weight: 1
+      - path: pSphere4/transform4
+        weight: 1
+      - path: pSphere5
+        weight: 1
+      - path: pSphere5/transform3
+        weight: 1
+      - path: pSphere6
+        weight: 1
+      - path: pSphere6/transform2
+        weight: 1
+      - path: pSphere7
+        weight: 1
+      - path: pSphere7/transform1
+        weight: 1
+      - path: pSphere8
+        weight: 1
+      - path: pSphere9
+        weight: 1
+      - path: pSphere10
+        weight: 1
+      - path: pSphere11
+        weight: 1
+      - path: pSphere12
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.9
     isReadable: 1
   meshes:
     lODScreenPercentages: []

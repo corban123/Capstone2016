@@ -31,6 +31,16 @@ public class BaseScript : MonoBehaviour {
                 print("Player " + carrier + " scored!");
                 player.GetComponent<BoardScript>().score(element);
                 player.GetComponent<GUIScript> ().enableYouScored ();
+
+                if (carrier == 1) {
+                    GameObject otherPlayer = GameObject.Find ("Player 2");
+                    //otherPlayer.GetComponent<GUIScript> ().enableEnemyScored ();
+                    print ( otherPlayer.name +" should see that " + player.name + " scored");
+                } else if (carrier == 2) {
+                    GameObject otherPlayer = GameObject.Find ("Player 1");
+                    //otherPlayer.GetComponent<GUIScript> ().enableEnemyScored ();
+                    print ( otherPlayer.name +" should see that " + player.name + " scored");
+                }
             }
         }
 
