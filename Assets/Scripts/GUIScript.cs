@@ -18,6 +18,9 @@ public class GUIScript : MonoBehaviour {
     int quarkMeterHeight = 30;
 
     private float delay = 1.633f;
+    private float fadeTime = 5.0f;
+
+    Image blackout;
 
     Animator elementPickedUpAnimator;
     Image elementPickedUpImage;
@@ -58,6 +61,8 @@ public class GUIScript : MonoBehaviour {
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
         enemyScoredAnimator = GameObject.Find ("EnemyScored").GetComponent<Animator> ();
         glowGaugeAnimator = GameObject.Find ("GaugeGlow").GetComponent<Animator> ();
+
+        blackout = GameObject.Find ("Blackout").GetComponent<Image> ();
 
         setDefaults ();
 	}
@@ -202,5 +207,16 @@ public class GUIScript : MonoBehaviour {
         enemyScoredImage.enabled = true;
         enemyScoredAnimator.SetBool ("animating", true);
         enemyScoredStartTime = Time.time;
+    }
+
+    public void blackOutUI() {
+        blackout.canvasRenderer.SetAlpha( 0.01f );
+        StartCoroutine (blackOutCoroutine());
+    }
+
+    IEnumerator blackOutCoroutine() {
+        blackout.CrossFadeAlpha (1.0f, fadeTime, false);
+        yield return new WaitForSeconds(fadeTime);
+        blackout.CrossFadeAlpha (0.0f, fadeTime, false);
     }
 }
