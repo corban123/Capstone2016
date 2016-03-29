@@ -69,7 +69,6 @@ ModelImporter:
     4300006: pSphere11
     4300008: pSphere12
     7400000: ElementAnimation
-    7400000: Take 001
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -206,7 +205,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
