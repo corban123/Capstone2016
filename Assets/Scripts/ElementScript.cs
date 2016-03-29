@@ -8,11 +8,12 @@ using UnityEngine.Networking;
 public class ElementScript : NetworkBehaviour
 {
     public int cost;
-    public int elementID;   //This id is unique to each element (numbered 1-16)
+	[SyncVar]
+	[SerializeField] public int elementID;   //This id is unique to each element (numbered 1-16)
+
     public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
     public GameObject atomBomb;
-    public GameObject metallize;
     enum Element { Alkaline, Metals, Gases, Noble}
     Ray shootRay;
     RaycastHit shootHit;
@@ -38,7 +39,7 @@ public class ElementScript : NetworkBehaviour
         if (IsElementType () == Element.Alkaline) {
             CmdSpawnBlackHole ();
         } else if (IsElementType () == Element.Metals) {
-            CmdSpawnMetal();
+            Freeze ();
         } else if (IsElementType () == Element.Noble) {
             gui.blackOutUI ();
         }
@@ -81,10 +82,14 @@ public class ElementScript : NetworkBehaviour
         NetworkServer.Spawn(instance);
     }
 
-    [Command]
-    void CmdSpawnMetal()
-    {
-        GameObject instance = Instantiate(metallize, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation) as GameObject;
-        NetworkServer.Spawn(instance);
+    void Freeze() {
+        float range = 50f;
+
+        foreach (Collider collider in Physics.OverlapSphere(transform.position, range)) {
+            FirstPersonController fpc = collider.GetComponent<FirstPersonController> ();
+            if (fpc != null) {
+                fpc.FreezeMovement ();
+            }
+        }
     }
 }
