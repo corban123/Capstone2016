@@ -957,12 +957,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9a4d463caa5e14aa5593984669e438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 5
-  elementID: 7
+  cost: 0
+  elementID: 10
   carrier: 0
   blackHole: {fileID: 100000, guid: 019e298c4b22d4d668f33d6a8e4ed0a2, type: 2}
   atomBomb: {fileID: 105428, guid: dfc861abc38150749ad3b8ee77e46517, type: 2}
-  metallize: {fileID: 0}
   range: 100
 --- !u!114 &11475944
 MonoBehaviour:
@@ -1112,7 +1111,7 @@ Prefab:
       objectReference: {fileID: 9566962}
     - target: {fileID: 0}
       propertyPath: cost
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

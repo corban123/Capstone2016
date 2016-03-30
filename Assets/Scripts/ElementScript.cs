@@ -9,7 +9,7 @@ public class ElementScript : NetworkBehaviour
 {
     public int cost;
 	[SyncVar]
-	[SerializeField] public int elementID;   //This id is unique to each element (numbered 1-16)
+	[SerializeField] public int elementID = 0;   //This id is unique to each element (numbered 1-16)
 
     public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;

@@ -78,36 +78,35 @@ public class MoveScript : NetworkBehaviour
 	// Pick up elements and quarks on collision
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Element" && combat.heldElement == -1 && GetComponent<CombatScript>().numQuarks >= collision.GetComponent<ElementScript>().cost)
-        {
-            GetComponent<CombatScript>().numQuarks -= collision.GetComponent<ElementScript>().cost;
-            GameObject pickedElement = collision.gameObject;
-            CmdPickUpElement(this.gameObject.name, pickedElement);
-            print("picked up element " + combat.heldElement);
-            gui.SetElementUI(combat.heldElement);
-            gui.enableElementPickedUp ();
-            Destroy(pickedElement);
-        }
-        if (collision.tag == "Quark")
-        {
-            GameObject pickedQuark = collision.gameObject;
-            print("picked up quark");
-            CmdPickUpQuark(this.gameObject.name, pickedQuark);
-            Destroy(pickedQuark);
-        }
-		source.clip = pickUp;
-		source.Play ();
+		if (isLocalPlayer) {
+			if (collision.tag == "Element" && combat.heldElement == -1 && GetComponent<CombatScript> ().numQuarks >= collision.GetComponent<ElementScript> ().cost) {
+				GetComponent<CombatScript> ().numQuarks -= collision.GetComponent<ElementScript> ().cost;
+				GameObject pickedElement = collision.gameObject;
+				CmdPickUpElement (this.gameObject.name, pickedElement);
+				print ("picked up element " + combat.heldElement);
+				gui.SetElementUI (combat.heldElement);
+				gui.enableElementPickedUp ();
+				Destroy (pickedElement);
+			}
+			if (collision.tag == "Quark") {
+				GameObject pickedQuark = collision.gameObject;
+				print ("picked up quark");
+				CmdPickUpQuark (this.gameObject.name, pickedQuark);
+				Destroy (pickedQuark);
+			}
+			source.clip = pickUp;
+			source.Play ();
 
-        if (collision.tag == "Killbox") {
-            print ("you died :(");
-            Respawn ();
-        }
+			if (collision.tag == "Killbox") {
+				print ("you died :(");
+				Respawn ();
+			}
+		}
     }
     
     [Command]
     void CmdPickUpElement(string uniqueID, GameObject element)
     {
-        GameObject target = GameObject.Find(uniqueID);
         this.gameObject.GetComponent<CombatScript>().haveElement = true;
         this.gameObject.GetComponent<CombatScript>().heldElement = element.GetComponent<ElementScript>().elementID;
         NetworkServer.Destroy(element);
