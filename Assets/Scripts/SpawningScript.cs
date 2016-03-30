@@ -48,7 +48,7 @@ public class SpawningScript : NetworkBehaviour {
 
         GameObject marker = GetObject (val);
 
-		instance = Instantiate(Element, new Vector3(trans.x, trans.y + 3, trans.z), new Quaternion(0, 0, 0, 0)) as GameObject;
+		instance = Instantiate(Element, new Vector3(trans.x, trans.y + 4, trans.z), new Quaternion(0, 0, 0, 0)) as GameObject;
         marker = Instantiate (marker, new Vector3 (trans.x, trans.y + 10, trans.z), new Quaternion (0, 0, 0, 0)) as GameObject;
         marker.transform.parent = instance.transform;
         NetworkServer.Spawn(instance);
