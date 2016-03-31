@@ -39,7 +39,6 @@ public class GUIScript : MonoBehaviour {
 
     Animator glowGaugeAnimator;
     Image glowGaugeImage;
-    bool animatingGlowGauge;
 
 	// Use this for initialization
 	void Start () {
@@ -186,13 +185,11 @@ public class GUIScript : MonoBehaviour {
     }
 
     public void enableGaugeGlow() {
-        animatingGlowGauge = true;
         glowGaugeImage.enabled = true;
         glowGaugeAnimator.SetBool ("animating", true);
     }
 
     public void disableGaugeGlow() {
-        animatingGlowGauge = false;
         glowGaugeImage.enabled = false;
         glowGaugeAnimator.SetBool ("animating", false);
     }
