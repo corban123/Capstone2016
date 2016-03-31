@@ -1809,7 +1809,6 @@ GameObject:
   - 223: {fileID: 334914295}
   - 114: {fileID: 334914294}
   - 114: {fileID: 334914293}
-  - 114: {fileID: 334914292}
   - 114: {fileID: 334914291}
   m_Layer: 5
   m_Name: Canvas
@@ -1850,18 +1849,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &334914292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 334914290}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d361670a83fa4bc2bd4d16c03e73a02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CrosshairTex: {fileID: 2800000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
 --- !u!114 &334914293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6415,7 +6402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.0008109877, b: 0.0008109877, a: 0}
+  m_Color: {r: 0, g: 0.0008109877, b: 0.0008109877, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

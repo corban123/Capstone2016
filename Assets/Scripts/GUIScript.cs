@@ -77,6 +77,7 @@ public class GUIScript : MonoBehaviour {
         disableYouScored ();
         disableEnemyScored ();
         disableGaugeGlow ();
+        blackout.canvasRenderer.SetAlpha( 0.01f );
     }
 	
 	/**
@@ -210,7 +211,6 @@ public class GUIScript : MonoBehaviour {
     }
 
     public void blackOutUI() {
-        blackout.canvasRenderer.SetAlpha( 0.01f );
         StartCoroutine (blackOutCoroutine());
     }
 
