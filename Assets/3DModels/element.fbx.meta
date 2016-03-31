@@ -29,6 +29,21 @@ ModelImporter:
     100042: transform5
     100044: transform6
     100046: transform7
+    100048: pSphere13
+    100050: pSphere14
+    100052: pSphere15
+    100054: pSphere16
+    100056: pSphere17
+    100058: pSphere18
+    100060: pSphere19
+    100062: pSphere20
+    100064: pSphere21
+    100066: pSphere22
+    100068: pSphere23
+    100070: pSphere24
+    100072: pSphere25
+    100074: pSphere26
+    100076: pSphere27
     400000: //RootNode
     400002: nurbsCircle1
     400004: nurbsCircle2
@@ -53,21 +68,81 @@ ModelImporter:
     400042: transform5
     400044: transform6
     400046: transform7
+    400048: pSphere13
+    400050: pSphere14
+    400052: pSphere15
+    400054: pSphere16
+    400056: pSphere17
+    400058: pSphere18
+    400060: pSphere19
+    400062: pSphere20
+    400064: pSphere21
+    400066: pSphere22
+    400068: pSphere23
+    400070: pSphere24
+    400072: pSphere25
+    400074: pSphere26
+    400076: pSphere27
     2300000: pSphere10
     2300002: pSphere11
     2300004: pSphere12
     2300006: pSphere8
     2300008: pSphere9
+    2300010: pSphere13
+    2300012: pSphere14
+    2300014: pSphere15
+    2300016: pSphere16
+    2300018: pSphere17
+    2300020: pSphere18
+    2300022: pSphere19
+    2300024: pSphere20
+    2300026: pSphere21
+    2300028: pSphere22
+    2300030: pSphere23
+    2300032: pSphere24
+    2300034: pSphere25
+    2300036: pSphere26
+    2300038: pSphere27
     3300000: pSphere10
     3300002: pSphere11
     3300004: pSphere12
     3300006: pSphere8
     3300008: pSphere9
+    3300010: pSphere13
+    3300012: pSphere14
+    3300014: pSphere15
+    3300016: pSphere16
+    3300018: pSphere17
+    3300020: pSphere18
+    3300022: pSphere19
+    3300024: pSphere20
+    3300026: pSphere21
+    3300028: pSphere22
+    3300030: pSphere23
+    3300032: pSphere24
+    3300034: pSphere25
+    3300036: pSphere26
+    3300038: pSphere27
     4300000: pSphere8
     4300002: pSphere9
     4300004: pSphere10
     4300006: pSphere11
     4300008: pSphere12
+    4300010: pSphere13
+    4300012: pSphere14
+    4300014: pSphere15
+    4300016: pSphere16
+    4300018: pSphere17
+    4300020: pSphere18
+    4300022: pSphere19
+    4300024: pSphere20
+    4300026: pSphere21
+    4300028: pSphere22
+    4300030: pSphere23
+    4300032: pSphere24
+    4300034: pSphere25
+    4300036: pSphere26
+    4300038: pSphere27
     7400000: ElementAnimation
     9500000: //RootNode
     11100000: //RootNode
