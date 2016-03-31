@@ -3,7 +3,7 @@ guid: 7206aa12a509c16428aa0a1aa241d43a
 timeCreated: 1458787636
 licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
     100002: nurbsCircle1
@@ -29,6 +29,7 @@ ModelImporter:
     100042: transform5
     100044: transform6
     100046: transform7
+<<<<<<< Updated upstream
     100048: pSphere13
     100050: pSphere14
     100052: pSphere15
@@ -44,6 +45,16 @@ ModelImporter:
     100072: pSphere25
     100074: pSphere26
     100076: pSphere27
+=======
+    100048: locator1
+    100050: pSphere13
+    100052: pSphere14
+    100054: pSphere15
+    100056: pSphere16
+    100058: pSphere17
+    100060: pSphere18
+    100062: pSphere19
+>>>>>>> Stashed changes
     400000: //RootNode
     400002: nurbsCircle1
     400004: nurbsCircle2
@@ -68,6 +79,7 @@ ModelImporter:
     400042: transform5
     400044: transform6
     400046: transform7
+<<<<<<< Updated upstream
     400048: pSphere13
     400050: pSphere14
     400052: pSphere15
@@ -83,6 +95,16 @@ ModelImporter:
     400072: pSphere25
     400074: pSphere26
     400076: pSphere27
+=======
+    400048: locator1
+    400050: pSphere13
+    400052: pSphere14
+    400054: pSphere15
+    400056: pSphere16
+    400058: pSphere17
+    400060: pSphere18
+    400062: pSphere19
+>>>>>>> Stashed changes
     2300000: pSphere10
     2300002: pSphere11
     2300004: pSphere12
@@ -95,6 +117,7 @@ ModelImporter:
     2300018: pSphere17
     2300020: pSphere18
     2300022: pSphere19
+<<<<<<< Updated upstream
     2300024: pSphere20
     2300026: pSphere21
     2300028: pSphere22
@@ -103,6 +126,8 @@ ModelImporter:
     2300034: pSphere25
     2300036: pSphere26
     2300038: pSphere27
+=======
+>>>>>>> Stashed changes
     3300000: pSphere10
     3300002: pSphere11
     3300004: pSphere12
@@ -115,6 +140,7 @@ ModelImporter:
     3300018: pSphere17
     3300020: pSphere18
     3300022: pSphere19
+<<<<<<< Updated upstream
     3300024: pSphere20
     3300026: pSphere21
     3300028: pSphere22
@@ -123,6 +149,8 @@ ModelImporter:
     3300034: pSphere25
     3300036: pSphere26
     3300038: pSphere27
+=======
+>>>>>>> Stashed changes
     4300000: pSphere8
     4300002: pSphere9
     4300004: pSphere10
@@ -135,6 +163,7 @@ ModelImporter:
     4300018: pSphere17
     4300020: pSphere18
     4300022: pSphere19
+<<<<<<< Updated upstream
     4300024: pSphere20
     4300026: pSphere21
     4300028: pSphere22
@@ -143,6 +172,8 @@ ModelImporter:
     4300034: pSphere25
     4300036: pSphere26
     4300038: pSphere27
+=======
+>>>>>>> Stashed changes
     7400000: ElementAnimation
     9500000: //RootNode
     11100000: //RootNode
@@ -153,7 +184,6 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -161,9 +191,9 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
-    animationRotationError: 0.5
-    animationPositionError: 0.5
-    animationScaleError: 0.5
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
@@ -177,7 +207,6 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 1
-      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -242,7 +271,6 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -263,6 +291,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
@@ -270,12 +299,12 @@ ModelImporter:
   humanDescription:
     human: []
     skeleton: []
-    armTwist: 0.5
-    foreArmTwist: 0.5
-    upperLegTwist: 0.5
-    legTwist: 0.5
-    armStretch: 0.05
-    legStretch: 0.05
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
