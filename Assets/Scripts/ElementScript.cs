@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
 using UnityEngine.Networking;
 /*
 *   This script contains the logic for elements and their abilities/power ups, and will be used by elements that have been fired
@@ -11,7 +11,7 @@ public class ElementScript : NetworkBehaviour
 	[SyncVar]
 	[SerializeField] public int elementID = 0;   //This id is unique to each element (numbered 1-16)
 
-    public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
+    [SyncVar (hook = "OnCarrierChanged")] public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
     public GameObject atomBomb;
     enum Element { Alkaline, Metals, Gases, Noble}
@@ -19,20 +19,37 @@ public class ElementScript : NetworkBehaviour
     RaycastHit shootHit;
     LineRenderer gunLine;
     public float range = 100f;
-    GUIScript gui;
+    GUIScript guiOtherPlayer;
 
 
 	// Use this for initialization
 	void Start ()
     {
-        gui = gameObject.GetComponent<GUIScript> ();
 	}
 	
 	// Update is called once per frame
 	void Update ()
-    {
-	
+    { 
 	}
+
+    // When the carrier of the element changes to be a player, we need to find the GUIScript
+    // of the other player.  If there is only one player, print a message.
+    void OnCarrierChanged(int c)
+    {
+        carrier = c;
+        if (carrier == 1) {
+            try {
+                guiOtherPlayer = GameObject.Find ("Player 2").GetComponent<GUIScript> ();
+            } catch (Exception e) {
+                print ("Only one player in the game. Couldn't perform power up.");
+            }
+                
+        } else if (carrier == 2) {
+            guiOtherPlayer = GameObject.Find ("Player 1").GetComponent<GUIScript> ();
+        } else {
+            print ("Error: No carrier of the element that was shot.");
+        }
+    }
 
     public void PowerUp()
     {
@@ -41,7 +58,7 @@ public class ElementScript : NetworkBehaviour
         } else if (IsElementType () == Element.Metals) {
             Freeze ();
         } else if (IsElementType () == Element.Noble) {
-            gui.blackOutUI ();
+            guiOtherPlayer.blackOutUI ();
         }
         else {
             CmdSpawnBomb();

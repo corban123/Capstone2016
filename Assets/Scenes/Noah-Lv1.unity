@@ -372,7 +372,7 @@ MonoBehaviour:
   - {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
   - {fileID: 119328, guid: 9039176cb9fa54543abe67b16b393b46, type: 2}
   - {fileID: 161630, guid: 81cd98848d30d144b8855512d6030eaf, type: 2}
-  - {fileID: 0}
+  - {fileID: 168810, guid: c2e5faac42e5345038adbfd06e0c0ecb, type: 2}
   - {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
   - {fileID: 184272, guid: a9e5a3a42580847439d0eb88ddb2dcaa, type: 2}
   - {fileID: 107250, guid: 394bdf465f8a745b196486aab079a59d, type: 2}
@@ -1809,7 +1809,6 @@ GameObject:
   - 223: {fileID: 334914295}
   - 114: {fileID: 334914294}
   - 114: {fileID: 334914293}
-  - 114: {fileID: 334914292}
   - 114: {fileID: 334914291}
   m_Layer: 5
   m_Name: Canvas
@@ -1850,18 +1849,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &334914292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 334914290}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d361670a83fa4bc2bd4d16c03e73a02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CrosshairTex: {fileID: 2800000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
 --- !u!114 &334914293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6415,7 +6402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.0008109877, b: 0.0008109877, a: 0}
+  m_Color: {r: 0, g: 0.0008109877, b: 0.0008109877, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7519,7 +7506,7 @@ Light:
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 12100000, guid: 1b8cbb37f206944c7bc235686d0cb229, type: 2}
+  m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2

@@ -31,7 +31,7 @@ public class QuarkChild : NetworkBehaviour {
 	[Command]
 	public void CmdSpawn(){
 		GameObject instance;
-		instance = (Instantiate (quark, new Vector3(this.transform.position.x, this.transform.position.y+3, this.transform.position.z), this.transform.rotation)) as GameObject;
+		instance = (Instantiate (quark, new Vector3(this.transform.position.x, this.transform.position.y+2, this.transform.position.z), this.transform.rotation)) as GameObject;
 		spawnedObject = instance;
 
 		NetworkServer.Spawn (instance);

@@ -22,7 +22,7 @@ public class FirstPersonController : NetworkBehaviour
 	float upDownRange = 60.0f;
 
     float startTime;
-    float duration = 2.0f;
+    float duration = 10.0f;
     bool freezing;
     float freezeRate = 0.025f;
 
@@ -129,7 +129,6 @@ public class FirstPersonController : NetworkBehaviour
                 // Slowing down
                 else {
                     moveFactor -= freezeRate;
-                    print (moveFactor);
                 }
             }
 
