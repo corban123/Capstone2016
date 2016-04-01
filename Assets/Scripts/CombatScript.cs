@@ -11,7 +11,7 @@ public class CombatScript : NetworkBehaviour
     private float nextFire;
     public float fireRate;
 
-    [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
+    [SyncVar] public int numQuarks = 0; 
     public bool haveElement;
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
 
@@ -55,7 +55,7 @@ public class CombatScript : NetworkBehaviour
         int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
         if(numQuarks > 0)
         {
-            numQuarks--;
+            LooseQuarks ();
             instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
         }
         else if(haveElement)
@@ -117,13 +117,17 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
-    /**
-     * Update the number of quarks and the quark meter when health is changed.
-     */
-    void OnHealthChanged(int hlth)
-    {
-        numQuarks = hlth;
-        print ("in on change");
+    public void AddQuarks() {
+        numQuarks = numQuarks + 1;
+        UpdateQuarkGUI ();
+    }
+
+    public void LooseQuarks() {
+        numQuarks = numQuarks - 1;
+        UpdateQuarkGUI ();
+    }
+
+    void UpdateQuarkGUI() {
         gui.updateQuarkMeter (numQuarks);
 
         if (numQuarks >= elementPickUpPrice) {
