@@ -67,6 +67,7 @@ public class CombatScript : NetworkBehaviour
             instance.GetComponent<ElementScript>().elementID = heldElement;
             haveElement = false;
             heldElement = -1;
+            gui.DeleteElementUI ();
         }
         else
         {
@@ -122,6 +123,7 @@ public class CombatScript : NetworkBehaviour
     void OnHealthChanged(int hlth)
     {
         numQuarks = hlth;
+        print ("in on change");
         gui.updateQuarkMeter (numQuarks);
 
         if (numQuarks >= elementPickUpPrice) {
