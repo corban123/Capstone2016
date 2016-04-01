@@ -3526,6 +3526,14 @@ Prefab:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: quarkShot
+      value: 
+      objectReference: {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
+    - target: {fileID: 0}
+      propertyPath: shot
+      value: 
+      objectReference: {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146248}

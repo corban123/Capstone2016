@@ -82,6 +82,10 @@ public class MoveScript : NetworkBehaviour
 			if (collision.tag == "Element" && combat.heldElement == -1 && GetComponent<CombatScript> ().numQuarks >= collision.GetComponent<ElementScript> ().cost) {
 				GetComponent<CombatScript> ().numQuarks -= collision.GetComponent<ElementScript> ().cost;
 				GameObject pickedElement = collision.gameObject;
+ 
+                this.gameObject.GetComponent<CombatScript>().haveElement = true;
+                this.gameObject.GetComponent<CombatScript>().heldElement = pickedElement.GetComponent<ElementScript>().elementID;
+
 				CmdPickUpElement (this.gameObject.name, pickedElement);
 				print ("picked up element " + combat.heldElement);
 				gui.SetElementUI (combat.heldElement);
@@ -103,18 +107,17 @@ public class MoveScript : NetworkBehaviour
 			}
 		}
     }
-    
+
     [Command]
     void CmdPickUpElement(string uniqueID, GameObject element)
     {
-        this.gameObject.GetComponent<CombatScript>().haveElement = true;
-        this.gameObject.GetComponent<CombatScript>().heldElement = element.GetComponent<ElementScript>().elementID;
         NetworkServer.Destroy(element);
     }
 
     [Command]
     void CmdPickUpQuark(string uniqueID, GameObject quark)
     {
+        Debug.Log("double testing");
         GameObject target = GameObject.Find(uniqueID);
         target.GetComponent<CombatScript>().numQuarks++;
         NetworkServer.Destroy(quark);

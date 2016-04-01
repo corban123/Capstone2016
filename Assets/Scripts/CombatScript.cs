@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 public class CombatScript : NetworkBehaviour
 {
-    public GameObject shot;
+    public GameObject quarkShot;
     public GameObject elementShot;
     public GameObject basicShot;
     public Transform shotSpawn;
@@ -40,7 +40,7 @@ public class CombatScript : NetworkBehaviour
         {
             gameObject.GetComponent<Animator>().Play("Shoot");
             nextFire = Time.time + fireRate;
-            CmdShoot();
+            Shoot ();
         }
         if (Time.time - startTime > 3)
         {
@@ -48,10 +48,7 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
-    //Will create a projectile based on what the player has available in the inventory
-    [Command]
-    public void CmdShoot()
-    {
+    void Shoot() {
         GameObject instance;
         Vector3 newPos = shotSpawn.position;
         Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
@@ -59,23 +56,31 @@ public class CombatScript : NetworkBehaviour
         if(numQuarks > 0)
         {
             numQuarks--;
-            instance = Instantiate(shot, newPos, newRot) as GameObject;
+            instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
         }
         else if(haveElement)
         {
             instance = Instantiate(elementShot, newPos, newRot) as GameObject;
             print(playerNum + " fires element " + heldElement);
+
             instance.GetComponent<ElementScript>().carrier = playerNum;
             instance.GetComponent<ElementScript>().elementID = heldElement;
             haveElement = false;
-            heldElement = -1; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
-            gui.DeleteElementUI();
+            heldElement = -1;
         }
         else
         {
             instance = Instantiate(basicShot, newPos, newRot) as GameObject;
         }
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+        CmdShoot (instance);
+    }
+        
+
+    //Will create a projectile based on what the player has available in the inventory
+    [Command]
+    public void CmdShoot(GameObject instance)
+    {
         NetworkServer.Spawn(instance);
     }
 

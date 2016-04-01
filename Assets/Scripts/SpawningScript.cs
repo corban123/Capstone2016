@@ -42,7 +42,6 @@ public class SpawningScript : NetworkBehaviour {
     [Command]
 	void CmdspawnElement(int val, Vector3 trans, string name)
     {
-
         GameObject instance;
         Element.GetComponent<ElementScript>().elementID = val;
 
