@@ -493,7 +493,7 @@ GameObject:
   - 114: {fileID: 11456712}
   - 114: {fileID: 11459984}
   m_Layer: 0
-  m_Name: Player
+  m_Name: scientist_animations_NEW
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2352,7 +2352,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.32707, y: 10.392578, z: -24.686201}
+  m_LocalPosition: {x: 17.463987, y: 71.73349, z: -314.8456}
   m_LocalScale: {x: 19.559252, y: 19.559252, z: 19.559252}
   m_Children:
   - {fileID: 414532}
@@ -3167,7 +3167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49f0d035caea4e9d9a4c320d88f405c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
+  quarkShot: {fileID: 124098, guid: 3af416e7286dbec4e892782c6b824592, type: 2}
   elementShot: {fileID: 119328, guid: 9039176cb9fa54543abe67b16b393b46, type: 2}
   basicShot: {fileID: 161630, guid: 81cd98848d30d144b8855512d6030eaf, type: 2}
   shotSpawn: {fileID: 414532}

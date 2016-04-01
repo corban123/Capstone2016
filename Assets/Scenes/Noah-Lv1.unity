@@ -363,7 +363,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 146248, guid: 1a731f611eed54a6ead6191f83201904, type: 2}
+  m_PlayerPrefab: {fileID: 127950, guid: ab9640dc180eb3b4b9a6dc32c752d4a0, type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 1
   m_OfflineScene: 
@@ -384,7 +384,7 @@ MonoBehaviour:
   - {fileID: 119512, guid: ad1ecc478fff14e1980ea7366525f52a, type: 2}
   - {fileID: 139492, guid: 0497de5b7727645258228bc598191a91, type: 2}
   - {fileID: 164966, guid: 6ec15bc62c04a460cadc9f4349c303eb, type: 2}
-  - {fileID: 118896, guid: fd4b1b5ea58a115489407e327716e4da, type: 2}
+  - {fileID: 108330, guid: fd4b1b5ea58a115489407e327716e4da, type: 2}
   - {fileID: 181412, guid: 49f781a7f4a1442f98964ad3914d8153, type: 2}
   - {fileID: 151530, guid: e2c96f178034846c2929ba8a4b428875, type: 2}
   - {fileID: 122844, guid: 3b324c84f27224d77b96db0cb5744d6f, type: 2}
@@ -1901,6 +1901,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -3907,7 +3908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 888abf66b11bcb9439fb2c02bc6e965d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Element: {fileID: 118896, guid: fd4b1b5ea58a115489407e327716e4da, type: 2}
+  Element: {fileID: 108330, guid: fd4b1b5ea58a115489407e327716e4da, type: 2}
   barium: {fileID: 184272, guid: a9e5a3a42580847439d0eb88ddb2dcaa, type: 2}
   calcium: {fileID: 107250, guid: 394bdf465f8a745b196486aab079a59d, type: 2}
   carbon: {fileID: 193666, guid: 7bc9b7f6638a84c96aab60eb862be1ae, type: 2}
@@ -5973,7 +5974,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
@@ -9781,7 +9782,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 4717d7560f90e1840a9dfec3ea5b8e3f, type: 2}
     - target: {fileID: 400044, guid: 398a6ef8800090b45880bd88c3e1b113, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400044, guid: 398a6ef8800090b45880bd88c3e1b113, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10414,7 +10415,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 169502, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_Name

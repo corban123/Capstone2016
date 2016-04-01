@@ -1,96 +1,74 @@
 fileFormatVersion: 2
 guid: 7206aa12a509c16428aa0a1aa241d43a
+timeCreated: 1458787636
+licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: locator1
-    100004: pSphere1
-    100006: pSphere10
-    100008: pSphere11
-    100010: pSphere12
-    100012: pSphere13
-    100014: pSphere14
-    100016: pSphere15
-    100018: pSphere16
-    100020: pSphere17
-    100022: pSphere18
-    100024: pSphere19
-    100026: pSphere2
-    100028: pSphere3
-    100030: pSphere4
-    100032: pSphere5
-    100034: pSphere6
-    100036: pSphere7
-    100038: pSphere9
-    100040: transform1
-    100042: transform2
-    100044: transform3
-    100046: transform4
-    100048: transform5
-    100050: transform6
-    100052: transform7
+    100002: nurbsCircle1
+    100004: nurbsCircle2
+    100006: nurbsCircle3
+    100008: nurbsCircle4
+    100010: pSphere1
+    100012: pSphere10
+    100014: pSphere11
+    100016: pSphere12
+    100018: pSphere2
+    100020: pSphere3
+    100022: pSphere4
+    100024: pSphere5
+    100026: pSphere6
+    100028: pSphere7
+    100030: pSphere8
+    100032: pSphere9
+    100034: transform1
+    100036: transform2
+    100038: transform3
+    100040: transform4
+    100042: transform5
+    100044: transform6
+    100046: transform7
     400000: //RootNode
-    400002: locator1
-    400004: pSphere1
-    400006: pSphere10
-    400008: pSphere11
-    400010: pSphere12
-    400012: pSphere13
-    400014: pSphere14
-    400016: pSphere15
-    400018: pSphere16
-    400020: pSphere17
-    400022: pSphere18
-    400024: pSphere19
-    400026: pSphere2
-    400028: pSphere3
-    400030: pSphere4
-    400032: pSphere5
-    400034: pSphere6
-    400036: pSphere7
-    400038: pSphere9
-    400040: transform1
-    400042: transform2
-    400044: transform3
-    400046: transform4
-    400048: transform5
-    400050: transform6
-    400052: transform7
+    400002: nurbsCircle1
+    400004: nurbsCircle2
+    400006: nurbsCircle3
+    400008: nurbsCircle4
+    400010: pSphere1
+    400012: pSphere10
+    400014: pSphere11
+    400016: pSphere12
+    400018: pSphere2
+    400020: pSphere3
+    400022: pSphere4
+    400024: pSphere5
+    400026: pSphere6
+    400028: pSphere7
+    400030: pSphere8
+    400032: pSphere9
+    400034: transform1
+    400036: transform2
+    400038: transform3
+    400040: transform4
+    400042: transform5
+    400044: transform6
+    400046: transform7
     2300000: pSphere10
     2300002: pSphere11
     2300004: pSphere12
-    2300006: pSphere13
-    2300008: pSphere14
-    2300010: pSphere15
-    2300012: pSphere16
-    2300014: pSphere17
-    2300016: pSphere18
-    2300018: pSphere19
-    2300020: pSphere9
+    2300006: pSphere8
+    2300008: pSphere9
     3300000: pSphere10
     3300002: pSphere11
     3300004: pSphere12
-    3300006: pSphere13
-    3300008: pSphere14
-    3300010: pSphere15
-    3300012: pSphere16
-    3300014: pSphere17
-    3300016: pSphere18
-    3300018: pSphere19
-    3300020: pSphere9
-    4300000: pSphere12
-    4300002: pSphere11
+    3300006: pSphere8
+    3300008: pSphere9
+    4300000: pSphere8
+    4300002: pSphere9
     4300004: pSphere10
-    4300006: pSphere9
-    4300008: pSphere13
-    4300010: pSphere14
-    4300012: pSphere15
-    4300014: pSphere16
-    4300016: pSphere17
-    4300018: pSphere18
-    4300020: pSphere19
-    7400000: ElementAnimation
+    4300006: pSphere11
+    4300008: pSphere12
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -106,7 +84,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -114,18 +92,18 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: ElementAnimation
+      name: Take 001
       takeName: Take 001
       firstFrame: 1
       lastFrame: 120
-      wrapMode: 2
+      wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 1
+      loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -188,11 +166,11 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0.9
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
