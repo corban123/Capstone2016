@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 public class GravityWell : NetworkBehaviour
 {
 	float range = 50f;
-    float pullForce = 1000f;
+    float pullForce = 3000f;
     public int duration;
 	void Start()
 	{

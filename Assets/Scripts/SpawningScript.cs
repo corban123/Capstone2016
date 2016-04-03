@@ -42,7 +42,6 @@ public class SpawningScript : NetworkBehaviour {
     [Command]
 	void CmdspawnElement(int val, Vector3 trans, string name)
     {
-
         GameObject instance;
         Element.GetComponent<ElementScript>().elementID = val;
 
@@ -56,29 +55,31 @@ public class SpawningScript : NetworkBehaviour {
     }
     // Update is called once per frame
     void Update () {
-
-        if (p1Board == null && GameObject.Find("Player 1")){
-            p1Board = GameObject.Find("Player 1").GetComponent<BoardScript>();
-            if (GameObject.Find("ELEMENT MARKERS"))
+        if (isServer)
+        {
+            if (p1Board == null && GameObject.Find("Player 1"))
             {
-                spawnList = GameObject.Find("ELEMENT MARKERS");
-                for (int i = 0; i < spawnList.transform.childCount; i++)
+                p1Board = GameObject.Find("Player 1").GetComponent<BoardScript>();
+                if (GameObject.Find("ELEMENT MARKERS"))
                 {
-                    spawnPoints.Add(spawnList.transform.GetChild(i).transform);
+                    spawnList = GameObject.Find("ELEMENT MARKERS");
+                    for (int i = 0; i < spawnList.transform.childCount; i++)
+                    {
+                        spawnPoints.Add(spawnList.transform.GetChild(i).transform);
+                    }
                 }
-            }
-            for (int i = 0; i < spawnPoints.Count;)
-            {
-                int x = Random.Range(0, 16);
-                if (checkSetup(x, i))
+                for (int i = 0; i < spawnPoints.Count;)
                 {
-                    int val = p1Board.getValueAtPoint(x / 4, x % 4);
-                    CmdspawnElement(val, (spawnPoints[i] as Transform).position, (spawnPoints[i] as Transform).gameObject.name);
-                    i++;
+                    int x = Random.Range(0, 16);
+                    if (checkSetup(x, i))
+                    {
+                        int val = p1Board.getValueAtPoint(x / 4, x % 4);
+                        CmdspawnElement(val, (spawnPoints[i] as Transform).position, (spawnPoints[i] as Transform).gameObject.name);
+                        i++;
+                    }
                 }
             }
         }
-           
 	}
 
     bool checkSetup(int cur, int i)

@@ -4,14 +4,14 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 public class CombatScript : NetworkBehaviour
 {
-    public GameObject shot;
+    public GameObject quarkShot;
     public GameObject elementShot;
     public GameObject basicShot;
     public Transform shotSpawn;
     private float nextFire;
     public float fireRate;
 
-    [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
+    [SyncVar] public int numQuarks = 0; 
     public bool haveElement;
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
 
@@ -40,7 +40,7 @@ public class CombatScript : NetworkBehaviour
         {
             gameObject.GetComponent<Animator>().Play("Shoot");
             nextFire = Time.time + fireRate;
-            CmdShoot();
+            Shoot ();
         }
         if (Time.time - startTime > 3)
         {
@@ -48,34 +48,40 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
-    //Will create a projectile based on what the player has available in the inventory
-    [Command]
-    public void CmdShoot()
-    {
+    void Shoot() {
         GameObject instance;
         Vector3 newPos = shotSpawn.position;
         Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
         int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
         if(numQuarks > 0)
         {
-            numQuarks--;
-            instance = Instantiate(shot, newPos, newRot) as GameObject;
+            LooseQuarks ();
+            instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
         }
         else if(haveElement)
         {
             instance = Instantiate(elementShot, newPos, newRot) as GameObject;
             print(playerNum + " fires element " + heldElement);
+
             instance.GetComponent<ElementScript>().carrier = playerNum;
             instance.GetComponent<ElementScript>().elementID = heldElement;
             haveElement = false;
-            heldElement = -1; //They shot the element, so it should be set back to null, this could be a potential issue depending on how we handle references to the elements because we might be removing the game object completely.
-            gui.DeleteElementUI();
+            heldElement = -1;
+            gui.DeleteElementUI ();
         }
         else
         {
             instance = Instantiate(basicShot, newPos, newRot) as GameObject;
         }
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+        CmdShoot (instance);
+    }
+        
+
+    //Will create a projectile based on what the player has available in the inventory
+    [Command]
+    public void CmdShoot(GameObject instance)
+    {
         NetworkServer.Spawn(instance);
     }
 
@@ -111,12 +117,17 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
-    /**
-     * Update the number of quarks and the quark meter when health is changed.
-     */
-    void OnHealthChanged(int hlth)
-    {
-        numQuarks = hlth;
+    public void AddQuarks() {
+        numQuarks = numQuarks + 1;
+        UpdateQuarkGUI ();
+    }
+
+    public void LooseQuarks() {
+        numQuarks = numQuarks - 1;
+        UpdateQuarkGUI ();
+    }
+
+    void UpdateQuarkGUI() {
         gui.updateQuarkMeter (numQuarks);
 
         if (numQuarks >= elementPickUpPrice) {
