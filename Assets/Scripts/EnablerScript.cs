@@ -9,8 +9,8 @@ public class EnablerScript : NetworkBehaviour {
 	CharacterController characterController;
 
 	MoveScript move;
-	FirstPersonController fpC;
-	CombatScript combat;
+    FirstPersonController fpC;
+    CombatScript combat;
 
 	[SerializeField] Camera FPSCam;
 	[SerializeField] AudioListener audioListen;

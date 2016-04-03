@@ -483,7 +483,6 @@ GameObject:
   - 143: {fileID: 14334506}
   - 54: {fileID: 5496596}
   - 82: {fileID: 8263362}
-  - 114: {fileID: 11456006}
   - 114: {fileID: 11416692}
   - 114: {fileID: 11427646}
   - 114: {fileID: 11435010}
@@ -492,6 +491,7 @@ GameObject:
   - 114: {fileID: 11431340}
   - 114: {fileID: 11456712}
   - 114: {fileID: 11459984}
+  - 114: {fileID: 11475016}
   m_Layer: 0
   m_Name: scientist_animations_NEW
   m_TagString: Player
@@ -3034,7 +3034,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.618
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3139,8 +3139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUp: {fileID: 8300000, guid: 8119703816119f54981a7aa095a6b1ef, type: 3}
-  walk: {fileID: 8300000, guid: 399fb8e5f60516d46b306ae8400443e7, type: 3}
-  jumpUp: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
   player1RespawnPoint: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
   player2RespawnPoint: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
 --- !u!114 &11419308
@@ -3280,26 +3278,6 @@ MonoBehaviour:
     i15: 160
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &11456006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 127950}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ba123bf93525b54aad379f800587fa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPSCam: {fileID: 2072118}
-  audioListen: {fileID: 8140442}
-  jumpUp: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
-  jumpLand: {fileID: 0}
-  movementSpeed: 25
-  mouseSensitivity: 5
-  jumpSpeed: 15
-  moveFactor: 0
-  fireRate: 0
 --- !u!114 &11456712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3351,6 +3329,88 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &11475016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5898098e15f328b41aefa3dca81a9db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_WalkSpeed: 40
+  m_RunstepLenghten: 0.705
+  m_JumpSpeed: 30
+  m_StickToGroundForce: 10
+  m_GravityMultiplier: 5
+  m_MouseLook:
+    XSensitivity: 2
+    YSensitivity: 2
+    clampVerticalRotation: 1
+    MinimumX: -90
+    MaximumX: 90
+    smooth: 0
+    smoothTime: 5
+    lockCursor: 1
+  m_UseFovKick: 1
+  m_FovKick:
+    Camera: {fileID: 0}
+    originalFov: 0
+    FOVIncrease: 3
+    TimeToIncrease: 1
+    TimeToDecrease: 1
+    IncreaseCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_UseHeadBob: 0
+  m_HeadBob:
+    HorizontalBobRange: 0.33
+    VerticalBobRange: 0.33
+    Bobcurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    VerticaltoHorizontalRatio: 1
+  m_JumpBob:
+    BobDuration: 0
+    BobAmount: 0
+  m_StepInterval: 37
+  m_FootstepSounds: {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
+  m_JumpSound: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
+  m_LandSound: {fileID: 8300000, guid: 4e057d7a710088f4190da57b97229670, type: 3}
+  moveFactor: 0
 --- !u!124 &12445872
 Behaviour:
   m_ObjectHideFlags: 1

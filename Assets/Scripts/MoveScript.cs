@@ -15,10 +15,6 @@ public class MoveScript : NetworkBehaviour
 
     [SerializeField]
     AudioClip pickUp;
-    [SerializeField]
-    AudioClip walk;
-    [SerializeField]
-    AudioClip jumpUp;
     float upDownRange = 60.0f;
     Quaternion nextCameraRotation;
     Quaternion nextPlayerRotation;
@@ -43,48 +39,6 @@ public class MoveScript : NetworkBehaviour
     {
         //this.gameObject.transform.GetChild(0).transform.rotation = this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation;
     }
-
-    // Rotate the first person camera by veritcalRotation degrees in the vertical direction.
-    // Rotate the first person character by leftRight degrees in the horizontal direction.
-    public void RotateCharacter(float verticalRotation, float leftRight)
-    {
-        verticalRotation = Mathf.Clamp(verticalRotation, -upDownRange, upDownRange);
-        nextCameraRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
-        nextPlayerRotation *= Quaternion.Euler(0f, leftRight * 5, 0f);
-        nextCameraRotation = ClampRotationAroundXAxis(nextCameraRotation);
-        Camera.main.transform.localRotation = Quaternion.Lerp(Camera.main.transform.localRotation, nextCameraRotation, Time.fixedDeltaTime * 5f);
-        transform.localRotation = Quaternion.Lerp(transform.localRotation, nextPlayerRotation, Time.fixedDeltaTime * 5f);
-    }
-
-    // Move the given CharacterController by the vector speed.
-    public void MoveCharacter(CharacterController characterController, Vector3 speed)
-    {
-        if ((speed.x != 0 && characterController.isGrounded) || (speed.z != 0 && characterController.isGrounded))
-        {
-            if (source.clip != walk)
-            {
-                source.loop = true;
-                source.clip = walk;
-                source.Play();
-            }
-        }
-        else if (((speed.x == 0 && speed.z == 0) && speed.y <= 0))
-        {
-            source.loop = false;
-            source.Stop();
-        }
-        if (speed.x == 0 && speed.y <= 0 && speed.z == 0)
-        {
-            source.clip = null;
-        }
-        if (!characterController.isGrounded && source.clip == walk)
-        {
-            source.clip = null;
-
-        }
-        characterController.Move(speed);
-    }
-
     // Pick up elements and quarks on collision
     void OnTriggerEnter(Collider collision)
     {
