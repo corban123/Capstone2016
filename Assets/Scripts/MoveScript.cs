@@ -94,7 +94,9 @@ public class MoveScript : NetworkBehaviour
             {
                 GetComponent<CombatScript>().numQuarks -= collision.GetComponent<ElementScript>().cost;
                 GameObject pickedElement = collision.gameObject;
-                CmdPickUpElement(this.gameObject.name, pickedElement);
+                this.gameObject.GetComponent<CombatScript>().haveElement = true;
+                this.gameObject.GetComponent<CombatScript>().heldElement = pickedElement.GetComponent<ElementScript>().elementID;
+                CmdPickUpElement(pickedElement);
                 print("picked up element " + combat.heldElement);
                 gui.SetElementUI(combat.heldElement);
                 gui.enableElementPickedUp();
@@ -104,7 +106,8 @@ public class MoveScript : NetworkBehaviour
             {
                 GameObject pickedQuark = collision.gameObject;
                 print("picked up quark");
-                CmdPickUpQuark(this.gameObject.name, pickedQuark);
+                this.gameObject.GetComponent<CombatScript>().AddQuarks();
+                CmdPickUpQuark (pickedQuark);
                 Destroy(pickedQuark);
             }
             source.clip = pickUp;
@@ -119,18 +122,14 @@ public class MoveScript : NetworkBehaviour
     }
 
     [Command]
-    void CmdPickUpElement(string uniqueID, GameObject element)
+    void CmdPickUpElement(GameObject element)
     {
-        this.gameObject.GetComponent<CombatScript>().haveElement = true;
-        this.gameObject.GetComponent<CombatScript>().heldElement = element.GetComponent<ElementScript>().elementID;
         NetworkServer.Destroy(element);
     }
 
     [Command]
-    void CmdPickUpQuark(string uniqueID, GameObject quark)
+    void CmdPickUpQuark(GameObject quark)
     {
-        GameObject target = GameObject.Find(uniqueID);
-        target.GetComponent<CombatScript>().numQuarks++;
         NetworkServer.Destroy(quark);
     }
 
