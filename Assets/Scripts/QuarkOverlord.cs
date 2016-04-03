@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.Networking;
 
 
-public class QuarkOverlord : NetworkBehaviour {
+public class QuarkOverlord : MonoBehaviour {
 	ArrayList preparedToSpawn;
 	ArrayList spawnedList;
 	ArrayList empty;
@@ -32,13 +31,9 @@ public class QuarkOverlord : NetworkBehaviour {
 
 
 	void spawnAll (){
-        if (isServer)
-        {
-            for (int i = 0; i < spawnedList.Count; i++)
-            {
-                ((spawnedList[i]) as QuarkChild).CmdSpawn();
-            }
-        }
+		for(int i = 0; i < spawnedList.Count; i++){
+			((spawnedList[i]) as QuarkChild).CmdSpawn ();
+		}
 	
 	
 	}
@@ -57,35 +52,30 @@ public class QuarkOverlord : NetworkBehaviour {
 	}
 
 	public void deSpawn(){
-        if (isServer)
-        {
-            QuarkChild toPreparedToSpawn = null;
-            QuarkChild toSpawnedList = null;
-            int killPreparedToSpawn = -1;
-            int killToSpawnedList = -1;
-            if (empty.Count > 0)
-            {
-                killPreparedToSpawn = Random.Range(0, empty.Count);
-                toPreparedToSpawn = empty[killPreparedToSpawn] as QuarkChild;
-                empty.RemoveAt(killPreparedToSpawn);
+		QuarkChild toPreparedToSpawn = null;
+		QuarkChild toSpawnedList = null;
+		int killPreparedToSpawn = -1;
+		int killToSpawnedList = -1;
+		if (empty.Count > 0) {
+			killPreparedToSpawn = Random.Range (0, empty.Count);
+			toPreparedToSpawn = empty [killPreparedToSpawn] as QuarkChild;
+			empty.RemoveAt (killPreparedToSpawn);
 
-            }
-            if (preparedToSpawn.Count > 0)
-            {
-                killToSpawnedList = Random.Range(0, preparedToSpawn.Count);
+		}
+		if (preparedToSpawn.Count > 0) {
+			killToSpawnedList = Random.Range (0, preparedToSpawn.Count);
 
-                toSpawnedList = preparedToSpawn[killToSpawnedList] as QuarkChild;
-                (toSpawnedList.GetComponent<QuarkChild>()).CmdSpawn();
+			toSpawnedList = preparedToSpawn [killToSpawnedList] as QuarkChild;
+			(toSpawnedList.GetComponent<QuarkChild>()).CmdSpawn ();
 
 
-                preparedToSpawn.RemoveAt(killToSpawnedList);
-                spawnedList.Add(toSpawnedList);
-                if (toPreparedToSpawn != null)
-                {
-                    preparedToSpawn.Add(toPreparedToSpawn);
-                }
-            }
+			preparedToSpawn.RemoveAt (killToSpawnedList);
+			spawnedList.Add (toSpawnedList);
+			if (toPreparedToSpawn != null) {
+				preparedToSpawn.Add (toPreparedToSpawn);
+			}
+		}
+	
 
-        }
 	}
 }

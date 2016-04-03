@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSource: 0
-  MoveSpeed: 200
+  MoveSpeed: 100
   frequency: 40
   magnitude: 0.3
   shoot: {fileID: 8300000, guid: dd8ebfdfbe79fd8438d0dcf13075e1e7, type: 3}

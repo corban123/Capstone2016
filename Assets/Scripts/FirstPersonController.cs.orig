@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 
@@ -21,15 +21,11 @@ public class FirstPersonController : NetworkBehaviour
     public float jumpSpeed = 8.0f;
 	float upDownRange = 60.0f;
 
-    float startTime;
-    float duration = 10.0f;
-    bool freezing;
-    float freezeRate = 0.025f;
 
+    bool canMove;
 	Vector3 moveDirection;
     float forwardSpeed;
     float sideSpeed;
-    public float moveFactor;
 
 	private float gravity = -20.0f;
 	private bool jump = false;
@@ -43,14 +39,14 @@ public class FirstPersonController : NetworkBehaviour
     CharacterController characterController;
     MoveScript move;
 
-    Animator anim;
+
 
     // Initalize variables for this character
     void Start()
     {
         if (isLocalPlayer)
         {
-			SetCursorState ();
+			//SetCursorState ();
 
 			// Enable the character controller for this player
             characterController = GetComponent<CharacterController>();
@@ -59,14 +55,12 @@ public class FirstPersonController : NetworkBehaviour
 
 			// Grab Move and Combat scripts for player
             move = GetComponent<MoveScript>();
-            anim = GetComponent<Animator>();
+
             forwardSpeed = 0;
             sideSpeed = 0;
 			leftRight = 0;
 			moveDirection = Vector3.zero;
-            freezing = false;
-            moveFactor = 1.0f;
-
+            canMove = true;
         }
     }
 
@@ -84,7 +78,6 @@ public class FirstPersonController : NetworkBehaviour
 				source.clip = jumpUp;
 				source.Play ();
 				jump = true;
-                anim.SetBool("isJump", true);
 			}
         }
 
@@ -97,12 +90,10 @@ public class FirstPersonController : NetworkBehaviour
         {
             forwardSpeed = Input.GetAxis("Vertical");
             sideSpeed = Input.GetAxis("Horizontal");
-            anim.SetFloat("moveZ", forwardSpeed);
-            anim.SetFloat("moveX", sideSpeed);
-            anim.SetFloat("moveY", sideSpeed);
-            anim.SetBool("isGrounded", characterController.isGrounded);
+
             // Rotation
-            leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 10);
+<<<<<<< HEAD
+			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 10);
 			verticalRotation -= Input.GetAxis ("Mouse Y") * mouseSensitivity;
 			float verticalRotation1 = verticalRotation;
 			if (verticalRotation > upDownRange) {
@@ -110,53 +101,51 @@ public class FirstPersonController : NetworkBehaviour
 			
 			} else if (verticalRotation < -upDownRange) {
 				verticalRotation1 = -upDownRange;
+			
 			}
+=======
+			leftRight = Input.GetAxis("Mouse X") * mouseSensitivity * (Time.fixedDeltaTime* 100);
+			verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
+            move.RotateCharacter(verticalRotation , leftRight);
 
-            move.RotateCharacter (verticalRotation1, leftRight);
-
+>>>>>>> 60276fc00066468e5377ffff263ed7c385659f6a
 			// Movement
-            if (freezing) {
-                // Unfreeze
-                if (Time.time - startTime > duration) {
-                    print ("Unfreezing movement");
-                    moveFactor = 1.0f;
-                    freezing = false;
+            if (canMove) {
+                forwardSpeed = forwardSpeed * movementSpeed;
+                sideSpeed = sideSpeed * movementSpeed;
+
+                if (characterController.isGrounded) {
+                    // Reset y velocity if on the ground
+                    moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
+
+                    // Unless we are jumping
+                    if (jump) {
+                        moveDirection.y = jumpSpeed;
+                    }
+                } else {
+                    moveDirection.x = sideSpeed;
+                    moveDirection.z = forwardSpeed;
+                    jump = false;
                 }
-                // Frozen
-                else if (moveFactor <= 0.0f) {
-                    moveFactor = 0.0f;
-                } 
-                // Slowing down
-                else {
-                    moveFactor -= freezeRate;
-                }
+                
+<<<<<<< HEAD
+			moveDirection = transform.TransformDirection (moveDirection);
+
+			// Apply gravity
+			moveDirection.y += gravity * Time.fixedDeltaTime;
+            move.MoveCharacter(characterController, moveDirection * Time.fixedDeltaTime);
+			move.RotateCharacter (verticalRotation1, leftRight);
+		}
+=======
+                moveDirection = transform.TransformDirection (moveDirection);
+
+                // Apply gravity
+                moveDirection.y += gravity * Time.fixedDeltaTime;
+                move.MoveCharacter (characterController, moveDirection * Time.fixedDeltaTime);
             }
-
-            forwardSpeed = forwardSpeed * movementSpeed * moveFactor;
-            sideSpeed = sideSpeed * movementSpeed * moveFactor;
-
-            if (characterController.isGrounded) {
-                // Reset y velocity if on the ground
-                moveDirection = new Vector3 (sideSpeed, gravity, forwardSpeed);
-
-                // Unless we are jumping
-                if (jump && !freezing) {
-                    moveDirection.y = jumpSpeed;
-                }
-            } else {
-                moveDirection.x = sideSpeed;
-                moveDirection.z = forwardSpeed;
-                jump = false;
-                anim.SetBool("isJump", false);
-            }
-            
-            moveDirection = transform.TransformDirection (moveDirection);
-
-            // Apply gravity
-            moveDirection.y += gravity * Time.fixedDeltaTime;
-            move.MoveCharacter (characterController, moveDirection * Time.fixedDeltaTime);
-    	}
-	}
+        }
+>>>>>>> 60276fc00066468e5377ffff263ed7c385659f6a
+    }
 
 	// Lock the cursor to the center of the game window
     void SetCursorState()
@@ -165,13 +154,13 @@ public class FirstPersonController : NetworkBehaviour
 		Cursor.visible = false;
     }
 
-    public void FreezeMovement()
+    public IEnumerator FreezeMovement()
     {
         if (isLocalPlayer)
         {
-            startTime = Time.time;
-            print ("Freezing movement at Time: " + startTime);
-            freezing = true;
+            canMove = false;
+            yield return new WaitForSeconds (2);
+            canMove = true;
         }
     }
         

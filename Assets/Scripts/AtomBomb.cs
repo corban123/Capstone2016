@@ -7,7 +7,7 @@ public class AtomBomb : NetworkBehaviour {
 
     float inner = 10f;
     float outer = 20f;
-    float pushforce = 30f;
+    float pushforce = 20f;
     public int duration;
     private Collider[] victims;
     void Start()
