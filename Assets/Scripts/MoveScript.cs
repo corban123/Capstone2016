@@ -58,14 +58,15 @@ public class MoveScript : NetworkBehaviour
             }
             if (collision.tag == "Quark")
             {
+                source.clip = pickUp;
+                source.Play();
+
                 GameObject pickedQuark = collision.gameObject;
                 print("picked up quark");
                 this.gameObject.GetComponent<CombatScript>().AddQuarks();
                 CmdPickUpQuark (pickedQuark);
                 Destroy(pickedQuark);
             }
-            source.clip = pickUp;
-            source.Play();
 
             if (collision.tag == "Killbox")
             {
@@ -84,6 +85,7 @@ public class MoveScript : NetworkBehaviour
     [Command]
     void CmdPickUpQuark(GameObject quark)
     {
+
         NetworkServer.Destroy(quark);
     }
 
