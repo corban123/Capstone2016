@@ -98,7 +98,7 @@ public class CombatScript : NetworkBehaviour
      */
     void DeductHealth()
     {
-        numQuarks = numQuarks - 1;
+        numQuarks = numQuarks/ 2;
     }
 
     /**
