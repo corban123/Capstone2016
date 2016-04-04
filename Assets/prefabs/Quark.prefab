@@ -12,7 +12,7 @@ GameObject:
   - 135: {fileID: 13507586}
   - 23: {fileID: 2378594}
   - 114: {fileID: 11499064}
-  - 108: {fileID: 10848070}
+  - 108: {fileID: 10817712}
   m_Layer: 0
   m_Name: Quark
   m_TagString: Quark
@@ -65,7 +65,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 120292}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!108 &10848070
+--- !u!108 &10817712
 Light:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -74,7 +74,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 0.54901963, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.5372549, a: 1}
   m_Intensity: 1
   m_Range: 20
   m_SpotAngle: 30
