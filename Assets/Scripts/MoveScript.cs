@@ -27,7 +27,7 @@ public class MoveScript : NetworkBehaviour
         combat = gameObject.GetComponent<CombatScript>();
         source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript>();
-        nextCameraRotation = this.gameObject.GetComponentInChildren<Camera>().transform.localRotation;
+        nextCameraRotation = Camera.main.transform.localRotation;
         nextPlayerRotation = transform.localRotation;
     }
 

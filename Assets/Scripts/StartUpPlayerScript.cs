@@ -12,7 +12,6 @@ public class StartUpPlayerScript : NetworkBehaviour {
 	List<int[,]> boards;
 	bool found;
     bool board1Set;
-    public GameObject Player2Prefab;
 
 	void Start () {
 		// Generate the boards
@@ -36,8 +35,8 @@ public class StartUpPlayerScript : NetworkBehaviour {
                     board1Set = true;
                 }
                 boardObjects[0].gameObject.name = "Player 1";
-                boardObjects[1].SetBoard(boards[1]);
-                boardObjects[1].gameObject.name = "Player 2";
+                boardObjects [1].SetBoard (boards [1]);
+                boardObjects [1].gameObject.name = "Player 2";
                 found = true;
 			}
 		}
