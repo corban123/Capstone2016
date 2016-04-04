@@ -49,9 +49,9 @@ public class startCreatePlayers : NetworkManager
     // on toggle, this function is called, which updates the playerPrefabIndex
     // The index will be the number from the registered spawnable prefabs that 
     // you want for your player
-    public void UpdatePC()
+    public void Update()
     {
-        if (GameObject.Find("Player 2").GetComponent<Toggle>().isOn)
+		if (GameObject.Find("Player 1"))
         {
             playerPrefabIndex = 1;
         }
