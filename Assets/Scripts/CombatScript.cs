@@ -99,7 +99,8 @@ public class CombatScript : NetworkBehaviour
     void DeductHealth()
     {
 		if (numQuarks < 1) {
-			this.gameObject.GetComponent<MoveScript> ().Respawn ();
+
+			//this.gameObject.GetComponent<MoveScript> ().Respawn ();
 		} else {
 			numQuarks = numQuarks / 2;
 		}

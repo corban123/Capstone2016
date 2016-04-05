@@ -19,7 +19,7 @@ GameObject:
   - 82: {fileID: 8287978}
   m_Layer: 0
   m_Name: ElementShot
-  m_TagString: Bullet
+  m_TagString: ElementBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,7 +234,6 @@ MonoBehaviour:
   carrier: 0
   blackHole: {fileID: 100000, guid: 019e298c4b22d4d668f33d6a8e4ed0a2, type: 2}
   atomBomb: {fileID: 105428, guid: dfc861abc38150749ad3b8ee77e46517, type: 2}
-  metallize: {fileID: 161004, guid: d3161ba9e8f19dd428823fd765247042, type: 2}
   range: 100
 --- !u!114 &11465448
 MonoBehaviour:

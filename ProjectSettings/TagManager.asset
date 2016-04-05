@@ -8,6 +8,7 @@ TagManager:
   - Quark
   - Element
   - Killbox
+  - ElementBullet
   layers:
   - Default
   - TransparentFX
