@@ -7,8 +7,15 @@ public class GUIScript : MonoBehaviour {
     Vector2 m_WindowSize;
     Rect m_CrosshairRect;
 
+    public GameObject BlackHoleSprite;
+    public GameObject BlackOutSprite;
+    public GameObject FreezeSprite;
+    public GameObject AtomBombSprite;
+
     BoardScript boardScript;
     Image elementHeldImage;
+
+    Image powerUpImage;
 
     Image quarkMeter;
     readonly int quarkMeterWidth = 10;
@@ -40,6 +47,8 @@ public class GUIScript : MonoBehaviour {
     Animator glowGaugeAnimator;
     Image glowGaugeImage;
 
+    GameObject powerUpObject;
+
 	// Use this for initialization
 	void Start () {
         // Set up the cross hair
@@ -52,6 +61,7 @@ public class GUIScript : MonoBehaviour {
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
         elementPickedUpImage = GameObject.Find ("ElementPickedUp").GetComponent<Image> ();
+        powerUpImage = GameObject.Find ("PowerUpImage").GetComponent<Image> ();
         youScoredImage = GameObject.Find ("YouScored").GetComponent<Image> ();
         enemyScoredImage = GameObject.Find ("EnemyScored").GetComponent<Image> ();
         glowGaugeImage = GameObject.Find ("GaugeGlow").GetComponent<Image> ();
@@ -139,6 +149,7 @@ public class GUIScript : MonoBehaviour {
 
         quarkMeter.rectTransform.sizeDelta = new Vector2 (quarkMeterWidth, quarkMeterHeight);
     }
+        
 
     /**
      * Set the held element to show in the circle at the bottom of the gauge.
@@ -147,6 +158,13 @@ public class GUIScript : MonoBehaviour {
         Sprite elemSprite = boardScript.GetColorSprite (heldElement);
         elementHeldImage.sprite = elemSprite;
         elementHeldImage.color = Color.white;
+        SetPowerUpUI (heldElement);
+    }
+
+    public void SetPowerUpUI(int heldElement) {
+        powerUpObject = GetPowerUpObject (heldElement);
+        powerUpObject = Instantiate (powerUpObject) as GameObject;
+        powerUpObject.transform.SetParent (powerUpImage.transform, false);
     }
 
     /**
@@ -155,6 +173,11 @@ public class GUIScript : MonoBehaviour {
     public void DeleteElementUI() {
         elementHeldImage.sprite = null;
         elementHeldImage.color = Color.black;
+        DeletePowerUpUI ();
+    }
+
+    public void DeletePowerUpUI() {
+        Destroy(powerUpObject);
     }
 
     public void disableElementPickedUp() {
@@ -214,5 +237,20 @@ public class GUIScript : MonoBehaviour {
         blackout.CrossFadeAlpha (1.0f, fadeTime, false);
         yield return new WaitForSeconds(fadeTime);
         blackout.CrossFadeAlpha (0.0f, fadeTime, false);
+    }
+
+    private GameObject GetPowerUpObject(int elementID) {
+        if (elementID >= 0 && elementID <= 3) {
+            return BlackHoleSprite;
+        } else if (elementID >= 4 && elementID <= 7) {
+            return FreezeSprite;
+        } else if (elementID >= 8 && elementID <= 11) {
+            return AtomBombSprite;
+//        } else if (elementID >= 12 && elementID <= 15) {
+//            return BlackOutSprite;
+        } else {
+            print ("element number is incorrect");
+        }
+        return new GameObject ();
     }
 }

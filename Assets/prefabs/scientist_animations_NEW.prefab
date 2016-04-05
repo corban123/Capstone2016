@@ -3290,6 +3290,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CrosshairTex: {fileID: 2800000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
+  BlackHoleSprite: {fileID: 191164, guid: d16c2ffcd7b4f4819b137a25789cd0eb, type: 2}
+  BlackOutSprite: {fileID: 0}
+  FreezeSprite: {fileID: 147880, guid: be4f0aa532c1b4997abc996ea79fea58, type: 2}
+  AtomBombSprite: {fileID: 144286, guid: 0ef3f41ea4a7347c6bdf7ed667ddbbc8, type: 2}
 --- !u!114 &11459984
 MonoBehaviour:
   m_ObjectHideFlags: 1
