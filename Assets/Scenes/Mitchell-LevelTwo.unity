@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 9821322}
   m_Layer: 0
-  m_Name: quark marker (3)
+  m_Name: QuarkMarker33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 55711788}
   m_Layer: 0
-  m_Name: element markers (3)
+  m_Name: ElementMarker4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 55711787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -59.4, y: 0, z: 0}
+  m_LocalPosition: {x: -59.4, y: 16.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 118897354}
   m_Layer: 0
-  m_Name: quark marker (3)
+  m_Name: QuarkMarker4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +175,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 121898433}
   m_Layer: 0
-  m_Name: quark marker (3)
+  m_Name: QuarkMarker18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,7 +202,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 134279940}
   m_Layer: 0
-  m_Name: element markers (11)
+  m_Name: ElementMarker12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,7 +215,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 134279939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.4, y: 0, z: -111.9}
+  m_LocalPosition: {x: -36.4, y: 10.4, z: -111.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -229,7 +229,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 149071375}
   m_Layer: 0
-  m_Name: quark marker
+  m_Name: QuarkMarker8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298,7 +298,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 243764100}
   m_Layer: 0
-  m_Name: element markers (13)
+  m_Name: ElementMarker14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,7 +311,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 243764099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.2, y: 0, z: -111.9}
+  m_LocalPosition: {x: 38.2, y: 10.8, z: -111.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -403,7 +403,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 284224400}
   m_Layer: 0
-  m_Name: quark marker (11)
+  m_Name: QuarkMarker26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -430,7 +430,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 314717379}
   m_Layer: 0
-  m_Name: quark marker (5)
+  m_Name: QuarkMarker6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,7 +533,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 354990888}
   m_Layer: 0
-  m_Name: quark marker (1)
+  m_Name: QuarkMarker16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,7 +560,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 359538150}
   m_Layer: 0
-  m_Name: quark marker
+  m_Name: QuarkMarker1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,7 +587,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 365838427}
   m_Layer: 0
-  m_Name: quark marker (8)
+  m_Name: QuarkMarker38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -614,7 +614,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 401489926}
   m_Layer: 0
-  m_Name: quark marker (14)
+  m_Name: QuarkMarker29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -641,7 +641,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 414597098}
   m_Layer: 0
-  m_Name: quark marker (5)
+  m_Name: QuarkMarker35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -822,7 +822,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 482084359}
   m_Layer: 0
-  m_Name: element markers (9)
+  m_Name: ElementMarker10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,7 +835,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 482084358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.4, y: 0, z: 111.2}
+  m_LocalPosition: {x: -36.4, y: 10.6, z: 111.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -849,7 +849,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 562941293}
   m_Layer: 0
-  m_Name: quark marker (5)
+  m_Name: QuarkMarker13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -910,7 +910,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 656369459}
   m_Layer: 0
-  m_Name: element markers (12)
+  m_Name: ElementMarker13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,7 +923,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 656369458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.5, y: 0, z: -70.8}
+  m_LocalPosition: {x: 37.5, y: 10.8, z: -70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -980,7 +980,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 692630781}
   m_Layer: 0
-  m_Name: quark marker
+  m_Name: QuarkMarker15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1007,7 +1007,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 785730509}
   m_Layer: 0
-  m_Name: element markers (10)
+  m_Name: ElementMarker11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1020,7 +1020,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 785730508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.4, y: 0, z: -70.8}
+  m_LocalPosition: {x: -36.4, y: 10.6, z: -70.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1065,7 +1065,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 842244195}
   m_Layer: 0
-  m_Name: element markers (15)
+  m_Name: ElementMarker16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1078,7 +1078,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 842244194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.3, y: 0, z: -135.6}
+  m_LocalPosition: {x: -12.3, y: 10.8, z: -135.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1170,7 +1170,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 890321344}
   m_Layer: 0
-  m_Name: quark marker (4)
+  m_Name: QuarkMarker19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1197,7 +1197,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 910549994}
   m_Layer: 0
-  m_Name: quark marker (1)
+  m_Name: QuarkMarker9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1224,7 +1224,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 925804019}
   m_Layer: 0
-  m_Name: element markers (5)
+  m_Name: ElementMarker6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1237,7 +1237,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925804018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 135.6}
+  m_LocalPosition: {x: 15, y: 10, z: 135.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1251,7 +1251,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 948055351}
   m_Layer: 0
-  m_Name: element markers (2)
+  m_Name: ElementMarker3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1264,7 +1264,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 948055350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60, y: 0, z: 0}
+  m_LocalPosition: {x: 60, y: 16.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1278,7 +1278,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 974270930}
   m_Layer: 0
-  m_Name: quark marker (9)
+  m_Name: QuarkMarker24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1305,7 +1305,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 988282663}
   m_Layer: 0
-  m_Name: quark marker (13)
+  m_Name: QuarkMarker43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1393,7 +1393,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1038316054}
   m_Layer: 0
-  m_Name: element markers (14)
+  m_Name: ElementMarker15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1406,7 +1406,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1038316053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: -135.6}
+  m_LocalPosition: {x: 15, y: 10.6, z: -135.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1530,7 +1530,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1086768213}
   m_Layer: 0
-  m_Name: element markers (8)
+  m_Name: ElementMarker9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1543,7 +1543,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1086768212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.4, y: 0, z: 72.8}
+  m_LocalPosition: {x: -36.4, y: 10.8, z: 72.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1557,7 +1557,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1094464296}
   m_Layer: 0
-  m_Name: element markers (4)
+  m_Name: ElementMarker5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1570,7 +1570,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1094464295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.3, y: 0, z: 135.6}
+  m_LocalPosition: {x: -12.3, y: 10.4, z: 135.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1584,7 +1584,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1100076789}
   m_Layer: 0
-  m_Name: quark marker (13)
+  m_Name: QuarkMarker28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1611,7 +1611,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1103368306}
   m_Layer: 0
-  m_Name: quark marker (12)
+  m_Name: QuarkMarker27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1638,7 +1638,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1125620764}
   m_Layer: 0
-  m_Name: quark marker (7)
+  m_Name: QuarkMarker37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1665,7 +1665,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1200155581}
   m_Layer: 0
-  m_Name: quark marker
+  m_Name: QuarkMarker30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1692,7 +1692,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1234331343}
   m_Layer: 0
-  m_Name: quark marker (5)
+  m_Name: QuarkMarker20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1750,7 +1750,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1272841914}
   m_Layer: 0
-  m_Name: element markers (6)
+  m_Name: ElementMarker7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1763,7 +1763,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1272841913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.5, y: 0, z: 111.8}
+  m_LocalPosition: {x: 37.5, y: 10.6, z: 111.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1777,7 +1777,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1276108033}
   m_Layer: 0
-  m_Name: quark marker (7)
+  m_Name: QuarkMarker22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1890,7 +1890,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1292792566}
   m_Layer: 0
-  m_Name: quark marker (4)
+  m_Name: QuarkMarker12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1917,7 +1917,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1339142053}
   m_Layer: 0
-  m_Name: element markers (7)
+  m_Name: ElementMarker8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1930,7 +1930,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1339142052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.5, y: 0, z: 72.8}
+  m_LocalPosition: {x: 37.5, y: 11, z: 72.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -1944,7 +1944,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1339428870}
   m_Layer: 0
-  m_Name: quark marker (2)
+  m_Name: QuarkMarker17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1971,7 +1971,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1392555314}
   m_Layer: 0
-  m_Name: quark marker (1)
+  m_Name: QuarkMarker31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2074,7 +2074,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1424365481}
   m_Layer: 0
-  m_Name: quark marker (1)
+  m_Name: QuarkMarker2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2101,7 +2101,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1468095935}
   m_Layer: 0
-  m_Name: quark marker (2)
+  m_Name: QuarkMarker3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2214,7 +2214,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1514450822}
   m_Layer: 0
-  m_Name: element markers
+  m_Name: ElementMarker1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2227,7 +2227,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1514450821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.7, y: 0, z: 0}
+  m_LocalPosition: {x: -47.7, y: 7.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -2241,7 +2241,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1530194299}
   m_Layer: 0
-  m_Name: quark marker (8)
+  m_Name: QuarkMarker23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2353,7 +2353,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1619396662}
   m_Layer: 0
-  m_Name: quark marker (6)
+  m_Name: QuarkMarker7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2380,7 +2380,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1655001075}
   m_Layer: 0
-  m_Name: quark marker (6)
+  m_Name: QuarkMarker21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2407,7 +2407,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1657182506}
   m_Layer: 0
-  m_Name: quark marker (11)
+  m_Name: QuarkMarker41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2434,7 +2434,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1718816773}
   m_Layer: 0
-  m_Name: quark marker (12)
+  m_Name: QuarkMarker42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2503,7 +2503,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1799589383}
   m_Layer: 0
-  m_Name: quark marker (9)
+  m_Name: QuarkMarker39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2530,7 +2530,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1829079449}
   m_Layer: 0
-  m_Name: quark marker (4)
+  m_Name: QuarkMarker5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2557,7 +2557,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1843089435}
   m_Layer: 0
-  m_Name: quark marker (3)
+  m_Name: QuarkMarker11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2584,7 +2584,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1859666485}
   m_Layer: 0
-  m_Name: quark marker (10)
+  m_Name: QuarkMarker40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2611,7 +2611,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1878175664}
   m_Layer: 0
-  m_Name: quark marker (6)
+  m_Name: QuarkMarker36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2638,7 +2638,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1907139070}
   m_Layer: 0
-  m_Name: quark marker (6)
+  m_Name: QuarkMarker14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2665,7 +2665,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1971023869}
   m_Layer: 0
-  m_Name: quark marker (10)
+  m_Name: QuarkMarker25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2770,7 +2770,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2045552406}
   m_Layer: 0
-  m_Name: quark marker (2)
+  m_Name: QuarkMarker10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2797,7 +2797,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2051084002}
   m_Layer: 0
-  m_Name: element markers (1)
+  m_Name: ElementMarker2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2810,7 +2810,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2051084001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.1, y: 0, z: 0}
+  m_LocalPosition: {x: 47.1, y: 7.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 680535086}
@@ -2824,7 +2824,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2053149924}
   m_Layer: 0
-  m_Name: quark marker (2)
+  m_Name: QuarkMarker32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2851,7 +2851,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2126402961}
   m_Layer: 0
-  m_Name: quark marker (14)
+  m_Name: QuarkMarker44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2878,7 +2878,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2132635702}
   m_Layer: 0
-  m_Name: quark marker (4)
+  m_Name: QuarkMarker34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
