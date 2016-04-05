@@ -19,7 +19,7 @@ public class GUIScript : MonoBehaviour {
 
     Image quarkMeter;
     readonly int quarkMeterWidth = 10;
-    readonly int quarkMeterMax = 150;
+    readonly int quarkMeterMax = 310;
     readonly int quarkMeterMin = 0;
     readonly int quarkSize = 10;
     int quarkMeterHeight = 30;
@@ -47,6 +47,8 @@ public class GUIScript : MonoBehaviour {
     Animator glowGaugeAnimator;
     Image glowGaugeImage;
 
+    Text numQuarksText;
+
     GameObject powerUpObject;
 
 	// Use this for initialization
@@ -70,6 +72,8 @@ public class GUIScript : MonoBehaviour {
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
         enemyScoredAnimator = GameObject.Find ("EnemyScored").GetComponent<Animator> ();
         glowGaugeAnimator = GameObject.Find ("GaugeGlow").GetComponent<Animator> ();
+
+        numQuarksText = GameObject.Find ("NumQuarksText").GetComponent<Text> ();
 
         blackout = GameObject.Find ("Blackout").GetComponent<Image> ();
 
@@ -148,6 +152,7 @@ public class GUIScript : MonoBehaviour {
             quarkMeterHeight = quarkMeterMin;
 
         quarkMeter.rectTransform.sizeDelta = new Vector2 (quarkMeterWidth, quarkMeterHeight);
+        numQuarksText.text = "" + numQuarks;
     }
         
 
