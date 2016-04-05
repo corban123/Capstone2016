@@ -104,6 +104,7 @@ public class CombatScript : NetworkBehaviour
 		} else {
 			numQuarks = numQuarks / 2;
 		}
+        gui.updateQuarkMeter (numQuarks);
     }
 
     /**
