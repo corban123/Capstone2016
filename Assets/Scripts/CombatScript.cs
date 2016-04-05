@@ -98,7 +98,11 @@ public class CombatScript : NetworkBehaviour
      */
     void DeductHealth()
     {
-        numQuarks = numQuarks/ 2;
+		if (numQuarks < 1) {
+			this.gameObject.GetComponent<MoveScript> ().Respawn ();
+		} else {
+			numQuarks = numQuarks / 2;
+		}
     }
 
     /**
