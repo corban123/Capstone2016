@@ -83,7 +83,7 @@ public class FirstPersonController : NetworkBehaviour
         {
             RotateView();
             // the jump state needs to read here to make sure it is not missed
-            if (!m_Jump)
+            if (!m_Jump && m_CharacterController.isGrounded && !freezing)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
