@@ -251,8 +251,8 @@ public class GUIScript : MonoBehaviour {
             return FreezeSprite;
         } else if (elementID >= 8 && elementID <= 11) {
             return AtomBombSprite;
-//        } else if (elementID >= 12 && elementID <= 15) {
-//            return BlackOutSprite;
+        } else if (elementID >= 12 && elementID <= 15) {
+            return BlackOutSprite;
         } else {
             print ("element number is incorrect");
         }
