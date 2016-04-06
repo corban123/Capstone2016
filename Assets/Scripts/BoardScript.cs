@@ -75,7 +75,7 @@ public class BoardScript : NetworkBehaviour {
                 CreateBingoBoardUI ();
                 UICreated = true;
             }
-            print (ToString ());
+
         }
 	}
 

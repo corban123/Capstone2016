@@ -144,7 +144,7 @@ public class GUIScript : MonoBehaviour {
      * Each quark is 10 pixels on the meter.
      */
     public void updateQuarkMeter(int numQuarks) {
-        print ("updating quark meter to " + numQuarks + " for " + gameObject.name);
+
         quarkMeterHeight = numQuarks * quarkSize;
 
         if (quarkMeterHeight > quarkMeterMax)
