@@ -34,7 +34,6 @@ public class startCreatePlayers : NetworkManager
         MsgTypes.PlayerPrefabMsg msg = netMsg.ReadMessage<MsgTypes.PlayerPrefabMsg>();
         playerPrefab = spawnPrefabs[msg.prefabIndex];
         base.OnServerAddPlayer(netMsg.conn, msg.controllerID);
-        Debug.Log(playerPrefab.name + " spawned!");
     }
 
     public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)

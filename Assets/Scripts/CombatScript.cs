@@ -42,12 +42,12 @@ public class CombatScript : NetworkBehaviour
             nextFire = Time.time + fireRate;
             CmdShoot ();
         }
-        else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
-        {
-            gameObject.GetComponent<Animator>().Play("Shoot");
-            nextFire = Time.time + fireRate;
-            ShootElement();
-        }
+        //else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
+        //{
+        //    gameObject.GetComponent<Animator>().Play("Shoot");
+        //    nextFire = Time.time + fireRate;
+        //    CmdShootElement();
+        //}
         if (Time.time - startTime > 3)
         {
             takeDmg = true;
@@ -95,8 +95,8 @@ public class CombatScript : NetworkBehaviour
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
         NetworkServer.Spawn(instance);
     }
-
-    void ShootElement()
+    [Command]
+    void CmdShootElement()
     {
         if (haveElement)
         {
@@ -111,6 +111,9 @@ public class CombatScript : NetworkBehaviour
             haveElement = false;
             heldElement = -1;
             gui.DeleteElementUI();
+            instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+            NetworkServer.Spawn(instance);
+
         }
     }
        
@@ -135,13 +138,18 @@ public class CombatScript : NetworkBehaviour
      */
     void DeductHealth()
     {
-		if (numQuarks < 1) {
+        if (isLocalPlayer)
+        {
+            if (numQuarks < 1)
+            {
 
-			//this.gameObject.GetComponent<MoveScript> ().Respawn ();
-		} else {
-			numQuarks = numQuarks / 2;
-		}
-        gui.updateQuarkMeter (numQuarks);
+                this.gameObject.GetComponent<MoveScript>().Respawn();
+            }
+            else {
+                numQuarks = numQuarks / 2;
+            }
+            gui.updateQuarkMeter(numQuarks);
+        }
     }
 
     /**
