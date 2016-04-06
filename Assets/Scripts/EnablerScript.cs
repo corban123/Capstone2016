@@ -3,8 +3,8 @@ using UnityEngine.Networking;
 using System.Collections;
 
 public class EnablerScript : NetworkBehaviour {
-    private readonly int PLAYER1_LAYER = 9;
-    private readonly int PLAYER2_LAYER = 8;
+    private readonly int PLAYER1_LAYER = 8;
+    private readonly int PLAYER2_LAYER = 9;
 
 	CharacterController characterController;
 
