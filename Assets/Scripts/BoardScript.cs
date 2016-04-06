@@ -71,10 +71,9 @@ public class BoardScript : NetworkBehaviour {
         if (isLocalPlayer) {
             boardUI = GameObject.Find ("BingoBoard");
             this.board = board;
-            if (!UICreated) {
-                CreateBingoBoardUI ();
-                UICreated = true;
-            }
+            CreateBingoBoardUI ();
+            UICreated = true;
+            
 
         }
 	}
