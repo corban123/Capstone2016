@@ -40,7 +40,7 @@ public class CombatScript : NetworkBehaviour
         {
             gameObject.GetComponent<Animator>().Play("Shoot");
             nextFire = Time.time + fireRate;
-            Shoot ();
+            CmdShoot ();
         }
         else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
         {
@@ -64,7 +64,8 @@ public class CombatScript : NetworkBehaviour
         numQuarks++;
     }
 
-    void Shoot() {
+    [Command]
+    void CmdShoot() {
         GameObject instance;
         Vector3 newPos = shotSpawn.position;
         Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
@@ -92,7 +93,7 @@ public class CombatScript : NetworkBehaviour
             instance = Instantiate(basicShot, newPos, newRot) as GameObject;
         }
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
-        CmdShoot (instance);
+        NetworkServer.Spawn(instance);
     }
 
     void ShootElement()
@@ -115,11 +116,11 @@ public class CombatScript : NetworkBehaviour
        
 
     //Will create a projectile based on what the player has available in the inventory
-    [Command]
-    public void CmdShoot(GameObject instance)
-    {
-        NetworkServer.Spawn(instance);
-    }
+//    [Command]
+//    public void CmdShoot(GameObject instance)
+//    {
+//        NetworkServer.Spawn(instance);
+//    }
 
     [Command]
     void CmdTellServerWhoWasShot(string uniqueID)
