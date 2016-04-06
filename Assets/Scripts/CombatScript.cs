@@ -11,7 +11,7 @@ public class CombatScript : NetworkBehaviour
     private float nextFire;
     public float fireRate;
 
-    [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0; 
+    [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
     public bool haveElement;
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
 
@@ -54,6 +54,11 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
+    [Command]
+    void CmdDeleteQuarks() {
+        numQuarks--;
+    }
+
     void Shoot() {
         GameObject instance;
         Vector3 newPos = shotSpawn.position;
@@ -62,7 +67,8 @@ public class CombatScript : NetworkBehaviour
         if(numQuarks > 0)
         {
             instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
-            numQuarks--;
+            print ("shooting");
+            CmdDeleteQuarks ();
         }
         else if(haveElement)
         {
@@ -99,11 +105,9 @@ public class CombatScript : NetworkBehaviour
             haveElement = false;
             heldElement = -1;
             gui.DeleteElementUI();
-
         }
-
     }
-        
+       
 
     //Will create a projectile based on what the player has available in the inventory
     [Command]
@@ -152,9 +156,11 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
-    void OnHealthChanged(int hlth)
+    public void OnHealthChanged(int hlth)
     {
+        print ("on change");
         if (isLocalPlayer) {
+            print ("update health");
             numQuarks = hlth;
             gui.updateQuarkMeter (numQuarks);
             if (numQuarks >= elementPickUpPrice) {
