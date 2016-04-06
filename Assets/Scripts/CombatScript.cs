@@ -73,13 +73,12 @@ public class CombatScript : NetworkBehaviour
             if (numQuarks > 0)
             {
                 instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
-                print("shooting");
                 CmdDeleteQuarks();
             }
             else if (haveElement)
             {
                 instance = Instantiate(elementShot, newPos, newRot) as GameObject;
-                print(playerNum + " fires element " + heldElement);
+
 
                 instance.GetComponent<ElementScript>().carrier = playerNum;
                 instance.GetComponent<ElementScript>().elementID = heldElement;
@@ -171,7 +170,7 @@ public class CombatScript : NetworkBehaviour
 
     public void OnHealthChanged(int hlth)
     {
-        print ("on change");
+
         if (isLocalPlayer) {
             print ("update health");
             numQuarks = hlth;
