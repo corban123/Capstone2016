@@ -38,8 +38,12 @@ public class StartUpPlayerScript : NetworkBehaviour {
 				if (!boardObjects [0].gameObject.name.Contains ("female")) {
 					boardObjects [0].gameObject.name = "Player 1";
 					boardObjects[1].gameObject.name = "Player 2";
+                    boardObjects[1].SetBoard(boards[0]);
+                    boardObjects[0].SetBoard(boards[1]);
 				} else {
 					boardObjects[0].gameObject.name = "Player 2";
+                    boardObjects[0].SetBoard(boards[1]);
+                    boardObjects[1].SetBoard(boards[0]);
 					boardObjects[1].gameObject.name = "Player 1";
 				}
                 boardObjects[1].SetBoard(boards[1]);
