@@ -60,7 +60,7 @@ public class MoveScript : NetworkBehaviour
             {
                 GameObject pickedQuark = collision.gameObject;
                 print("picked up quark");
-                this.gameObject.GetComponent<CombatScript>().numQuarks++;
+                this.gameObject.GetComponent<CombatScript>().CmdAddQuarks();
                 CmdPickUpQuark (pickedQuark);
                 Destroy(pickedQuark);
             }

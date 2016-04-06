@@ -55,8 +55,13 @@ public class CombatScript : NetworkBehaviour
     }
 
     [Command]
-    void CmdDeleteQuarks() {
+    public void CmdDeleteQuarks() {
         numQuarks--;
+    }
+
+    [Command]
+    public void CmdAddQuarks(){
+        numQuarks++;
     }
 
     void Shoot() {
