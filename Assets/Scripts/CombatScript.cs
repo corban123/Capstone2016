@@ -64,30 +64,32 @@ public class CombatScript : NetworkBehaviour
         Vector3 newPos = shotSpawn.position;
         Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
         int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
-        if(numQuarks > 0)
-        {
-            instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
-            print ("shooting");
-            CmdDeleteQuarks ();
-        }
-        else if(haveElement)
-        {
-            instance = Instantiate(elementShot, newPos, newRot) as GameObject;
-            print(playerNum + " fires element " + heldElement);
 
-            instance.GetComponent<ElementScript>().carrier = playerNum;
-            instance.GetComponent<ElementScript>().elementID = heldElement;
-            haveElement = false;
-            heldElement = -1;
-            gui.DeleteElementUI ();
-        }
-        else
-        {
+            if (numQuarks > 0)
+            {
+                instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
+                print("shooting");
+                CmdDeleteQuarks();
+            }
+            else if (haveElement)
+            {
+                instance = Instantiate(elementShot, newPos, newRot) as GameObject;
+                print(playerNum + " fires element " + heldElement);
 
-            instance = Instantiate(basicShot, newPos, newRot) as GameObject;
-        }
-        instance.GetComponent<ProjectileScript>().playerSource = playerNum;
-        CmdShoot (instance);
+                instance.GetComponent<ElementScript>().carrier = playerNum;
+                instance.GetComponent<ElementScript>().elementID = heldElement;
+                haveElement = false;
+                heldElement = -1;
+                gui.DeleteElementUI();
+            }
+            else
+            {
+
+                instance = Instantiate(basicShot, newPos, newRot) as GameObject;
+            }
+            instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+            CmdShoot(instance);
+        
     }
 
     void ShootElement()
@@ -105,6 +107,9 @@ public class CombatScript : NetworkBehaviour
             haveElement = false;
             heldElement = -1;
             gui.DeleteElementUI();
+            instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+            CmdShoot(instance);
+
         }
     }
        
@@ -113,7 +118,10 @@ public class CombatScript : NetworkBehaviour
     [Command]
     public void CmdShoot(GameObject instance)
     {
-        NetworkServer.Spawn(instance);
+        if (isLocalPlayer)
+        {
+            NetworkServer.Spawn(instance);
+        }
     }
 
     [Command]
