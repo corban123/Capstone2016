@@ -8,7 +8,7 @@ using System;
 */
 public class ProjectileScript : NetworkBehaviour
 {
-    public int playerSource;
+    [SyncVar]public int playerSource;
     public float MoveSpeed = 5.0f;
     public float frequency = 20.0f;  // Speed of sine movement
     public float magnitude = 0.5f;   // Size of sine movement

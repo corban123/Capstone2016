@@ -16,7 +16,7 @@ public class CombatScript : NetworkBehaviour
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
 
     float startTime;
-    bool takeDmg;
+    public bool takeDmg;
 
     readonly int elementPickUpPrice = 5;
 
@@ -104,6 +104,7 @@ public class CombatScript : NetworkBehaviour
 		} else {
 			numQuarks = numQuarks / 2;
 		}
+        gui.updateQuarkMeter (numQuarks);
     }
 
     /**
@@ -113,9 +114,11 @@ public class CombatScript : NetworkBehaviour
     {
         if (collision.tag == "Bullet" && takeDmg)
         {
+			Debug.Log ("WELL I'M IN THE COLLISION");
             ProjectileScript projectile = collision.GetComponent<ProjectileScript>();
             if (projectile.playerSource != this.gameObject.name.ToCharArray()[this.gameObject.name.Length-1])
             {
+				Debug.Log ("WELL I GOT HIT DIDN'T I");
                 string uIdentity = this.transform.name;
                 CmdTellServerWhoWasShot(uIdentity);
             }
