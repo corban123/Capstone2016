@@ -42,6 +42,12 @@ public class CombatScript : NetworkBehaviour
             nextFire = Time.time + fireRate;
             Shoot ();
         }
+        else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
+        {
+            gameObject.GetComponent<Animator>().Play("Shoot");
+            nextFire = Time.time + fireRate;
+            ShootElement();
+        }
         if (Time.time - startTime > 3)
         {
             takeDmg = true;
@@ -71,10 +77,31 @@ public class CombatScript : NetworkBehaviour
         }
         else
         {
+
             instance = Instantiate(basicShot, newPos, newRot) as GameObject;
         }
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
         CmdShoot (instance);
+    }
+
+    void ShootElement()
+    {
+        if (haveElement)
+        {
+            Vector3 newPos = shotSpawn.position;
+            Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
+            GameObject instance = Instantiate(elementShot, newPos, newRot) as GameObject;
+            int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
+
+            instance.GetComponent<ElementScript>().carrier = playerNum;
+            instance.GetComponent<ElementScript>().elementID = heldElement;
+            numQuarks = 0;
+            haveElement = false;
+            heldElement = -1;
+            gui.DeleteElementUI();
+
+        }
+
     }
         
 

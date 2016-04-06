@@ -1512,7 +1512,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   Priority: 128
@@ -7764,7 +7764,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 4717d7560f90e1840a9dfec3ea5b8e3f, type: 2}
     - target: {fileID: 400044, guid: 398a6ef8800090b45880bd88c3e1b113, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400044, guid: 398a6ef8800090b45880bd88c3e1b113, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8334,10 +8334,6 @@ Prefab:
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_RootOrder
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 169502, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
-      propertyPath: m_Name
-      value: Spawn2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
