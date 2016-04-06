@@ -154,12 +154,14 @@ public class CombatScript : NetworkBehaviour
 
     void OnHealthChanged(int hlth)
     {
-        numQuarks = hlth;
-        gui.updateQuarkMeter(numQuarks);
-        if (numQuarks >= elementPickUpPrice) {
-            gui.enableGaugeGlow ();
-        } else {
-            gui.disableGaugeGlow ();
+        if (isLocalPlayer) {
+            numQuarks = hlth;
+            gui.updateQuarkMeter (numQuarks);
+            if (numQuarks >= elementPickUpPrice) {
+                gui.enableGaugeGlow ();
+            } else {
+                gui.disableGaugeGlow ();
+            }
         }
     }
 }
