@@ -17,6 +17,8 @@ public class GUIScript : MonoBehaviour {
 
     Image powerUpImage;
 
+    Image youWonImage;
+
     Image quarkMeter;
     readonly int quarkMeterWidth = 10;
     readonly int quarkMeterMax = 310;
@@ -67,6 +69,7 @@ public class GUIScript : MonoBehaviour {
         youScoredImage = GameObject.Find ("YouScored").GetComponent<Image> ();
         enemyScoredImage = GameObject.Find ("EnemyScored").GetComponent<Image> ();
         glowGaugeImage = GameObject.Find ("GaugeGlow").GetComponent<Image> ();
+        youWonImage = GameObject.Find ("YouWon").GetComponent<Image> ();
 
         elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
@@ -86,6 +89,7 @@ public class GUIScript : MonoBehaviour {
     void setDefaults() {
         updateQuarkMeter (3);
         DeleteElementUI ();
+        disableYouWon ();
         disableElementPickedUp ();
         disableYouScored ();
         disableEnemyScored ();
@@ -184,6 +188,14 @@ public class GUIScript : MonoBehaviour {
 
     public void DeletePowerUpUI() {
         Destroy(powerUpObject);
+    }
+
+    public void enableYouWon() {
+        youWonImage.enabled = true;
+    }
+
+    public void disableYouWon() {
+        youWonImage.enabled = false;
     }
 
     public void disableElementPickedUp() {
