@@ -58,15 +58,15 @@ public class ProjectileScript : NetworkBehaviour
         try
         {
             //Checks if projectile is colliding with player that shot it
-            if (!(target.name.Contains("Player") && target.name.Contains(playerSource.ToString())) || !(targetParent.name.Contains("Player") && targetParent.name.Contains(playerSource.ToString())))
+            if (!(target.CompareTag("Player")))
+            {
+                //If the projectile has a element script, then it's an element. It needs to active it's powerup on collision.
+                if (e != null && !coll.gameObject.CompareTag("Base"))
                 {
-                    //If the projectile has a element script, then it's an element. It needs to active it's powerup on collision.
-                    if (e != null && !coll.gameObject.name.Contains("Base"))
-                    {
-                        e.PowerUp();                       
-                    }
+                    e.PowerUp();                       
                 }
-            Destroy(this.gameObject);
+                Destroy(this.gameObject);
+            }            
         }
         catch (NullReferenceException) { }
     }
