@@ -6,7 +6,6 @@ public class ElementMarkerScript : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        print (gameObject.name);
 	}
 
     // Update is called once per frame

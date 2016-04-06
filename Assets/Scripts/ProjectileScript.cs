@@ -51,7 +51,7 @@ public class ProjectileScript : NetworkBehaviour
     void OnTriggerEnter(Collider coll)
     {
         ElementScript e = GetComponent<ElementScript>();
-        print("colliding with " + coll.gameObject.name);
+
         //Destroy the projectile if it hits something
         Transform targetParent = coll.gameObject.transform.parent;
         GameObject target = coll.gameObject;

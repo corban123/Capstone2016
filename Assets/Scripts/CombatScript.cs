@@ -40,14 +40,14 @@ public class CombatScript : NetworkBehaviour
         {
             gameObject.GetComponent<Animator>().Play("Shoot");
             nextFire = Time.time + fireRate;
-            Shoot ();
+            CmdShoot ();
         }
-        else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
-        {
-            gameObject.GetComponent<Animator>().Play("Shoot");
-            nextFire = Time.time + fireRate;
-            ShootElement();
-        }
+        //else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
+        //{
+        //    gameObject.GetComponent<Animator>().Play("Shoot");
+        //    nextFire = Time.time + fireRate;
+        //    CmdShootElement();
+        //}
         if (Time.time - startTime > 3)
         {
             takeDmg = true;
@@ -64,39 +64,39 @@ public class CombatScript : NetworkBehaviour
         numQuarks++;
     }
 
-    void Shoot() {
+    [Command]
+    void CmdShoot() {
         GameObject instance;
         Vector3 newPos = shotSpawn.position;
         Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
         int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
+        if(numQuarks > 0)
+        {
+            instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
+            print ("shooting");
+            CmdDeleteQuarks ();
+        }
+        else if(haveElement)
+        {
+            instance = Instantiate(elementShot, newPos, newRot) as GameObject;
+            print(playerNum + " fires element " + heldElement);
 
-            if (numQuarks > 0)
-            {
-                instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
-                CmdDeleteQuarks();
-            }
-            else if (haveElement)
-            {
-                instance = Instantiate(elementShot, newPos, newRot) as GameObject;
+            instance.GetComponent<ElementScript>().carrier = playerNum;
+            instance.GetComponent<ElementScript>().elementID = heldElement;
+            haveElement = false;
+            heldElement = -1;
+            gui.DeleteElementUI ();
+        }
+        else
+        {
 
-
-                instance.GetComponent<ElementScript>().carrier = playerNum;
-                instance.GetComponent<ElementScript>().elementID = heldElement;
-                haveElement = false;
-                heldElement = -1;
-                gui.DeleteElementUI();
-            }
-            else
-            {
-
-                instance = Instantiate(basicShot, newPos, newRot) as GameObject;
-            }
-            instance.GetComponent<ProjectileScript>().playerSource = playerNum;
-            CmdShoot(instance);
-        
+            instance = Instantiate(basicShot, newPos, newRot) as GameObject;
+        }
+        instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+        NetworkServer.Spawn(instance);
     }
-
-    void ShootElement()
+    [Command]
+    void CmdShootElement()
     {
         if (haveElement)
         {
@@ -112,21 +112,18 @@ public class CombatScript : NetworkBehaviour
             heldElement = -1;
             gui.DeleteElementUI();
             instance.GetComponent<ProjectileScript>().playerSource = playerNum;
-            CmdShoot(instance);
+            NetworkServer.Spawn(instance);
 
         }
     }
        
 
     //Will create a projectile based on what the player has available in the inventory
-    [Command]
-    public void CmdShoot(GameObject instance)
-    {
-        if (isLocalPlayer)
-        {
-            NetworkServer.Spawn(instance);
-        }
-    }
+//    [Command]
+//    public void CmdShoot(GameObject instance)
+//    {
+//        NetworkServer.Spawn(instance);
+//    }
 
     [Command]
     void CmdTellServerWhoWasShot(string uniqueID)
@@ -141,13 +138,18 @@ public class CombatScript : NetworkBehaviour
      */
     void DeductHealth()
     {
-		if (numQuarks < 1) {
+        if (isLocalPlayer)
+        {
+            if (numQuarks < 1)
+            {
 
-			//this.gameObject.GetComponent<MoveScript> ().Respawn ();
-		} else {
-			numQuarks = numQuarks / 2;
-		}
-        gui.updateQuarkMeter (numQuarks);
+                this.gameObject.GetComponent<MoveScript>().Respawn();
+            }
+            else {
+                numQuarks = numQuarks / 2;
+            }
+            gui.updateQuarkMeter(numQuarks);
+        }
     }
 
     /**
@@ -170,7 +172,7 @@ public class CombatScript : NetworkBehaviour
 
     public void OnHealthChanged(int hlth)
     {
-
+        print ("on change");
         if (isLocalPlayer) {
             print ("update health");
             numQuarks = hlth;
