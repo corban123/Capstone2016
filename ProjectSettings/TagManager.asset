@@ -9,6 +9,7 @@ TagManager:
   - Element
   - Killbox
   - ElementBullet
+  - Base
   layers:
   - Default
   - TransparentFX
