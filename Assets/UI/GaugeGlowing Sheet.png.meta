@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5661e24ffbf474dcba92855994d87c01
-timeCreated: 1459785696
+timeCreated: 1459918307
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -72,10 +72,17 @@ TextureImporter:
     21300130: GaugeGlowing Sheet_31
     21300132: GaugeGlowing Sheet_32
     21300134: GaugeGlowing Sheet_33
+    21300136: GaugeGlowing Sheet_34
+    21300138: GaugeGlowing Sheet_35
+    21300140: GaugeGlowing Sheet_36
+    21300142: GaugeGlowing Sheet_37
+    21300144: GaugeGlowing Sheet_38
+    21300146: GaugeGlowing Sheet_39
+    21300148: GaugeGlowing Sheet_40
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -122,676 +129,888 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -55, y: -12}
-        - {x: -55, y: -181}
-        - {x: -38, y: -196}
-        - {x: 48, y: -196}
-        - {x: 60, y: -191}
-        - {x: 60, y: 166}
-        - {x: 34, y: 166}
-        - {x: 24, y: 157}
+      - - {x: 48, y: 245}
+        - {x: 21, y: 245}
+        - {x: 0, y: -107}
+        - {x: -56, y: -139}
+        - {x: -56, y: -182}
+        - {x: -12, y: -249}
+        - {x: 50, y: -249}
+        - {x: 61, y: -228}
+        - {x: 61, y: 234}
     - name: GaugeGlowing Sheet_1
       rect:
         serializedVersion: 2
         x: 300
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 59, y: -48}
-        - {x: 59, y: 167}
-        - {x: -2, y: 167}
-        - {x: -56, y: 77}
-        - {x: -56, y: -166}
-        - {x: -25, y: -197}
-        - {x: 55, y: -197}
-        - {x: 61, y: -175}
-        - {x: 61, y: -54}
+      - - {x: 24, y: 248}
+        - {x: 18, y: 227}
+        - {x: 15, y: -117}
+        - {x: -57, y: -119}
+        - {x: -59, y: -128}
+        - {x: -59, y: -209}
+        - {x: -19, y: -248}
+        - {x: -6, y: -250}
+        - {x: 44, y: -250}
+        - {x: 65, y: -236}
+        - {x: 65, y: 244}
+        - {x: 52, y: 248}
     - name: GaugeGlowing Sheet_2
       rect:
         serializedVersion: 2
         x: 600
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 19, y: 167}
-        - {x: -57, y: -72}
-        - {x: -57, y: -134}
-        - {x: -29, y: -186}
-        - {x: -19, y: -198}
-        - {x: 42, y: -198}
-        - {x: 62, y: -185}
-        - {x: 62, y: 123}
-        - {x: 60, y: 152}
-        - {x: 50, y: 167}
+      - - {x: 51, y: 250}
+        - {x: 30, y: 250}
+        - {x: 18, y: 246}
+        - {x: 17, y: 229}
+        - {x: 14, y: -117}
+        - {x: -38, y: -123}
+        - {x: -61, y: -144}
+        - {x: -61, y: -180}
+        - {x: -37, y: -228}
+        - {x: -27, y: -250}
+        - {x: 63, y: -250}
+        - {x: 66, y: -236}
+        - {x: 66, y: 233}
     - name: GaugeGlowing Sheet_3
       rect:
         serializedVersion: 2
         x: 900
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 19, y: 167}
-        - {x: -57, y: -72}
-        - {x: -57, y: -134}
-        - {x: -29, y: -186}
-        - {x: -19, y: -198}
-        - {x: 42, y: -198}
-        - {x: 62, y: -185}
-        - {x: 62, y: 123}
-        - {x: 60, y: 152}
-        - {x: 50, y: 167}
+      - - {x: 64, y: 223}
+        - {x: 68, y: 228}
+        - {x: 68, y: 231}
+        - {x: 58, y: 250}
+        - {x: 26, y: 250}
+        - {x: 15, y: 245}
+        - {x: 11, y: -116}
+        - {x: -51, y: -120}
+        - {x: -62, y: -148}
+        - {x: -62, y: -198}
+        - {x: -31, y: -250}
+        - {x: 59, y: -250}
+        - {x: 67, y: -222}
+        - {x: 68, y: -220}
+        - {x: 68, y: 1}
     - name: GaugeGlowing Sheet_4
       rect:
         serializedVersion: 2
         x: 1200
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 168}
-        - {x: -6, y: -50}
-        - {x: -57, y: -86}
-        - {x: -57, y: -141}
-        - {x: -21, y: -198}
-        - {x: 56, y: -198}
-        - {x: 63, y: -196}
-        - {x: 63, y: 168}
+      - - {x: 64, y: 223}
+        - {x: 68, y: 228}
+        - {x: 68, y: 231}
+        - {x: 58, y: 250}
+        - {x: 26, y: 250}
+        - {x: 15, y: 245}
+        - {x: 11, y: -116}
+        - {x: -51, y: -120}
+        - {x: -62, y: -148}
+        - {x: -62, y: -198}
+        - {x: -31, y: -250}
+        - {x: 59, y: -250}
+        - {x: 67, y: -222}
+        - {x: 68, y: -220}
+        - {x: 68, y: 1}
     - name: GaugeGlowing Sheet_5
       rect:
         serializedVersion: 2
         x: 1500
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 168}
-        - {x: -6, y: -50}
-        - {x: -57, y: -86}
-        - {x: -57, y: -141}
-        - {x: -21, y: -198}
-        - {x: 56, y: -198}
-        - {x: 63, y: -196}
-        - {x: 63, y: 168}
+      - - {x: 67, y: 246}
+        - {x: 56, y: 250}
+        - {x: 19, y: 250}
+        - {x: 11, y: 233}
+        - {x: 11, y: -117}
+        - {x: -40, y: -123}
+        - {x: -64, y: -147}
+        - {x: -64, y: -172}
+        - {x: -63, y: -197}
+        - {x: -20, y: -250}
+        - {x: 52, y: -250}
+        - {x: 69, y: -227}
+        - {x: 69, y: -64}
     - name: GaugeGlowing Sheet_6
       rect:
         serializedVersion: 2
         x: 1800
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 168}
-        - {x: -6, y: -50}
-        - {x: -57, y: -86}
-        - {x: -57, y: -141}
-        - {x: -21, y: -198}
-        - {x: 56, y: -198}
-        - {x: 63, y: -196}
-        - {x: 63, y: 168}
+      - - {x: 67, y: 246}
+        - {x: 56, y: 250}
+        - {x: 19, y: 250}
+        - {x: 11, y: 233}
+        - {x: 11, y: -117}
+        - {x: -40, y: -123}
+        - {x: -64, y: -147}
+        - {x: -64, y: -172}
+        - {x: -63, y: -197}
+        - {x: -20, y: -250}
+        - {x: 52, y: -250}
+        - {x: 69, y: -227}
+        - {x: 69, y: -64}
     - name: GaugeGlowing Sheet_7
       rect:
         serializedVersion: 2
         x: 2100
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 168}
-        - {x: -6, y: -50}
-        - {x: -57, y: -86}
-        - {x: -57, y: -141}
-        - {x: -21, y: -198}
-        - {x: 56, y: -198}
-        - {x: 63, y: -196}
-        - {x: 63, y: 168}
+      - - {x: 67, y: 246}
+        - {x: 56, y: 250}
+        - {x: 19, y: 250}
+        - {x: 11, y: 233}
+        - {x: 11, y: -117}
+        - {x: -40, y: -123}
+        - {x: -64, y: -147}
+        - {x: -64, y: -172}
+        - {x: -63, y: -197}
+        - {x: -20, y: -250}
+        - {x: 52, y: -250}
+        - {x: 69, y: -227}
+        - {x: 69, y: -64}
     - name: GaugeGlowing Sheet_8
       rect:
         serializedVersion: 2
         x: 2400
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_9
       rect:
         serializedVersion: 2
         x: 2700
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_10
       rect:
         serializedVersion: 2
         x: 3000
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_11
       rect:
         serializedVersion: 2
         x: 3300
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_12
       rect:
         serializedVersion: 2
         x: 3600
-        y: 3296
+        y: 3096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_13
       rect:
         serializedVersion: 2
         x: 0
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_14
       rect:
         serializedVersion: 2
         x: 300
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_15
       rect:
         serializedVersion: 2
         x: 600
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_16
       rect:
         serializedVersion: 2
         x: 900
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_17
       rect:
         serializedVersion: 2
         x: 1200
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_18
       rect:
         serializedVersion: 2
         x: 1500
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_19
       rect:
         serializedVersion: 2
         x: 1800
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_20
       rect:
         serializedVersion: 2
         x: 2100
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_21
       rect:
         serializedVersion: 2
         x: 2400
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_22
       rect:
         serializedVersion: 2
         x: 2700
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_23
       rect:
         serializedVersion: 2
         x: 3000
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_24
       rect:
         serializedVersion: 2
         x: 3300
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_25
       rect:
         serializedVersion: 2
         x: 3600
-        y: 2496
+        y: 2096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 47, y: 169}
-        - {x: 29, y: 169}
-        - {x: 19, y: 159}
-        - {x: -58, y: -10}
-        - {x: -58, y: -173}
-        - {x: -31, y: -199}
-        - {x: 63, y: -199}
-        - {x: 63, y: 162}
-        - {x: 57, y: 165}
+      - - {x: 58, y: 250}
+        - {x: 21, y: 250}
+        - {x: 9, y: 231}
+        - {x: 11, y: 48}
+        - {x: -7, y: -110}
+        - {x: -66, y: -132}
+        - {x: -66, y: -196}
+        - {x: -65, y: -200}
+        - {x: -21, y: -250}
+        - {x: 51, y: -250}
+        - {x: 71, y: -229}
+        - {x: 71, y: 69}
+        - {x: 68, y: 233}
     - name: GaugeGlowing Sheet_26
       rect:
         serializedVersion: 2
         x: 0
-        y: 1696
+        y: 1096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 168}
-        - {x: -6, y: -50}
-        - {x: -57, y: -86}
-        - {x: -57, y: -141}
-        - {x: -21, y: -198}
-        - {x: 56, y: -198}
-        - {x: 63, y: -196}
-        - {x: 63, y: 168}
+      - - {x: 67, y: 246}
+        - {x: 56, y: 250}
+        - {x: 19, y: 250}
+        - {x: 11, y: 233}
+        - {x: 11, y: -117}
+        - {x: -40, y: -123}
+        - {x: -64, y: -147}
+        - {x: -64, y: -172}
+        - {x: -63, y: -197}
+        - {x: -20, y: -250}
+        - {x: 52, y: -250}
+        - {x: 69, y: -227}
+        - {x: 69, y: -64}
     - name: GaugeGlowing Sheet_27
       rect:
         serializedVersion: 2
         x: 300
-        y: 1696
+        y: 1096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 168}
-        - {x: -6, y: -50}
-        - {x: -57, y: -86}
-        - {x: -57, y: -141}
-        - {x: -21, y: -198}
-        - {x: 56, y: -198}
-        - {x: 63, y: -196}
-        - {x: 63, y: 168}
+      - - {x: 67, y: 246}
+        - {x: 56, y: 250}
+        - {x: 19, y: 250}
+        - {x: 11, y: 233}
+        - {x: 11, y: -117}
+        - {x: -40, y: -123}
+        - {x: -64, y: -147}
+        - {x: -64, y: -172}
+        - {x: -63, y: -197}
+        - {x: -20, y: -250}
+        - {x: 52, y: -250}
+        - {x: 69, y: -227}
+        - {x: 69, y: -64}
     - name: GaugeGlowing Sheet_28
       rect:
         serializedVersion: 2
         x: 600
-        y: 1696
+        y: 1096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 168}
-        - {x: -6, y: -50}
-        - {x: -57, y: -86}
-        - {x: -57, y: -141}
-        - {x: -21, y: -198}
-        - {x: 56, y: -198}
-        - {x: 63, y: -196}
-        - {x: 63, y: 168}
+      - - {x: 67, y: 246}
+        - {x: 56, y: 250}
+        - {x: 19, y: 250}
+        - {x: 11, y: 233}
+        - {x: 11, y: -117}
+        - {x: -40, y: -123}
+        - {x: -64, y: -147}
+        - {x: -64, y: -172}
+        - {x: -63, y: -197}
+        - {x: -20, y: -250}
+        - {x: 52, y: -250}
+        - {x: 69, y: -227}
+        - {x: 69, y: -64}
     - name: GaugeGlowing Sheet_29
       rect:
         serializedVersion: 2
         x: 900
-        y: 1696
+        y: 1096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 22, y: 168}
-        - {x: -6, y: -50}
-        - {x: -57, y: -86}
-        - {x: -57, y: -141}
-        - {x: -21, y: -198}
-        - {x: 56, y: -198}
-        - {x: 63, y: -196}
-        - {x: 63, y: 168}
+      - - {x: 64, y: 223}
+        - {x: 68, y: 228}
+        - {x: 68, y: 231}
+        - {x: 58, y: 250}
+        - {x: 26, y: 250}
+        - {x: 15, y: 245}
+        - {x: 11, y: -116}
+        - {x: -51, y: -120}
+        - {x: -62, y: -148}
+        - {x: -62, y: -198}
+        - {x: -31, y: -250}
+        - {x: 59, y: -250}
+        - {x: 67, y: -222}
+        - {x: 68, y: -220}
+        - {x: 68, y: 1}
     - name: GaugeGlowing Sheet_30
       rect:
         serializedVersion: 2
         x: 1200
-        y: 1696
+        y: 1096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 19, y: 167}
-        - {x: -57, y: -72}
-        - {x: -57, y: -134}
-        - {x: -29, y: -186}
-        - {x: -19, y: -198}
-        - {x: 42, y: -198}
-        - {x: 62, y: -185}
-        - {x: 62, y: 123}
-        - {x: 60, y: 152}
-        - {x: 50, y: 167}
+      - - {x: 52, y: 250}
+        - {x: 27, y: 250}
+        - {x: 11, y: 228}
+        - {x: 14, y: -118}
+        - {x: -28, y: -120}
+        - {x: -61, y: -138}
+        - {x: -61, y: -201}
+        - {x: -15, y: -250}
+        - {x: 46, y: -250}
+        - {x: 67, y: -226}
+        - {x: 67, y: 77}
+        - {x: 63, y: 237}
     - name: GaugeGlowing Sheet_31
       rect:
         serializedVersion: 2
         x: 1500
-        y: 1696
+        y: 1096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 19, y: 167}
-        - {x: -57, y: -72}
-        - {x: -57, y: -134}
-        - {x: -29, y: -186}
-        - {x: -19, y: -198}
-        - {x: 42, y: -198}
-        - {x: 62, y: -185}
-        - {x: 62, y: 123}
-        - {x: 60, y: 152}
-        - {x: 50, y: 167}
+      - - {x: 47, y: 249}
+        - {x: 30, y: 249}
+        - {x: 17, y: 233}
+        - {x: 15, y: -119}
+        - {x: -36, y: -121}
+        - {x: -60, y: -148}
+        - {x: -60, y: -194}
+        - {x: -11, y: -250}
+        - {x: 44, y: -250}
+        - {x: 53, y: -247}
+        - {x: 65, y: -225}
+        - {x: 65, y: 77}
+        - {x: 63, y: 242}
     - name: GaugeGlowing Sheet_32
       rect:
         serializedVersion: 2
         x: 1800
-        y: 1696
+        y: 1096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 59, y: -48}
-        - {x: 59, y: 167}
-        - {x: -2, y: 167}
-        - {x: -56, y: 77}
-        - {x: -56, y: -166}
-        - {x: -25, y: -197}
-        - {x: 55, y: -197}
-        - {x: 61, y: -175}
-        - {x: 61, y: -54}
+      - - {x: 49, y: 246}
+        - {x: 29, y: 246}
+        - {x: 18, y: 227}
+        - {x: -57, y: -81}
+        - {x: -57, y: -179}
+        - {x: -28, y: -232}
+        - {x: -1, y: -250}
+        - {x: 42, y: -250}
+        - {x: 62, y: -222}
+        - {x: 62, y: 187}
+        - {x: 61, y: 230}
     - name: GaugeGlowing Sheet_33
       rect:
         serializedVersion: 2
         x: 2100
-        y: 1696
+        y: 1096
         width: 300
-        height: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -55, y: -12}
-        - {x: -55, y: -181}
-        - {x: -38, y: -196}
-        - {x: 48, y: -196}
-        - {x: 60, y: -191}
-        - {x: 60, y: 166}
-        - {x: 34, y: 166}
-        - {x: 24, y: 157}
+      - - {x: 34, y: 241}
+        - {x: 18, y: 225}
+        - {x: -49, y: -57}
+        - {x: -49, y: -218}
+        - {x: -41, y: -242}
+        - {x: 55, y: -242}
+        - {x: 55, y: 239}
+        - {x: 53, y: 241}
+    - name: GaugeGlowing Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1096
+        width: 300
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: GaugeGlowing Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1096
+        width: 300
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: GaugeGlowing Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1096
+        width: 300
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: GaugeGlowing Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1096
+        width: 300
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: GaugeGlowing Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1096
+        width: 300
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: GaugeGlowing Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 300
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: GaugeGlowing Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 96
+        width: 300
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
