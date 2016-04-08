@@ -72,9 +72,6 @@ public class BoardScript : NetworkBehaviour {
             boardUI = GameObject.Find ("BingoBoard");
             this.board = board;
             CreateBingoBoardUI ();
-            UICreated = true;
-            
-
         }
 	}
 

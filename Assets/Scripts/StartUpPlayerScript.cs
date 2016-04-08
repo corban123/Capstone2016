@@ -26,27 +26,18 @@ public class StartUpPlayerScript : NetworkBehaviour {
 	void Update () {
 		if (!found) {
 			BoardScript[] boardObjects = FindObjectsOfType (typeof(BoardScript)) as BoardScript[];
-            if (boardObjects.Length == 1 && !board1Set) {
-				boardObjects [0].SetBoard (boards [0]);
-                boardObjects [0].gameObject.name = "Player 1";
-                board1Set = true;
-			} else if (boardObjects.Length == 2) {
-                if (!board1Set) {
-                    boardObjects [0].SetBoard (boards [0]);
-                    board1Set = true;
-                }
+            if (boardObjects.Length == 2) {
 				if (!boardObjects [0].gameObject.name.Contains ("female")) {
-					boardObjects [0].gameObject.name = "Player 1";
+					boardObjects[0].gameObject.name = "Player 1";
 					boardObjects[1].gameObject.name = "Player 2";
-                    boardObjects[1].SetBoard(boards[0]);
-                    boardObjects[0].SetBoard(boards[1]);
+                    boardObjects[0].SetBoard(boards[0]);
+                    boardObjects[1].SetBoard(boards[1]);
 				} else {
+                    boardObjects[1].gameObject.name = "Player 1";
 					boardObjects[0].gameObject.name = "Player 2";
                     boardObjects[0].SetBoard(boards[1]);
-                    boardObjects[1].SetBoard(boards[0]);
-					boardObjects[1].gameObject.name = "Player 1";
+                    boardObjects[1].SetBoard(boards[0]);					
 				}
-                boardObjects[1].SetBoard(boards[1]);
                 found = true;
 			}
 		}
