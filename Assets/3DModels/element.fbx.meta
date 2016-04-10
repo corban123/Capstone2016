@@ -29,6 +29,14 @@ ModelImporter:
     100042: transform5
     100044: transform6
     100046: transform7
+    100048: locator1
+    100050: pSphere13
+    100052: pSphere14
+    100054: pSphere15
+    100056: pSphere16
+    100058: pSphere17
+    100060: pSphere18
+    100062: pSphere19
     400000: //RootNode
     400002: nurbsCircle1
     400004: nurbsCircle2
@@ -53,21 +61,50 @@ ModelImporter:
     400042: transform5
     400044: transform6
     400046: transform7
+    400048: locator1
+    400050: pSphere13
+    400052: pSphere14
+    400054: pSphere15
+    400056: pSphere16
+    400058: pSphere17
+    400060: pSphere18
+    400062: pSphere19
     2300000: pSphere10
     2300002: pSphere11
     2300004: pSphere12
     2300006: pSphere8
     2300008: pSphere9
+    2300010: pSphere13
+    2300012: pSphere14
+    2300014: pSphere15
+    2300016: pSphere16
+    2300018: pSphere17
+    2300020: pSphere18
+    2300022: pSphere19
     3300000: pSphere10
     3300002: pSphere11
     3300004: pSphere12
     3300006: pSphere8
     3300008: pSphere9
+    3300010: pSphere13
+    3300012: pSphere14
+    3300014: pSphere15
+    3300016: pSphere16
+    3300018: pSphere17
+    3300020: pSphere18
+    3300022: pSphere19
     4300000: pSphere8
     4300002: pSphere9
     4300004: pSphere10
     4300006: pSphere11
     4300008: pSphere12
+    4300010: pSphere13
+    4300012: pSphere14
+    4300014: pSphere15
+    4300016: pSphere16
+    4300018: pSphere17
+    4300020: pSphere18
+    4300022: pSphere19
     7400000: Take 001
     9500000: //RootNode
   materials:
