@@ -243,27 +243,34 @@ public class FirstPersonController : NetworkBehaviour
 
     private void GetInput(out float speed)
     {
-        // Read input
-        float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
-        float vertical = CrossPlatformInputManager.GetAxis("Vertical");
+        if (!m_Jumping)
+        {
+            // Read input
+            float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
+            float vertical = CrossPlatformInputManager.GetAxis("Vertical");
 
-        anim.SetFloat("moveZ", vertical);
-        anim.SetFloat("moveX", horizontal);
-        anim.SetFloat("moveY", horizontal);
-        anim.SetBool("isGrounded", m_CharacterController.isGrounded);
+            anim.SetFloat("moveZ", vertical);
+            anim.SetFloat("moveX", horizontal);
+            anim.SetFloat("moveY", horizontal);
+            anim.SetBool("isGrounded", m_CharacterController.isGrounded);
 
 #if !MOBILE_INPUT
-        // On standalone builds, walk/run speed is modified by a key press.
-        // keep track of whether or not the character is walking or running
+            // On standalone builds, walk/run speed is modified by a key press.
+            // keep track of whether or not the character is walking or running
 #endif
-        // set the desired speed to be walking or running
-        speed =  m_WalkSpeed;
-        m_Input = new Vector2(horizontal, vertical);
+            // set the desired speed to be walking or running
+            speed = m_WalkSpeed;
+            m_Input = new Vector2(horizontal, vertical);
 
-        // normalize input if it exceeds 1 in combined length:
-        if (m_Input.sqrMagnitude > 1)
+            // normalize input if it exceeds 1 in combined length:
+            if (m_Input.sqrMagnitude > 1)
+            {
+                m_Input.Normalize();
+            }
+        }
+        else
         {
-            m_Input.Normalize();
+            speed = m_WalkSpeed;
         }
     }
 
