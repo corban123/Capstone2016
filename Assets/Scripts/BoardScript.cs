@@ -71,9 +71,14 @@ public class BoardScript : NetworkBehaviour {
         if (isLocalPlayer) {
             boardUI = GameObject.Find ("BingoBoard");
             this.board = board;
-            CreateBingoBoardUI ();
+            StartCoroutine(CreateBoardCoroutine ());
         }
 	}
+
+    IEnumerator CreateBoardCoroutine() {
+        CreateBingoBoardUI ();
+        yield return new WaitForSeconds(2.0f);
+    }
 
 	// Marks an element as scored on this board
 	// Returns whether or not the score causes this board to win.
