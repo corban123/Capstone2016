@@ -30,7 +30,7 @@ public class playerSyncMovement : NetworkBehaviour {
 	void LerpPosition()
 	{
 		if (!isLocalPlayer) {
-			myTransform.position = Vector3.Lerp (myTransform.position, syncPos, Time.fixedDeltaTime * 30);
+			myTransform.position = Vector3.Lerp (myTransform.position, syncPos, Time.fixedDeltaTime * 90);
 		}
 	
 	

@@ -1959,7 +1959,7 @@ Transform:
   m_GameObject: {fileID: 103078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.6, y: 16.57975, z: -354.89972}
-  m_LocalScale: {x: 19.559252, y: 19.559252, z: 19.559252}
+  m_LocalScale: {x: 37.53782, y: 37.53782, z: 37.53782}
   m_Children:
   - {fileID: 402640}
   - {fileID: 453656}
@@ -2193,7 +2193,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0002, y: 0.2079, z: 0.020000232}
+  m_LocalPosition: {x: 0.0002, y: 0.195, z: 0.020000232}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 415764}
@@ -3554,6 +3554,7 @@ MonoBehaviour:
   numQuarks: 3
   haveElement: 0
   heldElement: 0
+  takeDmg: 0
 --- !u!114 &11432430
 MonoBehaviour:
   m_ObjectHideFlags: 1
