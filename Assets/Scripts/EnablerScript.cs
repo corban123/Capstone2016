@@ -3,8 +3,7 @@ using UnityEngine.Networking;
 using System.Collections;
 
 public class EnablerScript : NetworkBehaviour {
-    private readonly int PLAYER1_LAYER = 8;
-    private readonly int PLAYER2_LAYER = 9;
+  
 
 	CharacterController characterController;
 
@@ -35,12 +34,6 @@ public class EnablerScript : NetworkBehaviour {
 			// Enable the camera and audio for this player
 			FPSCam.enabled = true;
 
-            if (gameObject.name == "Player 1") {
-                layerMask = 1 << PLAYER1_LAYER;
-            } else {
-                layerMask = 1 << PLAYER2_LAYER;
-            }
-            FPSCam.cullingMask = ~layerMask;
 			audioListen.enabled = true;
 			foreach(Renderer r in GetComponentsInChildren<Renderer>()){
                 if(r.gameObject.name != "pasted__tube"){

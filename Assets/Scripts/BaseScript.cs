@@ -23,7 +23,7 @@ public class BaseScript : MonoBehaviour {
         {
             int element = coll.gameObject.GetComponent<ElementScript>().elementID;
             int carrier = coll.gameObject.GetComponent<ElementScript>().carrier;
-            print("Element has hit a base from player" + carrier);
+            print("Element has hit a base " + BaseId + " from player" + carrier);
             if (carrier == BaseId)
             {
                 print("Finding Player " + carrier);
