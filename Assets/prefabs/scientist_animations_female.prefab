@@ -3554,6 +3554,7 @@ MonoBehaviour:
   numQuarks: 3
   haveElement: 0
   heldElement: 0
+  takeDmg: 0
 --- !u!114 &11432430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3726,7 +3727,7 @@ MonoBehaviour:
   calcium_grey: {fileID: 21300000, guid: e02561c57f8272040a4fa9decb974975, type: 3}
   carbon_grey: {fileID: 21300000, guid: bded9cc56acaa4f41bda264492ede41b, type: 3}
   copper_grey: {fileID: 21300000, guid: f7e593fade5d6e5498968c1f922ff08d, type: 3}
-  gold_grey: {fileID: 21300000, guid: f7e593fade5d6e5498968c1f922ff08d, type: 3}
+  gold_grey: {fileID: 21300000, guid: e55f230fde37b6842bb411c6744526d6, type: 3}
   helium_grey: {fileID: 21300000, guid: 72c0307dd569e1e42b46690861c09912, type: 3}
   hydrogen_grey: {fileID: 21300000, guid: a0771ff3d36183e4181c6d6f7f902338, type: 3}
   krypton_grey: {fileID: 21300000, guid: c034659f4a180b54f86441581768d4b5, type: 3}
