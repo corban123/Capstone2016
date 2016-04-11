@@ -38,36 +38,7 @@ public class CombatScript : NetworkBehaviour
 	void Update () {
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire && isLocalPlayer) //PC control
         {
-            GameObject instance;
-            Vector3 newPos = shotSpawn.position;
-            Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
-            int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
-            gameObject.GetComponent<Animator>().Play("Shoot");
-            nextFire = Time.time + fireRate;
-            if (haveElement && numQuarks <= 0) {
-                instance = Instantiate(elementShot, newPos, newRot) as GameObject;
-                print(playerNum + " fires element " + heldElement);
-                instance.GetComponent<ElementScript>().carrier = playerNum;
-                instance.GetComponent<ElementScript>().elementID = heldElement;
-                haveElement = false;
-                heldElement = -1;
-                gui.DeleteElementUI();
-            }
-            else
-            {
-                if (numQuarks > 0)
-                {
-                    instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
-                    print("shooting");
-                    CmdDeleteQuarks();
-                }
-                else
-                {
-                    instance = Instantiate(basicShot, newPos, newRot) as GameObject;
-                }
-                instance.GetComponent<ProjectileScript>().playerSource = playerNum;
-            }
-            CmdShootProjectile(instance);
+			CmdShootProjectile ();
         }
         //else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
         //{
@@ -92,9 +63,38 @@ public class CombatScript : NetworkBehaviour
     }
 
     [Command]
-    void CmdShootProjectile(GameObject instance)
+    void CmdShootProjectile()
     {
-         NetworkServer.Spawn(instance);
+		GameObject instance;
+		Vector3 newPos = shotSpawn.position;
+		Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
+		int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
+		gameObject.GetComponent<Animator>().Play("Shoot");
+		nextFire = Time.time + fireRate;
+		if (haveElement && numQuarks <= 0) {
+			instance = Instantiate(elementShot, newPos, newRot) as GameObject;
+			print(playerNum + " fires element " + heldElement);
+			instance.GetComponent<ElementScript>().carrier = playerNum;
+			instance.GetComponent<ElementScript>().elementID = heldElement;
+			haveElement = false;
+			heldElement = -1;
+			gui.DeleteElementUI();
+		}
+		else
+		{
+			if (numQuarks > 0)
+			{
+				instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
+				print("shooting");
+				CmdDeleteQuarks();
+			}
+			else
+			{
+				instance = Instantiate(basicShot, newPos, newRot) as GameObject;
+			}
+			instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+		}
+		NetworkServer.Spawn(instance);
     }
 
     [Command]
@@ -114,9 +114,10 @@ public class CombatScript : NetworkBehaviour
         {
             if (numQuarks < 1)
             {
+				gameObject.GetComponent<Animator>().Play("Death");
 
-                this.gameObject.GetComponent<MoveScript>().Respawn();
-            }
+
+			}
             else {
                 numQuarks = numQuarks / 2;
             }

@@ -1,18 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &167912
+--- !u!1 &184162
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 472000}
-  - 114: {fileID: 11442422}
-  - 114: {fileID: 11470018}
-  - 114: {fileID: 11477182}
-  - 114: {fileID: 11459938}
-  - 114: {fileID: 11449424}
+  - 4: {fileID: 454626}
+  - 114: {fileID: 11415610}
+  - 114: {fileID: 11495234}
+  - 114: {fileID: 11487796}
+  - 114: {fileID: 11410534}
+  - 114: {fileID: 11443148}
+  - 114: {fileID: 11494590}
   m_Layer: 0
   m_Name: GenerateBoard
   m_TagString: Untagged
@@ -20,52 +21,63 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &472000
+--- !u!4 &454626
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167912}
+  m_GameObject: {fileID: 184162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11442422
+--- !u!114 &11410534
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767d9db46c6ea4bf99ddb30e510df65f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11449424
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167912}
+  m_GameObject: {fileID: 184162}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9df00830961b415c94e2d9bedade557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11459938
+--- !u!114 &11415610
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167912}
+  m_GameObject: {fileID: 184162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767d9db46c6ea4bf99ddb30e510df65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11443148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2635ddfe37d75014b9efd263bd6d3820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11487796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184162}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 888abf66b11bcb9439fb2c02bc6e965d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Element: {fileID: 118896, guid: 8b1de836a54caef42a2d5d632bfa840a, type: 2}
+  Element: {fileID: 195958, guid: b31fb43553f254aca9612e4995204ecd, type: 2}
   barium: {fileID: 184272, guid: a9e5a3a42580847439d0eb88ddb2dcaa, type: 2}
   calcium: {fileID: 107250, guid: 394bdf465f8a745b196486aab079a59d, type: 2}
   carbon: {fileID: 193666, guid: 7bc9b7f6638a84c96aab60eb862be1ae, type: 2}
@@ -82,12 +94,24 @@ MonoBehaviour:
   silver: {fileID: 122844, guid: 3b324c84f27224d77b96db0cb5744d6f, type: 2}
   sodium: {fileID: 180976, guid: 1e22eb8fd1e294fc3b6fab084ae85efd, type: 2}
   xenon: {fileID: 122218, guid: d8dfd8920f96a4f3781c5389c9a24666, type: 2}
---- !u!114 &11470018
+--- !u!114 &11494590
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167912}
+  m_GameObject: {fileID: 184162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8876a3217f3c3459eb98d3f378754d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player2Prefab: {fileID: 103078, guid: fd55551cffeb31c45a15778e1562560d, type: 2}
+--- !u!114 &11495234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184162}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
@@ -114,29 +138,14 @@ MonoBehaviour:
     i15: 120
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &11477182
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8876a3217f3c3459eb98d3f378754d53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_ServerOnly
-      value: 0
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 167912}
+  m_RootGameObject: {fileID: 184162}
   m_IsPrefabParent: 1
