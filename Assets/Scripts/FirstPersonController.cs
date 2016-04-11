@@ -122,10 +122,6 @@ public class FirstPersonController : NetworkBehaviour
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
-            if(m_Jumping)
-            {
-                desiredMove = olddir * m_Input.y + transform.right * m_Input.x;
-            }
 
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
@@ -248,34 +244,27 @@ public class FirstPersonController : NetworkBehaviour
 
     private void GetInput(out float speed)
     {
-        if (!m_Jumping)
-        {
-            // Read input
-            float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
-            float vertical = CrossPlatformInputManager.GetAxis("Vertical");
-            olddir = transform.forward;
-            anim.SetFloat("moveZ", vertical);
-            anim.SetFloat("moveX", horizontal);
-            anim.SetFloat("moveY", horizontal);
-            anim.SetBool("isGrounded", m_CharacterController.isGrounded);
+        // Read input
+        float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
+        float vertical = CrossPlatformInputManager.GetAxis("Vertical");
+        olddir = transform.forward;
+        anim.SetFloat("moveZ", vertical);
+        anim.SetFloat("moveX", horizontal);
+        anim.SetFloat("moveY", horizontal);
+        anim.SetBool("isGrounded", m_CharacterController.isGrounded);
 
 #if !MOBILE_INPUT
-            // On standalone builds, walk/run speed is modified by a key press.
-            // keep track of whether or not the character is walking or running
+        // On standalone builds, walk/run speed is modified by a key press.
+        // keep track of whether or not the character is walking or running
 #endif
-            // set the desired speed to be walking or running
-            speed = m_WalkSpeed;
-            m_Input = new Vector2(horizontal, vertical);
+        // set the desired speed to be walking or running
+        speed = m_WalkSpeed;
+        m_Input = new Vector2(horizontal, vertical);
 
-            // normalize input if it exceeds 1 in combined length:
-            if (m_Input.sqrMagnitude > 1)
-            {
-                m_Input.Normalize();
-            }
-        }
-        else
+        // normalize input if it exceeds 1 in combined length:
+        if (m_Input.sqrMagnitude > 1)
         {
-            speed = m_WalkSpeed;
+            m_Input.Normalize();
         }
     }
 
