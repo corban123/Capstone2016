@@ -40,6 +40,7 @@ public class FirstPersonController : NetworkBehaviour
     private bool m_Jumping;
     private AudioSource m_AudioSource;
 
+    Vector3 olddir;
     public float moveFactor;
     MoveScript move;
     Animator anim;
@@ -121,6 +122,10 @@ public class FirstPersonController : NetworkBehaviour
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
+            if(m_Jumping)
+            {
+                desiredMove = olddir * m_Input.y + transform.right * m_Input.x;
+            }
 
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
@@ -248,7 +253,7 @@ public class FirstPersonController : NetworkBehaviour
             // Read input
             float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
-
+            olddir = transform.forward;
             anim.SetFloat("moveZ", vertical);
             anim.SetFloat("moveX", horizontal);
             anim.SetFloat("moveY", horizontal);
