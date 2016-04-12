@@ -10,7 +10,12 @@ public class BoardScript : NetworkBehaviour {
 	private int[,] board;
 	private bool[,] scored = new bool[4, 4];
     private GameObject boardUI;
+    private GameObject boardChips;
     private bool UICreated = false;
+
+    public GameObject chipPlaceHolder;
+    public Sprite chip;
+
     public GameObject barium;
     public GameObject calcium;
     public GameObject carbon;
@@ -70,6 +75,7 @@ public class BoardScript : NetworkBehaviour {
 	public void SetBoard (int[,] board) {
         if (isLocalPlayer) {
             boardUI = GameObject.Find ("BingoBoard");
+            boardChips = GameObject.Find ("BingoChips");
             this.board = board;
             StartCoroutine(CreateBoardCoroutine ());
         }
@@ -90,8 +96,10 @@ public class BoardScript : NetworkBehaviour {
             // Mark the element as scored in the scored bitmap
             scored [coordinates [0], coordinates [1]] = true;
 
+            PlaceChip (coordinates [0], coordinates [1]);
+
             // Change Board text
-            GreyOutOnUI (coordinates [0], coordinates [1], element);
+            //GreyOutOnUI (coordinates [0], coordinates [1], element);
 
             // Check whether the board is a winner
 
@@ -163,6 +171,17 @@ public class BoardScript : NetworkBehaviour {
         i[idx].sprite = GetGreySprite(elem);
     }
 
+    private void PlaceChip(int x, int y) {
+        Image[] i = boardChips.GetComponentsInChildren<Image> ();
+        int idx = x * 4 + y;
+        Image chipImage = i [idx];
+        chipImage.sprite = chip;
+
+        Color c = chipImage.color;
+        c.a = 255;
+        chipImage.color = c;
+    }
+
     private void CreateBingoBoardUI () {
         int elem;
         for (int i = 0; i < 4; i++) {
@@ -171,6 +190,10 @@ public class BoardScript : NetworkBehaviour {
                 GameObject obj = GetObject (elem);
                 obj = Instantiate (obj) as GameObject;
                 obj.transform.SetParent (boardUI.transform, false);
+
+                GameObject tempChip = chipPlaceHolder;
+                tempChip = Instantiate (tempChip) as GameObject;
+                tempChip.transform.SetParent (boardChips.transform, false);
             }
         }
     }
