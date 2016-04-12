@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: vac
+  m_Name: FemaleNose
   m_Shader: {fileID: 4800000, guid: 76374158b4c4e5744b394e9290aae693, type: 3}
-  m_ShaderKeywords: _COLOR_ON _TEX_ON
+  m_ShaderKeywords: _COLOR_ON
   m_LightmapFlags: 5
   m_CustomRenderQueue: 2000
   stringTagMap: {}
@@ -141,7 +141,7 @@ Material:
       data:
         first:
           name: _DetailTex
-        second: 1
+        second: 0
       data:
         first:
           name: _VertexColor
@@ -153,7 +153,7 @@ Material:
       data:
         first:
           name: _Outline
-        second: 0.1
+        second: 0.025
     m_Colors:
       data:
         first:
@@ -162,8 +162,8 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 0, b: 0, a: 1}
+        second: {r: 0.0006865758, g: 0.52610666, b: 0.56563866, a: 1}
       data:
         first:
           name: _OutlineColor
-        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
