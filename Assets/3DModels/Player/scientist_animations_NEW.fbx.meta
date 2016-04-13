@@ -399,6 +399,7 @@ ModelImporter:
     7400008: Shoot
     7400010: Jump
     7400012: Land
+    7400014: Sidestep
     9500000: //RootNode
     11100000: //RootNode
     13700000: pasted__pCylinder8
@@ -2191,6 +2192,228 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sidestep
+      takeName: Take 001
+      firstFrame: 243
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body:polySurface1
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/pasted__pCylinder2
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/pasted__master_controller
+        weight: 1
+      - path: group2/pasted__master_controller/pasted__transform35
+        weight: 1
+      - path: group2/pasted__tube
+        weight: 1
+      - path: group2/pasted__tube/pasted__transform33
+        weight: 1
+      - path: ikHandle3
+        weight: 1
+      - path: ikHandle4
+        weight: 1
+      - path: L_foot
+        weight: 1
+      - path: L_foot/L_leg_IK
+        weight: 1
+      - path: master_controller
+        weight: 1
+      - path: master_controller/transform35
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_L_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_L_J/pasted__knee_L_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_L_J/pasted__knee_L_J/pasted__ankle_L_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_L_J/pasted__knee_L_J/pasted__ankle_L_J/pasted__toe_L_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_L_J/pasted__knee_L_J/pasted__ankle_L_J/pasted__toe_L_J/pasted__leg_L_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_R_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_R_J/pasted__knee_R_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_R_J/pasted__knee_R_J/pasted__ankle_R_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_R_J/pasted__knee_R_J/pasted__ankle_R_J/pasted__toe_R_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__hip_R_J/pasted__knee_R_J/pasted__ankle_R_J/pasted__toe_R_J/pasted__leg_R_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__pelvis_J/pasted__pelvis_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1/pasted__transform34
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1/pasted__transform34/pasted__joint1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1/pasted__transform34/pasted__joint1/pasted__backpack
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1/pasted__transform34/pasted__joint1/pasted__joint2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1/pasted__transform34/pasted__joint1/pasted__joint2/pasted__joint3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1/pasted__transform34/pasted__joint1/pasted__joint2/pasted__joint3/pasted__joint4
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1/pasted__transform34/pasted__joint1/pasted__joint2/pasted__joint3/pasted__joint4/pasted__joint5
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__pasted__spine_J_1/pasted__transform34/pasted__joint1/pasted__joint2/pasted__joint3/pasted__joint4/pasted__joint5/pasted__joint6
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/ik_R_Hand1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__middl_L_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__middl_L_J_1/pasted__middl_L_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__middl_L_J_1/pasted__middl_L_J_2/pasted__middl_L_J_3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__middl_L_J_1/pasted__middl_L_J_2/pasted__middl_L_J_3/pasted__middl_L_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__point_L_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__point_L_J_1/pasted__point_L_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__point_L_J_1/pasted__point_L_J_2/pasted__point_L_J_3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__point_L_J_1/pasted__point_L_J_2/pasted__point_L_J_3/pasted__point_L_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__ring_L_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__ring_L_J_1/pasted__ring_L_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__ring_L_J_1/pasted__ring_L_J_2/pasted__ring_L_J_3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__ring_L_J_1/pasted__ring_L_J_2/pasted__ring_L_J_3/pasted__ring_L_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__thumb_L_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__thumb_L_J_1/pasted__thumb_L_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__thumb_L_J_1/pasted__thumb_L_J_2/pasted__thumb_L_J_3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_L_J/pasted__shoulder_L_J/pasted__forearm_L_J/pasted__arm_L_J_END/pasted__hand_L_J/pasted__thumb_L_J_1/pasted__thumb_L_J_2/pasted__thumb_L_J_3/pasted__thumb_L_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/ik_R_Hand
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__middl_R_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__middl_R_J_1/pasted__middl_R_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__middl_R_J_1/pasted__middl_R_J_2/pasted__middl_R_J_3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__middl_R_J_1/pasted__middl_R_J_2/pasted__middl_R_J_3/pasted__middl_R_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__point_R_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__point_R_J_1/pasted__point_R_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__point_R_J_1/pasted__point_R_J_2/pasted__point_R_J_3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__point_R_J_1/pasted__point_R_J_2/pasted__point_R_J_3/pasted__point_R_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__ring_R_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__ring_R_J_1/pasted__ring_R_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__ring_R_J_1/pasted__ring_R_J_2/pasted__ring_R_J_3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__ring_R_J_1/pasted__ring_R_J_2/pasted__ring_R_J_3/pasted__ring_R_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__thumb_R_J_1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__thumb_R_J_1/pasted__thumb_R_J_2
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__thumb_R_J_1/pasted__thumb_R_J_2/pasted__thumb_R_J_3
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__clav_R_J/pasted__shoulder_R_J/pasted__forearm_R_J/pasted__arm_R_J_END/pasted__hand_R_J/pasted__thumb_R_J_1/pasted__thumb_R_J_2/pasted__thumb_R_J_3/pasted__thumb_R_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__neck_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__neck_J/pasted__head_J
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__neck_J/pasted__head_J/face:polySurface1
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__neck_J/pasted__head_J/head
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__neck_J/pasted__head_J/head/polySurface6
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__neck_J/pasted__head_J/pasted__head_J_END
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__neck_J/pasted__head_J/pCylinder9
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/pasted__spine_J_2/pasted__neck_J/pasted__head_J/pCylinder10
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/transform32
+        weight: 1
+      - path: master_controller/transform35/pasted__move_control_J/pasted__body_J/pasted__spine_J_1/transform34
+        weight: 1
+      - path: pCylinder8
+        weight: 1
+      - path: R_foot
+        weight: 1
+      - path: R_foot/R_leg_IK
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.9
     isReadable: 1
   meshes:
     lODScreenPercentages: []
