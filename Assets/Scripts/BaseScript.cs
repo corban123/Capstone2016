@@ -30,9 +30,11 @@ public class BaseScript : MonoBehaviour {
                 GameObject player = GameObject.Find("Player " + carrier); //Assuming that a player is named Player <number> i.e Player 1
                 print("Player " + carrier + " scored!");
                 bool isWin = player.GetComponent<BoardScript>().score(element);
-                player.GetComponent<GUIScript> ().enableYouScored ();
+
                 if(isWin)
                     player.GetComponent<GUIScript> ().enableYouWon ();
+                else
+                    player.GetComponent<GUIScript> ().enableYouScored ();
 
                 if (carrier == 1) {
                     GameObject otherPlayer = GameObject.Find ("Player 2");

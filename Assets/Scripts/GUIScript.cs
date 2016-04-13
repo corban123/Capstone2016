@@ -3,10 +3,6 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class GUIScript : MonoBehaviour {
-    public Texture2D m_CrosshairTex;
-    Vector2 m_WindowSize;
-    Rect m_CrosshairRect;
-
     public GameObject BlackHoleSprite;
     public GameObject BlackOutSprite;
     public GameObject FreezeSprite;
@@ -55,11 +51,6 @@ public class GUIScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        // Set up the cross hair
-        m_CrosshairTex.Apply ();
-        m_WindowSize = new Vector2(Screen.width, Screen.height);
-        CalculateRect();
-
         boardScript = GetComponent<BoardScript> ();
 
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
@@ -101,12 +92,6 @@ public class GUIScript : MonoBehaviour {
      * 
      */
 	void Update () {
-        // If the screen size changed, calculate it again.
-        if(m_WindowSize.x != Screen.width || m_WindowSize.y != Screen.height)
-        {
-            CalculateRect();
-        }
-
         if (animatingElementPickUp && Time.time - elementPickUpStartTime > delay) {
             disableElementPickedUp ();
         }
@@ -123,24 +108,6 @@ public class GUIScript : MonoBehaviour {
             quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image> ();
         }
 	}
-
-    /**
-     * Calculate the size of the screen
-     */
-    void CalculateRect()
-    {
-        m_WindowSize = new Vector2(Screen.width, Screen.height);
-        m_CrosshairRect = new Rect( (m_WindowSize.x - m_CrosshairTex.width)/2.0f,
-            (m_WindowSize.y - m_CrosshairTex.height)/2.0f,
-            m_CrosshairTex.width, m_CrosshairTex.height);
-    }
-
-    /**
-     * Draw the crosshair in the middle of the GUI
-     */
-    void OnGUI() {
-        GUI.DrawTexture (m_CrosshairRect, m_CrosshairTex);
-    }
 
     /**
      * Changes the quark meter to match the number of quarks held by the player.
