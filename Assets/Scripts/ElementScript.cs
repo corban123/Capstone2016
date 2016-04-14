@@ -9,7 +9,7 @@ public class ElementScript : NetworkBehaviour
 {
     public int cost;
 	[SyncVar]
-	[SerializeField] public int elementID = 0;   //This id is unique to each element (numbered 1-16)
+	[SerializeField] public int elementID;   //This id is unique to each element (numbered 1-16)
 
     [SyncVar] public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
@@ -25,6 +25,9 @@ public class ElementScript : NetworkBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        elementID = gameObject.GetComponent<ProjectileScript> ().elementId;
+        carrier = gameObject.GetComponent<ProjectileScript> ().playerSource;
+        print ("elementID " + elementID + " from player " + carrier);
 	}
 	
 	// Update is called once per frame
@@ -34,7 +37,10 @@ public class ElementScript : NetworkBehaviour
 
     public void PowerUp()
     {
-        if (IsElementType () == Element.Alkaline) {
+        if (elementID == null) {
+            print ("ERROR: elementId undefined in ElementScript. Don't know which power up to spawn.");
+        }
+        else if (IsElementType () == Element.Alkaline) {
             CmdSpawnBlackHole ();
         } else if (IsElementType () == Element.Metals) {
             Freeze ();

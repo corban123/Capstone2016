@@ -36,19 +36,29 @@ public class CombatScript : NetworkBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("Fire1") && Time.time > nextFire && isLocalPlayer) //PC control
-        {
-			CmdShootProjectile ();
-        }
-        //else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
-        //{
-        //    gameObject.GetComponent<Animator>().Play("Shoot");
-        //    nextFire = Time.time + fireRate;
-        //    CmdShootElement();
-        //}
-        if (Time.time - startTime > 3)
-        {
-            takeDmg = true;
+        if (isLocalPlayer) {
+            if (Input.GetButtonDown ("Fire1") && Time.time > nextFire && isLocalPlayer) { //PC control
+                // This boolean has to be before CmdShootProjectile because numQuarks is decremented in the command.
+                bool shootElement = haveElement && numQuarks <= 0;
+
+                CmdShootProjectile (haveElement, heldElement);
+
+                // These lines have to be outside CmdShootProjectile. If they are inside the command they will NOT work.
+                if (shootElement) {
+                    haveElement = false;
+                    heldElement = -1;
+                    gui.DeleteElementUI ();
+                }
+            }
+            //else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer)
+            //{
+            //    gameObject.GetComponent<Animator>().Play("Shoot");
+            //    nextFire = Time.time + fireRate;
+            //    CmdShootElement();
+            //}
+            if (Time.time - startTime > 3) {
+                takeDmg = true;
+            }
         }
     }
 
@@ -63,7 +73,7 @@ public class CombatScript : NetworkBehaviour
     }
 
     [Command]
-    void CmdShootProjectile()
+    void CmdShootProjectile(bool haveElementCmd, int heldElementCmd)
     {
 		GameObject instance;
 		Vector3 newPos = shotSpawn.position;
@@ -71,14 +81,9 @@ public class CombatScript : NetworkBehaviour
 		int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
 		gameObject.GetComponent<Animator>().Play("Shoot");
 		nextFire = Time.time + fireRate;
-		if (haveElement && numQuarks <= 0) {
+		if (haveElementCmd && numQuarks <= 0) {
 			instance = Instantiate(elementShot, newPos, newRot) as GameObject;
-			print(playerNum + " fires element " + heldElement);
-			instance.GetComponent<ElementScript>().carrier = playerNum;
-			instance.GetComponent<ElementScript>().elementID = heldElement;
-			haveElement = false;
-			heldElement = -1;
-			gui.DeleteElementUI();
+            instance.GetComponent<ProjectileScript> ().elementId = heldElementCmd;
 		}
 		else
 		{
@@ -92,8 +97,9 @@ public class CombatScript : NetworkBehaviour
 			{
 				instance = Instantiate(basicShot, newPos, newRot) as GameObject;
 			}
-			instance.GetComponent<ProjectileScript>().playerSource = playerNum;
+			
 		}
+        instance.GetComponent<ProjectileScript>().playerSource = playerNum;
 		NetworkServer.Spawn(instance);
     }
 
@@ -102,7 +108,6 @@ public class CombatScript : NetworkBehaviour
     {
         GameObject go = GameObject.Find(uniqueID);
         go.GetComponent<CombatScript>().DeductHealth();
-
     }
 
     /**
@@ -115,8 +120,6 @@ public class CombatScript : NetworkBehaviour
             if (numQuarks < 1)
             {
 				gameObject.GetComponent<Animator>().Play("Death");
-
-
 			}
             else {
                 numQuarks = numQuarks / 2;

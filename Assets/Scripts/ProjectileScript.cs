@@ -9,6 +9,7 @@ using System;
 public class ProjectileScript : NetworkBehaviour
 {
     [SyncVar]public int playerSource;
+    [SyncVar]public int elementId;
     public float MoveSpeed = 5.0f;
     public float frequency = 20.0f;  // Speed of sine movement
     public float magnitude = 0.5f;   // Size of sine movement
@@ -18,6 +19,7 @@ public class ProjectileScript : NetworkBehaviour
     [SerializeField] AudioClip shoot;
     Rigidbody rb;
     private int delay = 5;
+
     void Start()
     {
         source = GetComponent<AudioSource>();
@@ -64,6 +66,31 @@ public class ProjectileScript : NetworkBehaviour
                 if (e != null && !coll.gameObject.CompareTag("Base"))
                 {
                     e.PowerUp();                       
+                } else if (e != null && coll.gameObject.CompareTag("Base")){
+                    int BaseId = Int32.Parse(coll.gameObject.name.Split(' ')[1]);
+                    print("base " + BaseId + " hit by player " + playerSource + " with element " + elementId);
+                    if (playerSource == BaseId)
+                    {
+                        print("Player " + playerSource);
+                        BoardScript board = GameObject.Find("Player " + playerSource).GetComponent<BoardScript>();
+                        GUIScript gui = GameObject.Find("Player " + playerSource).GetComponent<GUIScript>();
+                        print("bs " + board);
+                        bool isWin = board.score(elementId);
+
+                        if(isWin)
+                            gui.enableYouWon ();
+                        else
+                            gui.enableYouScored ();
+
+//                        if (playerSource == 1) {
+//                            GUIScript otherGui = GameObject.Find("Player 2").GetComponent<GUIScript>();
+//                            otherGui.enableEnemyScored ();
+//
+//                        } else if (playerSource == 2) {
+//                            GUIScript otherGui = GameObject.Find("Player 1").GetComponent<GUIScript>();
+//                            otherGui.enableEnemyScored ();
+//                        }
+                    }
                 }
                 Destroy(this.gameObject);
             }            
