@@ -1,0 +1,1146 @@
+fileFormatVersion: 2
+guid: a128474c90a21fc4ca26221ee0e11037
+timeCreated: 1460663078
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RespawningUI_0
+    21300002: RespawningUI_1
+    21300004: RespawningUI_2
+    21300006: RespawningUI_3
+    21300008: RespawningUI_4
+    21300010: RespawningUI_5
+    21300012: RespawningUI_6
+    21300014: RespawningUI_7
+    21300016: RespawningUI_8
+    21300018: RespawningUI_9
+    21300020: RespawningUI_10
+    21300022: RespawningUI_11
+    21300024: RespawningUI_12
+    21300026: RespawningUI_13
+    21300028: RespawningUI_14
+    21300030: RespawningUI_15
+    21300032: RespawningUI_16
+    21300034: RespawningUI_17
+    21300036: RespawningUI_18
+    21300038: RespawningUI_19
+    21300040: RespawningUI_20
+    21300042: RespawningUI_21
+    21300044: RespawningUI_22
+    21300046: RespawningUI_23
+    21300048: RespawningUI_24
+    21300050: RespawningUI_25
+    21300052: RespawningUI_26
+    21300054: RespawningUI_27
+    21300056: RespawningUI_28
+    21300058: RespawningUI_29
+    21300060: RespawningUI_30
+    21300062: RespawningUI_31
+    21300064: RespawningUI_32
+    21300066: RespawningUI_33
+    21300068: RespawningUI_34
+    21300070: RespawningUI_35
+    21300072: RespawningUI_36
+    21300074: RespawningUI_37
+    21300076: RespawningUI_38
+    21300078: RespawningUI_39
+    21300080: RespawningUI_40
+    21300082: RespawningUI_41
+    21300084: RespawningUI_42
+    21300086: RespawningUI_43
+    21300088: RespawningUI_44
+    21300090: RespawningUI_45
+    21300092: RespawningUI_46
+    21300094: RespawningUI_47
+    21300096: RespawningUI_48
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: RespawningUI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 44}
+        - {x: -105, y: 8}
+        - {x: 83, y: 8}
+        - {x: 91, y: 12}
+        - {x: 92, y: 14}
+        - {x: 92, y: 33}
+        - {x: 63, y: 44}
+    - name: RespawningUI_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: 38}
+        - {x: -101, y: 38}
+        - {x: -105, y: 23}
+        - {x: -105, y: 9}
+        - {x: -69, y: 3}
+        - {x: 67, y: 3}
+        - {x: 92, y: 9}
+        - {x: 92, y: 22}
+    - name: RespawningUI_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 34}
+        - {x: -105, y: 3}
+        - {x: -101, y: -1}
+        - {x: 85, y: -1}
+        - {x: 92, y: 3}
+        - {x: 92, y: 34}
+    - name: RespawningUI_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 30}
+        - {x: -105, y: 20}
+        - {x: -105, y: 1}
+        - {x: -88, y: -5}
+        - {x: 92, y: -5}
+        - {x: 92, y: 23}
+        - {x: 86, y: 30}
+    - name: RespawningUI_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: 27}
+        - {x: -104, y: 27}
+        - {x: -105, y: 26}
+        - {x: -105, y: -8}
+        - {x: 83, y: -8}
+        - {x: 90, y: -3}
+        - {x: 92, y: 0}
+        - {x: 92, y: 15}
+    - name: RespawningUI_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -2}
+        - {x: 8, y: -4}
+        - {x: 41, y: -10}
+        - {x: 92, y: -10}
+        - {x: 92, y: 15}
+        - {x: 86, y: 24}
+        - {x: -86, y: 24}
+        - {x: -105, y: 23}
+        - {x: -105, y: -4}
+        - {x: -62, y: -10}
+        - {x: -34, y: -10}
+        - {x: 2, y: -5}
+        - {x: 7, y: 2}
+        - {x: 7, y: 4}
+    - name: RespawningUI_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: 4}
+        - {x: 91, y: 7}
+        - {x: 78, y: 22}
+        - {x: -104, y: 22}
+        - {x: -105, y: 12}
+        - {x: -105, y: -12}
+        - {x: 65, y: -12}
+        - {x: 90, y: -8}
+        - {x: 92, y: -6}
+    - name: RespawningUI_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -5}
+        - {x: 4, y: -13}
+        - {x: 92, y: -13}
+        - {x: 92, y: 10}
+        - {x: 60, y: 21}
+        - {x: -100, y: 21}
+        - {x: -105, y: 7}
+        - {x: -105, y: -8}
+        - {x: -74, y: -13}
+        - {x: -27, y: -13}
+        - {x: 2, y: -8}
+        - {x: 7, y: -1}
+        - {x: 7, y: 1}
+    - name: RespawningUI_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -93, y: 20}
+        - {x: -105, y: 18}
+        - {x: -105, y: -7}
+        - {x: -82, y: -14}
+        - {x: 66, y: -14}
+        - {x: 92, y: -11}
+        - {x: 92, y: 14}
+        - {x: 76, y: 20}
+    - name: RespawningUI_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -6}
+        - {x: 7, y: -8}
+        - {x: 42, y: -14}
+        - {x: 64, y: -14}
+        - {x: 90, y: -10}
+        - {x: 92, y: -8}
+        - {x: 92, y: 2}
+        - {x: 91, y: 5}
+        - {x: 76, y: 19}
+        - {x: -102, y: 19}
+        - {x: -103, y: 15}
+        - {x: -105, y: 5}
+        - {x: -105, y: -8}
+        - {x: -97, y: -9}
+        - {x: -66, y: -14}
+        - {x: -28, y: -14}
+        - {x: 2, y: -9}
+        - {x: 7, y: -2}
+        - {x: 7, y: 0}
+    - name: RespawningUI_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: 19}
+        - {x: -102, y: 19}
+        - {x: -105, y: 12}
+        - {x: -105, y: -15}
+        - {x: 92, y: -15}
+        - {x: 92, y: 2}
+        - {x: 76, y: 16}
+    - name: RespawningUI_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 19}
+        - {x: -105, y: -1}
+        - {x: -105, y: -7}
+        - {x: -103, y: -8}
+        - {x: -101, y: -15}
+        - {x: 86, y: -15}
+        - {x: 92, y: -13}
+        - {x: 92, y: 5}
+        - {x: 86, y: 19}
+    - name: RespawningUI_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -7}
+        - {x: 4, y: -15}
+        - {x: 92, y: -15}
+        - {x: 92, y: 10}
+        - {x: 87, y: 18}
+        - {x: -105, y: 18}
+        - {x: -105, y: -8}
+        - {x: -103, y: -9}
+        - {x: -64, y: -15}
+        - {x: -32, y: -15}
+        - {x: 2, y: -9}
+        - {x: 7, y: -3}
+        - {x: 7, y: -1}
+    - name: RespawningUI_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75, y: 12}
+        - {x: 38, y: 18}
+        - {x: -105, y: 18}
+        - {x: -105, y: -16}
+        - {x: 82, y: -16}
+        - {x: 92, y: -9}
+        - {x: 92, y: 1}
+        - {x: 91, y: 3}
+    - name: RespawningUI_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -7}
+        - {x: 8, y: -9}
+        - {x: 14, y: -11}
+        - {x: 44, y: -16}
+        - {x: 92, y: -16}
+        - {x: 92, y: 5}
+        - {x: 83, y: 18}
+        - {x: -103, y: 18}
+        - {x: -105, y: 11}
+        - {x: -105, y: -11}
+        - {x: -79, y: -16}
+        - {x: -35, y: -16}
+        - {x: 1, y: -9}
+        - {x: 7, y: -4}
+        - {x: 7, y: -2}
+    - name: RespawningUI_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74, y: 17}
+        - {x: -105, y: 17}
+        - {x: -105, y: -16}
+        - {x: 85, y: -16}
+        - {x: 91, y: -13}
+        - {x: 92, y: -11}
+        - {x: 92, y: 5}
+    - name: RespawningUI_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 17}
+        - {x: -105, y: -13}
+        - {x: -97, y: -17}
+        - {x: 81, y: -17}
+        - {x: 92, y: -16}
+        - {x: 92, y: 10}
+        - {x: 87, y: 17}
+    - name: RespawningUI_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 85, y: 17}
+        - {x: -102, y: 17}
+        - {x: -104, y: 12}
+        - {x: -105, y: 6}
+        - {x: -105, y: -11}
+        - {x: -59, y: -17}
+        - {x: 66, y: -17}
+        - {x: 92, y: -13}
+        - {x: 92, y: 8}
+    - name: RespawningUI_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 16}
+        - {x: -105, y: -18}
+        - {x: 82, y: -18}
+        - {x: 92, y: -12}
+        - {x: 92, y: 0}
+        - {x: 91, y: 1}
+        - {x: 83, y: 16}
+    - name: RespawningUI_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -96, y: -12}
+        - {x: -95, y: -9}
+        - {x: -95, y: -6}
+        - {x: -92, y: -11}
+        - {x: -79, y: -18}
+        - {x: 92, y: -18}
+        - {x: 92, y: 13}
+        - {x: 90, y: 16}
+        - {x: -105, y: 16}
+        - {x: -105, y: -11}
+    - name: RespawningUI_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -10}
+        - {x: 8, y: -12}
+        - {x: 42, y: -18}
+        - {x: 77, y: -18}
+        - {x: 90, y: -14}
+        - {x: 92, y: -11}
+        - {x: 92, y: 2}
+        - {x: 72, y: 12}
+        - {x: 59, y: 11}
+        - {x: 47, y: 15}
+        - {x: -103, y: 15}
+        - {x: -105, y: 5}
+        - {x: -105, y: -13}
+        - {x: -74, y: -18}
+        - {x: -25, y: -18}
+        - {x: 2, y: -14}
+        - {x: 7, y: -6}
+        - {x: 7, y: -4}
+    - name: RespawningUI_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 15}
+        - {x: -105, y: 8}
+        - {x: -105, y: -13}
+        - {x: -74, y: -19}
+        - {x: 92, y: -19}
+        - {x: 92, y: 4}
+        - {x: 57, y: 15}
+    - name: RespawningUI_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 15}
+        - {x: -105, y: 14}
+        - {x: -105, y: -11}
+        - {x: -103, y: -12}
+        - {x: -97, y: -12}
+        - {x: -93, y: -13}
+        - {x: -74, y: -19}
+        - {x: 92, y: -19}
+        - {x: 92, y: 12}
+        - {x: 85, y: 15}
+    - name: RespawningUI_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -11}
+        - {x: 4, y: -19}
+        - {x: 92, y: -19}
+        - {x: 92, y: 5}
+        - {x: 63, y: 14}
+        - {x: -103, y: 14}
+        - {x: -105, y: 2}
+        - {x: -105, y: -13}
+        - {x: -103, y: -13}
+        - {x: -62, y: -19}
+        - {x: -34, y: -19}
+        - {x: 2, y: -14}
+        - {x: 7, y: -7}
+        - {x: 7, y: -5}
+    - name: RespawningUI_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 14}
+        - {x: -105, y: -20}
+        - {x: 82, y: -20}
+        - {x: 92, y: -13}
+        - {x: 92, y: 6}
+        - {x: 81, y: 14}
+    - name: RespawningUI_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -11}
+        - {x: 8, y: -13}
+        - {x: 17, y: -14}
+        - {x: 37, y: -20}
+        - {x: 92, y: -20}
+        - {x: 92, y: 3}
+        - {x: 84, y: 14}
+        - {x: -105, y: 14}
+        - {x: -105, y: -15}
+        - {x: -80, y: -20}
+        - {x: -24, y: -20}
+        - {x: 1, y: -13}
+        - {x: 7, y: -8}
+        - {x: 7, y: -6}
+    - name: RespawningUI_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 13}
+        - {x: -105, y: -17}
+        - {x: -86, y: -21}
+        - {x: 92, y: -21}
+        - {x: 92, y: 5}
+        - {x: 61, y: 13}
+    - name: RespawningUI_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101, y: 13}
+        - {x: -105, y: 1}
+        - {x: -105, y: -17}
+        - {x: -92, y: -21}
+        - {x: 92, y: -21}
+        - {x: 92, y: 3}
+        - {x: 54, y: 13}
+    - name: RespawningUI_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -13}
+        - {x: 8, y: -15}
+        - {x: 42, y: -21}
+        - {x: 77, y: -21}
+        - {x: 90, y: -17}
+        - {x: 92, y: -14}
+        - {x: 92, y: -1}
+        - {x: 72, y: 9}
+        - {x: 59, y: 8}
+        - {x: 56, y: 6}
+        - {x: 51, y: 8}
+        - {x: 39, y: 13}
+        - {x: -102, y: 13}
+        - {x: -104, y: 8}
+        - {x: -105, y: 2}
+        - {x: -105, y: -15}
+        - {x: -61, y: -21}
+        - {x: -34, y: -21}
+        - {x: 2, y: -16}
+        - {x: 7, y: -9}
+        - {x: 7, y: -7}
+    - name: RespawningUI_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2896
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 12}
+        - {x: -105, y: -21}
+        - {x: -94, y: -22}
+        - {x: 92, y: -22}
+        - {x: 92, y: -6}
+        - {x: 91, y: -3}
+        - {x: 84, y: 12}
+    - name: RespawningUI_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 12}
+        - {x: -103, y: 7}
+        - {x: -105, y: -8}
+        - {x: -105, y: -13}
+        - {x: -103, y: -15}
+        - {x: -97, y: -15}
+        - {x: -98, y: -22}
+        - {x: 92, y: -22}
+        - {x: 92, y: 7}
+        - {x: 88, y: 12}
+    - name: RespawningUI_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -14}
+        - {x: 4, y: -22}
+        - {x: 92, y: -22}
+        - {x: 92, y: 3}
+        - {x: 63, y: 11}
+        - {x: -102, y: 11}
+        - {x: -105, y: -1}
+        - {x: -105, y: -16}
+        - {x: -65, y: -22}
+        - {x: -29, y: -22}
+        - {x: 2, y: -18}
+        - {x: 7, y: -10}
+        - {x: 7, y: -8}
+    - name: RespawningUI_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 11}
+        - {x: -105, y: 6}
+        - {x: -105, y: -19}
+        - {x: -46, y: -23}
+        - {x: 92, y: -23}
+        - {x: 92, y: 0}
+        - {x: 53, y: 11}
+    - name: RespawningUI_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -14}
+        - {x: 8, y: -16}
+        - {x: 14, y: -18}
+        - {x: 39, y: -23}
+        - {x: 66, y: -23}
+        - {x: 92, y: -18}
+        - {x: 92, y: -6}
+        - {x: 86, y: 11}
+        - {x: -105, y: 11}
+        - {x: -105, y: -16}
+        - {x: -93, y: -19}
+        - {x: -78, y: -23}
+        - {x: -16, y: -23}
+        - {x: -4, y: -21}
+        - {x: 1, y: -16}
+        - {x: 7, y: -11}
+        - {x: 7, y: -9}
+    - name: RespawningUI_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -15}
+        - {x: 8, y: -17}
+        - {x: 42, y: -23}
+        - {x: 77, y: -23}
+        - {x: 91, y: -19}
+        - {x: 92, y: -14}
+        - {x: 92, y: -5}
+        - {x: 81, y: 10}
+        - {x: -105, y: 10}
+        - {x: -105, y: -17}
+        - {x: -103, y: -17}
+        - {x: -64, y: -23}
+        - {x: -31, y: -23}
+        - {x: 2, y: -18}
+        - {x: 7, y: -11}
+        - {x: 7, y: -9}
+    - name: RespawningUI_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2696
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 10}
+        - {x: -105, y: -19}
+        - {x: -90, y: -24}
+        - {x: 72, y: -24}
+        - {x: 92, y: -18}
+        - {x: 92, y: -6}
+        - {x: 83, y: 10}
+    - name: RespawningUI_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -15}
+        - {x: 8, y: -17}
+        - {x: 17, y: -18}
+        - {x: 38, y: -24}
+        - {x: 78, y: -24}
+        - {x: 92, y: -22}
+        - {x: 92, y: -3}
+        - {x: 79, y: 10}
+        - {x: -105, y: 10}
+        - {x: -105, y: -18}
+        - {x: -70, y: -24}
+        - {x: -29, y: -24}
+        - {x: 1, y: -17}
+        - {x: 7, y: -12}
+        - {x: 7, y: -10}
+    - name: RespawningUI_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 9}
+        - {x: -105, y: -21}
+        - {x: -61, y: -25}
+        - {x: 80, y: -25}
+        - {x: 92, y: -20}
+        - {x: 92, y: -6}
+        - {x: 84, y: 9}
+    - name: RespawningUI_38
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75, y: 2}
+        - {x: 50, y: 9}
+        - {x: -105, y: 9}
+        - {x: -105, y: -25}
+        - {x: 92, y: -25}
+        - {x: 92, y: -7}
+        - {x: 91, y: -6}
+    - name: RespawningUI_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: -11}
+        - {x: 6, y: -17}
+        - {x: 7, y: -21}
+        - {x: 30, y: -25}
+        - {x: 92, y: -25}
+        - {x: 92, y: -4}
+        - {x: 82, y: 8}
+        - {x: -103, y: 8}
+        - {x: -105, y: -6}
+        - {x: -105, y: -19}
+        - {x: -97, y: -20}
+        - {x: -74, y: -25}
+        - {x: -16, y: -25}
+        - {x: -12, y: -24}
+        - {x: 1, y: -20}
+        - {x: 7, y: -13}
+    - name: RespawningUI_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 8}
+        - {x: -105, y: -26}
+        - {x: 78, y: -26}
+        - {x: 91, y: -22}
+        - {x: 92, y: -20}
+        - {x: 92, y: 1}
+        - {x: 87, y: 8}
+    - name: RespawningUI_41
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2496
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 8}
+        - {x: -104, y: 3}
+        - {x: -105, y: 1}
+        - {x: -105, y: -26}
+        - {x: 92, y: -26}
+        - {x: 92, y: -2}
+        - {x: 84, y: 8}
+    - name: RespawningUI_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -19}
+        - {x: 8, y: -21}
+        - {x: 33, y: -27}
+        - {x: 80, y: -27}
+        - {x: 92, y: -22}
+        - {x: 92, y: -4}
+        - {x: 60, y: 7}
+        - {x: -103, y: 7}
+        - {x: -105, y: 0}
+        - {x: -105, y: -23}
+        - {x: -82, y: -27}
+        - {x: -21, y: -27}
+        - {x: 2, y: -21}
+        - {x: 7, y: -15}
+        - {x: 7, y: -13}
+    - name: RespawningUI_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77, y: 5}
+        - {x: -102, y: 5}
+        - {x: -105, y: -7}
+        - {x: -105, y: -21}
+        - {x: -104, y: -24}
+        - {x: -97, y: -22}
+        - {x: -95, y: -20}
+        - {x: -95, y: -17}
+        - {x: -92, y: -22}
+        - {x: -72, y: -29}
+        - {x: 69, y: -29}
+        - {x: 92, y: -24}
+        - {x: 92, y: -11}
+        - {x: 91, y: -10}
+    - name: RespawningUI_44
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: -23}
+        - {x: 8, y: -25}
+        - {x: 41, y: -31}
+        - {x: 75, y: -31}
+        - {x: 92, y: -25}
+        - {x: 92, y: -14}
+        - {x: 91, y: -12}
+        - {x: 85, y: 3}
+        - {x: -105, y: 3}
+        - {x: -105, y: -27}
+        - {x: -68, y: -31}
+        - {x: -27, y: -31}
+        - {x: 3, y: -28}
+        - {x: 7, y: -19}
+        - {x: 7, y: -17}
+    - name: RespawningUI_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 1}
+        - {x: -105, y: -30}
+        - {x: -93, y: -30}
+        - {x: -64, y: -34}
+        - {x: 92, y: -34}
+        - {x: 92, y: -7}
+        - {x: 70, y: 1}
+    - name: RespawningUI_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: -3}
+        - {x: 27, y: -4}
+        - {x: 16, y: -3}
+        - {x: -103, y: -3}
+        - {x: -105, y: -6}
+        - {x: -105, y: -38}
+        - {x: 92, y: -38}
+        - {x: 92, y: -14}
+        - {x: 85, y: -3}
+    - name: RespawningUI_47
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2296
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: -7}
+        - {x: -105, y: -42}
+        - {x: 92, y: -42}
+        - {x: 92, y: -9}
+        - {x: 86, y: -7}
+    - name: RespawningUI_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2096
+        width: 600
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: -12}
+        - {x: -105, y: -47}
+        - {x: 87, y: -47}
+        - {x: 92, y: -45}
+        - {x: 92, y: -23}
+        - {x: 83, y: -12}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
