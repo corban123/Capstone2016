@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: a9fe3b050acc76e44b3028c0da79b543
+timeCreated: 1460575915
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: StageSelector_0
+    21300002: StageSelector_1
+    21300004: StageSelector_2
+    21300006: StageSelector_3
+    21300008: StageSelector_4
+    21300010: StageSelector_5
+    21300012: StageSelector_6
+    21300014: StageSelector_7
+    21300016: StageSelector_8
+    21300018: StageSelector_9
+    21300020: StageSelector_10
+    21300022: StageSelector_11
+    21300024: StageSelector_12
+    21300026: StageSelector_13
+    21300028: StageSelector_14
+    21300030: StageSelector_15
+    21300032: StageSelector_16
+    21300034: StageSelector_17
+    21300036: StageSelector_18
+    21300038: StageSelector_19
+    21300040: StageSelector_20
+    21300042: StageSelector_21
+    21300044: StageSelector_22
+    21300046: StageSelector_23
+    21300048: StageSelector_24
+    21300050: StageSelector_25
+    21300052: StageSelector_26
+    21300054: StageSelector_27
+    21300056: StageSelector_28
+    21300058: StageSelector_29
+    21300060: StageSelector_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: StageSelector_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3533
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 64.75}
+        - {x: -104, y: -62.25}
+        - {x: 111, y: -62.25}
+        - {x: 111, y: 64.75}
+      - - {x: -90, y: 50.75}
+        - {x: 96, y: 50.75}
+        - {x: 96, y: -48.25}
+        - {x: -90, y: -48.25}
+    - name: StageSelector_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3533
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 64.75}
+        - {x: -104, y: -62.25}
+        - {x: 111, y: -62.25}
+        - {x: 111, y: 62.75}
+        - {x: 107, y: 64.75}
+      - - {x: -90, y: 50.75}
+        - {x: 96, y: 50.75}
+        - {x: 96, y: -48.25}
+        - {x: -90, y: -48.25}
+    - name: StageSelector_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3533
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 64.75}
+        - {x: -106, y: 60.75}
+        - {x: -106, y: -63.25}
+        - {x: 96, y: -63.25}
+        - {x: 110, y: -61.25}
+        - {x: 110, y: 61.75}
+        - {x: 106, y: 64.75}
+      - - {x: 94, y: 49.75}
+        - {x: 94, y: -16.25}
+        - {x: 95, y: -48.25}
+        - {x: -89, y: -47.25}
+    - name: StageSelector_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3533
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110, y: 63.75}
+        - {x: -110, y: -63.25}
+        - {x: -106, y: -67.25}
+        - {x: 115, y: -67.25}
+        - {x: 115, y: 63.75}
+      - - {x: -91, y: -14.25}
+        - {x: -67, y: 45.75}
+        - {x: 86, y: 43.75}
+        - {x: 69, y: -46.25}
+    - name: StageSelector_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3533
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110, y: 69.75}
+        - {x: -110, y: -66.25}
+        - {x: 108, y: -66.25}
+        - {x: 116, y: -62.25}
+        - {x: 116, y: 67.75}
+        - {x: 115, y: 69.75}
+      - - {x: -93, y: 42.75}
+        - {x: 78, y: 35.75}
+        - {x: 77, y: -43.25}
+        - {x: -92, y: -50.25}
+    - name: StageSelector_5
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3533
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -102, y: 68.75}
+        - {x: -107, y: 63.75}
+        - {x: -110, y: -14.25}
+        - {x: -110, y: -67.25}
+        - {x: 107, y: -67.25}
+        - {x: 116, y: -66.25}
+        - {x: 116, y: 68.75}
+      - - {x: -55, y: -27.25}
+        - {x: -54, y: 12.75}
+        - {x: 79, y: 42.75}
+        - {x: 71, y: -4.25}
+    - name: StageSelector_6
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 3533
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -108, y: 69.75}
+        - {x: -110, y: 66.75}
+        - {x: -110, y: -50.25}
+        - {x: -107, y: -64.25}
+        - {x: 110, y: -64.25}
+        - {x: 116, y: -62.25}
+        - {x: 116, y: 69.75}
+      - - {x: -61, y: -22.25}
+        - {x: -56, y: 7.75}
+        - {x: 89, y: 46.75}
+        - {x: 92, y: -40.25}
+    - name: StageSelector_7
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 3533
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 66.75}
+        - {x: -107, y: 64.75}
+        - {x: -107, y: -63.25}
+        - {x: 110, y: -63.25}
+        - {x: 116, y: -60.25}
+        - {x: 116, y: 66.75}
+      - - {x: -85, y: -45.25}
+        - {x: -82, y: 18.75}
+        - {x: 93, y: 49.75}
+        - {x: 92, y: -45.25}
+    - name: StageSelector_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2970
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 64.5}
+        - {x: -104, y: -62.5}
+        - {x: 110, y: -62.5}
+        - {x: 111, y: -61.5}
+        - {x: 111, y: 62.5}
+        - {x: 110, y: 64.5}
+      - - {x: -90, y: 50.5}
+        - {x: 96, y: 50.5}
+        - {x: 96, y: -47.5}
+        - {x: -68, y: -47.5}
+    - name: StageSelector_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2970
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 64.5}
+        - {x: -104, y: -60.5}
+        - {x: -100, y: -62.5}
+        - {x: 111, y: -62.5}
+        - {x: 111, y: 60.5}
+        - {x: 105, y: 64.5}
+      - - {x: -90, y: 50.5}
+        - {x: 96, y: 50.5}
+        - {x: 96, y: -47.5}
+        - {x: -58, y: -47.5}
+    - name: StageSelector_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2970
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 64.5}
+        - {x: -104, y: -62.5}
+        - {x: 111, y: -62.5}
+        - {x: 111, y: 57.5}
+        - {x: 110, y: 64.5}
+      - - {x: -90, y: 50.5}
+        - {x: 96, y: 50.5}
+        - {x: 96, y: -47.5}
+        - {x: -50, y: -47.5}
+    - name: StageSelector_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2970
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 65.5}
+        - {x: -105, y: 64.5}
+        - {x: -105, y: -62.5}
+        - {x: 110, y: -62.5}
+        - {x: 110, y: 59.5}
+        - {x: 107, y: 65.5}
+      - - {x: -39, y: 50.5}
+        - {x: 70, y: 50.5}
+        - {x: 95, y: -47.5}
+        - {x: -89, y: -47.5}
+    - name: StageSelector_12
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2970
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110, y: 67.5}
+        - {x: -110, y: -61.5}
+        - {x: 116, y: -61.5}
+        - {x: 116, y: 67.5}
+      - - {x: -87, y: 51.5}
+        - {x: 86, y: 13.5}
+        - {x: 85, y: -43.5}
+        - {x: -86, y: -45.5}
+    - name: StageSelector_13
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2970
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110, y: 70.5}
+        - {x: -110, y: -64.5}
+        - {x: -99, y: -67.5}
+        - {x: 116, y: -67.5}
+        - {x: 116, y: 70.5}
+      - - {x: -85, y: -37.5}
+        - {x: -87, y: 49.5}
+        - {x: 76, y: 22.5}
+        - {x: 75, y: -40.5}
+    - name: StageSelector_14
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2970
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 116, y: 69.5}
+        - {x: -109, y: 69.5}
+        - {x: -109, y: -62.5}
+        - {x: 112, y: -62.5}
+        - {x: 116, y: -57.5}
+      - - {x: -82, y: 37.5}
+        - {x: 77, y: 29.5}
+        - {x: 78, y: -42.5}
+        - {x: -82, y: -42.5}
+    - name: StageSelector_15
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 2970
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110, y: 69.5}
+        - {x: -110, y: -59.5}
+        - {x: -105, y: -66.5}
+        - {x: 116, y: -66.5}
+        - {x: 116, y: 68.5}
+        - {x: 114, y: 69.5}
+      - - {x: -74, y: 31.5}
+        - {x: 83, y: 37.5}
+        - {x: 83, y: -33.5}
+        - {x: -76, y: -33.5}
+    - name: StageSelector_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2407
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -108, y: 68.75}
+        - {x: -109, y: 64.75}
+        - {x: -109, y: -59.25}
+        - {x: -106, y: -67.25}
+        - {x: 87, y: -67.25}
+        - {x: 108, y: -66.25}
+        - {x: 116, y: -61.25}
+        - {x: 116, y: 65.75}
+        - {x: 107, y: 68.75}
+      - - {x: 90, y: -44.25}
+        - {x: 93, y: -41.25}
+        - {x: 93, y: -40.25}
+        - {x: 91, y: -36.25}
+        - {x: 85, y: -43.25}
+        - {x: 86, y: -44.25}
+    - name: StageSelector_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2407
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109, y: 66.75}
+        - {x: 71, y: 68.75}
+        - {x: -86, y: 68.75}
+        - {x: -104, y: 65.75}
+        - {x: -104, y: -59.25}
+        - {x: -100, y: -63.25}
+        - {x: 55, y: -63.25}
+        - {x: 107, y: -62.25}
+        - {x: 112, y: -57.25}
+        - {x: 112, y: 62.75}
+      - - {x: 55, y: -44.25}
+        - {x: -88, y: -44.25}
+        - {x: -88, y: 10.75}
+        - {x: 96, y: 49.75}
+    - name: StageSelector_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2407
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 65.75}
+        - {x: -104, y: -62.25}
+        - {x: 111, y: -62.25}
+        - {x: 111, y: 65.75}
+      - - {x: -90, y: -47.25}
+        - {x: -52, y: 48.75}
+        - {x: 96, y: 49.75}
+        - {x: 63, y: -47.25}
+    - name: StageSelector_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2407
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -104, y: 65.75}
+        - {x: -104, y: -62.25}
+        - {x: 110, y: -62.25}
+        - {x: 111, y: -52.25}
+        - {x: 111, y: 65.75}
+      - - {x: -90, y: -47.25}
+        - {x: -61, y: 50.75}
+        - {x: 18, y: 50.75}
+        - {x: 71, y: -47.25}
+    - name: StageSelector_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2407
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 65.75}
+        - {x: -104, y: 59.75}
+        - {x: -104, y: -59.25}
+        - {x: -100, y: -62.25}
+        - {x: 83, y: -62.25}
+        - {x: 105, y: -61.25}
+        - {x: 111, y: -60.25}
+        - {x: 111, y: 65.75}
+      - - {x: -90, y: -47.25}
+        - {x: -88, y: 48.75}
+        - {x: 93, y: 47.75}
+        - {x: 79, y: -47.25}
+    - name: StageSelector_21
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2407
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 65.75}
+        - {x: -104, y: 59.75}
+        - {x: -104, y: -62.25}
+        - {x: 111, y: -62.25}
+        - {x: 111, y: 65.75}
+      - - {x: -90, y: -47.25}
+        - {x: 6, y: 50.75}
+        - {x: 96, y: 50.75}
+        - {x: 89, y: -47.25}
+    - name: StageSelector_22
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2407
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -97, y: 69.75}
+        - {x: -104, y: 63.75}
+        - {x: -104, y: -58.25}
+        - {x: -99, y: -61.25}
+        - {x: 113, y: -61.25}
+        - {x: 114, y: -55.25}
+        - {x: 114, y: 64.75}
+        - {x: 111, y: 69.75}
+      - - {x: -86, y: -43.25}
+        - {x: -85, y: 50.75}
+        - {x: 95, y: 50.75}
+        - {x: 95, y: -42.25}
+    - name: StageSelector_23
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 2407
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110, y: 70.75}
+        - {x: -110, y: -67.25}
+        - {x: 115, y: -67.25}
+        - {x: 116, y: -66.25}
+        - {x: 116, y: 68.75}
+        - {x: 114, y: 70.75}
+      - - {x: -81, y: 55.75}
+        - {x: 100, y: 55.75}
+        - {x: 100, y: -37.25}
+        - {x: -76, y: -36.25}
+    - name: StageSelector_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1844
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110, y: 69.5}
+        - {x: -110, y: -50.5}
+        - {x: -106, y: -66.5}
+        - {x: -103, y: -67.5}
+        - {x: 116, y: -67.5}
+        - {x: 116, y: 69.5}
+    - name: StageSelector_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1844
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: 69.5}
+        - {x: -105, y: -57.5}
+        - {x: -99, y: -61.5}
+        - {x: 116, y: -61.5}
+        - {x: 116, y: 69.5}
+      - - {x: -84, y: 6.5}
+        - {x: -83, y: 49.5}
+        - {x: 94, y: -40.5}
+        - {x: -60, y: -41.5}
+    - name: StageSelector_26
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1844
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -106, y: 64.5}
+        - {x: -106, y: -62.5}
+        - {x: 111, y: -62.5}
+        - {x: 111, y: 64.5}
+      - - {x: -90, y: 49.5}
+        - {x: 82, y: 49.5}
+        - {x: 94, y: -48.5}
+        - {x: -90, y: -48.5}
+    - name: StageSelector_27
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1844
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 112, y: 64.5}
+        - {x: 103, y: 65.5}
+        - {x: -110, y: 65.5}
+        - {x: -110, y: -52.5}
+        - {x: -106, y: -63.5}
+        - {x: 116, y: -63.5}
+        - {x: 116, y: 42.5}
+        - {x: 113, y: 59.5}
+      - - {x: -88, y: 48.5}
+        - {x: 91, y: 46.5}
+        - {x: 86, y: 4.5}
+        - {x: -50, y: -47.5}
+    - name: StageSelector_28
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1844
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: 61.5}
+        - {x: 111, y: 66.5}
+        - {x: -106, y: 66.5}
+        - {x: -109, y: 63.5}
+        - {x: -109, y: -65.5}
+        - {x: 104, y: -65.5}
+        - {x: 113, y: -61.5}
+        - {x: 116, y: -55.5}
+        - {x: 116, y: -3.5}
+      - - {x: -90, y: 48.5}
+        - {x: 90, y: 44.5}
+        - {x: 80, y: 13.5}
+        - {x: 78, y: -44.5}
+    - name: StageSelector_29
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1844
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -107, y: 65.5}
+        - {x: -109, y: 55.5}
+        - {x: -109, y: -64.5}
+        - {x: 107, y: -64.5}
+        - {x: 116, y: -55.5}
+        - {x: 116, y: 65.5}
+      - - {x: -86, y: -31.5}
+        - {x: -88, y: 47.5}
+        - {x: 83, y: 21.5}
+        - {x: 48, y: -45.5}
+    - name: StageSelector_30
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1844
+        width: 1000
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -106, y: 64.5}
+        - {x: -109, y: 60.5}
+        - {x: -109, y: -60.5}
+        - {x: -101, y: -63.5}
+        - {x: 110, y: -63.5}
+        - {x: 112, y: -57.5}
+        - {x: 112, y: 64.5}
+      - - {x: -89, y: -39.5}
+        - {x: -89, y: 28.5}
+        - {x: 88, y: 46.5}
+        - {x: 52, y: -42.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
