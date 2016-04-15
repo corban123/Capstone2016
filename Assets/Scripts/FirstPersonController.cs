@@ -248,9 +248,8 @@ public class FirstPersonController : NetworkBehaviour
         float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
         float vertical = CrossPlatformInputManager.GetAxis("Vertical");
         olddir = transform.forward;
-        anim.SetFloat("moveZ", vertical);
-        anim.SetFloat("moveX", horizontal);
-        anim.SetFloat("moveY", horizontal);
+        anim.SetFloat("moveX", Math.Abs(horizontal));
+        anim.SetFloat("moveZ", Math.Abs(vertical));
         anim.SetBool("isGrounded", m_CharacterController.isGrounded);
 
 #if !MOBILE_INPUT
