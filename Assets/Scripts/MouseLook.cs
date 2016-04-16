@@ -13,6 +13,7 @@ public class MouseLook
     public bool smooth;
     public float smoothTime = 5f;
     public bool lockCursor = true;
+    public bool paused = false;
 
 
     private Quaternion m_CharacterTargetRot;
@@ -72,11 +73,9 @@ public class MouseLook
 
     private void InternalLockUpdate()
     {
-        if(Input.GetKeyUp(KeyCode.Escape))
-        {
-            m_cursorIsLocked = false;
-        }
-        else if(Input.GetMouseButtonUp(0))
+        m_cursorIsLocked = !paused;
+
+        if(Input.GetMouseButtonUp(0))
         {
             m_cursorIsLocked = true;
         }

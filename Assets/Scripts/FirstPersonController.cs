@@ -49,6 +49,8 @@ public class FirstPersonController : NetworkBehaviour
     float duration = 10.0f;
     float freezeRate = 0.025f;
 
+    private bool paused;
+
     // Use this for initialization
     private void Start()
     {
@@ -80,7 +82,7 @@ public class FirstPersonController : NetworkBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (isLocalPlayer)
+        if (isLocalPlayer & !paused)
         {
             RotateView();
             // the jump state needs to read here to make sure it is not missed
@@ -116,7 +118,7 @@ public class FirstPersonController : NetworkBehaviour
 
     private void FixedUpdate()
     {
-        if (isLocalPlayer)
+        if (isLocalPlayer && !paused)
         {
             float speed;
             GetInput(out speed);
@@ -306,4 +308,14 @@ public class FirstPersonController : NetworkBehaviour
         Cursor.visible = false;
     }
 
+    public void PauseFPC(bool paused) {
+        if (paused) {
+            m_MouseLook.paused = true;
+        } else {
+            m_MouseLook.paused = false;
+        }
+        m_MouseLook.UpdateCursorLock ();
+
+        this.paused = paused;
+    }
 }

@@ -84,6 +84,7 @@ GameObject:
   - 114: {fileID: 11411174}
   - 95: {fileID: 9506430}
   - 114: {fileID: 11441358}
+  - 114: {fileID: 11413028}
   m_Layer: 0
   m_Name: scientist_animations_female
   m_TagString: Player
@@ -3535,6 +3536,17 @@ MonoBehaviour:
   m_JumpSound: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
   m_LandSound: {fileID: 8300000, guid: 4e057d7a710088f4190da57b97229670, type: 3}
   moveFactor: 0
+--- !u!114 &11413028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ef03655b22746ad9e3ca32a94bc783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11415324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3586,7 +3598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d361670a83fa4bc2bd4d16c03e73a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CrosshairTex: {fileID: 2800000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
   BlackHoleSprite: {fileID: 191164, guid: d16c2ffcd7b4f4819b137a25789cd0eb, type: 2}
   BlackOutSprite: {fileID: 140750, guid: fbbe543c74b734eb68f0300fb279cac6, type: 2}
   FreezeSprite: {fileID: 147880, guid: be4f0aa532c1b4997abc996ea79fea58, type: 2}
