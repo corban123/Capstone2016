@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 
 public class PauseScript : NetworkBehaviour {
     readonly bool DEBUG = false;
-    bool paused;
+    public bool paused;
     FirstPersonController fpc;
 
 	// Use this for initialization
@@ -16,15 +16,17 @@ public class PauseScript : NetworkBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (isLocalPlayer) {
-            if (Input.GetKeyDown (KeyCode.Escape)) {
+            if (Input.GetKeyDown (KeyCode.Escape) && !DEBUG) {
                 paused = TogglePause ();
             }
         }
 	}
 
-    void onGUI() {
-        if (paused) {
-            print ("I'm paused!");
+    void OnGUI() {
+        if (paused && !DEBUG) {
+            GUILayout.Label("Game is paused!");
+            if(GUILayout.Button("Click me to unpause"))
+                paused = TogglePause();
         }
     }
 

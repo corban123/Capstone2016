@@ -21,6 +21,7 @@ public class CombatScript : NetworkBehaviour
     readonly int elementPickUpPrice = 5;
 
     GUIScript gui;
+    PauseScript pauseScript;
 
     // Use this for initialization
     void Start () {
@@ -31,13 +32,14 @@ public class CombatScript : NetworkBehaviour
         takeDmg = false;
 
         gui = gameObject.GetComponent<GUIScript> ();
+        pauseScript = gameObject.GetComponent<PauseScript> ();
     }
     
 	
 	// Update is called once per frame
 	void Update () {
         if (isLocalPlayer) {
-            if (Input.GetButtonDown ("Fire1") && Time.time > nextFire && isLocalPlayer) { //PC control
+            if (Input.GetButtonDown ("Fire1") && Time.time > nextFire && !pauseScript.paused) { //PC control
                 // This boolean has to be before CmdShootProjectile because numQuarks is decremented in the command.
                 bool shootElement = haveElement && numQuarks <= 0;
                 nextFire = Time.time + fireRate;
