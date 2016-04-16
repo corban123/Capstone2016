@@ -40,6 +40,7 @@ public class CombatScript : NetworkBehaviour
             if (Input.GetButtonDown ("Fire1") && Time.time > nextFire && isLocalPlayer) { //PC control
                 // This boolean has to be before CmdShootProjectile because numQuarks is decremented in the command.
                 bool shootElement = haveElement && numQuarks <= 0;
+                nextFire = Time.time + fireRate;
 
                 CmdShootProjectile (haveElement, heldElement);
 
@@ -80,7 +81,7 @@ public class CombatScript : NetworkBehaviour
 		Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
 		int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
 		gameObject.GetComponent<Animator>().Play("Shoot");
-		nextFire = Time.time + fireRate;
+		
 		if (haveElementCmd && numQuarks <= 0) {
 			instance = Instantiate(elementShot, newPos, newRot) as GameObject;
             instance.GetComponent<ProjectileScript> ().elementId = heldElementCmd;
