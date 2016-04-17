@@ -24,7 +24,8 @@ public class GUIScript : MonoBehaviour {
     int quarkMeterHeight = 30;
 
     private float delay = 1.633f;
-    private float fadeTime = 5.0f;
+    private float fadeTransitionTime = 5.0f;
+    private float fadeBlindedTime = 8.0f;
 
     Image blackout;
 
@@ -222,9 +223,9 @@ public class GUIScript : MonoBehaviour {
     }
 
     IEnumerator blackOutCoroutine() {
-        blackout.CrossFadeAlpha (1.0f, fadeTime, false);
-        yield return new WaitForSeconds(fadeTime);
-        blackout.CrossFadeAlpha (0.0f, fadeTime, false);
+        blackout.CrossFadeAlpha (1.0f, fadeTransitionTime, false);
+        yield return new WaitForSeconds(fadeBlindedTime);
+        blackout.CrossFadeAlpha (0.0f, fadeTransitionTime, false);
     }
 
     private GameObject GetPowerUpObject(int elementID) {
