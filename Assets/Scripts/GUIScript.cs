@@ -24,10 +24,11 @@ public class GUIScript : MonoBehaviour {
     int quarkMeterHeight = 30;
 
     private float delay = 1.633f;
-    private float fadeTransitionTime = 5.0f;
-    private float fadeBlindedTime = 8.0f;
+    private float fadeTransitionTime = 3.0f;
+    private float fadeBlindedTime = 6.0f;
 
     Image blackout;
+    Image metalize;
 
     Animator elementPickedUpAnimator;
     Image elementPickedUpImage;
@@ -216,6 +217,17 @@ public class GUIScript : MonoBehaviour {
         enemyScoredImage.enabled = true;
         enemyScoredAnimator.SetBool ("animating", true);
         enemyScoredStartTime = Time.time;
+    }
+
+    public void metalizeUI() {
+        StartCoroutine (metalizeCoroutine());
+    }
+
+
+    IEnumerator metalizeCoroutine() {
+        metalize.CrossFadeAlpha (1.0f, fadeTransitionTime, false);
+        yield return new WaitForSeconds(fadeBlindedTime);
+        metalize.CrossFadeAlpha (0.0f, fadeTransitionTime, false);
     }
 
     public void blackOutUI() {

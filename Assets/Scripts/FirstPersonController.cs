@@ -46,8 +46,9 @@ public class FirstPersonController : NetworkBehaviour
     Animator anim;
     bool freezing;
     float startTime;
-    float duration = 10.0f;
+    float duration = 9.0f;
     float freezeRate = 0.025f;
+    GUIScript gui;
 
     private bool paused;
 
@@ -72,6 +73,7 @@ public class FirstPersonController : NetworkBehaviour
 
             move = GetComponent<MoveScript>();
             anim = GetComponent<Animator>();
+            gui = GetComponent<GUIScript> ();
             freezing = false;
             moveFactor = 1.0f;
 
@@ -297,8 +299,8 @@ public class FirstPersonController : NetworkBehaviour
         if (isLocalPlayer)
         {
             startTime = Time.time;
-            print("Freezing movement at Time: " + startTime);
             freezing = true;
+            gui.metalizeUI ();
         }
     }
 
