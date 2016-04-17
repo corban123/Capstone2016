@@ -3479,6 +3479,7 @@ MonoBehaviour:
     smooth: 0
     smoothTime: 5
     lockCursor: 1
+    paused: 0
   m_UseFovKick: 1
   m_FovKick:
     Camera: {fileID: 0}
@@ -3547,6 +3548,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ef03655b22746ad9e3ca32a94bc783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paused: 0
+  pauseCanvas: {fileID: 22305042, guid: bc59dfe4ba598480191f2f0cf62d1b60, type: 2}
 --- !u!114 &11415324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3602,6 +3605,7 @@ MonoBehaviour:
   BlackOutSprite: {fileID: 140750, guid: fbbe543c74b734eb68f0300fb279cac6, type: 2}
   FreezeSprite: {fileID: 147880, guid: be4f0aa532c1b4997abc996ea79fea58, type: 2}
   AtomBombSprite: {fileID: 144286, guid: 0ef3f41ea4a7347c6bdf7ed667ddbbc8, type: 2}
+  canvas: {fileID: 0}
 --- !u!114 &11441358
 MonoBehaviour:
   m_ObjectHideFlags: 1

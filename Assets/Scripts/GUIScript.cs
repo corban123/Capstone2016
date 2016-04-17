@@ -7,6 +7,7 @@ public class GUIScript : MonoBehaviour {
     public GameObject BlackOutSprite;
     public GameObject FreezeSprite;
     public GameObject AtomBombSprite;
+    public Canvas canvas;
 
     BoardScript boardScript;
     Image elementHeldImage;
@@ -52,6 +53,8 @@ public class GUIScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         boardScript = GetComponent<BoardScript> ();
+
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
 
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
@@ -238,4 +241,13 @@ public class GUIScript : MonoBehaviour {
         }
         return new GameObject ();
     }
+
+    public void disableCanvas() {
+        canvas.enabled = false;
+    }
+
+    public void enableCanvas() {
+        canvas.enabled = true;
+    }
+        
 }
