@@ -4,7 +4,7 @@ using System.Collections;
 using UnityEngine.Networking;
 
 public class PauseScript : NetworkBehaviour {
-    readonly bool DEBUG = false;
+    public bool TURN_PAUSE_MENU_OFF = false;
     public bool paused;
 
     FirstPersonController fpc;
@@ -35,25 +35,27 @@ public class PauseScript : NetworkBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (isLocalPlayer) {
-            if (Input.GetKeyDown (KeyCode.Escape) && !DEBUG) {
+            if (Input.GetKeyDown (KeyCode.Escape)) {
                 TogglePause ();
             }
         }
 	}
 
     void TogglePause() {
-        if (Time.timeScale == 0f) {
-            paused = false;
-            Time.timeScale = 1f;
-            fpc.PauseFPC (false);
-            gui.enableCanvas ();
-            pauseCanvas.enabled = false;
-        } else {
-            paused = true;
-            fpc.PauseFPC (true);
-            Time.timeScale = 0f;
-            gui.disableCanvas ();
-            pauseCanvas.enabled = true;
+        if (!TURN_PAUSE_MENU_OFF) {
+            if (Time.timeScale == 0f) {
+                paused = false;
+                Time.timeScale = 1f;
+                fpc.PauseFPC (false);
+                gui.enableCanvas ();
+                pauseCanvas.enabled = false;
+            } else {
+                paused = true;
+                fpc.PauseFPC (true);
+                Time.timeScale = 0f;
+                gui.disableCanvas ();
+                pauseCanvas.enabled = true;
+            }
         }
     }
 
