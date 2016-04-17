@@ -44,7 +44,7 @@ public class SpawningScript : NetworkBehaviour {
     {
         GameObject instance;
         Element.GetComponent<ElementScript>().elementID = val;
-
+		Element.GetComponent<ElementScript> ().spawnTrans = trans;
         GameObject marker = GetObject (val);
 
 		instance = Instantiate(Element, new Vector3(trans.x, trans.y + 4, trans.z), new Quaternion(0, 0, 0, 0)) as GameObject;

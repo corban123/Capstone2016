@@ -50,6 +50,7 @@ public class MoveScript : NetworkBehaviour
                 GameObject pickedElement = collision.gameObject;
                 this.gameObject.GetComponent<CombatScript>().haveElement = true;
                 this.gameObject.GetComponent<CombatScript>().heldElement = pickedElement.GetComponent<ElementScript>().elementID;
+				this.gameObject.GetComponent<CombatScript> ().heldElementPos = pickedElement.GetComponent<ElementScript> ().spawnTrans;
                 CmdPickUpElement(pickedElement);
                 print("picked up element " + combat.heldElement);
                 gui.SetElementUI(combat.heldElement);

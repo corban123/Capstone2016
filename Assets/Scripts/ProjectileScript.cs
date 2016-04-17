@@ -65,6 +65,7 @@ public class ProjectileScript : NetworkBehaviour
                 //If the projectile has a element script, then it's an element. It needs to active it's powerup on collision.
                 if (e != null && !coll.gameObject.CompareTag("Base"))
                 {
+					e.CmdSpawnDead();
                     e.PowerUp();                       
                 } else if (e != null && coll.gameObject.CompareTag("Base")){
                     int BaseId = Int32.Parse(coll.gameObject.name.Split(' ')[1]);

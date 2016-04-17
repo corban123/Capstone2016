@@ -15,13 +15,13 @@ public class QuarkOverlord : NetworkBehaviour {
 		preparedToSpawn = new ArrayList ();
 		empty = new ArrayList ();
 		if (objects = GameObject.Find ("QuarkMarkers")) {
-			for (int i = 0; i < objects.transform.childCount - 10; i++) {
+			for (int i = 9; i < objects.transform.childCount - 1; i++) {
 				QuarkChild child = objects.transform.GetChild (i).GetComponent<QuarkChild> ();
 				child.numTimesAdded = 1;
 				spawnedList.Add (child);	
 	
 			}
-			for(int i = objects.transform.childCount-10; i < objects.transform.childCount; i++){
+			for(int i = 0; i < 10; i++){
 				QuarkChild child = objects.transform.GetChild (i).GetComponent<QuarkChild> ();
 				child.preparedToSpawn = true;
 				preparedToSpawn.Add(child);

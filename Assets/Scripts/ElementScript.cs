@@ -15,11 +15,30 @@ public class ElementScript : NetworkBehaviour
     public GameObject blackHole;
     public GameObject atomBomb;
     enum Element { Alkaline, Metals, Gases, Noble}
+
+	public GameObject barium;
+	public GameObject calcium;
+	public GameObject carbon;
+	public GameObject copper;
+	public GameObject gold;
+	public GameObject helium;
+	public GameObject hydrogen;
+	public GameObject krypton;
+	public GameObject neon;
+	public GameObject nickel;
+	public GameObject nitrogen;
+	public GameObject oxygen;
+	public GameObject potassium;
+	public GameObject silver;
+	public GameObject sodium;
+	public GameObject xenon;
     Ray shootRay;
     RaycastHit shootHit;
     LineRenderer gunLine;
     public float range = 20f;
     GUIScript guiOtherPlayer;
+	[SyncVar][SerializeField] public Vector3 spawnTrans;
+	public GameObject elemPrefab;
 
 
 	// Use this for initialization
@@ -103,4 +122,57 @@ public class ElementScript : NetworkBehaviour
             }
         }
     }
+	[Command]
+	public void CmdSpawnDead(){
+		GameObject instance;
+		elemPrefab.GetComponent<ElementScript>().elementID = elementID;
+		elemPrefab.GetComponent<ElementScript> ().spawnTrans = spawnTrans;
+		GameObject marker = GetObject (elementID);
+
+		instance = Instantiate(elemPrefab, new Vector3(spawnTrans.x, spawnTrans.y + 4, spawnTrans.z), new Quaternion(0, 0, 0, 0)) as GameObject;
+		marker = Instantiate (marker, new Vector3 (spawnTrans.x, spawnTrans.y + 10, spawnTrans.z), new Quaternion (0, 0, 0, 0)) as GameObject;
+		marker.transform.parent = instance.transform;
+		NetworkServer.Spawn(instance);
+		NetworkServer.Spawn (marker);
+		Debug.Log ("In CmdSPawnDead");
+
+	}
+	public GameObject GetObject(int element) {
+		switch (element) {
+		case 0:
+			return sodium;
+		case 1:
+			return potassium;
+		case 2:
+			return calcium;
+		case 3:
+			return barium;
+		case 4:
+			return copper;
+		case 5:
+			return nickel;
+		case 6:
+			return silver;
+		case 7:
+			return gold;
+		case 8:
+			return carbon;
+		case 9:
+			return nitrogen;
+		case 10:
+			return oxygen;
+		case 11:
+			return hydrogen;
+		case 12:
+			return helium;
+		case 13:
+			return neon;
+		case 14:
+			return krypton;
+		case 15:
+			return xenon;
+		default:
+			return null;
+		}
+	}
 }

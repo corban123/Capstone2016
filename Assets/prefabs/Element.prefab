@@ -395,7 +395,6 @@ GameObject:
   - 114: {fileID: 11420488}
   - 135: {fileID: 13507754}
   - 114: {fileID: 11465636}
-  - 114: {fileID: 11414068}
   m_Layer: 0
   m_Name: Element
   m_TagString: Element
@@ -1163,17 +1162,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11414068
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b389ae41980e40e9b6894920851b875, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11420488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1186,11 +1174,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 0
-  elementID: 13
+  elementID: 8
   carrier: 0
   blackHole: {fileID: 100000, guid: 019e298c4b22d4d668f33d6a8e4ed0a2, type: 2}
   atomBomb: {fileID: 105428, guid: dfc861abc38150749ad3b8ee77e46517, type: 2}
+  barium: {fileID: 0}
+  calcium: {fileID: 0}
+  carbon: {fileID: 0}
+  copper: {fileID: 0}
+  gold: {fileID: 0}
+  helium: {fileID: 0}
+  hydrogen: {fileID: 0}
+  krypton: {fileID: 0}
+  neon: {fileID: 0}
+  nickel: {fileID: 0}
+  nitrogen: {fileID: 0}
+  oxygen: {fileID: 0}
+  potassium: {fileID: 0}
+  silver: {fileID: 0}
+  sodium: {fileID: 0}
+  xenon: {fileID: 0}
   range: 100
+  spawnTrans: {x: 0, y: 0, z: 0}
+  elemPrefab: {fileID: 0}
 --- !u!114 &11450710
 MonoBehaviour:
   m_ObjectHideFlags: 1

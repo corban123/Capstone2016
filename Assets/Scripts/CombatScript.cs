@@ -14,7 +14,7 @@ public class CombatScript : NetworkBehaviour
     [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
     public bool haveElement;
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
-
+	public Vector3 heldElementPos;
     float startTime;
     public bool takeDmg;
 
@@ -27,7 +27,7 @@ public class CombatScript : NetworkBehaviour
     void Start () {
         haveElement = false;
         heldElement = -1;
-
+		heldElementPos = Vector3.zero;
         startTime = Time.time;
         takeDmg = false;
 
@@ -44,7 +44,7 @@ public class CombatScript : NetworkBehaviour
                 bool shootElement = haveElement && numQuarks <= 0;
                 nextFire = Time.time + fireRate;
 
-                CmdShootProjectile (haveElement, heldElement);
+				CmdShootProjectile (haveElement, heldElement, heldElementPos);
 
                 // These lines have to be outside CmdShootProjectile. If they are inside the command they will NOT work.
                 if (shootElement) {
@@ -76,7 +76,7 @@ public class CombatScript : NetworkBehaviour
     }
 
     [Command]
-    void CmdShootProjectile(bool haveElementCmd, int heldElementCmd)
+	void CmdShootProjectile(bool haveElementCmd, int heldElementCmd, Vector3 heldElementPos)
     {
 		GameObject instance;
 		Vector3 newPos = shotSpawn.position;
@@ -87,6 +87,7 @@ public class CombatScript : NetworkBehaviour
 		if (haveElementCmd && numQuarks <= 0) {
 			instance = Instantiate(elementShot, newPos, newRot) as GameObject;
             instance.GetComponent<ProjectileScript> ().elementId = heldElementCmd;
+			instance.GetComponent<ElementScript> ().spawnTrans = heldElementPos;
 		}
 		else
 		{
