@@ -43,19 +43,16 @@ public class PauseScript : NetworkBehaviour {
 
     void TogglePause() {
         if (!TURN_PAUSE_MENU_OFF) {
-            if (Time.timeScale == 0f) {
-                paused = false;
-                Time.timeScale = 1f;
+            if (paused) {
                 fpc.PauseFPC (false);
                 gui.enableCanvas ();
                 pauseCanvas.enabled = false;
             } else {
-                paused = true;
                 fpc.PauseFPC (true);
-                Time.timeScale = 0f;
                 gui.disableCanvas ();
                 pauseCanvas.enabled = true;
             }
+            paused = !paused;
         }
     }
 
