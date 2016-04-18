@@ -5,15 +5,14 @@ using UnityEngine.Networking;
 
 public class AtomBomb : NetworkBehaviour {
 
-    float inner = 10f;
-    float outer = 20f;
+    float radius = 30f;
     float pushforce = 30f;
     public int duration;
     private Collider[] victims;
     void Start()
     {      
         Destroy(this.gameObject, duration);
-        foreach (Collider collider in Physics.OverlapSphere(transform.position, inner))
+        foreach (Collider collider in Physics.OverlapSphere(transform.position, radius))
         {
             Rigidbody rb = collider.GetComponent<Rigidbody>();
             if (rb != null && rb.gameObject.CompareTag("Player"))
@@ -27,7 +26,7 @@ public class AtomBomb : NetworkBehaviour {
 
     void Update()
     {
-        victims = Physics.OverlapSphere(transform.position, outer);
+        victims = Physics.OverlapSphere(transform.position, radius);
         foreach (Collider collider in victims)
         {
             Rigidbody rb = collider.GetComponent<Rigidbody>();
@@ -52,6 +51,7 @@ public class AtomBomb : NetworkBehaviour {
         {
             rb.GetComponent<Rigidbody>().isKinematic = true;
             rb.GetComponent<Rigidbody>().isKinematic = false;
+            print("toggled player kinematic");
         }
     }
 
@@ -64,9 +64,10 @@ public class AtomBomb : NetworkBehaviour {
             {
                 rb.GetComponent<Rigidbody>().isKinematic = true;
                 rb.GetComponent<Rigidbody>().isKinematic = false;
+            print("toggled player kinematic");
             }
         }
-        CmdRemoveBomb();
+        //CmdRemoveBomb();
     }
 
     [Command]

@@ -14,6 +14,9 @@ public class ElementScript : NetworkBehaviour
     [SyncVar] public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
     public GameObject blackHole;
     public GameObject atomBomb;
+    public GameObject metalize;
+    public GameObject blind;
+
     enum Element { Alkaline, Metals, Gases, Noble}
 
 	public GameObject barium;
@@ -105,7 +108,22 @@ public class ElementScript : NetworkBehaviour
         NetworkServer.Spawn(instance);
     }
 
+    [Command]
+    void CmdSpawnMetal()
+    {
+        GameObject instance = Instantiate(metalize, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation) as GameObject;
+        NetworkServer.Spawn(instance);
+    }
+
+    [Command]
+    void CmdSpawnBlind()
+    {
+        GameObject instance = Instantiate(blind, new Vector3(transform.position.x, transform.position.y + 10, transform.position.z), transform.rotation) as GameObject;
+        NetworkServer.Spawn(instance);
+    }
+
     void Freeze() {
+        CmdSpawnMetal();
         foreach (Collider collider in Physics.OverlapSphere(transform.position, range)) {
             FirstPersonController fpc = collider.GetComponent<FirstPersonController> ();
             if (fpc != null) {
@@ -115,6 +133,7 @@ public class ElementScript : NetworkBehaviour
     }
 
     void Blackout() {
+        CmdSpawnBlind();
         foreach (Collider collider in Physics.OverlapSphere(transform.position, range)) {
             GUIScript gui = collider.GetComponent<GUIScript> ();
             if (gui != null) {

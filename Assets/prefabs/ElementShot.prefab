@@ -221,6 +221,8 @@ MonoBehaviour:
   carrier: 0
   blackHole: {fileID: 100000, guid: 019e298c4b22d4d668f33d6a8e4ed0a2, type: 2}
   atomBomb: {fileID: 105428, guid: dfc861abc38150749ad3b8ee77e46517, type: 2}
+  metalize: {fileID: 161004, guid: d3161ba9e8f19dd428823fd765247042, type: 2}
+  blind: {fileID: 126024, guid: 99ca0a267f024c946a31b44262e6c430, type: 2}
   barium: {fileID: 184272, guid: a9e5a3a42580847439d0eb88ddb2dcaa, type: 2}
   calcium: {fileID: 107250, guid: 394bdf465f8a745b196486aab079a59d, type: 2}
   carbon: {fileID: 193666, guid: 7bc9b7f6638a84c96aab60eb862be1ae, type: 2}

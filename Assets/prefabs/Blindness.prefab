@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 428658}
   - 198: {fileID: 19897272}
   - 199: {fileID: 19999908}
+  - 114: {fileID: 11479368}
   m_Layer: 0
   m_Name: Blindness
   m_TagString: Untagged
@@ -29,6 +30,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11479368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 153
+    i1: 202
+    i2: 10
+    i3: 38
+    i4: 127
+    i5: 2
+    i6: 76
+    i7: 148
+    i8: 106
+    i9: 49
+    i10: 180
+    i11: 66
+    i12: 98
+    i13: 230
+    i14: 196
+    i15: 48
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!198 &19897272
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -38,7 +71,7 @@ ParticleSystem:
   serializedVersion: 2
   lengthInSec: 7
   startDelay:
-    scalar: 2
+    scalar: 0.5
     maxCurve:
       serializedVersion: 2
       m_Curve:
