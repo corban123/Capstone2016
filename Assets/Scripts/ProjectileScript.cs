@@ -78,19 +78,12 @@ public class ProjectileScript : NetworkBehaviour
                         print("bs " + board);
                         bool isWin = board.score(elementId);
 
-                        if(isWin)
+                        if(isWin){
                             gui.enableYouWon ();
-                        else
+                        }
+                        else {
                             gui.enableYouScored ();
-
-//                        if (playerSource == 1) {
-//                            GUIScript otherGui = GameObject.Find("Player 2").GetComponent<GUIScript>();
-//                            otherGui.enableEnemyScored ();
-//
-//                        } else if (playerSource == 2) {
-//                            GUIScript otherGui = GameObject.Find("Player 1").GetComponent<GUIScript>();
-//                            otherGui.enableEnemyScored ();
-//                        }
+                        }
                     }
                 }
                 Destroy(this.gameObject);
@@ -98,7 +91,6 @@ public class ProjectileScript : NetworkBehaviour
         }
         catch (NullReferenceException) { }
     }
-
 
     void Update()
     {

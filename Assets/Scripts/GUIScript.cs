@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
-public class GUIScript : MonoBehaviour {
+public class GUIScript : NetworkBehaviour {
     public GameObject BlackHoleSprite;
     public GameObject BlackOutSprite;
     public GameObject FreezeSprite;
@@ -15,6 +17,7 @@ public class GUIScript : MonoBehaviour {
     Image powerUpImage;
 
     Image youWonImage;
+    Image youLostImage;
 
     Image quarkMeter;
     readonly int quarkMeterWidth = 10;
@@ -66,6 +69,7 @@ public class GUIScript : MonoBehaviour {
         enemyScoredImage = GameObject.Find ("EnemyScored").GetComponent<Image> ();
         glowGaugeImage = GameObject.Find ("GaugeGlow").GetComponent<Image> ();
         youWonImage = GameObject.Find ("YouWon").GetComponent<Image> ();
+        youLostImage = GameObject.Find ("YouLost").GetComponent<Image> ();
 
         elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
@@ -164,10 +168,53 @@ public class GUIScript : MonoBehaviour {
 
     public void enableYouWon() {
         youWonImage.enabled = true;
+
+        GameObject otherPlayer;
+        if (gameObject.name.Contains("1"))
+            otherPlayer = GameObject.Find("Player 2");
+        else 
+            otherPlayer = GameObject.Find("Player 1");
+
+        NetworkInstanceId id = otherPlayer.GetComponent<NetworkIdentity>().netId;
+
+        if (isServer)
+            RpcYouLost (id);
+        else
+            CmdYouLost (id);
     }
+
+    [Command]
+    public void CmdYouLost(NetworkInstanceId id) {
+        GameObject player = NetworkServer.FindLocalObject (id);
+        GUIScript gui = player.GetComponent<GUIScript> ();
+        try {
+            gui.enableYouLost();
+        } catch (NullReferenceException e) {
+            print ("error: " + e);
+        }
+    }
+
+    [ClientRpc]
+    public void RpcYouLost (NetworkInstanceId id) {
+        GameObject player = ClientScene.FindLocalObject (id);
+        GUIScript gui = player.GetComponent<GUIScript> ();
+        try {
+            gui.enableYouLost();
+        } catch (NullReferenceException e) {
+            print ("you lost: " + e);
+        }
+    }  
 
     public void disableYouWon() {
         youWonImage.enabled = false;
+    }
+
+    public void enableYouLost() {
+        youLostImage.enabled = true;
+    }
+
+    public void disableYouLost() {
+        youLostImage.enabled = false;
     }
 
     public void disableElementPickedUp() {
