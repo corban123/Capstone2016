@@ -2,6 +2,7 @@
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 /*
  * Board object for storing board, scoring, and printing.
@@ -99,7 +100,18 @@ public class BoardScript : NetworkBehaviour {
             PlaceChip (coordinates [0], coordinates [1]);
 
             // Change Board text
-            //GreyOutOnUI (coordinates [0], coordinates [1], element);
+            GameObject otherPlayer;
+            if (gameObject.name.Contains("1"))
+                otherPlayer = GameObject.Find("Player 2");
+            else 
+                otherPlayer = GameObject.Find("Player 1");
+
+            NetworkInstanceId id = otherPlayer.GetComponent<NetworkIdentity>().netId;
+
+            if (isServer)
+                RpcGreyOut (id, element);
+            else
+                CmdGreyOut (id, element);
 
             // Check whether the board is a winner
 
@@ -107,6 +119,29 @@ public class BoardScript : NetworkBehaviour {
         }
         return false;
 	}
+
+    [Command]
+    public void CmdGreyOut(NetworkInstanceId id, int element) {
+        GameObject player = NetworkServer.FindLocalObject (id);
+        BoardScript board = player.GetComponent<BoardScript> ();
+        try {
+            board.GreyOutOnUI(element);
+        } catch (NullReferenceException e) {
+            print ("board not found: " + e);
+        }
+    }
+
+    [ClientRpc]
+    public void RpcGreyOut (NetworkInstanceId id, int element) {
+        GameObject player = ClientScene.FindLocalObject (id);
+        BoardScript board = player.GetComponent<BoardScript> ();
+        try {
+            board.GreyOutOnUI(element);
+        } catch (NullReferenceException e) {
+            print ("board not found: " + e);
+        }
+
+    }  
 
 	// @Override prints board results.
 	// includes '-' if element has been collected.
@@ -165,9 +200,10 @@ public class BoardScript : NetworkBehaviour {
         return board[i, j];
     }
 
-    private void GreyOutOnUI(int x, int y, int elem) {
+    private void GreyOutOnUI(int elem) {
+        int[] c = GetCoordinates (elem);
         Image[] i = boardUI.GetComponentsInChildren<Image>();
-        int idx = x * 4 + y;
+        int idx = c[0] * 4 + c[1];
         i[idx].sprite = GetGreySprite(elem);
     }
 
