@@ -47,10 +47,16 @@ public class PauseScript : NetworkBehaviour {
                 fpc.PauseFPC (false);
                 gui.enableCanvas ();
                 pauseCanvas.enabled = false;
+                unPauseButton.interactable = false;
+                selfDestructButton.interactable = false;
+                disconnectButton.interactable = false;
             } else {
                 fpc.PauseFPC (true);
                 gui.disableCanvas ();
                 pauseCanvas.enabled = true;
+                unPauseButton.interactable = true;
+                selfDestructButton.interactable = true;
+                disconnectButton.interactable = true;
             }
             paused = !paused;
         }
