@@ -1981,6 +1981,13 @@ ModelImporter:
     103946: transform997
     103948: transform998
     103950: transform999
+    103952: polySurface1836
+    103954: polySurface1837
+    103956: polySurface1838
+    103958: pCylinder10
+    103960: pCylinder11
+    103962: pCylinder12
+    103964: pCylinder13
     400000: //RootNode
     400002: pCube160
     400004: pCube161
@@ -3957,26 +3964,61 @@ ModelImporter:
     403946: transform997
     403948: transform998
     403950: transform999
+    403952: polySurface1836
+    403954: polySurface1837
+    403956: polySurface1838
+    403958: pCylinder10
+    403960: pCylinder11
+    403962: pCylinder12
+    403964: pCylinder13
     2300000: polySurface1230
     2300002: polySurface1337
     2300004: polySurface1640
     2300006: polySurface1738
     2300008: polySurface860
+    2300010: polySurface1836
+    2300012: polySurface1837
+    2300014: polySurface1838
+    2300016: pCylinder10
+    2300018: pCylinder11
+    2300020: pCylinder12
+    2300022: pCylinder13
     3300000: polySurface1230
     3300002: polySurface1337
     3300004: polySurface1640
     3300006: polySurface1738
     3300008: polySurface860
+    3300010: polySurface1836
+    3300012: polySurface1837
+    3300014: polySurface1838
+    3300016: pCylinder10
+    3300018: pCylinder11
+    3300020: pCylinder12
+    3300022: pCylinder13
     4300000: polySurface860
     4300002: polySurface1230
     4300004: polySurface1337
     4300006: polySurface1640
     4300008: polySurface1738
+    4300010: polySurface1836
+    4300012: polySurface1837
+    4300014: polySurface1838
+    4300016: pCylinder10
+    4300018: pCylinder11
+    4300020: pCylinder12
+    4300022: pCylinder13
     6400000: polySurface1230
     6400002: polySurface1337
     6400004: polySurface1640
     6400006: polySurface1738
     6400008: polySurface860
+    6400010: polySurface1836
+    6400012: polySurface1837
+    6400014: polySurface1838
+    6400016: pCylinder10
+    6400018: pCylinder11
+    6400020: pCylinder12
+    6400022: pCylinder13
     7400000: Take 001
     9500000: //RootNode
   materials:

@@ -208,6 +208,9 @@ ModelImporter:
     100400: pSphere10
     100402: polySurface73
     100404: polySurface73 1
+    100406: pPipe24
+    100408: pPipe25
+    100410: pPipe26
     400000: bottom
     400002: MainSection
     400004: MainSection1
@@ -411,6 +414,9 @@ ModelImporter:
     400400: pSphere10
     400402: polySurface73
     400404: polySurface73 1
+    400406: pPipe24
+    400408: pPipe25
+    400410: pPipe26
     2300000: pasted__pCube17
     2300002: pasted__pCylinder39
     2300004: pasted__pCylinder40
@@ -588,6 +594,9 @@ ModelImporter:
     2300348: pSphere10
     2300350: polySurface73
     2300352: polySurface73 1
+    2300354: pPipe24
+    2300356: pPipe25
+    2300358: pPipe26
     3300000: pasted__pCube17
     3300002: pasted__pCylinder39
     3300004: pasted__pCylinder40
@@ -765,6 +774,9 @@ ModelImporter:
     3300348: pSphere10
     3300350: polySurface73
     3300352: polySurface73 1
+    3300354: pPipe24
+    3300356: pPipe25
+    3300358: pPipe26
     4300000: pCylinder41
     4300002: pCylinder42
     4300004: pCylinder43
@@ -942,6 +954,9 @@ ModelImporter:
     4300348: pSphere10
     4300350: polySurface73
     4300352: polySurface73
+    4300354: pPipe24
+    4300356: pPipe25
+    4300358: pPipe26
     6400000: pasted__pCube17
     6400002: pasted__pCylinder39
     6400004: pasted__pCylinder40
@@ -1119,6 +1134,9 @@ ModelImporter:
     6400348: pSphere10
     6400350: polySurface73
     6400352: polySurface73 1
+    6400354: pPipe24
+    6400356: pPipe25
+    6400358: pPipe26
     9500000: //RootNode
   materials:
     importMaterials: 1

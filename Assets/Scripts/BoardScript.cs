@@ -124,8 +124,10 @@ public class BoardScript : NetworkBehaviour {
     public void CmdGreyOut(NetworkInstanceId id, int element) {
         GameObject player = NetworkServer.FindLocalObject (id);
         BoardScript board = player.GetComponent<BoardScript> ();
+        GUIScript gui = player.GetComponent<GUIScript> ();
         try {
             board.GreyOutOnUI(element);
+            gui.enableEnemyScored();
         } catch (NullReferenceException e) {
             print ("board not found: " + e);
         }
@@ -135,8 +137,10 @@ public class BoardScript : NetworkBehaviour {
     public void RpcGreyOut (NetworkInstanceId id, int element) {
         GameObject player = ClientScene.FindLocalObject (id);
         BoardScript board = player.GetComponent<BoardScript> ();
+        GUIScript gui = player.GetComponent<GUIScript> ();
         try {
             board.GreyOutOnUI(element);
+            gui.enableEnemyScored();
         } catch (NullReferenceException e) {
             print ("board not found: " + e);
         }

@@ -114,6 +114,87 @@ ModelImporter:
     100212: transform32
     100214: transform34
     100216: transform35
+    100218: femalehead2:face2:polySurface1
+    100220: femalehead2:face4:polySurface1
+    100222: femalehead2:group
+    100224: femalehead2:hea:master_controller
+    100226: femalehead2:hea:transform35
+    100228: femalehead2:pasted__pCube1
+    100230: femalehead2:pasted__pCube2
+    100232: femalehead2:pasted__pCube3
+    100234: femalehead2:pasted__pCube4
+    100236: femalehead2:pasted__polySurface2
+    100238: femalehead2:pasted__polySurface4
+    100240: femalehead2:pasted__transform1
+    100242: femalehead2:pasted__transform2
+    100244: femalehead2:pasted__transform3
+    100246: femalehead2:pasted__transform4
+    100248: femalehead2:pasted__transform5
+    100250: femalehead2:pCube1
+    100252: femalehead2:pCube2
+    100254: femalehead2:pCube24
+    100256: femalehead2:pCube25
+    100258: femalehead2:pCube26
+    100260: femalehead2:pCube27
+    100262: femalehead2:pCube29
+    100264: femalehead2:pCube3
+    100266: femalehead2:pCube34
+    100268: femalehead2:pCube35
+    100270: femalehead2:pCube36
+    100272: femalehead2:pCube37
+    100274: femalehead2:pCube38
+    100276: femalehead2:pCube39
+    100278: femalehead2:pCube4
+    100280: femalehead2:pCube40
+    100282: femalehead2:pCube41
+    100284: femalehead2:pCube42
+    100286: femalehead2:pCube43
+    100288: femalehead2:pCube44
+    100290: femalehead2:pCube45
+    100292: femalehead2:pCube46
+    100294: femalehead2:pCube5
+    100296: femalehead2:pCube6
+    100298: femalehead2:polySurface3
+    100300: femalehead2:polySurface3 1
+    100302: femalehead2:polySurface4
+    100304: femalehead2:polySurface6
+    100306: femalehead2:transform1
+    100308: femalehead2:transform10
+    100310: femalehead2:transform11
+    100312: femalehead2:transform12
+    100314: femalehead2:transform13
+    100316: femalehead2:transform14
+    100318: femalehead2:transform15
+    100320: femalehead2:transform16
+    100322: femalehead2:transform17
+    100324: femalehead2:transform18
+    100326: femalehead2:transform19
+    100328: femalehead2:transform2
+    100330: femalehead2:transform20
+    100332: femalehead2:transform21
+    100334: femalehead2:transform22
+    100336: femalehead2:transform23
+    100338: femalehead2:transform24
+    100340: femalehead2:transform25
+    100342: femalehead2:transform26
+    100344: femalehead2:transform27
+    100346: femalehead2:transform28
+    100348: femalehead2:transform29
+    100350: femalehead2:transform3
+    100352: femalehead2:transform30
+    100354: femalehead2:transform31
+    100356: femalehead2:transform32
+    100358: femalehead2:transform33
+    100360: femalehead2:transform4
+    100362: femalehead2:transform5
+    100364: femalehead2:transform6
+    100366: femalehead2:transform7
+    100368: femalehead2:transform8
+    100370: femalehead2:transform9
+    100372: transform36
+    100374: transform37
+    100376: transform38
+    100378: transform39
     400000: //RootNode
     400002: body:polySurface1
     400004: femalehead1:face2:polySurface1
@@ -223,16 +304,99 @@ ModelImporter:
     400212: transform32
     400214: transform34
     400216: transform35
+    400218: femalehead2:face2:polySurface1
+    400220: femalehead2:face4:polySurface1
+    400222: femalehead2:group
+    400224: femalehead2:hea:master_controller
+    400226: femalehead2:hea:transform35
+    400228: femalehead2:pasted__pCube1
+    400230: femalehead2:pasted__pCube2
+    400232: femalehead2:pasted__pCube3
+    400234: femalehead2:pasted__pCube4
+    400236: femalehead2:pasted__polySurface2
+    400238: femalehead2:pasted__polySurface4
+    400240: femalehead2:pasted__transform1
+    400242: femalehead2:pasted__transform2
+    400244: femalehead2:pasted__transform3
+    400246: femalehead2:pasted__transform4
+    400248: femalehead2:pasted__transform5
+    400250: femalehead2:pCube1
+    400252: femalehead2:pCube2
+    400254: femalehead2:pCube24
+    400256: femalehead2:pCube25
+    400258: femalehead2:pCube26
+    400260: femalehead2:pCube27
+    400262: femalehead2:pCube29
+    400264: femalehead2:pCube3
+    400266: femalehead2:pCube34
+    400268: femalehead2:pCube35
+    400270: femalehead2:pCube36
+    400272: femalehead2:pCube37
+    400274: femalehead2:pCube38
+    400276: femalehead2:pCube39
+    400278: femalehead2:pCube4
+    400280: femalehead2:pCube40
+    400282: femalehead2:pCube41
+    400284: femalehead2:pCube42
+    400286: femalehead2:pCube43
+    400288: femalehead2:pCube44
+    400290: femalehead2:pCube45
+    400292: femalehead2:pCube46
+    400294: femalehead2:pCube5
+    400296: femalehead2:pCube6
+    400298: femalehead2:polySurface3
+    400300: femalehead2:polySurface3 1
+    400302: femalehead2:polySurface4
+    400304: femalehead2:polySurface6
+    400306: femalehead2:transform1
+    400308: femalehead2:transform10
+    400310: femalehead2:transform11
+    400312: femalehead2:transform12
+    400314: femalehead2:transform13
+    400316: femalehead2:transform14
+    400318: femalehead2:transform15
+    400320: femalehead2:transform16
+    400322: femalehead2:transform17
+    400324: femalehead2:transform18
+    400326: femalehead2:transform19
+    400328: femalehead2:transform2
+    400330: femalehead2:transform20
+    400332: femalehead2:transform21
+    400334: femalehead2:transform22
+    400336: femalehead2:transform23
+    400338: femalehead2:transform24
+    400340: femalehead2:transform25
+    400342: femalehead2:transform26
+    400344: femalehead2:transform27
+    400346: femalehead2:transform28
+    400348: femalehead2:transform29
+    400350: femalehead2:transform3
+    400352: femalehead2:transform30
+    400354: femalehead2:transform31
+    400356: femalehead2:transform32
+    400358: femalehead2:transform33
+    400360: femalehead2:transform4
+    400362: femalehead2:transform5
+    400364: femalehead2:transform6
+    400366: femalehead2:transform7
+    400368: femalehead2:transform8
+    400370: femalehead2:transform9
+    400372: transform36
+    400374: transform37
+    400376: transform38
+    400378: transform39
     2300000: femalehead1:pCube4
     2300002: pasted__backpack
     2300004: pCylinder10
     2300006: pCylinder9
     2300008: polySurface6
+    2300010: femalehead2:pCube46
     3300000: femalehead1:pCube4
     3300002: pasted__backpack
     3300004: pCylinder10
     3300006: pCylinder9
     3300008: polySurface6
+    3300010: femalehead2:pCube46
     4300000: femalehead1:pCube4
     4300002: pCylinder9
     4300004: polySurface6
@@ -240,6 +404,7 @@ ModelImporter:
     4300008: pasted__backpack
     4300010: pasted__tube
     4300012: body:polySurface1
+    4300014: femalehead2:pCube46
     7400000: Idle
     7400002: Death
     7400004: Walk
