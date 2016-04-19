@@ -12,6 +12,7 @@ public class PauseScript : NetworkBehaviour {
     Button unPauseButton;
     Button selfDestructButton;
     Button disconnectButton;
+    NetworkManager manager;
 
     Canvas pauseCanvas;
 
@@ -21,6 +22,7 @@ public class PauseScript : NetworkBehaviour {
         unPauseButton = GameObject.Find("UnPauseButton").GetComponent<Button>();
         selfDestructButton = GameObject.Find("SelfDestructButton").GetComponent<Button>();
         disconnectButton = GameObject.Find("DisconnectButton").GetComponent<Button>();
+        manager = GameObject.Find ("NetManager").GetComponent<NetworkManager> ();
 
         unPauseButton.onClick.AddListener ( () => { UnPauseButtonOnClick(); } );
         selfDestructButton.onClick.AddListener ( () => { SelfDestructButtonOnClick(); } );
@@ -78,7 +80,7 @@ public class PauseScript : NetworkBehaviour {
 
     public void DisconnectButtonOnClick() {
         if (isLocalPlayer) {
-            print ("disconnecting player");
+            manager.StopHost ();
         }
     }
 }
