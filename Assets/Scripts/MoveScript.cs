@@ -19,23 +19,37 @@ public class MoveScript : NetworkBehaviour
     public Transform player1RespawnPoint;
     public Transform player2RespawnPoint;
 
+    public Sprite blueCross;
+    public Sprite redCross;
     // Use this for initialization
     void Start()
     {
-        if(isLocalPlayer)
-        {
-            combat = gameObject.GetComponent<CombatScript>();
-            source = gameObject.GetComponent<AudioSource>();
-            gui = gameObject.GetComponent<GUIScript>();
-        }
+        combat = gameObject.GetComponent<CombatScript>();
+        source = gameObject.GetComponent<AudioSource>();
+        gui = gameObject.GetComponent<GUIScript>();
     }
 
     void Update()
     {
+        
+        if(isLocalPlayer)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit) && hit.collider.CompareTag("Player"))
+            {
+                GameObject.Find("Crosshair").GetComponent<Image>().sprite = redCross;
+            }
+            else
+            {
+                GameObject.Find("Crosshair").GetComponent<Image>().sprite = blueCross;
+            }
+        }
+        
     }
-
     void FixedUpdate()
     {
+        
     }
     // Pick up elements and quarks on collision
     void OnTriggerEnter(Collider collision)
