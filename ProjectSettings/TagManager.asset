@@ -10,6 +10,10 @@ TagManager:
   - Killbox
   - ElementBullet
   - Base
+  - Arena1
+  - Arena2
+  - Arena3
+  - Arena4
   layers:
   - Default
   - TransparentFX

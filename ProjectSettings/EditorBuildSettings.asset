@@ -11,5 +11,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Noah-Lv2.unity
   - enabled: 0
     path: Assets/Scenes/ClientScene.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Mitchell-LevelOne.unity

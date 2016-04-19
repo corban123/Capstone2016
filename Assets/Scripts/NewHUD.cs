@@ -16,6 +16,9 @@ namespace UnityEngine.Networking
         [SerializeField] public int offsetX;
         [SerializeField] public int offsetY;
 
+        public Camera mainMenuCamera;
+        public Camera sceneSelectionCamera;
+
         Canvas mmCanvas;
         Button joinButton;
         Button startButton;
@@ -32,7 +35,7 @@ namespace UnityEngine.Networking
         void Awake()
         {
             manager = GetComponent<NetworkManager>();
-            mmCanvas = GameObject.Find ("MainMenu").GetComponent<Canvas> ();
+            mmCanvas = GameObject.Find ("Canvas").GetComponent<Canvas> ();
             joinButton = GameObject.Find ("JoinGameButton").GetComponent<Button> ();
             startButton = GameObject.Find ("StartGameButton").GetComponent<Button> ();
 
@@ -75,12 +78,22 @@ namespace UnityEngine.Networking
         }
 
         void CreateMatchOnClick() {
+            // Show stage selection menu
+            mainMenuCamera.enabled = false;
+            sceneSelectionCamera.enabled = true;
+            startjoin.SetActive (false);
+            startOnly.SetActive (false);
+        }
+            
+        public void createMatch() {
             if (manager.matchMaker != null && manager.matchInfo == null && manager.matches == null) {
                 manager.matchName = matchName.text;
                 manager.matchMaker.CreateMatch(manager.matchName, manager.matchSize, true, "", manager.OnMatchCreate);
                 mmCanvas.enabled = false;
             }
+            
         }
+
 
 
         void Update()
