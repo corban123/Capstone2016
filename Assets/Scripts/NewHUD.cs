@@ -19,7 +19,7 @@ namespace UnityEngine.Networking
         public Camera mainMenuCamera;
         public Camera sceneSelectionCamera;
 
-        Canvas mmCanvas;
+        Canvas mainCanvas;
         Button joinButton;
         Button startButton;
         Button createMatchButton;
@@ -35,7 +35,7 @@ namespace UnityEngine.Networking
         void Awake()
         {
             manager = GetComponent<NetworkManager>();
-            mmCanvas = GameObject.Find ("Canvas").GetComponent<Canvas> ();
+            mainCanvas = GameObject.Find ("MainCanvas").GetComponent<Canvas> ();
             joinButton = GameObject.Find ("JoinGameButton").GetComponent<Button> ();
             startButton = GameObject.Find ("StartGameButton").GetComponent<Button> ();
 
@@ -55,15 +55,8 @@ namespace UnityEngine.Networking
             startjoin.SetActive (false);
 
             if (manager.matchMaker != null) {
-                manager.matchMaker.ListMatches (0, 20, "", manager.OnMatchList);
-
-                if (manager.matches == null || manager.matches.Count <= 0) {
-                    GameObject.Find ("NoMatchesText").GetComponent<Text> ().enabled = true;
-                    //GameObject.Find ("JoinGameButton").SetActive (false);
-                } else {
-                    //startjoin.SetActive (false);
-                    drawMatchButtons = true;
-                }
+                drawMatchButtons = true;
+                print ("drawing");
             }
            
         }
@@ -89,11 +82,8 @@ namespace UnityEngine.Networking
             if (manager.matchMaker != null && manager.matchInfo == null && manager.matches == null) {
                 manager.matchName = matchName.text;
                 manager.matchMaker.CreateMatch(manager.matchName, manager.matchSize, true, "", manager.OnMatchCreate);
-                mmCanvas.enabled = false;
             }
-            
         }
-
 
 
         void Update()
@@ -130,17 +120,24 @@ namespace UnityEngine.Networking
 
         void OnGUI()
         {
-            if (drawMatchButtons) {
+            if (drawMatchButtons && manager.matches != null) {
 
-                foreach (var match in manager.matches)
-                {
-                    if (GUI.Button(new Rect(500, 500, 200, 20), "Join Match:" + match.name))
-                    {
+                foreach (var match in manager.matches) {
+                    if (GUI.Button (new Rect (500, 500, 200, 20), "Join Match:" + match.name)) {
                         manager.matchName = match.name;
                         manager.matchSize = (uint)match.currentSize;
-                        manager.matchMaker.JoinMatch(match.networkId, "", manager.OnMatchJoined);
+                        manager.matchMaker.JoinMatch (match.networkId, "", manager.OnMatchJoined);
                     }
                 }
+            } else if (drawMatchButtons && manager.matches == null) {
+                GUIStyle style = new GUIStyle ();
+                style.fontSize = 20;
+                style.normal.textColor = Color.white;
+                GUI.Label (new Rect(Screen.width * (0.4f), 
+                                    Screen.height * (0.75f), 
+                                    Screen.width * (0.2f), 
+                                    Screen.height * (0.2f)), 
+                           "No Matches Found", style);
             }
 
 

@@ -4,6 +4,7 @@ using UnityEngine.Networking;
 
 public class SceneSelectorScript : MonoBehaviour {
     NetworkManager manager;
+    NewHUD hud;
     public Object arenaOne;
     public Object arenaTwo;
     public Object arenaThree;
@@ -13,6 +14,7 @@ public class SceneSelectorScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         manager = GameObject.Find("NetManager").GetComponent<NetworkManager>();
+        hud = manager.GetComponent<NewHUD> ();
 	
 	}
 	
@@ -23,7 +25,8 @@ public class SceneSelectorScript : MonoBehaviour {
 
     void OnMouseUp() {
         manager.GetComponent<startCreatePlayers>().onlineScene = getScene(gameObject.tag);
-        manager.GetComponent<NewHUD>().createMatch();
+        hud.createMatch ();
+        //manager.GetComponent<NewHUD>().createMatch();
     }
 
     string getScene(string tag) {

@@ -41,7 +41,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -438,7 +438,7 @@ GameObject:
   - 114: {fileID: 356330502}
   - 114: {fileID: 356330501}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -513,7 +513,7 @@ RectTransform:
   - {fileID: 545186790}
   - {fileID: 250810013}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -600,7 +600,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 410685387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.42857, y: -1.2857143, z: -6.290909}
+  m_LocalPosition: {x: 36.42857, y: -1.2857143, z: -8}
   m_LocalScale: {x: 0.014285714, y: 0.014285714, z: 0.018181818}
   m_Children: []
   m_Father: {fileID: 148753527}
@@ -1114,6 +1114,14 @@ Prefab:
       propertyPath: m_OnlineScene
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 11411078, guid: ad70b96f734407241b48f3d189f36205, type: 2}
+      propertyPath: m_OfflineScene
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411078, guid: ad70b96f734407241b48f3d189f36205, type: 2}
+      propertyPath: m_RunInBackground
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11474192, guid: ad70b96f734407241b48f3d189f36205, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ad70b96f734407241b48f3d189f36205, type: 2}
@@ -1469,7 +1477,7 @@ Transform:
   - {fileID: 1144593365}
   - {fileID: 780823524}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &1429468180
 GameObject:
   m_ObjectHideFlags: 0
