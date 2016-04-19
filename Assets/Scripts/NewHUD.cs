@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using UnityEngine.UI;
 
 #if ENABLE_UNET
 
@@ -11,9 +12,19 @@ namespace UnityEngine.Networking
     public class NewHUD : MonoBehaviour
     {
         public NetworkManager manager;
-        [SerializeField] public bool showGUI = true;
+        [SerializeField] public bool showGUI = false;
         [SerializeField] public int offsetX;
         [SerializeField] public int offsetY;
+
+        Canvas mmCanvas;
+        Button joinButton;
+        Button startButton;
+        Button createMatchButton;
+        InputField matchName;
+        public GameObject startOnly;
+        public GameObject startjoin;
+
+        bool drawMatchButtons = false;
 
         // Runtime variable
         bool m_ShowServer;
@@ -21,7 +32,56 @@ namespace UnityEngine.Networking
         void Awake()
         {
             manager = GetComponent<NetworkManager>();
+            mmCanvas = GameObject.Find ("MainMenu").GetComponent<Canvas> ();
+            joinButton = GameObject.Find ("JoinGameButton").GetComponent<Button> ();
+            startButton = GameObject.Find ("StartGameButton").GetComponent<Button> ();
+
+            enableMatchMaker ();
+            joinButton.onClick.AddListener ( () => { JoinButtonOnClick(); } );
+            startButton.onClick.AddListener ( () => { StartButtonOnClick(); } );
         }
+
+        void enableMatchMaker() {
+            if (manager.matchMaker == null)
+            {
+                manager.StartMatchMaker();
+            }
+        }
+
+        void JoinButtonOnClick() {
+            startjoin.SetActive (false);
+
+            if (manager.matchMaker != null) {
+                manager.matchMaker.ListMatches (0, 20, "", manager.OnMatchList);
+
+                if (manager.matches == null || manager.matches.Count <= 0) {
+                    GameObject.Find ("NoMatchesText").GetComponent<Text> ().enabled = true;
+                    //GameObject.Find ("JoinGameButton").SetActive (false);
+                } else {
+                    //startjoin.SetActive (false);
+                    drawMatchButtons = true;
+                }
+            }
+           
+        }
+
+        void StartButtonOnClick() {
+            startOnly.SetActive(true);
+            startjoin.SetActive (false);
+
+            createMatchButton = GameObject.Find ("CreateMatchButton").GetComponent<Button> ();
+            matchName = GameObject.Find ("NameInput").GetComponent<InputField> ();
+            createMatchButton.onClick.AddListener ( () => { CreateMatchOnClick(); } );
+        }
+
+        void CreateMatchOnClick() {
+            if (manager.matchMaker != null && manager.matchInfo == null && manager.matches == null) {
+                manager.matchName = matchName.text;
+                manager.matchMaker.CreateMatch(manager.matchName, manager.matchSize, true, "", manager.OnMatchCreate);
+                mmCanvas.enabled = false;
+            }
+        }
+
 
         void Update()
         {
@@ -57,6 +117,21 @@ namespace UnityEngine.Networking
 
         void OnGUI()
         {
+            if (drawMatchButtons) {
+
+                foreach (var match in manager.matches)
+                {
+                    if (GUI.Button(new Rect(500, 500, 200, 20), "Join Match:" + match.name))
+                    {
+                        manager.matchName = match.name;
+                        manager.matchSize = (uint)match.currentSize;
+                        manager.matchMaker.JoinMatch(match.networkId, "", manager.OnMatchJoined);
+                    }
+                }
+            }
+
+
+
             if (!showGUI)
                 return;
 
