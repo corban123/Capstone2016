@@ -114,8 +114,8 @@ public class BoardScript : NetworkBehaviour {
                 CmdGreyOut (id, element);
 
             // Check whether the board is a winner
-
-            return isWin (coordinates [0], coordinates [1]);
+            return true;
+            //return isWin (coordinates [0], coordinates [1]);
         }
         return false;
 	}
