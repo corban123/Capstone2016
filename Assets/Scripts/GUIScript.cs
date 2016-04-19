@@ -31,7 +31,7 @@ public class GUIScript : NetworkBehaviour {
     private float fadeBlindedTime = 6.0f;
 
     Image blackout;
-    Image metalize;
+    Image freeze;
 
     Animator elementPickedUpAnimator;
     Image elementPickedUpImage;
@@ -79,6 +79,7 @@ public class GUIScript : NetworkBehaviour {
         numQuarksText = GameObject.Find ("NumQuarksText").GetComponent<Text> ();
 
         blackout = GameObject.Find ("Blackout").GetComponent<Image> ();
+        freeze = GameObject.Find ("Freeze").GetComponent<Image> ();
 
         setDefaults ();
 	}
@@ -95,6 +96,7 @@ public class GUIScript : NetworkBehaviour {
         disableEnemyScored ();
         disableGaugeGlow ();
         blackout.canvasRenderer.SetAlpha( 0.01f );
+        freeze.canvasRenderer.SetAlpha( 0.01f );
     }
 	
 	/**
@@ -266,15 +268,15 @@ public class GUIScript : NetworkBehaviour {
         enemyScoredStartTime = Time.time;
     }
 
-    public void metalizeUI() {
-        StartCoroutine (metalizeCoroutine());
+    public void freezeUI() {
+        StartCoroutine (freezeCoroutine());
     }
 
 
-    IEnumerator metalizeCoroutine() {
-        metalize.CrossFadeAlpha (1.0f, fadeTransitionTime, false);
+    IEnumerator freezeCoroutine() {
+        freeze.CrossFadeAlpha (1.0f, fadeTransitionTime, false);
         yield return new WaitForSeconds(fadeBlindedTime);
-        metalize.CrossFadeAlpha (0.0f, fadeTransitionTime, false);
+        freeze.CrossFadeAlpha (0.0f, fadeTransitionTime, false);
     }
 
     public void blackOutUI() {

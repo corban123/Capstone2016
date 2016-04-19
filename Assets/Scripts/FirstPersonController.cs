@@ -300,7 +300,7 @@ public class FirstPersonController : NetworkBehaviour
         {
             startTime = Time.time;
             freezing = true;
-            gui.metalizeUI ();
+            gui.freezeUI ();
         }
     }
 
