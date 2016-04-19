@@ -3719,6 +3719,8 @@ MonoBehaviour:
   pickUp: {fileID: 8300000, guid: 8119703816119f54981a7aa095a6b1ef, type: 3}
   player1RespawnPoint: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
   player2RespawnPoint: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
+  blueCross: {fileID: 21300000, guid: d2bbd4f7ec56f164bae092f51808d332, type: 3}
+  redCross: {fileID: 21300000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
 --- !u!114 &11476630
 MonoBehaviour:
   m_ObjectHideFlags: 1

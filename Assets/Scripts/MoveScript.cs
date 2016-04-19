@@ -16,41 +16,53 @@ public class MoveScript : NetworkBehaviour
     [SerializeField]
     AudioClip pickUp;
     float upDownRange = 60.0f;
-    Quaternion nextCameraRotation;
-    Quaternion nextPlayerRotation;
     public Transform player1RespawnPoint;
     public Transform player2RespawnPoint;
 
+    public Sprite blueCross;
+    public Sprite redCross;
     // Use this for initialization
     void Start()
     {
         combat = gameObject.GetComponent<CombatScript>();
         source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript>();
-        nextCameraRotation = this.gameObject.GetComponentInChildren<Camera>().transform.localRotation;
-        nextPlayerRotation = transform.localRotation;
     }
 
     void Update()
     {
+        
+        if(isLocalPlayer)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit) && hit.collider.CompareTag("Player"))
+            {
+                GameObject.Find("Crosshair").GetComponent<Image>().sprite = redCross;
+            }
+            else
+            {
+                GameObject.Find("Crosshair").GetComponent<Image>().sprite = blueCross;
+            }
+        }
+        
     }
-
     void FixedUpdate()
     {
-        //this.gameObject.transform.GetChild(0).transform.rotation = this.gameObject.transform.GetChild(2).GetComponent<Camera>().transform.rotation;
+        
     }
     // Pick up elements and quarks on collision
     void OnTriggerEnter(Collider collision)
     {
         if (isLocalPlayer)
         {
-            if (collision.tag == "Element" && combat.heldElement == -1)
+            if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript>().cost <= combat.numQuarks)
             {
-                GetComponent<CombatScript>().numQuarks -= collision.GetComponent<ElementScript>().cost;
+                combat.CmdSetNumQuarks(combat.numQuarks - collision.GetComponent<ElementScript>().cost);
                 GameObject pickedElement = collision.gameObject;
-                this.gameObject.GetComponent<CombatScript>().haveElement = true;
-                this.gameObject.GetComponent<CombatScript>().heldElement = pickedElement.GetComponent<ElementScript>().elementID;
-				this.gameObject.GetComponent<CombatScript> ().heldElementPos = pickedElement.GetComponent<ElementScript> ().spawnTrans;
+                combat.haveElement = true;
+                combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
+				combat.heldElementPos = pickedElement.GetComponent<ElementScript> ().spawnTrans;
                 CmdPickUpElement(pickedElement);
                 print("picked up element " + combat.heldElement);
                 gui.SetElementUI(combat.heldElement);
@@ -61,7 +73,7 @@ public class MoveScript : NetworkBehaviour
             {
                 GameObject pickedQuark = collision.gameObject;
                 print("picked up quark");
-                this.gameObject.GetComponent<CombatScript>().CmdAddQuarks();
+                combat.CmdAddQuarks();
                 CmdPickUpQuark (pickedQuark);
                 Destroy(pickedQuark);
             }
@@ -112,7 +124,7 @@ public class MoveScript : NetworkBehaviour
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
 		if (isLocalPlayer) {
-			combat.numQuarks = 3;
+            combat.CmdSetNumQuarks(3);
 		}
 
 		if (gameObject.name == "Player 1")
