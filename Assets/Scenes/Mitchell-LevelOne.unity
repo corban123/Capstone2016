@@ -4382,6 +4382,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2010061685}
   m_Mesh: {fileID: 4300108, guid: 398a6ef8800090b45880bd88c3e1b113, type: 3}
+--- !u!1001 &2026930640
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 230
+      objectReference: {fileID: 0}
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 137
+      objectReference: {fileID: 0}
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.4110442
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2070406684
 GameObject:
   m_ObjectHideFlags: 0
