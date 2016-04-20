@@ -10,6 +10,7 @@ public class CombatScript : NetworkBehaviour
     public Transform shotSpawn;
     private float nextFire;
     public float fireRate;
+    readonly int elementCost = 5;
 
     [SyncVar (hook = "OnHealthChanged")] public int numQuarks = 0;
     public bool haveElement;
@@ -18,7 +19,7 @@ public class CombatScript : NetworkBehaviour
     float startTime;
     public bool takeDmg;
 
-    readonly int elementPickUpPrice = 5;
+    readonly int elementPickUpCost = 5;
 
     GUIScript gui;
     PauseScript pauseScript;
@@ -56,7 +57,7 @@ public class CombatScript : NetworkBehaviour
             else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer && !pauseScript.paused && haveElement)
             {
                 nextFire = Time.time + fireRate;
-                numQuarks = 0;
+                CmdDeletAllQuarks ();
                 CmdShootProjectile(haveElement, heldElement, heldElementPos);
                 haveElement = false;
                 heldElement = -1;
@@ -67,6 +68,16 @@ public class CombatScript : NetworkBehaviour
                 takeDmg = true;
             }
         }
+    }
+
+    [Command]
+    public void CmdDeletAllQuarks() {
+        numQuarks = 0;
+    }
+
+    [Command]
+    public void CmdDeductElementCostQuarks() {
+        numQuarks -= elementPickUpCost;
     }
 
     [Command]
@@ -167,7 +178,7 @@ public class CombatScript : NetworkBehaviour
             print ("update health");
             numQuarks = hlth;
             gui.updateQuarkMeter (numQuarks);
-            if (numQuarks >= elementPickUpPrice) {
+            if (numQuarks >= elementPickUpCost) {
                 gui.enableGaugeGlow ();
             } else {
                 gui.disableGaugeGlow ();

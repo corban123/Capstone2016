@@ -58,7 +58,7 @@ public class MoveScript : NetworkBehaviour
         {
             if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript>().cost <= combat.numQuarks)
             {
-                GetComponent<CombatScript>().numQuarks -= collision.GetComponent<ElementScript>().cost;
+                GetComponent<CombatScript>().CmdDeductElementCostQuarks();
                 GameObject pickedElement = collision.gameObject;
                 combat.haveElement = true;
                 combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
