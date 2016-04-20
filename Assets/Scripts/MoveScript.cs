@@ -16,8 +16,8 @@ public class MoveScript : NetworkBehaviour
     [SerializeField]
     AudioClip pickUp;
     float upDownRange = 60.0f;
-    public Transform player1RespawnPoint;
-    public Transform player2RespawnPoint;
+    Transform player1RespawnPoint;
+    Transform player2RespawnPoint;
 
     public Sprite blueCross;
     public Sprite redCross;
@@ -27,6 +27,8 @@ public class MoveScript : NetworkBehaviour
         combat = gameObject.GetComponent<CombatScript>();
         source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript>();
+        player1RespawnPoint = GameObject.Find ("Spawn1").transform;
+        player2RespawnPoint = GameObject.Find ("Spawn2").transform;
     }
 
     void Update()
