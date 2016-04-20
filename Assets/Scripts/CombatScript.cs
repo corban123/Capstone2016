@@ -51,27 +51,21 @@ public class CombatScript : NetworkBehaviour
                     gui.DeleteElementUI ();
                 }
             }
+            
             else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer && !pauseScript.paused && haveElement)
             {
-                // This boolean has to be before CmdShootProjectile because numQuarks is decremented in the command.
                 nextFire = Time.time + fireRate;
-                CmdSetNumQuarks(0);
+                numQuarks = 0;
                 CmdShootProjectile(haveElement, heldElement, heldElementPos);
-                // These lines have to be outside CmdShootProjectile. If they are inside the command they will NOT work.
-
                 haveElement = false;
                 heldElement = -1;
                 gui.DeleteElementUI();
             }
+            
             if (Time.time - startTime > 3) {
                 takeDmg = true;
             }
         }
-    }
-
-    [Command]
-    public void CmdSetNumQuarks(int num) {
-        numQuarks = num;
     }
 
     [Command]
@@ -115,14 +109,14 @@ public class CombatScript : NetworkBehaviour
         instance.GetComponent<ProjectileScript>().playerSource = playerNum;
 		NetworkServer.Spawn(instance);
     }
-
+    
     [Command]
     void CmdTellServerWhoWasShot(string uniqueID, string bullet)
     {
         GameObject go = GameObject.Find(uniqueID);
         go.GetComponent<CombatScript>().DeductHealth(bullet);
     }
-
+    
     /**
      * Deduct the health by dividing the number of quarks by 2.
      */
@@ -170,7 +164,7 @@ public class CombatScript : NetworkBehaviour
         print ("on change");
         if (isLocalPlayer) {
             print ("update health");
-            CmdSetNumQuarks(hlth);
+            numQuarks = hlth;
             gui.updateQuarkMeter (numQuarks);
             if (numQuarks >= elementPickUpPrice) {
                 gui.enableGaugeGlow ();

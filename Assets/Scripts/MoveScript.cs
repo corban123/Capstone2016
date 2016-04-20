@@ -58,7 +58,7 @@ public class MoveScript : NetworkBehaviour
         {
             if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript>().cost <= combat.numQuarks)
             {
-                combat.CmdSetNumQuarks(combat.numQuarks - collision.GetComponent<ElementScript>().cost);
+                GetComponent<CombatScript>().numQuarks -= collision.GetComponent<ElementScript>().cost;
                 GameObject pickedElement = collision.gameObject;
                 combat.haveElement = true;
                 combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
@@ -124,7 +124,7 @@ public class MoveScript : NetworkBehaviour
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
 		if (isLocalPlayer) {
-            combat.CmdSetNumQuarks(3);
+            combat.numQuarks = 3;
 		}
 
 		if (gameObject.name == "Player 1")
