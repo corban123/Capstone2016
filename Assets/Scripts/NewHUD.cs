@@ -56,11 +56,7 @@ namespace UnityEngine.Networking
 
         void JoinButtonOnClick() {
             startjoin.SetActive (false);
-
-            if (manager.matchMaker != null) {
-                drawMatchButtons = true;
-                print ("drawing");
-            }
+            manager.matchMaker.ListMatches (0, 20, "", manager.OnMatchList);
         }
 
         void StartButtonOnClick() {
@@ -79,13 +75,8 @@ namespace UnityEngine.Networking
             startjoin.SetActive (false);
             startOnly.SetActive (false);
         }
-
-        public void test() {
-            startOnly.SetActive (true);
-        }
             
         public void createMatch() {
-            startjoin.SetActive (true);
             if (manager.matchMaker != null && manager.matchInfo == null && manager.matches == null) {
                 manager.matchName = matchName.text;
                 manager.matchMaker.CreateMatch(manager.matchName, manager.matchSize, true, "", manager.OnMatchCreate);
@@ -102,27 +93,32 @@ namespace UnityEngine.Networking
 
         void Update()
         {
-
-
+            if (manager.matches != null) {
+                drawMatchButtons = true;
+            }
         }
 
 
         void OnGUI()
         {
-            if (drawMatchButtons && manager.matches != null) {
-
+            if (manager.matchMaker != null && drawMatchButtons && manager.matches != null) {
+                GUILayout.BeginArea (new Rect(Screen.width * (0.4f),
+                    Screen.height * (0.75f), 
+                    Screen.width * (0.2f), 
+                    Screen.height * (0.2f)));
                 foreach (var match in manager.matches) {
-                    if (GUI.Button (new Rect (500, 500, 200, 20), "Join Match:" + match.name)) {
+                    if (GUILayout.Button (match.name)) {
                         manager.matchName = match.name;
                         manager.matchSize = (uint)match.currentSize;
                         manager.matchMaker.JoinMatch (match.networkId, "", manager.OnMatchJoined);
                     }
                 }
+                GUILayout.EndArea ();
             } else if (drawMatchButtons && manager.matches == null) {
                 GUIStyle style = new GUIStyle ();
                 style.fontSize = 20;
                 style.normal.textColor = Color.white;
-                GUI.Label (new Rect(Screen.width * (0.4f), 
+                GUI.Label (new Rect(Screen.width * (0.4f),
                                     Screen.height * (0.75f), 
                                     Screen.width * (0.2f), 
                                     Screen.height * (0.2f)), 
