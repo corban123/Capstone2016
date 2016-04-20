@@ -87,7 +87,25 @@ public class ProjectileScript : NetworkBehaviour
                     }
                 }
                 Destroy(this.gameObject);
-            }            
+            }
+            else if(target.name.Contains("Player") && !target.name.Contains(playerSource.ToString()))
+            {
+                if (e != null)
+                {
+                    e.CmdSpawnDead();
+                    e.PowerUp();
+                }
+                Destroy(this.gameObject);
+            }
+            else if(target.CompareTag("Killbox"))
+            {
+                if(e != null)
+                {
+                    e.CmdSpawnDead();
+                }
+                Destroy(this.gameObject);
+            }
+
         }
         catch (NullReferenceException) { }
     }
