@@ -93,6 +93,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 3982343}
+  - 114: {fileID: 3982345}
+  - 114: {fileID: 3982344}
   m_Layer: 0
   m_Name: QuarkMarker28
   m_TagString: Untagged
@@ -107,11 +109,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 3982342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 0, z: -86.7}
+  m_LocalPosition: {x: 1.1, y: 42.5, z: -86.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 13
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 51
+--- !u!114 &3982344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3982342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &3982345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3982342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &8345144
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +190,7 @@ Transform:
   - {fileID: 1621080740}
   - {fileID: 516364108}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1001 &8944510
 Prefab:
   m_ObjectHideFlags: 0
@@ -232,6 +280,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 28355280}
+  - 114: {fileID: 28355282}
+  - 114: {fileID: 28355281}
   m_Layer: 0
   m_Name: QuarkMarker6
   m_TagString: Untagged
@@ -246,11 +296,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28355279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 79.4, y: 40.8, z: 99.9}
+  m_LocalPosition: {x: 79.4, y: -17.2, z: 99.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 5
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 29
+--- !u!114 &28355281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28355279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &28355282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28355279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &51077450
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +355,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 51077451}
+  - 114: {fileID: 51077453}
+  - 114: {fileID: 51077452}
   m_Layer: 0
   m_Name: QuarkMarker39
   m_TagString: Untagged
@@ -273,11 +371,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 51077450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.4, y: 4, z: -43.8}
+  m_LocalPosition: {x: 58.4, y: -11.799999, z: -43.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 10
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 23
+--- !u!114 &51077452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51077450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &51077453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51077450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &91318176
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,6 +430,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 91318177}
+  - 114: {fileID: 91318179}
+  - 114: {fileID: 91318178}
   m_Layer: 0
   m_Name: QuarkMarker31
   m_TagString: Untagged
@@ -300,11 +446,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 91318176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.1, y: 0, z: 97.5}
+  m_LocalPosition: {x: -41.1, y: -15.799999, z: 97.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 2
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 15
+--- !u!114 &91318178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 91318176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &91318179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 91318176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &160316722
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &175822136
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +729,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 223694968}
+  - 114: {fileID: 223694970}
+  - 114: {fileID: 223694969}
   m_Layer: 0
   m_Name: QuarkMarker16
   m_TagString: Untagged
@@ -551,11 +745,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 223694967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.4, y: 0, z: 0}
+  m_LocalPosition: {x: -35.4, y: 42.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 1
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 39
+--- !u!114 &223694969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223694967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &223694970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223694967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &252588734
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +804,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 252588735}
+  - 114: {fileID: 252588737}
+  - 114: {fileID: 252588736}
   m_Layer: 0
   m_Name: QuarkMarker12
   m_TagString: Untagged
@@ -578,11 +820,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 252588734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -162.9, y: 25.1, z: 77.3}
+  m_LocalPosition: {x: -162.9, y: -32.9, z: 77.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 11
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 35
+--- !u!114 &252588736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252588734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &252588737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 252588734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &277810599
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +879,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 277810600}
+  - 114: {fileID: 277810602}
+  - 114: {fileID: 277810601}
   m_Layer: 0
   m_Name: QuarkMarker22
   m_TagString: Untagged
@@ -605,11 +895,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 277810599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78, y: -39.5, z: -98.6}
+  m_LocalPosition: {x: 78, y: 3, z: -98.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 7
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 45
+--- !u!114 &277810601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 277810599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &277810602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 277810599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &281724984
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,7 +1072,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.3110594, w: 0.9503905}
   m_LocalPosition: {x: -0.06, y: 24.5, z: 214}
   m_LocalScale: {x: 4.176554, y: 4.1765532, z: 4.1765532}
-  m_Children: []
+  m_Children:
+  - {fileID: 1075392882}
   m_Father: {fileID: 1686122373}
   m_RootOrder: 2
 --- !u!95 &288094925
@@ -786,45 +1123,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &289620795
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 289620796}
-  m_Layer: 0
-  m_Name: RED
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &289620796
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 289620795}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2999992, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1581249166}
-  - {fileID: 1386497908}
-  - {fileID: 447035145}
-  - {fileID: 516953978}
-  - {fileID: 836220931}
-  - {fileID: 618496646}
-  - {fileID: 874908394}
-  - {fileID: 1067581761}
-  - {fileID: 592890174}
-  - {fileID: 679939470}
-  - {fileID: 538272591}
-  - {fileID: 1435053092}
-  m_Father: {fileID: 423665018}
-  m_RootOrder: 3
 --- !u!1 &302855730
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +1131,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 302855731}
+  - 114: {fileID: 302855733}
+  - 114: {fileID: 302855732}
   m_Layer: 0
   m_Name: QuarkMarker34
   m_TagString: Untagged
@@ -847,11 +1147,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 302855730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39, y: 0, z: -98.5}
+  m_LocalPosition: {x: 39, y: -15.799999, z: -98.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 5
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 18
+--- !u!114 &302855732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302855730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &302855733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302855730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &323853938
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +1206,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 323853939}
+  - 114: {fileID: 323853941}
+  - 114: {fileID: 323853940}
   m_Layer: 0
   m_Name: QuarkMarker32
   m_TagString: Untagged
@@ -874,11 +1222,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 323853938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.5, y: 0, z: -42.2}
+  m_LocalPosition: {x: 98.5, y: -15.799999, z: -42.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 3
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 16
+--- !u!114 &323853940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 323853938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &323853941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 323853938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &339968565
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +1359,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 349754347}
+  - 114: {fileID: 349754349}
+  - 114: {fileID: 349754348}
   m_Layer: 0
   m_Name: QuarkMarker33
   m_TagString: Untagged
@@ -979,11 +1375,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 349754346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.1, y: 0, z: -98.5}
+  m_LocalPosition: {x: -41.1, y: -15.799999, z: -98.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 4
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 17
+--- !u!114 &349754348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349754346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &349754349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349754346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &352729818
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1434,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 352729819}
+  - 114: {fileID: 352729821}
+  - 114: {fileID: 352729820}
   m_Layer: 0
   m_Name: QuarkMarker25
   m_TagString: Untagged
@@ -1006,11 +1450,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 352729818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -78.4, y: -23.9, z: 161.7}
+  m_LocalPosition: {x: -78.4, y: 18.6, z: 161.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 10
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 48
+--- !u!114 &352729820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 352729818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &352729821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 352729818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &357409378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,6 +1576,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 373226364}
+  - 114: {fileID: 373226366}
+  - 114: {fileID: 373226365}
   m_Layer: 0
   m_Name: QuarkMarker7
   m_TagString: Untagged
@@ -1100,11 +1592,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373226363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -99, y: 40.6, z: 79.1}
+  m_LocalPosition: {x: -99, y: -17.400002, z: 79.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 6
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 30
+--- !u!114 &373226365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373226363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &373226366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373226363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &380453010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1651,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 380453011}
+  - 114: {fileID: 380453013}
+  - 114: {fileID: 380453012}
   m_Layer: 0
   m_Name: QuarkMarker14
   m_TagString: Untagged
@@ -1127,11 +1667,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 380453010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 0, z: -86.7}
+  m_LocalPosition: {x: 1.1, y: -58, z: -86.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 13
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 37
+--- !u!114 &380453012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380453010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &380453013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380453010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &397177406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1754,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 423665018}
   m_Layer: 0
-  m_Name: QUARK MARKERS
+  m_Name: QuarkMarkers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1184,10 +1770,58 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 730429827}
-  - {fileID: 939713654}
-  - {fileID: 1078615533}
-  - {fileID: 289620796}
+  - {fileID: 1944334235}
+  - {fileID: 1581249166}
+  - {fileID: 1386497908}
+  - {fileID: 447035145}
+  - {fileID: 516953978}
+  - {fileID: 836220931}
+  - {fileID: 618496646}
+  - {fileID: 874908394}
+  - {fileID: 1067581761}
+  - {fileID: 592890174}
+  - {fileID: 679939470}
+  - {fileID: 538272591}
+  - {fileID: 1435053092}
+  - {fileID: 740533814}
+  - {fileID: 2117500315}
+  - {fileID: 91318177}
+  - {fileID: 323853939}
+  - {fileID: 349754347}
+  - {fileID: 302855731}
+  - {fileID: 975540731}
+  - {fileID: 1652342223}
+  - {fileID: 817286334}
+  - {fileID: 578900029}
+  - {fileID: 51077451}
+  - {fileID: 624193692}
+  - {fileID: 1167148227}
+  - {fileID: 642699014}
+  - {fileID: 1294939076}
+  - {fileID: 1876706857}
+  - {fileID: 28355280}
+  - {fileID: 373226364}
+  - {fileID: 684872966}
+  - {fileID: 1454835376}
+  - {fileID: 1930203818}
+  - {fileID: 1859780878}
+  - {fileID: 252588735}
+  - {fileID: 1695551133}
+  - {fileID: 380453011}
+  - {fileID: 1948498128}
+  - {fileID: 223694968}
+  - {fileID: 437014133}
+  - {fileID: 2000032274}
+  - {fileID: 532465269}
+  - {fileID: 563534610}
+  - {fileID: 888878471}
+  - {fileID: 277810600}
+  - {fileID: 1761267147}
+  - {fileID: 1937555593}
+  - {fileID: 352729819}
+  - {fileID: 982012083}
+  - {fileID: 2074875428}
+  - {fileID: 3982343}
   m_Father: {fileID: 0}
   m_RootOrder: 9
 --- !u!1 &437014132
@@ -1198,6 +1832,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437014133}
+  - 114: {fileID: 437014135}
+  - 114: {fileID: 437014134}
   m_Layer: 0
   m_Name: QuarkMarker17
   m_TagString: Untagged
@@ -1212,11 +1848,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 437014132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.3, y: 0, z: 0}
+  m_LocalPosition: {x: -86.3, y: 42.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 2
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 40
+--- !u!114 &437014134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 437014132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &437014135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 437014132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &447035144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1907,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447035145}
+  - 114: {fileID: 447035147}
+  - 114: {fileID: 447035146}
   m_Layer: 0
   m_Name: QuarkMarker43
   m_TagString: Untagged
@@ -1239,11 +1923,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 447035144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.1, y: 0, z: 97.5}
+  m_LocalPosition: {x: -41.1, y: 1.2999992, z: 97.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 2
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 3
+--- !u!114 &447035146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447035144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &447035147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447035144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &448868987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +2161,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 516953978}
+  - 114: {fileID: 516953980}
+  - 114: {fileID: 516953979}
   m_Layer: 0
   m_Name: QuarkMarker44
   m_TagString: Untagged
@@ -1445,11 +2177,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516953977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.5, y: 0, z: -42.2}
+  m_LocalPosition: {x: 98.5, y: 1.2999992, z: -42.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 3
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 4
+--- !u!114 &516953979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516953977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &516953980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516953977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &532465268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +2236,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 532465269}
+  - 114: {fileID: 532465271}
+  - 114: {fileID: 532465270}
   m_Layer: 0
   m_Name: QuarkMarker19
   m_TagString: Untagged
@@ -1472,11 +2252,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 532465268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.2, y: -39.5, z: 76}
+  m_LocalPosition: {x: 100.2, y: 3, z: 76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 4
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 42
+--- !u!114 &532465270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 532465268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &532465271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 532465268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &538272590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +2311,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 538272591}
+  - 114: {fileID: 538272593}
+  - 114: {fileID: 538272592}
   m_Layer: 0
   m_Name: QuarkMarker51
   m_TagString: Untagged
@@ -1499,11 +2327,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 538272590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.7, y: -3.8, z: -60}
+  m_LocalPosition: {x: 42.7, y: -2.5000007, z: -60}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 10
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 11
+--- !u!114 &538272592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 538272590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &538272593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 538272590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &563534609
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +2386,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 563534610}
+  - 114: {fileID: 563534612}
+  - 114: {fileID: 563534611}
   m_Layer: 0
   m_Name: QuarkMarker20
   m_TagString: Untagged
@@ -1526,11 +2402,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 563534609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -80.2, y: -39.4, z: 99.9}
+  m_LocalPosition: {x: -80.2, y: 3.0999985, z: 99.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 5
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 43
+--- !u!114 &563534611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 563534609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &563534612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 563534609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &578900028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +2461,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 578900029}
+  - 114: {fileID: 578900031}
+  - 114: {fileID: 578900030}
   m_Layer: 0
   m_Name: QuarkMarker38
   m_TagString: Untagged
@@ -1553,11 +2477,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 578900028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.6, y: 4.3, z: 58}
+  m_LocalPosition: {x: 41.6, y: -11.499999, z: 58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 9
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 22
+--- !u!114 &578900030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578900028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &578900031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578900028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &579149477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,6 +2609,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 592890174}
+  - 114: {fileID: 592890176}
+  - 114: {fileID: 592890175}
   m_Layer: 0
   m_Name: QuarkMarker49
   m_TagString: Untagged
@@ -1653,11 +2625,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 592890173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.1, y: -3.7, z: 60.7}
+  m_LocalPosition: {x: -42.1, y: -2.4000008, z: 60.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 8
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 9
+--- !u!114 &592890175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592890173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &592890176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592890173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &618496645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,6 +2684,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 618496646}
+  - 114: {fileID: 618496648}
+  - 114: {fileID: 618496647}
   m_Layer: 0
   m_Name: QuarkMarker46
   m_TagString: Untagged
@@ -1680,11 +2700,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 618496645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39, y: 0, z: -98.5}
+  m_LocalPosition: {x: 39, y: 1.2999992, z: -98.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 5
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 6
+--- !u!114 &618496647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 618496645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &618496648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 618496645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &624193691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +2759,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 624193692}
+  - 114: {fileID: 624193694}
+  - 114: {fileID: 624193693}
   m_Layer: 0
   m_Name: QuarkMarker1
   m_TagString: Untagged
@@ -1707,11 +2775,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 624193691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.5, y: 0, z: 0}
+  m_LocalPosition: {x: 35.5, y: -58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 0
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 24
+--- !u!114 &624193693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624193691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &624193694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624193691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &628178395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +2944,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 642699014}
+  - 114: {fileID: 642699016}
+  - 114: {fileID: 642699015}
   m_Layer: 0
   m_Name: QuarkMarker3
   m_TagString: Untagged
@@ -1844,11 +2960,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 642699013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.3, y: 0, z: 0}
+  m_LocalPosition: {x: -86.3, y: -58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 2
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 26
+--- !u!114 &642699015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642699013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &642699016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642699013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &678117141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +3046,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 679939470}
+  - 114: {fileID: 679939472}
+  - 114: {fileID: 679939471}
   m_Layer: 0
   m_Name: QuarkMarker50
   m_TagString: Untagged
@@ -1898,11 +3062,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 679939469}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.1, y: -3, z: 44.3}
+  m_LocalPosition: {x: 61.1, y: -1.7000008, z: 44.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 9
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 10
+--- !u!114 &679939471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 679939469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &679939472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 679939469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &684872965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,6 +3121,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 684872966}
+  - 114: {fileID: 684872968}
+  - 114: {fileID: 684872967}
   m_Layer: 0
   m_Name: QuarkMarker8
   m_TagString: Untagged
@@ -1925,11 +3137,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 684872965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -78.9, y: 40.7, z: -98.6}
+  m_LocalPosition: {x: -78.9, y: -17.3, z: -98.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 7
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 31
+--- !u!114 &684872967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 684872965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &684872968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 684872965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &687985594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,47 +3215,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1595377715}
   m_RootOrder: 10
---- !u!1 &730429826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 730429827}
-  m_Layer: 0
-  m_Name: PURPLE
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &730429827
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 730429826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 624193692}
-  - {fileID: 1167148227}
-  - {fileID: 642699014}
-  - {fileID: 1294939076}
-  - {fileID: 1876706857}
-  - {fileID: 28355280}
-  - {fileID: 373226364}
-  - {fileID: 684872966}
-  - {fileID: 1454835376}
-  - {fileID: 1930203818}
-  - {fileID: 1859780878}
-  - {fileID: 252588735}
-  - {fileID: 1695551133}
-  - {fileID: 380453011}
-  m_Father: {fileID: 423665018}
-  m_RootOrder: 0
 --- !u!1 &740533813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,6 +3223,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 740533814}
+  - 114: {fileID: 740533816}
+  - 114: {fileID: 740533815}
   m_Layer: 0
   m_Name: QuarkMarker29
   m_TagString: Untagged
@@ -2020,11 +3239,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740533813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.5, y: 0, z: 39}
+  m_LocalPosition: {x: 98.5, y: -15.799999, z: 39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 0
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 13
+--- !u!114 &740533815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740533813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &740533816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740533813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &803236396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +3392,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 817286334}
+  - 114: {fileID: 817286336}
+  - 114: {fileID: 817286335}
   m_Layer: 0
   m_Name: QuarkMarker37
   m_TagString: Untagged
@@ -2141,11 +3408,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 817286333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -59.1, y: 4.7, z: 40.1}
+  m_LocalPosition: {x: -59.1, y: -11.099999, z: 40.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 8
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 21
+--- !u!114 &817286335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817286333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &817286336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817286333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &836220930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,6 +3467,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 836220931}
+  - 114: {fileID: 836220933}
+  - 114: {fileID: 836220932}
   m_Layer: 0
   m_Name: QuarkMarker45
   m_TagString: Untagged
@@ -2168,11 +3483,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 836220930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.1, y: 0, z: -98.5}
+  m_LocalPosition: {x: -41.1, y: 1.2999992, z: -98.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 4
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 5
+--- !u!114 &836220932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836220930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &836220933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836220930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &868877484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +3573,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 874908394}
+  - 114: {fileID: 874908396}
+  - 114: {fileID: 874908395}
   m_Layer: 0
   m_Name: QuarkMarker47
   m_TagString: Untagged
@@ -2226,11 +3589,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 874908393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -98.6, y: 0, z: -42.2}
+  m_LocalPosition: {x: -98.6, y: 1.2999992, z: -42.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 6
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 7
+--- !u!114 &874908395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874908393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &874908396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874908393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &888878470
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,6 +3648,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 888878471}
+  - 114: {fileID: 888878473}
+  - 114: {fileID: 888878472}
   m_Layer: 0
   m_Name: QuarkMarker21
   m_TagString: Untagged
@@ -2253,11 +3664,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 888878470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -99, y: -39.6, z: -78.5}
+  m_LocalPosition: {x: -99, y: 2.9000015, z: -78.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 6
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 44
+--- !u!114 &888878472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 888878470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &888878473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 888878470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &905970093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,47 +3879,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 929293339}
---- !u!1 &939713653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 939713654}
-  m_Layer: 0
-  m_Name: BLUE
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &939713654
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 939713653}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 42.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1948498128}
-  - {fileID: 223694968}
-  - {fileID: 437014133}
-  - {fileID: 2000032274}
-  - {fileID: 532465269}
-  - {fileID: 563534610}
-  - {fileID: 888878471}
-  - {fileID: 277810600}
-  - {fileID: 1761267147}
-  - {fileID: 1937555593}
-  - {fileID: 352729819}
-  - {fileID: 982012083}
-  - {fileID: 2074875428}
-  - {fileID: 3982343}
-  m_Father: {fileID: 423665018}
-  m_RootOrder: 1
 --- !u!1 &967948993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2498,6 +3914,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 975540731}
+  - 114: {fileID: 975540733}
+  - 114: {fileID: 975540732}
   m_Layer: 0
   m_Name: QuarkMarker35
   m_TagString: Untagged
@@ -2512,11 +3930,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 975540730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -98.6, y: 0, z: -42.2}
+  m_LocalPosition: {x: -98.6, y: -15.799999, z: -42.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 6
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 19
+--- !u!114 &975540732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 975540730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &975540733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 975540730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &982012082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,6 +3989,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 982012083}
+  - 114: {fileID: 982012085}
+  - 114: {fileID: 982012084}
   m_Layer: 0
   m_Name: QuarkMarker26
   m_TagString: Untagged
@@ -2539,11 +4005,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 982012082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -162.9, y: -23.3, z: -74.3}
+  m_LocalPosition: {x: -162.9, y: 19.2, z: -74.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 11
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 49
+--- !u!114 &982012084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982012082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &982012085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982012082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1001 &998173710
 Prefab:
   m_ObjectHideFlags: 0
@@ -3177,6 +4689,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1067581761}
+  - 114: {fileID: 1067581763}
+  - 114: {fileID: 1067581762}
   m_Layer: 0
   m_Name: QuarkMarker48
   m_TagString: Untagged
@@ -3191,50 +4705,110 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1067581760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -98.6, y: 0, z: 40.1}
+  m_LocalPosition: {x: -98.6, y: 1.2999992, z: 40.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 7
---- !u!1 &1078615532
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 8
+--- !u!114 &1067581762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067581760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1067581763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067581760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!1 &1075392881
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1078615533}
+  - 4: {fileID: 1075392882}
+  - 135: {fileID: 1075392884}
+  - 114: {fileID: 1075392883}
   m_Layer: 0
-  m_Name: GREEN
-  m_TagString: Untagged
+  m_Name: Base 1
+  m_TagString: Base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1078615533
+--- !u!4 &1075392882
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1078615532}
+  m_GameObject: {fileID: 1075392881}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -15.799999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 740533814}
-  - {fileID: 2117500315}
-  - {fileID: 91318177}
-  - {fileID: 323853939}
-  - {fileID: 349754347}
-  - {fileID: 302855731}
-  - {fileID: 975540731}
-  - {fileID: 1652342223}
-  - {fileID: 817286334}
-  - {fileID: 578900029}
-  - {fileID: 51077451}
-  - {fileID: 1944334235}
-  m_Father: {fileID: 423665018}
-  m_RootOrder: 2
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 288094924}
+  m_RootOrder: 0
+--- !u!114 &1075392883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075392881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bedafeb9875e704fb53257a5a838493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseId: 2
+--- !u!135 &1075392884
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1075392881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 14.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1145028853
 Prefab:
   m_ObjectHideFlags: 0
@@ -3289,6 +4863,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1167148227}
+  - 114: {fileID: 1167148229}
+  - 114: {fileID: 1167148228}
   m_Layer: 0
   m_Name: QuarkMarker2
   m_TagString: Untagged
@@ -3303,11 +4879,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1167148226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.4, y: 0, z: 0}
+  m_LocalPosition: {x: -35.4, y: -58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 1
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 25
+--- !u!114 &1167148228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1167148226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1167148229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1167148226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1185723263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3959,6 +5581,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1294939076}
+  - 114: {fileID: 1294939078}
+  - 114: {fileID: 1294939077}
   m_Layer: 0
   m_Name: QuarkMarker4
   m_TagString: Untagged
@@ -3973,11 +5597,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1294939075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 88.8, y: 0, z: 0}
+  m_LocalPosition: {x: 88.8, y: -58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 3
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 27
+--- !u!114 &1294939077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294939075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1294939078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294939075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1299717330
 GameObject:
   m_ObjectHideFlags: 0
@@ -4174,6 +5844,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1386497908}
+  - 114: {fileID: 1386497910}
+  - 114: {fileID: 1386497909}
   m_Layer: 0
   m_Name: QuarkMarker42
   m_TagString: Untagged
@@ -4188,11 +5860,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1386497907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.7, y: 0, z: 97.5}
+  m_LocalPosition: {x: 41.7, y: 1.2999992, z: 97.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 1
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 2
+--- !u!114 &1386497909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386497907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1386497910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1386497907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1396650449
 GameObject:
   m_ObjectHideFlags: 0
@@ -4228,6 +5946,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1435053092}
+  - 114: {fileID: 1435053094}
+  - 114: {fileID: 1435053093}
   m_Layer: 0
   m_Name: QuarkMarker52
   m_TagString: Untagged
@@ -4242,11 +5962,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1435053091}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.9, y: -4.2, z: -40.8}
+  m_LocalPosition: {x: -58.9, y: -2.9000006, z: -40.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 11
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 12
+--- !u!114 &1435053093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435053091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1435053094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435053091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1454835375
 GameObject:
   m_ObjectHideFlags: 0
@@ -4255,6 +6021,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1454835376}
+  - 114: {fileID: 1454835378}
+  - 114: {fileID: 1454835377}
   m_Layer: 0
   m_Name: QuarkMarker9
   m_TagString: Untagged
@@ -4269,11 +6037,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1454835375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -75.6, y: 24.9, z: -161.7}
+  m_LocalPosition: {x: -75.6, y: -33.1, z: -161.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 8
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 32
+--- !u!114 &1454835377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454835375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1454835378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454835375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1461988326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4826,6 +6640,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1581249166}
+  - 114: {fileID: 1581249168}
+  - 114: {fileID: 1581249167}
   m_Layer: 0
   m_Name: QuarkMarker41
   m_TagString: Untagged
@@ -4840,11 +6656,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1581249165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.5, y: 0, z: 39}
+  m_LocalPosition: {x: 98.5, y: 1.2999992, z: 39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 289620796}
-  m_RootOrder: 0
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 1
+--- !u!114 &1581249167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1581249165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1581249168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1581249165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1595377714
 GameObject:
   m_ObjectHideFlags: 0
@@ -4887,7 +6749,7 @@ Transform:
   - {fileID: 1769347699}
   - {fileID: 678117142}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1 &1616901117
 GameObject:
   m_ObjectHideFlags: 0
@@ -4987,7 +6849,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.3110594, w: 0.9503905}
   m_LocalPosition: {x: -0.06, y: 24.5, z: 214}
   m_LocalScale: {x: 4.176554, y: 4.1765532, z: 4.1765532}
-  m_Children: []
+  m_Children:
+  - {fileID: 1829589537}
   m_Father: {fileID: 868877485}
   m_RootOrder: 2
 --- !u!95 &1618150296
@@ -5121,6 +6984,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1652342223}
+  - 114: {fileID: 1652342225}
+  - 114: {fileID: 1652342224}
   m_Layer: 0
   m_Name: QuarkMarker36
   m_TagString: Untagged
@@ -5135,11 +7000,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1652342222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -98.6, y: 0, z: 40.1}
+  m_LocalPosition: {x: -98.6, y: -15.799999, z: 40.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 7
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 20
+--- !u!114 &1652342224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652342222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1652342225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652342222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1679481751
 GameObject:
   m_ObjectHideFlags: 0
@@ -5383,6 +7294,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1695551133}
+  - 114: {fileID: 1695551135}
+  - 114: {fileID: 1695551134}
   m_Layer: 0
   m_Name: QuarkMarker13
   m_TagString: Untagged
@@ -5397,11 +7310,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1695551132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 0, z: 85.9}
+  m_LocalPosition: {x: 1.1, y: -58, z: 85.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 12
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 36
+--- !u!114 &1695551134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1695551132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1695551135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1695551132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1717956819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5486,6 +7445,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1761267147}
+  - 114: {fileID: 1761267149}
+  - 114: {fileID: 1761267148}
   m_Layer: 0
   m_Name: QuarkMarker23
   m_TagString: Untagged
@@ -5500,11 +7461,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761267146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 76, y: -24.2, z: -161.7}
+  m_LocalPosition: {x: 76, y: 18.3, z: -161.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 8
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 46
+--- !u!114 &1761267148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761267146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1761267149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761267146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1769347698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5656,6 +7663,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1595377715}
   m_RootOrder: 2
+--- !u!1 &1829589536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1829589537}
+  - 135: {fileID: 1829589539}
+  - 114: {fileID: 1829589538}
+  m_Layer: 0
+  m_Name: Base 2
+  m_TagString: Base
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1829589537
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1829589536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1618150295}
+  m_RootOrder: 0
+--- !u!114 &1829589538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1829589536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bedafeb9875e704fb53257a5a838493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseId: 1
+--- !u!135 &1829589539
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1829589536}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 14.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1831218629
 Prefab:
   m_ObjectHideFlags: 0
@@ -6178,6 +8238,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1859780878}
+  - 114: {fileID: 1859780880}
+  - 114: {fileID: 1859780879}
   m_Layer: 0
   m_Name: QuarkMarker11
   m_TagString: Untagged
@@ -6192,11 +8254,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1859780877}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.8, y: 25.5, z: 161.7}
+  m_LocalPosition: {x: 77.8, y: -32.5, z: 161.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 10
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 34
+--- !u!114 &1859780879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1859780877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1859780880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1859780877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1872501385
 GameObject:
   m_ObjectHideFlags: 0
@@ -6283,6 +8391,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1876706857}
+  - 114: {fileID: 1876706859}
+  - 114: {fileID: 1876706858}
   m_Layer: 0
   m_Name: QuarkMarker5
   m_TagString: Untagged
@@ -6297,11 +8407,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1876706856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.2, y: 40.7, z: -81.2}
+  m_LocalPosition: {x: 100.2, y: -17.3, z: -81.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 4
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 28
+--- !u!114 &1876706858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1876706856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1876706859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1876706856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1894858122
 GameObject:
   m_ObjectHideFlags: 0
@@ -6593,6 +8749,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1930203818}
+  - 114: {fileID: 1930203820}
+  - 114: {fileID: 1930203819}
   m_Layer: 0
   m_Name: QuarkMarker10
   m_TagString: Untagged
@@ -6607,11 +8765,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1930203817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 161.8, y: 25.1, z: -75.2}
+  m_LocalPosition: {x: 161.8, y: -32.9, z: -75.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 730429827}
-  m_RootOrder: 9
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 33
+--- !u!114 &1930203819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930203817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1930203820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930203817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1937555592
 GameObject:
   m_ObjectHideFlags: 0
@@ -6620,6 +8824,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1937555593}
+  - 114: {fileID: 1937555595}
+  - 114: {fileID: 1937555594}
   m_Layer: 0
   m_Name: QuarkMarker24
   m_TagString: Untagged
@@ -6634,11 +8840,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1937555592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 161.8, y: -23.7, z: 77.7}
+  m_LocalPosition: {x: 161.8, y: 18.8, z: 77.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 9
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 47
+--- !u!114 &1937555594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937555592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1937555595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1937555592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1944334234
 GameObject:
   m_ObjectHideFlags: 0
@@ -6647,6 +8899,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1944334235}
+  - 114: {fileID: 1944334237}
+  - 114: {fileID: 1944334236}
   m_Layer: 0
   m_Name: QuarkMarker40
   m_TagString: Untagged
@@ -6661,11 +8915,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1944334234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.8, y: 4.7, z: -57.3}
+  m_LocalPosition: {x: -41.8, y: -11.099999, z: -57.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 11
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 0
+--- !u!114 &1944334236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944334234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1944334237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944334234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1948498127
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,6 +8974,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1948498128}
+  - 114: {fileID: 1948498130}
+  - 114: {fileID: 1948498129}
   m_Layer: 0
   m_Name: QuarkMarker15
   m_TagString: Untagged
@@ -6688,11 +8990,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1948498127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.5, y: 0, z: 0}
+  m_LocalPosition: {x: 35.5, y: 42.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 0
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 38
+--- !u!114 &1948498129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948498127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &1948498130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948498127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &1951927902
 GameObject:
   m_ObjectHideFlags: 0
@@ -6768,6 +9116,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2000032274}
+  - 114: {fileID: 2000032276}
+  - 114: {fileID: 2000032275}
   m_Layer: 0
   m_Name: QuarkMarker18
   m_TagString: Untagged
@@ -6782,11 +9132,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2000032273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 88.8, y: 0, z: 0}
+  m_LocalPosition: {x: 88.8, y: 42.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 3
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 41
+--- !u!114 &2000032275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000032273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &2000032276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000032273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &2010061685
 GameObject:
   m_ObjectHideFlags: 0
@@ -6973,6 +9369,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2074875428}
+  - 114: {fileID: 2074875430}
+  - 114: {fileID: 2074875429}
   m_Layer: 0
   m_Name: QuarkMarker27
   m_TagString: Untagged
@@ -6987,11 +9385,57 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2074875427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: 0, z: 85.9}
+  m_LocalPosition: {x: 1.1, y: 42.5, z: 85.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 939713654}
-  m_RootOrder: 12
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 50
+--- !u!114 &2074875429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2074875427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &2074875430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2074875427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!1 &2105039694
 GameObject:
   m_ObjectHideFlags: 0
@@ -7067,6 +9511,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2117500315}
+  - 114: {fileID: 2117500317}
+  - 114: {fileID: 2117500316}
   m_Layer: 0
   m_Name: QuarkMarker30
   m_TagString: Untagged
@@ -7081,8 +9527,54 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2117500314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.7, y: 0, z: 97.5}
+  m_LocalPosition: {x: 41.7, y: -15.799999, z: 97.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1078615533}
-  m_RootOrder: 1
+  m_Father: {fileID: 423665018}
+  m_RootOrder: 14
+--- !u!114 &2117500316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2117500314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21378485ceb594a038f382e07b0eb8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  preparedToSpawn: 0
+  numTimesAdded: 0
+--- !u!114 &2117500317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2117500314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
