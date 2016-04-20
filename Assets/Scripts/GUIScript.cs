@@ -173,18 +173,21 @@ public class GUIScript : NetworkBehaviour {
     public void enableYouWon() {
         youWonImage.enabled = true;
 
-        GameObject otherPlayer;
-        if (gameObject.name.Contains("1"))
-            otherPlayer = GameObject.Find("Player 2");
-        else 
-            otherPlayer = GameObject.Find("Player 1");
+        if (isLocalPlayer) {
+            GameObject otherPlayer;
+            if (gameObject.name.Contains ("1"))
+                otherPlayer = GameObject.Find ("Player 2");
+            else
+                otherPlayer = GameObject.Find ("Player 1");
 
-        NetworkInstanceId id = otherPlayer.GetComponent<NetworkIdentity>().netId;
+            NetworkInstanceId id = otherPlayer.GetComponent<NetworkIdentity> ().netId;
 
-        if (isServer)
-            RpcYouLost (id);
-        else
-            CmdYouLost (id);
+
+            if (isServer)
+                RpcYouLost (id);
+            else
+                CmdYouLost (id);
+        }
     }
 
     [Command]

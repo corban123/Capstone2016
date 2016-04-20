@@ -36,6 +36,10 @@ public class StartUpPlayerScript : NetworkBehaviour {
                     gui.disableWaitingCanvas ();
                     gui.enableCanvas ();
 
+                    gui = boardObjects [1].gameObject.GetComponent<GUIScript> ();
+                    gui.disableWaitingCanvas ();
+                    gui.enableCanvas ();
+
 					boardObjects[0].gameObject.name = "Player 1";
 					boardObjects[1].gameObject.name = "Player 2";
                     boardObjects[0].SetBoard(boards[0]);
@@ -46,6 +50,10 @@ public class StartUpPlayerScript : NetworkBehaviour {
 
 				} else {
                     gui = boardObjects [0].gameObject.GetComponent<GUIScript> ();
+                    gui.disableWaitingCanvas ();
+                    gui.enableCanvas ();
+
+                    gui = boardObjects [1].gameObject.GetComponent<GUIScript> ();
                     gui.disableWaitingCanvas ();
                     gui.enableCanvas ();
 
