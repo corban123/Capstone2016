@@ -27,7 +27,7 @@ namespace UnityEngine.Networking
         public GameObject startOnly;
         public GameObject startjoin;
 
-        bool drawMatchButtons = false;
+        bool drawButtons = false;
 
         // Runtime variable
         bool m_ShowServer;
@@ -57,6 +57,7 @@ namespace UnityEngine.Networking
         void JoinButtonOnClick() {
             startjoin.SetActive (false);
             manager.matchMaker.ListMatches (0, 20, "", manager.OnMatchList);
+            drawButtons = true;
         }
 
         void StartButtonOnClick() {
@@ -93,28 +94,27 @@ namespace UnityEngine.Networking
 
         void Update()
         {
-            if (manager.matches != null) {
-                drawMatchButtons = true;
-            }
         }
 
 
         void OnGUI()
         {
-            if (manager.matchMaker != null && drawMatchButtons && manager.matches != null) {
+            if (manager.matchMaker != null && drawButtons && manager.matches != null) {
                 GUILayout.BeginArea (new Rect(Screen.width * (0.4f),
                     Screen.height * (0.75f), 
                     Screen.width * (0.2f), 
                     Screen.height * (0.2f)));
                 foreach (var match in manager.matches) {
                     if (GUILayout.Button (match.name)) {
+                        drawButtons = false;
+
                         manager.matchName = match.name;
                         manager.matchSize = (uint)match.currentSize;
                         manager.matchMaker.JoinMatch (match.networkId, "", manager.OnMatchJoined);
                     }
                 }
                 GUILayout.EndArea ();
-            } else if (drawMatchButtons && manager.matches == null) {
+            } else if (drawButtons && manager.matches == null) {
                 GUIStyle style = new GUIStyle ();
                 style.fontSize = 20;
                 style.normal.textColor = Color.white;
