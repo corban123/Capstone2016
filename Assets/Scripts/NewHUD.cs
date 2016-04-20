@@ -94,6 +94,7 @@ namespace UnityEngine.Networking
 
         void Update()
         {
+            print ("num players" + ClientScene.localPlayers.Count);
         }
 
 

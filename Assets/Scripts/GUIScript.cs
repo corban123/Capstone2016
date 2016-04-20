@@ -10,6 +10,7 @@ public class GUIScript : NetworkBehaviour {
     public GameObject FreezeSprite;
     public GameObject AtomBombSprite;
     public Canvas canvas;
+    public Canvas waitingCanvas;
 
     BoardScript boardScript;
     Image elementHeldImage;
@@ -60,6 +61,7 @@ public class GUIScript : NetworkBehaviour {
         boardScript = GetComponent<BoardScript> ();
 
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        waitingCanvas = GameObject.Find ("WaitingCanvas").GetComponent<Canvas> ();
 
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
@@ -310,6 +312,14 @@ public class GUIScript : NetworkBehaviour {
 
     public void enableCanvas() {
         canvas.enabled = true;
+    }
+
+    public void enableWaitingCanvas() {
+        waitingCanvas.enabled = true;
+    }
+
+    public void disableWaitingCanvas() {
+        waitingCanvas.enabled = false;
     }
         
 }
