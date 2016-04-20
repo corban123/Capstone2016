@@ -16,8 +16,8 @@ public class MoveScript : NetworkBehaviour
     [SerializeField]
     AudioClip pickUp;
     float upDownRange = 60.0f;
-    Transform player1RespawnPoint;
-    Transform player2RespawnPoint;
+    public Transform player1RespawnPoint;
+    public Transform player2RespawnPoint;
 
     public Sprite blueCross;
     public Sprite redCross;
@@ -27,8 +27,7 @@ public class MoveScript : NetworkBehaviour
         combat = gameObject.GetComponent<CombatScript>();
         source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript>();
-        player1RespawnPoint = GameObject.Find ("Spawn1").transform;
-        player2RespawnPoint = GameObject.Find ("Spawn2").transform;
+        Respawn();
     }
 
     void Update()
@@ -61,6 +60,7 @@ public class MoveScript : NetworkBehaviour
             if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript>().cost <= combat.numQuarks)
             {
                 GetComponent<CombatScript>().CmdDeductElementCostQuarks();
+                GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn();
                 GameObject pickedElement = collision.gameObject;
                 combat.haveElement = true;
                 combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
