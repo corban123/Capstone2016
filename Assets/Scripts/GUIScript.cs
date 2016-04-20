@@ -182,11 +182,11 @@ public class GUIScript : NetworkBehaviour {
 
             NetworkInstanceId id = otherPlayer.GetComponent<NetworkIdentity> ().netId;
 
-
-            if (isServer)
-                RpcYouLost (id);
-            else
-                CmdYouLost (id);
+            // TODO(@paige): make this work
+//            if (isServer)
+//                RpcYouLost (id);
+//            else
+//                CmdYouLost (id);
         }
     }
 
