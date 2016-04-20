@@ -42,8 +42,9 @@ public class CombatScript : NetworkBehaviour
             if (Input.GetButtonDown ("Fire1") && Time.time > nextFire && !pauseScript.paused) { //PC control
                 // This boolean has to be before CmdShootProjectile because numQuarks is decremented in the command.
                 bool shootElement = haveElement && numQuarks <= 0;
+                Debug.Log ("shootElement " + shootElement);
                 nextFire = Time.time + fireRate;
-				CmdShootProjectile (haveElement, heldElement, heldElementPos);
+                CmdShootProjectile (shootElement, heldElement, heldElementPos);
                 // These lines have to be outside CmdShootProjectile. If they are inside the command they will NOT work.
                 if (shootElement) {
                     haveElement = false;
@@ -79,7 +80,7 @@ public class CombatScript : NetworkBehaviour
     }
 
     [Command]
-	void CmdShootProjectile(bool haveElementCmd, int heldElementCmd, Vector3 heldElementPos)
+	void CmdShootProjectile(bool shootElementCmd, int heldElementCmd, Vector3 heldElementPos)
     {
 		GameObject instance;
 		Vector3 newPos = shotSpawn.position;
@@ -87,7 +88,7 @@ public class CombatScript : NetworkBehaviour
 		int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
 		gameObject.GetComponent<Animator>().Play("Shoot");
 		
-		if (haveElementCmd && numQuarks <= 0) {
+		if (shootElementCmd) {
 			instance = Instantiate(elementShot, newPos, newRot) as GameObject;
             instance.GetComponent<ProjectileScript> ().elementId = heldElementCmd;
 			instance.GetComponent<ElementScript> ().spawnTrans = heldElementPos;
