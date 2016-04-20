@@ -36,9 +36,7 @@ public class EnablerScript : NetworkBehaviour {
 
 			audioListen.enabled = true;
 			foreach(Renderer r in GetComponentsInChildren<Renderer>()){
-                if(r.gameObject.name != "pasted__tube"){
-                    r.enabled = false;
-                }
+                r.enabled = false; 
 			}
 		}
 	}
