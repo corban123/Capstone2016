@@ -166,7 +166,7 @@ public class CombatScript : NetworkBehaviour
 				Debug.Log ("WELL I GOT HIT DIDN'T I");
                 string uIdentity = this.transform.name;
 
-                CmdTellServerWhoWasShot(uIdentity, collision.name);
+                DeductHealth(collision.name);
             }
         }
     }
