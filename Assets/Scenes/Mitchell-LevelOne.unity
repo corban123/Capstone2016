@@ -190,7 +190,7 @@ Transform:
   - {fileID: 1621080740}
   - {fileID: 516364108}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1001 &8944510
 Prefab:
   m_ObjectHideFlags: 0
@@ -557,7 +557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &176547057
 GameObject:
   m_ObjectHideFlags: 0
@@ -7060,6 +7060,18 @@ Prefab:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 86917be0c23434f439b5583ed3411bc2, type: 2}
+    - target: {fileID: 6400430, guid: b9c3bd4daf2808b48bcaea6f958c1bb3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400432, guid: b9c3bd4daf2808b48bcaea6f958c1bb3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400434, guid: b9c3bd4daf2808b48bcaea6f958c1bb3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9c3bd4daf2808b48bcaea6f958c1bb3, type: 3}
   m_IsPrefabParent: 0
@@ -7239,7 +7251,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!1 &1859780877
 GameObject:
   m_ObjectHideFlags: 0
