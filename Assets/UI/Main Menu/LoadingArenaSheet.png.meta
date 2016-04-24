@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: acfb31ad0565c484691b099cced304de
+timeCreated: 1461462995
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LoadingArenaSheet_0
+    21300002: LoadingArenaSheet_1
+    21300004: LoadingArenaSheet_2
+    21300006: LoadingArenaSheet_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LoadingArenaSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 11}
+        - {x: -42, y: 5}
+        - {x: -42, y: -24}
+        - {x: -40, y: -30}
+        - {x: -17, y: -30}
+        - {x: -11, y: -27}
+        - {x: -11, y: 11}
+      - - {x: -192, y: 20}
+        - {x: -196, y: 19}
+        - {x: -198, y: 17}
+        - {x: -198, y: -19}
+        - {x: -192, y: -20}
+        - {x: -71, y: -20}
+        - {x: -71, y: 20}
+      - - {x: -3, y: -18}
+        - {x: -2, y: -20}
+        - {x: 107, y: -20}
+        - {x: 107, y: 11}
+        - {x: 106, y: 12}
+        - {x: 50, y: 19}
+        - {x: 7, y: 19}
+        - {x: -3, y: -9}
+      - - {x: 107, y: 11}
+        - {x: 107, y: -18}
+        - {x: 109, y: -20}
+        - {x: 135, y: -20}
+        - {x: 137, y: -19}
+        - {x: 137, y: -3}
+        - {x: 136, y: 5}
+        - {x: 129, y: 11}
+      - - {x: -71, y: 11}
+        - {x: -71, y: -19}
+        - {x: -42, y: -19}
+        - {x: -42, y: 11}
+      - - {x: 155, y: -7}
+        - {x: 153, y: -9}
+        - {x: 153, y: -19}
+        - {x: 164, y: -19}
+        - {x: 164, y: -8}
+        - {x: 162, y: -7}
+      - - {x: 175, y: -7}
+        - {x: 173, y: -9}
+        - {x: 173, y: -19}
+        - {x: 184, y: -19}
+        - {x: 184, y: -8}
+        - {x: 182, y: -7}
+      - - {x: 196, y: -7}
+        - {x: 194, y: -9}
+        - {x: 194, y: -19}
+        - {x: 205, y: -19}
+        - {x: 205, y: -8}
+        - {x: 203, y: -7}
+    - name: LoadingArenaSheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 11}
+        - {x: -42, y: 5}
+        - {x: -42, y: -24}
+        - {x: -40, y: -30}
+        - {x: -17, y: -30}
+        - {x: -11, y: -27}
+        - {x: -11, y: 11}
+      - - {x: -192, y: 20}
+        - {x: -196, y: 19}
+        - {x: -198, y: 17}
+        - {x: -198, y: -19}
+        - {x: -192, y: -20}
+        - {x: -71, y: -20}
+        - {x: -71, y: 20}
+      - - {x: -3, y: -18}
+        - {x: -2, y: -20}
+        - {x: 107, y: -20}
+        - {x: 107, y: 11}
+        - {x: 106, y: 12}
+        - {x: 50, y: 19}
+        - {x: 7, y: 19}
+        - {x: -3, y: -9}
+      - - {x: 107, y: 11}
+        - {x: 107, y: -18}
+        - {x: 109, y: -20}
+        - {x: 135, y: -20}
+        - {x: 137, y: -19}
+        - {x: 137, y: -3}
+        - {x: 136, y: 5}
+        - {x: 129, y: 11}
+      - - {x: -71, y: 11}
+        - {x: -71, y: -19}
+        - {x: -42, y: -19}
+        - {x: -42, y: 11}
+      - - {x: 155, y: -7}
+        - {x: 153, y: -9}
+        - {x: 153, y: -19}
+        - {x: 164, y: -19}
+        - {x: 164, y: -8}
+        - {x: 162, y: -7}
+      - - {x: 175, y: -7}
+        - {x: 173, y: -9}
+        - {x: 173, y: -19}
+        - {x: 184, y: -19}
+        - {x: 184, y: -8}
+        - {x: 182, y: -7}
+    - name: LoadingArenaSheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 11}
+        - {x: -42, y: 5}
+        - {x: -42, y: -24}
+        - {x: -40, y: -30}
+        - {x: -17, y: -30}
+        - {x: -11, y: -27}
+        - {x: -11, y: 11}
+      - - {x: -192, y: 20}
+        - {x: -196, y: 19}
+        - {x: -198, y: 17}
+        - {x: -198, y: -19}
+        - {x: -192, y: -20}
+        - {x: -71, y: -20}
+        - {x: -71, y: 20}
+      - - {x: -3, y: -18}
+        - {x: -2, y: -20}
+        - {x: 107, y: -20}
+        - {x: 107, y: 11}
+        - {x: 106, y: 12}
+        - {x: 50, y: 19}
+        - {x: 7, y: 19}
+        - {x: -3, y: -9}
+      - - {x: 107, y: 11}
+        - {x: 107, y: -18}
+        - {x: 109, y: -20}
+        - {x: 135, y: -20}
+        - {x: 137, y: -19}
+        - {x: 137, y: -3}
+        - {x: 136, y: 5}
+        - {x: 129, y: 11}
+      - - {x: -71, y: 11}
+        - {x: -71, y: -19}
+        - {x: -42, y: -19}
+        - {x: -42, y: 11}
+      - - {x: 155, y: -7}
+        - {x: 153, y: -9}
+        - {x: 153, y: -19}
+        - {x: 164, y: -19}
+        - {x: 164, y: -8}
+        - {x: 162, y: -7}
+    - name: LoadingArenaSheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 640
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 11}
+        - {x: -42, y: 5}
+        - {x: -42, y: -24}
+        - {x: -40, y: -30}
+        - {x: -17, y: -30}
+        - {x: -11, y: -27}
+        - {x: -11, y: 11}
+      - - {x: -192, y: 20}
+        - {x: -196, y: 19}
+        - {x: -198, y: 17}
+        - {x: -198, y: -19}
+        - {x: -192, y: -20}
+        - {x: -71, y: -20}
+        - {x: -71, y: 20}
+      - - {x: -3, y: -18}
+        - {x: -2, y: -20}
+        - {x: 107, y: -20}
+        - {x: 107, y: 11}
+        - {x: 106, y: 12}
+        - {x: 50, y: 19}
+        - {x: 7, y: 19}
+        - {x: -3, y: -9}
+      - - {x: 107, y: 11}
+        - {x: 107, y: -18}
+        - {x: 109, y: -20}
+        - {x: 135, y: -20}
+        - {x: 137, y: -19}
+        - {x: 137, y: -3}
+        - {x: 136, y: 5}
+        - {x: 129, y: 11}
+      - - {x: -71, y: 11}
+        - {x: -71, y: -19}
+        - {x: -42, y: -19}
+        - {x: -42, y: 11}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
