@@ -20,6 +20,7 @@ namespace UnityEngine.Networking
         public Camera sceneSelectionCamera;
 
         Canvas mainCanvas;
+        Canvas arenaSelectionCanvas;
         Button joinButton;
         Button startButton;
         Button createMatchButton;
@@ -36,6 +37,7 @@ namespace UnityEngine.Networking
         {
             manager = GetComponent<NetworkManager>();
             mainCanvas = GameObject.Find ("MainCanvas").GetComponent<Canvas> ();
+            arenaSelectionCanvas = GameObject.Find ("ArenaSelectionCanvas").GetComponent<Canvas> ();
             joinButton = GameObject.Find ("JoinGameButton").GetComponent<Button> ();
             startButton = GameObject.Find ("StartGameButton").GetComponent<Button> ();
 
@@ -73,6 +75,8 @@ namespace UnityEngine.Networking
             // Show stage selection menu
             mainMenuCamera.enabled = false;
             sceneSelectionCamera.enabled = true;
+            mainCanvas.enabled = false;
+            arenaSelectionCanvas.enabled = true;
             startjoin.SetActive (false);
             startOnly.SetActive (false);
         }
@@ -94,7 +98,6 @@ namespace UnityEngine.Networking
 
         void Update()
         {
-            print ("num players" + ClientScene.localPlayers.Count);
         }
 
 
