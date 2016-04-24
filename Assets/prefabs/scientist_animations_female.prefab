@@ -3602,6 +3602,8 @@ MonoBehaviour:
   m_FootstepSounds: {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
   m_JumpSound: {fileID: 8300000, guid: c52d67b1091ef0b469c3be553ed59b2f, type: 3}
   m_LandSound: {fileID: 8300000, guid: 4e057d7a710088f4190da57b97229670, type: 3}
+  m_FreezeSound: {fileID: 8300000, guid: 7cbc3a6cb03979b46818475d546407c6, type: 3}
+  m_BlindnessSound: {fileID: 8300000, guid: 7601f170fdba58944976d1127bec0c55, type: 3}
   moveFactor: 0
 --- !u!114 &11413028
 MonoBehaviour:
