@@ -10,6 +10,8 @@ GameObject:
   - 4: {fileID: 411798}
   - 198: {fileID: 19882588}
   - 199: {fileID: 19952106}
+  - 114: {fileID: 11411668}
+  - 114: {fileID: 11425420}
   m_Layer: 0
   m_Name: BasicShotDeath
   m_TagString: Untagged
@@ -29,6 +31,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11411668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa48006dbcd66a342b4129ecbb138ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11425420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 90
+    i1: 254
+    i2: 196
+    i3: 40
+    i4: 25
+    i5: 148
+    i6: 57
+    i7: 148
+    i8: 184
+    i9: 18
+    i10: 202
+    i11: 155
+    i12: 238
+    i13: 191
+    i14: 106
+    i15: 77
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!198 &19882588
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -74,7 +119,7 @@ ParticleSystem:
     minMaxState: 0
   speed: 1
   randomSeed: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   moveWithTransform: 0

@@ -12,7 +12,6 @@ GameObject:
   - 199: {fileID: 19913670}
   - 114: {fileID: 11427554}
   - 114: {fileID: 11445992}
-  - 135: {fileID: 13531522}
   - 108: {fileID: 10865472}
   - 82: {fileID: 8214810}
   m_Layer: 0
@@ -184,19 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b353698ca2f223e4097cb1e2b15f3895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 3
---- !u!135 &13531522
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105428}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 50
-  m_Center: {x: 0, y: 0, z: 0}
+  radius: 40
 --- !u!198 &19803174
 ParticleSystem:
   m_ObjectHideFlags: 1
