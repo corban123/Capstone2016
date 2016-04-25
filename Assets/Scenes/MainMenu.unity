@@ -1534,7 +1534,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428606, guid: ad70b96f734407241b48f3d189f36205, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11411078, guid: ad70b96f734407241b48f3d189f36205, type: 2}
       propertyPath: m_UseSimulator
@@ -2709,6 +2709,27 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1787553595 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 131978, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
+  m_PrefabInternal: {fileID: 1955826577}
+--- !u!95 &1787553596
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1787553595}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 40870edfb27484c49ba9cb8227ee8b76, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1831145791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,7 +2872,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22435136, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 22435136, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -2901,7 +2922,29 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 22479770, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 22460976, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22478378, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9596552, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476938, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: acfb31ad0565c484691b099cced304de,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 9596552, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 256e1068605dd2e46b552e24902c055a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2046108192
