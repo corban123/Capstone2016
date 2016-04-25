@@ -97,8 +97,8 @@ public class GUIScript : NetworkBehaviour {
         disableYouScored ();
         disableEnemyScored ();
         disableGaugeGlow ();
-        blackout.canvasRenderer.SetAlpha( 0.01f );
-        freeze.canvasRenderer.SetAlpha( 0.01f );
+        blackout.canvasRenderer.SetAlpha( 0.001f );
+        freeze.canvasRenderer.SetAlpha( 0.001f );
     }
 	
 	/**
