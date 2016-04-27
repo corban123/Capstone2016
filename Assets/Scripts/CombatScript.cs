@@ -94,6 +94,13 @@ public class CombatScript : NetworkBehaviour
     public void CmdAddQuarks(){
         numQuarks++;
     }
+    [Command]
+    public void CmdHitQuark()
+    {
+        numQuarks = numQuarks / 2;
+
+    }
+
 
     [Command]
 	void CmdShootProjectile(bool shootElementCmd, int heldElementCmd, Vector3 heldElementPos)
@@ -147,11 +154,11 @@ public class CombatScript : NetworkBehaviour
 			}
             else if(bullet.Contains("Basic"))
             {
-                numQuarks--;
+                CmdDeleteQuarks();
             }
             else
             {
-                numQuarks /= 2;
+                CmdHitQuark();
             }
             gui.updateQuarkMeter(numQuarks);
         }
