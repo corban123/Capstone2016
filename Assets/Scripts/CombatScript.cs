@@ -87,6 +87,8 @@ public class CombatScript : NetworkBehaviour
 
     [Command]
     public void CmdDeleteQuarks() {
+		GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(1);
+
         numQuarks--;
     }
 
@@ -97,6 +99,8 @@ public class CombatScript : NetworkBehaviour
     [Command]
     public void CmdHitQuark()
     {
+		GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(numQuarks/2);
+
         numQuarks = numQuarks / 2;
 
     }
