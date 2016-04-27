@@ -24,15 +24,13 @@ public class MoveScript : NetworkBehaviour
     // Use this for initialization
     void Start()
     {
-		if(isLocalPlayer){
         combat = gameObject.GetComponent<CombatScript>();
         source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript>();
         player1RespawnPoint = GameObject.Find ("Spawn1").transform;
         player2RespawnPoint = GameObject.Find ("Spawn2").transform;
         //Respawn();
-		}
-	}
+    }
 
     void Update()
     {
@@ -64,7 +62,7 @@ public class MoveScript : NetworkBehaviour
             if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript>().cost <= combat.numQuarks)
             {
                 GetComponent<CombatScript>().CmdDeductElementCostQuarks();
-                GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(5);
+                GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn();
                 GameObject pickedElement = collision.gameObject;
                 combat.haveElement = true;
                 combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
@@ -129,15 +127,9 @@ public class MoveScript : NetworkBehaviour
         gameObject.GetComponent<FirstPersonController>().moveFactor = 1.0f;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
-		combat.numQuarks = 0;
-
 		if (isLocalPlayer) {
-			GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(combat.numQuarks);
-
-            combat.numQuarks = 0;
-		
+            combat.numQuarks = 3;
 		}
-
 
 		if (gameObject.name == "Player 1")
         {

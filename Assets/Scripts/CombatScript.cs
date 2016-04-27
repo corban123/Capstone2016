@@ -57,7 +57,6 @@ public class CombatScript : NetworkBehaviour
             else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer && !pauseScript.paused && haveElement)
             {
                 nextFire = Time.time + fireRate;
-				GameObject.Find ("GenerateBoard").GetComponent<QuarkOverlord> ().multiDeSpawn (numQuarks);
                 CmdDeletAllQuarks ();
                 CmdShootProjectile(haveElement, heldElement, heldElementPos);
                 haveElement = false;
@@ -137,7 +136,6 @@ public class CombatScript : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-			Debug.Log ("BULLET: " + bullet);
             if (numQuarks < 1)
             {
 				gameObject.GetComponent<Animator>().Play("Death");
@@ -159,7 +157,7 @@ public class CombatScript : NetworkBehaviour
      */
     void OnTriggerEnter(Collider collision)
     {
-		if (collision.tag == "Bullet" )
+        if (collision.tag == "Bullet" && takeDmg)
         {
 			Debug.Log ("WELL I'M IN THE COLLISION");
             ProjectileScript projectile = collision.GetComponent<ProjectileScript>();
@@ -167,7 +165,7 @@ public class CombatScript : NetworkBehaviour
             {
 				Debug.Log ("WELL I GOT HIT DIDN'T I");
                 string uIdentity = this.transform.name;
-				Debug.Log (collision.name);
+
                 DeductHealth(collision.name);
             }
         }

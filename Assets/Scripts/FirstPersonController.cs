@@ -25,8 +25,6 @@ public class FirstPersonController : NetworkBehaviour
     [SerializeField] private AudioClip m_FootstepSounds;      // footstep sounds
     [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
     [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
-    [SerializeField] private AudioClip m_FreezeSound;           // the sound played when the character is frozen
-    [SerializeField] private AudioClip m_BlindnessSound;        // the sound played when the character is blinded
 
     private Camera m_Camera;
     private bool m_Jump;
@@ -302,18 +300,7 @@ public class FirstPersonController : NetworkBehaviour
         {
             startTime = Time.time;
             freezing = true;
-            m_AudioSource.clip = m_FreezeSound;
-            m_AudioSource.Play();
             gui.freezeUI ();
-        }
-    }
-
-    public void BlindPlayer() {
-        if (isLocalPlayer)
-        {
-            m_AudioSource.clip = m_BlindnessSound;
-            m_AudioSource.Play();
-            gui.blackOutUI();
         }
     }
 

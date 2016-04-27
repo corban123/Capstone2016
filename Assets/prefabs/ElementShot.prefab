@@ -204,9 +204,7 @@ MonoBehaviour:
   MoveSpeed: 5
   frequency: 20
   magnitude: 0.5
-  quarkDeath: {fileID: 102006, guid: 3660bba5dd0171946a9e486aa66c0de3, type: 2}
-  basicDeath: {fileID: 129654, guid: 5afec42819943994b812ca9beebf6a4d, type: 2}
-  shoot: {fileID: 8300000, guid: 8f7ce249b24ca8e47a2b8bb3a026ee5c, type: 3}
+  shoot: {fileID: 8300000, guid: dd8ebfdfbe79fd8438d0dcf13075e1e7, type: 3}
 --- !u!114 &11437200
 MonoBehaviour:
   m_ObjectHideFlags: 1

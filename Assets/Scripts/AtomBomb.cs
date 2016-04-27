@@ -5,10 +5,13 @@ using UnityEngine.Networking;
 
 public class AtomBomb : NetworkBehaviour {
 
-    public float radius;
+    float radius = 30f;
+    float pushforce = 30f;
+    public int duration;
     private Collider[] victims;
     void Start()
     {      
+        Destroy(this.gameObject, duration);
         foreach (Collider collider in Physics.OverlapSphere(transform.position, radius))
         {
             Rigidbody rb = collider.GetComponent<Rigidbody>();
@@ -23,12 +26,49 @@ public class AtomBomb : NetworkBehaviour {
 
     void Update()
     {
-        if (!GetComponent<ParticleSystem>().IsAlive())
+        victims = Physics.OverlapSphere(transform.position, radius);
+        foreach (Collider collider in victims)
         {
-            Destroy(this.gameObject);
+            Rigidbody rb = collider.GetComponent<Rigidbody>();
+            if (rb != null && rb.gameObject.CompareTag("Player"))
+            {
+                print(collider.gameObject.name + " is getting pushed");
+                //rb.AddExplosionForce(pushforce, transform.position, 0);
+                Vector3 forceDirection = transform.position - collider.transform.position;
+                forceDirection.Normalize();
+                forceDirection *= -pushforce;
+                rb.AddForce(forceDirection.x, 0, forceDirection.z, ForceMode.VelocityChange);
+                print("adding force " + pushforce);
+            }
         }
     }
 
+    void OnTriggerExit(Collider other)
+    {
+        print("Leaving atomic zone");
+        Rigidbody rb = other.GetComponent<Rigidbody>();
+        if (rb.gameObject.CompareTag("Player"))
+        {
+            rb.GetComponent<Rigidbody>().isKinematic = true;
+            rb.GetComponent<Rigidbody>().isKinematic = false;
+            print("toggled player kinematic");
+        }
+    }
+
+    void OnDestroy()
+    {
+        foreach (Collider collider in victims)
+        {
+            Rigidbody rb = collider.GetComponent<Rigidbody>();
+            if (rb != null && rb.gameObject.CompareTag("Player"))
+            {
+                rb.GetComponent<Rigidbody>().isKinematic = true;
+                rb.GetComponent<Rigidbody>().isKinematic = false;
+            print("toggled player kinematic");
+            }
+        }
+        //CmdRemoveBomb();
+    }
 
     [Command]
     void CmdRemoveBomb()

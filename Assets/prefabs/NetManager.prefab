@@ -8,9 +8,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 428606}
+  - 114: {fileID: 11474192}
   - 114: {fileID: 11411078}
-  - 114: {fileID: 11410654}
-  - 114: {fileID: 11487028}
   m_Layer: 0
   m_Name: NetManager
   m_TagString: Untagged
@@ -30,25 +29,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11410654
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 275a717359e834cd99ffc92e6c731d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  showGUI: 0
-  offsetX: 0
-  offsetY: 0
-  mainMenuCamera: {fileID: 0}
-  sceneSelectionCamera: {fileID: 0}
-  startOnly: {fileID: 0}
-  startjoin: {fileID: 0}
 --- !u!114 &11411078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -72,8 +52,8 @@ MonoBehaviour:
   m_PlayerPrefab: {fileID: 0}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 1
-  m_OfflineScene: MainMenu
-  m_OnlineScene: Noah-Lv1
+  m_OfflineScene: 
+  m_OnlineScene: 
   m_SpawnPrefabs:
   - {fileID: 103078, guid: fd55551cffeb31c45a15778e1562560d, type: 2}
   - {fileID: 127950, guid: ab9640dc180eb3b4b9a6dc32c752d4a0, type: 2}
@@ -102,8 +82,6 @@ MonoBehaviour:
   - {fileID: 122218, guid: d8dfd8920f96a4f3781c5389c9a24666, type: 2}
   - {fileID: 161630, guid: 81cd98848d30d144b8855512d6030eaf, type: 2}
   - {fileID: 126024, guid: 99ca0a267f024c946a31b44262e6c430, type: 2}
-  - {fileID: 129654, guid: 5afec42819943994b812ca9beebf6a4d, type: 2}
-  - {fileID: 102006, guid: 3660bba5dd0171946a9e486aa66c0de3, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -144,7 +122,7 @@ MonoBehaviour:
   matchName: default
   matchSize: 4
   playerPrefabIndex: 0
---- !u!114 &11487028
+--- !u!114 &11474192
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -156,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
-  showGUI: 1
+  showGUI: 0
   offsetX: 0
   offsetY: 0
 --- !u!1001 &100100000

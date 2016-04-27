@@ -57,7 +57,7 @@ public class QuarkOverlord : NetworkBehaviour {
 	}
 
 	public void deSpawn(){
-		if (isServer)
+        if (isServer)
         {
             QuarkChild toPreparedToSpawn = null;
             QuarkChild toSpawnedList = null;
@@ -89,9 +89,9 @@ public class QuarkOverlord : NetworkBehaviour {
         }
 	}
 
-	public void multiDeSpawn( int numDead )
+    public void multiDeSpawn()
     {
-		for(int i = 0; i < numDead; i++)
+        for(int i = 0; i < 5; i++)
         {
             deSpawn();
         }

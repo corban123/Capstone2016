@@ -33,7 +33,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.564566, y: 27.22, z: -156.3743}
+  m_LocalPosition: {x: 13.581023, y: 23, z: -184.47}
   m_LocalScale: {x: 1.2893289, y: 0.25786594, z: 1.2893296}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,7 +96,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 4, z: 2}
+  m_Size: {x: 1.0000001, y: 2, z: 1.0060636}
   m_Center: {x: 0, y: 0, z: 0.0030296752}
 --- !u!82 &8233412
 AudioSource:
@@ -273,8 +273,6 @@ MonoBehaviour:
   MoveSpeed: 75
   frequency: 20
   magnitude: 0.5
-  quarkDeath: {fileID: 102006, guid: 3660bba5dd0171946a9e486aa66c0de3, type: 2}
-  basicDeath: {fileID: 129654, guid: 5afec42819943994b812ca9beebf6a4d, type: 2}
   shoot: {fileID: 8300000, guid: dd8ebfdfbe79fd8438d0dcf13075e1e7, type: 3}
 --- !u!198 &19802892
 ParticleSystem:
