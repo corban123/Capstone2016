@@ -10,9 +10,11 @@ public class ProjectileScript : NetworkBehaviour
 {
     [SyncVar]public int playerSource;
     [SyncVar]public int elementId;
-    public float MoveSpeed = 5.0f;
-    public float frequency = 20.0f;  // Speed of sine movement
-    public float magnitude = 0.5f;   // Size of sine movement
+    public float MoveSpeed;
+    public float frequency;  // Speed of sine movement
+    public float magnitude;   // Size of sine movement
+    public GameObject quarkDeath;
+    public GameObject basicDeath;
     private Vector3 axis;
     private Vector3 pos;
     AudioSource source;
@@ -35,12 +37,10 @@ public class ProjectileScript : NetworkBehaviour
     {
         if (gameObject.name.Contains("Basic"))
         {
-            //TODO: Add movement behaviors as the projectile travels
             rb.AddForce(transform.forward * MoveSpeed * 30);
         }
         else if (gameObject.name.Contains("Element"))
         {
-            //TODO: Add movement behaviors as the projectile travels
             rb.AddForce(transform.forward * MoveSpeed * 30);
         }
         else //The projectile is a Quark, follows a sinusoidal path
@@ -67,7 +67,9 @@ public class ProjectileScript : NetworkBehaviour
                 {
 					e.CmdSpawnDead();
                     e.PowerUp();                       
-                } else if (e != null && coll.gameObject.CompareTag("Base")){
+                }
+                else if (e != null && coll.gameObject.CompareTag("Base"))
+                {
                     int BaseId = Int32.Parse(coll.gameObject.name.Split(' ')[1]);
                     print("base " + BaseId + " hit by player " + playerSource + " with element " + elementId);
                     if (playerSource == BaseId)
@@ -86,7 +88,7 @@ public class ProjectileScript : NetworkBehaviour
                         }
                     }
                 }
-                Destroy(this.gameObject);
+                removeProjectile();
             }
             else if(target.name.Contains("Player") && !target.name.Contains(playerSource.ToString()))
             {
@@ -95,7 +97,7 @@ public class ProjectileScript : NetworkBehaviour
                     e.CmdSpawnDead();
                     e.PowerUp();
                 }
-                Destroy(this.gameObject);
+                removeProjectile();
             }
             else if(target.CompareTag("Killbox"))
             {
@@ -103,13 +105,40 @@ public class ProjectileScript : NetworkBehaviour
                 {
                     e.CmdSpawnDead();
                 }
-                Destroy(this.gameObject);
+                removeProjectile();
             }
-
         }
         catch (NullReferenceException) { }
     }
 
+
+    void removeProjectile()
+    {
+        GetComponent<Collider>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+        CmdSpawnDeathAnim();
+        MoveSpeed = 0;
+        rb.velocity = Vector3.zero;
+        Destroy(this.gameObject, .75f);
+    }
+
+    [Command]
+    void CmdSpawnDeathAnim()
+    {
+        GameObject instance = null;
+        if(gameObject.name.Contains("Basic"))
+        {
+            instance = Instantiate(basicDeath, transform.position, transform.rotation) as GameObject;
+        }
+        else if(!gameObject.name.Contains("Element"))
+        {
+            instance = Instantiate(quarkDeath, transform.position, transform.rotation) as GameObject;
+        }
+        if(instance != null)
+        {
+            NetworkServer.Spawn(instance);
+        }
+    }
     void Update()
     {
 
