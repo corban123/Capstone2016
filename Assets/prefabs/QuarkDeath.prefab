@@ -10,6 +10,8 @@ GameObject:
   - 4: {fileID: 487076}
   - 198: {fileID: 19888958}
   - 199: {fileID: 19989466}
+  - 114: {fileID: 11466102}
+  - 114: {fileID: 11470468}
   m_Layer: 0
   m_Name: QuarkDeath
   m_TagString: Untagged
@@ -24,11 +26,54 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.05, y: 18.34, z: -314.78}
+  m_LocalPosition: {x: -59.85, y: 29.6, z: -343.72137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11466102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa48006dbcd66a342b4129ecbb138ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11470468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 54
+    i1: 96
+    i2: 187
+    i3: 165
+    i4: 221
+    i5: 1
+    i6: 113
+    i7: 148
+    i8: 106
+    i9: 158
+    i10: 72
+    i11: 106
+    i12: 166
+    i13: 108
+    i14: 13
+    i15: 227
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!198 &19888958
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -36,7 +81,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102006}
   serializedVersion: 2
-  lengthInSec: 1
+  lengthInSec: 1.5
   startDelay:
     scalar: 0
     maxCurve:
@@ -74,7 +119,7 @@ ParticleSystem:
     minMaxState: 0
   speed: 1
   randomSeed: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   moveWithTransform: 0
@@ -83,7 +128,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     startLifetime:
-      scalar: 1
+      scalar: 1.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -247,7 +292,7 @@ ParticleSystem:
         rgba: 4278248447
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1575,7 +1620,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102006}

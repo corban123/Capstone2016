@@ -20,6 +20,8 @@ namespace UnityEngine.Networking
         public Camera sceneSelectionCamera;
 
         Canvas mainCanvas;
+        Canvas arenaSelectionCanvas;
+        Canvas loadingCanvas;
         Button joinButton;
         Button startButton;
         Button createMatchButton;
@@ -36,6 +38,8 @@ namespace UnityEngine.Networking
         {
             manager = GetComponent<NetworkManager>();
             mainCanvas = GameObject.Find ("MainCanvas").GetComponent<Canvas> ();
+            loadingCanvas = GameObject.Find ("LoadingCanvas").GetComponent<Canvas> ();
+            arenaSelectionCanvas = GameObject.Find ("ArenaSelectionCanvas").GetComponent<Canvas> ();
             joinButton = GameObject.Find ("JoinGameButton").GetComponent<Button> ();
             startButton = GameObject.Find ("StartGameButton").GetComponent<Button> ();
 
@@ -71,13 +75,15 @@ namespace UnityEngine.Networking
 
         void CreateMatchOnClick() {
             // Show stage selection menu
-            mainMenuCamera.enabled = false;
-            sceneSelectionCamera.enabled = true;
+            GoToArenaSelectionScreen();
+
             startjoin.SetActive (false);
             startOnly.SetActive (false);
         }
             
         public void createMatch() {
+            GoToLoadingScreen ();
+            
             if (manager.matchMaker != null && manager.matchInfo == null && manager.matches == null) {
                 manager.matchName = matchName.text;
                 manager.matchMaker.CreateMatch(manager.matchName, manager.matchSize, true, "", manager.OnMatchCreate);
@@ -91,10 +97,36 @@ namespace UnityEngine.Networking
             }
         }
 
+        void GoToLoadingScreen() {
+            mainCanvas.enabled = false;
+            arenaSelectionCanvas.enabled = false;
+            loadingCanvas.enabled = true;
+
+            mainMenuCamera.enabled = false;
+            sceneSelectionCamera.enabled = false;
+        }
+
+        void GoToMainScreen() {
+            mainCanvas.enabled = true;
+            arenaSelectionCanvas.enabled = false;
+            loadingCanvas.enabled = true;
+
+            mainMenuCamera.enabled = true;
+            sceneSelectionCamera.enabled = false;
+        }
+
+        void GoToArenaSelectionScreen() {
+            mainCanvas.enabled = false;
+            arenaSelectionCanvas.enabled = true;
+            loadingCanvas.enabled = false;
+
+            mainMenuCamera.enabled = false;
+            sceneSelectionCamera.enabled = true;
+        }
+
 
         void Update()
         {
-            print ("num players" + ClientScene.localPlayers.Count);
         }
 
 
@@ -108,6 +140,7 @@ namespace UnityEngine.Networking
                 foreach (var match in manager.matches) {
                     if (GUILayout.Button (match.name)) {
                         drawButtons = false;
+                        GoToLoadingScreen ();
 
                         manager.matchName = match.name;
                         manager.matchSize = (uint)match.currentSize;

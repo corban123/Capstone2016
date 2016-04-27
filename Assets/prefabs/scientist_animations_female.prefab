@@ -1976,7 +1976,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.681889, y: 4.313961, z: -287.26117}
+  m_LocalPosition: {x: -6.903356, y: 17.706297, z: -188.14445}
   m_LocalScale: {x: 37.53782, y: 37.53782, z: 37.53782}
   m_Children:
   - {fileID: 402640}
@@ -3600,8 +3600,10 @@ MonoBehaviour:
     BobAmount: 0
   m_StepInterval: 37
   m_FootstepSounds: {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
-  m_JumpSound: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
+  m_JumpSound: {fileID: 8300000, guid: c52d67b1091ef0b469c3be553ed59b2f, type: 3}
   m_LandSound: {fileID: 8300000, guid: 4e057d7a710088f4190da57b97229670, type: 3}
+  m_FreezeSound: {fileID: 8300000, guid: 7cbc3a6cb03979b46818475d546407c6, type: 3}
+  m_BlindnessSound: {fileID: 8300000, guid: 7601f170fdba58944976d1127bec0c55, type: 3}
   moveFactor: 0
 --- !u!114 &11413028
 MonoBehaviour:
@@ -3673,6 +3675,7 @@ MonoBehaviour:
   FreezeSprite: {fileID: 147880, guid: be4f0aa532c1b4997abc996ea79fea58, type: 2}
   AtomBombSprite: {fileID: 144286, guid: 0ef3f41ea4a7347c6bdf7ed667ddbbc8, type: 2}
   canvas: {fileID: 0}
+  waitingCanvas: {fileID: 0}
 --- !u!114 &11441358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3717,8 +3720,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUp: {fileID: 8300000, guid: 8119703816119f54981a7aa095a6b1ef, type: 3}
-  player1RespawnPoint: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
-  player2RespawnPoint: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
   blueCross: {fileID: 21300000, guid: d2bbd4f7ec56f164bae092f51808d332, type: 3}
   redCross: {fileID: 21300000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
 --- !u!114 &11476630
@@ -3996,13 +3997,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.29
-  m_Radius: 0.03
+  m_Height: 0.28
+  m_Radius: 0.07
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 1.55
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0.1799, z: 0.015}
+  m_Center: {x: 0, y: 0.17, z: 0.015}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

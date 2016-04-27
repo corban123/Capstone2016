@@ -135,9 +135,9 @@ public class ElementScript : NetworkBehaviour
     void Blackout() {
         CmdSpawnBlind();
         foreach (Collider collider in Physics.OverlapSphere(transform.position, range)) {
-            GUIScript gui = collider.GetComponent<GUIScript> ();
-            if (gui != null) {
-                gui.blackOutUI ();
+            FirstPersonController fpc = collider.GetComponent<FirstPersonController> ();
+            if (fpc != null) {
+                fpc.BlindPlayer ();
             }
         }
     }
