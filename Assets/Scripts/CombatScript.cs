@@ -57,6 +57,7 @@ public class CombatScript : NetworkBehaviour
             else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer && !pauseScript.paused && haveElement)
             {
                 nextFire = Time.time + fireRate;
+                GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(numQuarks);
                 CmdDeletAllQuarks ();
                 CmdShootProjectile(haveElement, heldElement, heldElementPos);
                 haveElement = false;
@@ -72,11 +73,15 @@ public class CombatScript : NetworkBehaviour
 
     [Command]
     public void CmdDeletAllQuarks() {
+        GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(numQuarks);
+
         numQuarks = 0;
     }
 
     [Command]
     public void CmdDeductElementCostQuarks() {
+        GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(elementPickUpCost);
+
         numQuarks -= elementPickUpCost;
     }
 

@@ -37,6 +37,8 @@ public class MoveScript : NetworkBehaviour
         
         if(isLocalPlayer)
         {
+            combat = gameObject.GetComponent<CombatScript>();
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit) && hit.collider.CompareTag("Player"))
@@ -62,7 +64,7 @@ public class MoveScript : NetworkBehaviour
             if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript>().cost <= combat.numQuarks)
             {
                 GetComponent<CombatScript>().CmdDeductElementCostQuarks();
-                GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn();
+                GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(5);
                 GameObject pickedElement = collision.gameObject;
                 combat.haveElement = true;
                 combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
@@ -128,8 +130,8 @@ public class MoveScript : NetworkBehaviour
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
 		if (isLocalPlayer) {
-            combat.numQuarks = 3;
-		}
+            combat.CmdDeletAllQuarks();
+        }
 
 		if (gameObject.name == "Player 1")
         {

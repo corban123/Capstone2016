@@ -89,9 +89,9 @@ public class QuarkOverlord : NetworkBehaviour {
         }
 	}
 
-    public void multiDeSpawn()
+    public void multiDeSpawn(int num)
     {
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < num; i++)
         {
             deSpawn();
         }
