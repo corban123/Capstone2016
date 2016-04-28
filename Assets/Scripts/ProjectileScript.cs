@@ -114,8 +114,12 @@ public class ProjectileScript : NetworkBehaviour
 
     void removeProjectile()
     {
+        MeshRenderer mr = GetComponent<MeshRenderer>();
         GetComponent<Collider>().enabled = false;
-        GetComponent<MeshRenderer>().enabled = false;
+        if (mr != null)
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+        }
         CmdSpawnDeathAnim();
         MoveSpeed = 0;
         rb.velocity = Vector3.zero;
@@ -126,13 +130,15 @@ public class ProjectileScript : NetworkBehaviour
     void CmdSpawnDeathAnim()
     {
         GameObject instance = null;
+        Vector3 newpos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        newpos += (-3* transform.forward);
         if(gameObject.name.Contains("Basic"))
         {
-            instance = Instantiate(basicDeath, transform.position, transform.rotation) as GameObject;
+            instance = Instantiate(basicDeath, newpos, transform.rotation) as GameObject;
         }
         else if(!gameObject.name.Contains("Element"))
         {
-            instance = Instantiate(quarkDeath, transform.position, transform.rotation) as GameObject;
+            instance = Instantiate(quarkDeath, newpos, transform.rotation) as GameObject;
         }
         if(instance != null)
         {
