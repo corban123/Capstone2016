@@ -13,10 +13,11 @@ public class MoveScript : NetworkBehaviour
     AudioSource source;
     GUIScript gui;
 
-    [SerializeField]
-    AudioClip pickUpQuark;
-    [SerializeField]
-    AudioClip pickUpElement;
+    [SerializeField] AudioClip pickUpQuark;
+    [SerializeField] AudioClip pickUpElement;
+    [SerializeField] AudioClip cantPickUp;
+
+
     float upDownRange = 60.0f;
     Transform player1RespawnPoint;
     Transform player2RespawnPoint;
@@ -90,24 +91,26 @@ public class MoveScript : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript>().cost <= combat.numQuarks)
-            {
-                source.PlayOneShot(pickUpElement, 1.0f);
+            if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript> ().cost <= combat.numQuarks) {
+                source.PlayOneShot (pickUpElement, 1.0f);
 
-                GetComponent<CombatScript>().CmdDeductElementCostQuarks();
-                GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(5);
+                GetComponent<CombatScript> ().CmdDeductElementCostQuarks ();
+                GameObject.Find ("GenerateBoard").GetComponent<QuarkOverlord> ().multiDeSpawn (5);
                 GameObject pickedElement = collision.gameObject;
                 combat.haveElement = true;
-                combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
-				combat.heldElementPos = pickedElement.GetComponent<ElementScript> ().spawnTrans;
-                CmdPickUpElement(pickedElement);
-				CmdSpawnMarker (new Vector3 (this.transform.position.x, this.transform.position.y + 5, transform.position.z), combat.heldElement, this.gameObject.name);
+                combat.heldElement = pickedElement.GetComponent<ElementScript> ().elementID;
+                combat.heldElementPos = pickedElement.GetComponent<ElementScript> ().spawnTrans;
+                CmdPickUpElement (pickedElement);
+                CmdSpawnMarker (new Vector3 (this.transform.position.x, this.transform.position.y + 5, transform.position.z), combat.heldElement, this.gameObject.name);
 
-                print("picked up element " + combat.heldElement);
-                gui.SetElementUI(combat.heldElement);
-                gui.enableElementPickedUp();
-                Destroy(pickedElement);
+                print ("picked up element " + combat.heldElement);
+                gui.SetElementUI (combat.heldElement);
+                gui.enableElementPickedUp ();
+                Destroy (pickedElement);
+            } else if (collision.tag == "Element" && (combat.heldElement != -1 || collision.GetComponent<ElementScript> ().cost > combat.numQuarks)) {
+                source.PlayOneShot(cantPickUp, 1.0f);
             }
+
             if (collision.tag == "Quark")
             {
                 source.PlayOneShot(pickUpQuark, 1.0f);

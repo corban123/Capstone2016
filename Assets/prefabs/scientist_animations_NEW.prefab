@@ -3141,6 +3141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickUpQuark: {fileID: 8300000, guid: 389d95de0e3908c4a8d251f2626dd9c3, type: 3}
   pickUpElement: {fileID: 8300000, guid: 65a7913a600507845b315c95d2dd48d9, type: 3}
+  cantPickUp: {fileID: 8300000, guid: 0992abd45377f1d4a97ae5bcd8f24dd9, type: 3}
   marker: {fileID: 0}
   blueCross: {fileID: 21300000, guid: d2bbd4f7ec56f164bae092f51808d332, type: 3}
   redCross: {fileID: 21300000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
