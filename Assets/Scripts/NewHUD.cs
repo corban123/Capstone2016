@@ -147,10 +147,12 @@ namespace UnityEngine.Networking
             sceneSelectionCamera.enabled = false;
         }
 
-        void GoToMainScreen() {
+        public void GoToMainScreen() {
+            GoToStartJoin ();
+
             mainCanvas.enabled = true;
             arenaSelectionCanvas.enabled = false;
-            loadingCanvas.enabled = true;
+            loadingCanvas.enabled = false;
 
             mainMenuCamera.enabled = true;
             sceneSelectionCamera.enabled = false;
