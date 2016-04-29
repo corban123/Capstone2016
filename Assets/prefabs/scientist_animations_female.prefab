@@ -3719,7 +3719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c56e55dc3ad26d4f9dfaa01e5ff89f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUp: {fileID: 8300000, guid: 281e8529e2b4b2b49ae5d2b9aaf5e6f0, type: 3}
+  pickUpQuark: {fileID: 8300000, guid: 389d95de0e3908c4a8d251f2626dd9c3, type: 3}
+  pickUpElement: {fileID: 8300000, guid: 65a7913a600507845b315c95d2dd48d9, type: 3}
   marker: {fileID: 0}
   blueCross: {fileID: 21300000, guid: d2bbd4f7ec56f164bae092f51808d332, type: 3}
   redCross: {fileID: 21300000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}

@@ -14,7 +14,9 @@ public class MoveScript : NetworkBehaviour
     GUIScript gui;
 
     [SerializeField]
-    AudioClip pickUp;
+    AudioClip pickUpQuark;
+    [SerializeField]
+    AudioClip pickUpElement;
     float upDownRange = 60.0f;
     Transform player1RespawnPoint;
     Transform player2RespawnPoint;
@@ -103,6 +105,8 @@ public class MoveScript : NetworkBehaviour
                 gui.SetElementUI(combat.heldElement);
                 gui.enableElementPickedUp();
                 Destroy(pickedElement);
+                source.clip = pickUpElement;
+                source.Play();
             }
             if (collision.tag == "Quark")
             {
@@ -111,9 +115,10 @@ public class MoveScript : NetworkBehaviour
                 combat.CmdAddQuarks();
                 CmdPickUpQuark (pickedQuark);
                 Destroy(pickedQuark);
+                source.clip = pickUpQuark;
+                source.Play();
             }
-            source.clip = pickUp;
-            source.Play();
+
 
             if (collision.tag == "Killbox")
             {
