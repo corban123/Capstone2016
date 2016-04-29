@@ -92,6 +92,8 @@ public class MoveScript : NetworkBehaviour
         {
             if (collision.tag == "Element" && combat.heldElement == -1 && collision.GetComponent<ElementScript>().cost <= combat.numQuarks)
             {
+                source.PlayOneShot(pickUpElement, 1.0f);
+
                 GetComponent<CombatScript>().CmdDeductElementCostQuarks();
                 GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(5);
                 GameObject pickedElement = collision.gameObject;
@@ -105,18 +107,16 @@ public class MoveScript : NetworkBehaviour
                 gui.SetElementUI(combat.heldElement);
                 gui.enableElementPickedUp();
                 Destroy(pickedElement);
-                source.clip = pickUpElement;
-                source.Play();
             }
             if (collision.tag == "Quark")
             {
+                source.PlayOneShot(pickUpQuark, 1.0f);
+
                 GameObject pickedQuark = collision.gameObject;
                 print("picked up quark");
                 combat.CmdAddQuarks();
                 CmdPickUpQuark (pickedQuark);
                 Destroy(pickedQuark);
-                source.clip = pickUpQuark;
-                source.Play();
             }
 
 
