@@ -18,9 +18,30 @@ public class MoveScript : NetworkBehaviour
     float upDownRange = 60.0f;
     Transform player1RespawnPoint;
     Transform player2RespawnPoint;
+	public GameObject marker;
 
     public Sprite blueCross;
     public Sprite redCross;
+
+	public GameObject barium;
+	public GameObject calcium;
+	public GameObject carbon;
+	public GameObject copper;
+	public GameObject gold;
+	public GameObject helium;
+	public GameObject hydrogen;
+	public GameObject krypton;
+	public GameObject neon;
+	public GameObject nickel;
+	public GameObject nitrogen;
+	public GameObject oxygen;
+	public GameObject potassium;
+	public GameObject silver;
+	public GameObject sodium;
+	public GameObject xenon;
+
+
+
     // Use this for initialization
     void Start()
     {
@@ -31,6 +52,12 @@ public class MoveScript : NetworkBehaviour
         player2RespawnPoint = GameObject.Find ("Spawn2").transform;
         //Respawn();
     }
+
+	void callThis(){
+	
+		Debug.Log ("CALLED THIS");
+	
+	}
 
     void Update()
     {
@@ -70,6 +97,8 @@ public class MoveScript : NetworkBehaviour
                 combat.heldElement = pickedElement.GetComponent<ElementScript>().elementID;
 				combat.heldElementPos = pickedElement.GetComponent<ElementScript> ().spawnTrans;
                 CmdPickUpElement(pickedElement);
+				CmdSpawnMarker (new Vector3 (this.transform.position.x, this.transform.position.y + 5, transform.position.z), combat.heldElement, this.gameObject.name);
+
                 print("picked up element " + combat.heldElement);
                 gui.SetElementUI(combat.heldElement);
                 gui.enableElementPickedUp();
@@ -144,4 +173,55 @@ public class MoveScript : NetworkBehaviour
             transform.position = player2RespawnPoint.transform.position;
         }
     }
+
+	[Command]
+	public void CmdSpawnMarker(Vector3 trans, int val, string name){
+		GameObject marker = GetObject (val);
+		marker = Instantiate (marker, new Vector3 (trans.x, trans.y + 10, trans.z), new Quaternion (0, 0, 0, 0)) as GameObject;
+		marker.transform.parent = this.transform;
+		marker.GetComponent<ElementMarkerScript> ().enabled = false;
+		marker.transform.rotation = new Quaternion (0, 0, 0, 0);
+		//marker.GetComponent<ElementMarkerPlayer> ().enabled = true;
+		this.marker = marker;
+		NetworkServer.Spawn (marker);
+	}
+
+	public GameObject GetObject(int element) {
+		switch (element) {
+		case 0:
+			return sodium;
+		case 1:
+			return potassium;
+		case 2:
+			return calcium;
+		case 3:
+			return barium;
+		case 4:
+			return copper;
+		case 5:
+			return nickel;
+		case 6:
+			return silver;
+		case 7:
+			return gold;
+		case 8:
+			return carbon;
+		case 9:
+			return nitrogen;
+		case 10:
+			return oxygen;
+		case 11:
+			return hydrogen;
+		case 12:
+			return helium;
+		case 13:
+			return neon;
+		case 14:
+			return krypton;
+		case 15:
+			return xenon;
+		default:
+			return null;
+		}
+	}
 }

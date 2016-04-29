@@ -43,7 +43,6 @@ public class CombatScript : NetworkBehaviour
             if (Input.GetButtonDown ("Fire1") && Time.time > nextFire && !pauseScript.paused) { //PC control
                 // This boolean has to be before CmdShootProjectile because numQuarks is decremented in the command.
                 bool shootElement = haveElement && numQuarks <= 0;
-                Debug.Log ("shootElement " + shootElement);
                 nextFire = Time.time + fireRate;
                 CmdShootProjectile (shootElement, heldElement, heldElementPos);
                 // These lines have to be outside CmdShootProjectile. If they are inside the command they will NOT work.
@@ -59,6 +58,9 @@ public class CombatScript : NetworkBehaviour
                 nextFire = Time.time + fireRate;
                 GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(numQuarks);
                 CmdDeletAllQuarks ();
+				CmdDestroyMarker ();
+				Destroy (this.GetComponent<MoveScript> ().marker);
+				this.GetComponent<MoveScript> ().marker = null;
                 CmdShootProjectile(haveElement, heldElement, heldElementPos);
                 haveElement = false;
                 heldElement = -1;
@@ -70,6 +72,13 @@ public class CombatScript : NetworkBehaviour
             }
         }
     }
+	[Command]
+	void CmdDestroyMarker(){
+		NetworkServer.Destroy (this.GetComponent<MoveScript> ().marker);
+
+	
+	
+	}
 
     [Command]
     public void CmdDeletAllQuarks() {

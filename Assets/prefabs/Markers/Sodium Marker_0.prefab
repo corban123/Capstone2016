@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9502678}
   - 114: {fileID: 11431572}
   - 114: {fileID: 11441066}
+  - 114: {fileID: 11484228}
   m_Layer: 0
   m_Name: Sodium Marker_0
   m_TagString: Untagged
@@ -79,7 +80,7 @@ MonoBehaviour:
     i14: 94
     i15: 253
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
 --- !u!114 &11441066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,6 +90,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 210a5880597e5432696051d88ebe0a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11484228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180976}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401dcea6ccd5f4c03b1c42b9f7f2e999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21216808

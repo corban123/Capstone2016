@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9564812}
   - 114: {fileID: 11419018}
   - 114: {fileID: 11459972}
+  - 114: {fileID: 11477404}
   m_Layer: 0
   m_Name: Hydrogen Marker_0
   m_TagString: Untagged
@@ -79,7 +80,7 @@ MonoBehaviour:
     i14: 152
     i15: 244
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
 --- !u!114 &11459972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,6 +90,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 210a5880597e5432696051d88ebe0a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11477404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137200}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401dcea6ccd5f4c03b1c42b9f7f2e999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21279132

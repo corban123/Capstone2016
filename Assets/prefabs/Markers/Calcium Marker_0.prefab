@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9509652}
   - 114: {fileID: 11410068}
   - 114: {fileID: 11462638}
+  - 114: {fileID: 11425344}
   m_Layer: 0
   m_Name: Calcium Marker_0
   m_TagString: Untagged
@@ -79,7 +80,18 @@ MonoBehaviour:
     i14: 165
     i15: 157
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
+--- !u!114 &11425344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107250}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401dcea6ccd5f4c03b1c42b9f7f2e999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11462638
 MonoBehaviour:
   m_ObjectHideFlags: 1

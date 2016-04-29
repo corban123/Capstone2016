@@ -3719,9 +3719,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c56e55dc3ad26d4f9dfaa01e5ff89f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUp: {fileID: 8300000, guid: 8119703816119f54981a7aa095a6b1ef, type: 3}
+  pickUp: {fileID: 8300000, guid: 281e8529e2b4b2b49ae5d2b9aaf5e6f0, type: 3}
+  marker: {fileID: 0}
   blueCross: {fileID: 21300000, guid: d2bbd4f7ec56f164bae092f51808d332, type: 3}
   redCross: {fileID: 21300000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
+  barium: {fileID: 184272, guid: a9e5a3a42580847439d0eb88ddb2dcaa, type: 2}
+  calcium: {fileID: 107250, guid: 394bdf465f8a745b196486aab079a59d, type: 2}
+  carbon: {fileID: 193666, guid: 7bc9b7f6638a84c96aab60eb862be1ae, type: 2}
+  copper: {fileID: 138440, guid: 5e7d5f6b2c3644e98a9f3ffe2dcbb746, type: 2}
+  gold: {fileID: 162110, guid: 4b1ae768d45d246beb6979bf1c52dfab, type: 2}
+  helium: {fileID: 185234, guid: 106569ea450f5412bba13514161ad97e, type: 2}
+  hydrogen: {fileID: 137200, guid: d05fcb4123c9d4d2d97e3f433d3b98f4, type: 2}
+  krypton: {fileID: 119512, guid: ad1ecc478fff14e1980ea7366525f52a, type: 2}
+  neon: {fileID: 139492, guid: 0497de5b7727645258228bc598191a91, type: 2}
+  nickel: {fileID: 164966, guid: 6ec15bc62c04a460cadc9f4349c303eb, type: 2}
+  nitrogen: {fileID: 181412, guid: 49f781a7f4a1442f98964ad3914d8153, type: 2}
+  oxygen: {fileID: 168810, guid: c2e5faac42e5345038adbfd06e0c0ecb, type: 2}
+  potassium: {fileID: 151530, guid: e2c96f178034846c2929ba8a4b428875, type: 2}
+  silver: {fileID: 122844, guid: 3b324c84f27224d77b96db0cb5744d6f, type: 2}
+  sodium: {fileID: 180976, guid: 1e22eb8fd1e294fc3b6fab084ae85efd, type: 2}
+  xenon: {fileID: 122218, guid: d8dfd8920f96a4f3781c5389c9a24666, type: 2}
 --- !u!114 &11476630
 MonoBehaviour:
   m_ObjectHideFlags: 1

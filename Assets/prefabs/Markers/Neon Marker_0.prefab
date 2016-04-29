@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9509554}
   - 114: {fileID: 11407810}
   - 114: {fileID: 11457112}
+  - 114: {fileID: 11492752}
   m_Layer: 0
   m_Name: Neon Marker_0
   m_TagString: Untagged
@@ -79,7 +80,7 @@ MonoBehaviour:
     i14: 26
     i15: 145
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
 --- !u!114 &11457112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -89,6 +90,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 210a5880597e5432696051d88ebe0a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11492752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139492}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401dcea6ccd5f4c03b1c42b9f7f2e999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21211676

@@ -12,6 +12,7 @@ GameObject:
   - 95: {fileID: 9541234}
   - 114: {fileID: 11449404}
   - 114: {fileID: 11418832}
+  - 114: {fileID: 11406986}
   m_Layer: 0
   m_Name: Xenon Marker_0
   m_TagString: Untagged
@@ -48,6 +49,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11406986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122218}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401dcea6ccd5f4c03b1c42b9f7f2e999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11418832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,7 +102,7 @@ MonoBehaviour:
     i14: 70
     i15: 102
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
 --- !u!212 &21238802
 SpriteRenderer:
   m_ObjectHideFlags: 1

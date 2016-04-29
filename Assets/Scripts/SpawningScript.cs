@@ -53,6 +53,19 @@ public class SpawningScript : NetworkBehaviour {
         NetworkServer.Spawn(instance);
         NetworkServer.Spawn (marker);
     }
+
+
+	[Command]
+	public void CmdSpawnMarker(Vector3 trans, int val, string name){
+		GameObject marker = GetObject (val);
+		marker = Instantiate (marker, new Vector3 (trans.x, trans.y + 10, trans.z), new Quaternion (0, 0, 0, 0)) as GameObject;
+		marker.transform.parent = GameObject.Find (name).transform;
+		marker.GetComponent<ElementMarkerScript> ().enabled = false;
+		marker.transform.rotation = new Quaternion (0, 0, 0, 0);
+		//marker.GetComponent<ElementMarkerPlayer> ().enabled = true;
+		GameObject.Find (name).GetComponent<MoveScript> ().marker = marker;
+		NetworkServer.Spawn (marker);
+	}
     // Update is called once per frame
     void Update () {
         if (isServer)
