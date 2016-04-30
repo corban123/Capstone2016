@@ -17,6 +17,7 @@ public class SceneSelectorScript : MonoBehaviour {
         GameObject.Find("Arena3").GetComponent<Button>().onClick.AddListener( () => {onClickArena("Noah-Lv2"); } );
         GameObject.Find("Arena4").GetComponent<Button>().onClick.AddListener( () => {onClickArena("Mitchell-LevelTwo"); } );
 
+        GameObject.Find("BackSceneSelectorButton").GetComponent<Button>().onClick.AddListener( () => {BackSceneSelectorOnClick(); } );
     }
 
     // Update is called once per frame
@@ -28,5 +29,9 @@ public class SceneSelectorScript : MonoBehaviour {
         manager.GetComponent<startCreatePlayers>().onlineScene = sceneName;
 
         hud.createMatch ();
+    }
+
+    void BackSceneSelectorOnClick() {
+        hud.GoToMainScreen ();
     }
 }

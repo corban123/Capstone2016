@@ -3139,7 +3139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c56e55dc3ad26d4f9dfaa01e5ff89f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUp: {fileID: 8300000, guid: 281e8529e2b4b2b49ae5d2b9aaf5e6f0, type: 3}
+  pickUpQuark: {fileID: 8300000, guid: 389d95de0e3908c4a8d251f2626dd9c3, type: 3}
+  pickUpElement: {fileID: 8300000, guid: 65a7913a600507845b315c95d2dd48d9, type: 3}
+  cantPickUp: {fileID: 8300000, guid: 0992abd45377f1d4a97ae5bcd8f24dd9, type: 3}
   marker: {fileID: 0}
   blueCross: {fileID: 21300000, guid: d2bbd4f7ec56f164bae092f51808d332, type: 3}
   redCross: {fileID: 21300000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
@@ -3449,8 +3451,8 @@ MonoBehaviour:
     BobAmount: 0
   m_StepInterval: 37
   m_FootstepSounds: {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
-  m_JumpSound: {fileID: 8300000, guid: ce63f778d0d41b943972402ea41481a7, type: 3}
-  m_LandSound: {fileID: 8300000, guid: 4e057d7a710088f4190da57b97229670, type: 3}
+  m_JumpSound: {fileID: 8300000, guid: fc8737c4d6e024548973eb4a7fd23f58, type: 3}
+  m_LandSound: {fileID: 8300000, guid: fb4ede7c024ccf04d9b55276ac5e1744, type: 3}
   m_FreezeSound: {fileID: 8300000, guid: 7cbc3a6cb03979b46818475d546407c6, type: 3}
   m_BlindnessSound: {fileID: 8300000, guid: 7601f170fdba58944976d1127bec0c55, type: 3}
   moveFactor: 0
