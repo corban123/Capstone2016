@@ -56,7 +56,6 @@ public class CombatScript : NetworkBehaviour
             else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer && !pauseScript.paused && haveElement)
             {
                 nextFire = Time.time + fireRate;
-                GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(numQuarks);
                 CmdDeletAllQuarks ();
 				CmdDestroyMarker ();
 				Destroy (this.GetComponent<MoveScript> ().marker);
@@ -82,22 +81,27 @@ public class CombatScript : NetworkBehaviour
 
     [Command]
     public void CmdDeletAllQuarks() {
-        GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(numQuarks);
-
+        for (int i = 0; i < numQuarks; i++)
+        {
+            GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+        }
         numQuarks = 0;
     }
 
     [Command]
     public void CmdDeductElementCostQuarks() {
-        GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(elementPickUpCost);
-
+        for (int i = 0; i < elementPickUpCost; i++)
+        {
+            GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+        }
         numQuarks -= elementPickUpCost;
     }
 
     [Command]
     public void CmdDeleteQuarks() {
-		GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(1);
-
+        
+        GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+        
         numQuarks--;
     }
 
@@ -108,8 +112,10 @@ public class CombatScript : NetworkBehaviour
     [Command]
     public void CmdHitQuark()
     {
-		GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().multiDeSpawn(numQuarks/2);
-
+        for (int i = 0; i < numQuarks/2; i++)
+        {
+            GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+        }
         numQuarks = numQuarks / 2;
 
     }

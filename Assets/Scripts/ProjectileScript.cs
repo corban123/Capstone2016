@@ -30,7 +30,7 @@ public class ProjectileScript : NetworkBehaviour
         pos = transform.position;
         axis = transform.up;
         rb = GetComponent<Rigidbody>();
-        Destroy(gameObject, delay);
+        //Destroy(gameObject, delay);
     }
 
     void FixedUpdate()
