@@ -57,7 +57,7 @@ public class QuarkOverlord : NetworkBehaviour {
 	}
 
 	public void deSpawn(){
-        if (true)
+        if (isServer)
         {
             QuarkChild toPreparedToSpawn = null;
             QuarkChild toSpawnedList = null;
@@ -67,6 +67,7 @@ public class QuarkOverlord : NetworkBehaviour {
             {
                 killPreparedToSpawn = Random.Range(0, empty.Count);
                 toPreparedToSpawn = empty[killPreparedToSpawn] as QuarkChild;
+                preparedToSpawn.Add(toPreparedToSpawn);
                 empty.RemoveAt(killPreparedToSpawn);
 
             }
