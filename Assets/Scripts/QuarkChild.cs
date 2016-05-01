@@ -6,7 +6,7 @@ public class QuarkChild : NetworkBehaviour {
 
 
 	public GameObject quark;
-	private GameObject spawnedObject;
+	[SyncVar] public GameObject spawnedObject;
 	private QuarkOverlord overlord;
 	public bool preparedToSpawn;
 	public int numTimesAdded;
@@ -35,5 +35,15 @@ public class QuarkChild : NetworkBehaviour {
 		spawnedObject = instance;
 
 		NetworkServer.Spawn (instance);
+        checkForQuark();
 	}
+
+    public void checkForQuark()
+    {
+        Collider[] colliders;
+        if ((colliders = Physics.OverlapSphere(new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), 1f)).Length > 1)
+        {
+            preparedToSpawn = colliders[0];
+        }
+    }
 }
