@@ -57,7 +57,7 @@ public class QuarkOverlord : NetworkBehaviour {
 	}
 
 	public void deSpawn(){
-        if (isServer)
+        if (true)
         {
             QuarkChild toPreparedToSpawn = null;
             QuarkChild toSpawnedList = null;
