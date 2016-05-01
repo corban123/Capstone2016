@@ -168,16 +168,18 @@ public class MoveScript : NetworkBehaviour
 		if (isLocalPlayer) {
             combat.CmdDeletAllQuarks();
         }
-
-		if (gameObject.name == "Player 1")
+        if (isLocalPlayer)
         {
-			
-            print("Player 1 died");
-            transform.position = player1RespawnPoint.transform.position;
-        }
-        else {
-            print("Player 2 died");
-            transform.position = player2RespawnPoint.transform.position;
+            if (gameObject.name == "Player 1")
+            {
+
+                print("Player 1 died");
+                transform.position = player1RespawnPoint.transform.position;
+            }
+            else {
+                print("Player 2 died");
+                transform.position = player2RespawnPoint.transform.position;
+            }
         }
     }
 
