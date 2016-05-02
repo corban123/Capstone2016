@@ -91,8 +91,7 @@ public class ProjectileScript : NetworkBehaviour
                         }
                     }
                 }
-                //removeProjectile();
-                Destroy(this);
+                removeProjectile();
             }
             else if(target.name.Contains("Player") && !target.name.Contains(playerSource.ToString()))
             {
@@ -101,8 +100,7 @@ public class ProjectileScript : NetworkBehaviour
                     e.CmdSpawnDead();
                     e.PowerUp();
                 }
-                //removeProjectile();
-                Destroy(this);
+                removeProjectile();
             }
             else if(target.CompareTag("Killbox"))
             {
@@ -110,8 +108,7 @@ public class ProjectileScript : NetworkBehaviour
                 {
                     e.CmdSpawnDead();
                 }
-                Destroy(this);
-                //removeProjectile();
+                removeProjectile();
             }
         }
         catch (NullReferenceException) { }
@@ -126,7 +123,7 @@ public class ProjectileScript : NetworkBehaviour
         {
             GetComponent<MeshRenderer>().enabled = false;
         }
-        //CmdSpawnDeathAnim();
+        CmdSpawnDeathAnim();
         MoveSpeed = 0;
         rb.velocity = Vector3.zero;
         Destroy(this.gameObject, .75f);

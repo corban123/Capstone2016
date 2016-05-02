@@ -26,7 +26,7 @@ public class QuarkOverlord : NetworkBehaviour {
 				child.preparedToSpawn = true;
 				preparedToSpawn.Add(child);
 			}
-			spawnAll ();
+			spawnAll (); 
 		}
 	}
 
@@ -80,11 +80,7 @@ public class QuarkOverlord : NetworkBehaviour {
 
 
                 preparedToSpawn.RemoveAt(killToSpawnedList);
-                spawnedList.Add(toSpawnedList);
-                if (toPreparedToSpawn != null)
-                {
-                    preparedToSpawn.Add(toPreparedToSpawn);
-                }
+
             }
 
         }
