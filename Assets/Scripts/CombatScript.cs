@@ -192,7 +192,7 @@ public class CombatScript : NetworkBehaviour
         {
 			Debug.Log ("WELL I'M IN THE COLLISION");
             ProjectileScript projectile = collision.GetComponent<ProjectileScript>();
-            if (projectile.playerSource != this.gameObject.name.ToCharArray()[this.gameObject.name.Length-1])
+            if (!gameObject.name.Contains(projectile.playerSource.ToString()))
             {
 				Debug.Log ("WELL I GOT HIT DIDN'T I");
                 string uIdentity = this.transform.name;
