@@ -167,6 +167,7 @@ public class MoveScript : NetworkBehaviour
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
 		if (isLocalPlayer) {
             combat.CmdDeletAllQuarks();
+            combat.CmdDeleteElement();
         }
         if (isLocalPlayer)
         {
@@ -183,15 +184,21 @@ public class MoveScript : NetworkBehaviour
         }
     }
 
-	[Command]
+    private void addYourElement(GameObject marked)
+    {
+        marker = marked;
+
+    }
+
+    [Command]
 	public void CmdSpawnMarker(Vector3 trans, int val, string name){
 		GameObject marker = GetObject (val);
 		marker = Instantiate (marker, new Vector3 (trans.x, trans.y + 10, trans.z), new Quaternion (0, 0, 0, 0)) as GameObject;
 		marker.transform.parent = this.transform;
 		marker.GetComponent<ElementMarkerScript> ().enabled = false;
 		marker.transform.rotation = new Quaternion (0, 0, 0, 0);
+        addYourElement(marker);
 		//marker.GetComponent<ElementMarkerPlayer> ().enabled = true;
-		this.marker = marker;
 		NetworkServer.Spawn (marker);
 	}
 
