@@ -201,7 +201,7 @@ public class CombatScript : NetworkBehaviour
         if (collision.tag == "Bullet" && takeDmg)
         {
             ProjectileScript projectile = collision.GetComponent<ProjectileScript>();
-            if (projectile.playerSource != this.gameObject.name.ToCharArray()[this.gameObject.name.Length-1])
+            if (!gameObject.name.Contains(projectile.playerSource.ToString()))
             {
                 string uIdentity = this.transform.name;
 
