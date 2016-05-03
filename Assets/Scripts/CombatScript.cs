@@ -24,6 +24,12 @@ public class CombatScript : NetworkBehaviour
     GUIScript gui;
     PauseScript pauseScript;
 
+    NetworkIdentity myId;
+    SkinnedMeshRenderer[] smr;
+
+    [SerializeField] AudioClip mPain;
+    [SerializeField] AudioClip fPain;
+    AudioSource source;
     // Use this for initialization
     void Start () {
         haveElement = false;
@@ -31,7 +37,9 @@ public class CombatScript : NetworkBehaviour
 		heldElementPos = Vector3.zero;
         startTime = Time.time;
         takeDmg = false;
-
+        myId = gameObject.GetComponent<NetworkIdentity>(); // get the object's network ID
+        smr = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+        source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript> ();
         pauseScript = gameObject.GetComponent<PauseScript> ();
     }
@@ -198,6 +206,35 @@ public class CombatScript : NetworkBehaviour
         }
     }
 
+    IEnumerator DamageFlash()
+    {
+        CmdPaint(Color.red);
+        yield return new WaitForSeconds(.5f);
+        CmdPaint(Color.white);
+    }
+
+
+    [ClientRpc]
+    void RpcPaint(Color col)
+    {
+        foreach (SkinnedMeshRenderer render in smr)
+        {
+            foreach (Material mat in render.materials)
+            {
+                if (mat.name.Contains("White"))
+                {
+                    mat.SetColor("_Color", col);
+                }
+            }
+        }
+    }
+
+    [Command]
+    void CmdPaint(Color col)
+    {
+        RpcPaint(col);                                    // usse a Client RPC function to "paint" the object on all clients
+    }
+
     /**
      * If the player is shot by a bullet and they can be hit, tell the server that they were shot.
      */
@@ -209,7 +246,9 @@ public class CombatScript : NetworkBehaviour
             if (!gameObject.name.Contains(projectile.playerSource.ToString()))
             {
                 string uIdentity = this.transform.name;
-
+                if (gameObject.name.Contains("1")) { source.PlayOneShot(mPain, 1.0f); }
+                else { source.PlayOneShot(fPain, 1.0f); }
+                StartCoroutine("DamageFlash");
                 DeductHealth(collision.name);
             }
         }
