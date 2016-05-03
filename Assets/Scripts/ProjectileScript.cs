@@ -68,8 +68,8 @@ public class ProjectileScript : NetworkBehaviour
                 //If the projectile has a element script, then it's an element. It needs to active it's powerup on collision.
                 if (e != null && !coll.gameObject.CompareTag("Base"))
                 {
-					e.CmdSpawnDead();
-                    e.PowerUp();                       
+                    e.CmdSpawnDead();
+                    e.PowerUp();
                 }
                 else if (e != null && coll.gameObject.CompareTag("Base"))
                 {
@@ -89,9 +89,13 @@ public class ProjectileScript : NetworkBehaviour
                         else {
                             gui.enableYouScored ();
                         }
+                        CmdRemoveProjectile();
+                        removeProjectile();
+                        Destroy(this.gameObject);
                     }
+                    removeProjectile();
+
                 }
-                removeProjectile();
             }
             else if(target.name.Contains("Player") && !target.name.Contains(playerSource.ToString()))
             {
@@ -112,7 +116,8 @@ public class ProjectileScript : NetworkBehaviour
             }
         }
         catch (NullReferenceException) { }
-    }
+            
+        }
 
 
     void removeProjectile()
