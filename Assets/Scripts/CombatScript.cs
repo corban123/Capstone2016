@@ -100,8 +100,13 @@ public class CombatScript : NetworkBehaviour
     [Command]
     public void CmdDeleteQuarks() {
         
-        GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
         
+        numQuarks--;
+    }
+    [Command]
+    public void CmdDeleteHitQuarks()
+    {
+        GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
         numQuarks--;
     }
 
@@ -182,7 +187,7 @@ public class CombatScript : NetworkBehaviour
             }
             else if(bullet.Contains("Basic"))
             {
-                CmdDeleteQuarks();
+                CmdDeleteHitQuarks();
             }
             
             else
