@@ -3639,6 +3639,8 @@ MonoBehaviour:
   heldElement: 0
   heldElementPos: {x: 0, y: 0, z: 0}
   takeDmg: 0
+  mPain: {fileID: 8300000, guid: 0125966ddd964d645ab95741ceffcf87, type: 3}
+  fPain: {fileID: 8300000, guid: be15769b17aeb4a44b0a26f01f1e6a0c, type: 3}
 --- !u!114 &11432430
 MonoBehaviour:
   m_ObjectHideFlags: 1
