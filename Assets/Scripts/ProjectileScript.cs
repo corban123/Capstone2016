@@ -62,8 +62,43 @@ public class ProjectileScript : NetworkBehaviour
         GameObject target = coll.gameObject;
         try
         {
-            //Checks if projectile is colliding with player that shot it
-            if (!(target.CompareTag("Player")))
+            //Checks if it hits a base
+            if (e != null && coll.gameObject.CompareTag("Base"))
+            {
+                int BaseId = Int32.Parse(coll.gameObject.name.Split(' ')[1]);
+                print("base " + BaseId + " hit by player " + playerSource + " with element " + elementId);
+                if (playerSource == BaseId)
+                {
+                    print("Player " + playerSource);
+                    BoardScript board = GameObject.Find("Player " + playerSource).GetComponent<BoardScript>();
+                    GUIScript gui = GameObject.Find("Player " + playerSource).GetComponent<GUIScript>();
+                    print("bs " + board);
+                    bool isWin = board.score(elementId);
+
+                    if (isWin)
+                    {
+                        gui.enableYouWon();
+                    }
+                    else
+                    {
+                        gui.enableYouScored();
+                    }
+                }
+                GetComponent<Collider>().enabled = false;
+                Destroy(this.gameObject);
+            }
+            //Checks to see if it hit the killbox
+            else if (target.CompareTag("Killbox"))
+            {
+                if (e != null)
+                {
+                    e.CmdSpawnDead();
+                    Debug.Log("killed " + this.gameObject.name);
+                }
+                removeProjectile();
+            }
+            //Checks to see if it hit the terrain
+            else if (!target.CompareTag("Player") && !target.CompareTag("Quark") && !target.CompareTag("Element"))
             {
                 //If the projectile has a element script, then it's an element. It needs to active it's powerup on collision.
                 if (e != null && !coll.gameObject.CompareTag("Base"))
@@ -71,42 +106,15 @@ public class ProjectileScript : NetworkBehaviour
 					e.CmdSpawnDead();
                     e.PowerUp();                       
                 }
-                else if (e != null && coll.gameObject.CompareTag("Base"))
-                {
-                    int BaseId = Int32.Parse(coll.gameObject.name.Split(' ')[1]);
-                    print("base " + BaseId + " hit by player " + playerSource + " with element " + elementId);
-                    if (playerSource == BaseId)
-                    {
-                        print("Player " + playerSource);
-                        BoardScript board = GameObject.Find("Player " + playerSource).GetComponent<BoardScript>();
-                        GUIScript gui = GameObject.Find("Player " + playerSource).GetComponent<GUIScript>();
-                        print("bs " + board);
-                        bool isWin = board.score(elementId);
-
-                        if(isWin){
-                            gui.enableYouWon ();
-                        }
-                        else {
-                            gui.enableYouScored ();
-                        }
-                    }
-                }
                 removeProjectile();
             }
-            else if(target.name.Contains("Player") && !target.name.Contains(playerSource.ToString()))
+            //Checks if projectile is colliding with player that shot it
+            else if (target.name.Contains("Player") && !target.name.Contains(playerSource.ToString()))
             {
                 if (e != null)
                 {
                     e.CmdSpawnDead();
                     e.PowerUp();
-                }
-                removeProjectile();
-            }
-            else if(target.CompareTag("Killbox"))
-            {
-                if(e != null)
-                {
-                    e.CmdSpawnDead();
                 }
                 removeProjectile();
             }
