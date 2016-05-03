@@ -6,7 +6,7 @@ public class QuarkChild : NetworkBehaviour {
 
 
 	public GameObject quark;
- public GameObject spawnedObject;
+    public GameObject spawnedObject;
 	private QuarkOverlord overlord;
 	public bool preparedToSpawn;
 	public int numTimesAdded;
@@ -18,16 +18,17 @@ public class QuarkChild : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-		if (!spawnedObject && numTimesAdded == 1) {
-			overlord.addToEmpty (this.gameObject.GetComponent<QuarkChild>());	
-			numTimesAdded = 0;
-		} else if (spawnedObject && numTimesAdded == 0) {
-			overlord.addToSpawned (this.gameObject.GetComponent<QuarkChild>());
-			numTimesAdded = 1;
-		}
 
-
+            if (!spawnedObject && numTimesAdded == 1)
+            {
+                overlord.addToEmpty(this.gameObject.GetComponent<QuarkChild>());
+                numTimesAdded = 0;
+            }
+            else if (spawnedObject && numTimesAdded == 0)
+            {
+                overlord.addToSpawned(this.gameObject.GetComponent<QuarkChild>());
+                numTimesAdded = 1;
+            }
 
     }
     [Command]
@@ -35,20 +36,24 @@ public class QuarkChild : NetworkBehaviour {
 		GameObject instance;
 		instance = (Instantiate (quark, new Vector3(this.transform.position.x, this.transform.position.y+2, this.transform.position.z), this.transform.rotation)) as GameObject;
 		spawnedObject = instance;
-        checkForQuark();
         NetworkServer.Spawn (instance);
 	}
 
     public void checkForQuark()
     {
-        Collider[] colliders = Physics.OverlapSphere(new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), 1f);
-        if (colliders.Length > 1)
+        if (isServer)
         {
-            spawnedObject = colliders[0].gameObject;
-        }
-        else
-        {
-            spawnedObject = null;
+            Collider[] colliders = Physics.OverlapSphere(new Vector3(this.transform.position.x, this.transform.position.y + 2, this.transform.position.z), 1f);
+            if (colliders.Length == 1 && colliders[0].gameObject.tag == "Quark")
+            {
+                spawnedObject = colliders[0].gameObject;
+            }
+            else
+            {
+                spawnedObject = null;
+            }
+            checkForQuark();
+
         }
     }
 }

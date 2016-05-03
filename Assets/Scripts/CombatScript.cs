@@ -127,7 +127,13 @@ public class CombatScript : NetworkBehaviour
         numQuarks = numQuarks / 2;
 
     }
-
+    [Command]
+    public void CmdDeleteElement()
+    {
+        haveElement = false;
+        heldElement = -1;
+        gui.DeleteElementUI();
+    }
 
     [Command]
 	void CmdShootProjectile(bool shootElementCmd, int heldElementCmd, Vector3 heldElementPos)
@@ -148,7 +154,6 @@ public class CombatScript : NetworkBehaviour
 			if (numQuarks > 0)
 			{
 				instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
-				print("shooting");
                 CmdDeleteQuarks();
 			}
 			else
@@ -179,10 +184,15 @@ public class CombatScript : NetworkBehaviour
             {
 				gameObject.GetComponent<Animator>().Play("Death");
 			}
+            else if(haveElement == true)
+            {
+                CmdDeleteElement();
+            }
             else if(bullet.Contains("Basic"))
             {
                 CmdDeleteQuarks();
             }
+            
             else
             {
                 CmdHitQuark();
@@ -237,13 +247,12 @@ public class CombatScript : NetworkBehaviour
                 DeductHealth(collision.name);
             }
         }
+        
     }
 
     public void OnHealthChanged(int hlth)
     {
-        print ("on change");
         if (isLocalPlayer) {
-            print ("update health");
             numQuarks = hlth;
             gui.updateQuarkMeter (numQuarks);
             if (numQuarks >= elementPickUpCost) {
