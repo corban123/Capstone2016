@@ -72,7 +72,6 @@ public class ProjectileScript : NetworkBehaviour
                     print("Player " + playerSource);
                     BoardScript board = GameObject.Find("Player " + playerSource).GetComponent<BoardScript>();
                     GUIScript gui = GameObject.Find("Player " + playerSource).GetComponent<GUIScript>();
-                    print("bs " + board);
                     bool isWin = board.score(elementId);
 
                     if (isWin)
@@ -83,10 +82,11 @@ public class ProjectileScript : NetworkBehaviour
                     {
                         gui.enableYouScored();
                     }
+
                 }
-                GetComponent<Collider>().enabled = false;
-                Destroy(this.gameObject);
-            }
+				removeProjectile();
+
+			}
             //Checks to see if it hit the killbox
             else if (target.CompareTag("Killbox"))
             {
@@ -175,4 +175,11 @@ public class ProjectileScript : NetworkBehaviour
     {
         NetworkServer.UnSpawn(this.gameObject);
     }
+
+	[ClientRpc]
+	void RpcClientRemoveProjectile()
+	{
+		NetworkServer.UnSpawn (this.gameObject);
+		Destroy (this.gameObject);
+	}
 }
