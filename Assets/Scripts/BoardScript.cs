@@ -3,13 +3,18 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using System.Collections;
 using System;
+using System.Collections.Generic;
 
 /*
  * Board object for storing board, scoring, and printing.
  */
 public class BoardScript : NetworkBehaviour {
-	private int[,] board;
+	public int[,] board;
+	public int[,] enemyBoard;
+	private bool[,] enemyScored = new bool[4,4];
 	private bool[,] scored = new bool[4, 4];
+	private ArrayList enemyElementsScored;
+	private ArrayList playerElementsScored;
     private GameObject boardUI;
     private GameObject boardChips;
     private bool UICreated = false;
@@ -81,19 +86,58 @@ public class BoardScript : NetworkBehaviour {
             StartCoroutine(CreateBoardCoroutine ());
         }
 	}
+	public void SetEnemyBoard(int[,] board){
+		if (isLocalPlayer) {
+			this.enemyBoard = board;
+		
+		}
+	
+	}
 
     IEnumerator CreateBoardCoroutine() {
-        CreateBingoBoardUI ();
+		
+		CreateBingoBoardUI (board);
         yield return new WaitForSeconds(2.0f);
     }
+
+	public void CreateEnemyBoard(){
+		deleteUIChildren ();
+
+		CreateBingoBoardUI (enemyBoard);
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				if (enemyScored [i, j]) {
+					PlaceChip (i, j);
+				}
+			
+			}
+		}
+		if (playerElementsScored != null) {
+			foreach (int x in playerElementsScored) {
+				GreyOutOnEnemyUI (x, enemyBoard);
+		
+			}
+		}
+
+		
+	}
+	void deleteUIChildren(){
+		var children = new List<GameObject>();
+		foreach (Transform child in boardUI.transform) { 
+			children.Add (child.gameObject);
+		}
+		children.ForEach(child => Destroy(child));
+	
+	}
+
 
 	// Marks an element as scored on this board
 	// Returns whether or not the score causes this board to win.
 	public bool score (int element) {
         if (isLocalPlayer) {
             // Find the element on the board
-            int[] coordinates = GetCoordinates (element);
-
+            int[] coordinates = GetCoordinates (element, board);
+			playerElementsScored.Add (element);
             // Mark the element as scored in the scored bitmap
             scored [coordinates [0], coordinates [1]] = true;
 
@@ -126,6 +170,7 @@ public class BoardScript : NetworkBehaviour {
         GUIScript gui = player.GetComponent<GUIScript> ();
         try {
             board.GreyOutOnUI(element);
+
             gui.enableEnemyScored();
         } catch (NullReferenceException e) {
             print ("board not found: " + e);
@@ -168,7 +213,7 @@ public class BoardScript : NetworkBehaviour {
 	}
 
 	// Get coordinates of a value in the board
-	private int[] GetCoordinates(int val) {
+	private int[] GetCoordinates(int val, int[,] board) {
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j < 4; j++) {
 				if (board[i,j] == val) {
@@ -204,11 +249,20 @@ public class BoardScript : NetworkBehaviour {
     }
 
     private void GreyOutOnUI(int elem) {
-        int[] c = GetCoordinates (elem);
+        int[] c = GetCoordinates (elem, board);
+		enemyScored [c [0], c [1]] = true;
+		enemyElementsScored.Add (elem);
         Image[] i = boardUI.GetComponentsInChildren<Image>();
         int idx = c[0] * 4 + c[1];
         i[idx].sprite = GetGreySprite(elem);
     }
+	private void GreyOutOnEnemyUI(int elem, int[,] chosenBoard){
+		int[] c = GetCoordinates (elem, chosenBoard);
+		Image[] i = boardUI.GetComponentsInChildren<Image>();
+		int idx = c[0] * 4 + c[1];
+		i[idx].sprite = GetGreySprite(elem);
+	
+	}
 
     private void PlaceChip(int x, int y) {
         Image[] i = boardChips.GetComponentsInChildren<Image> ();
@@ -221,11 +275,11 @@ public class BoardScript : NetworkBehaviour {
         chipImage.color = c;
     }
 
-    private void CreateBingoBoardUI () {
+	private void CreateBingoBoardUI (int[,] chosenBoard) {
         int elem;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
-                elem = board [i, j];
+                elem = chosenBoard [i, j];
                 GameObject obj = GetObject (elem);
                 obj = Instantiate (obj) as GameObject;
                 obj.transform.SetParent (boardUI.transform, false);

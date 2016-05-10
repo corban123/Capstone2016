@@ -23,6 +23,8 @@ public class MoveScript : NetworkBehaviour
     Transform player2RespawnPoint;
 	public GameObject marker;
 
+	private BoardScript board;
+
     public Sprite blueCross;
     public Sprite redCross;
 
@@ -51,6 +53,7 @@ public class MoveScript : NetworkBehaviour
         combat = gameObject.GetComponent<CombatScript>();
         source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript>();
+		board = gameObject.GetComponent<BoardScript> ();
         player1RespawnPoint = GameObject.Find ("Spawn1").transform;
         player2RespawnPoint = GameObject.Find ("Spawn2").transform;
         //Respawn();
@@ -71,6 +74,7 @@ public class MoveScript : NetworkBehaviour
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+			Debug.DrawRay (Camera.main.transform.position, Input.mousePosition);
             if (Physics.Raycast(ray, out hit) && hit.collider.CompareTag("Player"))
             {
                 GameObject.Find("Crosshair").GetComponent<Image>().sprite = redCross;
@@ -79,6 +83,11 @@ public class MoveScript : NetworkBehaviour
             {
                 GameObject.Find("Crosshair").GetComponent<Image>().sprite = blueCross;
             }
+
+			if(Input.GetKeyDown(KeyCode.Tab)){
+				board.CreateEnemyBoard();
+			
+			}
         }
         
     }
@@ -125,6 +134,7 @@ public class MoveScript : NetworkBehaviour
             if (collision.tag == "Killbox")
             {
                 print("you died :(");
+                gameObject.GetComponent<GUIScript> ().enableRespawning ();
                 Respawn();
             }
         }

@@ -10,7 +10,7 @@ using System.Linq;
 public class StartUpPlayerScript : NetworkBehaviour {
 	BoardGenerator generator;
 	List<int[,]> boards;
-	[SyncVar] bool found;
+	bool found;
     public GameObject Player2Prefab;
     private readonly int PLAYER1_LAYER = ~(1 << 9);
     private readonly int PLAYER2_LAYER = ~(1 << 8);
@@ -29,7 +29,7 @@ public class StartUpPlayerScript : NetworkBehaviour {
 		if (!found) {
 			BoardScript[] boardObjects = FindObjectsOfType (typeof(BoardScript)) as BoardScript[];
 
-            if (boardObjects.Length == 2) {
+			if (boardObjects.Length == 2) {
                 
 				if (!boardObjects [0].gameObject.name.Contains ("female")) {
                     gui = boardObjects [0].gameObject.GetComponent<GUIScript> ();
@@ -65,6 +65,9 @@ public class StartUpPlayerScript : NetworkBehaviour {
                     boardObjects [1].gameObject.GetComponentInChildren<Camera> ().cullingMask = PLAYER1_LAYER;
                     boardObjects [0].gameObject.GetComponentInChildren<Camera> ().cullingMask = PLAYER2_LAYER;
 				}
+				boardObjects [1].gameObject.GetComponent<sendBoard> ().enabled = true;
+				boardObjects [0].gameObject.GetComponent<sendBoard> ().enabled = true;
+
                 boardObjects[1].gameObject.GetComponent<MoveScript>().Respawn();
                 boardObjects[0].gameObject.GetComponent<MoveScript>().Respawn();
                 found = true;
