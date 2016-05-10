@@ -29,6 +29,7 @@ public class CombatScript : NetworkBehaviour
 
     [SerializeField] AudioClip mPain;
     [SerializeField] AudioClip fPain;
+
     AudioSource source;
     // Use this for initialization
     void Start () {

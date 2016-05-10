@@ -3678,6 +3678,9 @@ MonoBehaviour:
   AtomBombSprite: {fileID: 144286, guid: 0ef3f41ea4a7347c6bdf7ed667ddbbc8, type: 2}
   canvas: {fileID: 0}
   waitingCanvas: {fileID: 0}
+  winCanvas: {fileID: 0}
+  loseCanvas: {fileID: 0}
+  canPause: 0
 --- !u!114 &11441358
 MonoBehaviour:
   m_ObjectHideFlags: 1
