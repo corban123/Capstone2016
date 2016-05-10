@@ -13,6 +13,8 @@ public class BoardScript : NetworkBehaviour {
     private GameObject boardUI;
     private GameObject boardChips;
     private bool UICreated = false;
+    [SerializeField] public AudioClip winSound;
+    [SerializeField] public AudioClip loseSound;
 
     public GameObject chipPlaceHolder;
     public Sprite chip;
@@ -111,12 +113,13 @@ public class BoardScript : NetworkBehaviour {
 
             if (win) {
                 gameObject.GetComponent<GUIScript> ().enableWinCanvas ();
+                gameObject.GetComponent<AudioSource> ().PlayOneShot (winSound, 1.0f);
             }
 
             if (isServer)
-                RpcGreyOut (id, element, win);
+                RpcGreyOut (id, element, win, loseSound);
             else
-                CmdGreyOut (id, element, win);
+                CmdGreyOut (id, element, win, loseSound);
 
             // Check whether the board is a winner
             return win;
@@ -125,14 +128,16 @@ public class BoardScript : NetworkBehaviour {
 	}
 
     [Command]
-    public void CmdGreyOut(NetworkInstanceId id, int element, bool isWin) {
+    public void CmdGreyOut(NetworkInstanceId id, int element, bool isWin, AudioClip sound) {
         GameObject player = NetworkServer.FindLocalObject (id);
         BoardScript board = player.GetComponent<BoardScript> ();
         GUIScript gui = player.GetComponent<GUIScript> ();
+        AudioSource source = player.GetComponent<AudioSource> ();
         try {
             board.GreyOutOnUI(element);
             if (isWin) {
                 gui.enableLoseCanvas();
+                source.PlayOneShot (sound, 1.0f);
             } else {
                 gui.enableEnemyScored();
             }
@@ -142,14 +147,16 @@ public class BoardScript : NetworkBehaviour {
     }
 
     [ClientRpc]
-    public void RpcGreyOut (NetworkInstanceId id, int element, bool isWin) {
+    public void RpcGreyOut (NetworkInstanceId id, int element, bool isWin, AudioClip sound) {
         GameObject player = ClientScene.FindLocalObject (id);
         BoardScript board = player.GetComponent<BoardScript> ();
         GUIScript gui = player.GetComponent<GUIScript> ();
+        AudioSource source = player.GetComponent<AudioSource> ();
         try {
             board.GreyOutOnUI(element);
             if (isWin) {
                 gui.enableLoseCanvas();
+                source.PlayOneShot (sound, 1.0f);
             } else {
                 gui.enableEnemyScored();
             }

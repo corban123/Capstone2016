@@ -3222,6 +3222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53314cb8806f844c3a3cd9f4d5513c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winSound: {fileID: 8300000, guid: 0b9d34cf853944556b8f2d7b3783d64c, type: 3}
+  loseSound: {fileID: 8300000, guid: 9d6fce794bfe34fd0bd017402c8e4eea, type: 3}
   chipPlaceHolder: {fileID: 132476, guid: c6204477ff5004a4b96b4c9ffecb462a, type: 2}
   chip: {fileID: 21300000, guid: 0658b33e6d51fa14aa93f5f2c49024bf, type: 3}
   barium: {fileID: 123746, guid: 701f6371fa78543c0a785ba783495d23, type: 2}
@@ -3321,6 +3323,9 @@ MonoBehaviour:
   AtomBombSprite: {fileID: 144286, guid: 0ef3f41ea4a7347c6bdf7ed667ddbbc8, type: 2}
   canvas: {fileID: 0}
   waitingCanvas: {fileID: 0}
+  winCanvas: {fileID: 0}
+  loseCanvas: {fileID: 0}
+  canPause: 0
 --- !u!114 &11459984
 MonoBehaviour:
   m_ObjectHideFlags: 1
