@@ -125,6 +125,7 @@ public class MoveScript : NetworkBehaviour
             if (collision.tag == "Killbox")
             {
                 print("you died :(");
+                gameObject.GetComponent<GUIScript> ().enableRespawning ();
                 Respawn();
             }
         }
