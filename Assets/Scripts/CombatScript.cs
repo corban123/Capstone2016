@@ -16,8 +16,6 @@ public class CombatScript : NetworkBehaviour
     public bool haveElement;
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
 	public Vector3 heldElementPos;
-    float startTime;
-    public bool takeDmg;
 
     readonly int elementPickUpCost = 5;
 
@@ -36,8 +34,6 @@ public class CombatScript : NetworkBehaviour
         haveElement = false;
         heldElement = -1;
 		heldElementPos = Vector3.zero;
-        startTime = Time.time;
-        takeDmg = false;
         myId = gameObject.GetComponent<NetworkIdentity>(); // get the object's network ID
         smr = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
         source = gameObject.GetComponent<AudioSource>();
@@ -73,11 +69,7 @@ public class CombatScript : NetworkBehaviour
                 haveElement = false;
                 heldElement = -1;
                 gui.DeleteElementUI();
-            }
-            
-            if (Time.time - startTime > 3) {
-                takeDmg = true;
-            }
+            }          
         }
     }
 	[Command]
@@ -223,7 +215,7 @@ public class CombatScript : NetworkBehaviour
         {
             foreach (Material mat in render.materials)
             {
-                if (mat.name.Contains("White"))
+                if (mat.name.Contains("Labcoat"))
                 {
                     mat.SetColor("_Color", col);
                 }
@@ -234,7 +226,7 @@ public class CombatScript : NetworkBehaviour
     [Command]
     void CmdPaint(Color col)
     {
-        RpcPaint(col);                                    // usse a Client RPC function to "paint" the object on all clients
+        RpcPaint(col);       // usse a Client RPC function to "paint" the object on all clients
     }
 
     /**
@@ -242,7 +234,7 @@ public class CombatScript : NetworkBehaviour
      */
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Bullet" && takeDmg)
+        if (collision.tag == "Bullet")
         {
             ProjectileScript projectile = collision.GetComponent<ProjectileScript>();
             if (!gameObject.name.Contains(projectile.playerSource.ToString()))
