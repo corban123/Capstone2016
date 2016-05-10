@@ -10,7 +10,7 @@ using System.Linq;
 public class StartUpPlayerScript : NetworkBehaviour {
 	BoardGenerator generator;
 	List<int[,]> boards;
-	[SyncVar] bool found;
+	bool found;
     public GameObject Player2Prefab;
     private readonly int PLAYER1_LAYER = ~(1 << 9);
     private readonly int PLAYER2_LAYER = ~(1 << 8);
