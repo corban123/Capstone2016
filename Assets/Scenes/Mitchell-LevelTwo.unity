@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &9821324
@@ -342,6 +343,18 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11484834, guid: 14a5527d77bb93d40a184a3dcb308a35, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 912560167}
+    - target: {fileID: 11439100, guid: 14a5527d77bb93d40a184a3dcb308a35, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 912560167}
+    - target: {fileID: 11408180, guid: 14a5527d77bb93d40a184a3dcb308a35, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 912560167}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14a5527d77bb93d40a184a3dcb308a35, type: 2}
   m_IsPrefabParent: 0
@@ -386,6 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &118897356
@@ -461,6 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &121898435
@@ -563,6 +578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &149071377
@@ -825,6 +841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &284224402
@@ -896,7 +913,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 454626, guid: c55b8c4d53c2340d3aa423b11b8d0d78, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 11495234, guid: c55b8c4d53c2340d3aa423b11b8d0d78, type: 2}
       propertyPath: m_AssetId.i0
@@ -1039,7 +1056,7 @@ Transform:
   - {fileID: 988282663}
   - {fileID: 2126402961}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
 --- !u!1 &314717378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &314717381
@@ -1309,6 +1327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &354990890
@@ -1384,6 +1403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &359538152
@@ -1459,6 +1479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &365838429
@@ -1534,6 +1555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &401489928
@@ -1687,6 +1709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &414597100
@@ -1863,7 +1886,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 439184, guid: 6ca0942121a75ec488524a902fee058d, type: 2}
       propertyPath: m_LocalScale.x
@@ -1921,6 +1944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &562941295
@@ -1992,7 +2016,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22478334, guid: 8228cf9e5340b49268bf064e1a076300, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 22478334, guid: 8228cf9e5340b49268bf064e1a076300, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -2064,6 +2088,92 @@ Transform:
   m_Children: []
   m_Father: {fileID: 680535086}
   m_RootOrder: 12
+--- !u!1001 &670066230
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437232, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434868, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 912560167}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &680535085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,7 +2216,7 @@ Transform:
   - {fileID: 1038316054}
   - {fileID: 842244195}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
 --- !u!1 &692630780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +2258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &692630783
@@ -2322,7 +2433,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
@@ -2471,6 +2582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &890321346
@@ -2546,6 +2658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &910549996
@@ -2580,6 +2693,53 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!1001 &912560166
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 26.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 240.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+  m_IsPrefabParent: 0
+--- !u!82 &912560167 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 8296090, guid: e90e4ed44ff4c46b78e2f408e0ae54b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 912560166}
 --- !u!1 &923226692
 GameObject:
   m_ObjectHideFlags: 0
@@ -2736,6 +2896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &974270932
@@ -2811,6 +2972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &988282665
@@ -2933,6 +3095,92 @@ Transform:
   m_Children: []
   m_Father: {fileID: 680535086}
   m_RootOrder: 14
+--- !u!1001 &1063659365
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22468578, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477288, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 912560167}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1086768212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3028,6 +3276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1100076791
@@ -3103,6 +3352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1103368308
@@ -3178,6 +3428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1125620766
@@ -3318,7 +3569,7 @@ Transform:
   - {fileID: 344725558}
   - {fileID: 824138985}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 7
 --- !u!1 &1200155580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,6 +3611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1200155583
@@ -3435,6 +3687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1234331345
@@ -3537,6 +3790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1276108035
@@ -3612,6 +3866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1292792568
@@ -3767,6 +4022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1339428872
@@ -3895,6 +4151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1392555316
@@ -4047,6 +4304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1424365483
@@ -4122,6 +4380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1468095937
@@ -4193,7 +4452,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428606, guid: ad70b96f734407241b48f3d189f36205, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 11411078, guid: ad70b96f734407241b48f3d189f36205, type: 2}
       propertyPath: m_UseSimulator
@@ -4290,7 +4549,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ae22f07d34378847803d41708d013fd, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2300008, guid: 9ae22f07d34378847803d41708d013fd, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4500,6 +4759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1530194301
@@ -4575,6 +4835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1619396664
@@ -4650,6 +4911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1655001077
@@ -4725,6 +4987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1657182508
@@ -4789,7 +5052,7 @@ Transform:
   - {fileID: 1410810497}
   - {fileID: 322336000}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
 --- !u!1 &1718816772
 GameObject:
   m_ObjectHideFlags: 0
@@ -4831,6 +5094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1718816775
@@ -4895,7 +5159,7 @@ Transform:
   - {fileID: 759526351}
   - {fileID: 1160139632}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 9
 --- !u!1 &1772886521
 GameObject:
   m_ObjectHideFlags: 0
@@ -5013,6 +5277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1799589385
@@ -5088,6 +5353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1829079451
@@ -5163,6 +5429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1843089437
@@ -5238,6 +5505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1859666487
@@ -5313,6 +5581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1878175666
@@ -5388,6 +5657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1907139072
@@ -5598,7 +5868,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 18
 --- !u!1 &1953821319
 GameObject:
   m_ObjectHideFlags: 0
@@ -5718,6 +5988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &1971023871
@@ -5793,6 +6064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &2045552408
@@ -5895,6 +6167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &2053149926
@@ -5970,6 +6243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &2126402963
@@ -6045,6 +6319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quark: {fileID: 120292, guid: 0e3941727040b21458728a0f5449048c, type: 2}
+  spawnedObject: {fileID: 0}
   preparedToSpawn: 0
   numTimesAdded: 0
 --- !u!114 &2132635704
@@ -6116,7 +6391,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
