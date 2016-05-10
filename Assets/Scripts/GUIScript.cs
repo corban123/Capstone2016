@@ -56,6 +56,8 @@ public class GUIScript : NetworkBehaviour {
 
     GameObject powerUpObject;
 
+    FirstPersonController fpc;
+
 	// Use this for initialization
 	void Start () {
         boardScript = GetComponent<BoardScript> ();
@@ -82,6 +84,8 @@ public class GUIScript : NetworkBehaviour {
 
         blackout = GameObject.Find ("Blackout").GetComponent<Image> ();
         freeze = GameObject.Find ("Freeze").GetComponent<Image> ();
+
+        fpc = gameObject.GetComponent<FirstPersonController> ();
 
         setDefaults ();
 	}
@@ -311,10 +315,14 @@ public class GUIScript : NetworkBehaviour {
 
     public void disableCanvas() {
         canvas.enabled = false;
+
+        fpc.PauseFPC (true);
     }
 
     public void enableCanvas() {
         canvas.enabled = true;
+
+        fpc.PauseFPC (false);
     }
 
     public void enableWaitingCanvas() {

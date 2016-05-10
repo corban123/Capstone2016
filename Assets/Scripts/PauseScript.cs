@@ -32,6 +32,8 @@ public class PauseScript : NetworkBehaviour {
         paused = false;
         fpc = gameObject.GetComponent<FirstPersonController> ();
         gui = gameObject.GetComponent<GUIScript> ();
+
+        fpc.PauseFPC (true);
 	}
 	
 	// Update is called once per frame
