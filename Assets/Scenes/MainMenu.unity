@@ -1999,10 +1999,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   Priority: 128
@@ -2087,7 +2087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startClip: {fileID: 8300000, guid: ccc9e3e6875874841910bf671d42f384, type: 3}
-  loopClip: {fileID: 8300000, guid: 9fdafb38b692348a6a4bd790ba7edf51, type: 3}
+  loopClip: {fileID: 8300000, guid: cd79437589718461f9c458fe6c18413e, type: 3}
 --- !u!1 &1221434229
 GameObject:
   m_ObjectHideFlags: 0
