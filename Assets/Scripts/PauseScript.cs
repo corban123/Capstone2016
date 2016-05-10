@@ -80,8 +80,7 @@ public class PauseScript : NetworkBehaviour {
 
     public void DisconnectButtonOnClick() {
         if (isLocalPlayer) {
-            manager.StopHost ();
-            TogglePause ();
+            Application.Quit ();
         }
     }
 }
