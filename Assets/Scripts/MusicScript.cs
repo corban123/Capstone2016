@@ -8,7 +8,6 @@ public class MusicScript : MonoBehaviour {
     public AudioSource musicSource;
 
     public AudioClip startClipVacuum;
-    public AudioClip loopClipVacuum;
     public AudioSource vacuumSource;
 
     // Use this for initialization
@@ -17,7 +16,7 @@ public class MusicScript : MonoBehaviour {
     }
 
     public void startGameSounds() {
-        StartCoroutine(playVacuum());
+        playVacuum();
     }
 
     IEnumerator playMusic()
@@ -30,12 +29,9 @@ public class MusicScript : MonoBehaviour {
     }
 
 
-    IEnumerator playVacuum()
+    void playVacuum()
     {
         vacuumSource.clip = startClipVacuum;
-        vacuumSource.Play();
-        yield return new WaitForSeconds(musicSource.clip.length);
-        vacuumSource.clip = loopClipVacuum;
         vacuumSource.Play();
     }
 }
