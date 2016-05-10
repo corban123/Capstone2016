@@ -187,6 +187,7 @@ public class CombatScript : NetworkBehaviour
         {
             if (numQuarks < 1)
             {
+                gameObject.GetComponent<GUIScript> ().enableRespawning ();
 				gameObject.GetComponent<Animator>().Play("Death");
 			}
             else if(haveElement == true)
@@ -221,7 +222,7 @@ public class CombatScript : NetworkBehaviour
         {
             foreach (Material mat in render.materials)
             {
-                if (mat.name.Contains("White"))
+                if (mat.name.Contains("Labcoat"))
                 {
                     mat.SetColor("_Color", col);
                 }

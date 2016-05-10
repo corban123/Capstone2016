@@ -11,6 +11,13 @@ public class GUIScript : NetworkBehaviour {
     public GameObject AtomBombSprite;
     public Canvas canvas;
     public Canvas waitingCanvas;
+    public Canvas winCanvas;
+    public Canvas loseCanvas;
+
+    Button winQuit;
+    Button loseQuit;
+
+    public bool canPause;
 
     BoardScript boardScript;
     Image elementHeldImage;
@@ -49,6 +56,11 @@ public class GUIScript : NetworkBehaviour {
     float enemyScoredStartTime;
     bool animatingEnemyScored;
 
+    Animator respawningAnimator;
+    Image respawningImage;
+    float respawningStartTime;
+    bool animatingRespawning;
+
     Animator glowGaugeAnimator;
     Image glowGaugeImage;
 
@@ -56,12 +68,21 @@ public class GUIScript : NetworkBehaviour {
 
     GameObject powerUpObject;
 
+    FirstPersonController fpc;
+
 	// Use this for initialization
 	void Start () {
         boardScript = GetComponent<BoardScript> ();
 
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         waitingCanvas = GameObject.Find ("WaitingCanvas").GetComponent<Canvas> ();
+        winCanvas = GameObject.Find ("WinCanvas").GetComponent<Canvas> ();
+        loseCanvas = GameObject.Find ("LoseCanvas").GetComponent<Canvas> ();
+
+        winQuit = winCanvas.GetComponentInChildren<Button> () as Button;
+        winQuit.onClick.AddListener ( () => { QuitGame(); } );
+        loseQuit = loseCanvas.GetComponentInChildren<Button> () as Button;
+        loseQuit.onClick.AddListener ( () => { QuitGame(); } );
 
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
@@ -70,18 +91,21 @@ public class GUIScript : NetworkBehaviour {
         youScoredImage = GameObject.Find ("YouScored").GetComponent<Image> ();
         enemyScoredImage = GameObject.Find ("EnemyScored").GetComponent<Image> ();
         glowGaugeImage = GameObject.Find ("GaugeGlow").GetComponent<Image> ();
-        youWonImage = GameObject.Find ("YouWon").GetComponent<Image> ();
-        youLostImage = GameObject.Find ("YouLost").GetComponent<Image> ();
+        respawningImage = GameObject.Find ("Respawning").GetComponent<Image> ();
 
         elementPickedUpAnimator = GameObject.Find ("ElementPickedUp").GetComponent<Animator> ();
         youScoredAnimator = GameObject.Find ("YouScored").GetComponent<Animator> ();
         enemyScoredAnimator = GameObject.Find ("EnemyScored").GetComponent<Animator> ();
         glowGaugeAnimator = GameObject.Find ("GaugeGlow").GetComponent<Animator> ();
+        respawningAnimator = GameObject.Find ("Respawning").GetComponent<Animator> ();
 
         numQuarksText = GameObject.Find ("NumQuarksText").GetComponent<Text> ();
 
         blackout = GameObject.Find ("Blackout").GetComponent<Image> ();
         freeze = GameObject.Find ("Freeze").GetComponent<Image> ();
+
+        fpc = gameObject.GetComponent<FirstPersonController> ();
+        canPause = false;
 
         setDefaults ();
 	}
@@ -90,15 +114,18 @@ public class GUIScript : NetworkBehaviour {
      * GUI defaults: no element, updated quarks, deactivate pickup texts
      */
     void setDefaults() {
+        disableWinCanvas ();
+        disableLoseCanvas ();
         updateQuarkMeter (3);
         DeleteElementUI ();
-        disableYouWon ();
         disableElementPickedUp ();
         disableYouScored ();
         disableEnemyScored ();
         disableGaugeGlow ();
+        disableRespawning ();
         blackout.canvasRenderer.SetAlpha( 0.001f );
         freeze.canvasRenderer.SetAlpha( 0.001f );
+
     }
 	
 	/**
@@ -113,6 +140,9 @@ public class GUIScript : NetworkBehaviour {
         }
         if (animatingEnemyScored && Time.time - enemyScoredStartTime > delay) {
             disableEnemyScored ();
+        }
+        if (animatingRespawning && Time.time - respawningStartTime > delay) {
+            disableRespawning ();
         }
 
         // TODO (@paige): figure out why sometimes quark meter isn't found in start.
@@ -168,52 +198,6 @@ public class GUIScript : NetworkBehaviour {
 
     public void DeletePowerUpUI() {
         Destroy(powerUpObject);
-    }
-
-    public void enableYouWon() {
-        youWonImage.enabled = true;
-
-        if (isLocalPlayer) {
-            GameObject otherPlayer;
-            if (gameObject.name.Contains ("1"))
-                otherPlayer = GameObject.Find ("Player 2");
-            else
-                otherPlayer = GameObject.Find ("Player 1");
-
-            NetworkInstanceId id = otherPlayer.GetComponent<NetworkIdentity> ().netId;
-
-            // TODO(@paige): make this work
-//            if (isServer)
-//                RpcYouLost (id);
-//            else
-//                CmdYouLost (id);
-        }
-    }
-
-    [Command]
-    public void CmdYouLost(NetworkInstanceId id) {
-        GameObject player = NetworkServer.FindLocalObject (id);
-        GUIScript gui = player.GetComponent<GUIScript> ();
-        try {
-            gui.enableYouLost();
-        } catch (NullReferenceException e) {
-            print ("error: " + e);
-        }
-    }
-
-    [ClientRpc]
-    public void RpcYouLost (NetworkInstanceId id) {
-        GameObject player = ClientScene.FindLocalObject (id);
-        GUIScript gui = player.GetComponent<GUIScript> ();
-        try {
-            gui.enableYouLost();
-        } catch (NullReferenceException e) {
-            print ("you lost: " + e);
-        }
-    }  
-
-    public void disableYouWon() {
-        youWonImage.enabled = false;
     }
 
     public void enableYouLost() {
@@ -273,6 +257,19 @@ public class GUIScript : NetworkBehaviour {
         enemyScoredStartTime = Time.time;
     }
 
+    public void disableRespawning() {
+        animatingRespawning = false;
+        respawningImage.enabled = false;
+        respawningAnimator.SetBool ("animating", false);
+    }
+
+    public void enableRespawning() {
+        animatingRespawning = true;
+        respawningImage.enabled = true;
+        respawningAnimator.SetBool ("animating", true);
+        respawningStartTime = Time.time;
+    }
+
     public void freezeUI() {
         StartCoroutine (freezeCoroutine());
     }
@@ -311,18 +308,47 @@ public class GUIScript : NetworkBehaviour {
 
     public void disableCanvas() {
         canvas.enabled = false;
+
+        fpc.PauseFPC (true);
     }
 
     public void enableCanvas() {
         canvas.enabled = true;
+        canPause = true;
+
+        fpc.PauseFPC (false);
     }
 
     public void enableWaitingCanvas() {
         waitingCanvas.enabled = true;
+        canPause = false;
     }
 
     public void disableWaitingCanvas() {
         waitingCanvas.enabled = false;
     }
-        
+
+    public void enableWinCanvas() {
+        winCanvas.enabled = true;
+        canPause = false;
+        fpc.PauseFPC (true);
+    }
+
+    public void disableWinCanvas() {
+        winCanvas.enabled = false;
+    }
+       
+    public void enableLoseCanvas() {
+        loseCanvas.enabled = true;
+        canPause = false;
+        fpc.PauseFPC (true);
+    }
+
+    public void disableLoseCanvas() {
+        loseCanvas.enabled = false;
+    }
+
+    void QuitGame() {
+        Application.Quit ();
+    }
 }

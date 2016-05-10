@@ -59,8 +59,6 @@ public class FirstPersonController : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            SetCursorState();
-
             m_CharacterController = GetComponent<CharacterController>();
             m_CharacterController.enabled = true;
             m_Camera = Camera.main;
@@ -315,12 +313,6 @@ public class FirstPersonController : NetworkBehaviour
             m_AudioSource.Play();
             gui.blackOutUI();
         }
-    }
-
-    void SetCursorState()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     public void PauseFPC(bool paused) {

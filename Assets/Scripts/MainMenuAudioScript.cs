@@ -11,9 +11,9 @@ public class MainMenuAudioScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         audio = GetComponent<AudioSource> ();
-        StartCoroutine(playEngineSound());
+        StartCoroutine(playMusic());
 	}
-    IEnumerator playEngineSound()
+    IEnumerator playMusic()
     {
         audio.clip = startClip;
         audio.Play();

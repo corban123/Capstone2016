@@ -74,15 +74,9 @@ public class ProjectileScript : NetworkBehaviour
                     GUIScript gui = GameObject.Find("Player " + playerSource).GetComponent<GUIScript>();
                     bool isWin = board.score(elementId);
 
-                    if (isWin)
-                    {
-                        gui.enableYouWon();
-                    }
-                    else
-                    {
+                    if (!isWin){
                         gui.enableYouScored();
                     }
-
                 }
 				removeProjectile();
 
