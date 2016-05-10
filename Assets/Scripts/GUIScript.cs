@@ -68,6 +68,8 @@ public class GUIScript : NetworkBehaviour {
 
     GameObject powerUpObject;
 
+    MusicScript music;
+
     FirstPersonController fpc;
 
 	// Use this for initialization
@@ -105,6 +107,7 @@ public class GUIScript : NetworkBehaviour {
         freeze = GameObject.Find ("Freeze").GetComponent<Image> ();
 
         fpc = gameObject.GetComponent<FirstPersonController> ();
+        music = GameObject.Find ("Music").GetComponent<MusicScript> ();
         canPause = false;
 
         setDefaults ();
@@ -326,6 +329,7 @@ public class GUIScript : NetworkBehaviour {
 
     public void disableWaitingCanvas() {
         waitingCanvas.enabled = false;
+        music.startGameSounds ();
     }
 
     public void enableWinCanvas() {
