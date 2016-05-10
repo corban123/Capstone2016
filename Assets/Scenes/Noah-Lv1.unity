@@ -902,7 +902,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
 --- !u!82 &372101751
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2327,6 +2327,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11434868, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1233322279}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf95770bcae5e4cc49df9c7c0a443ed6, type: 2}
   m_IsPrefabParent: 0
@@ -3991,6 +3995,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 888109582}
   m_RootOrder: 8
+--- !u!1001 &1233322278
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 26.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 240.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 424652, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e90e4ed44ff4c46b78e2f408e0ae54b9, type: 2}
+  m_IsPrefabParent: 0
+--- !u!82 &1233322279 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 8296090, guid: e90e4ed44ff4c46b78e2f408e0ae54b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1233322278}
 --- !u!1 &1262419409
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,6 +5289,18 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11408180, guid: 14a5527d77bb93d40a184a3dcb308a35, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1233322279}
+    - target: {fileID: 11484834, guid: 14a5527d77bb93d40a184a3dcb308a35, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1233322279}
+    - target: {fileID: 11439100, guid: 14a5527d77bb93d40a184a3dcb308a35, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1233322279}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14a5527d77bb93d40a184a3dcb308a35, type: 2}
   m_IsPrefabParent: 0
@@ -7927,6 +7990,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11477288, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1233322279}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 090798a3cd90545c7a53cc8a4c006ae8, type: 2}
   m_IsPrefabParent: 0
