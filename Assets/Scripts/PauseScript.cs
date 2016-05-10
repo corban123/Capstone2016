@@ -46,7 +46,7 @@ public class PauseScript : NetworkBehaviour {
 	}
 
     void TogglePause() {
-        if (!TURN_PAUSE_MENU_OFF && gui.waitingCanvas.enabled == false) {
+        if (!TURN_PAUSE_MENU_OFF && gui.canPause) {
             if (paused) {
                 fpc.PauseFPC (false);
                 gui.enableCanvas ();

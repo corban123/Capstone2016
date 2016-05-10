@@ -107,39 +107,52 @@ public class BoardScript : NetworkBehaviour {
                 otherPlayer = GameObject.Find("Player 1");
 
             NetworkInstanceId id = otherPlayer.GetComponent<NetworkIdentity>().netId;
+            bool win = isWin (coordinates [0], coordinates [1]);
+
+            if (win) {
+                gameObject.GetComponent<GUIScript> ().enableWinCanvas ();
+            }
 
             if (isServer)
-                RpcGreyOut (id, element);
+                RpcGreyOut (id, element, win);
             else
-                CmdGreyOut (id, element);
+                CmdGreyOut (id, element, win);
 
             // Check whether the board is a winner
-            return isWin (coordinates [0], coordinates [1]);
+            return win;
         }
         return false;
 	}
 
     [Command]
-    public void CmdGreyOut(NetworkInstanceId id, int element) {
+    public void CmdGreyOut(NetworkInstanceId id, int element, bool isWin) {
         GameObject player = NetworkServer.FindLocalObject (id);
         BoardScript board = player.GetComponent<BoardScript> ();
         GUIScript gui = player.GetComponent<GUIScript> ();
         try {
             board.GreyOutOnUI(element);
-            gui.enableEnemyScored();
+            if (isWin) {
+                gui.enableLoseCanvas();
+            } else {
+                gui.enableEnemyScored();
+            }
         } catch (NullReferenceException e) {
             print ("board not found: " + e);
         }
     }
 
     [ClientRpc]
-    public void RpcGreyOut (NetworkInstanceId id, int element) {
+    public void RpcGreyOut (NetworkInstanceId id, int element, bool isWin) {
         GameObject player = ClientScene.FindLocalObject (id);
         BoardScript board = player.GetComponent<BoardScript> ();
         GUIScript gui = player.GetComponent<GUIScript> ();
         try {
             board.GreyOutOnUI(element);
-            gui.enableEnemyScored();
+            if (isWin) {
+                gui.enableLoseCanvas();
+            } else {
+                gui.enableEnemyScored();
+            }
         } catch (NullReferenceException e) {
             print ("board not found: " + e);
         }

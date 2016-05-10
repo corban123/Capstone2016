@@ -11,6 +11,13 @@ public class GUIScript : NetworkBehaviour {
     public GameObject AtomBombSprite;
     public Canvas canvas;
     public Canvas waitingCanvas;
+    public Canvas winCanvas;
+    public Canvas loseCanvas;
+
+    Button winQuit;
+    Button loseQuit;
+
+    public bool canPause;
 
     BoardScript boardScript;
     Image elementHeldImage;
@@ -64,6 +71,13 @@ public class GUIScript : NetworkBehaviour {
 
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         waitingCanvas = GameObject.Find ("WaitingCanvas").GetComponent<Canvas> ();
+        winCanvas = GameObject.Find ("WinCanvas").GetComponent<Canvas> ();
+        loseCanvas = GameObject.Find ("LoseCanvas").GetComponent<Canvas> ();
+
+        winQuit = winCanvas.GetComponentInChildren<Button> () as Button;
+        winQuit.onClick.AddListener ( () => { QuitGame(); } );
+        loseQuit = loseCanvas.GetComponentInChildren<Button> () as Button;
+        loseQuit.onClick.AddListener ( () => { QuitGame(); } );
 
         quarkMeter = GameObject.Find ("QuarkMeter").GetComponent<Image>();
         elementHeldImage = GameObject.Find ("ElementHeld").GetComponent<Image>();
@@ -86,6 +100,7 @@ public class GUIScript : NetworkBehaviour {
         freeze = GameObject.Find ("Freeze").GetComponent<Image> ();
 
         fpc = gameObject.GetComponent<FirstPersonController> ();
+        canPause = false;
 
         setDefaults ();
 	}
@@ -94,6 +109,8 @@ public class GUIScript : NetworkBehaviour {
      * GUI defaults: no element, updated quarks, deactivate pickup texts
      */
     void setDefaults() {
+        disableWinCanvas ();
+        disableLoseCanvas ();
         updateQuarkMeter (3);
         DeleteElementUI ();
         disableYouWon ();
@@ -103,6 +120,7 @@ public class GUIScript : NetworkBehaviour {
         disableGaugeGlow ();
         blackout.canvasRenderer.SetAlpha( 0.001f );
         freeze.canvasRenderer.SetAlpha( 0.001f );
+
     }
 	
 	/**
@@ -321,16 +339,41 @@ public class GUIScript : NetworkBehaviour {
 
     public void enableCanvas() {
         canvas.enabled = true;
+        canPause = true;
 
         fpc.PauseFPC (false);
     }
 
     public void enableWaitingCanvas() {
         waitingCanvas.enabled = true;
+        canPause = false;
     }
 
     public void disableWaitingCanvas() {
         waitingCanvas.enabled = false;
     }
-        
+
+    public void enableWinCanvas() {
+        winCanvas.enabled = true;
+        canPause = false;
+        fpc.PauseFPC (true);
+    }
+
+    public void disableWinCanvas() {
+        winCanvas.enabled = false;
+    }
+       
+    public void enableLoseCanvas() {
+        loseCanvas.enabled = true;
+        canPause = false;
+        fpc.PauseFPC (true);
+    }
+
+    public void disableLoseCanvas() {
+        loseCanvas.enabled = false;
+    }
+
+    void QuitGame() {
+        Application.Quit ();
+    }
 }
