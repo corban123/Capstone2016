@@ -19,6 +19,7 @@ public class ProjectileScript : NetworkBehaviour
     private Vector3 pos;
     AudioSource source;
     [SerializeField] AudioClip shoot;
+    [SerializeField] AudioClip score;
     Rigidbody rb;
     private int delay = 5;
 
@@ -72,6 +73,9 @@ public class ProjectileScript : NetworkBehaviour
                     print("Player " + playerSource);
                     BoardScript board = GameObject.Find("Player " + playerSource).GetComponent<BoardScript>();
                     GUIScript gui = GameObject.Find("Player " + playerSource).GetComponent<GUIScript>();
+                    AudioSource playerAudioSource= GameObject.Find("Player " + playerSource).GetComponent<AudioSource>();
+                    playerAudioSource.PlayOneShot(score, 1.0f);
+
                     bool isWin = board.score(elementId);
 
                     if (!isWin){
