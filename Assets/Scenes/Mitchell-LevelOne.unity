@@ -201,15 +201,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 127.051765
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 113.678604
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 176.5968
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -229,7 +229,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 419364, guid: 67b00b28dca5a450983e2d732fd302f5, type: 2}
       propertyPath: m_LocalScale.x
@@ -3364,7 +3364,7 @@ Transform:
   - {fileID: 1618150295}
   - {fileID: 1894858123}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!1 &874908393
 GameObject:
   m_ObjectHideFlags: 0
@@ -3951,15 +3951,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -149.62323
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 110.82861
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -100.37819
+      value: 177
       objectReference: {fileID: 0}
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3979,7 +3979,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 401970, guid: 01726a4055116403c85d12d2e23555b5, type: 2}
       propertyPath: m_LocalScale.x
@@ -5581,7 +5581,7 @@ Transform:
   - {fileID: 288094924}
   - {fileID: 1474213162}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
 --- !u!1 &1687658441
 GameObject:
   m_ObjectHideFlags: 0

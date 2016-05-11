@@ -2270,7 +2270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3895527b365bb49de923ebb0a2971ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startClip: {fileID: 8300000, guid: ccc9e3e6875874841910bf671d42f384, type: 3}
+  startClip: {fileID: 8300000, guid: 13739eb82b1d24e899626215efebe596, type: 3}
   loopClip: {fileID: 8300000, guid: cd79437589718461f9c458fe6c18413e, type: 3}
 --- !u!1 &1221434229
 GameObject:
