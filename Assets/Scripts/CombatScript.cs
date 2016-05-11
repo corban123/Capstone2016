@@ -16,7 +16,7 @@ public class CombatScript : NetworkBehaviour
     public bool haveElement;
     public int heldElement; //This integer represents the current element held by the player, if the player is not holding an element set this value to -1
 	public Vector3 heldElementPos;
-
+    QuarkOverlord quarkLord;
     readonly int elementPickUpCost = 5;
 
     GUIScript gui;
@@ -33,6 +33,7 @@ public class CombatScript : NetworkBehaviour
     void Start () {
         haveElement = false;
         heldElement = -1;
+        quarkLord = GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>();
 		heldElementPos = Vector3.zero;
         myId = gameObject.GetComponent<NetworkIdentity>(); // get the object's network ID
         smr = gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
@@ -84,7 +85,7 @@ public class CombatScript : NetworkBehaviour
     public void CmdDeletAllQuarks() {
         for (int i = 0; i < numQuarks; i++)
         {
-            GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+            quarkLord.deSpawn();
         }
         numQuarks = 0;
     }
@@ -93,7 +94,7 @@ public class CombatScript : NetworkBehaviour
     public void CmdDeductElementCostQuarks() {
         for (int i = 0; i < elementPickUpCost; i++)
         {
-            GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+            quarkLord.deSpawn();
         }
         numQuarks -= elementPickUpCost;
     }
@@ -107,7 +108,7 @@ public class CombatScript : NetworkBehaviour
     [Command]
     public void CmdDeleteHitQuarks()
     {
-        GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+        quarkLord.deSpawn();
         numQuarks--;
     }
 
@@ -120,7 +121,7 @@ public class CombatScript : NetworkBehaviour
     {
         for (int i = 0; i < numQuarks/2; i++)
         {
-            GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>().deSpawn();
+            quarkLord.deSpawn();
         }
         numQuarks = numQuarks / 2;
 
