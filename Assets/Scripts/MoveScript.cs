@@ -113,7 +113,7 @@ public class MoveScript : NetworkBehaviour
                 combat.heldElement = pickedElement.GetComponent<ElementScript> ().elementID;
                 combat.heldElementPos = pickedElement.GetComponent<ElementScript> ().spawnTrans;
                 CmdPickUpElement (pickedElement);
-                CmdSpawnMarker (new Vector3 (this.transform.position.x, this.transform.position.y + 5, transform.position.z), combat.heldElement, this.gameObject.name);
+                //CmdSpawnMarker (new Vector3 (this.transform.position.x, this.transform.position.y + 5, transform.position.z), combat.heldElement, this.gameObject.name);
 
                 print ("picked up element " + combat.heldElement);
                 gui.SetElementUI (combat.heldElement);
@@ -128,7 +128,6 @@ public class MoveScript : NetworkBehaviour
                 source.PlayOneShot(pickUpQuark, 1.0f);
 
                 GameObject pickedQuark = collision.gameObject;
-                print("picked up quark");
                 combat.CmdAddQuarks();
                 CmdPickUpQuark (pickedQuark);
                 Destroy(pickedQuark);
