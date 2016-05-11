@@ -267,6 +267,7 @@ public class GUIScript : NetworkBehaviour {
     }
 
     public void enableRespawning() {
+        StartCoroutine (shortBlackOut());
         animatingRespawning = true;
         respawningImage.enabled = true;
         respawningAnimator.SetBool ("animating", true);
@@ -292,6 +293,12 @@ public class GUIScript : NetworkBehaviour {
         blackout.CrossFadeAlpha (1.0f, fadeTransitionTime, false);
         yield return new WaitForSeconds(fadeBlindedTime);
         blackout.CrossFadeAlpha (0.0f, fadeTransitionTime, false);
+    }
+
+    IEnumerator shortBlackOut() {
+        blackout.CrossFadeAlpha (1.0f, 0.0f, false);
+        yield return new WaitForSeconds(1.0f);
+        blackout.CrossFadeAlpha (0.0f, 1.0f, false);
     }
 
     private GameObject GetPowerUpObject(int elementID) {
