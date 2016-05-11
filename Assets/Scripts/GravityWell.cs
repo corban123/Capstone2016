@@ -40,7 +40,7 @@ public class GravityWell : NetworkBehaviour
         {
             if (collider.CompareTag("Player"))
             {
-                collider.GetComponent<GUIScript> ().enableRespawning ();
+                
                 collider.GetComponent<MoveScript>().Respawn();
                 //Destroy(collider.gameObject);
                 //NetworkServer.Destroy(collider.gameObject); //Replace this with respawn
