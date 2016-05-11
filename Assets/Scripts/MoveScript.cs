@@ -113,7 +113,7 @@ public class MoveScript : NetworkBehaviour
                 combat.heldElement = pickedElement.GetComponent<ElementScript> ().elementID;
                 combat.heldElementPos = pickedElement.GetComponent<ElementScript> ().spawnTrans;
                 CmdPickUpElement (pickedElement);
-                //CmdSpawnMarker (new Vector3 (this.transform.position.x, this.transform.position.y + 5, transform.position.z), combat.heldElement, this.gameObject.name);
+                CmdSpawnMarker (new Vector3 (this.transform.position.x, this.transform.position.y + 5, transform.position.z), combat.heldElement, this.gameObject.name);
 
                 print ("picked up element " + combat.heldElement);
                 gui.SetElementUI (combat.heldElement);
@@ -211,9 +211,18 @@ public class MoveScript : NetworkBehaviour
 		marker.GetComponent<ElementMarkerScript> ().enabled = false;
 		marker.transform.rotation = new Quaternion (0, 0, 0, 0);
         addYourElement(marker);
-		//marker.GetComponent<ElementMarkerPlayer> ().enabled = true;
+		marker.GetComponent<ElementMarkerPlayer> ().enabled = true;
+        
 		NetworkServer.Spawn (marker);
+        RpcSetParentMarker(marker.transform.localPosition, marker.transform.localRotation, marker, marker.transform.parent.gameObject);
 	}
+
+    [ClientRpc]
+    public void RpcSetParentMarker(Vector3 transform, Quaternion rotation, GameObject marker, GameObject parent)
+    {
+        marker.transform.parent = parent.transform;
+        marker.transform.localPosition = transform;
+    }
 
 	public GameObject GetObject(int element) {
 		switch (element) {
