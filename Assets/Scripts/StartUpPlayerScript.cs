@@ -44,7 +44,7 @@ public class StartUpPlayerScript : NetworkBehaviour {
 					boardObjects[1].gameObject.name = "Player 2";
                     boardObjects[0].SetBoard(boards[0]);
                     boardObjects[1].SetBoard(boards[1]);
-
+                    
                     boardObjects [0].gameObject.GetComponentInChildren<Camera> ().cullingMask = PLAYER1_LAYER;
                     boardObjects [1].gameObject.GetComponentInChildren<Camera> ().cullingMask = PLAYER2_LAYER;
 
@@ -60,11 +60,24 @@ public class StartUpPlayerScript : NetworkBehaviour {
                     boardObjects[1].gameObject.name = "Player 1";
 					boardObjects[0].gameObject.name = "Player 2";
                     boardObjects[0].SetBoard(boards[1]);
-                    boardObjects[1].SetBoard(boards[0]);	
+                    boardObjects[1].SetBoard(boards[0]);
 
                     boardObjects [1].gameObject.GetComponentInChildren<Camera> ().cullingMask = PLAYER1_LAYER;
                     boardObjects [0].gameObject.GetComponentInChildren<Camera> ().cullingMask = PLAYER2_LAYER;
                 }
+                if (boardObjects[0].isServer)
+                {
+                    //boardObjects[0].HostRegisterHandler();
+                    boardObjects[1].ClientRegisterHandler();
+
+                }
+                //else if (boardObjects[1].isServer)
+                //{
+                //    boardObjects[1].HostRegisterHandler();
+                      boardObjects[0].ClientRegisterHandler();
+
+                //}
+
                 boardObjects[1].gameObject.GetComponent<sendBoard>().enabled = true;
                 boardObjects[0].gameObject.GetComponent<sendBoard>().enabled = true;
 
