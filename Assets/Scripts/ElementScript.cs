@@ -38,7 +38,7 @@ public class ElementScript : NetworkBehaviour
     Ray shootRay;
     RaycastHit shootHit;
     LineRenderer gunLine;
-    public float range = 20f;
+    public float range = 70f;
     GUIScript guiOtherPlayer;
 	[SyncVar][SerializeField] public Vector3 spawnTrans;
 	public GameObject elemPrefab;

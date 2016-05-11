@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b353698ca2f223e4097cb1e2b15f3895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 40
+  range: 50
 --- !u!198 &19803174
 ParticleSystem:
   m_ObjectHideFlags: 1

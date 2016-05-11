@@ -5,11 +5,11 @@ using UnityEngine.Networking;
 
 public class AtomBomb : NetworkBehaviour {
 
-    public float radius;
+    public float range;
     private Collider[] victims;
     void Start()
     {      
-        foreach (Collider collider in Physics.OverlapSphere(transform.position, radius))
+        foreach (Collider collider in Physics.OverlapSphere(transform.position, range))
         {
             Rigidbody rb = collider.GetComponent<Rigidbody>();
             if (rb != null && rb.gameObject.CompareTag("Player"))
