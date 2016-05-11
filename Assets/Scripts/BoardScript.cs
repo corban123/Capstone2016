@@ -223,7 +223,7 @@ public class BoardScript : NetworkBehaviour
     public void ResetPlayerBoard()
     {
         deleteUIChildren();
-        CreateBingoBoardUI(board);
+        CreateBingoBoardUIAfterSecondTime(board);
         foreach (Image child in PlayerTokens)
         {
                 Color c = child.color;
@@ -251,14 +251,14 @@ public class BoardScript : NetworkBehaviour
     public void CreateEnemyBoard()
     {
         deleteUIChildren();
-        CreateBingoBoardUI(enemyBoard);
+        CreateBingoBoardUIAfterSecondTime(enemyBoard);
         for (int i = 0; i < 4; i++)
         {
             for (int j = 0; j < 4; j++)
             {
                 if (enemyScored[i, j])
                 {
-                    PlaceChip(i, j);
+                    PlaceEnemyChip(i, j);
                 }
 
             }
@@ -493,7 +493,18 @@ public class BoardScript : NetworkBehaviour
         chipImage.color = c;
         return chipImage;
     }
+    private Image PlaceEnemyChip(int x, int y)
+    {
+        Image[] i = boardChips.GetComponentsInChildren<Image>();
+        int idx = x * 4 + y;
+        Image chipImage = i[idx];
+        chipImage.sprite = chip;
 
+        Color c = chipImage.color;
+        c.a = 255;
+        chipImage.color = c;
+        return chipImage;
+    }
     private void CreateBingoBoardUI(int[,] chosenBoard)
     {
         int elem;
@@ -512,6 +523,22 @@ public class BoardScript : NetworkBehaviour
             }
         }
     }
+
+    private void CreateBingoBoardUIAfterSecondTime(int[,] chosenBoard)
+    {
+        int elem;
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                elem = chosenBoard[i, j];
+                GameObject obj = GetObject(elem);
+                obj = Instantiate(obj) as GameObject;
+                obj.transform.SetParent(boardUI.transform, false);
+            }
+        }
+
+    }    
 
     public GameObject GetObject(int element)
     {
