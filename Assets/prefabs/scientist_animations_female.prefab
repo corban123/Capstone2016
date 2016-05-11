@@ -85,6 +85,7 @@ GameObject:
   - 95: {fileID: 9506430}
   - 114: {fileID: 11441358}
   - 114: {fileID: 11413028}
+  - 114: {fileID: 11493290}
   m_Layer: 0
   m_Name: scientist_animations_female
   m_TagString: Player
@@ -3678,6 +3679,9 @@ MonoBehaviour:
   AtomBombSprite: {fileID: 144286, guid: 0ef3f41ea4a7347c6bdf7ed667ddbbc8, type: 2}
   canvas: {fileID: 0}
   waitingCanvas: {fileID: 0}
+  winCanvas: {fileID: 0}
+  loseCanvas: {fileID: 0}
+  canPause: 0
 --- !u!114 &11441358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3727,6 +3731,7 @@ MonoBehaviour:
   marker: {fileID: 0}
   blueCross: {fileID: 21300000, guid: d2bbd4f7ec56f164bae092f51808d332, type: 3}
   redCross: {fileID: 21300000, guid: 424d1e8305aec774da3f883804b936bb, type: 3}
+  board: {fileID: 0}
   barium: {fileID: 184272, guid: a9e5a3a42580847439d0eb88ddb2dcaa, type: 2}
   calcium: {fileID: 107250, guid: 394bdf465f8a745b196486aab079a59d, type: 2}
   carbon: {fileID: 193666, guid: 7bc9b7f6638a84c96aab60eb862be1ae, type: 2}
@@ -3808,7 +3813,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103078}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53314cb8806f844c3a3cd9f4d5513c04, type: 3}
   m_Name: 
@@ -3863,6 +3868,18 @@ MonoBehaviour:
   silver_color: {fileID: 21300000, guid: 3fc6e433a18820d44b962c4a25dda735, type: 3}
   sodium_color: {fileID: 21300000, guid: 5c41f0eae37a85e4c9fccc069848acd8, type: 3}
   xenon_color: {fileID: 21300000, guid: e5befe064d47c974fb19142e73127ed3, type: 3}
+--- !u!114 &11493290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103078}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145af692e18400244802aade29164bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBoard: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!124 &12493168
 Behaviour:
   m_ObjectHideFlags: 1

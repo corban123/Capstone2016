@@ -26,6 +26,8 @@ public class MoveScript : NetworkBehaviour
     public Sprite blueCross;
     public Sprite redCross;
 
+    public BoardScript board;
+
 	public GameObject barium;
 	public GameObject calcium;
 	public GameObject carbon;
@@ -48,6 +50,8 @@ public class MoveScript : NetworkBehaviour
     // Use this for initialization
     void Start()
     {
+
+        board = gameObject.GetComponent<BoardScript>();
         combat = gameObject.GetComponent<CombatScript>();
         source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript>();
@@ -64,7 +68,7 @@ public class MoveScript : NetworkBehaviour
 
     void Update()
     {
-        
+       
         if(isLocalPlayer)
         {
             combat = gameObject.GetComponent<CombatScript>();
@@ -78,6 +82,15 @@ public class MoveScript : NetworkBehaviour
             else
             {
                 GameObject.Find("Crosshair").GetComponent<Image>().sprite = blueCross;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Tab))
+            { 
+                board.CreateEnemyBoard();
+            }
+            if (Input.GetKeyUp(KeyCode.Tab))
+            {
+                board.ResetPlayerBoard();
             }
         }
         

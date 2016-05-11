@@ -7,6 +7,8 @@ public class playerSyncMovement : NetworkBehaviour {
 	[SyncVar]
 	private Vector3 syncPos;
 
+    [SyncVar]
+    private int x;
 	[SerializeField] Transform myTransform;
 	[SerializeField] float lerpRate = 15;
 
@@ -39,7 +41,8 @@ public class playerSyncMovement : NetworkBehaviour {
 
 	[Command]
 	void CmdProvidePositionToServer(Vector3 pos){
-			syncPos = pos;	
+			syncPos = pos;
+            x = 6;
 	}
 
 	[ClientCallback]

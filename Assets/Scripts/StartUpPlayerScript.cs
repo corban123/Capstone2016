@@ -64,7 +64,10 @@ public class StartUpPlayerScript : NetworkBehaviour {
 
                     boardObjects [1].gameObject.GetComponentInChildren<Camera> ().cullingMask = PLAYER1_LAYER;
                     boardObjects [0].gameObject.GetComponentInChildren<Camera> ().cullingMask = PLAYER2_LAYER;
-				}
+                }
+                boardObjects[1].gameObject.GetComponent<sendBoard>().enabled = true;
+                boardObjects[0].gameObject.GetComponent<sendBoard>().enabled = true;
+
                 boardObjects[1].gameObject.GetComponent<MoveScript>().Respawn();
                 boardObjects[0].gameObject.GetComponent<MoveScript>().Respawn();
                 found = true;
