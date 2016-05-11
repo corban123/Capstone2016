@@ -8,34 +8,32 @@ using System.Collections.Generic;
 /*
  * Board object for storing board, scoring, and printing.
  */
-
 public class RegisterHostMessage : MessageBase
 {
 
     public int[] boardToSend;
 
 }
+public class BoardScript : NetworkBehaviour {
 
-
-public class BoardScript : NetworkBehaviour
-{
     public NetworkClient client;
 
     public const short RegisterHostMsgId = 888;
     public const short RegisterClientMsgId = 999;
 
-    public int[,] board;
-    public int[,] enemyBoard = new int[4,4];
+    private int[,] board;
+    public int[,] enemyBoard = new int[4, 4];
     private bool[,] enemyScored = new bool[4, 4];
     private bool[,] scored = new bool[4, 4];
-    private int[] enemyStorage = new int[16];
-    
+
     private ArrayList enemyElementsScored;
     private ArrayList playerElementsScored;
     private GameObject boardUI;
     private GameObject boardChips;
     private bool UICreated = false;
-    public NetworkClient clientess;
+    [SerializeField] public AudioClip winSound;
+    [SerializeField] public AudioClip loseSound;
+
     public GameObject chipPlaceHolder;
     public Sprite chip;
 
@@ -125,10 +123,10 @@ public class BoardScript : NetworkBehaviour
     {
         if (isLocalPlayer && isClient)
         {
-            
+
             var msg = new RegisterHostMessage();
             msg.boardToSend = new int[16];
-            for(int i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
                 {
@@ -139,22 +137,15 @@ public class BoardScript : NetworkBehaviour
         }
     }
 
-    void Update()
-    {
-    }
-
     // Set the board value
-    public void SetBoard(int[,] board)
-    {
-        if (isLocalPlayer)
-        {
-            boardUI = GameObject.Find("BingoBoard");
-            boardChips = GameObject.Find("BingoChips");
+    public void SetBoard (int[,] board) {
+        if (isLocalPlayer) {
+            boardUI = GameObject.Find ("BingoBoard");
+            boardChips = GameObject.Find ("BingoChips");
             this.board = board;
-
-            @StartCoroutine(CreateBoardCoroutine());
+            StartCoroutine(CreateBoardCoroutine ());
         }
-    }
+	}
     public void SetEnemyBoard(NetworkMessage msg)
     {
         RegisterHostMessage message = msg.ReadMessage<RegisterHostMessage>();
@@ -163,7 +154,7 @@ public class BoardScript : NetworkBehaviour
         {
             for (int j = 0; j < 4; j++)
             {
-                enemyBoard[i, j] = message.boardToSend[j+i*4];
+                enemyBoard[i, j] = message.boardToSend[j + i * 4];
 
             }
         }
@@ -177,7 +168,6 @@ public class BoardScript : NetworkBehaviour
         }
 
     }
-
     public void ResetPlayerBoard()
     {
         deleteUIChildren();
@@ -195,10 +185,8 @@ public class BoardScript : NetworkBehaviour
         }
     }
 
-    IEnumerator CreateBoardCoroutine()
-    {
-
-        CreateBingoBoardUI(board);
+    IEnumerator CreateBoardCoroutine() {
+        CreateBingoBoardUI (board);
         yield return new WaitForSeconds(2.0f);
     }
 
@@ -239,150 +227,142 @@ public class BoardScript : NetworkBehaviour
 
     }
 
-
     // Marks an element as scored on this board
     // Returns whether or not the score causes this board to win.
-    public bool score(int element)
-    {
-        if (isLocalPlayer)
-        {
+    public bool score (int element) {
+        if (isLocalPlayer) {
             // Find the element on the board
-            int[] coordinates = GetCoordinates(element, board);
+            int[] coordinates = GetCoordinates (element, board);
             playerElementsScored.Add(element);
             // Mark the element as scored in the scored bitmap
-            scored[coordinates[0], coordinates[1]] = true;
+            scored [coordinates [0], coordinates [1]] = true;
 
-            PlaceChip(coordinates[0], coordinates[1]);
+            PlaceChip (coordinates [0], coordinates [1]);
 
             // Change Board text
             GameObject otherPlayer;
             if (gameObject.name.Contains("1"))
                 otherPlayer = GameObject.Find("Player 2");
-            else
+            else 
                 otherPlayer = GameObject.Find("Player 1");
 
             NetworkInstanceId id = otherPlayer.GetComponent<NetworkIdentity>().netId;
+            bool win = isWin (coordinates [0], coordinates [1]);
+
+            if (win) {
+                gameObject.GetComponent<GUIScript> ().enableWinCanvas ();
+                gameObject.GetComponent<AudioSource> ().PlayOneShot (winSound, 1.0f);
+            }
 
             if (isServer)
-                RpcGreyOut(id, element);
+                RpcGreyOut (id, element, win, loseSound);
             else
-                CmdGreyOut(id, element);
+                CmdGreyOut (id, element, win, loseSound);
 
             // Check whether the board is a winner
-            return isWin(coordinates[0], coordinates[1]);
+            return win;
         }
         return false;
-    }
+	}
 
     [Command]
-    public void CmdGreyOut(NetworkInstanceId id, int element)
-    {
-        GameObject player = NetworkServer.FindLocalObject(id);
-        BoardScript board = player.GetComponent<BoardScript>();
-        GUIScript gui = player.GetComponent<GUIScript>();
-        try
-        {
+    public void CmdGreyOut(NetworkInstanceId id, int element, bool isWin, AudioClip sound) {
+        GameObject player = NetworkServer.FindLocalObject (id);
+        BoardScript board = player.GetComponent<BoardScript> ();
+        GUIScript gui = player.GetComponent<GUIScript> ();
+        AudioSource source = player.GetComponent<AudioSource> ();
+        try {
             board.GreyOutOnUI(element);
-
-            gui.enableEnemyScored();
-        }
-        catch (NullReferenceException e)
-        {
-            print("board not found: " + e);
+            if (isWin) {
+                gui.enableLoseCanvas();
+                source.PlayOneShot (sound, 1.0f);
+            } else {
+                gui.enableEnemyScored();
+            }
+        } catch (NullReferenceException e) {
+            print ("board not found: " + e);
         }
     }
 
     [ClientRpc]
-    public void RpcGreyOut(NetworkInstanceId id, int element)
-    {
-        GameObject player = ClientScene.FindLocalObject(id);
-        BoardScript board = player.GetComponent<BoardScript>();
-        GUIScript gui = player.GetComponent<GUIScript>();
-        try
-        {
+    public void RpcGreyOut (NetworkInstanceId id, int element, bool isWin, AudioClip sound) {
+        GameObject player = ClientScene.FindLocalObject (id);
+        BoardScript board = player.GetComponent<BoardScript> ();
+        GUIScript gui = player.GetComponent<GUIScript> ();
+        AudioSource source = player.GetComponent<AudioSource> ();
+        try {
             board.GreyOutOnUI(element);
-            gui.enableEnemyScored();
-        }
-        catch (NullReferenceException e)
-        {
-            print("board not found: " + e);
-        }
-
-    }
-
-    // @Override prints board results.
-    // includes '-' if element has been collected.
-    public override string ToString()
-    {
-        string result = "";
-        for (int i = 0; i < 4; i++)
-        {
-            for (int j = 0; j < 4; j++)
-            {
-                if (scored[i, j])
-                {
-                    result += "  -  ";
-                }
-                else
-                {
-                    // Add extra space for alignment
-                    if (board[i, j] < 10)
-                    {
-                        result += "  ";
-                    }
-                    result += (board[i, j] + "  ");
-                }
+            if (isWin) {
+                gui.enableLoseCanvas();
+                source.PlayOneShot (sound, 1.0f);
+            } else {
+                gui.enableEnemyScored();
             }
-            result += "\n";
-        }
-        return result;
-    }
-
-    // Get coordinates of a value in the board
-    private int[] GetCoordinates(int val, int[,] board)
-    {
-        for (int i = 0; i < 4; i++)
-        {
-            for (int j = 0; j < 4; j++)
-            {
-                if (board[i, j] == val)
-                {
-                    int[] result = { i, j };
-                    return result;
-                }
-            }
-        }
-        return null;
-    }
-
-    // Returns whether or not marking off the element at (x, y) causes a player to win.
-    private bool isWin(int x, int y)
-    {
-        bool win_horizontal = true;
-        bool win_vertical = true;
-        bool win_diagonal_back = true;
-        bool win_diagonal_forward = true;
-
-        // Check for wins
-        for (int i = 0; i < 4; i++)
-        {
-            win_horizontal = win_horizontal && scored[i, y];
-            win_vertical = win_vertical && scored[x, i];
-            win_diagonal_forward = win_diagonal_forward && scored[i, i];
-            win_diagonal_back = win_diagonal_back && scored[i, 3 - i];
+        } catch (NullReferenceException e) {
+            print ("board not found: " + e);
         }
 
-        return win_horizontal || win_vertical || win_diagonal_back || win_diagonal_forward;
-    }
+    }  
+
+	// @Override prints board results.
+	// includes '-' if element has been collected.
+	public override string ToString () {
+		string result = "";
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				if (scored[i, j]) {
+					result += "  -  ";
+				} else {
+					// Add extra space for alignment
+					if (board [i, j] < 10) {
+						result += "  ";
+					}
+					result += (board [i, j] + "  ");
+				}
+			}
+			result += "\n";
+		}
+		return result;
+	}
+
+	// Get coordinates of a value in the board
+	private int[] GetCoordinates(int val, int[,] board) {
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				if (board[i,j] == val) {
+					int[] result = { i, j };
+					return result;
+				}
+			}
+		}
+		return null;
+	}
+
+	// Returns whether or not marking off the element at (x, y) causes a player to win.
+	private bool isWin(int x, int y) {
+		bool win_horizontal = true;
+		bool win_vertical = true;
+		bool win_diagonal_back = true;
+		bool win_diagonal_forward = true;
+
+		// Check for wins
+		for (int i = 0; i < 4; i++) {
+			win_horizontal = win_horizontal && scored [i, y];
+			win_vertical = win_vertical && scored[x, i];
+			win_diagonal_forward = win_diagonal_forward && scored [i, i];
+			win_diagonal_back = win_diagonal_back && scored [i, 3 - i];
+		}
+				
+		return win_horizontal || win_vertical || win_diagonal_back || win_diagonal_forward;
+	}
 
     public int getValueAtPoint(int i, int j)
     {
         return board[i, j];
     }
 
-    private void GreyOutOnUI(int elem)
-    {
-        int[] c = GetCoordinates(elem, board);
+    private void GreyOutOnUI(int elem) {
+        int[] c = GetCoordinates (elem,board);
         enemyScored[c[0], c[1]] = true;
         enemyElementsScored.Add(elem);
         Image[] i = boardUI.GetComponentsInChildren<Image>();
@@ -397,12 +377,10 @@ public class BoardScript : NetworkBehaviour
         i[idx].sprite = GetGreySprite(elem);
 
     }
-
-    private void PlaceChip(int x, int y)
-    {
-        Image[] i = boardChips.GetComponentsInChildren<Image>();
+    private void PlaceChip(int x, int y) {
+        Image[] i = boardChips.GetComponentsInChildren<Image> ();
         int idx = x * 4 + y;
-        Image chipImage = i[idx];
+        Image chipImage = i [idx];
         chipImage.sprite = chip;
 
         Color c = chipImage.color;
@@ -410,29 +388,24 @@ public class BoardScript : NetworkBehaviour
         chipImage.color = c;
     }
 
-    private void CreateBingoBoardUI(int[,] chosenBoard)
-    {
+    private void CreateBingoBoardUI (int[,] chosenBoard) {
         int elem;
-        for (int i = 0; i < 4; i++)
-        {
-            for (int j = 0; j < 4; j++)
-            {
-                elem = chosenBoard[i, j];
-                GameObject obj = GetObject(elem);
-                obj = Instantiate(obj) as GameObject;
-                obj.transform.SetParent(boardUI.transform, false);
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                elem = board [i, j];
+                GameObject obj = GetObject (elem);
+                obj = Instantiate (obj) as GameObject;
+                obj.transform.SetParent (boardUI.transform, false);
 
                 GameObject tempChip = chipPlaceHolder;
-                tempChip = Instantiate(tempChip) as GameObject;
-                tempChip.transform.SetParent(boardChips.transform, false);
+                tempChip = Instantiate (tempChip) as GameObject;
+                tempChip.transform.SetParent (boardChips.transform, false);
             }
         }
     }
 
-    public GameObject GetObject(int element)
-    {
-        switch (element)
-        {
+    public GameObject GetObject(int element) {
+        switch (element) {
             case 0:
                 return sodium;
             case 1:
@@ -470,10 +443,8 @@ public class BoardScript : NetworkBehaviour
         }
     }
 
-    public Sprite GetGreySprite(int element)
-    {
-        switch (element)
-        {
+    public Sprite GetGreySprite(int element) {
+        switch (element) {
             case 0:
                 return sodium_grey;
             case 1:
@@ -508,47 +479,45 @@ public class BoardScript : NetworkBehaviour
                 return xenon_grey;
             default:
                 return null;
-        }
+            }
     }
 
-    public Sprite GetColorSprite(int element)
-    {
-        switch (element)
-        {
-            case 0:
-                return sodium_color;
-            case 1:
-                return potassium_color;
-            case 2:
-                return calcium_color;
-            case 3:
-                return barium_color;
-            case 4:
-                return copper_color;
-            case 5:
-                return nickel_color;
-            case 6:
-                return silver_color;
-            case 7:
-                return gold_color;
-            case 8:
-                return carbon_color;
-            case 9:
-                return nitrogen_color;
-            case 10:
-                return oxygen_color;
-            case 11:
-                return hydrogen_color;
-            case 12:
-                return helium_color;
-            case 13:
-                return neon_color;
-            case 14:
-                return krypton_color;
-            case 15:
-                return xenon_color;
-            default:
-                return null;
+    public Sprite GetColorSprite(int element) {
+        switch (element) {
+        case 0:
+            return sodium_color;
+        case 1:
+            return potassium_color;
+        case 2:
+            return calcium_color;
+        case 3:
+            return barium_color;
+        case 4:
+            return copper_color;
+        case 5:
+            return nickel_color;
+        case 6:
+            return silver_color;
+        case 7:
+            return gold_color;
+        case 8:
+            return carbon_color;
+        case 9:
+            return nitrogen_color;
+        case 10:
+            return oxygen_color;
+        case 11:
+            return hydrogen_color;
+        case 12:
+            return helium_color;
+        case 13:
+            return neon_color;
+        case 14:
+            return krypton_color;
+        case 15:
+            return xenon_color;
+        default:
+            return null;
         }
     }
 }

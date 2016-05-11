@@ -18,6 +18,7 @@ public class MainMenuAudioScript : MonoBehaviour {
         audio.clip = startClip;
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
+        audio.loop = true;
         audio.clip = loopClip;
         audio.Play();
     }

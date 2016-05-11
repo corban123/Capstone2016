@@ -23,6 +23,7 @@ namespace UnityEngine.Networking
         Canvas arenaSelectionCanvas;
         Canvas loadingCanvas;
         Button joinButton;
+        Button tutorialButton;
         Button backJoinButton;
         Button startButton;
         Button backCreateMatchButton;
@@ -31,6 +32,7 @@ namespace UnityEngine.Networking
         public GameObject startOnly;
         public GameObject startjoin;
         public GameObject joinOnly;
+        public GameObject tutorial;
 
         bool drawButtons = false;
 
@@ -45,11 +47,13 @@ namespace UnityEngine.Networking
             arenaSelectionCanvas = GameObject.Find ("ArenaSelectionCanvas").GetComponent<Canvas> ();
             joinButton = GameObject.Find ("JoinGameButton").GetComponent<Button> ();
             startButton = GameObject.Find ("StartGameButton").GetComponent<Button> ();
+            tutorialButton = GameObject.Find ("TutorialButton").GetComponent<Button> ();
 
 
             enableMatchMaker ();
             joinButton.onClick.AddListener ( () => { JoinButtonOnClick(); } );
             startButton.onClick.AddListener ( () => { StartButtonOnClick(); } );
+            tutorialButton.onClick.AddListener ( () => { TutorialButtonOnClick(); } );
         }
 
         void enableMatchMaker() {
@@ -72,6 +76,10 @@ namespace UnityEngine.Networking
 
         void BackJoinOnClick() {
             GoToStartJoin ();
+        }
+
+        void TutorialButtonOnClick() {
+            GoToTutorial ();
         }
             
 
@@ -110,7 +118,17 @@ namespace UnityEngine.Networking
             }
         }
 
+        void GoToTutorial() {
+            tutorial.SetActive (true);
+            startjoin.SetActive (false);
+            startOnly.SetActive (false);
+            joinOnly.SetActive (false);
+
+            drawButtons = false;
+        }
+
         void GoToStartJoin() {
+            tutorial.SetActive (false);
             startjoin.SetActive (true);
             startOnly.SetActive (false);
             joinOnly.SetActive (false);
@@ -119,6 +137,7 @@ namespace UnityEngine.Networking
         }
 
         void GoToStartOnly() {
+            tutorial.SetActive (false);
             startjoin.SetActive (false);
             startOnly.SetActive (true);
             joinOnly.SetActive (false);
@@ -127,6 +146,7 @@ namespace UnityEngine.Networking
         }
 
         void GoToJoinOnly() {
+            tutorial.SetActive (false);
             startjoin.SetActive (false);
             startOnly.SetActive (false);
             joinOnly.SetActive (true);
@@ -162,6 +182,7 @@ namespace UnityEngine.Networking
             startjoin.SetActive (false);
             startOnly.SetActive (false);
             joinOnly.SetActive (false);
+            tutorial.SetActive (false);
 
             mainCanvas.enabled = false;
             arenaSelectionCanvas.enabled = true;
