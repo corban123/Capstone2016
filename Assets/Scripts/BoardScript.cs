@@ -466,7 +466,8 @@ public class BoardScript : NetworkBehaviour
     private void GreyOutOnUI(int elem)
     {
         int[] c = GetCoordinates(elem, board);
-        enemyScored[c[0], c[1]] = true;
+        int[] d = GetCoordinates(elem, enemyBoard);
+        enemyScored[d[0], d[1]] = true;
         enemyElementsScored.Add(elem);
         Image[] i = boardUI.GetComponentsInChildren<Image>();
         int idx = c[0] * 4 + c[1];
