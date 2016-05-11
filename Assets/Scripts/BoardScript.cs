@@ -36,6 +36,7 @@ public class BoardScript : NetworkBehaviour
     private GameObject boardUI;
     private GameObject boardChips;
     private bool UICreated = false;
+    private bool shouldSendBoard = true;
     [SerializeField]
     public AudioClip winSound;
     [SerializeField]
@@ -61,7 +62,7 @@ public class BoardScript : NetworkBehaviour
     public GameObject silver;
     public GameObject sodium;
     public GameObject xenon;
-
+    
     public Sprite barium_grey;
     public Sprite calcium_grey;
     public Sprite carbon_grey;
@@ -102,19 +103,29 @@ public class BoardScript : NetworkBehaviour
         client = NetworkClient.allClients[0];
         if (isLocalPlayer)
         {
-            
+            NetworkServer.RegisterHandler(RegisterHostMsgId+1 , stopSendingBoard);
             NetworkServer.RegisterHandler(RegisterHostMsgId, SetEnemyBoard);
             client.RegisterHandler(RegisterClientMsgId, SetEnemyBoard);
 
         }
     }
 
+    private void stopSendingBoard(NetworkMessage netMsg)
+    {
+        if (isLocalPlayer)
+        {
+            shouldSendBoard = false;
+        }
+        
+    }
+
     void Update()
     {
-        if (isServer)
+        if (isServer && shouldSendBoard)
         {
             HostSendBoard();
         }
+        if(isClient)
         Debug.Log(NetworkClient.allClients[0].handlers);
     }
 
@@ -130,6 +141,12 @@ public class BoardScript : NetworkBehaviour
         
             NetworkServer.RegisterHandler(888, SetEnemyBoard);
         
+    }
+    public void ClientSayStop()
+    {
+        RegisterHostMessage msg = new RegisterHostMessage();
+        msg.boardToSend = new int[16];
+        client.Send(RegisterHostMsgId+1, msg);
     }
 
     public void HostSendBoard()
@@ -180,6 +197,10 @@ public class BoardScript : NetworkBehaviour
     {
         RegisterHostMessage message = msg.ReadMessage<RegisterHostMessage>();
 
+        if (!isServer)
+        {
+            ClientSayStop();
+        }
         for (int i = 0; i < 4; i++)
         {
             for (int j = 0; j < 4; j++)
