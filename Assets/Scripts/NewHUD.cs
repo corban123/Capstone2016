@@ -79,7 +79,7 @@ namespace UnityEngine.Networking
         }
 
         void TutorialButtonOnClick() {
-            tutorial.SetActive (true);
+            GoToTutorial ();
         }
             
 

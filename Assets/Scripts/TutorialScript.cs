@@ -40,26 +40,24 @@ public class TutorialScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (index == 0) {
-            back.interactable = false;
+            back.gameObject.SetActive (false);
         } else {
-            back.interactable = true;
+            back.gameObject.SetActive(true);
         }
         if (index == 31) {
-            forward.interactable = false;
+            forward.gameObject.SetActive(false);
         } else {
-            forward.interactable = true;
+            forward.gameObject.SetActive(true);
         }
 	}
 
     void forwardOnClick() {
         index++;
-        print ("forward to " + index);
         tutorialAnimator.SetInteger ("index", index);
     }
 
     void backOnClick() {
         index--;
-        print ("back to " + index);
         tutorialAnimator.SetInteger ("index", index);
     }
 
