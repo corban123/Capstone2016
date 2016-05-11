@@ -109,6 +109,15 @@ public class BoardScript : NetworkBehaviour
         }
     }
 
+    void Update()
+    {
+        if (isServer)
+        {
+            HostSendBoard();
+        }
+        Debug.Log(NetworkClient.allClients[0].handlers);
+    }
+
     public void ClientRegisterHandler()
     {
 
@@ -153,10 +162,6 @@ public class BoardScript : NetworkBehaviour
             }
             client.Send(RegisterHostMsgId, msg);
         }
-    }
-
-    void Update()
-    {
     }
 
     // Set the board value
