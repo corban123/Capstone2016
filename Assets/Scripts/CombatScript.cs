@@ -126,12 +126,32 @@ public class CombatScript : NetworkBehaviour
         numQuarks = numQuarks / 2;
 
     }
-    [Command]
-    public void CmdDeleteElement()
+    
+    public void DeleteElement()
     {
+        
         haveElement = false;
         heldElement = -1;
         gui.DeleteElementUI();
+        CmdDestroyMarker();
+
+    }
+
+    [Command]
+    public void CmdRespawnElement(int elementID, Vector3 heldElementPos)
+    {
+        GameObject elem;  
+        elem = Instantiate(elementShot, new Vector3(100000, 1000000, 10000000), this.gameObject.transform.rotation) as GameObject;
+        elem.GetComponent < Collider >().enabled = false;
+        elem.GetComponent<Renderer>().enabled = false;
+        elem.GetComponent<ProjectileScript>().elementId = elementID;
+        elem.GetComponent<ElementScript>().spawnTrans = heldElementPos;
+        elem.GetComponent<ProjectileScript>().playerSource = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
+        elem.GetComponent<ProjectileScript>().rb = elem.GetComponent<Rigidbody>();
+        NetworkServer.Spawn(elem);
+        elem.GetComponent<ElementScript>().shouldDie = true;
+
+
     }
 
     [Command]
@@ -186,7 +206,8 @@ public class CombatScript : NetworkBehaviour
 			}
             else if(haveElement == true)
             {
-                CmdDeleteElement();
+                CmdRespawnElement(heldElement, heldElementPos);
+                DeleteElement();
             }
             else if(bullet.Contains("Basic"))
             {

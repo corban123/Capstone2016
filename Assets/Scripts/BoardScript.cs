@@ -14,6 +14,8 @@ public class RegisterHostMessage : MessageBase
 
     public int[] boardToSend;
 
+    
+
 }
 
 
@@ -121,12 +123,11 @@ public class BoardScript : NetworkBehaviour
 
     void Update()
     {
-        if (isServer && shouldSendBoard)
+        if (isServer && shouldSendBoard && board != null)
         {
             HostSendBoard();
         }
-        if(isClient)
-        Debug.Log(NetworkClient.allClients[0].handlers);
+
     }
 
     public void ClientRegisterHandler()

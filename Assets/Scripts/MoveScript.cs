@@ -180,7 +180,11 @@ public class MoveScript : NetworkBehaviour
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
 		if (isLocalPlayer) {
             combat.CmdDeletAllQuarks();
-            combat.CmdDeleteElement();
+            if (combat.heldElement != -1)
+            {
+                combat.CmdRespawnElement(combat.heldElement, combat.heldElementPos);
+                combat.DeleteElement();
+            }
         }
         if (isLocalPlayer)
         {

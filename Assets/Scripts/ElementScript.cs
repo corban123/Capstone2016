@@ -8,7 +8,9 @@ using UnityEngine.Networking;
 public class ElementScript : NetworkBehaviour
 {
     public int cost;
-	[SyncVar]
+    [SyncVar]public bool shouldDie;
+
+    [SyncVar]
 	[SerializeField] public int elementID;   //This id is unique to each element (numbered 1-16)
 
     [SyncVar] public int carrier;     //This number is 1 or 2 depending on which player is holding it, or -1 depending on if nobody is holding it
@@ -50,11 +52,16 @@ public class ElementScript : NetworkBehaviour
         elementID = gameObject.GetComponent<ProjectileScript> ().elementId;
         carrier = gameObject.GetComponent<ProjectileScript> ().playerSource;
         print ("elementID " + elementID + " from player " + carrier);
+        if (shouldDie)
+        {
+            CmdSpawnDead();
+        }
 	}
 	
 	// Update is called once per frame
 	void Update ()
     { 
+        
 	}
 
     public void PowerUp()
@@ -156,7 +163,7 @@ public class ElementScript : NetworkBehaviour
 		Debug.Log ("In CmdSPawnDead");
 
 	}
-	public GameObject GetObject(int element) {
+    public GameObject GetObject(int element) {
 		switch (element) {
 		case 0:
 			return sodium;

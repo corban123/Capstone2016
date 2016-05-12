@@ -20,7 +20,7 @@ public class ProjectileScript : NetworkBehaviour
     AudioSource source;
     [SerializeField] AudioClip shoot;
     [SerializeField] AudioClip score;
-    Rigidbody rb;
+    public Rigidbody rb;
     private int delay = 5;
 
     void Start()
@@ -126,7 +126,7 @@ public class ProjectileScript : NetworkBehaviour
     }
 
 
-    void removeProjectile()
+    public void removeProjectile()
     {
         MeshRenderer mr = GetComponent<MeshRenderer>();
         GetComponent<Collider>().enabled = false;
@@ -174,7 +174,7 @@ public class ProjectileScript : NetworkBehaviour
     }
 
     [Command]
-    void CmdRemoveProjectile()
+    public void CmdRemoveProjectile()
     {
         NetworkServer.UnSpawn(this.gameObject);
     }
