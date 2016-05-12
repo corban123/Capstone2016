@@ -82,7 +82,12 @@ public class ProjectileScript : NetworkBehaviour
                         gui.enableYouScored();
                     }
                 }
-				removeProjectile();
+                else
+                {
+                    e.PowerUp();
+                    e.CmdSpawnDead();
+                }
+                removeProjectile();
 
 			}
             //Checks to see if it hit the killbox
