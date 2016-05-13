@@ -208,6 +208,7 @@ MonoBehaviour:
   basicDeath: {fileID: 129654, guid: 5afec42819943994b812ca9beebf6a4d, type: 2}
   shoot: {fileID: 8300000, guid: 8f7ce249b24ca8e47a2b8bb3a026ee5c, type: 3}
   score: {fileID: 8300000, guid: 8d46eab1e3fe4354782e445bb7744a34, type: 3}
+  rb: {fileID: 0}
 --- !u!114 &11437200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -220,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 0
+  shouldDie: 0
   elementID: 0
   carrier: 0
   blackHole: {fileID: 100000, guid: 019e298c4b22d4d668f33d6a8e4ed0a2, type: 2}
@@ -257,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 3
-  m_SendInterval: 0.09090909
+  m_SendInterval: 0.04761905
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
   m_SyncSpin: 0

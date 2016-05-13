@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 public class PlayerSyncRotation : NetworkBehaviour {
 
-	[SyncVar (hook = "OnPlayerRotSynced")] private float syncPlayerRotation;
-	[SyncVar (hook = "OnCamRotSynced")] private float syncCamRotation;
+	[SyncVar (hook = "OnPlayerRotSynced")] public float syncPlayerRotation;
+	[SyncVar (hook = "OnCamRotSynced")] public float syncCamRotation;
 
-	[SerializeField] private Transform playerTransform;
-	[SerializeField] private Transform camTransform;
+	[SerializeField] public Transform playerTransform;
+	[SerializeField] public Transform camTransform;
 	private float lerpRate = 20;
 
 	private float lastPlayerRot;

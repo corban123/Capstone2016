@@ -235,7 +235,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 3
-  m_SendInterval: 0.09090909
+  m_SendInterval: 0.04761905
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
@@ -350,7 +350,9 @@ MonoBehaviour:
   magnitude: 0.5
   quarkDeath: {fileID: 102006, guid: 3660bba5dd0171946a9e486aa66c0de3, type: 2}
   basicDeath: {fileID: 129654, guid: 5afec42819943994b812ca9beebf6a4d, type: 2}
-  shoot: {fileID: 8300000, guid: dd8ebfdfbe79fd8438d0dcf13075e1e7, type: 3}
+  shoot: {fileID: 8300000, guid: c2deaef8c61ed4948bbd4f9776d82a6b, type: 3}
+  score: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!198 &19802892
 ParticleSystem:
   m_ObjectHideFlags: 1

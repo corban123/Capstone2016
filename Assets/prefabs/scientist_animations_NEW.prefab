@@ -3169,7 +3169,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127950}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f09a1765865c4d14a1b393bfb71b8c1, type: 3}
   m_Name: 
@@ -3196,7 +3196,6 @@ MonoBehaviour:
   haveElement: 0
   heldElement: 0
   heldElementPos: {x: 0, y: 0, z: 0}
-  takeDmg: 0
   mPain: {fileID: 8300000, guid: 0125966ddd964d645ab95741ceffcf87, type: 3}
   fPain: {fileID: 8300000, guid: be15769b17aeb4a44b0a26f01f1e6a0c, type: 3}
 --- !u!114 &11431340
@@ -3226,6 +3225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winSound: {fileID: 8300000, guid: 0b9d34cf853944556b8f2d7b3783d64c, type: 3}
   loseSound: {fileID: 8300000, guid: 9d6fce794bfe34fd0bd017402c8e4eea, type: 3}
+  canvas: {fileID: 0}
   chipPlaceHolder: {fileID: 132476, guid: c6204477ff5004a4b96b4c9ffecb462a, type: 2}
   chip: {fileID: 21300000, guid: 0658b33e6d51fa14aa93f5f2c49024bf, type: 3}
   barium: {fileID: 123746, guid: 701f6371fa78543c0a785ba783495d23, type: 2}
@@ -3370,7 +3370,7 @@ MonoBehaviour:
   m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 4
+  m_TransformSyncMode: 3
   m_SendInterval: 0.0625
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0

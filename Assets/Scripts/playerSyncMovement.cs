@@ -24,10 +24,10 @@ public class playerSyncMovement : NetworkBehaviour {
 	}
 
 	void FixedUpdate(){
-		TransmitPosition ();
-		LerpPosition ();
+        TransmitPosition();
+        LerpPosition();
 
-	}
+    }
 
 	void LerpPosition()
 	{
@@ -42,7 +42,6 @@ public class playerSyncMovement : NetworkBehaviour {
 	[Command]
 	void CmdProvidePositionToServer(Vector3 pos){
 			syncPos = pos;
-            x = 6;
 	}
 
 	[ClientCallback]

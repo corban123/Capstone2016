@@ -50,7 +50,9 @@ public class CombatScript : NetworkBehaviour
                 // This boolean has to be before CmdShootProjectile because numQuarks is decremented in the command.
                 bool shootElement = haveElement && numQuarks <= 0;
                 nextFire = Time.time + fireRate;
-                CmdShootProjectile (shootElement, heldElement, heldElementPos);
+                Quaternion posCamToShootFrom = GetComponent<PlayerSyncRotation>().playerTransform.rotation;
+                Quaternion posPlayerToShootFrom = GetComponent<PlayerSyncRotation>().camTransform.localRotation;
+                CmdShootProjectile (shootElement, heldElement, heldElementPos, posCamToShootFrom, posPlayerToShootFrom);
                 // These lines have to be outside CmdShootProjectile. If they are inside the command they will NOT work.
                 if (shootElement) {
                     haveElement = false;
@@ -61,12 +63,14 @@ public class CombatScript : NetworkBehaviour
             
             else if(Input.GetButtonDown("Fire2") && Time.time > nextFire && isLocalPlayer && !pauseScript.paused && haveElement)
             {
+                Quaternion posCamToShootFrom = GetComponent<PlayerSyncRotation>().playerTransform.rotation;
+                Quaternion posPlayerToShootFrom = GetComponent<PlayerSyncRotation>().camTransform.localRotation;
                 nextFire = Time.time + fireRate;
                 CmdDeletAllQuarks ();
 				CmdDestroyMarker ();
 				Destroy (this.GetComponent<MoveScript> ().marker);
 				this.GetComponent<MoveScript> ().marker = null;
-                CmdShootProjectile(haveElement, heldElement, heldElementPos);
+                CmdShootProjectile(haveElement, heldElement, heldElementPos, posCamToShootFrom, posPlayerToShootFrom);
                 haveElement = false;
                 heldElement = -1;
                 gui.DeleteElementUI();
@@ -155,16 +159,15 @@ public class CombatScript : NetworkBehaviour
     }
 
     [Command]
-	void CmdShootProjectile(bool shootElementCmd, int heldElementCmd, Vector3 heldElementPos)
+	void CmdShootProjectile(bool shootElementCmd, int heldElementCmd, Vector3 heldElementPos, Quaternion camRotation, Quaternion playerRotation)
     {
 		GameObject instance;
 		Vector3 newPos = shotSpawn.position;
-		Quaternion newRot = transform.Find("FirstPersonCharacter").GetComponent<Camera>().transform.rotation;
 		int playerNum = System.Int32.Parse(this.gameObject.name.Split(' ')[1]);
 		gameObject.GetComponent<Animator>().Play("Shoot");
 		
 		if (shootElementCmd) {
-			instance = Instantiate(elementShot, newPos, newRot) as GameObject;
+			instance = Instantiate(elementShot, newPos, camRotation * playerRotation) as GameObject;
             instance.GetComponent<ProjectileScript> ().elementId = heldElementCmd;
 			instance.GetComponent<ElementScript> ().spawnTrans = heldElementPos;
 		}
@@ -172,12 +175,12 @@ public class CombatScript : NetworkBehaviour
 		{
 			if (numQuarks > 0)
 			{
-				instance = Instantiate(quarkShot, newPos, newRot) as GameObject;
+				instance = Instantiate(quarkShot, newPos, camRotation * playerRotation) as GameObject;
                 CmdDeleteQuarks();
 			}
 			else
 			{
-				instance = Instantiate(basicShot, newPos, newRot) as GameObject;
+				instance = Instantiate(basicShot, newPos, camRotation * playerRotation) as GameObject;
 			}
 			
 		}
