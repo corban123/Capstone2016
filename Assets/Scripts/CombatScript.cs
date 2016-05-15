@@ -74,7 +74,7 @@ public class CombatScript : NetworkBehaviour
                 haveElement = false;
                 heldElement = -1;
                 gui.DeleteElementUI();
-            }          
+            }
         }
     }
 	[Command]
@@ -145,7 +145,7 @@ public class CombatScript : NetworkBehaviour
     public void CmdRespawnElement(int elementID, Vector3 heldElementPos)
     {
         GameObject elem;  
-        elem = Instantiate(elementShot, new Vector3(100000, 1000000, 10000000), this.gameObject.transform.rotation) as GameObject;
+        elem = Instantiate(elementShot, new Vector3(0, 0, 0), this.gameObject.transform.rotation) as GameObject;
         elem.GetComponent < Collider >().enabled = false;
         elem.GetComponent<Renderer>().enabled = false;
         elem.GetComponent<ProjectileScript>().elementId = elementID;
@@ -259,7 +259,7 @@ public class CombatScript : NetworkBehaviour
      */
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Bullet")
+		if (collision.tag == "Bullet" && isLocalPlayer)
         {
             ProjectileScript projectile = collision.GetComponent<ProjectileScript>();
             if (!gameObject.name.Contains(projectile.playerSource.ToString()))

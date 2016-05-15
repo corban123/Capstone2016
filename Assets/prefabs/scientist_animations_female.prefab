@@ -86,6 +86,7 @@ GameObject:
   - 114: {fileID: 11441358}
   - 114: {fileID: 11413028}
   - 114: {fileID: 11493290}
+  - 114: {fileID: 11451938}
   m_Layer: 0
   m_Name: scientist_animations_female
   m_TagString: Player
@@ -3652,7 +3653,7 @@ MonoBehaviour:
   m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 3
+  m_TransformSyncMode: 4
   m_SendInterval: 0.0625
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
@@ -3700,6 +3701,25 @@ MonoBehaviour:
   param3: 
   param4: 
   param5: 
+--- !u!114 &11451938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1267208747, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 421296}
+  m_ChildIndex: 0
+  m_SendInterval: 0.04761905
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.5
+  m_InterpolateMovement: 0.5
 --- !u!114 &11454662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3771,6 +3791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1622c0c84ef1946d7b8d5648fd4286d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncPlayerRotation: 0
+  syncCamRotation: 0
   playerTransform: {fileID: 415764}
   camTransform: {fileID: 429748}
   useHistoricalInterpolation: 0

@@ -494,6 +494,7 @@ GameObject:
   - 114: {fileID: 11475016}
   - 114: {fileID: 11470372}
   - 114: {fileID: 11446234}
+  - 114: {fileID: 11452902}
   m_Layer: 0
   m_Name: scientist_animations_NEW
   m_TagString: Player
@@ -3209,6 +3210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1622c0c84ef1946d7b8d5648fd4286d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncPlayerRotation: 0
+  syncCamRotation: 0
   playerTransform: {fileID: 455320}
   camTransform: {fileID: 455214}
   useHistoricalInterpolation: 0
@@ -3288,6 +3291,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyBoard: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &11452902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1267208747, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 414532}
+  m_ChildIndex: 0
+  m_SendInterval: 0.04761905
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.5
+  m_InterpolateMovement: 0.5
 --- !u!114 &11455928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3370,7 +3392,7 @@ MonoBehaviour:
   m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 3
+  m_TransformSyncMode: 4
   m_SendInterval: 0.0625
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0

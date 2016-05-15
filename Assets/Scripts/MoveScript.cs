@@ -73,7 +73,7 @@ public class MoveScript : NetworkBehaviour
         {
             combat = gameObject.GetComponent<CombatScript>();
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit) && hit.collider.CompareTag("Player"))
             {
