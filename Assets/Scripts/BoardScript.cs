@@ -103,16 +103,9 @@ public class BoardScript : NetworkBehaviour
     {
         canvas = GameObject.Find("BingoChips");
         client = NetworkClient.allClients[0];
-        if (isLocalPlayer)
-        {
-            NetworkServer.RegisterHandler(RegisterHostMsgId+1 , stopSendingBoard);
-            NetworkServer.RegisterHandler(RegisterHostMsgId, SetEnemyBoard);
-            client.RegisterHandler(RegisterClientMsgId, SetEnemyBoard);
-
-        }
     }
 
-    private void stopSendingBoard(NetworkMessage netMsg)
+    public void stopSendingBoard(NetworkMessage netMsg)
     {
         if (isLocalPlayer)
         {

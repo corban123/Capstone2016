@@ -4,6 +4,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 public class CombatScript : NetworkBehaviour
 {
+	public NetworkClient client;
     public GameObject quarkShot;
     public GameObject elementShot;
     public GameObject basicShot;
@@ -27,10 +28,14 @@ public class CombatScript : NetworkBehaviour
 
     [SerializeField] AudioClip mPain;
     [SerializeField] AudioClip fPain;
+	[SerializeField] AudioClip hitPlayer;
 
     AudioSource source;
     // Use this for initialization
     void Start () {
+		client = NetworkClient.allClients [0];
+
+
         haveElement = false;
         heldElement = -1;
         quarkLord = GameObject.Find("GenerateBoard").GetComponent<QuarkOverlord>();
@@ -40,6 +45,13 @@ public class CombatScript : NetworkBehaviour
         source = gameObject.GetComponent<AudioSource>();
         gui = gameObject.GetComponent<GUIScript> ();
         pauseScript = gameObject.GetComponent<PauseScript> ();
+
+		//Network Messaging Setup
+		if (isLocalPlayer) {
+			
+		
+		}
+
     }
     
 	
@@ -259,20 +271,42 @@ public class CombatScript : NetworkBehaviour
      */
     void OnTriggerEnter(Collider collision)
     {
-		if (collision.tag == "Bullet" && isLocalPlayer)
+		if (collision.tag == "Bullet")
         {
-            ProjectileScript projectile = collision.GetComponent<ProjectileScript>();
-            if (!gameObject.name.Contains(projectile.playerSource.ToString()))
-            {
-                string uIdentity = this.transform.name;
-                if (gameObject.name.Contains("1")) { source.PlayOneShot(mPain, 1.0f); }
-                else { source.PlayOneShot(fPain, 1.0f); }
-                StartCoroutine("DamageFlash");
-                DeductHealth(collision.name);
-            }
+			if (isLocalPlayer) {
+				ProjectileScript projectile = collision.GetComponent<ProjectileScript> ();
+				if (!gameObject.name.Contains (projectile.playerSource.ToString ())) {
+					string uIdentity = this.transform.name;
+					if (gameObject.name.Contains ("1")) {
+						source.PlayOneShot (mPain, 5.0f);
+					} else {
+						source.PlayOneShot (fPain, 5.0f);
+					}
+					StartCoroutine ("DamageFlash");
+					DeductHealth (collision.name);
+				}
+
+				if (isServer) {
+					HostTakeDamage ();
+				} else {
+					ClientTakeDamage ();
+				
+				}
+			} 
         }
+
         
     }
+
+	public void ThrowDamageSound(NetworkMessage msg){
+
+		if (isLocalPlayer) {
+		
+			source.PlayOneShot (hitPlayer, 5.0f);
+		}
+
+	
+	}
 
     public void OnHealthChanged(int hlth)
     {
@@ -286,4 +320,20 @@ public class CombatScript : NetworkBehaviour
             }
         }
     }
+
+	public void HostTakeDamage()
+	{
+		RegisterHostMessage msg = new RegisterHostMessage();
+
+		NetworkServer.SendToAll(1000, msg);
+	}
+
+	public void ClientTakeDamage()
+	{
+		RegisterHostMessage msg = new RegisterHostMessage();
+
+		client.Send(900, msg);
+	}
+
+
 }
