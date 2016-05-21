@@ -284,14 +284,15 @@ public class CombatScript : NetworkBehaviour
 					}
 					StartCoroutine ("DamageFlash");
 					DeductHealth (collision.name);
+					if (isServer) {
+						HostTakeDamage ();
+					} else {
+						ClientTakeDamage ();
+
+					}
 				}
 
-				if (isServer) {
-					HostTakeDamage ();
-				} else {
-					ClientTakeDamage ();
-				
-				}
+
 			} 
         }
 
