@@ -211,6 +211,8 @@ ModelImporter:
     100406: pPipe24
     100408: pPipe25
     100410: pPipe26
+    100412: MainPlatform2
+    100414: MainPlatform3
     400000: bottom
     400002: MainSection
     400004: MainSection1
@@ -417,6 +419,8 @@ ModelImporter:
     400406: pPipe24
     400408: pPipe25
     400410: pPipe26
+    400412: MainPlatform2
+    400414: MainPlatform3
     2300000: pasted__pCube17
     2300002: pasted__pCylinder39
     2300004: pasted__pCylinder40
