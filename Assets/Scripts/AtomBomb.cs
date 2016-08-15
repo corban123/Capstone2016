@@ -15,8 +15,8 @@ public class AtomBomb : NetworkBehaviour {
             if (rb != null && rb.gameObject.CompareTag("Player"))
             {
                 print(rb.gameObject.name + " got caught in the explosion");
-
                 rb.GetComponent<MoveScript>().Respawn();
+                rb.GetComponent<MoveScript>().showRespawn();
             }
         }
         

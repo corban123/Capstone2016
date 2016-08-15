@@ -332,6 +332,10 @@ public class BoardScript : NetworkBehaviour
         return false;
     }
 
+    public void showScored()
+    {
+        this.gameObject.GetComponent<GUIScript>().enableYouScored();
+    }
 
     [Command]
     public void CmdGreyOut(NetworkInstanceId id, int element, bool isWin, AudioClip sound)

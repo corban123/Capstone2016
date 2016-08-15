@@ -160,7 +160,6 @@ public class ElementScript : NetworkBehaviour
 		marker.transform.parent = instance.transform;
 		NetworkServer.Spawn(instance);
 		NetworkServer.Spawn (marker);
-		Debug.Log ("In CmdSPawnDead");
 
 	}
     public GameObject GetObject(int element) {

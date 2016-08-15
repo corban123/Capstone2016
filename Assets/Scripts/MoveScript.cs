@@ -228,7 +228,15 @@ public class MoveScript : NetworkBehaviour
         marker.transform.localPosition = transform;
     }
 
-	public GameObject GetObject(int element) {
+    public void showRespawn()
+    {
+        if (isLocalPlayer)
+        {
+            this.gameObject.GetComponent<GUIScript>().enableRespawning();
+        }
+    }
+
+    public GameObject GetObject(int element) {
 		switch (element) {
 		case 0:
 			return sodium;
